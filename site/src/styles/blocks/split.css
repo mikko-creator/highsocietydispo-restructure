@@ -1,0 +1,9 @@
+/* blocks/split.css — a picture beside its text (core): two columns from 1024px (reverse: the text first), stacked on
+   phones and tablets, the picture rounded like v2's panels. */
+.split { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--gap-lg); align-items: center; }
+.split__media { aspect-ratio: 4 / 3; border-radius: var(--radius-lg); }
+.split__copy { display: flex; flex-direction: column; align-items: flex-start; gap: var(--s-2); min-width: 0; }
+@media (min-width: 1024px) {
+  .split { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--s-6); }
+  .split--reverse .split__media { order: 2; }
+}

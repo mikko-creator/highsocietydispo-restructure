@@ -1,0 +1,19 @@
+{
+ "path": "/blog/popular/",
+ "template": "blog-index",
+ "provenance": "new",
+ "title": "Most Popular Cannabis Articles",
+ "crumb": "Most Popular",
+ "metaDescription": "The big cannabis questions in one place: indica vs. sativa, the myths about strong flower, how to pack a bowl, THC drinks and the main product types.",
+ "h1": "Most Popular",
+ "hero": {
+  "lead": "Start with the classics. Most Popular brings the big questions about cannabis together in one place: indica vs. sativa, why THC percentage is only part of the picture, how to pack a bowl, how THC drinks compare and which product type is which. Each one is a practical read you can finish before your next visit."
+ },
+ "sourceRefs": [
+  "structure-map:/blog/popular/",
+  "structure-map:newPageBriefs blog-category-intros"
+ ],
+ "review": {
+  "notes": "Title and h1 from the structure map; intro and description are new copy (brief blog-category-intros: 50-100 words). Category from site.json blog.categories (the build pairs this page with its slug by path). No readership figures exist, so the intro describes the topics and claims no ranking."
+ }
+}

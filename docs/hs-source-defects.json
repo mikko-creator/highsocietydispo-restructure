@@ -1,0 +1,131 @@
+{
+  "about": "Defects found in High Society's own live copy (v1 clone of highsocietydispo.com, captured 2026-09-16), each re-checked against v1-source on 2026-10-24. The rebuild does NOT carry these over. qa/hs-parity.mjs treats a missing unit that matches a declaration as declared, not lost, and grades a unit that matches a correction in its corrected form. Hidden text (Bootstrap d-none rows, listed per page in crawl/hs/v1-pages.json mainHiddenLines, see tools/hidden-audit.py) is not graded at all: it is in the page source but not on screen. Every item is also listed for the client in docs/OPEN-DECISIONS.md.",
+  "declared": [
+    {
+      "pages": ["/dispensary-locations/big-rapids/", "/dispensary-locations/birch-run/", "/dispensary-locations/charlotte/", "/dispensary-locations/east-lansing/", "/dispensary-locations/lenox/", "/dispensary-locations/mount-pleasant/", "/dispensary-locations/new-buffalo/", "/dispensary-locations/saline/"],
+      "contains": "The Sweet Spot Weed Dispensary",
+      "reason": "Another dispensary's pickup steps (The Sweet Spot, Santa Rosa CA, 707-843-5148) in a hidden row (#iucdw, class d-none) on all 8 store pages: not on screen, but in the page source that search engines read. Hidden, so not graded; the store page gets its own visible pickup steps instead."
+    },
+    {
+      "pages": ["/dispensary-locations/charlotte/"],
+      "contains": "Top Taggart Field",
+      "reason": "A Big Rapids landmark on the Charlotte page (visible; copied from the Big Rapids page). Charlotte keeps its own landmarks."
+    },
+    {
+      "pages": ["/dispensary-locations/charlotte/"],
+      "contains": "Big Rapids Roller Rink",
+      "reason": "A Big Rapids landmark on the Charlotte page (visible)."
+    },
+    {
+      "pages": ["/dispensary-locations/charlotte/"],
+      "contains": "Ewigleben",
+      "reason": "A Big Rapids landmark (R.L. Ewigleben Sports Complex) on the Charlotte page (visible)."
+    },
+    {
+      "pages": ["/dispensary-locations/charlotte/"],
+      "contains": "Roben-Hood Airport",
+      "reason": "A Big Rapids landmark on the Charlotte page (visible)."
+    },
+    {
+      "pages": ["/dispensary-locations/new-buffalo/"],
+      "contains": "Can I consume cannabis products on-site",
+      "reason": "New Buffalo's FAQ questions were reordered against its answers (each answer sits under the wrong question). This question has no answer anywhere on High Society's pages, and High Society publishes no consumption lounge; dropped. The other five pairs are re-matched by topic, and the defective-product answer gets High Society's own question from the Charlotte and Saline pages: \"What should I do if I receive a defective product?\""
+    },
+    {
+      "pages": ["/dispensary-locations/"],
+      "contains": "comming",
+      "reason": "The locations hub's New Buffalo card still says \"comming soon\"; the store is open."
+    },
+    {
+      "pages": ["/dispensary-locations/new-buffalo/service-areas/"],
+      "contains": "0123456789",
+      "reason": "A placeholder \"License: 0123456789\" printed on the service-area hub."
+    },
+    {
+      "pages": ["/dispensary-locations/charlotte/"],
+      "contains": "We are located only 3 minutes from R.L.",
+      "reason": "Big Rapids directions on the Charlotte page (v1 mainLines 41-75: the turn-by-turn lines under the declared Big Rapids landmarks; they lead to 804 Clark St, Big Rapids, and name no landmark, so the landmark entries above miss them); the unit splitter cuts this sentence at \"R.L.\""
+    },
+    {
+      "pages": ["/dispensary-locations/charlotte/"],
+      "contains": "Ice Arena Cir",
+      "reason": "Big Rapids directions on the Charlotte page (v1 mainLines 41-75: the turn-by-turn lines under the declared Big Rapids landmarks; they lead to 804 Clark St, Big Rapids, and name no landmark, so the landmark entries above miss them)"
+    },
+    {
+      "pages": ["/dispensary-locations/charlotte/"],
+      "contains": "Knollview",
+      "reason": "Big Rapids directions on the Charlotte page (v1 mainLines 41-75: the turn-by-turn lines under the declared Big Rapids landmarks; they lead to 804 Clark St, Big Rapids, and name no landmark, so the landmark entries above miss them)"
+    },
+    {
+      "pages": ["/dispensary-locations/charlotte/"],
+      "contains": "Northland Dr",
+      "reason": "Big Rapids directions on the Charlotte page (v1 mainLines 41-75: the turn-by-turn lines under the declared Big Rapids landmarks; they lead to 804 Clark St, Big Rapids, and name no landmark, so the landmark entries above miss them)"
+    },
+    {
+      "pages": ["/dispensary-locations/charlotte/"],
+      "contains": "Perry Ave",
+      "reason": "Big Rapids directions on the Charlotte page (v1 mainLines 41-75: the turn-by-turn lines under the declared Big Rapids landmarks; they lead to 804 Clark St, Big Rapids, and name no landmark, so the landmark entries above miss them)"
+    },
+    {
+      "pages": ["/dispensary-locations/charlotte/"],
+      "contains": "Clark St",
+      "reason": "Big Rapids directions on the Charlotte page (v1 mainLines 41-75: the turn-by-turn lines under the declared Big Rapids landmarks; they lead to 804 Clark St, Big Rapids, and name no landmark, so the landmark entries above miss them)"
+    },
+    {
+      "pages": ["/dispensary-locations/charlotte/"],
+      "contains": "Campus Dr",
+      "reason": "Big Rapids directions on the Charlotte page (v1 mainLines 41-75: the turn-by-turn lines under the declared Big Rapids landmarks; they lead to 804 Clark St, Big Rapids, and name no landmark, so the landmark entries above miss them)"
+    },
+    {
+      "pages": ["/dispensary-locations/charlotte/"],
+      "contains": "Hemlock St",
+      "reason": "Big Rapids directions on the Charlotte page (v1 mainLines 41-75: the turn-by-turn lines under the declared Big Rapids landmarks; they lead to 804 Clark St, Big Rapids, and name no landmark, so the landmark entries above miss them)"
+    },
+    {
+      "pages": ["/dispensary-locations/charlotte/"],
+      "contains": "Maple St",
+      "reason": "Big Rapids directions on the Charlotte page (v1 mainLines 41-75: the turn-by-turn lines under the declared Big Rapids landmarks; they lead to 804 Clark St, Big Rapids, and name no landmark, so the landmark entries above miss them)"
+    },
+    {
+      "pages": ["/dispensary-locations/charlotte/"],
+      "contains": "Pass by Subway",
+      "reason": "Big Rapids directions on the Charlotte page (v1 mainLines 41-75: the turn-by-turn lines under the declared Big Rapids landmarks; they lead to 804 Clark St, Big Rapids, and name no landmark, so the landmark entries above miss them)"
+    },
+    {
+      "pages": ["/dispensary-locations/charlotte/"],
+      "contains": "18 Mile Rd",
+      "reason": "Big Rapids directions on the Charlotte page (v1 mainLines 41-75: the turn-by-turn lines under the declared Big Rapids landmarks; they lead to 804 Clark St, Big Rapids, and name no landmark, so the landmark entries above miss them)"
+    },
+    {
+      "pages": ["/dispensary-locations/charlotte/"],
+      "contains": "will be on the left",
+      "reason": "Big Rapids directions on the Charlotte page (v1 mainLines 41-75: the turn-by-turn lines under the declared Big Rapids landmarks; they lead to 804 Clark St, Big Rapids, and name no landmark, so the landmark entries above miss them); every one of Charlotte's own panels ends \"will be on the right\""
+    },
+    {
+      "pages": ["/"],
+      "contains": "804 clark st, big rapids",
+      "reason": "The v1 home's store slider prints Big Rapids' address on all 7 store cards (OPEN-DECISIONS section 2, item 6). The rebuild's cards print each store's own address from site.json stores."
+    }
+  ],
+  "corrections": [
+    { "page": "/dispensary-locations/big-rapids/", "from": "Big Rapdis", "to": "Big Rapids", "reason": "typo in the H1" },
+    { "page": "/dispensary-locations/new-buffalo/", "from": "(517) 786-3002", "to": "(269) 231-5213", "reason": "the pickup steps give Charlotte's number on the New Buffalo page" },
+    { "page": "/dispensary-locations/new-buffalo/", "from": "(231) 598-9302", "to": "(269) 231-5213", "reason": "the defective-product answer gives Big Rapids' number on the New Buffalo page" },
+    { "page": "/dispensary-locations/lenox/", "from": "(517) 708-8043", "to": "(586) 430-1347", "reason": "the menu line gives East Lansing's number on the Lenox page" },
+    { "page": "/dispensary-locations/", "from": "(269) 231-5123", "to": "(269) 231-5213", "reason": "New Buffalo's number: (269) 231-5213 on the store's own page, its 4 service-area pages and the store chooser; 231-5123 only on the location cards (a likely transposition). No third-party listing found (web search 2026-10-24). CLIENT TO CONFIRM." },
+    { "page": "/dispensary-locations/", "from": "515 Lansing Rd", "to": "515 Lansing St", "reason": "Charlotte: 'St' on the store's own page, the chooser and the maps link, and in third-party listings (County Journal pre-opening article: '515 Lansing Street'; AllBud; ganjapreneur directory, checked 2026-10-24)." },
+    { "page": "/dispensary-locations/new-buffalo/service-areas/", "from": "Three Oaks, MI\"", "to": "Three Oaks, MI", "reason": "stray trailing quote in the Union Pier card title (structure map: drop it)" },
+    { "page": "/", "from": "What Our Customers Says About Us", "to": "What Our Customers Say About Us", "reason": "the v1/v2 phone-only copy of the reviews heading says \"Says\"; the v2 home prints \"What Our Customers Say About Us\" (home.json reviews.title)" }
+  ],
+  "links": [
+    { "page": "/dispensary-locations/new-buffalo/", "defect": "the first 'CALL STORE' / tel: link dials (517) 786-3002 (Charlotte) and another dials Big Rapids; 'order now' also links the Big Rapids menu", "fix": "every link built from the store's own data" },
+    { "page": "/dispensary-locations/lenox/", "defect": "the menu link opens /shop/east-lansing/rec/ and a tel: link dials East Lansing", "fix": "every link built from the store's own data" },
+    { "page": "/dispensary-locations/", "defect": "canonical points at the staging host highsocietydisposgen.seogstage.com", "fix": "canonical = https://highsocietydispo.com + path (build)" }
+  ],
+  "keptForClient": [
+    "Payment: every store's first-time guide says 'We accept payments via cash, credit, or debit.' while the FAQs say cash and debit, Mount Pleasant's FAQ says credit cards are not accepted, and New Buffalo's info block lists Cash and ATM in-store. High Society's own words stay on its pages; new copy says only that cash works and options vary by store.",
+    "'Vertically integrated ... from cultivation to retail' on four store pages (the About page says High Society buys from vendors): kept as High Society's words on those pages, never repeated in new copy.",
+    "Every store page says medical patients 18+ with a card can buy: kept; whether each store holds a medical license is for High Society to confirm.",
+    "Lenox's city: 'Lenox' on its own page and in a third-party directory, 'New Haven' (the postal town for ZIP 48048) on the location cards. The rebuild shows Lenox."
+  ]
+}

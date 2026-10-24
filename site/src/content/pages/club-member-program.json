@@ -1,0 +1,234 @@
+{
+ "path": "/club-member-program/",
+ "template": "rewards",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/club-member-program/",
+  "hs:/club-member-program/ assets/in-pages/Price_Table.webp",
+  "v2:app"
+ ],
+ "titleFull": "Loyalty Program: Exclusive Rewards For Cannabis Enthusiasts",
+ "metaDescription": "Join High Society's loyalty program to earn points on every purchase, unlocking exclusive store rewards and discounts across our Michigan dispensaries.",
+ "h1": "High Society Cannabis Rewards Program",
+ "crumb": "Club Member Program",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Loyalty",
+   "path": "/loyalty/"
+  },
+  {
+   "name": "Club Member Program"
+  }
+ ],
+ "hero": {
+  "eyebrow": "Join The Loyalty Program",
+  "lead": "Unlock exclusive rewards and special perks with our loyalty program! Every purchase brings you closer to exciting benefits, including members-only discounts, early access to new products, and personalized offers tailored just for you. Sign up today and start earning points with every purchase.",
+  "ctas": [
+   {
+    "text": "Find a Store",
+    "href": "/dispensary-locations/"
+   },
+   {
+    "text": "See the Tiers",
+    "href": "#blk-loyalty-tier-and-perks",
+    "style": "ghost"
+   }
+  ]
+ },
+ "form": {
+  "before": "tiers",
+  "heading": "Sign Up For High Society Loyalty Program",
+  "lead": "Get access to special online-only sales, promotions, and specials!",
+  "slotId": "ix2cd",
+  "ctas": [
+   {
+    "text": "Find a Store",
+    "href": "/dispensary-locations/",
+    "style": "ghost"
+   }
+  ]
+ },
+ "faq": {
+  "before": "app",
+  "heading": "Frequently Asked Questions",
+  "items": [
+   {
+    "q": "1. What is the High Society Loyalty Program?",
+    "a": "Our loyalty program is designed to reward you for every purchase. As a member, you earn points with each transaction, unlocking access to exclusive discounts, special offers, and early access to new products."
+   },
+   {
+    "q": "2. How do I join the loyalty program?",
+    "a": "Joining is simple! Sign up in-store or online and start earning points immediately with your purchases."
+   },
+   {
+    "q": "3. What are the benefits of joining the program?",
+    "a": "Members enjoy perks like:",
+    "list": [
+     "Exclusive discounts",
+     "Personalized offers",
+     "Early access to new and limited-edition products"
+    ]
+   },
+   {
+    "q": "4. How do I earn points?",
+    "a": "Points are automatically added to your account with every qualifying purchase. The more you shop, the more you earn!"
+   },
+   {
+    "q": "5. How can I redeem my points?",
+    "a": "Redeem your points for discounts or rewards during checkout, either in-store or online. Our team will help you apply your rewards to your purchase."
+   },
+   {
+    "q": "6. Does it cost anything to join?",
+    "a": "No, joining the loyalty program is completely free!"
+   },
+   {
+    "q": "7. Can I track my points?",
+    "a": "Yes, you can track your points through your account in-store, online, or on the High Society App."
+   },
+   {
+    "q": "8. Are there any restrictions on earning or redeeming points?",
+    "a": "Points may not apply to certain promotions or products. Visit our website or ask our team for full details."
+   },
+   {
+    "q": "9. How do I stay updated on loyalty program perks?",
+    "a": "Members receive updates on new rewards, exclusive offers, and more through email or the High Society App."
+   }
+  ]
+ },
+ "blocks": [
+  {
+   "type": "rewards",
+   "id": "tiers",
+   "ground": "white",
+   "heading": "Loyalty Tier and Perks",
+   "caption": "High Society Cannabis Loyalty Tiers",
+   "image": {
+    "src": "assets/in-pages/Price_Table.webp",
+    "alt": "High Society Cannabis Loyalty Tiers"
+   },
+   "perksLabel": "Perks",
+   "tiers": [
+    "Member",
+    "Silver",
+    "Gold",
+    "Diamond"
+   ],
+   "yes": "Included",
+   "no": "Not included",
+   "rows": [
+    {
+     "label": "$ Spent Per Year",
+     "values": [
+      "FREE",
+      "$1,000",
+      "$2,500",
+      "$5,000"
+     ]
+    },
+    {
+     "label": "Points Earned Per $100 Spent",
+     "values": [
+      "500 Points: $5 off",
+      "500 Points: $6.25 off",
+      "500 Points: $7.50 off",
+      "500 Points: $10 off"
+     ]
+    },
+    {
+     "label": "Bonus Opportunities (happy point hours, new product highlights, random lottery, holidays)",
+     "includes": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "label": "Redeem Points for products or dollars off",
+     "includes": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "label": "Points never expire",
+     "includes": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "label": "Automatically be entered in raffles, random lottery, penny products, merch, & more",
+     "includes": [
+      false,
+      false,
+      true,
+      true
+     ]
+    },
+    {
+     "label": "First pick to Exclusive drops of new products & merch",
+     "includes": [
+      false,
+      false,
+      false,
+      true
+     ]
+    },
+    {
+     "label": "Special Holiday Gift",
+     "includes": [
+      false,
+      false,
+      false,
+      true
+     ]
+    }
+   ],
+   "ctas": [
+    {
+     "text": "Loyalty Program FAQ",
+     "href": "/loyalty/"
+    }
+   ]
+  },
+  {
+   "type": "split",
+   "id": "app",
+   "ground": "charcoal",
+   "heading": "Download the High Society App",
+   "md": "Experience convenience at your fingertips with the High Society App. Easily browse our full cannabis menu, stay updated on the latest deals, and place your orders with just a few taps. Whether you're at home or on the go, managing your cannabis experience has never been easier.",
+   "image": "derived:app-phone-mockup",
+   "imageAlt": "",
+   "ctas": [
+    {
+     "text": "Download Now",
+     "href": "https://apps.apple.com/us/app/high-society-cannabis/id6503314334"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen-other.mjs",
+  "fixes": [
+   "the FAQ keeps its numbers as High Society publishes them",
+   "the perks answer shown as a list (see /loyalty/)",
+   "tier table: \"preoduct\" -> \"product\""
+  ],
+  "newCopy": [
+   "hero buttons",
+   "tier table cell words",
+   "the tier band's button label"
+  ],
+  "notCarried": []
+ }
+}

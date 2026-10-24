@@ -1,0 +1,483 @@
+{
+ "path": "/dispensary-locations/saline/",
+ "template": "location",
+ "store": "saline",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/dispensary-locations/saline/",
+  "v2:join",
+  "v2:reviews",
+  "v2:app"
+ ],
+ "titleFull": "High Society Weed Dispensary Saline",
+ "metaDescription": "Explore High Society's Saline weed dispensary for top-quality cannabis products and exceptional customer service. Your trusted dispensary in Michigan.",
+ "h1": "Weed Dispensary in Saline, MI",
+ "crumb": "Saline",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Locations",
+   "path": "/dispensary-locations/"
+  },
+  {
+   "name": "Saline"
+  }
+ ],
+ "geo": {
+  "lat": 42.1721206,
+  "lng": -83.7721604
+ },
+ "storeSameAs": [
+  "https://www.facebook.com/profile.php?id=100091873056721",
+  "https://www.instagram.com/highsocietydispomi/"
+ ],
+ "hero": {
+  "eyebrow": "High Society Saline · Recreational 21+",
+  "image": "assets/pit-stop/img/scene-saline.jpg",
+  "imageAlt": "",
+  "lead": "Shop Cannabis Products",
+  "ctas": [
+   {
+    "text": "Order Now",
+    "href": "/shop/saline/"
+   },
+   {
+    "text": "Get Direction",
+    "href": "https://www.google.com/maps/dir//High+Society+Weed+Dispensary+Saline,+465+E+Michigan+Ave,+Saline,+MI+48176,+United+States/@42.1721206,-83.7721604,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x883cbba6ea421d95:0xd12eec0b41841a7c!2m2!1d-83.7721604!2d42.1721206!3e0",
+    "style": "ghost"
+   }
+  ],
+  "status": {
+   "open": "Open - Closes at 9:00 PM",
+   "closed": "Closed - Opens at 9:00 AM"
+  },
+  "mapsUrl": "https://www.google.com/maps/dir//High+Society+Weed+Dispensary+Saline,+465+E+Michigan+Ave,+Saline,+MI+48176,+United+States/@42.1721206,-83.7721604,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x883cbba6ea421d95:0xd12eec0b41841a7c!2m2!1d-83.7721604!2d42.1721206!3e0"
+ },
+ "visiting": {
+  "before": "amenities",
+  "heading": "High Society Weed Dispensary Saline",
+  "lead": "Whether you’re a resident of [Saline, MI](https://www.cityofsaline.org/), or just passing through, this lively city provides a variety of unique experiences and attractions. Explore its rich cultural history or enjoy a leisurely stroll through the picturesque downtown. Saline offers something for everyone. Here are some top attractions to check out:",
+  "label": "FOLLOW THESE DIRECTIONS FROM",
+  "tabs": [
+   {
+    "label": "Cinemark Ann Arbor 20 and IMAX",
+    "title": "Directions From Cinemark Ann Arbor 20 and IMAX",
+    "md": "We are located only 13 minutes from [Cinemark Ann Arbor 20 and IMAX](https://www.google.com/maps/place/Cinemark+Ann+Arbor+20+and+IMAX/@42.2155525,-83.7193745,14z/data=!4m14!1m7!3m6!1s0x883cbba6ea421d95:0xd12eec0b41841a7c!2sHigh+Society+Weed+Dispensary+Saline!8m2!3d42.1721206!4d-83.7721604!16s%2Fg%2F11kj6xn_2v!3m5!1s0x883caf53d5d21065:0x44fca0a2afa05bd2!8m2!3d42.2272941!4d-83.6818787!16s%2Fg%2F11b5m0z6gl?hl=en&entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D).\n\n1. Head north toward Carpenter Rd\n2. Turn right toward Carpenter Rd\n3. Turn right onto Carpenter Rd\n4. Turn right onto US-12 W/W Michigan Ave\n5. Turn right\n6. Keep right\n7. Turn left\n\nOur cannabis dispensary will be on the right"
+   },
+   {
+    "label": "Emagine Saline",
+    "title": "Directions From Emagine Saline",
+    "md": "We are located only 3 minutes from the infamous [Emagine Saline](https://www.google.com/maps/place/Emagine+Saline/@42.1469238,-83.7769042,13z/am=t/data=!4m23!1m16!4m15!1m6!1m2!1s0x883caf53d5d21065:0x44fca0a2afa05bd2!2sCinemark+Ann+Arbor+20+and+IMAX,+4100+Carpenter+Rd,+Ypsilanti,+MI+48197,+United+States!2m2!1d-83.6818787!2d42.2272941!1m6!1m2!1s0x883cbba6ea421d95:0xd12eec0b41841a7c!2sHigh+Society+Cannabis+Saline,+East+Michigan+Avenue,+Saline,+MI,+USA!2m2!1d-83.7721604!2d42.1721206!3e0!3m5!1s0x883ca4d3ad96ff97:0x94ad0bbf7bc2f842!8m2!3d42.1782119!4d-83.7594417!16s%2Fg%2F11c6cd3v1d?hl=en&entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D).\n\n1. Continue to E Michigan Ave\n2. Turn right onto E Michigan Ave\n3. Turn right\n4. Keep right\n\nTurn left. Our cannabis dispensary will be on the right"
+   },
+   {
+    "label": "Station 300 Saline",
+    "title": "Directions From Station 300 Saline",
+    "md": "We are located only 4 minutes from [Station 300 Saline](https://www.google.com/maps/place/Station+300+Saline/@42.1674205,-83.8041617,14z/am=t/data=!4m27!1m20!4m19!1m6!1m2!1s0x883ca4d3ad96ff97:0x94ad0bbf7bc2f842!2sEmagine+Saline,+1335+E+Michigan+Ave,+Saline,+MI+48176,+United+States!2m2!1d-83.7594468!2d42.178211!1m6!1m2!1s0x883cbba6ea421d95:0xd12eec0b41841a7c!2sHigh+Society+Cannabis+Saline,+East+Michigan+Avenue,+Saline,+MI,+USA!2m2!1d-83.7721604!2d42.1721206!3e0!6m3!1i0!2i1!3i0!3m5!1s0x883cbb28f199aedb:0x234cb27553c90301!8m2!3d42.1827977!4d-83.7713137!16s%2Fg%2F1tf7bs5x?hl=en&entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D).\n\n1. Head east toward Woodland Dr E\n2. Turn left toward Woodland Dr E\n3. Take N Maple Rd to Leutheuser Dr\n4. Turn left onto Woodland Dr E\n5. Turn left onto N Maple Rd\n6. Turn left onto Leutheuser Dr\n7. Turn right\n8. Turn right\n\nTurn left. Our dispensary will be on the left"
+   },
+   {
+    "label": "The Wellers Weddings",
+    "title": "Directions From the Wellers Weddings",
+    "md": "We are located only 4 minutes from the Wellers Weddings.\n\n1. Head northeast toward W Michigan Ave\n2. Turn right onto W Michigan Ave\n3. Pass by Domino's Pizza (on the left in 1 mi)\n4. Turn left\n5. Keep right\n\nTurn left. Our marijuana dispensary will be on the right"
+   }
+  ]
+ },
+ "blocks": [
+  {
+   "type": "cta",
+   "id": "rewards-teaser",
+   "ground": "red",
+   "heading": "Join The Society",
+   "md": "Sign up to get early access to strain drops, special pricing, birthday rewards and more",
+   "ctas": [
+    {
+     "text": "Join the Society Today",
+     "href": "/club-member-program/"
+    }
+   ]
+  },
+  {
+   "type": "store-details",
+   "id": "store-details",
+   "ground": "white",
+   "heading": "Store Info",
+   "store": "saline",
+   "name": "High Society Saline",
+   "facts": [
+    "hours",
+    "address",
+    "email",
+    "phone"
+   ],
+   "hoursText": "Open Daily: 9:00 AM - 9:00 PM",
+   "addressText": "465 E Michigan Ave, Saline, MI 48176, United States",
+   "email": "info@highsocietydispo.com",
+   "mapsUrl": "https://www.google.com/maps/dir//High+Society+Weed+Dispensary+Saline,+465+E+Michigan+Ave,+Saline,+MI+48176,+United+States/@42.1721206,-83.7721604,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x883cbba6ea421d95:0xd12eec0b41841a7c!2m2!1d-83.7721604!2d42.1721206!3e0",
+   "ctas": [
+    {
+     "text": "View Menu",
+     "href": "shop"
+    },
+    {
+     "text": "Get Direction",
+     "href": "maps",
+     "style": "ghost"
+    }
+   ],
+   "social": [
+    {
+     "network": "facebook",
+     "href": "https://www.facebook.com/profile.php?id=100091873056721",
+     "label": "High Society Saline on Facebook"
+    },
+    {
+     "network": "instagram",
+     "href": "https://www.instagram.com/highsocietydispomi/",
+     "label": "High Society Saline on Instagram"
+    }
+   ],
+   "about": {
+    "heading": "The Best Weed Dispensary In Saline, Michigan",
+    "md": "High Society Cannabis in Saline is a premier cannabis retailer, known for exceptional customer service and a wide selection of premium cannabis products. Their lineup includes renowned brands like Breeze Canna, Church Cannabis Company, Good Tide, and North Coast Extracts, celebrated for their quality and potency. This dedication to excellence has made High Society Cannabis a top choice for premium cannabis in Saline.",
+    "linksLabel": "More about High Society Saline",
+    "links": [
+     {
+      "text": "Deals",
+      "href": "/deals/"
+     },
+     {
+      "text": "Loyalty",
+      "href": "/loyalty/"
+     },
+     {
+      "text": "FAQs",
+      "href": "#faq"
+     },
+     {
+      "text": "Medical Card Guide",
+      "href": "/getting-a-medical-card/"
+     }
+    ]
+   }
+  },
+  {
+   "type": "amenities",
+   "id": "amenities",
+   "ground": "white",
+   "heading": "Store Amenities",
+   "groups": [
+    {
+     "title": "We Offer",
+     "items": [
+      {
+       "icon": "pin",
+       "label": "Curbside Pickup"
+      },
+      {
+       "icon": "bag",
+       "label": "In-Store Pickup"
+      },
+      {
+       "icon": "cart",
+       "label": "In-Store Shopping"
+      }
+     ]
+    },
+    {
+     "title": "Pay With",
+     "items": [
+      {
+       "icon": "tag",
+       "label": "Cash"
+      },
+      {
+       "icon": "check",
+       "label": "Debit Card"
+      },
+      {
+       "icon": "home",
+       "label": "ATM in-store"
+      }
+     ]
+    },
+    {
+     "title": "Before You Go",
+     "items": [
+      {
+       "icon": "user",
+       "label": "Valid government-issued ID or passport, 21+"
+      },
+      {
+       "icon": "cart",
+       "label": "Order online for pickup; curbside customers get a text when the order is ready"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "id": "first-visit",
+   "ground": "headlight",
+   "heading": "First-Time Customer Guide",
+   "items": [
+    {
+     "title": "Who Can Shop",
+     "md": "Recreational shopping is available to individuals aged 21 or older."
+    },
+    {
+     "title": "Check In",
+     "md": "Upon arrival, present a valid government-issued ID or passport and check in with the security and front desk team."
+    },
+    {
+     "title": "Stay in the Loop",
+     "md": "Provide your phone number and email to stay updated on special deals and discounts."
+    },
+    {
+     "title": "Meet Your Budtender",
+     "md": "A budtender will call you from the waiting area when it’s your turn. They’ll assist with product selection and answer any questions, whether you’re a first-time visitor or a returning customer."
+    },
+    {
+     "title": "Choose Your Items",
+     "md": "After finalizing your selections, the budtender will alert the order preparation team. Payments can be made using cash, credit, or debit cards."
+    },
+    {
+     "title": "Complete Your Purchase",
+     "md": "Once your order is ready, a staff member will call your name, process the payment, and review the details to ensure accuracy before completing the transaction."
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "id": "order-pickup",
+   "ground": "white",
+   "heading": "How to Place an Order for Dispensary Pick-Up",
+   "items": [
+    {
+     "title": "Browse the Menu",
+     "md": "Browse our [Saline dispensary menu](/shop/saline/) online or contact us at [(734) 470-6023](tel:+17344706023) if you need assistance."
+    },
+    {
+     "title": "Build Your Order",
+     "md": "Choose your preferred products, set the quantities, add them to your cart, and select a convenient pickup time"
+    },
+    {
+     "title": "Check Out",
+     "md": "Complete your order by providing your details. First-time visitors must present a valid ID for verification, while returning customers can log in for a faster checkout process."
+    },
+    {
+     "title": "Curbside Pickup",
+     "md": "Interested in curbside pickup? Let us know, and we’ll notify you via text when your order is ready for collection."
+    },
+    {
+     "title": "Enjoy Responsibly",
+     "md": "Enjoy cannabis responsibly. We’re committed to ensuring a seamless and stress-free shopping experience!"
+    }
+   ]
+  },
+  {
+   "type": "deals",
+   "id": "deals",
+   "source": "site",
+   "ground": "headlight",
+   "heading": "Deals",
+   "lead": "Deals vary by store and change often. The menu shows today's deals at High Society Saline.",
+   "more": {
+    "text": "See all deals",
+    "href": "/deals/"
+   }
+  },
+  {
+   "type": "cards",
+   "id": "categories",
+   "ground": "white",
+   "columns": 4,
+   "heading": "Shop Cannabis Products",
+   "items": [
+    {
+     "title": "Flower",
+     "icon": "leaf",
+     "href": "/shop/saline/?dtche%5Bcategory%5D=flower",
+     "md": "Each cannabis strain is carefully curated to your needs, whether you're seeking relaxation, creativity, or a balanced high."
+    },
+    {
+     "title": "Pre-Rolls",
+     "icon": "spark",
+     "href": "/shop/saline/?dtche%5Bcategory%5D=pre-rolls"
+    },
+    {
+     "title": "Concentrates",
+     "icon": "drop",
+     "href": "/shop/saline/?dtche%5Bcategory%5D=concentrates",
+     "md": "From shatter to wax, our concentrates are ideal for experienced users looking for a powerful and fast-acting option."
+    },
+    {
+     "title": "Vaporizers",
+     "icon": "wave",
+     "href": "/shop/saline/?dtche%5Bcategory%5D=vaporizers"
+    }
+   ]
+  },
+  {
+   "type": "reviews",
+   "id": "reviews",
+   "source": "home",
+   "heading": "What Our Customers Say About Us",
+   "lead": "Google reviews from High Society customers across our Michigan stores."
+  },
+  {
+   "type": "faq",
+   "id": "faq",
+   "ground": "white",
+   "heading": "Frequently Asked Questions",
+   "lead": "More questions? Visit our [FAQ page](/faq/).",
+   "items": [
+    {
+     "q": "What are the requirements to shop at High Society Weed Dispensary Saline?",
+     "a": "To shop at our dispensary, you must present a valid government-issued ID confirming you are 21 or older. Individuals 18 and above with a valid medical marijuana card are also eligible to make purchases."
+    },
+    {
+     "q": "What should I do if I receive a defective product?",
+     "a": "If you experience an issue with the quality or functionality of a product, contact us at [(734) 470-6023](tel:+17344706023) or visit the store where the purchase was made. Our team will be happy to assist."
+    },
+    {
+     "q": "How can I pay at your dispensary?",
+     "a": "We accept cash and debit payments, and an ATM is available in-store for your convenience. Mobile payment options may be available at select locations—please inquire with your nearest store."
+    },
+    {
+     "q": "Is it legal to transport cannabis?",
+     "a": "Cannabis purchases are legal in Michigan; however, transporting cannabis across state lines is prohibited under federal law. Please avoid taking cannabis products out of the state."
+    },
+    {
+     "q": "What products are available at the dispensary?",
+     "a": "We offer a wide selection of premium cannabis products, including flower, pre-rolls, concentrates, vape pens, edibles, and more. Explore our menu or reach out with any specific questions."
+    },
+    {
+     "q": "Is there a rewards program available at High Society?",
+     "a": "Join The Society, our exclusive loyalty program! Earn points every time you shop, and use them for discounts and perks. Talk to our staff to sign up today."
+    }
+   ]
+  },
+  {
+   "type": "amenities",
+   "id": "service-area",
+   "ground": "headlight",
+   "heading": "Locations Where Our Dispensary Provides Service",
+   "groups": [
+    {
+     "title": "Towns",
+     "items": [
+      {
+       "icon": "pin",
+       "label": "Saline"
+      },
+      {
+       "icon": "pin",
+       "label": "Bridgewater"
+      },
+      {
+       "icon": "pin",
+       "label": "Benton"
+      },
+      {
+       "icon": "pin",
+       "label": "Ann Arbor"
+      }
+     ]
+    },
+    {
+     "title": "ZIP Codes We Serve",
+     "items": [
+      {
+       "icon": "target",
+       "label": "48176"
+      },
+      {
+       "icon": "target",
+       "label": "48108"
+      },
+      {
+       "icon": "target",
+       "label": "48197"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "id": "resources",
+   "ground": "white",
+   "heading": "Other Resources",
+   "style": "dot",
+   "items": [
+    "Stay informed about the latest [marijuana regulations and updates](https://www.cityofsaline.org/departments/building___engineering/medical_marijuana.php) in Saline, MI.",
+    "Keep track of key [cannabis news and developments](https://www.michigan.gov/cra/laws-rules-other) throughout Michigan.",
+    "Read our guide to [Michigan marijuana laws](/cannabis-laws-by-state/michigan/)."
+   ]
+  },
+  {
+   "type": "nearby",
+   "id": "nearby",
+   "store": "saline",
+   "order": [
+    "east-lansing",
+    "charlotte",
+    "lenox",
+    "birch-run",
+    "mount-pleasant",
+    "big-rapids",
+    "new-buffalo"
+   ],
+   "heading": "Other High Society Locations",
+   "lead": "Our other Michigan stores, nearest first.",
+   "view": {
+    "text": "View Location"
+   }
+  },
+  {
+   "type": "split",
+   "id": "app",
+   "ground": "charcoal",
+   "heading": "Download the High Society App",
+   "md": "Experience convenience at your fingertips with the High Society App. Easily browse our full cannabis menu, stay updated on the latest deals, and place your orders with just a few taps. Whether you're at home or on the go, managing your cannabis experience has never been easier.",
+   "image": "derived:app-phone-mockup",
+   "imageAlt": "",
+   "ctas": [
+    {
+     "text": "Download Now",
+     "href": "https://apps.apple.com/us/app/high-society-cannabis/id6503314334"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen.mjs",
+  "fixes": [
+   "h1 casing normalised (High Society's words kept): \"Weed Dispensary in Saline, mi\" -> \"Weed Dispensary in Saline, MI\""
+  ],
+  "newCopy": [
+   "tab title \"Directions From Cinemark Ann Arbor 20 and IMAX\" (v1 prints this panel without its own heading)",
+   "tab title \"Directions From Emagine Saline\" (v1 prints this panel without its own heading)",
+   "tab title \"Directions From Station 300 Saline\" (v1 prints this panel without its own heading)",
+   "tab title \"Directions From The Wellers Weddings\" (v1 prints this panel without its own heading)",
+   "resources: \"Read our guide to Michigan marijuana laws.\" (link to the planned law guide)",
+   "hero eyebrow (store name + \"Recreational 21+\")",
+   "store-details \"more\" link labels (Deals, Loyalty, FAQs, Medical Card Guide)",
+   "amenities heading \"Store Amenities\" and group \"Before You Go\" (its two lines condense High Society's ID and ordering steps)",
+   "step titles (the step texts are High Society's)",
+   "deals heading and lead",
+   "reviews lead",
+   "FAQ lead",
+   "service-area group titles",
+   "nearby heading and lead"
+  ],
+  "keptForClient": [
+   "first-time guide payment line (\"cash, credit, or debit\") vs the FAQ (cash and debit): OPEN-DECISIONS 4",
+   "medical patients 18+ in the FAQ (OPEN-DECISIONS 5)"
+  ]
+ }
+}

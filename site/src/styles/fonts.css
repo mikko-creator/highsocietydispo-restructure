@@ -1,0 +1,25 @@
+/* fonts.css — the brand card's own fonts (pit-stop-brand-card assets/picked/type/), made light for the web by
+   src/tools/optimize-fonts.py (WOFF2, cut to a Latin set, features, hinting and metrics kept): Changa One 400 (display), Changa 300–800 (headlines, eyebrows, taglines, buttons), Work Sans 400–700
+   (paragraphs). Same files, same family names, same weights; one change: font-display swap instead of the card's block,
+   so text is never invisible while a face loads (the metric-matched fallbacks below keep the layout from jumping).
+   The weights the page does not use (Changa 200 and 400, Changa One italic) are left out of the build. */
+@font-face { font-family: "Changa One"; font-style: normal; font-weight: 400; font-display: swap; src: url("../assets/changa-one-400.woff2") format("woff2"); }
+@font-face { font-family: "Changa"; font-style: normal; font-weight: 300; font-display: swap; src: url("../assets/changa-300.woff2") format("woff2"); }
+@font-face { font-family: "Changa"; font-style: normal; font-weight: 500; font-display: swap; src: url("../assets/changa-500.woff2") format("woff2"); }
+@font-face { font-family: "Changa"; font-style: normal; font-weight: 600; font-display: swap; src: url("../assets/changa-600.woff2") format("woff2"); }
+@font-face { font-family: "Changa"; font-style: normal; font-weight: 700; font-display: swap; src: url("../assets/changa-700.woff2") format("woff2"); }
+@font-face { font-family: "Changa"; font-style: normal; font-weight: 800; font-display: swap; src: url("../assets/changa-800.woff2") format("woff2"); }
+@font-face { font-family: "Work Sans"; font-style: normal; font-weight: 400; font-display: swap; src: url("../assets/work-sans-400.woff2") format("woff2"); }
+@font-face { font-family: "Work Sans"; font-style: normal; font-weight: 500; font-display: swap; src: url("../assets/work-sans-500.woff2") format("woff2"); }
+@font-face { font-family: "Work Sans"; font-style: normal; font-weight: 600; font-display: swap; src: url("../assets/work-sans-600.woff2") format("woff2"); }
+@font-face { font-family: "Work Sans"; font-style: normal; font-weight: 700; font-display: swap; src: url("../assets/work-sans-700.woff2") format("woff2"); }
+
+/* Fallbacks: Arial bands scaled to each brand face's measured advance widths (fontTools, the same 70-character sample
+   in both faces, 2026-10-21: Changa One / Arial Bold .846, Changa 800 / Arial Bold .871, Work Sans / Arial 1.137,
+   Work Sans 600 / Arial Bold 1.047) with the brand faces' own ascent and descent. The fit with the fallback alone is
+   proved by `check.mjs --fonts block`, not by these numbers. */
+@font-face { font-family: "Changa One Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"); font-weight: 400; size-adjust: 84.6%; ascent-override: 104%; descent-override: 21%; line-gap-override: 0%; }
+@font-face { font-family: "Changa Fallback"; src: local("Arial"), local("ArialMT"); font-weight: 300 500; size-adjust: 91%; ascent-override: 135%; descent-override: 67%; line-gap-override: 0%; }
+@font-face { font-family: "Changa Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"); font-weight: 600 900; size-adjust: 87.1%; ascent-override: 141%; descent-override: 70%; line-gap-override: 0%; }
+@font-face { font-family: "Work Sans Fallback"; src: local("Arial"), local("ArialMT"); font-weight: 300 500; size-adjust: 113.7%; ascent-override: 82%; descent-override: 21%; line-gap-override: 0%; }
+@font-face { font-family: "Work Sans Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"); font-weight: 600 900; size-adjust: 104.7%; ascent-override: 89%; descent-override: 23%; line-gap-override: 0%; }

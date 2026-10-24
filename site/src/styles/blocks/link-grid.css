@@ -1,0 +1,9 @@
+/* blocks/link-grid.css — groups of links (core; also the site map): v2's footer language on any ground: a small red
+   label on a hairline, then 44px rows with the red trophy bullet. */
+.linkgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: var(--s-4) var(--s-5); }
+.linkgrid__group { min-width: 0; }
+.linkgrid__title { padding-bottom: .8rem; border-bottom: 1px solid var(--line); font: 700 .78rem/1.2 var(--font-display); letter-spacing: .2em; text-transform: uppercase; color: var(--em); }
+.linkgrid__links { margin-top: .3rem; }
+.linkgrid__links a { display: flex; align-items: center; gap: 10px; min-height: var(--tap); padding: 4px 0; border-bottom: 1px solid var(--line); font: 600 1rem/1.25 var(--font-head); color: var(--fg); transition: color var(--dur) var(--ease); }
+.linkgrid__links a::before { content: ""; flex: none; width: 15px; height: 15px; background: var(--mark-red) center / contain no-repeat; }
+.linkgrid__links a:hover, .linkgrid__links a:focus-visible { color: var(--em); }

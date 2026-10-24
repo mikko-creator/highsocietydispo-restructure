@@ -1,0 +1,19 @@
+{
+ "path": "/blog/recipes/",
+ "template": "blog-index",
+ "provenance": "new",
+ "title": "Cannabis Recipes: Infused Food and Drinks",
+ "crumb": "Recipes",
+ "metaDescription": "Cannabis recipes for adults 21+: infused butter and oil, baked goods, savory dishes and drinks, each with a dosing note for cooking responsibly at home.",
+ "h1": "Cannabis Recipes",
+ "hero": {
+  "lead": "Cooking with cannabis starts with two building blocks: decarboxylated flower and an infused butter or oil. Our cannabis recipes cover both, then put them to work in baked goods, savory dishes, sauces and infused drinks, each with a dosing note. Homemade edibles are hard to dose evenly, so start with a small serving, wait before having more, label everything clearly and store it away from children and pets. For adults 21 and older."
+ },
+ "sourceRefs": [
+  "structure-map:/blog/recipes/",
+  "structure-map:newPageBriefs blog-category-intros"
+ ],
+ "review": {
+  "notes": "Title and h1 from the structure map; intro and description are new copy (brief blog-category-intros: 50-100 words). Category from site.json blog.categories (the build pairs this page with its slug by path). Topics from the recipe briefs (docs/briefs: butters, oils, honey, syrup, baked goods, savory dishes, drinks)."
+ }
+}

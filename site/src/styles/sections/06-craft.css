@@ -1,0 +1,280 @@
+/* 06-craft — Where Cannabis Meets Craftmanship, in the reskin's own look (its stylesheet: #ikvbl, the ink split, and
+   #ig6ch #ilkdz, the product panel). Ink ground; the HS logo art huge in white on the bare ink (no plate, no texture);
+   the race number over the giant title (Changa One 900, the kit's .title); the paragraph in Work Sans at the reskin's
+   1.02–1.2rem, line-height 1.6, soft white (--fg-2, the reskin's quiet values on ink), at most 36rem wide as the
+   reskin's; About as the red button. The product panel in the reskin's white/cream language: a 12px checkered strip
+   along its top, the photo ALONE on white (#i9c1d), then the cream (Headlight) cell that holds the red trophy roundel,
+   the reskin's short red rule and the second "learn more" (#iz3lr). The Menu link is the kit's light-ground ghost at
+   its own width (the section keeps ONE red action). Square, flat, no shadows.
+   Two compositions, one markup:
+   - phones and portrait tablets: the art and the product panel side by side on top (the flexible row, with a floor),
+     the title, the paragraph, the two links side by side as an equal pair at the bottom. .craft__copy and
+     .craft__panel are display: contents, so their parts take the grid's rows; the Menu link leaves the cream foot for
+     the link row (on ink, the white ghost). Tall phones and portrait tablets paint the cream foot with the roundel
+     under the photo; short phones (no room for the foot) show the photo alone on white
+   - landscape from 768px: the art at the full content height on the left; the title across the right; under it the
+     paragraph with About, and the product panel standing beside them (landscape tablets: at the full remaining
+     height; desktop: at its natural height, the group centred on the screen); both "learn more" sit on one bottom
+     line, each under the reskin's short red rule */
+.craft {
+  --craft-fs: clamp(1.75rem, min(9.4cqi, 6svh), 2.75rem);     /* the title on its two source lines, sized to the column */
+  --craft-body: clamp(.95rem, .9rem + .3vw, 1rem);
+  --craft-lh: 1.6;
+  --craft-top: clamp(96px, 24svh - 60px, 300px);              /* phones: the floor of the art + panel row (it grows past it) */
+  --craft-checker: 10px;
+  --craft-roundel: 44px;
+}
+.craft__inner {
+  container-type: inline-size;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: minmax(var(--craft-top), 1fr) auto auto auto;
+  grid-template-areas: "art shot" "head head" "text text" "about side";
+  gap: var(--gap) var(--s-2);
+}
+.craft__copy, .craft__panel { display: contents; }
+.craft__head { grid-area: head; }
+.craft__text { grid-area: text; }
+.craft__about { grid-area: about; }
+.craft__art { grid-area: art; }
+.craft__shot { grid-area: shot; }
+.craft__side { grid-area: side; }
+
+/* ---- the head and the copy */
+.craft__title { font-size: var(--craft-fs); }
+/* phones wrap the paragraph plainly (pretty pulled a ninth line at 360 wide); from 768px pretty evens the rag */
+.craft__text { font: 400 var(--craft-body)/var(--craft-lh) var(--font-body); color: var(--fg-2); max-width: 36rem; }
+@media (min-width: 768px) { .craft__text { text-wrap: pretty; } }
+.craft__about, .craft__menu { padding-inline: 1em; }
+/* the link cell wraps: a filled CMS slot (i4epo) takes its own full line before the link */
+.craft__side { display: flex; flex-wrap: wrap; align-items: center; row-gap: var(--s-1); min-width: 0; }
+.craft__side .cms-slot { flex: 0 0 100%; order: -2; }
+.craft__menu { flex: 1 1 auto; }
+.craft__about .icon, .craft__menu .icon { transition: transform var(--dur) var(--ease); }
+.craft__about:hover .icon--arrow { transform: translateX(3px); }
+
+/* ---- the HS logo art: white on the bare ink, whole (contain). The view box trims only the file's empty transparent
+   margin (the art spans 3–97% across, 11–92% down, in both the desktop and the phone file) */
+.craft__art { position: relative; min-width: 0; min-height: 0; }
+.craft__logo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-view-box: inset(10.5% 3% 8% 3%); }
+
+/* ---- the product photo cell: white, the checkered strip along the top, the photo alone on it. The photo is framed on
+   the product (the file's white margins trimmed by the view box), contained, never cut; brightness(1.02) lifts the
+   file's faint compositing seams (252–254 grey on 255) into the white */
+.craft__shot { position: relative; min-width: 0; min-height: 0; overflow: hidden; background: var(--white); }
+.craft__shot::before { content: ""; position: absolute; left: 0; right: 0; top: 0; z-index: 1; height: var(--craft-checker); background: var(--checker) repeat-x left center / auto 100%; }
+.craft__photo { position: absolute; left: 6%; top: calc(var(--craft-checker) + 6%); width: 88%; height: calc(100% - var(--craft-checker) - 11%); object-fit: contain; object-view-box: inset(12% 9% 6% 19%); filter: brightness(1.02); transition: transform 600ms var(--ease); }
+@media (prefers-reduced-motion: no-preference) { .craft__shot:hover .craft__photo { transform: scale(1.04); } }
+
+/* engines without object-view-box (it is Chromium's): the photo's trim approximated by scaling it inside its clipped
+   white cell, about the point that splits its empty margins; the scale stays under the smaller margin ratio (1/.82
+   down), so no product edge can leave the box. The art is width-bound in its cell, where the view box gains only its
+   3% side margins: it shows whole without it (about 6% smaller), never scaled past the column's gutter */
+@supports not (object-view-box: inset(0)) {
+  .craft__photo { scale: 1.2; transform-origin: 67.9% 66.7%; }
+}
+
+/* tall phones and portrait tablets: the reskin's phone panel — the photo on white over a cream foot that holds the
+   roundel, the reskin's short red rule on the seam (all painted by the cell itself: no text sits there) */
+@media (max-width: 767.98px) and (min-height: 800px), (min-width: 768px) and (orientation: portrait) {
+  .craft { --craft-foot: 64px; }
+  .craft__shot { background: linear-gradient(var(--red), var(--red)) left var(--s-1) bottom calc(var(--craft-foot) - 2px) / 2.5rem 3px no-repeat, linear-gradient(0deg, var(--headlight) var(--craft-foot), var(--white) var(--craft-foot)); }
+  .craft__shot::after { content: ""; position: absolute; z-index: 1; left: var(--s-1); bottom: calc((var(--craft-foot) - var(--craft-roundel)) / 2); width: var(--craft-roundel); aspect-ratio: 1; background: var(--mark-red) center / contain no-repeat; }
+  .craft__photo { top: calc(var(--craft-checker) + 5%); height: calc(100% - var(--craft-checker) - var(--craft-foot) - 8%); }
+}
+/* short phones: the row of art and panel held by its floor, paid for by the text block's steps: 8px between the rows,
+   the title at the scale's floor, the paragraph at line-height 1.5, 44px links (the tap minimum) */
+@media (max-width: 767.98px) and (max-height: 680px) {
+  .craft { --craft-top: 96px; --craft-fs: 1.75rem; --craft-lh: 1.5; }
+  .craft__inner { row-gap: var(--s-1); }
+  .craft__about, .craft__menu { min-height: 44px; }
+}
+
+/* portrait tablets: the phone composition at tablet size; the two links an equal pair, as on phones (About fills its
+   column, the Menu its cell) */
+@media (min-width: 768px) and (orientation: portrait) {
+  .craft { --craft-fs: clamp(2.5rem, min(9.4cqi, 6svh), 4rem); --craft-body: clamp(1rem, .9rem + .3vw, 1.125rem); --craft-top: 260px; --craft-checker: 12px; --craft-roundel: 64px; --craft-foot: 96px; }
+  .craft__inner { gap: var(--gap-lg) var(--gap); }
+  /* the kit's 48px default (not --lg's 56): the links close the section, so their line sits within the air limit
+     above the floating pair's padding */
+  .craft__about, .craft__menu { min-height: 48px; padding-inline: 1.8em; }
+  .craft__shot { background-position: left var(--s-2) bottom calc(var(--craft-foot) - 2px), 0 0; }
+  .craft__shot::after { left: var(--s-2); }
+}
+
+/* landscape from 768px: the reskin's split with the panel beside the copy. The middle column is wide enough for the
+   paragraph to run 37–50 characters a line; the art keeps the rest. Both "learn more" share one bottom line, each
+   under the reskin's short red rule (#iz3lr::after): the cream foot draws its own, the copy column draws the same
+   rule at the same height on the ink (decoration: a pseudo-element beside the text, never under it). One button
+   height for both (--craft-btn-h, the kit's --lg value) keeps the two rules level */
+@media (min-width: 768px) and (orientation: landscape) {
+  .craft {
+    --craft-fs: min(var(--fs-h2), 5.4cqi);
+    --craft-body: clamp(1rem, min(.95rem + .3vw, 2.36svh), 1.2rem);
+    --craft-checker: 12px;
+    --craft-btn-h: clamp(48px, 6.4svh, 56px);
+    --craft-rule-y: calc(var(--s-2) + var(--craft-btn-h) + var(--s-3) - 3px);   /* the rule's distance from the row's foot */
+    --craft-roundel: min(var(--craft-btn-h), clamp(44px, 17.6cqi, 64px));      /* cqi = the panel's width */
+  }
+  .craft__inner {
+    grid-template-columns: minmax(0, 4.2fr) minmax(0, 4.4fr) minmax(0, 3.4fr);
+    grid-template-rows: auto minmax(0, 1fr);
+    grid-template-areas: "art head head" "art copy panel";
+    gap: var(--gap);
+  }
+  .craft__art { margin-right: var(--s-3); }
+  .craft__copy { grid-area: copy; position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: var(--s-4); min-width: 0; }
+  .craft__copy::after { content: ""; position: absolute; left: 0; bottom: var(--craft-rule-y); width: 4rem; height: 3px; background: var(--red); }
+  .craft__about, .craft__menu { min-height: var(--craft-btn-h); padding-inline: 1.8em; }
+  .craft__about { margin-top: auto; margin-bottom: var(--s-2); }
+  .craft__panel { grid-area: panel; container: craft-panel / inline-size; display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+  .craft__shot { flex: 1 1 0; }
+  /* the cream cell (#iz3lr): the red trophy roundel, the reskin's short red rule, the Menu link at its own width as
+     the kit's light-ground ghost (the theme-headlight values, set here on the cell). The rule hangs over the link: on
+     the cell's top edge when roundel and link share a line, between them when a narrow panel (landscape tablets)
+     drops the link under the roundel, the reskin's own order in that cell (roundel, rule, button) */
+  .craft__side { position: relative; flex: none; gap: var(--s-5) var(--s-2); padding: var(--s-3) var(--s-2) var(--s-2); background: var(--headlight); --ghost: var(--black); --ghost-line: var(--k-24); --ghost-hover-bg: var(--black); --ghost-hover-fg: var(--white); --focus: var(--red); }
+  .craft__side::before { content: ""; position: absolute; left: var(--s-2); bottom: var(--craft-rule-y); width: 4rem; height: 3px; background: var(--red); }
+  .craft__side::after { content: ""; order: -1; flex: none; width: var(--craft-roundel); aspect-ratio: 1; background: var(--mark-red) center / contain no-repeat; }
+  .craft__menu { flex: none; }
+}
+/* desktop: the group centred on the screen's height, as the reskin centres its split (#ivg5c). The photo cell is
+   square at least (the product is width-bound in it: more height only adds white), and grows with taller screens so
+   the air above and below stays about one padding step; on short screens the row caps it and it gives way */
+@media (min-width: 1180px) and (orientation: landscape) {
+  .craft__inner { grid-template-columns: minmax(0, 4.4fr) minmax(0, 4.5fr) minmax(0, 3.1fr); grid-template-rows: auto minmax(0, auto); align-content: center; }
+  .craft__shot { flex: 0 1 auto; height: max(100cqi, 93svh - 520px); }
+}
+
+/* ---------------------------------------------------------------- layout E: the bento (owner, 2026-10-22)
+   The DEALS pick's language on the ink: every part in its own rounded hairline tile of one grid, every edge on the
+   grid, the grid filling the content box.
+   - landscape from 768px: three columns, two rows
+       row 1: the title tile (race number over the title, a faint trophy silhouette peeking from its right edge)
+              across the first two columns                 | the product panel, the tallest tile, down both rows
+       row 2: the HS art tile | the copy tile (paragraph, About at its foot) | (checker, the photo on white, cream foot)
+     About and the panel's Menu link share one bottom line.
+   - phones and portrait tablets: two columns
+       the title tile / the copy tile (the paragraph) / the HS art tile | the product tile / About | Menu
+     each link under its own tile, the pair in the thumb half.
+   Built from the owner's pick in the lab (labs/craft-src/E.css); these rules come after the layout above and replace
+   it. */
+/* ---- the tiles (all sizes): hairline on the ink (the title tile, as the DEALS title tile), the reskin's ink card for
+   the art and the copy */
+.craft .craft__head, .craft .craft__art { border-radius: var(--radius-lg); box-shadow: inset 0 0 0 1px var(--line); }
+.craft .craft__head {
+  position: relative; isolation: isolate; overflow: clip; min-width: 0;
+  display: flex; flex-direction: column; align-items: stretch; flex-wrap: nowrap;
+  padding: var(--e-pad); container-type: inline-size;
+}
+.craft .craft__head .head__copy { flex: 1 1 auto; justify-content: space-between; gap: var(--e-head-gap); }
+.craft .craft__title { font-size: min(var(--e-fs-cap), 9.7cqi); }
+/* the faint trophy silhouette, as DEALS: white at 12% fading out, tilted, cut by the tile's right edge */
+.craft .craft__head::after {
+  content: ""; position: absolute; z-index: -1; pointer-events: none;
+  top: 50%; right: 0; height: var(--e-mark, 150%); aspect-ratio: 1; translate: 34% -50%; rotate: -8deg;
+  background: linear-gradient(200deg, rgb(255 255 255 / .12) 8%, rgb(255 255 255 / .05) 46%, transparent 86%);
+  -webkit-mask: var(--mark-white) center / contain no-repeat; mask: var(--mark-white) center / contain no-repeat;
+}
+.craft .craft__art { margin: 0; background: var(--ink-card); }
+.craft .craft__logo { left: var(--e-art-pad); top: var(--e-art-pad); width: calc(100% - 2 * var(--e-art-pad)); height: calc(100% - 2 * var(--e-art-pad)); }
+
+/* ===================================================================== landscape from 768px */
+@media (min-width: 768px) and (orientation: landscape) {
+  .craft {
+    --e-pad: clamp(18px, min(2.2vw, 3.6svh), 32px);
+    --e-art-pad: clamp(18px, min(2.6vw, 4svh), 40px);
+    --e-fs-cap: var(--fs-h2);
+    --e-head-gap: clamp(12px, 4svh - 8px, 32px);
+    --craft-body: clamp(1rem, min(.86rem + .3vw, 2.2svh), 1.15rem);
+    --craft-lh: 1.58;
+  }
+  .craft .craft__inner {
+    grid-template-columns: minmax(0, 2.9fr) minmax(0, 5fr) minmax(0, 3.6fr);
+    grid-template-rows: auto minmax(0, 1fr);
+    grid-template-areas: "head head panel" "art copy panel";
+    gap: var(--gap); align-content: stretch;
+  }
+  .craft .craft__copy {
+    grid-area: copy; position: relative; display: flex; flex-direction: column; align-items: flex-start;
+    gap: clamp(16px, 2.6svh, 24px); min-height: 0; padding: var(--e-pad);
+    border-radius: var(--radius-lg); background: var(--ink-card); box-shadow: inset 0 0 0 1px var(--line);
+  }
+  /* the reskin's short red rule as the copy tile's tab */
+  .craft .craft__copy::after { left: var(--e-pad); top: 0; bottom: auto; width: 2.5rem; }
+  .craft .craft__about { margin: auto 0 0; }
+  .craft .craft__panel { grid-area: panel; border-radius: var(--radius-lg); overflow: hidden; }
+  .craft .craft__shot { flex: 1 1 0; height: auto; }
+  /* the cream foot: roundel and Menu on one line (the rule on the seam); a narrow panel stacks them, the reskin's
+     own order (roundel, then the link) */
+  .craft .craft__side { flex-wrap: nowrap; padding: var(--s-3) var(--e-pad) var(--e-pad); }
+  .craft .craft__side::before { left: var(--e-pad); top: 0; bottom: auto; width: 2.5rem; }
+  @container craft-panel (max-width: 330px) {
+    .craft .craft__side { flex-direction: column; align-items: flex-start; gap: var(--s-2); }
+  }
+}
+/* landscape tablets: the copy column a little wider and the title capped by the screen's height, so the copy tile
+   keeps slack under its paragraph (About stays level with the panel's link) */
+@media (min-width: 768px) and (max-width: 1179.98px) and (orientation: landscape) {
+  .craft { --e-fs-cap: min(var(--fs-h2), 6.6svh); }
+  .craft .craft__inner { grid-template-columns: minmax(0, 2.7fr) minmax(0, 5.2fr) minmax(0, 3.6fr); }
+}
+
+/* ===================================================================== phones and portrait tablets */
+@media (max-width: 767.98px), (min-width: 768px) and (orientation: portrait) {
+  .craft {
+    --e-pad: 16px;
+    --e-art-pad: 14px;
+    --e-fs-cap: 2.75rem;
+    --e-head-gap: 10px;
+    --e-mark: 190%;
+    --e-g: 12px;
+  }
+  .craft .craft__inner {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: auto auto minmax(96px, 1fr) auto;
+    grid-template-areas: "head head" "text text" "art shot" "about side";
+    gap: var(--e-g);
+  }
+  .craft .craft__text {
+    max-width: none; padding: 14px var(--e-pad) 16px;
+    border-radius: var(--radius-lg); background: var(--ink-card); box-shadow: inset 0 0 0 1px var(--line);
+  }
+  .craft .craft__about, .craft .craft__menu { min-height: 48px; }
+}
+/* phones and portrait tablets: the product tile is the photo alone on white under its checker (the links sit under
+   the tiles, so no cream foot); the red trophy roundel becomes the tile's seal, top right on the white, where the
+   photo leaves the white empty */
+@media (max-width: 767.98px), (min-width: 768px) and (orientation: portrait) {
+  .craft .craft__shot { background: var(--white); }
+  .craft .craft__shot::after {
+    content: ""; position: absolute; z-index: 1; left: auto; bottom: auto;
+    top: calc(var(--craft-checker) + var(--e-seal-in)); right: var(--e-seal-in); width: var(--e-seal); aspect-ratio: 1;
+    background: var(--mark-red) center / contain no-repeat;
+  }
+  .craft .craft__photo { top: calc(var(--craft-checker) + 6%); height: calc(100% - var(--craft-checker) - 11%); }
+  .craft { --e-seal: 30px; --e-seal-in: 8px; }
+}
+/* phones under 800px tall: the kit's tighter steps; at 360 wide the paragraph at line-height 1.5 */
+@media (max-width: 767.98px) and (max-height: 799.98px) {
+  .craft { --e-g: 10px; --e-art-pad: 8px; }
+}
+@media (max-width: 379.98px) and (max-height: 799.98px) {
+  .craft { --e-g: 8px; --craft-lh: 1.5; }
+  .craft .craft__text { padding: 12px 14px 13px; }
+}
+/* short phones: the race number moves up beside the title's first line, the steps tighten to 8px, the paragraph
+   at line-height 1.45 */
+@media (max-width: 767.98px) and (max-height: 680px) {
+  .craft { --e-pad: 12px; --e-art-pad: 8px; --e-g: 8px; --e-fs-cap: 1.7rem; --craft-lh: 1.45; --e-seal: 26px; --e-seal-in: 6px; }
+  /* the art and photo row gives way down to 72px, so a taller fallback face (fonts not yet loaded) still leaves the two
+     links 16px above the action bar */
+  .craft .craft__inner { grid-template-rows: auto auto minmax(72px, 1fr) auto; }
+  .craft .craft__head .secnum { position: absolute; top: 8px; right: 8px; }
+  .craft .craft__text { padding: 10px var(--e-pad) 11px; }
+  .craft .craft__about, .craft .craft__menu { min-height: 44px; }
+}
+@media (min-width: 768px) and (orientation: portrait) {
+  .craft { --e-pad: 24px; --e-art-pad: 28px; --e-fs-cap: 4rem; --e-head-gap: var(--s-2); --e-g: var(--s-3); --e-seal: 48px; --e-seal-in: 14px; }
+  .craft .craft__text { padding: 22px var(--e-pad) 24px; }
+}

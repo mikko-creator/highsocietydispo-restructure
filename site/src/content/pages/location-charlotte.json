@@ -1,0 +1,478 @@
+{
+ "path": "/dispensary-locations/charlotte/",
+ "template": "location",
+ "store": "charlotte",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/dispensary-locations/charlotte/",
+  "v2:join",
+  "v2:reviews",
+  "v2:app"
+ ],
+ "titleFull": "High Society Weed Dispensary Charlotte",
+ "metaDescription": "Discover High Society's Charlotte dispensary, offering a wide range of premium cannabis products and exceptional customer service.",
+ "h1": "Weed Dispensary in Charlotte, MI",
+ "crumb": "Charlotte",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Locations",
+   "path": "/dispensary-locations/"
+  },
+  {
+   "name": "Charlotte"
+  }
+ ],
+ "geo": {
+  "lat": 42.5709276,
+  "lng": -84.8251347
+ },
+ "storeSameAs": [
+  "https://www.facebook.com/profile.php?id=61564212894886&mibextid=LQQJ4d",
+  "https://www.instagram.com/highsocietycharlotte/"
+ ],
+ "hero": {
+  "eyebrow": "High Society Charlotte · Recreational 21+",
+  "image": "assets/pit-stop/img/scene-charlotte.jpg",
+  "imageAlt": "",
+  "lead": "Shop Cannabis Products",
+  "ctas": [
+   {
+    "text": "Order Now",
+    "href": "/shop/charlotte/"
+   },
+   {
+    "text": "Get Direction",
+    "href": "https://www.google.com/maps/dir//High+Society+Weed+Dispensary+Charlotte,+515+Lansing+St,+Charlotte,+MI+48813,+United+States/@42.5709276,-84.8251347,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8822af9a60df0827:0x47febccd2a3bd07d!2m2!1d-84.8251347!2d42.5709276!3e0",
+    "style": "ghost"
+   }
+  ],
+  "status": {
+   "open": "Open - Closes at 9:00 PM",
+   "closed": "Closed - Opens at 9:00 AM"
+  },
+  "mapsUrl": "https://www.google.com/maps/dir//High+Society+Weed+Dispensary+Charlotte,+515+Lansing+St,+Charlotte,+MI+48813,+United+States/@42.5709276,-84.8251347,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8822af9a60df0827:0x47febccd2a3bd07d!2m2!1d-84.8251347!2d42.5709276!3e0"
+ },
+ "visiting": {
+  "before": "amenities",
+  "heading": "High Society Cannabis Charlotte",
+  "lead": "Whether you’re a resident of Charlotte, MI, or just visiting, this lively city offers a variety of unique experiences and attractions. Explore its rich cultural heritage or enjoy a leisurely stroll through the picturesque downtown area. Charlotte has something for everyone. Here are some top attractions to discover:",
+  "label": "FOLLOW THESE DIRECTIONS FROM",
+  "tabs": [
+   {
+    "label": "Courthouse Square Museum",
+    "title": "Directions From Courthouse Square Museum",
+    "md": "We are located only 3 minutes from Courthouse Square Museum.\n\n1. Head east on W Lawrence Ave toward N Cochran Ave\n2. Continue onto Lansing St\n3. Pass by Advance Auto Parts (on the right)\n4. Turn left\n\nOur cannabis dispensary will be on the right"
+   },
+   {
+    "label": "Eaton County Fairgrounds",
+    "title": "Directions From Eaton County Fairgrounds",
+    "md": "We are located only 6 minutes from the infamous Eaton County Fairgrounds.\n\n1. Head southwest\n2. Turn right toward Cochran Ave\n3. Turn right onto Cochran Ave\n4. Pass by Dairy Queen Store (on the right in 0.7 mi)\n5. Turn right onto E Lawrence Ave\n6. Continue onto Lansing St\n7. Pass by Advance Auto Parts (on the right)\n8. Turn left\n\nOur cannabis dispensary will be on the right"
+   },
+   {
+    "label": "Charlotte Performing Arts Center",
+    "title": "Directions From Charlotte Performing Arts Center",
+    "md": "We are located only 6 minutes from [Charlotte Performing Arts Center](https://www.google.com/maps/place/Charlotte+Performing+Arts+Center/@42.5573539,-84.8611732,16z/am=t/data=!4m23!1m16!4m15!1m6!1m2!1s0x8822aee0832c9d8b:0xe30db19d1f3362d0!2sEaton+County+Fairgrounds,+1025+S+Cochran+Rd,+Charlotte,+MI+48813,+United+States!2m2!1d-84.8354506!2d42.5490908!1m6!1m2!1s0x8822af9a60df0827:0x47febccd2a3bd07d!2sHigh+Society+Weed+Dispensary+Charlotte,+Lansing+Street,+Charlotte,+MI,+USA!2m2!1d-84.8251347!2d42.5709276!3e0!3m5!1s0x8822af29479dd51d:0x5ab150f9cadb7983!8m2!3d42.5573539!4d-84.8516464!16s%2Fg%2F1thz2892?hl=en&entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D).\n\n1. Head southwest\n2. Turn right toward Cochran Ave\n3. Turn right onto Cochran Ave\n4. Pass by Dairy Queen Store (on the right in 0.7 mi)\n5. Turn right onto E Lawrence Ave\n6. Continue onto Lansing St\n7. Pass by Advance Auto Parts (on the right)\n8. Turn left\n\nOur dispensary will be on the right"
+   },
+   {
+    "label": "The Fitch H Beach Airport (KFPK)",
+    "title": "Directions From the Fitch H Beach Airport (KFPK)",
+    "md": "We are located only 4 minutes from the Fitch H Beach Airport (KFPK).\n\n1. Head east toward Island Hwy\n2. Turn right onto Island Hwy\n3. Continue onto Hall St\n4. Turn right onto Lansing St\n5. Pass by Arby's (on the left in 0.2 mi)\n6. Turn left\n\nOur marijuana dispensary will be on the right"
+   }
+  ]
+ },
+ "blocks": [
+  {
+   "type": "cta",
+   "id": "rewards-teaser",
+   "ground": "red",
+   "heading": "Join The Society",
+   "md": "Sign up to get early access to strain drops, special pricing, birthday rewards and more",
+   "ctas": [
+    {
+     "text": "Join the Society Today",
+     "href": "/club-member-program/"
+    }
+   ]
+  },
+  {
+   "type": "store-details",
+   "id": "store-details",
+   "ground": "white",
+   "heading": "Store Info",
+   "store": "charlotte",
+   "name": "High Society Charlotte",
+   "facts": [
+    "hours",
+    "address",
+    "email",
+    "phone"
+   ],
+   "hoursText": "Open Daily: 9:00 AM - 9:00 PM",
+   "addressText": "515 Lansing St, Charlotte, MI 48813, United States",
+   "email": "info@highsocietydispo.com",
+   "mapsUrl": "https://www.google.com/maps/dir//High+Society+Weed+Dispensary+Charlotte,+515+Lansing+St,+Charlotte,+MI+48813,+United+States/@42.5709276,-84.8251347,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8822af9a60df0827:0x47febccd2a3bd07d!2m2!1d-84.8251347!2d42.5709276!3e0",
+   "ctas": [
+    {
+     "text": "View Menu",
+     "href": "shop"
+    },
+    {
+     "text": "Get Direction",
+     "href": "maps",
+     "style": "ghost"
+    }
+   ],
+   "social": [
+    {
+     "network": "facebook",
+     "href": "https://www.facebook.com/profile.php?id=61564212894886&mibextid=LQQJ4d",
+     "label": "High Society Charlotte on Facebook"
+    },
+    {
+     "network": "instagram",
+     "href": "https://www.instagram.com/highsocietycharlotte/",
+     "label": "High Society Charlotte on Instagram"
+    }
+   ],
+   "about": {
+    "heading": "The Best Weed Dispensary in Charlotte, Michigan",
+    "md": "High Society Cannabis in Charlotte is a premier vertically integrated cannabis dispensary, recognized for exceptional customer service and an extensive selection of premium cannabis products. By overseeing every stage of the cannabis process—from cultivation to retail—High Society guarantees the highest standards of quality and consistency.\n\nOur dispensary offerings include top brands such as 710 Labs, Bloom, Camino, and Drip, celebrated for their quality and potency. This dedication to excellence has established High Society Cannabis as a trusted destination for premium cannabis in Charlotte.",
+    "linksLabel": "More about High Society Charlotte",
+    "links": [
+     {
+      "text": "Deals",
+      "href": "/deals/"
+     },
+     {
+      "text": "Loyalty",
+      "href": "/loyalty/"
+     },
+     {
+      "text": "FAQs",
+      "href": "#faq"
+     },
+     {
+      "text": "Medical Card Guide",
+      "href": "/getting-a-medical-card/"
+     }
+    ]
+   }
+  },
+  {
+   "type": "amenities",
+   "id": "amenities",
+   "ground": "white",
+   "heading": "Store Amenities",
+   "groups": [
+    {
+     "title": "We Offer",
+     "items": [
+      {
+       "icon": "cart",
+       "label": "In-Store Shopping"
+      },
+      {
+       "icon": "bag",
+       "label": "In-Store Pickup"
+      },
+      {
+       "icon": "pin",
+       "label": "Curbside Pickup"
+      }
+     ]
+    },
+    {
+     "title": "We Accept",
+     "items": [
+      {
+       "icon": "tag",
+       "label": "Cash"
+      },
+      {
+       "icon": "check",
+       "label": "Debit Card"
+      },
+      {
+       "icon": "home",
+       "label": "ATM in-store"
+      }
+     ]
+    },
+    {
+     "title": "Before You Go",
+     "items": [
+      {
+       "icon": "user",
+       "label": "Valid government-issued ID or passport, 21+"
+      },
+      {
+       "icon": "cart",
+       "label": "Order online for pickup; curbside customers get a text when the order is ready"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "id": "first-visit",
+   "ground": "headlight",
+   "heading": "First-Time Customer Guide",
+   "items": [
+    {
+     "title": "Who Can Shop",
+     "md": "Recreational cannabis shopping is available for individuals aged 21 or older."
+    },
+    {
+     "title": "Check In",
+     "md": "Upon arrival, present a government-issued ID or passport and check in with the security and front desk staff."
+    },
+    {
+     "title": "Stay in the Loop",
+     "md": "Share your phone number and email to stay informed about exclusive deals and discounts."
+    },
+    {
+     "title": "Meet Your Budtender",
+     "md": "When it’s your turn, a budtender will call you from the waiting area to assist with product selection and answer any questions, whether you’re a new visitor or a returning customer."
+    },
+    {
+     "title": "Choose Your Items",
+     "md": "Once you’ve chosen your items, the budtender will notify the order preparation team. Payments can be made using cash, credit, or debit cards."
+    },
+    {
+     "title": "Complete Your Purchase",
+     "md": "When your order is ready, a staff member will call your name, process your payment, and confirm the details to ensure everything is accurate before completing your purchase."
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "id": "order-pickup",
+   "ground": "white",
+   "heading": "How to Place an Order for Dispensary Pick-Up",
+   "items": [
+    {
+     "title": "Browse the Menu",
+     "md": "Browse our [Charlotte dispensary menu](/shop/charlotte/) online or contact us at [(517) 786-3002](tel:+15177863002) if you need assistance."
+    },
+    {
+     "title": "Build Your Order",
+     "md": "Select your preferred products, set the quantities, add them to your cart, and schedule a convenient pick-up time."
+    },
+    {
+     "title": "Check Out",
+     "md": "Complete your order by entering your details. First-time visitors must present a valid ID for verification, while returning customers can log in for faster checkout."
+    },
+    {
+     "title": "Curbside Pickup",
+     "md": "Interested in curbside pickup? Let us know, and we’ll notify you via text when your order is ready for collection. Specify if you prefer curbside pickup, and you will receive a notification via text message when your order is ready for collection."
+    },
+    {
+     "title": "Enjoy Responsibly",
+     "md": "Enjoy cannabis responsibly. We’re dedicated to providing a seamless and hassle-free shopping experience!"
+    }
+   ]
+  },
+  {
+   "type": "deals",
+   "id": "deals",
+   "source": "site",
+   "ground": "headlight",
+   "heading": "Deals",
+   "lead": "Deals vary by store and change often. The menu shows today's deals at High Society Charlotte.",
+   "more": {
+    "text": "See all deals",
+    "href": "/deals/"
+   }
+  },
+  {
+   "type": "cards",
+   "id": "categories",
+   "ground": "white",
+   "columns": 4,
+   "heading": "Shop Cannabis Products",
+   "items": [
+    {
+     "title": "Flower",
+     "icon": "leaf",
+     "href": "/shop/charlotte/?dtche%5Bcategory%5D=flower",
+     "md": "Each cannabis strain is carefully curated to your needs, whether you're seeking relaxation, creativity, or a balanced high."
+    },
+    {
+     "title": "Pre-Rolls",
+     "icon": "spark",
+     "href": "/shop/charlotte/?dtche%5Bcategory%5D=pre-rolls"
+    },
+    {
+     "title": "Concentrates",
+     "icon": "drop",
+     "href": "/shop/charlotte/?dtche%5Bcategory%5D=concentrates",
+     "md": "From shatter to wax, our concentrates are ideal for experienced users looking for a powerful and fast-acting option."
+    },
+    {
+     "title": "Vaporizers",
+     "icon": "wave",
+     "href": "/shop/charlotte/?dtche%5Bcategory%5D=vaporizers"
+    }
+   ]
+  },
+  {
+   "type": "reviews",
+   "id": "reviews",
+   "source": "home",
+   "heading": "What Our Customers Say About Us",
+   "lead": "Google reviews from High Society customers across our Michigan stores."
+  },
+  {
+   "type": "faq",
+   "id": "faq",
+   "ground": "white",
+   "heading": "Frequently Asked Questions",
+   "lead": "More questions? Visit our [FAQ page](/faq/).",
+   "items": [
+    {
+     "q": "What are the requirements to shop at High Society Cannabis Charlotte?",
+     "a": "To shop at our dispensary, you must present a valid government-issued ID verifying you are 21 or older. Individuals aged 18 and up with a valid medical marijuana card are also eligible to make purchases."
+    },
+    {
+     "q": "What should I do if I receive a defective product?",
+     "a": "If you experience an issue with a product’s quality or functionality, please contact us at [(517) 786-3002](tel:+15177863002) or visit the store where the purchase was made. Our team is ready to assist."
+    },
+    {
+     "q": "What payment methods do you accept at your dispensary?",
+     "a": "We accept cash and debit payments. Some locations may also accept mobile payment options. For added convenience, we also have an ATM available in-store. Please check with your nearest location for further details."
+    },
+    {
+     "q": "Is it legal to transport cannabis?",
+     "a": "Cannabis purchases are legal in Michigan; however, transporting cannabis across state lines is prohibited under federal law. Please avoid taking cannabis products out of the state."
+    },
+    {
+     "q": "What products are available at the dispensary?",
+     "a": "Our dispensary offers a wide selection of premium cannabis products, including flower, pre-rolls, concentrates, vape pens, edibles, and more. Check out our menu or contact us with specific questions."
+    },
+    {
+     "q": "Do you have a loyalty program for customers?",
+     "a": "Yes, High Society offers a loyalty program called The Society, where customers earn points for purchases. Redeem your points for discounts and special offers—ask our staff for details."
+    }
+   ]
+  },
+  {
+   "type": "amenities",
+   "id": "service-area",
+   "ground": "headlight",
+   "heading": "Locations Where Our Dispensary Provides Service",
+   "groups": [
+    {
+     "title": "Towns",
+     "items": [
+      {
+       "icon": "pin",
+       "label": "Charlotte"
+      },
+      {
+       "icon": "pin",
+       "label": "Eaton Rapids"
+      },
+      {
+       "icon": "pin",
+       "label": "Potterville"
+      }
+     ]
+    },
+    {
+     "title": "ZIP Codes We Serve",
+     "items": [
+      {
+       "icon": "target",
+       "label": "48813"
+      },
+      {
+       "icon": "target",
+       "label": "48827"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "id": "resources",
+   "ground": "white",
+   "heading": "Other Resources",
+   "style": "dot",
+   "items": [
+    "Stay informed about the latest [marijuana regulations and news](https://charlottemi.gov/charlotte-commercial-cannabis-program/) in Charlotte, MI.",
+    "Keep up with key [cannabis updates and developments](https://www.michigan.gov/cra/laws-rules-other) throughout Michigan.",
+    "Read our guide to [Michigan marijuana laws](/cannabis-laws-by-state/michigan/)."
+   ]
+  },
+  {
+   "type": "nearby",
+   "id": "nearby",
+   "store": "charlotte",
+   "order": [
+    "east-lansing",
+    "saline",
+    "birch-run",
+    "mount-pleasant",
+    "big-rapids",
+    "lenox",
+    "new-buffalo"
+   ],
+   "heading": "Other High Society Locations",
+   "lead": "Our other Michigan stores, nearest first.",
+   "view": {
+    "text": "View Location"
+   }
+  },
+  {
+   "type": "split",
+   "id": "app",
+   "ground": "charcoal",
+   "heading": "Download the High Society App",
+   "md": "Experience convenience at your fingertips with the High Society App. Easily browse our full cannabis menu, stay updated on the latest deals, and place your orders with just a few taps. Whether you're at home or on the go, managing your cannabis experience has never been easier.",
+   "image": "derived:app-phone-mockup",
+   "imageAlt": "",
+   "ctas": [
+    {
+     "text": "Download Now",
+     "href": "https://apps.apple.com/us/app/high-society-cannabis/id6503314334"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen.mjs",
+  "fixes": [
+   "h1 casing normalised (High Society's words kept): \"Weed Dispensary in Charlotte, mi\" -> \"Weed Dispensary in Charlotte, MI\"",
+   "the Big Rapids directions printed on v1 Charlotte are not carried (declared defect: Big Rapids landmarks)",
+   "the curbside step keeps both of v1's curbside sentences (the second repeats the first: for the client)"
+  ],
+  "newCopy": [
+   "tab title \"Directions From Courthouse Square Museum\" (v1 prints this panel without its own heading)",
+   "tab title \"Directions From Eaton County Fairgrounds\" (v1 prints this panel without its own heading)",
+   "tab title \"Directions From Charlotte Performing Arts Center\" (v1 prints this panel without its own heading)",
+   "tab title \"Directions From The Fitch H Beach Airport (KFPK)\" (v1 prints this panel without its own heading)",
+   "resources: \"Read our guide to Michigan marijuana laws.\" (link to the planned law guide)",
+   "hero eyebrow (store name + \"Recreational 21+\")",
+   "store-details \"more\" link labels (Deals, Loyalty, FAQs, Medical Card Guide)",
+   "amenities heading \"Store Amenities\" and group \"Before You Go\" (its two lines condense High Society's ID and ordering steps)",
+   "step titles (the step texts are High Society's)",
+   "deals heading and lead",
+   "reviews lead",
+   "FAQ lead",
+   "service-area group titles",
+   "nearby heading and lead"
+  ],
+  "keptForClient": [
+   "first-time guide payment line (\"cash, credit, or debit\") vs the FAQ (cash and debit): OPEN-DECISIONS 4",
+   "\"vertically/fully integrated ... from cultivation to retail\" (OPEN-DECISIONS 6)",
+   "medical patients 18+ in the FAQ (OPEN-DECISIONS 5)"
+  ]
+ }
+}

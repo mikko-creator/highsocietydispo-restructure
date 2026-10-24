@@ -1,0 +1,19 @@
+{
+ "path": "/blog/news-and-culture/",
+ "template": "blog-index",
+ "provenance": "new",
+ "title": "Cannabis News and Culture",
+ "crumb": "News & Culture",
+ "metaDescription": "Michigan cannabis news and culture: the history of prohibition and legalization, heritage months and holidays, and what new rules mean for adult shoppers.",
+ "h1": "News & Culture",
+ "hero": {
+  "lead": "Cannabis has a long history and a culture all its own. News & Culture covers both: how prohibition began, the people and movements behind legalization, heritage months and holidays, and the laws and votes that shape cannabis today. Articles about Michigan explain what the rules mean for adult shoppers and link to the official sources."
+ },
+ "sourceRefs": [
+  "structure-map:/blog/news-and-culture/",
+  "structure-map:newPageBriefs blog-category-intros"
+ ],
+ "review": {
+  "notes": "Title and h1 from the structure map; intro and description are new copy (brief blog-category-intros: 50-100 words). Category from site.json blog.categories (the build pairs this page with its slug by path). The map keyword \"420 events\" is not used: docs/VOICE.md lists 420 among the words High Society never uses; holidays are named generically."
+ }
+}

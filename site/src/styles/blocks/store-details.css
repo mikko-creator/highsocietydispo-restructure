@@ -1,0 +1,31 @@
+/* blocks/store-details.css — one store's details (stores lane): v2's ink store panel (the reskin's #0B0C0C card, a
+   hairline that turns red on hover, the store name in Changa One, rows on red icon plates, v2's buttons), beside the
+   store's own "about" text from 1024px. */
+.sd { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--gap-lg); align-items: start; }
+.sd__panel { position: relative; display: flex; flex-direction: column; gap: var(--s-3); padding: clamp(24px, 3vw, 40px); background: var(--card); color: var(--fg); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; transition: border-color var(--dur) var(--ease); min-width: 0; }
+.sd__panel:hover, .sd__panel:focus-within { border-color: var(--red); }
+.sd:not(.sd--split) .sd__panel { max-width: 46rem; }
+/* the reskin's trophy mark, huge and faint in the panel's corner */
+.sd__panel::after { content: ""; position: absolute; right: -14%; bottom: -26%; width: 62%; aspect-ratio: 1; background: var(--mark-white) center / contain no-repeat; opacity: .05; pointer-events: none; }
+.sd__name { font: 900 clamp(1.6rem, 1rem + 1.8vw, 2.4rem)/1 var(--font-display); text-transform: uppercase; letter-spacing: -.005em; color: var(--fg); overflow-wrap: anywhere; }
+.sd__rows { display: grid; gap: var(--s-2); }
+.sd__row { display: flex; align-items: center; gap: var(--s-2); min-width: 0; font: 500 1.0625rem/1.35 var(--font-head); color: var(--fg); }
+.sd__val { min-width: 0; overflow-wrap: anywhere; }
+.sd__label { color: var(--em); font-weight: 700; }
+.sd__link { display: inline-flex; align-items: center; min-height: var(--tap); color: var(--fg); text-decoration: underline 1px transparent; text-underline-offset: .25em; transition: text-decoration-color var(--dur) var(--ease), color var(--dur) var(--ease); }
+.sd__link:hover { text-decoration-color: var(--red); color: var(--white); }
+.sd__note { font-size: var(--fs-small); color: var(--fg-2); }
+.sd__ctas { position: relative; z-index: 1; }
+.sd__social { display: flex; gap: var(--s-1); position: relative; z-index: 1; }
+.sd__soc { width: 44px; height: 44px; display: grid; place-items: center; border: 1.5px solid var(--line-2); border-radius: var(--radius); color: var(--fg); transition: background-color var(--dur) var(--ease), border-color var(--dur) var(--ease); }
+.sd__soc:hover { background: var(--red); border-color: var(--red); }
+.sd__about { display: flex; flex-direction: column; gap: var(--s-2); min-width: 0; }
+.sd__about-title { font: 800 clamp(1.3rem, 1rem + 1vw, 1.75rem)/1.12 var(--font-head); text-transform: uppercase; color: var(--fg); text-wrap: balance; }
+.sd__more ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: 0 var(--s-3); margin-top: var(--s-1); }
+.sd__more a { display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: var(--tap); border-bottom: 1px solid var(--line); font: 700 .9375rem/1.2 var(--font-head); letter-spacing: .06em; text-transform: uppercase; color: var(--fg); transition: color var(--dur) var(--ease); }
+.sd__more a .icon { color: var(--em); transition: transform var(--dur) var(--ease); }
+.sd__more a:hover { color: var(--em); }
+.sd__more a:hover .icon { transform: translateX(3px); }
+@media (min-width: 1024px) {
+  .sd--split { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: var(--s-6); }
+}

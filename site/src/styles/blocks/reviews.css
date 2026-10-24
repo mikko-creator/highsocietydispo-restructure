@@ -1,0 +1,20 @@
+/* blocks/reviews.css — customer reviews (stores lane) in v2's reviews language: white cards with the ink hairline and a
+   3px red rule along the top, red stars, the quote in Work Sans, the name in Changa One drawn heavy. Phones: one row
+   that scrolls inside itself (each card 85% of the row, the next one peeking; the page never scrolls sideways); from
+   768px a grid of 2, from 1024px 3 (4 when there are 8). */
+.rev__scroll { min-width: 0; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: thin; scrollbar-color: var(--line-2) transparent; padding-bottom: 6px; }
+.rev { display: grid; grid-auto-flow: column; grid-auto-columns: 85%; gap: var(--gap); }
+@media (min-width: 768px) {
+  .rev__scroll { overflow: visible; padding-bottom: 0; }
+  .rev { grid-auto-flow: row; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-columns: auto; }
+}
+@media (min-width: 1024px) { .rev { grid-template-columns: repeat(3, minmax(0, 1fr)); } .rev:has(> :nth-child(8)) { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.rev__item { display: flex; min-width: 0; }
+.rev__card { position: relative; display: flex; flex-direction: column; gap: var(--s-2); width: 100%; padding: var(--s-4) var(--s-3) var(--s-3); background: var(--white); color: var(--black); border-color: var(--k-14); }
+.rev__card::before { content: ""; position: absolute; inset: 0 0 auto; height: 3px; background: var(--red); }
+.rev__stars { display: flex; gap: 2px; color: var(--red); }
+.rev__text { flex: 1 1 auto; font-size: .9875rem; line-height: 1.6; color: var(--black-700); overflow-wrap: break-word; }
+.rev__text p::before { content: "\201C"; }
+.rev__text p::after { content: "\201D"; }
+.rev__by { font: 900 1.05rem/1.1 var(--font-display); text-transform: uppercase; letter-spacing: .02em; color: var(--black); }
+.rev__scroll:focus-visible { outline-offset: 4px; }

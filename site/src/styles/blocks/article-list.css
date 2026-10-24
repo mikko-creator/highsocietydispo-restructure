@@ -1,0 +1,155 @@
+/* blocks/article-list.css — the editorial lane's article cards and the typographic covers they share with the article
+   page and the blog index (src/blocks/article-list.mjs). No image file and nothing generated: a cover is the category's
+   ground, one of the four Pit Stop patterns drawn in CSS (checkered: a conic gradient; carbon weave and diamond plate:
+   the reskin's own tiles, v1-source/assets/pit-stop/pattern/{carbon,diamond-plate}.svg, redrawn as alpha masks with
+   no colour in them; pit box: a pit-lane stall outline with hatched ends), v2's checkered strip on top, the trophy mark
+   huge and faint, the category's name in Changa One and a race-number plate with the read time. Every colour is a
+   token or a theme name. */
+
+/* ------------------------------------------------------------------ the cover */
+.cover {
+  --cover-bg: var(--black);
+  --pat-ink: var(--w-10);
+  --cover-pad: clamp(14px, 1rem + .6vw, 22px);
+  --cover-check: 10px;
+  --plate: 2.1rem;
+  --cat: clamp(1.05rem, .9rem + .7vw, 1.45rem);
+  --mask-carbon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Cpath d='M0 0h40v20H0zM0 20h20v20H0zM60 20h20v20H60zM40 40h40v20H40zM20 60h40v20H20z'/%3E%3C/svg%3E");
+  --mask-diamond: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 198 198'%3E%3Cpath d='M15.8 49.5Q49.5 31.7 83.2 49.5Q49.5 67.3 15.8 49.5Z' transform='rotate(45 49.5 49.5)'/%3E%3Cpath d='M114.8 49.5Q148.5 31.7 182.2 49.5Q148.5 67.3 114.8 49.5Z' transform='rotate(-45 148.5 49.5)'/%3E%3Cpath d='M15.8 148.5Q49.5 130.7 83.2 148.5Q49.5 166.3 15.8 148.5Z' transform='rotate(-45 49.5 148.5)'/%3E%3Cpath d='M114.8 148.5Q148.5 130.7 182.2 148.5Q148.5 166.3 114.8 148.5Z' transform='rotate(45 148.5 148.5)'/%3E%3C/svg%3E");
+  position: relative; isolation: isolate; overflow: hidden;
+  aspect-ratio: 16 / 9;
+  display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; gap: var(--s-1);
+  padding: calc(var(--cover-check) + var(--cover-pad)) var(--cover-pad) var(--cover-pad);
+  background: var(--cover-bg); color: var(--white);
+}
+.cover::before { content: ""; position: absolute; left: 0; right: 0; top: 0; z-index: 2; height: var(--cover-check); background: var(--checker) repeat-x left center / auto 100%; }
+.cover__pat { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.cover__mark { position: absolute; right: -9%; bottom: -24%; z-index: -1; height: 96%; aspect-ratio: 1; background: var(--mark-white) center / contain no-repeat; opacity: .13; pointer-events: none; }
+.cover__plate { position: relative; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; min-width: 2.6em; padding: .32em .42em .36em; border-radius: var(--radius); background: var(--white); color: var(--black); font-size: var(--plate); line-height: 1; box-shadow: 0 0 0 3px var(--cover-bg), 0 0 0 4.5px var(--w-40), 0 14px 26px -16px var(--k-88); }
+.cover__num { font: 400 1em/.9 var(--font-display); letter-spacing: .02em; font-variant-numeric: tabular-nums; }
+.cover__unit { margin-top: .32em; font: 700 max(.24em, 9px)/1 var(--font-head); letter-spacing: .14em; text-transform: uppercase; white-space: nowrap; color: var(--red); }
+.cover__cat { position: relative; max-width: 15ch; font: 400 var(--cat)/.98 var(--font-display); letter-spacing: .02em; text-transform: uppercase; text-wrap: balance; overflow-wrap: anywhere; text-shadow: 0 2px 14px var(--k-50); }
+
+/* the grounds: one per category (the blog home's panel: ink) */
+.cover--cannabis-101 { --cover-bg: var(--red); --pat-ink: var(--w-14); }
+.cover--health-and-lifestyle { --cover-bg: var(--night); --pat-ink: var(--w-14); }
+.cover--popular { --cover-bg: var(--black); --pat-ink: var(--w-14); }
+.cover--news-and-culture { --cover-bg: var(--oxblood); }
+.cover--recipes { --cover-bg: var(--dark-red); --pat-ink: var(--w-14); }
+.cover--resources { --cover-bg: var(--black-800); }
+.cover--shopping-and-reviews { --cover-bg: var(--charcoal); --pat-ink: var(--w-14); }
+.cover--blog { --cover-bg: var(--black); --pat-ink: var(--w-14); }
+
+/* the patterns */
+.cover--checker .cover__pat {
+  background: repeating-conic-gradient(var(--pat-ink) 0 25%, transparent 0 50%) 0 0 / 26px 26px;
+  -webkit-mask-image: linear-gradient(112deg, transparent 34%, var(--black) 88%); mask-image: linear-gradient(112deg, transparent 34%, var(--black) 88%);
+}
+.cover--carbon .cover__pat {
+  background: var(--pat-ink);
+  -webkit-mask: var(--mask-carbon) 0 0 / 18px 18px repeat; mask: var(--mask-carbon) 0 0 / 18px 18px repeat;
+}
+.cover--diamond .cover__pat {
+  background: var(--pat-ink);
+  -webkit-mask: var(--mask-diamond) 0 0 / 46px 46px repeat; mask: var(--mask-diamond) 0 0 / 46px 46px repeat;
+}
+/* the pit box: the stall a car stops in, seen from above: a painted outline with hatched ends */
+.cover--pitbox .cover__pat {
+  inset: calc(var(--cover-check) + 16%) 6% 32% 44%;
+  border: 3px solid var(--w-40); border-radius: var(--radius);
+  background:
+    repeating-linear-gradient(-45deg, var(--w-24) 0 5px, transparent 5px 13px) left top / 20% 100% no-repeat,
+    repeating-linear-gradient(-45deg, var(--w-24) 0 5px, transparent 5px 13px) right top / 20% 100% no-repeat,
+    linear-gradient(var(--w-24), var(--w-24)) center / 3px 100% no-repeat;
+}
+.cover--pitbox .cover__mark { opacity: .08; }
+
+/* the mirrored layout (every other cover, by slug): plate and name at the right, the trophy and the stall at the left */
+.cover--flip { align-items: flex-end; text-align: right; }
+.cover--flip .cover__mark { right: auto; left: -9%; }
+.cover--flip.cover--pitbox .cover__pat { left: 6%; right: 44%; }
+/* tall covers (the heroes): the stall runs across the middle, between the plate and the name */
+.cover--hero.cover--pitbox .cover__pat, .cover--hero.cover--flip.cover--pitbox .cover__pat { inset: 42% 9% 27% 9%; }
+.cover--flip.cover--checker .cover__pat { -webkit-mask-image: linear-gradient(248deg, transparent 34%, var(--black) 88%); mask-image: linear-gradient(248deg, transparent 34%, var(--black) 88%); }
+
+/* sizes: the card (default), the featured card, the article and blog heroes */
+.cover--feature { --plate: clamp(2.4rem, 1.6rem + 2.4vw, 3.6rem); --cat: clamp(1.4rem, 1rem + 1.6vw, 2.4rem); --cover-check: 12px; }
+.cover--hero { --plate: clamp(2.6rem, 1.6rem + 3vw, 4.4rem); --cat: clamp(1.4rem, 1rem + 1.6vw, 2.3rem); --cover-check: 12px; border-radius: var(--radius-lg); box-shadow: 0 30px 60px -36px var(--k-88); }
+
+/* ------------------------------------------------------------------ the cards */
+.posts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap); }
+.posts__item { display: flex; min-width: 0; }
+.post { display: flex; flex-direction: column; width: 100%; }
+.post__body { flex: 1 1 auto; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: var(--s-3); min-width: 0; }
+.post__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font: 600 .8125rem/1.3 var(--font-head); letter-spacing: .02em; color: var(--muted); }
+.post__sep { flex: none; width: 4px; height: 4px; border-radius: 50%; background: var(--red); }
+/* the category: for screen readers on a card whose cover shows it (phones show it, below) */
+.post__cat { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.post__sep--cat { display: none; }
+.post__title { font: 800 clamp(1.125rem, 1rem + .45vw, 1.35rem)/1.2 var(--font-head); color: var(--card-fg, var(--fg)); text-wrap: pretty; overflow-wrap: anywhere; transition: color var(--dur) var(--ease); }
+.card--lift:hover .post__title, .card--lift:focus-within .post__title { color: var(--em); }
+.post__excerpt { font-size: .9375rem; line-height: 1.6; color: var(--fg-2); }
+.post__go { margin-top: auto; padding-top: 6px; display: inline-flex; align-items: center; gap: 8px; font: 700 var(--fs-btn)/1 var(--font-display); letter-spacing: var(--ls-btn); text-transform: uppercase; color: var(--em); }
+.post__go .icon { transition: transform var(--dur) var(--ease); }
+.card--lift:hover .post__go .icon { transform: translateX(4px); }
+@media (prefers-reduced-motion: reduce) { .card--lift:hover .post__go .icon { transform: none; } }
+
+/* the featured card: the cover beside the copy from tablets up */
+.post--feature .post__body { gap: 14px; padding: clamp(24px, 3vw, 44px); justify-content: center; }
+.post--feature .post__title { font-size: clamp(1.5rem, 1rem + 1.7vw, 2.4rem); line-height: 1.1; }
+.post--feature .post__excerpt { font-size: clamp(1rem, .95rem + .25vw, 1.125rem); max-width: 56ch; }
+@media (min-width: 768px) {
+  .post--feature { flex-direction: row; }
+  .post--feature .cover { flex: 0 0 54%; aspect-ratio: auto; min-height: 340px; }
+}
+
+/* the listing grid: 3 / 2 / 1 across; on phones each card becomes a compact row (a narrow cover, the copy beside it) */
+@media (max-width: 1023.98px) { .posts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 639.98px) {
+  .posts { grid-template-columns: minmax(0, 1fr); gap: var(--s-2); }
+  .posts--grid .post, .posts--related .post { flex-direction: row; }
+  .posts--grid .cover, .posts--related .cover { flex: 0 0 104px; aspect-ratio: auto; min-height: 148px; justify-content: center; align-items: center; padding: calc(var(--cover-check) + 10px) 10px 10px; --plate: 1.7rem; }
+  .posts--grid .cover__cat, .posts--related .cover__cat { display: none; }
+  .posts--grid .cover--pitbox .cover__pat, .posts--related .cover--pitbox .cover__pat { inset: calc(var(--cover-check) + 8px) 9px 9px 9px; }
+  .posts--grid .post__body, .posts--related .post__body { gap: 6px; padding: 14px 16px 16px; }
+  .posts--grid .post__title, .posts--related .post__title { font-size: 1.0625rem; }
+  .posts--grid .post__excerpt, .posts--related .post__excerpt { display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; font-size: .875rem; line-height: 1.5; }
+  .posts--grid .post__go, .posts--related .post__go { display: none; }
+  .posts--grid .post__cat, .posts--related .post__cat { position: static; width: auto; height: auto; overflow: visible; clip-path: none; color: var(--em); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; }
+  .posts--grid .post__sep--cat, .posts--related .post__sep--cat { display: block; }
+  .posts--grid .post__sep--mins, .posts--related .post__sep--mins { display: none; }
+  .posts--grid .post__mins, .posts--related .post__mins { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+
+/* a listing with a single article: one wide card, not a third of a row */
+@media (min-width: 640px) {
+  .posts--grid.posts--n1 { grid-template-columns: minmax(0, 1fr); }
+  .posts--grid.posts--n1 .post { flex-direction: row; }
+  .posts--grid.posts--n1 .cover { flex: 0 0 min(42%, 460px); aspect-ratio: auto; min-height: 240px; }
+  .posts--grid.posts--n1 .post__body { justify-content: center; padding: clamp(24px, 3vw, 44px); }
+}
+
+/* related: 1 to 4 across. One: a wide card; three on a tablet: rows; four: two by two until there is room for four */
+.posts--related.posts--n1 { grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 640px) {
+  .posts--related.posts--n1 .post { flex-direction: row; }
+  .posts--related.posts--n1 .cover { flex: 0 0 min(42%, 420px); aspect-ratio: auto; min-height: 220px; }
+  .posts--related.posts--n1 .post__body { justify-content: center; padding: clamp(24px, 3vw, 40px); }
+  .posts--related.posts--n2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 640px) and (max-width: 1023.98px) {
+  .posts--related.posts--n3 { grid-template-columns: minmax(0, 1fr); }
+  .posts--related.posts--n3 .post { flex-direction: row; }
+  .posts--related.posts--n3 .cover { flex: 0 0 38%; aspect-ratio: auto; min-height: 200px; }
+}
+@media (min-width: 1024px) { .posts--related.posts--n3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 640px) and (max-width: 1199.98px) { .posts--related.posts--n4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1200px) { .posts--related.posts--n4 { grid-template-columns: repeat(4, minmax(0, 1fr)); } .posts--related.posts--n4 .post__body { padding: var(--s-2) var(--s-2) var(--s-3); } }
+
+/* the band: "Featured" is a quieter head than a section title */
+.posts-band__label { font-size: clamp(1.15rem, .95rem + .8vw, 1.6rem); }
+.posts-band--feature .block__inner { gap: var(--s-3); }
+
+/* nothing to list yet */
+.posts__none { display: flex; flex-direction: column; align-items: flex-start; gap: var(--s-3); padding: var(--s-4); border: 1.5px dashed var(--line-2); border-radius: var(--radius-lg); background: var(--card); }
+.posts__none p { font: 500 var(--fs-subhead)/1.45 var(--font-head); color: var(--fg-2); max-width: 60ch; }

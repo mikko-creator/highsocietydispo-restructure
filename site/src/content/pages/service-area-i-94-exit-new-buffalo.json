@@ -1,0 +1,299 @@
+{
+ "path": "/dispensary-locations/new-buffalo/service-areas/i-94-exit-new-buffalo/",
+ "template": "service-area",
+ "store": "new-buffalo",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/dispensary-locations/new-buffalo/service-areas/i-94-exit-new-buffalo/"
+ ],
+ "title": "Dispensary Near I-94 Exit in New Buffalo",
+ "metaDescription": "Need a dispensary near I-94 in New Buffalo? Easy access off the highway, clear parking, fast in-store shopping. Directions + FAQs. 21+.",
+ "h1": "Dispensary Near I-94 Exit 1 (New Buffalo) — Quick, Easy Pickup",
+ "crumb": "I-94 Exit 1",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Locations",
+   "path": "/dispensary-locations/"
+  },
+  {
+   "name": "New Buffalo",
+   "path": "/dispensary-locations/new-buffalo/"
+  },
+  {
+   "name": "Areas We Serve",
+   "path": "/dispensary-locations/new-buffalo/service-areas/"
+  },
+  {
+   "name": "I-94 Exit 1"
+  }
+ ],
+ "hero": {
+  "eyebrow": "High Society New Buffalo",
+  "image": "assets/pit-stop/img/scene-new-buffalo.jpg",
+  "imageAlt": "",
+  "lead": "Minutes from the M-239 exit with easy access from US-12 for Indiana + Chicago traffic headed into Harbor Country.",
+  "ctas": [
+   {
+    "text": "ORDER NOW",
+    "href": "/shop/new-buffalo/"
+   },
+   {
+    "text": "Get Directions",
+    "href": "https://maps.app.goo.gl/8oANXpmVzFSHBqru8",
+    "style": "ghost"
+   }
+  ],
+  "status": {
+   "open": "Open - Closes at 9:00 PM",
+   "closed": "Closed - Opens at 9:00 AM"
+  },
+  "mapsUrl": "https://maps.app.goo.gl/8oANXpmVzFSHBqru8"
+ },
+ "blocks": [
+  {
+   "type": "media",
+   "id": "photos",
+   "ground": "white",
+   "label": "Photos",
+   "images": [
+    {
+     "image": "assets/in-pages/i_94_exit_gallery_1.webp",
+     "alt": "High Society Cannabis storefront with H logo signs above the entrance"
+    },
+    {
+     "image": "assets/in-pages/i_94_exit_gallery_2.webp",
+     "alt": "Inside a High Society store: shoppers at the counters, product shelves behind them"
+    },
+    {
+     "image": "assets/in-pages/i_94_exit_gallery_3.webp",
+     "alt": "Jars of cannabis flower lined up on store shelves"
+    }
+   ]
+  },
+  {
+   "type": "store-details",
+   "id": "glance",
+   "ground": "white",
+   "heading": "At A Glance",
+   "store": "new-buffalo",
+   "name": "High Society Weed Dispensary",
+   "facts": [
+    "address",
+    "phone",
+    "hours",
+    {
+     "icon": "pin",
+     "text": "Parking: On-site lot (easy in/out)"
+    }
+   ],
+   "addressText": "19189 US-12, New Buffalo, MI 49117",
+   "phoneLabel": "Phone:",
+   "hoursText": "Mon - Sun: 9:00 AM - 9:00 PM",
+   "mapsUrl": "https://maps.app.goo.gl/8oANXpmVzFSHBqru8",
+   "ctas": [
+    {
+     "text": "Get Directions",
+     "href": "maps"
+    },
+    {
+     "text": "ORDER NOW",
+     "href": "shop",
+     "style": "ghost"
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "id": "directions",
+   "ground": "headlight",
+   "heading": "Directions & Parking",
+   "items": [
+    {
+     "title": "Getting here from I-94 Exit 1 (M-239 / New Buffalo)",
+     "md": "1. Take I-94 Exit 1 toward New Buffalo / M-239.\n2. Follow M-239 toward New Buffalo.\n3. Connect to US-12 and continue to 19189 US-12 (High Society New Buffalo).\n\n[Get Directions](https://maps.app.goo.gl/8oANXpmVzFSHBqru8)"
+    },
+    {
+     "title": "Getting here from US-12 (New Buffalo travel corridor)",
+     "md": "1. Stay on US-12 through the New Buffalo corridor.\n2. Look for High Society at 19189 US-12 (easy pull-in parking).\n\n[Get Directions](https://maps.app.goo.gl/8oANXpmVzFSHBqru8)"
+    },
+    {
+     "title": "Parking",
+     "md": "**Parking Notes:** Free on-site parking makes this a true highway stop - quick in/out for I-94 travelers and US-12 commuters."
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "id": "fast",
+   "ground": "white",
+   "heading": "Fast Pickup, Friendly Team",
+   "md": "Walk in, get checked in, and head to the counter. Most visits take under 10 minutes. Our team can point you to popular categories and answer questions. We accept cash and debit; ATMs are available on site. The store and parking are accessible."
+  },
+  {
+   "type": "cards",
+   "id": "buy",
+   "ground": "black",
+   "columns": 5,
+   "heading": "What People Buy Here",
+   "items": [
+    {
+     "title": "Flower",
+     "md": "Everyday value to top-shelf",
+     "icon": "leaf",
+     "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=flower"
+    },
+    {
+     "title": "Pre-rolls",
+     "md": "Singles & multipacks for quick stops",
+     "icon": "spark",
+     "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=pre-rolls"
+    },
+    {
+     "title": "Vapes",
+     "md": "Compact options for travel days",
+     "icon": "wave",
+     "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=vaporizers"
+    },
+    {
+     "title": "Edibles",
+     "md": "Gummies, chocolates, and more",
+     "icon": "stars",
+     "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=edibles"
+    },
+    {
+     "title": "Gear",
+     "md": "Papers, lighters, grinders",
+     "icon": "bag",
+     "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=accessories"
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "id": "trip",
+   "ground": "headlight",
+   "heading": "For I-94 + US-12 travelers",
+   "style": "check",
+   "items": [
+    "Easy stop for Chicago / Indiana traffic heading into Michigan",
+    "Quick detour off Exit 1 (M-239) before you hit the lake towns",
+    "Great for weekend trips—check today’s hours above"
+   ]
+  },
+  {
+   "type": "callout",
+   "id": "law",
+   "ground": "headlight",
+   "tone": "legal",
+   "heading": "Crossing state lines",
+   "md": "Heading home? Enjoy responsibly in Michigan and don’t travel across state lines with cannabis. Read our [Illinois](/cannabis-laws-by-state/illinois/) and [Indiana](/cannabis-laws-by-state/indiana/) law guides before you go."
+  },
+  {
+   "type": "reviews",
+   "id": "reviews",
+   "heading": "Reviews",
+   "lead": "What customers say about High Society New Buffalo.",
+   "items": [
+    {
+     "text": "Very cool establishment with friendly and helpful budtenders, and a super cute receptionist that always greets me with a smile! Great deals too! Definitely worth stopping.",
+     "author": "CJ 718"
+    },
+    {
+     "text": "Very welcoming staff, and all around vibe of the place, the layout of the store is very nice and spacious, and an amazing display all around. Very clean aswell! Mae was amazing, very polite and patient! helped me find what I was looking for aswell as being informative! 10/10 atmosphere, experience, and customer service! Will defiantly be coming back!!! Thank you!",
+     "author": "Kyle Mayer"
+    },
+    {
+     "text": "Amazing products. Great staff. Will stop by again.",
+     "author": "Heather Benedict"
+    },
+    {
+     "text": "My first time going there was today. I must say I was impressed. Super nice receptionist. Great prices. Awesome deals.",
+     "author": "Shea Lowe"
+    },
+    {
+     "text": "Great prices and selection. Bud tender was knowledgeable and super friendly. Definitely coming back.",
+     "author": "Stacey"
+    }
+   ]
+  },
+  {
+   "type": "faq",
+   "id": "faq",
+   "ground": "white",
+   "heading": "FAQ",
+   "items": [
+    {
+     "q": "Do you have parking?",
+     "a": "Yes—free on-site parking."
+    },
+    {
+     "q": "What ID do I need?",
+     "a": "Valid government-issued photo ID; 21+ only."
+    },
+    {
+     "q": "Do you take cards?",
+     "a": "Debit is accepted; cash is welcome."
+    },
+    {
+     "q": "Can I use an out-of-state ID (IN/IL)?",
+     "a": "Yes—valid government-issued ID works (must be 21+)."
+    },
+    {
+     "q": "How long does pickup take?",
+     "a": "Most visits are quick — ideal for highway travelers."
+    },
+    {
+     "q": "Holiday hours?",
+     "a": "We post updates on this page and on our Google listing (you can call to be sure)."
+    }
+   ]
+  },
+  {
+   "type": "store-details",
+   "id": "store",
+   "ground": "headlight",
+   "store": "new-buffalo",
+   "name": "High Society Cannabis - New Buffalo",
+   "facts": [
+    "address",
+    "hours",
+    "phone"
+   ],
+   "addressText": "19189 US-12, New Buffalo, MI 49117",
+   "hoursText": "Mon - Sun: 9:00 AM - 9:00 PM",
+   "mapsUrl": "https://maps.app.goo.gl/kq382F61vzmYFNYU9",
+   "ctas": [
+    {
+     "text": "Get Directions",
+     "href": "maps"
+    },
+    {
+     "text": "View Location",
+     "href": "location",
+     "style": "ghost"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen-other.mjs",
+  "fixes": [
+   "h1 joined from its two v1 lines",
+   "the second identical At A Glance card and the repeated tiles are declared duplicates (rendered once)",
+   "empty CMS slots not rendered",
+   "title: v1's \" | US-12\" tail dropped so the title with the suffix fits 60"
+  ],
+  "newCopy": [
+   "hero eyebrow",
+   "the step title \"Parking\" (the parking notes are High Society's)",
+   "reviews lead",
+   "law pointer callout",
+   "the gallery photos' alt text (v1's alts were the file names; each describes only what the photo shows)"
+  ]
+ }
+}

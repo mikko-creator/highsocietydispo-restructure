@@ -1,0 +1,152 @@
+/* 01-hero — the reskin's cover (reskin stylesheet lines 320-388, its scrim reused at 697-705) in the owner's layout E
+   (2026-10-22): the race-day photo full-bleed under the black scrim, the type in the lower right on desktop beside the
+   woman, the trophy kicker, one red action (no HS monogram: owner, 2026-10-22, "it can do fine without it"; the
+   wordmark over the H1 carries the H). Along the foot the reskin's two rolling store-name tickers, small, in the
+   band under the actions (owner: "make it small that it fits here"), the band itself the pause control (site.js), over a
+   checkered strip (the tokens' section divider). Colours are the tokens' (black and red mixed down, never typed). The logos carry no shadow or
+   glow (brand card: never shadowed or glowing). */
+.hero {
+  /* the two small ticker rows in the band under the actions (owner, 2026-10-22: "keep these but … make it small that it
+     fits here"): .9 line height each, a 4px gap, at least 44px tall (the band is the pause control's target), then the
+     reskin's 10px of air and the strip */
+  --tk: clamp(17px, 5vw, 22px);
+  --tk-gap: 4px;
+  --tk-air: 10px;
+  --band-h: max(44px, calc(var(--tk) * .9 * 2 + var(--tk-gap)));
+  --type-h: calc(var(--band-h) + var(--tk-air) + var(--checker-h));
+  --hero-fs: clamp(2rem, min(10.6vw, 5.3svh), 3.4rem);
+  --k: var(--black);
+  background: var(--black);
+}
+.hero__bg { background: var(--black); }
+/* the photo: cover, art-directed by breakpoint so the woman stays a visible subject and no text sits on her face.
+   Phones: the picture is drawn 12% taller than the section and anchored to its foot, which lifts her face into the
+   top of the screen, clear of the type in the bottom half (only sky is lost above her) */
+.hero__photo { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 112%; object-position: 23% 40%; object-fit: cover; }
+/* portrait phones: the owner's phone hero (2026-10-22, "can you try this?"; derived:owner-hero-mobile, made for a 390x844
+   screen and already faded to black) at the top of the screen, the full width, its own shape (1170 x its cut height),
+   running up under the clear bar; the black ground continues below it, where the type sits */
+@media (max-width: 767.98px) and (orientation: portrait) {
+  .hero__photo { top: 0; bottom: auto; height: auto; aspect-ratio: var(--owner-hero-ar, 1170 / 1612); object-position: 50% 0; }
+}
+/* the reskin's scrim, black only. Phones: light over her face at the top, dark from the middle down, where the type is */
+.hero__scrim {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 90% 34% at 50% 70%, color-mix(in srgb, var(--k) 62%, transparent), transparent 76%),
+    linear-gradient(180deg, color-mix(in srgb, var(--k) 44%, transparent) 0%, color-mix(in srgb, var(--k) 10%, transparent) 16%, color-mix(in srgb, var(--k) 26%, transparent) 32%, color-mix(in srgb, var(--k) 78%, transparent) 52%, color-mix(in srgb, var(--k) 90%, transparent) 74%, color-mix(in srgb, var(--k) 94%, transparent) 100%);
+}
+/* portrait phones: the photo ends near the screen's middle and the type sits on the black, so the scrim only shades
+   the top, under the clear bar's logo and buttons */
+@media (max-width: 767.98px) and (orientation: portrait) {
+  .hero__scrim { background: linear-gradient(180deg, color-mix(in srgb, var(--k) 44%, transparent) 0%, color-mix(in srgb, var(--k) 10%, transparent) 14%, transparent 24%); }
+}
+/* short portrait phones (under 760px tall: 360x640, 375x667, 360x740): the owner's picture is made for a 390x844
+   screen, so here the type starts over her jacket; the photo darkens into the black from about a third of the screen,
+   behind the kicker and the wordmark */
+@media (max-width: 767.98px) and (orientation: portrait) and (max-height: 759.98px) {
+  .hero__scrim {
+    background:
+      linear-gradient(180deg, transparent 30%, color-mix(in srgb, var(--k) 72%, transparent) 42%, color-mix(in srgb, var(--k) 94%, transparent) 54%),
+      linear-gradient(180deg, color-mix(in srgb, var(--k) 44%, transparent) 0%, color-mix(in srgb, var(--k) 10%, transparent) 14%, transparent 24%);
+  }
+}
+/* phones: no action bar over the hero (it slides in once the hero has scrolled past, site.js), so the hero runs down to
+   the screen's foot; without scripts the bar always shows and the hero keeps the usual space above it. Short screens
+   (natural height) and a hero grown to its content (.is-overflowing) keep their own rules */
+@media (min-height: 540px) {
+  .js .hero.slide:not(.is-overflowing) { height: calc(var(--slide-h-fallback) + var(--dock-h)); height: calc(var(--slide-h) + var(--dock-h)); min-height: calc(var(--slide-h-fallback) + var(--dock-h)); min-height: calc(var(--slide-h) + var(--dock-h)); }
+}
+/* the cinematic bar (option B): the photo runs on up under the clear bar */
+.hero.slide--first { overflow: visible; }
+.hero__bg { top: calc(-1 * var(--bar-h)); }
+
+/* ------------------------------------------------------------------ the content: phones first, the stack in the
+   bottom half (the thumb's half), above the tickers */
+.hero__inner {
+  display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) auto;
+  grid-template-areas: "." "stack";
+  padding-bottom: max(var(--pad-b), calc(var(--type-h) + var(--s-3)));
+}
+.hero__stack { grid-area: stack; display: flex; flex-direction: column; align-items: center; gap: var(--s-2); min-width: 0; text-align: center; }
+/* the reskin's kicker: the red trophy mark between two red rules (decoration) */
+.hero__kicker {
+  display: block; flex: none; width: 7.5rem; height: 1.4rem;
+  background:
+    var(--mark-red) center / 1.4rem no-repeat,
+    linear-gradient(var(--red), var(--red)) 0 50% / 2.6rem 2px no-repeat,
+    linear-gradient(var(--red), var(--red)) 100% 50% / 2.6rem 2px no-repeat;
+}
+.hero__wordmark { width: clamp(200px, 64vw, 300px); height: auto; }
+/* the page's one H1: Changa One drawn heavier (900, the reskin's display weight), white, uppercase, tight */
+.hero__title { font: 900 var(--hero-fs)/var(--lh-display) var(--font-display); text-transform: uppercase; letter-spacing: -.005em; color: var(--white); text-wrap: balance; max-width: 100%; }
+/* phones: the two actions share one row (a little less side padding in the buttons), in the thumb's reach */
+.hero__actions { display: flex; flex-wrap: nowrap; justify-content: center; gap: var(--s-1); width: 100%; padding-top: var(--s-1); }
+.hero__actions .btn { flex: 1 1 0; min-width: 0; padding-inline: 1.1em; }
+/* the reskin's hero action: the red button with the white trophy mark before the label and a red glow */
+.hero__go { box-shadow: 0 18px 40px -18px color-mix(in srgb, var(--red) 90%, transparent); }
+.hero__go::before { content: ""; flex: none; width: 1.25rem; height: 1.25rem; background: var(--mark-white) center / contain no-repeat; }
+.hero__go:hover { box-shadow: 0 18px 40px -18px color-mix(in srgb, var(--red) 90%, transparent); }
+.hero__go:hover::before { background-image: var(--mark-red); }
+
+/* ------------------------------------------------------------------ the tickers along the foot (decoration; the band
+   is the pause control) */
+.hero__type { position: absolute; left: 0; right: 0; bottom: calc(var(--checker-h) + var(--tk-air)); z-index: 3; min-height: var(--band-h); display: flex; flex-direction: column; justify-content: center; gap: var(--tk-gap); pointer-events: none; }
+.hero .hero__ticker .ticker__name { font-size: var(--tk); }
+.hero .hero__ticker .ticker__mark { width: calc(var(--tk) * .56); height: calc(var(--tk) * .56); }
+.hero .hero__ticker.ticker--outline .ticker__name { -webkit-text-stroke-width: 1px; }
+.hero__checker { position: absolute; left: 0; right: 0; bottom: 0; z-index: 3; }
+
+/* short phones (360x640): the stack keeps its order with tighter steps, the tickers a size down */
+@media (max-width: 767.98px) and (max-height: 700px) {
+  .hero { --tk: clamp(15px, 4.4vw, 18px); }
+  .hero__stack { gap: 12px; }
+}
+
+/* ------------------------------------------------------------------ tablets, portrait: the phone cover, larger */
+@media (min-width: 768px) {
+  .hero { --tk: clamp(20px, 2.8vw, 26px); --hero-fs: clamp(3rem, min(7.4vw, 6svh), 4.4rem); }
+  .hero__photo { object-position: 22% 40%; }
+  .hero__wordmark { width: clamp(300px, 46vw, 400px); }
+  .hero__title { max-width: 13em; }
+  .hero__stack { gap: var(--s-3); }
+  .hero__actions { width: auto; }
+  .hero__actions .btn { flex: 0 0 auto; padding-inline: 1.8em; }
+}
+
+/* ------------------------------------------------------------------ desktop: layout E. The woman on the left with
+   the monogram behind her, the type in the lower right (the H1 at the display size, capped by the height), the
+   scrim darkening the right side under the type and the foot */
+@media (min-width: 1024px) {
+  .hero { --tk: clamp(20px, 1.9vw, 30px); --hero-fs: min(var(--fs-display), 10svh); }
+  /* desktop: the photo is the section's own size again (the screen is wide: she sits at the left, the type beside her) */
+  .hero__photo { top: 0; height: 100%; object-position: 30% 40%; }
+  .hero__scrim {
+    background:
+      linear-gradient(270deg, color-mix(in srgb, var(--k) 84%, transparent) 0%, color-mix(in srgb, var(--k) 60%, transparent) 36%, color-mix(in srgb, var(--k) 14%, transparent) 60%, transparent 74%),
+      linear-gradient(180deg, color-mix(in srgb, var(--k) 55%, transparent) 0%, color-mix(in srgb, var(--k) 12%, transparent) 30%, color-mix(in srgb, var(--k) 28%, transparent) 62%, color-mix(in srgb, var(--k) 94%, transparent) 100%);
+  }
+  /* the stack at the top of the content box, the page's own top padding under the bar (owner, 2026-10-22: "since we
+     have the marquee at the bottom, it would be okay to move this up a little bit"; it sat on the band) */
+  .hero__inner { grid-template-columns: minmax(0, 1fr) minmax(0, 48%); grid-template-rows: minmax(0, 1fr); grid-template-areas: ". stack"; align-items: start; }
+  .hero__stack { align-items: flex-start; text-align: left; }
+  .hero__wordmark { width: clamp(300px, 30vw, 460px); }
+  .hero__title { max-width: 10em; }
+  .hero__actions { justify-content: flex-start; }
+}
+/* short desktops (1280x720): the ticker rows a step smaller */
+@media (min-width: 1024px) and (max-height: 760px) {
+  .hero { --tk: min(clamp(20px, 1.9vw, 30px), 3.4svh); }
+}
+
+/* ------------------------------------------------------------------ motion: a quick rise once, nothing behind text */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-on .hero__kicker, .reveal-on .hero__wordmark, .reveal-on .hero__title, .reveal-on .hero__actions { animation: rise 560ms var(--ease) backwards; }
+  .reveal-on .hero__wordmark { animation-delay: 60ms; }
+  .reveal-on .hero__title { animation-delay: 120ms; }
+  .reveal-on .hero__actions { animation-delay: 200ms; }
+  /* the hero already on screen when the script arrives (the head script marks the first painted frame that comes
+     before site.js's reveal-on: build.mjs): no entrance, it stays as it is (speed audit, 2026-10-22: on slow loads the
+     headline showed, went blank and faded back in) */
+  .hero-shown .hero__kicker, .hero-shown .hero__wordmark, .hero-shown .hero__title, .hero-shown .hero__actions { animation: none; }
+}

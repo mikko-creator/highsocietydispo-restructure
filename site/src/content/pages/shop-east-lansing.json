@@ -1,0 +1,137 @@
+{
+ "path": "/shop/east-lansing/",
+ "template": "menu-placeholder",
+ "store": "east-lansing",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/shop/east-lansing/"
+ ],
+ "titleFull": "Shop Cannabis - East Lansing Dispensary Menu",
+ "metaDescription": "Explore High Society's online cannabis selection for the East Lansing weed dispensary. Order premium cannabis products for easy pickup.",
+ "h1": "East Lansing Weed Dispensary Menu",
+ "crumb": "East Lansing",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Shop",
+   "path": "/shop/"
+  },
+  {
+   "name": "East Lansing"
+  }
+ ],
+ "hero": {
+  "eyebrow": "High Society East Lansing",
+  "lead": "Order ahead online, then pick up in store or at the curb.",
+  "status": {
+   "open": "Open - Closes at 9:00 PM",
+   "closed": "Closed - Opens at 9:00 AM"
+  },
+  "mapsUrl": "https://www.google.com/maps/dir//High+Society+Cannabis+East+Lansing,+2040+Merritt+Rd,+East+Lansing,+MI+48823,+United+States/@42.749362,-84.448151,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8822e96897ec722d:0x8fe0676da4d4d199!2m2!1d-84.448151!2d42.749362!3e0"
+ },
+ "blocks": [
+  {
+   "type": "menu-placeholder",
+   "id": "menu",
+   "ground": "white",
+   "store": "east-lansing",
+   "heading": "Menu",
+   "title": "Shop the East Lansing menu",
+   "md": "Browse today’s products, prices and deals, add them to your cart and choose a pickup time. Prefer to order by phone? Call the store and our team will help.",
+   "order": {
+    "text": "Order Now"
+   },
+   "call": {
+    "text": "Call"
+   }
+  },
+  {
+   "type": "link-grid",
+   "id": "categories",
+   "ground": "headlight",
+   "heading": "Shop by Category",
+   "groups": [
+    {
+     "title": "East Lansing menu",
+     "links": [
+      {
+       "text": "Accessories",
+       "href": "/shop/east-lansing/?dtche%5Bcategory%5D=accessories"
+      },
+      {
+       "text": "Apparel",
+       "href": "/shop/east-lansing/?dtche%5Bcategory%5D=apparel"
+      },
+      {
+       "text": "Concentrates",
+       "href": "/shop/east-lansing/?dtche%5Bcategory%5D=concentrates"
+      },
+      {
+       "text": "Edibles",
+       "href": "/shop/east-lansing/?dtche%5Bcategory%5D=edibles"
+      },
+      {
+       "text": "Flower",
+       "href": "/shop/east-lansing/?dtche%5Bcategory%5D=flower"
+      },
+      {
+       "text": "Pre-Rolls",
+       "href": "/shop/east-lansing/?dtche%5Bcategory%5D=pre-rolls"
+      },
+      {
+       "text": "Topicals",
+       "href": "/shop/east-lansing/?dtche%5Bcategory%5D=topicals"
+      },
+      {
+       "text": "Vaporizers",
+       "href": "/shop/east-lansing/?dtche%5Bcategory%5D=vaporizers"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "store-details",
+   "id": "store",
+   "ground": "white",
+   "heading": "Your Store",
+   "store": "east-lansing",
+   "name": "High Society East Lansing",
+   "facts": [
+    "address",
+    "phone",
+    "email",
+    "hours"
+   ],
+   "email": "info@highsocietydispo.com",
+   "hoursText": "9:00 AM - 9:00 PM Daily",
+   "mapsUrl": "https://www.google.com/maps/dir//High+Society+Cannabis+East+Lansing,+2040+Merritt+Rd,+East+Lansing,+MI+48823,+United+States/@42.749362,-84.448151,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8822e96897ec722d:0x8fe0676da4d4d199!2m2!1d-84.448151!2d42.749362!3e0",
+   "ctas": [
+    {
+     "text": "View Location",
+     "href": "location"
+    },
+    {
+     "text": "Get Directions",
+     "href": "maps",
+     "style": "ghost"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen-other.mjs",
+  "newCopy": [
+   "hero eyebrow and lead",
+   "the menu notice (title, text, button labels)",
+   "category band heading and group title"
+  ],
+  "notes": [
+   "category links use High Society's own form /shop/<store>/?dtche[category]=<category> (its v1 store pages); the CMS category pages (/east-lansing/<category>/) are not part of this build"
+  ]
+ }
+}

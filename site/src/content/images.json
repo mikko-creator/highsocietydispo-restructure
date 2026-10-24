@@ -1,0 +1,1019 @@
+{
+ "assets/in-pages/banner_logo.webp": {
+  "file": "reskin/assets/in-pages/banner_logo.webp",
+  "width": 1040,
+  "height": 111,
+  "variants": [
+   {
+    "w": 1040,
+    "h": 111,
+    "file": "banner-logo-1040.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/Layer_13_copy.webp": {
+  "file": "reskin/assets/in-pages/Layer_13_copy.webp",
+  "width": 271,
+  "height": 240,
+  "variants": [
+   {
+    "w": 271,
+    "h": 240,
+    "file": "layer-13-copy-271.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/Clip_path_group.webp": {
+  "file": "reskin/assets/in-pages/Clip_path_group.webp",
+  "width": 264,
+  "height": 241,
+  "variants": [
+   {
+    "w": 264,
+    "h": 241,
+    "file": "clip-path-group-264.webp"
+   }
+  ],
+  "alpha": false
+ },
+ "assets/in-pages/Clip_path_group__1_.webp": {
+  "file": "reskin/assets/in-pages/Clip_path_group__1_.webp",
+  "width": 416,
+  "height": 151,
+  "variants": [
+   {
+    "w": 416,
+    "h": 151,
+    "file": "clip-path-group-1-416.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/hot_deals.webp": {
+  "file": "reskin/assets/in-pages/hot_deals.webp",
+  "width": 1130,
+  "height": 397,
+  "variants": [
+   {
+    "w": 560,
+    "h": 197,
+    "file": "hot-deals-560.webp"
+   },
+   {
+    "w": 840,
+    "h": 295,
+    "file": "hot-deals-840.webp"
+   },
+   {
+    "w": 1130,
+    "h": 397,
+    "file": "hot-deals-1130.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/hot_deals___2.webp": {
+  "file": "reskin/assets/in-pages/hot_deals___2.webp",
+  "width": 1122,
+  "height": 261,
+  "variants": [
+   {
+    "w": 560,
+    "h": 130,
+    "file": "hot-deals-2-560.webp"
+   },
+   {
+    "w": 840,
+    "h": 195,
+    "file": "hot-deals-2-840.webp"
+   },
+   {
+    "w": 1122,
+    "h": 261,
+    "file": "hot-deals-2-1122.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/mobile_hot_deals.webp": {
+  "file": "reskin/assets/in-pages/mobile_hot_deals.webp",
+  "width": 338,
+  "height": 402,
+  "variants": [
+   {
+    "w": 338,
+    "h": 402,
+    "file": "mobile-hot-deals-338.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/hot_deals___mobile2.webp": {
+  "file": "reskin/assets/in-pages/hot_deals___mobile2.webp",
+  "width": 343,
+  "height": 367,
+  "variants": [
+   {
+    "w": 343,
+    "h": 367,
+    "file": "hot-deals-mobile2-343.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/2024_06_10_HighSociety_RemakeMIJaneLogo_1.webp": {
+  "file": "reskin/assets/in-pages/2024_06_10_HighSociety_RemakeMIJaneLogo_1.webp",
+  "width": 448,
+  "height": 146,
+  "variants": [
+   {
+    "w": 448,
+    "h": 146,
+    "file": "2024-06-10-highsociety-remakemijanelogo-1-448.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/Doozy_Color_1.webp": {
+  "file": "reskin/assets/in-pages/Doozy_Color_1.webp",
+  "width": 343,
+  "height": 343,
+  "variants": [
+   {
+    "w": 343,
+    "h": 343,
+    "file": "doozy-color-1-343.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/Rooted_Logo_1.webp": {
+  "file": "reskin/assets/in-pages/Rooted_Logo_1.webp",
+  "width": 279,
+  "height": 321,
+  "variants": [
+   {
+    "w": 279,
+    "h": 321,
+    "file": "rooted-logo-1-279.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/Glostix_Logo_1.webp": {
+  "file": "reskin/assets/in-pages/Glostix_Logo_1.webp",
+  "width": 443,
+  "height": 128,
+  "variants": [
+   {
+    "w": 443,
+    "h": 128,
+    "file": "glostix-logo-1-443.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/high_society_cannabis__1__2.webp": {
+  "file": "reskin/assets/in-pages/high_society_cannabis__1__2.webp",
+  "width": 643,
+  "height": 643,
+  "variants": [
+   {
+    "w": 260,
+    "h": 260,
+    "file": "high-society-cannabis-1-2-260.webp"
+   },
+   {
+    "w": 643,
+    "h": 643,
+    "file": "high-society-cannabis-1-2-643.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/high_society_cannabis__1__2__1_.webp": {
+  "file": "reskin/assets/in-pages/high_society_cannabis__1__2__1_.webp",
+  "width": 481,
+  "height": 481,
+  "variants": [
+   {
+    "w": 481,
+    "h": 481,
+    "file": "high-society-cannabis-1-2-1-481.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/image_1__1_.webp": {
+  "file": "reskin/assets/in-pages/image_1__1_.webp",
+  "width": 836,
+  "height": 769,
+  "variants": [
+   {
+    "w": 420,
+    "h": 386,
+    "file": "image-1-1-420.webp"
+   },
+   {
+    "w": 836,
+    "h": 769,
+    "file": "image-1-1-836.webp"
+   }
+  ],
+  "alpha": false
+ },
+ "assets/in-pages/app_img.webp": {
+  "file": "reskin/assets/in-pages/app_img.webp",
+  "width": 706,
+  "height": 887,
+  "variants": [
+   {
+    "w": 360,
+    "h": 452,
+    "file": "app-img-360.webp"
+   },
+   {
+    "w": 706,
+    "h": 887,
+    "file": "app-img-706.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/img1.webp": {
+  "file": "reskin/assets/in-pages/img1.webp",
+  "width": 324,
+  "height": 95,
+  "variants": [
+   {
+    "w": 324,
+    "h": 95,
+    "file": "img1-324.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/pit-stop/img/scene-birch-run.jpg": {
+  "file": "reskin/assets/pit-stop/img/scene-birch-run.jpg",
+  "width": 1600,
+  "height": 1063,
+  "variants": [
+   {
+    "w": 480,
+    "h": 319,
+    "file": "scene-birch-run-ed295b60-480.webp"
+   },
+   {
+    "w": 800,
+    "h": 532,
+    "file": "scene-birch-run-ed295b60-800.webp"
+   },
+   {
+    "w": 1200,
+    "h": 797,
+    "file": "scene-birch-run-ed295b60-1200.webp"
+   },
+   {
+    "w": 1600,
+    "h": 1063,
+    "file": "scene-birch-run-ed295b60-1600.webp"
+   }
+  ],
+  "alpha": false,
+  "toned": "derived/toned/scene-birch-run.png"
+ },
+ "assets/pit-stop/img/scene-east-lansing.jpg": {
+  "file": "reskin/assets/pit-stop/img/scene-east-lansing.jpg",
+  "width": 1600,
+  "height": 1063,
+  "variants": [
+   {
+    "w": 480,
+    "h": 319,
+    "file": "scene-east-lansing-1c4e0754-480.webp"
+   },
+   {
+    "w": 800,
+    "h": 532,
+    "file": "scene-east-lansing-1c4e0754-800.webp"
+   },
+   {
+    "w": 1200,
+    "h": 797,
+    "file": "scene-east-lansing-1c4e0754-1200.webp"
+   },
+   {
+    "w": 1600,
+    "h": 1063,
+    "file": "scene-east-lansing-1c4e0754-1600.webp"
+   }
+  ],
+  "alpha": false,
+  "toned": "derived/toned/scene-east-lansing.png"
+ },
+ "assets/pit-stop/img/scene-big-rapids.jpg": {
+  "file": "reskin/assets/pit-stop/img/scene-big-rapids.jpg",
+  "width": 1600,
+  "height": 1063,
+  "variants": [
+   {
+    "w": 480,
+    "h": 319,
+    "file": "scene-big-rapids-4729aea2-480.webp"
+   },
+   {
+    "w": 800,
+    "h": 532,
+    "file": "scene-big-rapids-4729aea2-800.webp"
+   },
+   {
+    "w": 1200,
+    "h": 797,
+    "file": "scene-big-rapids-4729aea2-1200.webp"
+   },
+   {
+    "w": 1600,
+    "h": 1063,
+    "file": "scene-big-rapids-4729aea2-1600.webp"
+   }
+  ],
+  "alpha": false,
+  "toned": "derived/toned/scene-big-rapids.png"
+ },
+ "assets/pit-stop/img/scene-charlotte.jpg": {
+  "file": "reskin/assets/pit-stop/img/scene-charlotte.jpg",
+  "width": 1600,
+  "height": 1063,
+  "variants": [
+   {
+    "w": 480,
+    "h": 319,
+    "file": "scene-charlotte-95524306-480.webp"
+   },
+   {
+    "w": 800,
+    "h": 532,
+    "file": "scene-charlotte-95524306-800.webp"
+   },
+   {
+    "w": 1200,
+    "h": 797,
+    "file": "scene-charlotte-95524306-1200.webp"
+   },
+   {
+    "w": 1600,
+    "h": 1063,
+    "file": "scene-charlotte-95524306-1600.webp"
+   }
+  ],
+  "alpha": false,
+  "toned": "derived/toned/scene-charlotte.png"
+ },
+ "assets/pit-stop/img/scene-lenox.jpg": {
+  "file": "reskin/assets/pit-stop/img/scene-lenox.jpg",
+  "width": 1600,
+  "height": 1063,
+  "variants": [
+   {
+    "w": 480,
+    "h": 319,
+    "file": "scene-lenox-ff0f81c8-480.webp"
+   },
+   {
+    "w": 800,
+    "h": 532,
+    "file": "scene-lenox-ff0f81c8-800.webp"
+   },
+   {
+    "w": 1200,
+    "h": 797,
+    "file": "scene-lenox-ff0f81c8-1200.webp"
+   },
+   {
+    "w": 1600,
+    "h": 1063,
+    "file": "scene-lenox-ff0f81c8-1600.webp"
+   }
+  ],
+  "alpha": false,
+  "toned": "derived/toned/scene-lenox.png"
+ },
+ "assets/pit-stop/img/scene-mount-pleasant.jpg": {
+  "file": "reskin/assets/pit-stop/img/scene-mount-pleasant.jpg",
+  "width": 1600,
+  "height": 1063,
+  "variants": [
+   {
+    "w": 480,
+    "h": 319,
+    "file": "scene-mount-pleasant-c2e189cd-480.webp"
+   },
+   {
+    "w": 800,
+    "h": 532,
+    "file": "scene-mount-pleasant-c2e189cd-800.webp"
+   },
+   {
+    "w": 1200,
+    "h": 797,
+    "file": "scene-mount-pleasant-c2e189cd-1200.webp"
+   },
+   {
+    "w": 1600,
+    "h": 1063,
+    "file": "scene-mount-pleasant-c2e189cd-1600.webp"
+   }
+  ],
+  "alpha": false,
+  "toned": "derived/toned/scene-mount-pleasant.png"
+ },
+ "assets/pit-stop/img/scene-saline.jpg": {
+  "file": "reskin/assets/pit-stop/img/scene-saline.jpg",
+  "width": 1600,
+  "height": 1063,
+  "variants": [
+   {
+    "w": 480,
+    "h": 319,
+    "file": "scene-saline-f4673a67-480.webp"
+   },
+   {
+    "w": 800,
+    "h": 532,
+    "file": "scene-saline-f4673a67-800.webp"
+   },
+   {
+    "w": 1200,
+    "h": 797,
+    "file": "scene-saline-f4673a67-1200.webp"
+   },
+   {
+    "w": 1600,
+    "h": 1063,
+    "file": "scene-saline-f4673a67-1600.webp"
+   }
+  ],
+  "alpha": false,
+  "toned": "derived/toned/scene-saline.png"
+ },
+ "assets/pit-stop/img/scene-new-buffalo.jpg": {
+  "file": "reskin/assets/pit-stop/img/scene-new-buffalo.jpg",
+  "width": 1600,
+  "height": 1063,
+  "variants": [
+   {
+    "w": 480,
+    "h": 319,
+    "file": "scene-new-buffalo-2c5774a7-480.webp"
+   },
+   {
+    "w": 800,
+    "h": 532,
+    "file": "scene-new-buffalo-2c5774a7-800.webp"
+   },
+   {
+    "w": 1200,
+    "h": 797,
+    "file": "scene-new-buffalo-2c5774a7-1200.webp"
+   },
+   {
+    "w": 1600,
+    "h": 1063,
+    "file": "scene-new-buffalo-2c5774a7-1600.webp"
+   }
+  ],
+  "alpha": false,
+  "toned": "derived/toned/scene-new-buffalo.png"
+ },
+ "assets/pit-stop/img/lifestyle-01.jpg": {
+  "file": "reskin/assets/pit-stop/img/lifestyle-01.jpg",
+  "width": 1600,
+  "height": 1063,
+  "variants": [
+   {
+    "w": 640,
+    "h": 425,
+    "file": "lifestyle-01-640.webp"
+   },
+   {
+    "w": 1024,
+    "h": 680,
+    "file": "lifestyle-01-1024.webp"
+   },
+   {
+    "w": 1600,
+    "h": 1063,
+    "file": "lifestyle-01-1600.webp"
+   }
+  ],
+  "alpha": false
+ },
+ "assets/pit-stop/img/lifestyle-02.jpg": {
+  "file": "reskin/assets/pit-stop/img/lifestyle-02.jpg",
+  "width": 1600,
+  "height": 1063,
+  "variants": [
+   {
+    "w": 640,
+    "h": 425,
+    "file": "lifestyle-02-02fbd9c4-640.webp"
+   },
+   {
+    "w": 1024,
+    "h": 680,
+    "file": "lifestyle-02-02fbd9c4-1024.webp"
+   },
+   {
+    "w": 1600,
+    "h": 1063,
+    "file": "lifestyle-02-02fbd9c4-1600.webp"
+   }
+  ],
+  "alpha": false,
+  "toned": "derived/toned/lifestyle-02.png"
+ },
+ "assets/pit-stop/img/hero-pit-wall.jpg": {
+  "file": "reskin/assets/pit-stop/img/hero-pit-wall.jpg",
+  "width": 2000,
+  "height": 858,
+  "variants": [
+   {
+    "w": 640,
+    "h": 275,
+    "file": "hero-pit-wall-640.webp"
+   },
+   {
+    "w": 1024,
+    "h": 439,
+    "file": "hero-pit-wall-1024.webp"
+   },
+   {
+    "w": 1600,
+    "h": 686,
+    "file": "hero-pit-wall-1600.webp"
+   },
+   {
+    "w": 2000,
+    "h": 858,
+    "file": "hero-pit-wall-2000.webp"
+   }
+  ],
+  "alpha": false
+ },
+ "assets/pit-stop/logo/b-horizontal-web-keyline.svg": {
+  "file": "reskin/assets/pit-stop/logo/b-horizontal-web-keyline.svg",
+  "width": 1632,
+  "height": 524,
+  "variants": [
+   {
+    "w": 1632,
+    "h": 524,
+    "file": "b-horizontal-web-keyline.svg"
+   }
+  ],
+  "svg": true
+ },
+ "assets/pit-stop/logo/b-mark-badge-keyline.svg": {
+  "file": "reskin/assets/pit-stop/logo/b-mark-badge-keyline.svg",
+  "width": 516,
+  "height": 516,
+  "variants": [
+   {
+    "w": 516,
+    "h": 516,
+    "file": "b-mark-badge-keyline.svg"
+   }
+  ],
+  "svg": true
+ },
+ "assets/pit-stop/logo/mark-red.svg": {
+  "file": "reskin/assets/pit-stop/logo/mark-red.svg",
+  "width": 492,
+  "height": 492,
+  "variants": [
+   {
+    "w": 492,
+    "h": 492,
+    "file": "mark-red.svg"
+   }
+  ],
+  "svg": true
+ },
+ "assets/pit-stop/logo/mark-white.svg": {
+  "file": "reskin/assets/pit-stop/logo/mark-white.svg",
+  "width": 492,
+  "height": 492,
+  "variants": [
+   {
+    "w": 492,
+    "h": 492,
+    "file": "mark-white.svg"
+   }
+  ],
+  "svg": true
+ },
+ "assets/pit-stop/pattern/carbon-panel.svg": {
+  "file": "reskin/assets/pit-stop/pattern/carbon-panel.svg",
+  "width": 3200,
+  "height": 1800,
+  "variants": [
+   {
+    "w": 3200,
+    "h": 1800,
+    "file": "carbon-panel.svg"
+   }
+  ],
+  "svg": true
+ },
+ "assets/pit-stop/pattern/carbon.svg": {
+  "file": "reskin/assets/pit-stop/pattern/carbon.svg",
+  "width": 80,
+  "height": 80,
+  "variants": [
+   {
+    "w": 80,
+    "h": 80,
+    "file": "carbon.svg"
+   }
+  ],
+  "svg": true
+ },
+ "assets/pit-stop/pattern/diamond-plate.svg": {
+  "file": "reskin/assets/pit-stop/pattern/diamond-plate.svg",
+  "width": 198,
+  "height": 198,
+  "variants": [
+   {
+    "w": 198,
+    "h": 198,
+    "file": "diamond-plate.svg"
+   }
+  ],
+  "svg": true
+ },
+ "assets/pit-stop/pattern/checkered-band.png": {
+  "file": "reskin/assets/pit-stop/pattern/checkered-band.png",
+  "width": 756,
+  "height": 189,
+  "variants": [
+   {
+    "w": 756,
+    "h": 189,
+    "file": "checkered-band.png"
+   }
+  ]
+ },
+ "assets/pit-stop/pattern/checkered-band-76.png": {
+  "file": "reskin/assets/pit-stop/pattern/checkered-band-76.png",
+  "width": 304,
+  "height": 76,
+  "variants": [
+   {
+    "w": 304,
+    "h": 76,
+    "file": "checkered-band-76.png"
+   }
+  ]
+ },
+ "brand:assets/logos/pitstop-trophy-horizontal.png": {
+  "file": "brand/assets/logos/pitstop-trophy-horizontal.png",
+  "width": 1600,
+  "height": 492,
+  "variants": [
+   {
+    "w": 480,
+    "h": 148,
+    "file": "brand-pitstop-trophy-horizontal-480.webp"
+   },
+   {
+    "w": 960,
+    "h": 295,
+    "file": "brand-pitstop-trophy-horizontal-960.webp"
+   },
+   {
+    "w": 1600,
+    "h": 492,
+    "file": "brand-pitstop-trophy-horizontal-1600.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "brand:assets/logos/pitstop-trophy-stacked-from-wrap-p01-01.png": {
+  "file": "brand/assets/logos/pitstop-trophy-stacked-from-wrap-p01-01.png",
+  "width": 2400,
+  "height": 1820,
+  "variants": [
+   {
+    "w": 360,
+    "h": 273,
+    "file": "brand-pitstop-trophy-stacked-from-wrap-p01-01-360.webp"
+   },
+   {
+    "w": 720,
+    "h": 546,
+    "file": "brand-pitstop-trophy-stacked-from-wrap-p01-01-720.webp"
+   },
+   {
+    "w": 2400,
+    "h": 1820,
+    "file": "brand-pitstop-trophy-stacked-from-wrap-p01-01-2400.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "brand:assets/picked/logo/b-stacked-web-keyline.svg": {
+  "file": "brand/assets/picked/logo/b-stacked-web-keyline.svg",
+  "width": 2444,
+  "height": 1864,
+  "variants": [
+   {
+    "w": 2444,
+    "h": 1864,
+    "file": "brand-b-stacked-web-keyline.svg"
+   }
+  ],
+  "svg": true
+ },
+ "brand:assets/picked/logo/b-mark-badge-keyline.svg": {
+  "file": "brand/assets/picked/logo/b-mark-badge-keyline.svg",
+  "width": 516,
+  "height": 516,
+  "variants": [
+   {
+    "w": 516,
+    "h": 516,
+    "file": "brand-b-mark-badge-keyline.svg"
+   }
+  ],
+  "svg": true
+ },
+ "brand:assets/picked/graphic/b-pattern-pit-box.svg": {
+  "file": "brand/assets/picked/graphic/b-pattern-pit-box.svg",
+  "width": 1600,
+  "height": 900,
+  "variants": [
+   {
+    "w": 1600,
+    "h": 900,
+    "file": "brand-b-pattern-pit-box.svg"
+   }
+  ],
+  "svg": true
+ },
+ "brand:assets/picked/graphic/b-pattern-diamond-plate.svg": {
+  "file": "brand/assets/picked/graphic/b-pattern-diamond-plate.svg",
+  "width": 1600,
+  "height": 900,
+  "variants": [
+   {
+    "w": 1600,
+    "h": 900,
+    "file": "brand-b-pattern-diamond-plate.svg"
+   }
+  ],
+  "svg": true
+ },
+ "brand:assets/picked/graphic/c-pattern-carbon.svg": {
+  "file": "brand/assets/picked/graphic/c-pattern-carbon.svg",
+  "width": 1600,
+  "height": 900,
+  "variants": [
+   {
+    "w": 1600,
+    "h": 900,
+    "file": "brand-c-pattern-carbon.svg"
+   }
+  ],
+  "svg": true
+ },
+ "assets/pit-stop/img/lifestyle-02.jpg#phone": {
+  "file": "reskin/assets/pit-stop/img/lifestyle-02.jpg",
+  "crop": [
+   335,
+   0,
+   1435,
+   1063
+  ],
+  "width": 1100,
+  "height": 1063,
+  "variants": [
+   {
+    "w": 1100,
+    "h": 1063,
+    "file": "lifestyle-02-02fbd9c4-phone-1100.webp"
+   }
+  ],
+  "alpha": false
+ },
+ "derived:owner-hero-mobile": {
+  "file": "derived/owner-hero-mobile.png",
+  "cut": 1612,
+  "width": 1170,
+  "height": 1612,
+  "variants": [
+   {
+    "w": 780,
+    "h": 1075,
+    "file": "owner-hero-mobile-780.webp"
+   },
+   {
+    "w": 1170,
+    "h": 1612,
+    "file": "owner-hero-mobile-1170.webp"
+   }
+  ],
+  "avif": [
+   {
+    "w": 780,
+    "h": 1075,
+    "file": "owner-hero-mobile-780.avif"
+   },
+   {
+    "w": 1170,
+    "h": 1612,
+    "file": "owner-hero-mobile-1170.avif"
+   }
+  ],
+  "alpha": false
+ },
+ "derived:app-phone-mockup": {
+  "file": "derived/owner-phone-mockup.png",
+  "tool": "src/tools/build-app-mockup.py",
+  "width": 815,
+  "height": 1077,
+  "variants": [
+   {
+    "w": 440,
+    "h": 581,
+    "file": "app-phone-mockup-440.webp"
+   },
+   {
+    "w": 640,
+    "h": 846,
+    "file": "app-phone-mockup-640.webp"
+   },
+   {
+    "w": 815,
+    "h": 1077,
+    "file": "app-phone-mockup-815.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "derived:google-rating.svg": {
+  "file": "derived/google-rating.svg",
+  "tool": "src/tools/build-google-badge.py",
+  "width": 254,
+  "height": 59,
+  "variants": [
+   {
+    "w": 254,
+    "h": 59,
+    "file": "google-rating.svg"
+   }
+  ],
+  "svg": true
+ },
+ "assets/in-pages/Price_Table.webp": {
+  "file": "v1/assets/in-pages/Price_Table.webp",
+  "width": 1421,
+  "height": 799,
+  "variants": [
+   {
+    "w": 720,
+    "h": 405,
+    "file": "price-table-720.webp"
+   },
+   {
+    "w": 1080,
+    "h": 607,
+    "file": "price-table-1080.webp"
+   },
+   {
+    "w": 1421,
+    "h": 799,
+    "file": "price-table-1421.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/i_94_exit_gallery_1.webp": {
+  "file": "v1/assets/in-pages/i_94_exit_gallery_1.webp",
+  "width": 462,
+  "height": 275,
+  "variants": [
+   {
+    "w": 462,
+    "h": 275,
+    "file": "i-94-exit-gallery-1-462.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/i_94_exit_gallery_2.webp": {
+  "file": "v1/assets/in-pages/i_94_exit_gallery_2.webp",
+  "width": 462,
+  "height": 275,
+  "variants": [
+   {
+    "w": 462,
+    "h": 275,
+    "file": "i-94-exit-gallery-2-462.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/i_94_exit_gallery_3.webp": {
+  "file": "v1/assets/in-pages/i_94_exit_gallery_3.webp",
+  "width": 461,
+  "height": 275,
+  "variants": [
+   {
+    "w": 461,
+    "h": 275,
+    "file": "i-94-exit-gallery-3-461.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/Michiana_gallery_1.webp": {
+  "file": "v1/assets/in-pages/Michiana_gallery_1.webp",
+  "width": 484,
+  "height": 364,
+  "variants": [
+   {
+    "w": 484,
+    "h": 364,
+    "file": "michiana-gallery-1-484.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/Michiana_gallery_2.webp": {
+  "file": "v1/assets/in-pages/Michiana_gallery_2.webp",
+  "width": 485,
+  "height": 364,
+  "variants": [
+   {
+    "w": 485,
+    "h": 364,
+    "file": "michiana-gallery-2-485.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/Michiana_gallery_3.webp": {
+  "file": "v1/assets/in-pages/Michiana_gallery_3.webp",
+  "width": 485,
+  "height": 364,
+  "variants": [
+   {
+    "w": 485,
+    "h": 364,
+    "file": "michiana-gallery-3-485.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/Union_Pier_gallery_1.webp": {
+  "file": "v1/assets/in-pages/Union_Pier_gallery_1.webp",
+  "width": 484,
+  "height": 364,
+  "variants": [
+   {
+    "w": 484,
+    "h": 364,
+    "file": "union-pier-gallery-1-484.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/Union_Pier_gallery_2.webp": {
+  "file": "v1/assets/in-pages/Union_Pier_gallery_2.webp",
+  "width": 485,
+  "height": 364,
+  "variants": [
+   {
+    "w": 485,
+    "h": 364,
+    "file": "union-pier-gallery-2-485.webp"
+   }
+  ],
+  "alpha": true
+ },
+ "assets/in-pages/Union_Pier_gallery_3.webp": {
+  "file": "v1/assets/in-pages/Union_Pier_gallery_3.webp",
+  "width": 485,
+  "height": 364,
+  "variants": [
+   {
+    "w": 485,
+    "h": 364,
+    "file": "union-pier-gallery-3-485.webp"
+   }
+  ],
+  "alpha": true
+ }
+}

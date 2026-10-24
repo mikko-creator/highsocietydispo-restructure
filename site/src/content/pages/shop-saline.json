@@ -1,0 +1,137 @@
+{
+ "path": "/shop/saline/",
+ "template": "menu-placeholder",
+ "store": "saline",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/shop/saline/"
+ ],
+ "titleFull": "Shop Cannabis - Saline Dispensary Menu",
+ "metaDescription": "Explore High Society's online cannabis menu for the Saline weed dispensary. Order premium cannabis products for convenient pickup.",
+ "h1": "Saline Weed Dispensary Menu",
+ "crumb": "Saline",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Shop",
+   "path": "/shop/"
+  },
+  {
+   "name": "Saline"
+  }
+ ],
+ "hero": {
+  "eyebrow": "High Society Saline",
+  "lead": "Order ahead online, then pick up in store or at the curb.",
+  "status": {
+   "open": "Open - Closes at 9:00 PM",
+   "closed": "Closed - Opens at 9:00 AM"
+  },
+  "mapsUrl": "https://www.google.com/maps/dir//High+Society+Weed+Dispensary+Saline,+465+E+Michigan+Ave,+Saline,+MI+48176,+United+States/@42.1721206,-83.7721604,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x883cbba6ea421d95:0xd12eec0b41841a7c!2m2!1d-83.7721604!2d42.1721206!3e0"
+ },
+ "blocks": [
+  {
+   "type": "menu-placeholder",
+   "id": "menu",
+   "ground": "white",
+   "store": "saline",
+   "heading": "Menu",
+   "title": "Shop the Saline menu",
+   "md": "Browse today’s products, prices and deals, add them to your cart and choose a pickup time. Prefer to order by phone? Call the store and our team will help.",
+   "order": {
+    "text": "Order Now"
+   },
+   "call": {
+    "text": "Call"
+   }
+  },
+  {
+   "type": "link-grid",
+   "id": "categories",
+   "ground": "headlight",
+   "heading": "Shop by Category",
+   "groups": [
+    {
+     "title": "Saline menu",
+     "links": [
+      {
+       "text": "Accessories",
+       "href": "/shop/saline/?dtche%5Bcategory%5D=accessories"
+      },
+      {
+       "text": "Apparel",
+       "href": "/shop/saline/?dtche%5Bcategory%5D=apparel"
+      },
+      {
+       "text": "Concentrates",
+       "href": "/shop/saline/?dtche%5Bcategory%5D=concentrates"
+      },
+      {
+       "text": "Edibles",
+       "href": "/shop/saline/?dtche%5Bcategory%5D=edibles"
+      },
+      {
+       "text": "Flower",
+       "href": "/shop/saline/?dtche%5Bcategory%5D=flower"
+      },
+      {
+       "text": "Pre-Rolls",
+       "href": "/shop/saline/?dtche%5Bcategory%5D=pre-rolls"
+      },
+      {
+       "text": "Topicals",
+       "href": "/shop/saline/?dtche%5Bcategory%5D=topicals"
+      },
+      {
+       "text": "Vaporizers",
+       "href": "/shop/saline/?dtche%5Bcategory%5D=vaporizers"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "store-details",
+   "id": "store",
+   "ground": "white",
+   "heading": "Your Store",
+   "store": "saline",
+   "name": "High Society Saline",
+   "facts": [
+    "address",
+    "phone",
+    "email",
+    "hours"
+   ],
+   "email": "info@highsocietydispo.com",
+   "hoursText": "9:00 AM - 9:00 PM Daily",
+   "mapsUrl": "https://www.google.com/maps/dir//High+Society+Weed+Dispensary+Saline,+465+E+Michigan+Ave,+Saline,+MI+48176,+United+States/@42.1721206,-83.7721604,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x883cbba6ea421d95:0xd12eec0b41841a7c!2m2!1d-83.7721604!2d42.1721206!3e0",
+   "ctas": [
+    {
+     "text": "View Location",
+     "href": "location"
+    },
+    {
+     "text": "Get Directions",
+     "href": "maps",
+     "style": "ghost"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen-other.mjs",
+  "newCopy": [
+   "hero eyebrow and lead",
+   "the menu notice (title, text, button labels)",
+   "category band heading and group title"
+  ],
+  "notes": [
+   "category links use High Society's own form /shop/<store>/?dtche[category]=<category> (its v1 store pages); the CMS category pages (/saline/<category>/) are not part of this build"
+  ]
+ }
+}

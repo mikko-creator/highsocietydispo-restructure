@@ -1,0 +1,13 @@
+/* templates/faq.css — /faq/ (pages lane): the topic chips in the hero (outlined pills on the ink ground, the red one
+   on hover), then the FAQ bands (core faq block: v2's accordion), the store links, the sources and the contact band. */
+.chips { display: flex; flex-direction: column; gap: var(--s-1); margin-top: var(--s-2); }
+.chips__label { font: 700 .78rem/1.2 var(--font-display); letter-spacing: .2em; text-transform: uppercase; color: var(--em); }
+.chips__list { display: flex; flex-wrap: wrap; gap: var(--s-1); }
+.chips__link { display: inline-flex; align-items: center; min-height: var(--tap); padding: 0 18px; border: 1.5px solid var(--ghost-line); border-radius: 999px; font: 700 .8125rem/1.1 var(--font-head); letter-spacing: .06em; text-transform: uppercase; color: var(--fg); transition: background-color var(--dur) var(--ease), border-color var(--dur) var(--ease), color var(--dur) var(--ease); }
+.chips__link:hover { background: var(--btn); border-color: var(--btn); color: var(--on-btn); }
+.page--faq .block--faq .block__title { scroll-margin-top: calc(var(--bar-h) + var(--s-3)); }
+.page--faq .block--link-grid .linkgrid { max-width: 60rem; }
+@media (min-width: 640px) {
+  .page--faq .block--link-grid .linkgrid__links { column-count: 2; column-gap: var(--s-5); }
+  .page--faq .block--link-grid .linkgrid__links li { break-inside: avoid; }
+}

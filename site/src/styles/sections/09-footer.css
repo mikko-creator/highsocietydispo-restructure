@@ -1,0 +1,175 @@
+/* 09-footer — the page footer in the reskin's own footer language (its stylesheet lines 614-640; RESKIN-STYLE row 9).
+   - the red rolling store-name band on top (the kit's .ticker--band: 3.4rem, white Changa One 900 1rem .14em, white
+     trophy marks; still under reduced motion), the section's top edge (data-edge-band)
+   - the ink footer: the keyline lockup (the reskin's 17rem, never under the 190px web minimum, its clear space of 6% of
+     its width kept by the gaps); the columns under small red labels
+     (Changa One drawn bold, .74rem, .2em, Neon Red on ink, as the reskin sets them: in the site's own case) on a
+     hairline; links Work Sans 500 1rem at 82% white, white with a red underline on hover and focus, every one a 44px row
+   - the reskin's trophy mark huge and faint (4.5%) at the bottom right, in the background layer (no text sits on it)
+   - the checkered strip, edge to edge, above the bottom row; the copyright and the legal lines in #BDBEBE (--black-300)
+   Height: the footer is .slide--natural and exactly the space between the header and the phone's action bar (as the
+   reskin's footer, about one screen tall), so it sits whole and flush at the page's end. The links and the columns sit
+   at the top, the strip and the bottom row at the foot, the air between them over the faint trophy, as on the reskin.
+   Four compositions, one markup:
+   - from 1024px: the reskin's four columns (lockup | Quick Links | Locations | Your Store); Locations runs as one list
+     of eight where the screen is tall enough, as two short lists of four where it is not (1280x720, 1024x768)
+   - tablets (768-1023px): the lockup on top, then Quick Links | Locations | Your Store
+   - tall phones (840px tall and up, 375px wide and up): the reskin's phone footer: the lockup, then Quick Links (Your
+     Store under it) beside Locations, two lists of 44px rows (from 900px tall the 3.4rem band and the lockup at 240px
+     )
+   - shorter (and 360px-wide) phones: the lockup with Your Store beside it, then Quick Links and Locations as compact three-column link
+     grids that share their columns (subgrid), so the two lists line up */
+.footer {
+  --ft-band: 3.4rem;                          /* the reskin's red band */
+  --ft-logo: 17rem;                           /* the reskin's lockup: min(17rem, 70vw) */
+  --ft-link-fs: 1rem;
+  --ft-legal-fs: .84rem;                      /* the reskin's copyright row */
+  --ft-label-gap: .9rem;                      /* label to its hairline */
+  --ft-list-gap: .6rem;                       /* hairline to the first 44px row */
+  --checker-h: 18px;                          /* the reskin's strip */
+  display: flex; flex-direction: column;
+}
+/* exactly the space between the header and the phone's action bar, never taller: the last screen of the page */
+.footer.slide--natural { min-height: var(--slide-h-fallback); min-height: var(--slide-h); }
+
+/* ---------------------------------------------------------------- the red band (decoration) */
+/* the kit's .ticker--band timing (60s), the reskin's own: its .ps-band runs the .ps-ticker__track 60s loop */
+.footer .footer__band { position: relative; z-index: 3; flex: none; height: var(--ft-band); }
+
+/* the reskin's trophy mark, huge and faint, in the background layer */
+.footer__bg::after { content: ""; position: absolute; right: -6%; bottom: -14%; height: 78%; aspect-ratio: 1; background: var(--mark-white) center / contain no-repeat; opacity: .045; }
+
+/* ---------------------------------------------------------------- the grid (phones first: the compact composition) */
+.footer__inner {
+  flex: 1 1 auto; width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  grid-template-areas: "brand brand store" "quick quick quick" "locs locs locs" "base base base";
+  grid-template-rows: auto auto auto 1fr;
+  column-gap: var(--s-2); row-gap: var(--s-1);
+  align-items: start;
+}
+.footer__brand { grid-area: brand; position: relative; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; }
+.footer__quick { grid-area: quick; min-width: 0; }
+.footer__locs { grid-area: locs; min-width: 0; }
+.footer__store { grid-area: store; min-width: 0; }
+/* the bottom row spans every column and takes their width; it never sizes them */
+.footer__base { grid-area: base; align-self: end; min-width: 0; contain: inline-size; }
+
+/* the lockup: never under its 190px web minimum */
+.footer__logo { display: inline-flex; min-height: 44px; min-width: 44px; }
+.footer__lockup { width: var(--ft-logo); max-width: 100%; height: auto; }
+
+/* (the reskin's red mark-and-rule under the lockup is not drawn: owner, 2026-10-22, "it doesnt make sense to have this
+   there") */
+
+/* column labels: h2 set small, as the reskin's footer labels: Changa One drawn bold, Neon Red, on a hairline */
+.footer__title { padding-bottom: var(--ft-label-gap); border-bottom: 1px solid var(--line); font: 700 .74rem/1.2 var(--font-display); letter-spacing: .2em; color: var(--em); }
+
+/* the link lists: every link a 44px row; Work Sans at 82% white, white with the red underline on hover and focus.
+   The colour is 82% white (--w-82) already composited on the ink ground: .82*255 + .18*3 = 209.6, .18*4 → 209.8, so
+   #D2D2D2. Same pixels on ink (about 13.6:1), but opaque, so the contrast gate measures every link instead of
+   skipping translucent text */
+.footer__links { margin-top: var(--ft-list-gap); }
+.footer__links li { min-width: 0; display: flex; }
+.footer__links a { display: flex; align-items: center; min-height: var(--tap); min-width: 44px; font: 500 var(--ft-link-fs)/1.2 var(--font-body); color: #D2D2D2; text-decoration: underline 1px transparent; text-underline-offset: .25em; transition: color var(--dur) var(--ease), text-decoration-color var(--dur) var(--ease); }
+.footer__links a:is(:hover, :focus-visible) { color: var(--white); text-decoration-color: var(--red); }
+
+/* compact phones: the two lists share three columns (subgrid), so Quick Links and Locations line up */
+.footer__quick, .footer__locs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-columns: subgrid; }
+.footer__group > .footer__title { grid-column: 1 / -1; }
+.footer__quick .footer__links, .footer__locs .footer__links { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-columns: subgrid; }
+
+/* the bottom row: the reskin's checkered strip edge to edge, then the copyright and the two legal lines (text) */
+.footer__checker { margin-inline: calc(50% - 50vw); }
+.footer__legal { display: flex; flex-direction: column; gap: 0; padding-top: var(--s-2); }
+.footer__terms { display: flex; flex-direction: column; min-width: 0; }
+.footer__legal p { font: 400 var(--ft-legal-fs)/1.5 var(--font-body); color: var(--black-300); }
+.footer__legal p span { white-space: nowrap; }
+
+/* ---------------------------------------------------------------- compact phones, by height */
+@media (max-width: 767.98px) {
+  .footer { --ft-band: 2.75rem; --ft-logo: 190px; --ft-link-fs: .9375rem; --ft-legal-fs: .78rem; --ft-label-gap: 6px; --ft-list-gap: 0px; --checker-h: 12px; }
+  .footer__inner { row-gap: var(--s-2); column-gap: 12px; }
+  /* the lockup and Your Store share the first row across all three columns (the lockup at the start, Your Store at
+     the end), so the 190px lockup never widens the first two link columns: the three columns size to their own
+     names only ("Mount Pleasant" 115px, "East Lansing" 94px at 15px) and every name keeps one line */
+  .footer__brand, .footer__store { grid-row: 1; grid-column: 1 / -1; }
+  .footer__brand { justify-self: start; }
+  .footer__store { justify-self: end; width: calc(100% - var(--ft-logo) - var(--s-2)); }
+  .footer__links a { line-height: 1.15; }
+  .footer__legal { padding-top: 10px; }
+  .footer__legal p { line-height: 1.4; }
+}
+/* short phones (under 700px tall: 360x640): the band and the steps a size down */
+@media (max-width: 767.98px) and (max-height: 699.98px) {
+  .footer { --ft-band: 2.125rem; --ft-legal-fs: .75rem; --checker-h: 10px; }
+  .footer__inner { row-gap: var(--s-1); }
+  .footer__legal { padding-top: 8px; }
+  .footer__legal p { line-height: 1.35; }
+}
+
+
+/* ---------------------------------------------------------------- tall phones: the reskin's two lists
+   The two-list composition needs about 704px of content (44px rows, a width-independent height) plus the 128px of
+   header and action bar, so it starts at 840px tall (390x844, 393x852, 414x896, 430x932). Below that (375x812,
+   360x800) it ran 20px and 70px past the screen. Phones under 375px wide keep the compact grid at any height: at
+   360px the copyright wraps to a second line and the lists no longer fit */
+@media (max-width: 767.98px) and (min-width: 375px) and (min-height: 840px) {
+  .footer { --ft-band: 3rem; --ft-link-fs: 1rem; --ft-legal-fs: .8125rem; --ft-label-gap: 10px; --ft-list-gap: 6px; }
+  .footer__inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); justify-content: stretch;
+    grid-template-areas: "brand brand" "quick locs" "store locs" "base base";
+    grid-template-rows: auto auto 1fr auto;
+    column-gap: var(--s-2); row-gap: var(--s-3);
+  }
+  .footer__brand { grid-area: brand; }
+  .footer__store { grid-area: store; justify-self: stretch; width: auto; }
+  .footer__quick, .footer__locs, .footer__quick .footer__links, .footer__locs .footer__links { display: block; }
+  .footer__legal { padding-top: var(--s-2); }
+  .footer__legal p { line-height: 1.45; }
+}
+/* the tallest phones (900px and up: 430x932, 412x915) have the room for the reskin's phone band (3.4rem), its phone
+   lockup size. The same 375px floor as the two lists: this size belongs to that composition (in
+   the compact grid a 240px lockup would squeeze Your Store beside it to about 64px) */
+@media (max-width: 767.98px) and (min-width: 375px) and (min-height: 900px) {
+  .footer { --ft-band: 3.4rem; --ft-logo: 240px; }
+}
+
+/* ---------------------------------------------------------------- tablets and desktop */
+@media (min-width: 768px) {
+  .footer__quick, .footer__locs, .footer__quick .footer__links { display: block; }
+  .footer__locs .footer__links { grid-template-columns: minmax(0, 1fr); }
+  .footer__links { margin-top: 1.1rem; }
+  .footer__legal { flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: flex-start; gap: 0 var(--s-4); padding-top: 1.2rem; }
+  .footer__legal .footer__copy { flex: none; }
+  /* the two legal lines keep together at the right: one row where they fit, else stacked, right-aligned */
+  .footer__terms { flex: 1 1 auto; flex-direction: row; flex-wrap: wrap; justify-content: flex-end; column-gap: var(--s-4); text-align: right; }
+}
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .footer__inner {
+    grid-template-columns: repeat(3, minmax(0, 1fr)); justify-content: stretch;
+    grid-template-areas: "brand brand brand" "quick locs store" "base base base";
+    grid-template-rows: auto 1fr auto;
+    column-gap: var(--s-4); row-gap: var(--s-5);
+  }
+  /* the copyright on its line, the two legal lines side by side under it (beside the copyright, "Careers" fell to a
+     third line at 768px) */
+  .footer__legal { flex-direction: column; }
+  .footer__terms { justify-content: flex-start; text-align: left; }
+}
+@media (min-width: 1024px) {
+  .footer__inner {
+    grid-template-columns: minmax(190px, 1.25fr) repeat(3, minmax(0, 1fr)); justify-content: stretch;
+    grid-template-areas: "brand quick locs store" "base base base base";
+    grid-template-rows: 1fr auto;
+    column-gap: clamp(1.5rem, 3vw, 3.5rem); row-gap: var(--s-4);
+  }
+}
+/* short desktops (1280x720, 1024x768): Locations as two short lists of four, the column twice as wide. The lockup
+   column takes the reskin's 17rem first where there is room (never under 190px); the link columns share the rest */
+@media (min-width: 1024px) and (max-height: 819.98px) {
+  .footer__inner { grid-template-columns: minmax(190px, 17rem) minmax(0, .9fr) minmax(0, 1.8fr) minmax(0, .8fr); }
+  .footer__locs .footer__links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(4, auto); grid-auto-flow: column; column-gap: var(--s-3); }
+}

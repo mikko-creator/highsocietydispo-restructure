@@ -1,0 +1,118 @@
+{
+ "path": "/cannabis-laws-by-state/indiana/",
+ "template": "guide",
+ "provenance": "new",
+ "sourceRefs": [
+  "structure map newPageBriefs /cannabis-laws-by-state/indiana/",
+  "facts/law-facts.json (claims listed in review.claims)",
+  "facts/hs-facts.json services.idRules, services.travelWithCannabis, F-nb (New Buffalo service-area pages)"
+ ],
+ "title": "Is Weed Legal in Indiana? Laws and Penalties",
+ "crumb": "Indiana",
+ "metaDescription": "Is weed legal in Indiana? No: as of October 2026 possession is a crime. Indiana penalties, and what Hoosiers visiting Michigan need to know before they cross.",
+ "h1": "Indiana Marijuana Laws: What Hoosiers Visiting Michigan Should Know",
+ "hero": {
+  "eyebrow": "Cannabis Laws by State",
+  "lead": "Short answer: no. As of October 2026, Indiana has no legal adult-use or medical marijuana. Here is what that means for Hoosiers who visit Michigan, and why nothing bought here can go back across the line."
+ },
+ "reviewed": { "label": "Last reviewed", "date": "2026-10-24", "text": "October 2026" },
+ "tocLabel": "On this page",
+ "summary": {
+  "heading": "Indiana at a glance",
+  "items": [
+   "**Adult use:** not legal in Indiana.",
+   "**Medical:** no medical marijuana program.",
+   "**Possession:** a crime for any amount; a first offense is a Class B misdemeanor, with up to 180 days in jail and a fine of up to $1,000.",
+   "**In Michigan:** adults 21 and older can shop with a valid ID and use cannabis on private property where the owner allows it.",
+   "**Coming home:** bringing Michigan cannabis into Indiana is illegal under Indiana law and federal law."
+  ]
+ },
+ "blocks": [
+  {
+   "type": "prose",
+   "heading": "Is weed legal in Indiana?",
+   "md": "No. As of October 2026, Indiana has no legal adult-use or medical marijuana, and possessing any amount is a crime. No bill changing that became law in 2026: the 2026 edition of the Indiana Code, published after that year’s session, keeps the possession law as it stood in 2025.\n\nThat sets Indiana apart from its neighbors. Michigan to the north and Illinois to the west both allow adults 21 and older to buy cannabis, and Ohio to the east legalized adult use in 2023. Hoosiers who visit Michigan can shop legally here, but the law changes the moment they cross back."
+  },
+  {
+   "type": "prose",
+   "heading": "Possession penalties in Indiana",
+   "md": "In Indiana, possessing marijuana is a Class B misdemeanor, punishable by up to 180 days in jail and a fine of up to $1,000. A prior drug conviction raises it to a Class A misdemeanor, with a jail term of up to one year and a fine of up to $5,000. With a prior drug conviction, 30 grams or more of marijuana, or 5 grams or more of hash oil or hashish, makes it a Level 6 felony.\n\nMarijuana packaged to look like low-THC hemp extract also counts as a Class A misdemeanor when the person knew or should have known. Indiana law allows a one-time conditional discharge for a first misdemeanor possession offense.\n\nNone of these penalties depends on where the cannabis was bought."
+  },
+  {
+   "type": "prose",
+   "heading": "Did federal rescheduling change anything?",
+   "md": "Not for Indiana possession. A federal rule that took effect on April 28, 2026 moved only two things to Schedule III: FDA-approved drugs that contain marijuana, and marijuana covered by a state medical marijuana license. All other marijuana, adult-use included, is still in Schedule I as of October 2026. A broader proposal to move all marijuana to Schedule III went to a federal hearing in the summer of 2026; as of late October the judge’s recommended decision was still pending and no final rule had been published.\n\nNone of that touches Indiana’s own law, which still makes possession a crime. And the April rule is aimed at licensed medical businesses: it does not say that patients may carry medical marijuana across state lines."
+  },
+  {
+   "type": "prose",
+   "heading": "Hemp, THCA and the federal changes",
+   "md": "Federal law has been narrowing what counts as legal hemp. Congress set a new definition that counts THCA toward hemp’s 0.3% THC limit and excludes finished products with more than 0.4 mg of total THC per container. Most intoxicating hemp-THC products stop qualifying as hemp. The change was set for November 12, 2026, and a stopgap law pushed most of it to December 11, 2026.\n\nOn the Michigan side, cannabis over 0.3% THC, THCA included, is marijuana that only licensed marijuana businesses may sell, and delta-8 THC counts as marijuana too. Read the label of anything you buy, and buy cannabis only from a licensed store."
+  },
+  {
+   "type": "prose",
+   "heading": "Hoosiers shopping in Michigan",
+   "md": "Michigan’s adult-use law covers adults 21 and older, and you do not need a Michigan ID to buy. Every Michigan store checks a valid driver’s license or government-issued photo ID before a sale, and our New Buffalo pages note that, in most cases, valid government IDs from other states are accepted. Bring your ID to confirm.\n\nWhile you are here, Michigan’s limits apply to you: up to 2.5 ounces per transaction and in your possession, with no more than 15 grams of it as concentrate. Use cannabis only on private property where the owner allows it. Public use is not allowed, hotels and other property owners may ban it, and no one may use cannabis while driving or smoke it in a vehicle on a public road.\n\nMichigan has no numeric THC limit for drivers, but it bans driving under the influence and has a zero-tolerance law for any amount of a Schedule 1 drug, which includes marijuana. If you have used cannabis, do not drive."
+  },
+  {
+   "type": "callout",
+   "tone": "warn",
+   "heading": "Nothing bought in Michigan goes back to Indiana",
+   "md": "Bringing Michigan-bought cannabis into Indiana is illegal under Indiana law, regardless of where it was bought, and taking cannabis across any state line is illegal under federal law. That includes products you did not finish, so buy only what you will enjoy in Michigan.\n\nFriendly reminder: Enjoy responsibly in Michigan—don’t travel across state lines with cannabis."
+  },
+  {
+   "type": "cta",
+   "heading": "Our New Buffalo store, just over the line",
+   "md": "High Society New Buffalo is at 19189 US-12, minutes from I-94 Exit 1 and just over the Indiana line on US-12. Coming from Michiana or Long Beach? Our area page has the route and parking notes. Valid government ID required. 21+ only.",
+   "ctas": [
+    { "text": "New Buffalo store", "href": "/dispensary-locations/new-buffalo/" },
+    { "text": "Michiana & Long Beach route", "href": "/dispensary-locations/new-buffalo/service-areas/michiana-long-beach-in/", "style": "ghost" }
+   ]
+  },
+  {
+   "type": "faq",
+   "heading": "Indiana visitor questions",
+   "items": [
+    { "q": "Is weed legal in Indiana?", "a": "No. As of October 2026, Indiana has no legal adult-use or medical marijuana, and possessing any amount is a crime." },
+    { "q": "Can Indiana residents buy cannabis in Michigan?", "a": "Yes. Adults 21 and older can buy here with a valid driver’s license or other government photo ID, and Michigan’s limits and rules apply while you are in the state." },
+    { "q": "Can I bring weed from Michigan to Indiana?", "a": "No. It is illegal under Indiana law, wherever it was bought, and crossing a state line with cannabis is illegal under federal law." },
+    { "q": "What is the penalty for possession in Indiana?", "a": "A first offense is a Class B misdemeanor, with up to 180 days in jail and a fine of up to $1,000. A prior drug conviction makes it a Class A misdemeanor." },
+    { "q": "Does Indiana have a medical marijuana program?", "a": "No. Indiana has no legal medical marijuana, and a Michigan medical card is only for Michigan residents." },
+    { "q": "Where can I use cannabis I buy in Michigan?", "a": "On private property in Michigan where the owner allows it. Public use is not allowed, and no one may use cannabis while driving." },
+    { "q": "Did federal rescheduling make cannabis legal in Indiana?", "a": "No. The April 2026 federal rule moved only FDA-approved marijuana drugs and state-licensed medical marijuana to Schedule III, and Indiana’s own law still makes possession a crime." }
+   ]
+  }
+ ],
+ "sources": [
+  { "label": "Indiana Code 2026, Title 35 (IC 35-48-4-11, 35-48-4-12, 35-50-3-2, 35-50-3-3)", "url": "https://iga.in.gov/ic/2026/Title_35.html" },
+  { "label": "21 U.S.C. 844, penalties for simple possession", "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title21/html/USCODE-2024-title21-chap13-subchapI-partD-sec844.htm" },
+  { "label": "Federal Register: final rule rescheduling FDA-approved and state-licensed medical marijuana (April 28, 2026)", "url": "https://www.federalregister.gov/documents/2026/04/28/2026-08176/schedules-of-controlled-substances-rescheduling-of-food-and-drug-administration-approved-products" },
+  { "label": "Federal Register: notice of hearing on the rescheduling of marijuana (April 28, 2026)", "url": "https://www.federalregister.gov/documents/2026/04/28/2026-08177/schedules-of-controlled-substances-rescheduling-of-marijuana" },
+  { "label": "Morgan Lewis: Post-DEA Hearing, Broader Marijuana Rescheduling Questions Remain (September 24, 2026)", "url": "https://www.morganlewis.com/pubs/2026/09/high-time-for-a-change-post-dea-hearing-broader-marijuana-rescheduling-questions-remain" },
+  { "label": "NORML (advocacy group): DEA judge permits additional briefs, denies request to reopen hearing (October 22, 2026)", "url": "https://norml.org/news/2026/10/22/dea-judge-overseeing-marijuana-rescheduling-permits-parties-to-file-additional-briefs-denies-request-to-reopen-hearing" },
+  { "label": "Public Law 119-37, sec. 781: redefinition of hemp", "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ37/html/PLAW-119publ37.htm" },
+  { "label": "Public Law 119-103, sec. 2019: hemp redefinition timing", "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ103/html/PLAW-119publ103.htm" },
+  { "label": "Michigan Judicial Institute: Controlled Substances Benchbook, sec. 8.14, Scope of the MRTMA", "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm" },
+  { "label": "Michigan Judicial Institute: Traffic Benchbook, sec. 9.11, Operating with Certain Controlled Substances in the Body", "url": "https://www.courts.michigan.gov/4a816c/siteassets/publications/benchbooks/tbb/tbbresponsivehtml5.zip/TBB/Ch_9_Section_625_Offenses/Operating_with_the_Presence_of_Certain_Controlled_Substances_in_BodySection_625(8)-u116c.htm" },
+  { "label": "CRA: Marihuana Rules, R 420.1 to R 420.1004 (PDF)", "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf" },
+  { "label": "CRA: Answers to Recent Questions Regarding THCA (March 29, 2024)", "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/2MMFL-Advisory/CRA-Answers-Recent-Questions-Regarding-THCA.pdf" },
+  { "label": "CRA: Delta-8 Information", "url": "https://www.michigan.gov/cra/resources/consumer-connection/delta-8-information" },
+  { "label": "Illinois Cannabis: FAQs", "url": "https://cannabis.illinois.gov/about/faqs.html" },
+  { "label": "Ohio Department of Commerce: Alcohol and Cannabis Regulation and Responsible Consumption", "url": "https://com.ohio.gov/education-and-training/alcohol-and-cannabis-regulation-and-responsible-consumption/alcohol-and-cannabis-regulation-and-responsible-consumption" }
+ ],
+ "note": "This guide is general information about Indiana and Michigan law as of October 2026, not legal advice. Laws change; check the official sources above before you rely on a detail.",
+ "review": {
+  "claims": [
+   "status, 2026 bills, 2026 code edition: in-status",
+   "neighbors: mi-au-age, il-status, oh-status (adult use legalized 2023)",
+   "penalties, packaging-as-hemp Class A, Level 6, conditional discharge: in-penalties; 'wherever it was bought': in-bring-in",
+   "federal hemp redefinition and dates: us-hemp-redefinition; Michigan THCA and delta-8: mi-hemp-thca, mi-hemp-delta8",
+   "rescheduling: us-scheduling (April 28, 2026 rule; adult use still Schedule I), us-rescheduling-broader (medium: hearing June 29 - July 15, 2026, recommended decision pending, no final rule as of late October), us-medical-patients-caution (medium)",
+   "buying in Michigan: mi-au-age, mi-au-purchase-limit (R 420.505(1)(c): valid license or government-issued photo ID, no Michigan ID required), mi-au-possession; hs-facts services.idRules (out-of-state IDs, New Buffalo service-area hub)",
+   "use and driving: mi-au-public-use, mi-au-landlords, mi-au-vehicles-use, mi-au-impaired-driving",
+   "coming home: in-bring-in, us-interstate; High Society's own line: hs:/dispensary-locations/new-buffalo/service-areas/union-pier-lakeside-three-oaks-mi/ ('Friendly reminder: ...')",
+   "New Buffalo: F-nb (19189 US-12, minutes from I-94 Exit 1, just over the Indiana line on US-12); 'Valid government ID required. 21+ only.' is High Society's own line (service-area hub)"
+  ],
+  "gaps": "facts/law-facts.json has no Indiana CBD / low-THC hemp rule and no Indiana driving rule, so the brief's 'hemp/CBD rules' and 'driving rules in Indiana' are covered only through the federal hemp change, Indiana's hemp-packaging penalty and Michigan's driving rules. Listed in docs/requests/pages.md for the law-facts owner.",
+  "factcheck": "Independent fact-check 2026-10-24 (docs/PAGES-FACTCHECK.md): fines now read 'a fine of up to' (IC 35-50-3-2, -3: 'may be fined not more than'); the 2026-bills clause now states only what the 2026 Code shows; the hemp sentence names the 0.4 mg per-container exclusion that disqualifies most intoxicating products (P.L. 119-37 sec. 781), not the 0.3% limit alone; 'rentals ... may ban it' replaced (MCL 333.27954(4): a lease may not bar non-smoking use); NORML's Oct. 22, 2026 report added for 'as of late October'."
+ }
+}

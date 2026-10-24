@@ -1,0 +1,230 @@
+/* 02-locations — the reskin's store panels on the ink band (RESKIN-STYLE §2; its stylesheet lines 397-430), in the
+   owner's layout E (2026-10-22, "Store picker"): the list of the eight store names picks the store shown in one panel.
+   Panels: #0B0C0C (the ground's --card), a 1px hairline that turns red on hover or focus (the kit's .card--lift on
+   ink), the photo zooming a little on hover. The store name in Changa One drawn heavy (900) in white; the labels in
+   Changa One .66-.74rem, tracking .2em, neon; the values in Work Sans .92rem, #D7D7D7 (--fg-2), caps as the reskin
+   sets them; the red "Order Now".
+   The carousel root is the section's grid:
+   - phones: the head (race number + title) with the counter beside it; the store tabs (a row that scrolls inside the
+     content box); one card a page (photo on top, the next card's 20px peek); the thumb row under it: "Select a
+     Location" and the arrows.
+   - portrait tablets: the title row with "Select a Location"; the tabs; one wide card; the pager (arrows, counter).
+   - from 1024px: the race number and "Select a Location" on one row, the title under them; the list on the left with
+     its top edge on the panel's top edge; the panel; the pager under the panel.
+   Photo crops: the store's sign stays whole when a crop shows 47% or more of the photo's width, with each photo's own
+   --fx (02-locations.mjs; a wider view always holds a narrower one). The boxes below are capped to that. */
+
+/* ---------------------------------------------------------------- the grid (phones first) */
+/* source order: head, action, store list, viewport, arrows, counter (the arrows come after the cards for the keyboard;
+   on phones only the action is drawn below the cards while it is reached before them) */
+/* three columns on phones: the title | the counter | the arrows (96px), so the action runs up to 8px from the arrows */
+.locations__rail { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; grid-template-rows: auto auto minmax(0, 1fr) auto; grid-template-areas: "head count count" "list list list" "vp vp vp" "action action ui"; gap: var(--gap) var(--s-1); }
+.locations__head { grid-area: head; align-self: end; }
+.locations__action { grid-area: action; min-width: 0; }
+.locations .locations__ui { grid-area: ui; }
+.locations .locations__viewport { grid-area: vp; min-height: 0; }
+.locations .locations__count { grid-area: count; align-self: end; justify-self: end; min-width: 0; font-size: 1.125rem; line-height: 1; text-align: right; }
+
+/* ---------------------------------------------------------------- the store list (the carousel's picker, site.js)
+   phones and tablets: a row of tabs that scrolls inside the content box (the current one red; site.js keeps it in
+   sight); from 1024px a column (below). Without scripts it is not drawn: the cards' row scrolls. */
+.locations__picker { grid-area: list; position: relative; display: flex; gap: 6px; min-width: 0; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none; }
+.locations__picker::-webkit-scrollbar { display: none; }
+.locations__pick { flex: none; min-height: 44px; padding: 0 14px; border: 1px solid var(--line); border-radius: var(--radius); background: none; color: var(--fg-2); font: 900 .8rem/1 var(--font-display); letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; cursor: pointer; transition: color var(--dur) var(--ease), background-color var(--dur) var(--ease), border-color var(--dur) var(--ease); }
+.locations__pick:hover { color: var(--white); border-color: var(--line-2); }
+.locations__pick[aria-current="true"] { background: var(--red); border-color: var(--red); color: var(--white); }
+.locations__pick:focus-visible { outline-offset: -3px; }
+.no-js .locations__picker { display: none; }
+
+/* ---------------------------------------------------------------- the row: one card a page (phones: the next one peeks) */
+.locations__item { display: flex; width: calc(100% - var(--gap)); container: loc-item / inline-size; }
+
+/* ---------------------------------------------------------------- the panel */
+.locations__card { flex: 1 1 auto; min-width: 0; min-height: 0; display: flex; flex-direction: column; overflow: hidden; }
+/* phones: the photo on top, 16:10, giving way on short screens down to its floor; never taller than 72% of its width
+   (so the crop keeps 93% of the photo's width and every sign whole) */
+.locations__media { flex: 1000 1 auto; aspect-ratio: 16 / 10; min-height: 84px; max-height: calc(100cqi * .717); }
+.locations__media > img { object-position: var(--fx, 50%) 6%; transition: transform 700ms var(--ease); }
+.locations__card:hover .locations__media > img { transform: scale(1.045); }
+.locations__info { flex: 1 0 auto; display: flex; flex-direction: column; gap: var(--s-2); padding: 16px 18px 18px; }
+.locations__name { font: 900 1.8rem/.95 var(--font-display); letter-spacing: -.005em; text-transform: uppercase; color: var(--card-fg); }
+.locations__name .cover-link { --cl-pad: max(6px, calc((44px - 1lh) / 2)); }
+.locations__name a { transition: color var(--dur) var(--ease); }
+.locations__name a:focus-visible { color: var(--white); }
+/* the facts and the action follow the name, as the reskin's (its title's .9rem margin = the info's 16px gap): no hole
+   between the name and its details. Below 1024px any spare height sits under "Order Now"; from 1024px the name keeps
+   two lines' height (the facts line up across a page) and the whole block centres in the panel (below) */
+.locations__foot { display: flex; flex-direction: column; align-items: flex-start; gap: var(--s-2); }
+.locations__facts { display: grid; grid-template-columns: auto auto; justify-content: start; gap: 10px 24px; }
+.locations__fact--addr { grid-column: 1 / -1; }
+.locations__fact dt { margin-bottom: 4px; font: 700 clamp(.66rem, .6rem + .2vw, .74rem)/1.2 var(--font-display); letter-spacing: .2em; text-transform: uppercase; color: var(--em); }
+.locations__fact dd { font: 400 .92rem/1.45 var(--font-body); letter-spacing: .01em; text-transform: uppercase; color: var(--fg-2); }
+/* click to call: a 44px target that takes one line of the layout. Its box reaches 7px up (short of the middle of
+   its label's line) and the rest down (short of the next label, 12px or more below; on phones the gap to the button) */
+.locations__tel { --up: 7px; --dn: calc(44px - 1lh - var(--up)); display: block; width: fit-content; padding: var(--up) 0 var(--dn); margin: calc(var(--up) * -1) 0 calc(var(--dn) * -1); color: inherit; text-decoration: underline; text-decoration-color: var(--line-2); text-decoration-thickness: 1px; text-underline-offset: 4px; transition: color var(--dur) var(--ease), text-decoration-color var(--dur) var(--ease); }
+.locations__tel:hover { color: var(--white); text-decoration-color: var(--em); }
+.locations__order { flex: none; }
+
+/* tall phones (430x932): the photo is at its cap (72% of its width), so the details grow to fill the card */
+@media (max-width: 767.98px) and (min-height: 860px) {
+  .locations__info { gap: var(--s-3); padding: 22px 22px 24px; }
+  .locations__name { font-size: 2.125rem; }
+  .locations__foot { gap: var(--s-3); }
+  .locations__facts { row-gap: var(--s-2); }
+  .locations__fact dt { margin-bottom: 6px; font-size: .74rem; }
+  .locations__fact dd { font-size: 1rem; line-height: 1.5; }
+  .locations__order { min-height: 52px; padding-inline: 1.8em; }
+}
+/* phones: no hover zoom on touch (the row clips at its top) */
+@media (max-width: 767.98px) {
+  .locations__card:hover .locations__media > img { transform: none; }
+}
+@media (max-width: 379.98px) {
+  .locations__action .icon { display: none; }
+  /* the phone and the hours keep one line each, side by side, on a 320px card */
+  .locations__facts { column-gap: 14px; }
+  .locations__fact dd { letter-spacing: 0; }
+}
+/* short phones: a tighter head, tabs, panel and thumb row, so the photo keeps a band (64px, the sign whole) and
+   "Order Now" its card with its padding under it */
+@media (max-width: 767.98px) and (max-height: 700px) {
+  .locations__rail { row-gap: 8px; }
+  .locations { --fs-h2: 1.875rem; }
+  .locations__media { min-height: 64px; }
+  .locations__info { gap: 8px; padding: 10px 16px 12px; }
+  .locations__name { font-size: 1.5rem; }
+  .locations__foot { gap: 10px; }
+  .locations__facts { row-gap: 8px; }
+  .locations__fact dt { margin-bottom: 3px; }
+  .locations__fact dd { line-height: 1.38; }
+  .locations__order, .locations__action { min-height: 44px; }
+}
+
+/* ---------------------------------------------------------------- from 768px: title row, tabs, one card, pager */
+@media (min-width: 768px) {
+  /* the race number and "Select a Location" on one row (owner, 2026-10-22: "align in a single row"), the title under
+     the number. The head's own boxes step aside (display: contents) so the number and the title are the grid's; the
+     rows carry their own steps (the number's 8px to the title, then the gap before each later row) */
+  .locations__rail { grid-template-columns: auto auto minmax(0, 1fr) auto; grid-template-rows: auto auto auto minmax(0, 1fr) auto; grid-template-areas: "num num num action" "title title title title" "list list list list" "vp vp vp vp" "ui count . ."; gap: 0 var(--s-3); }
+  .no-js .locations__rail { grid-template-areas: "num num num action" "title title title title" "vp vp vp vp" "vp vp vp vp" "ui count . ."; }
+  .locations__head, .locations__head .head__copy { display: contents; }
+  .locations__head .secnum { grid-area: num; align-self: center; }
+  .locations__head .title { grid-area: title; margin-top: var(--s-1); }
+  .locations__action { grid-area: action; align-self: center; justify-self: end; }
+  .locations__picker, .locations .locations__viewport, .locations .locations__ui, .locations .locations__count { margin-top: var(--gap); }
+  .locations .locations__count { justify-self: start; align-self: center; font-size: 1rem; text-align: left; }
+  .locations__item { width: 100%; }
+  /* portrait tablets: one wide card, the photo takes the free height first (the whole photo's width in view) */
+  .locations__media { aspect-ratio: auto; flex: 1000 1 0; min-height: calc(100cqi * .4); max-height: calc(100cqi * .667); }
+  .locations__info { gap: var(--s-2); padding: 20px 22px 22px; }
+  .locations__name { font-size: clamp(1.75rem, 1rem + 1.4vw, 2.25rem); }
+}
+
+/* ---------------------------------------------------------------- from 1024px: the list and the reskin's horizontal panel */
+@media (min-width: 1024px) {
+  /* two columns under the top row (owner, 2026-10-22): on the left the title and under it the list, the column as wide
+     as the title; on the right the panel, its top edge on the title's top edge ("align this with the LOCATIONS top
+     edge"), as tall as the title and the list beside it (no taller: "reduce the length of this card"), its bottom edge
+     on the last name's bottom edge (owner, 2026-10-22: "I want the bottom edge of the New Buffalo aligned with the edge
+     of this"); the pager under the panel (it used to sit beside the list's last rows). The whole block stands centred in the section on both axes (owner, 2026-10-22:
+     "vertically and horizontally centered in its section"): the section's top padding takes the bottom's (the floating
+     pair's room, the larger of the two) so the space above and below the block is the same; the sides already are. The
+     store names grow with the screen's height (44 to 56px), and the panel with them */
+  .locations > .slide__inner { padding-top: var(--pad-b); }
+  .locations__rail { grid-template-columns: minmax(220px, max-content) auto auto minmax(0, 1fr) auto; grid-template-rows: auto auto auto auto; grid-template-areas: "num num num num action" "title vp vp vp vp" "list vp vp vp vp" ". ui count . ."; align-content: center; }
+  .no-js .locations__rail { grid-template-areas: "num num num num action" "title title title title title" "vp vp vp vp vp" "ui count . . ."; }
+  /* the panel's top on the top of the title's capitals: the title's 8px step plus the face's own space over its caps
+     (Changa One: .16 of the size, measured at 1440, 1280 and 1024) */
+  .locations .locations__viewport { margin-top: calc(var(--s-1) + var(--fs-h2) * .16); }
+  .no-js .locations .locations__viewport { margin-top: var(--gap); }
+  .locations__picker { flex-direction: column; align-self: start; gap: 2px; overflow: visible; margin-right: var(--s-1); }
+  .locations__pick { justify-content: flex-start; text-align: left; min-height: clamp(44px, 6.4svh, 56px); padding: 0 16px; border: 0; border-left: 3px solid transparent; border-radius: 0 var(--radius) var(--radius) 0; font-size: 1.02rem; letter-spacing: .02em; }
+  .locations__pick:hover { background: var(--w-6); border-color: transparent; }
+  .locations__pick[aria-current="true"] { background: var(--card); border-left-color: var(--red); color: var(--white); }
+  /* photo left (1.45fr), details right; the panel fills its rows and is never taller than its photo can be while 47% of
+     the photo's width stays in view (the signs stay whole) */
+  .locations__card { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); align-self: stretch; height: auto; max-height: calc(100cqi * .84); }
+  .locations__media { min-height: 0; max-height: none; height: auto; }
+  /* the details run as one block (name, facts, action), centred in the panel: the reskin's panel was exactly its
+     details' height (29px over the name, 31px under the button at 1440); where this panel is taller (tall screens,
+     the photo's share of the screen), the spare height splits above and below instead of opening a hole */
+  .locations__info { container: loc-info / inline-size; justify-content: safe center; gap: var(--s-2); padding: clamp(1.2rem, 2vw, 1.8rem); min-height: 0; }
+  /* one word a line, as the reskin stacks them; every name is one or two words, so two lines' height lines up the
+     facts across a page (Charlotte, Lenox and Saline keep the second line's air under the name) */
+  .locations__name { font-size: clamp(1.8rem, 1rem + 1.4vw, 2.6rem); min-height: 2lh; }
+  .locations__nl { display: block; }
+  /* the facts stacked, label over value, as the reskin's */
+  .locations__facts { grid-template-columns: minmax(0, 1fr); row-gap: 12px; }
+  .locations__fact--addr { grid-column: auto; }
+}
+/* tall desktop screens: the panel is taller than its details; the name and the values grow to the reskin's top sizes
+   and the facts breathe, so the details fill more of the panel (the rest splits above and below them) */
+@media (min-width: 1180px) and (min-height: 820px) {
+  .locations__name { font-size: clamp(2.2rem, 4.6svh, 2.6rem); }
+  .locations__foot { gap: var(--s-3); }
+  .locations__facts { row-gap: var(--s-2); }
+  .locations__fact dt { margin-bottom: 6px; }
+  .locations__fact dd { font-size: 1rem; line-height: 1.5; }
+  .locations__order { min-height: 52px; padding-inline: 1.8em; }
+}
+/* a narrow panel (landscape tablets): the facts and the action tighten, and the longest address line ("East Lansing,
+   MI 48823") keeps one line */
+@media (min-width: 1024px) and (max-width: 1179.98px) {
+  .locations__info { padding: 18px; }
+}
+@container loc-info (max-width: 250px) {
+  .locations__fact dd { font-size: .84rem; letter-spacing: 0; }
+  .locations__foot { gap: 12px; }
+  .locations__facts { row-gap: 12px; }
+  .locations__fact dt { margin-bottom: 3px; }
+  .locations__order { min-height: 44px; }
+}
+/* short desktop screens (1280x720): the head, the panel and the pager tighten, so the panels keep their height and the
+   eight 44px store names fit beside them */
+@media (min-width: 768px) and (max-height: 760px) {
+  .locations { --gap: var(--s-2); }
+  .locations__action { min-height: 44px; }
+  .locations__picker { gap: 0; }
+  .locations__pick { min-height: 44px; }
+  .locations__info { padding: 20px 22px; }
+  .locations__foot { gap: 14px; }
+  .locations__facts { row-gap: 12px; }
+  .locations__fact dt { margin-bottom: 3px; }
+  .locations__order { min-height: 44px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .locations__card:hover .locations__media > img { transform: none; }
+}
+/* landscape phones: the kit gives the section its natural height (base.css), so the card takes its content's height
+   and a stacked card's photo a set one (a horizontal panel's photo runs the height of its details) */
+@media (max-height: 539.98px) {
+  .locations__card { height: auto; max-height: none; }
+}
+@media (max-height: 539.98px) and (max-width: 1023.98px) {
+  .locations__media { flex: none; height: 180px; aspect-ratio: auto; }
+}
+
+/* phones: each store card's single "Order Now" centred in the card (owner, 2026-10-22: "on mobile view, can we center
+   all single CTAs"); the facts above it keep their left edge. "Select a Location" shares its row with the arrows, so it
+   stays where it is */
+@media (max-width: 767.98px) {
+  .locations__foot .locations__order { align-self: center; }
+}
+
+/* the desktop store list: a subtle hairline between the names (owner, 2026-10-22: "can we have subtle red line
+   dividers in between location names here", then "make the row lines here gray": the tokens' hairline grey, white at
+   14% on the ink, as the footer's label rules and the cards). Drawn in the list's 2px gap, so no row moves and the
+   list keeps its height; it starts on the names' left edge and runs to the list's right edge */
+@media (min-width: 1024px) {
+  .locations__pick { position: relative; }
+  .locations__pick + .locations__pick::before { content: ""; position: absolute; left: 16px; right: 0; top: -1.5px; height: 1px; background: var(--line); pointer-events: none; }
+}
+
+/* very tall desktop screens (1000px tall and up: 1920x1080, 1920x1200): the store names' rows keep growing with the
+   screen (to 68px, the names a touch larger), and the panel with them (its bottom edge stays on the last name's), so
+   the block keeps the empty space above and below it under the 150px the page allows (owner, 2026-10-22: "tighten it
+   for 1920 too"; at 1920x1080 it was 166px above, 155px below) */
+@media (min-width: 1180px) and (min-height: 1000px) {
+  .locations__pick { min-height: clamp(56px, 6.2svh, 68px); font-size: 1.1rem; }
+}

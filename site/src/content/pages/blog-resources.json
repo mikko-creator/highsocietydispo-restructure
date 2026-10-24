@@ -1,0 +1,19 @@
+{
+ "path": "/blog/resources/",
+ "template": "blog-index",
+ "provenance": "new",
+ "title": "Cannabis Resources and How-To Guides",
+ "crumb": "Resources",
+ "metaDescription": "Cannabis guides from High Society: how to read Michigan labels, THC dosing, storage, decarbing, hemp vs. marijuana and ordering ahead for pickup.",
+ "h1": "Resources",
+ "hero": {
+  "lead": "Our cannabis guides answer everyday questions in plain language: how to read a Michigan product label, how much THC is in a serving, how to store flower and edibles so they keep, how hemp and marijuana differ under the law and how ordering ahead for pickup works. Where Michigan rules apply, the guides explain them and link to the sources, so you can check the details yourself."
+ },
+ "sourceRefs": [
+  "structure-map:/blog/resources/",
+  "structure-map:newPageBriefs blog-category-intros"
+ ],
+ "review": {
+  "notes": "Title and h1 from the structure map; intro and description are new copy (brief blog-category-intros: 50-100 words). Category from site.json blog.categories (the build pairs this page with its slug by path)."
+ }
+}

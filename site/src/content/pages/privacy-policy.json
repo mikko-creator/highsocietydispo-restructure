@@ -1,0 +1,24 @@
+{
+ "path": "/privacy-policy/",
+ "template": "legal",
+ "provenance": "new",
+ "sourceRefs": [
+  "v2:home.json footer.legal (the label 'Privacy Statement')",
+  "structure map newPageBriefs legal-holding"
+ ],
+ "title": "Privacy Statement",
+ "crumb": "Privacy Statement",
+ "metaDescription": "High Society's Privacy Statement for highsocietydispo.com will be published on this page. Until then, please contact us with any question about it.",
+ "h1": "Privacy Statement",
+ "indexable": false,
+ "blocks": [
+  {
+   "type": "prose",
+   "md": "High Society’s Privacy Statement will be published on this page.\n\nUntil then, please [contact us](/contact/) with any question about it."
+  }
+ ],
+ "review": {
+  "holding": "A holding page: no legal text is written, summarised or adapted (structure map OQ-legal; docs/OPEN-DECISIONS.md item 9). The label is High Society's own footer label; the URL follows the plan's pattern.",
+  "noindex": "The structure map marks this page noindex until High Society supplies the text. 'indexable': false now drives it: core's build writes 'noindex, follow' for this page and leaves it out of sitemap.xml and search-index.json, and /site-map/ still lists it (CORE-NOTES, integration round 2; checked on the build by the pages verifier, 2026-10-24)."
+ }
+}

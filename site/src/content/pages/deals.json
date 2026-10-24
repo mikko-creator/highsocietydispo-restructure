@@ -1,0 +1,136 @@
+{
+ "path": "/deals/",
+ "template": "deals",
+ "provenance": "new",
+ "sourceRefs": [
+  "v2:deals",
+  "v2:join",
+  "v2:app",
+  "hs:/loyalty/ (tier image)"
+ ],
+ "title": "Michigan Dispensary Deals & Cannabis Specials",
+ "metaDescription": "See the cannabis deals at High Society’s eight Michigan dispensaries. Deals vary by store: pick yours to shop its menu and order ahead for pickup.",
+ "h1": "Cannabis Deals at High Society Dispensaries",
+ "crumb": "Deals",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Deals"
+  }
+ ],
+ "hero": {
+  "eyebrow": "Deals",
+  "image": "assets/pit-stop/img/lifestyle-02.jpg",
+  "imageAlt": "",
+  "lead": "Deals at High Society change often and differ from store to store. Each store’s menu lists its deals next to the prices, so pick your store to see what is on today.",
+  "ctas": [
+   {
+    "text": "Shop Deals",
+    "href": "{{location_shop_url}}"
+   },
+   {
+    "text": "Select a Location",
+    "href": "#dispenzaLocationPopup-open",
+    "locator": true
+   }
+  ]
+ },
+ "blocks": [
+  {
+   "type": "deals",
+   "id": "featured",
+   "source": "site",
+   "ground": "headlight",
+   "heading": "Featured Deals",
+   "lead": "Our featured offers. Terms and availability vary by store, so check your store’s menu before you visit."
+  },
+  {
+   "type": "store-grid",
+   "id": "by-store",
+   "ground": "black",
+   "heading": "Deals at Your Store",
+   "lead": "Every store runs its own deals. Open your store’s menu to see them with today’s prices.",
+   "stores": "all",
+   "to": "shop",
+   "primary": {
+    "text": "Shop Deals",
+    "to": "shop"
+   },
+   "secondary": {
+    "text": "View Location",
+    "to": "location"
+   }
+  },
+  {
+   "type": "cta",
+   "id": "loyalty",
+   "ground": "red",
+   "heading": "Join The Society",
+   "md": "Sign up to get early access to strain drops, special pricing, birthday rewards and more. Members earn 500 points for every $100 spent, with four tiers from Member to Diamond.",
+   "ctas": [
+    {
+     "text": "Join the Society Today",
+     "href": "/club-member-program/"
+    },
+    {
+     "text": "See the Tiers",
+     "href": "/loyalty/"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "id": "order-ahead",
+   "ground": "black",
+   "heading": "Order Ahead for Pickup",
+   "md": "Browse your store’s menu online, add items to your cart and choose a pickup time. Prefer curbside? Tell us at checkout and we will text you when your order is ready.",
+   "ctas": [
+    {
+     "text": "Order Now",
+     "href": "{{location_shop_url}}"
+    }
+   ]
+  },
+  {
+   "type": "callout",
+   "id": "fine-print",
+   "ground": "white",
+   "tone": "legal",
+   "heading": "The small print",
+   "md": "Deals vary by store, change often and are shown with prices on each store’s menu. Recreational customers must be 21 or older with a valid government-issued ID; medical patients need a valid medical marijuana card. Please consume responsibly."
+  },
+  {
+   "type": "split",
+   "id": "app",
+   "ground": "charcoal",
+   "heading": "Download the High Society App",
+   "md": "Experience convenience at your fingertips with the High Society App. Easily browse our full cannabis menu, stay updated on the latest deals, and place your orders with just a few taps. Whether you're at home or on the go, managing your cannabis experience has never been easier.",
+   "image": "derived:app-phone-mockup",
+   "imageAlt": "",
+   "ctas": [
+    {
+     "text": "Download Now",
+     "href": "https://apps.apple.com/us/app/high-society-cannabis/id6503314334"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen-other.mjs",
+  "newCopy": [
+   "title, meta description, hero lead and buttons",
+   "every band heading and lead",
+   "the loyalty line (tier facts from the tier image)",
+   "order-ahead band (from the stores' published pickup steps)",
+   "the small print (21+ with ID; medical patients with a valid card: no 18+ promise per store, OPEN-DECISIONS 5)"
+  ],
+  "notes": [
+   "the deal cards and banners are site.json deals = the v2 home's own (OPEN-DECISIONS 8: client to send current deals)",
+   "payment is not mentioned (OPEN-DECISIONS 4)"
+  ]
+ }
+}

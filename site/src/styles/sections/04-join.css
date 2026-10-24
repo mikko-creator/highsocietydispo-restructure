@@ -1,0 +1,65 @@
+/* 04-join — the reskin's Join band (its stylesheet, #i4hhe / #i27ng): the lifestyle photo full-bleed under a black
+   scrim, the copy holding the left of the column: race number, title, the line (Work Sans 1.05-1.3rem, white), one
+   red button. No frame, no slab, no carbon, no checker of its own (the reskin draws the checkered strip at the foot of
+   DEALS, just above this band). Every scrim is the brand black at an alpha (color-mix of the token: no typed colour).
+   Two compositions, one markup:
+   - phones and portrait tablets: the photo edge to edge across the top four fifths, its people clear in the upper
+     part, settling into the ink ground under a bottom-weighted scrim; the copy in the lower part, the button in the
+     thumb zone
+   - landscape from 768px: the photo over the whole band (the reskin's 70% across, anchored at the top so the store
+     sign shows whole) under its left-to-right scrim (.9 -> .6 -> .1), the copy centred against it on the left, its
+     measure held to 38% of the screen so the title and the lead stay clear of the faces */
+.join {
+  --join-fs: clamp(2.5rem, min(10.8vw, 6.4svh), 3.5rem);
+  --join-lead: clamp(1.05rem, .95rem + .3vw, 1.3rem);
+  --k-scrim-0: color-mix(in srgb, var(--black) 10%, transparent);
+  --k-scrim-1: color-mix(in srgb, var(--black) 20%, transparent);
+  --k-scrim-6: color-mix(in srgb, var(--black) 60%, transparent);
+  --k-scrim-8: color-mix(in srgb, var(--black) 84%, transparent);
+  --k-scrim-9: color-mix(in srgb, var(--black) 90%, transparent);
+}
+.join__bg { background: var(--black); }
+.join__shot { position: absolute; left: 0; right: 0; top: 0; height: 80%; overflow: clip; }
+.join__photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 67% 30%; }
+/* phones: light over the faces, then the ink rising from the foot; the photo's lower edge melts into the ground */
+.join__shot::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, var(--k-scrim-1) 0%, var(--k-scrim-1) 26%, var(--k-scrim-6) 52%, var(--k-scrim-8) 74%, var(--black) 100%); }
+
+.join__inner { justify-content: flex-end; }
+.join__copy { display: flex; flex-direction: column; align-items: flex-start; gap: var(--gap); min-width: 0; }
+.join__head { display: flex; flex-direction: column; align-items: flex-start; gap: var(--s-2); min-width: 0; }
+.join__title { font-size: var(--join-fs); color: var(--white); }
+.join__lead { font: 400 var(--join-lead)/1.55 var(--font-body); color: var(--white); max-width: 34rem; text-wrap: pretty; }
+/* the reskin's CMS button slot (#i55o9 .dl-cta-btn: the CMS writes this button's destination): a plain row, no box */
+.join__slot { display: flex; margin-top: var(--s-1); }
+
+/* portrait tablets: the phone composition at tablet size; the screen is tall enough for the photo to run the whole
+   band (the people stay well above the copy) */
+@media (min-width: 768px) and (orientation: portrait) {
+  .join { --join-fs: clamp(3rem, min(8vw, 6.2svh), 5.6rem); }
+  .join__shot { height: 100%; }
+  .join__photo { object-position: 66% 30%; }
+  .join__copy { max-width: 40rem; }
+}
+/* landscape from 768px: the reskin's band */
+@media (min-width: 768px) and (orientation: landscape) {
+  /* the reskin's h2 at 1440 (72px), capped by the screen height */
+  .join { --join-fs: clamp(3rem, min(1rem + 4.2vw, 8svh), 6rem); }
+  .join__shot { height: 100%; }
+  /* the reskin's 70% across; anchored at the top, so the full-screen band shows the storefront's PIT STOP sign whole
+     under the header (the reskin's 40% cut it in half at 1440x900 and 1280x720). A 1024x768 band is height-limited:
+     no vertical slack, the same crop either way */
+  .join__photo { object-position: 70% 0%; }
+  .join__shot::after { background: linear-gradient(90deg, var(--k-scrim-9) 0%, var(--k-scrim-6) 45%, var(--k-scrim-0) 80%); }
+  .join__inner { justify-content: center; }
+  /* the reskin's 40rem column, held to 38% of the screen: on narrower landscape screens (1024) the title stacks
+     JOIN THE / SOCIETY and the lead wraps before the woman's face (at 1024 she stands at about 47% of the width);
+     at 1440 the measure is unchanged (38vw = 547px holds the one-line title and the 34rem lead) */
+  .join__copy { max-width: min(40rem, 38vw); }
+}
+
+/* phones: the single button centred in the column (owner, 2026-10-22: "on mobile view, can we center all single CTAs
+   like this"); the CMS slot spans the column, so its button centres on the screen. The title and the lead keep their
+   left edge */
+@media (max-width: 767.98px) {
+  .join__slot { align-self: stretch; justify-content: center; }
+}

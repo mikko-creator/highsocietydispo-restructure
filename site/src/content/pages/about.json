@@ -1,0 +1,78 @@
+{
+ "path": "/about/",
+ "template": "about",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/about/ (crawl/hs/v1-pages.json mainLines 0-19; the h1 from lines[34])",
+  "v2:home.json craft.text (the closing band's line)"
+ ],
+ "titleFull": "About High Society - Elevating Michigan's Cannabis Experience",
+ "metaDescription": "Learn about High Society's mission to provide exceptional cannabis products, unbeatable prices, and top-tier customer service across our Michigan dispensaries.",
+ "h1": "About High Society",
+ "crumb": "About Us",
+ "foundingDate": "2020",
+ "hero": {
+  "eyebrow": "Welcome To",
+  "image": "assets/pit-stop/img/lifestyle-02.jpg",
+  "imageAlt": ""
+ },
+ "blocks": [
+  {
+   "type": "split",
+   "heading": "Our Story",
+   "md": "Founded in 2020, High Society was created by a group of people looking to bring a different perspective to the industry. The group comes from different backgrounds and industries but has one goal in common: Elevating the cannabis experience with amazing deals and excellent customer service.",
+   "image": "assets/pit-stop/img/scene-mount-pleasant.jpg",
+   "imageAlt": "",
+   "ctas": [
+    { "text": "Learn More", "href": "/dispensary-locations/" }
+   ]
+  },
+  {
+   "type": "split",
+   "heading": "Mission and Vision",
+   "reverse": true,
+   "md": "Our mission is to put our customers in the best products that match their needs during their visit by asking the right questions and finding that perfect fit! We want to be the leading brand of provisioning centers in Michigan. We offer the largest selection of products from quality vendors, provide the best consumer journey for our guests, and give back to the communities we operate in.",
+   "image": "assets/pit-stop/img/scene-east-lansing.jpg",
+   "imageAlt": "",
+   "ctas": [
+    { "text": "Download our App", "href": "https://apps.apple.com/us/app/high-society-cannabis/id6503314334", "style": "ghost" }
+   ]
+  },
+  {
+   "type": "cards",
+   "variant": "values",
+   "columns": 3,
+   "items": [
+    {
+     "title": "Hospitality",
+     "md": "We believe strongly in the aspect of providing amazing service to guests that visit our stores. We spend time working with our teams to make sure all of our staff is trained and knowledgeable to provide you with the highest level of service."
+    },
+    {
+     "title": "Quality",
+     "md": "We strive to bring only premium high-quality products into our stores. We work with trusted vendors to procure products that have passed Michigan’s stringent testing standards."
+    },
+    {
+     "title": "Community",
+     "md": "We value the communities we’re a part of. We are always looking for ways to engage and collaborate with our communities through events and partnerships. If you have something you would like us to be a part of, please feel free to [contact us](/contact/)."
+    }
+   ],
+   "ctas": [
+    { "text": "Learn More", "href": "{{location_shop_url}}", "style": "ghost" }
+   ]
+  },
+  {
+   "type": "cta",
+   "heading": "Your Trusted Source for Quality Cannabis in Michigan",
+   "md": "Visit us to discover why we’re Michigan’s trusted choice for cannabis.",
+   "ctas": [
+    { "text": "Learn More", "href": "/dispensary-locations/", "style": "primary" }
+   ]
+  }
+ ],
+ "review": {
+  "provenance": "Every visible line of High Society's v1 /about/ <main> is here once: Welcome To, Our Story + text, Mission and Vision + text, Download our App (App Store link), HOSPITALITY / QUALITY / Community + texts, and the four learn More / LEARN MORE links (story -> /dispensary-locations/, values band -> {{location_shop_url}} as v1's second row, closing band -> /dispensary-locations/). The repeated Hospitality and Community cards (v1 lines 47-52) are a declared duplicate (structure map) and render once. The h1 About High Society was hidden on v1 (mainHiddenLines) and is the visible h1 here (structure map).",
+  "additions": "The closing band repeats two of High Society's own v2 home lines (hero title, craft text) as its heading and line. The Community card's 'contact us' is now a link to /contact/ (v1: plain text). Value names are written in title case; the CSS sets them in capitals as v1 showed HOSPITALITY and QUALITY.",
+  "images": "lifestyle-02 (v2 lifestyle photo) as the hero; the Mount Pleasant and East Lansing race-day scenes (v2's store scenes) beside the two text blocks, all decorative (alt empty, as v2 writes them). v1's own about images were lazy-load placeholders in the capture.",
+  "title": "titleFull is High Society's own title, 61 characters (structure map titleMode full): kept verbatim, under the 65 cap."
+ }
+}

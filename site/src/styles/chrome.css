@@ -1,0 +1,191 @@
+/* chrome.css — the header and footer of every page (core lane, 2026-10-24; src/chrome/chrome.mjs, footer.mjs). Built on v2's base.css
+   header (the glass ink bar, the lockup, the nav, the Locations dropdown language, the phone menu overlay) and v2's
+   09-footer.css; this file adds the multi-page rows and groups in the same language.
+   - the header at the top of a page: the promo strip (red) + the v2 bar + the category bar; scrolled, it condenses to
+     the v2 bar alone (site.js .is-condensed: the strip slides up, the category bar folds away), so --bar-h, which all
+     of v2's section maths reads, is still the visible header height. Inner pages start their hero below the full
+     header (--head-extra); the home's hero runs up under it, as under v2's clear bar.
+   - THE SWITCH TO THE MENU BUTTON (measured, qa/bar-ladder.mjs, real 15px scrollbar, widths 1024..1440 step 16): see
+     the note above the @media (max-width: 1179.98px) rule below.
+   - mega panels: v2's dropdown language (the ink panel, the checkered top edge, the red trophy bullets, Changa type),
+     centred under the bar, never wider than the bar's content box (so never wider than the viewport).
+   Colours: theme and token names only. */
+
+:root {
+  --util-h: 44px;                 /* the promo strip: a 44px row, so its link is a 44px target */
+  --cat-h: 0px;                   /* the category bar: desktop only */
+  --head-extra: calc(var(--util-h) + var(--cat-h));   /* what the header adds to --bar-h at the top of a page */
+}
+@media (min-width: 1024px) { :root { --cat-h: 44px; } }
+
+/* ------------------------------------------------------------------ the header box */
+.site-header { height: auto; transition: transform var(--dur) var(--ease), background-color var(--dur) var(--ease), border-color var(--dur) var(--ease); }
+.site-header .bar__inner { height: var(--bar-h); }
+.site-header.is-condensed { transform: translateY(calc(-1 * var(--util-h))); }
+/* a keyboard user tabbing into the strip brings it back */
+.site-header.is-condensed:has(.util :focus-visible) { transform: none; }
+@media (prefers-reduced-motion: reduce) { .site-header { transition: none; } }
+
+/* ------------------------------------------------------------------ 1. the promo strip (+ store bar + search) */
+.util { height: var(--util-h); background: var(--bg); color: var(--fg); }
+.util__inner { height: 100%; max-width: calc(var(--container) + var(--pad-l) + var(--pad-r)); margin-inline: auto; padding-inline: var(--pad-l) var(--pad-r); display: flex; align-items: center; justify-content: center; gap: var(--s-2); }
+.util__promo { flex: 0 1 auto; min-width: 0; display: flex; align-items: center; gap: .5em; font: 600 .8125rem/1.2 var(--font-head); letter-spacing: .04em; white-space: nowrap; }
+.util__text { overflow: hidden; text-overflow: ellipsis; }
+.util__link { flex: none; display: inline-flex; align-items: center; min-height: var(--tap); font-weight: 700; text-transform: uppercase; letter-spacing: .1em; font-size: .75rem; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .3em; }
+.util__link:hover { text-decoration-thickness: 2px; }
+/* phones: the line shortens before the link does */
+@media (max-width: 479.98px) { .util__text { display: none; } .util__link::before { content: ""; width: 14px; height: 14px; margin-right: 8px; background: var(--mark-white) center / contain no-repeat; } }
+
+.util__store, .util .search--bar { display: none; }
+.util__store { flex: none; align-items: center; gap: var(--s-1); font: 600 .8125rem/1 var(--font-head); letter-spacing: .04em; }
+.util__label { opacity: .9; }
+.util__pick { display: inline-flex; align-items: center; gap: 6px; min-height: var(--tap); padding: 0 4px; font: 700 .8125rem/1 var(--font-head); letter-spacing: .06em; text-transform: uppercase; text-decoration: underline 1px transparent; text-underline-offset: .3em; }
+.util__pick:hover { text-decoration-color: currentColor; }
+
+/* the search box: a 44px target drawn as a slim pill (the pill is the form's ::before, the input is transparent) */
+.search { position: relative; display: flex; align-items: center; }
+.search__input { font: 400 .875rem/1.2 var(--font-body); color: inherit; background: transparent; border: 0; min-width: 0; -webkit-appearance: none; appearance: none; }
+/* the header's two fields draw their own inset ring (below); any other search field keeps base.css's :focus-visible ring */
+.search--bar .search__input, .search--menu .search__input { outline: none; }
+.search__input::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
+.search__go { flex: none; display: inline-grid; place-items: center; width: var(--tap); height: var(--tap); border-radius: var(--radius); }
+.search--bar { flex: 0 1 15rem; height: var(--tap); margin-left: auto; }
+.search--bar::before { content: ""; position: absolute; inset: 7px 0; border-radius: 999px; background: var(--w-14); border: 1px solid var(--w-40); pointer-events: none; transition: background-color var(--dur) var(--ease), border-color var(--dur) var(--ease); }
+.search--bar:focus-within::before { background: var(--w-24); border-color: var(--white); }
+.search--bar .search__input { position: relative; flex: 1 1 auto; height: var(--tap); padding: 0 0 0 16px; }
+.search--bar .search__input::placeholder { color: var(--w-82); opacity: 1; }
+.search--bar .search__go { position: relative; }
+/* the input's focus is the pill's white edge; the ring stays for keyboard focus */
+.search--bar .search__input:focus-visible { outline: 3px solid var(--focus); outline-offset: -3px; border-radius: 999px; }
+
+/* ------------------------------------------------------------------ 2. the bar: the nav with its mega panels */
+.nav__item--mega { position: static; }
+.nav__trigger { cursor: pointer; gap: 4px; }
+.nav__trigger .nav__chev { flex: none; color: var(--neon); transition: transform var(--dur) var(--ease); }
+.nav__trigger[aria-expanded="true"] .nav__chev { transform: rotate(180deg); }
+.nav__item--button .nav__link::after { right: calc(clamp(8px, .9vw, 14px) + 20px); }
+.nav__item--mega:hover > .nav__link, .nav__item--mega.is-open > .nav__link { color: var(--white); }
+
+.mega { position: absolute; top: 100%; left: 50%; z-index: 5; width: min(var(--mega-w, 880px), calc(100% - var(--pad-l) - var(--pad-r))); opacity: 0; visibility: hidden; transform: translate(-50%, -6px); transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease), visibility 0s linear var(--dur); }
+/* the bridge between the item and the panel, so a pointer on its way down stays "inside" */
+.mega::before { content: ""; position: absolute; left: 0; right: 0; top: calc(-1 * (var(--bar-h) - var(--tap)) / 2 - 2px); height: calc((var(--bar-h) - var(--tap)) / 2 + 2px); }
+.nav__item.is-open > .mega { opacity: 1; visibility: visible; transform: translate(-50%, 0); transition-delay: 0s; }
+.mega--explore { --mega-w: 980px; }
+.mega--resources { --mega-w: 720px; }
+.mega--locations { --mega-w: 680px; }
+.mega__inner { display: grid; grid-template-columns: repeat(var(--mega-cols, 2), minmax(0, 1fr)); gap: var(--s-3) var(--s-4); padding: calc(8px + var(--s-3)) var(--s-4) var(--s-4); background: var(--black); color: var(--white); border: 1px solid var(--w-24); border-radius: var(--radius-lg); overflow: hidden; position: relative; box-shadow: 0 28px 56px -28px var(--k-88); }
+.mega__inner--3 { --mega-cols: 3; }
+/* v2's checkered top edge */
+.mega__inner::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 8px; background: var(--checker) repeat-x left center / auto 100%; }
+.mega__group { min-width: 0; }
+.mega__title { padding-bottom: .75rem; border-bottom: 1px solid var(--w-14); font: 700 .74rem/1.2 var(--font-display); letter-spacing: .2em; text-transform: uppercase; color: var(--neon); }
+.mega__links { margin-top: .4rem; }
+.mega__links--2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--s-2); }
+.mega__links a { display: flex; align-items: center; gap: 10px; min-height: var(--tap); padding: 0 var(--s-1) 0 2px; border-bottom: 1px solid var(--w-10); font: 600 .9375rem/1.2 var(--font-head); letter-spacing: .02em; color: var(--white); transition: color var(--dur) var(--ease); }
+.mega__links a::before { content: ""; flex: none; width: 16px; height: 16px; background: var(--mark-red) center / contain no-repeat; }
+.mega__links a:hover, .mega__links a:focus-visible { color: var(--neon); }
+.no-js .nav__item--mega:hover > .mega, .no-js .nav__item--mega:focus-within > .mega { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+
+/* ------------------------------------------------------------------ 3. the category bar (desktop) */
+.catbar { height: var(--cat-h); overflow: hidden; border-top: 1px solid var(--w-10); transition: height var(--dur) var(--ease), opacity var(--dur) var(--ease), visibility 0s; }
+.catbar__inner { height: 100%; max-width: calc(var(--container) + var(--pad-l) + var(--pad-r)); margin-inline: auto; padding-inline: var(--pad-l) var(--pad-r); }
+.catbar__list { height: 100%; display: flex; align-items: center; justify-content: safe center; gap: clamp(0px, .6vw, 10px); overflow-x: auto; scrollbar-width: none; }
+.catbar__list::-webkit-scrollbar { display: none; }
+.catbar__link { display: inline-flex; align-items: center; min-height: var(--tap); padding: 0 clamp(8px, .8vw, 12px); font: 700 .75rem/1 var(--font-head); letter-spacing: .12em; text-transform: uppercase; white-space: nowrap; color: var(--w-82); transition: color var(--dur) var(--ease); }
+.catbar__link:hover, .catbar__link:focus-visible { color: var(--white); }
+.catbar__link--deals { color: var(--neon); }
+/* at the narrowest full bar (1024px window, 1009px with a scrollbar) the ten links needed 5px more: less tracking */
+@media (max-width: 1099.98px) { .catbar__link { letter-spacing: .07em; } }
+.catbar__link--deals::before { content: ""; width: 14px; height: 14px; margin-right: 8px; background: var(--mark-red) center / contain no-repeat; }
+.catbar__link:focus-visible { outline-offset: -3px; }
+.site-header.is-condensed .catbar { height: 0; opacity: 0; visibility: hidden; transition: height var(--dur) var(--ease), opacity var(--dur) var(--ease), visibility 0s linear var(--dur); }
+/* over the home's hero (v2's clear cinematic bar) the category bar stays folded: open, it sat on the hero's kicker
+   (measured 2026-10-24 at 1280x800); its links are in Explore. Without scripts (no .is-clear) the home's own
+   data-template does the same */
+.site-header.is-clear .catbar, .no-js [data-template="home"] .catbar { height: 0; opacity: 0; visibility: hidden; border-top-color: transparent; }
+
+/* ------------------------------------------------------------------ THE SWITCH TO THE MENU BUTTON: 1024px
+   v2 switched at 1180px (its bar carried eight items). Measured with qa/bar-ladder.mjs on 2026-10-24 (a real 15px
+   scrollbar, the full bar forced on at every window width, step 16): the lockup, the six nav items and "Join The
+   Society" sit without overlapping or wrapping at EVERY width from 912px up (min gap 3.6px at 912, 4.1px at 1024,
+   4.7px at 1184, 5.8px at 1440) and first overlap at 896px (-2.2px). The rest of the full header was measured the
+   same way: the promo row (line + store bar + search) and the category bar fit from 976px; below it the promo line is
+   cut and the category bar needs 6-60px of scroll. The switch is at 1024px, the floor of the measured ladder and v2's
+   own desktop breakpoint, 48px above the point where the whole header fits. From 1024 to 1179 the bar is v2's 64px bar with the 144px lockup; from
+   1180 v2's 84px bar with the 190px lockup (theme.css, unchanged). site.js "wide" matches the same 1024px. */
+@media (max-width: 1023.98px) {
+  .util__store, .util .search--bar, .catbar { display: none; }
+}
+@media (min-width: 1024px) {
+  .nav, .bar__actions { display: flex; }
+  .bar__tools { display: none; }
+  .util__inner { justify-content: flex-start; }
+  .util__store, .util .search--bar { display: flex; }
+  .util__promo { margin-right: auto; }
+}
+
+/* ------------------------------------------------------------------ the phone and tablet menu (v2's overlay) */
+.mmenu__acc { cursor: pointer; text-align: left; width: 100%; justify-content: space-between; gap: var(--s-1); }
+.mmenu__chev { flex: none; width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid var(--w-24); border-radius: var(--radius); color: var(--neon); }
+.mmenu__chev .icon { transition: transform var(--dur) var(--ease); }
+.mmenu__acc[aria-expanded="true"] .mmenu__chev .icon { transform: rotate(180deg); }
+.mmenu__groups { grid-template-columns: minmax(0, 1fr); gap: var(--s-2); }
+.mmenu__gtitle { padding-bottom: 6px; border-bottom: 1px solid var(--w-14); font: 700 .7rem/1.2 var(--font-display); letter-spacing: .2em; text-transform: uppercase; color: var(--neon); }
+.mmenu__glinks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 var(--s-2); }
+.mmenu__glinks a { display: flex; align-items: center; gap: 8px; min-height: 44px; font: 600 1rem/1.15 var(--font-head); color: var(--chrome); }
+.mmenu__glinks a::before { content: ""; flex: none; width: 14px; height: 14px; background: var(--mark-red) center / contain no-repeat; }
+.mmenu__glinks a:hover { color: var(--white); }
+.search--menu { height: 52px; border: 1px solid var(--w-24); border-radius: var(--radius); background: var(--charcoal); }
+.search--menu:focus-within { border-color: var(--white); }
+.search--menu .search__input { flex: 1 1 auto; height: 100%; padding: 0 0 0 16px; font-size: 1rem; }
+.search--menu .search__input::placeholder { color: var(--chrome); opacity: 1; }
+.search--menu .search__go { color: var(--neon); }
+/* the reset above drops the input's outline: keyboard focus gets base.css's ring back (CORE-VERIFY L3) */
+.search--menu .search__input:focus-visible { outline: 3px solid var(--focus); outline-offset: -3px; border-radius: var(--radius); }
+.no-js .mmenu__groups[hidden] { display: grid !important; }
+
+/* ------------------------------------------------------------------ the footer: v2's design + the multi-page groups
+   (the lockup with Your Store under it, Quick Links, Resources, Company, Locations; each link once). v2's 09-footer.css
+   draws the band, the labels, the links, the strip and the legal rows; these rules only lay out the columns. */
+.footer--ia .footer__brand { gap: var(--s-3); }
+.footer--ia .footer__store { width: auto; justify-self: auto; grid-area: auto; }
+.footer--ia .footer__group, .footer--ia .footer__group .footer__links { display: block; }
+.footer--ia .footer__resources { grid-area: res; }
+.footer--ia .footer__company { grid-area: co; }
+.footer--ia .footer__legal a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+.footer--ia .footer__legal a:hover { color: var(--white); }
+/* the legal links keep a 44px target without growing their line: inline padding widens the hit area, not the line */
+.footer--ia .footer__legal a { padding-block: 12px; }
+.footer--ia .footer__inner {
+  grid-template-columns: repeat(2, minmax(0, 1fr)); justify-content: stretch;
+  grid-template-areas: "brand brand" "quick co" "res res" "locs locs" "base base";
+  grid-template-rows: auto; column-gap: var(--s-3); row-gap: var(--s-4);
+}
+.footer--ia .footer__locs .footer__links, .footer--ia .footer__resources .footer__links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--s-3); }
+@media (min-width: 768px) {
+  .footer--ia .footer__inner { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-areas: "brand brand brand" "quick res co" "locs locs locs" "base base base"; column-gap: var(--s-4); row-gap: var(--s-5); }
+  .footer--ia .footer__resources .footer__links { display: block; }
+  .footer--ia .footer__locs .footer__links { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (min-width: 1024px) {
+  .footer--ia .footer__inner {
+    grid-template-columns: minmax(190px, 1.15fr) repeat(3, minmax(0, 1fr)) minmax(0, 1.5fr);
+    grid-template-areas: "brand quick res co locs" "base base base base base";
+    grid-template-rows: auto auto; column-gap: clamp(1.25rem, 2.4vw, 3rem); row-gap: var(--s-5);
+  }
+  .footer--ia .footer__locs .footer__links { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: none; grid-auto-flow: row; column-gap: var(--s-2); }
+}
+@media (min-width: 1024px) and (max-height: 819.98px) {
+  .footer--ia .footer__inner { grid-template-columns: minmax(190px, 1.15fr) repeat(3, minmax(0, 1fr)) minmax(0, 1.5fr); }
+}
+
+/* ------------------------------------------------------------------ the ORDER NOW / CONTACT US dock on inner pages
+   v2's fade along the screen's foot sits in the home sections' bottom padding, where no content is; inner pages flow
+   under it, so there the pair keeps its plates and a soft shadow instead of the fade, which darkened headings
+   (CORE-VERIFY L8). A health article carries no ORDER NOW pair at all: no purchase prompt beside health content
+   (Michigan R 420.507; facts/law-facts.json mi-advertising). */
+@media (min-width: 768px) {
+  body:not([data-template="home"]) .dock::before { display: none; }
+  body:not([data-template="home"]) .dock .btn { box-shadow: 0 10px 24px -10px var(--k-88); }
+}
+body[data-risk="medical"] .dock { display: none; }

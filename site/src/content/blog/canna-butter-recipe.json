@@ -1,0 +1,217 @@
+{
+  "slug": "canna-butter-recipe",
+  "category": "recipes",
+  "title": "Cannabutter Recipe: Mason Jar Ghee Method",
+  "h1": "Canna-Butter (Ghee or Butter, Water-Bath Method)",
+  "metaDescription": "A step-by-step cannabutter recipe using a sealed jar in a gentle water bath, a worksheet to estimate THC per teaspoon, and storage that keeps it safe.",
+  "excerpt": "The base infusion for our recipes: ghee or butter infused in a sealed jar in a gentle water bath, with a worked potency example and safe storage.",
+  "published": "2026-10-24",
+  "keyTakeaways": [
+    "Decarb first, then infuse the flower in ghee or butter in a sealed jar set in barely simmering water for 3 to 4 hours.",
+    "A water bath can't climb past boiling, so the fat stays well below the temperatures where lab tests saw THC losses.",
+    "Grams × 1,000 × THC% is your batch's ceiling; divide it by the teaspoons you strain out.",
+    "Taste a quarter teaspoon or less, then wait at least 2 hours.",
+    "Refrigerate and use within 4 days, or freeze measured portions, and label every container."
+  ],
+  "body": "This cannabutter recipe infuses decarbed flower into ghee or butter in a sealed mason jar set in barely simmering water for 3 to 4 hours. Ghee has no milk solids to scorch or water to separate out, and THC dissolves into its fat, making a clean, versatile base. For other methods, see our [cannabutter guide](/blog/canna-butter/).\n\n## Dosing and safety: estimate before you taste\n\nStrength depends on your flower's THC, the decarb and how much fat the plant keeps, so the worksheet below gives a ceiling to plan from. Taste a quarter teaspoon or less, then give it at least 2 hours; a slow start is normal with edibles, and the effects can stay with you for 4 to 12 hours. See our [THC dosage guide](/blog/thc-dosage-guide/).\n\n## What you need\n\n- 1 cup ghee or unsalted butter\n- 3.5 grams of flower, decarbed and coarsely ground, as in our [decarb guide](/blog/cannabis-decarboxylation/)\n- A pint mason jar, a deep pot, a rack or folded towel, a thermometer and cheesecloth\n\nYou can order flower ahead from [your store's menu](/shop/) for in-store or curbside pickup.\n\n## The cannabutter recipe, step by step\n\nDecarb first, around 240°F for 30 to 45 minutes, since THCA converts slowly below boiling. Then hold the sealed jar in water at a bare simmer, 180 to 200°F, for 3 to 4 hours. Water can't pass boiling, so the fat stays well below the temperatures where lab tests saw THC losses. Vent the jar once, halfway, and let the butter drip through cheesecloth without squeezing.\n\n## Potency worksheet\n\n1. **Total THC:** the label's figure, or THCA × 0.877 plus THC. 20% THCA and 0.5% THC is about 18%.\n2. **Ceiling:** grams × 1,000 × THC%, so 3.5 × 1,000 × 0.18 = 630 mg.\n3. **Yield:** measure what you strained, since the plant keeps some fat. Say 42 teaspoons.\n4. **Per teaspoon:** 630 ÷ 42 = 15 mg at most, or about 13 mg for a full 48-teaspoon cup.\n\nThe 0.877 covers the weight THCA loses as it becomes THC.\n\n## Storage and labeling\n\nThe CDC says homemade oils made with herbs belong in the fridge for no more than 4 days, and University of Georgia Extension suggests freezing instead. Do the same with infused butter, freezing tablespoon portions in an ice cube tray. Mark every side \"infused,\" with the date and mg per teaspoon, and give it a shelf of its own, beyond the reach of kids and pets. In Michigan, you can share it with adults 21 and older only as a gift, never in exchange for anything, within the 2.5-ounce limit and without advertising it.\n\n## Using it\n\nSwap it for part of the butter in a recipe and keep the rest plain to hit your dose; our [cannabis cookie recipe](/blog/cannabis-cookie-recipe/) shows the math. Bake it in or stir it in off the heat. For canna-coconut oil, use coconut oil in place of the ghee.",
+  "faq": [
+    {
+      "q": "How strong is homemade cannabutter?",
+      "a": "It depends on your flower and how much fat you strain out. Multiply the flower's weight in grams by its THC fraction (0.18 for 18%) and by 1,000, then divide by the teaspoons in your jar. With 3.5 grams of 18% flower in a cup of ghee, that's 13 to 15 mg per teaspoon at most."
+    },
+    {
+      "q": "Do I have to decarb before making cannabutter?",
+      "a": "Yes, for a predictable strength. Dried flower carries its THC mostly as THCA, which heat converts. In lab tests on cannabis extracts, conversion was still unfinished after an hour below 212°F, the range a water bath stays in. At 230°F, the THCA was nearly gone in 30 minutes."
+    },
+    {
+      "q": "Can I use regular butter instead of ghee?",
+      "a": "Yes. Unsalted butter follows the same steps, but its water and milk solids leave a cloudy layer and some foam. Strain as usual, chill it until it sets, then lift the butter off and pour away the liquid underneath. Measure what's left before doing the math."
+    }
+  ],
+  "related": [
+    "canna-butter",
+    "cannabis-decarboxylation",
+    "cannabis-cookie-recipe"
+  ],
+  "sources": [
+    {
+      "label": "Wang M. et al., Decarboxylation Study of Acidic Cannabinoids, Cannabis and Cannabinoid Research (2016)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5549281/"
+    },
+    {
+      "label": "eCFR, 7 CFR 990.1 (USDA hemp rule): Total THC = (0.877 × THCA) + THC",
+      "url": "https://www.ecfr.gov/current/title-7/subtitle-B/chapter-IX/part-990/subpart-A/section-990.1"
+    },
+    {
+      "label": "PubChem (NIH): Tetrahydrocannabinol, solubility",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/16078"
+    },
+    {
+      "label": "CDC: Botulism Prevention (homemade oils made with garlic or herbs)",
+      "url": "https://www.cdc.gov/botulism/prevention/index.html"
+    },
+    {
+      "label": "University of Georgia Extension, Circular 1334: How to Safely Make Infused Oils (2024)",
+      "url": "https://fieldreport.caes.uga.edu/publications/C1334/how-to-safely-make-infused-oils/"
+    },
+    {
+      "label": "Public Health Agency of Canada: Council of Chief Medical Officers of Health statement on cannabis extracts, edibles and topicals (2020)",
+      "url": "https://www.canada.ca/en/public-health/news/2020/01/council-of-chief-medical-officers-of-health-ccmoh-statement-on-cannabis-extracts-edibles-and-topical-products.html"
+    },
+    {
+      "label": "Michigan Judicial Institute, Controlled Substances Benchbook, sec. 8.14: Scope of the MRTMA",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+    }
+  ],
+  "recipe": {
+    "yield": "About 1 cup",
+    "prepTime": "45 minutes",
+    "cookTime": "4 hours",
+    "ingredients": [
+      "3.5 grams (an eighth) cannabis flower, coarsely ground",
+      "1 cup ghee or unsalted butter"
+    ],
+    "steps": [
+      "Set the oven to 240°F. Scatter the ground flower over parchment on a baking sheet and bake until dry and lightly golden, 30 to 45 minutes. Let it cool.",
+      "Put the decarbed flower and the ghee or butter in a pint mason jar and close the lid finger-tight.",
+      "Set the jar on a rack or folded towel in a deep pot and add warm water up to the level of the fat.",
+      "Bring the water to a bare simmer, about 180 to 200°F, and hold it there for 3 to 4 hours, topping up with hot water as it evaporates.",
+      "Halfway through, lift the jar out with oven mitts, loosen the lid for a moment to release pressure, then close it and return it to the pot.",
+      "Let the jar cool until warm, then strain through cheesecloth into a clean container, letting it drip rather than squeezing.",
+      "Measure the strained fat, work out the mg per teaspoon and label it. Refrigerate and use within 4 days, or freeze in measured portions."
+    ],
+    "dosingNote": "Worked example only: flower testing at 18% total THC gives 3.5 × 1,000 × 0.18 = 630 mg as the batch ceiling. A full cup is 48 teaspoons, about 13 mg each; if you strain out 42 teaspoons, it's about 15 mg. How close you get to that ceiling depends on the flower's true potency and on what decarbing and steeping cost, so real batches usually run lower. Taste no more than a quarter teaspoon the first time and give it at least 2 hours. Mark the container clearly and store it high, out of children's and pets' reach."
+  },
+  "brief": {
+    "action": "ADAPT",
+    "riskLevel": "low"
+  },
+  "review": {
+    "checkedBy": "fact-check",
+    "checkedOn": "2026-10-24",
+    "claims": [
+      {
+        "claim": "Ghee has no milk solids to scorch or water to separate out",
+        "verdict": "ok",
+        "fix": "",
+        "source": "Ghee is clarified butter, made by removing the water and milk solids (culinary definition)."
+      },
+      {
+        "claim": "THC dissolves in fat",
+        "verdict": "ok",
+        "fix": "",
+        "source": "PubChem CID 16078 (Solubility): 'Soluble in fixed oils', 'Essentially insoluble in water'. Read 2026-10-24."
+      },
+      {
+        "claim": "Dried flower carries its THC mostly as THCA, which heat converts",
+        "verdict": "ok",
+        "fix": "",
+        "source": "Wang et al. 2016 (PMC5549281, full text via Europe PMC, read 2026-10-24): 'Cannabis synthesize primarily the carboxylic acid forms of THC ... THCA-A'."
+      },
+      {
+        "claim": "In lab tests on extracts, conversion was unfinished after an hour below 212 F; at 230 F THCA was nearly gone in 30 minutes",
+        "verdict": "ok",
+        "fix": "",
+        "source": "Wang 2016: 'At temperatures lower than 100 C, the reaction did not reach completion within 60 min'; THCA-A 'approached zero in 30, 9, and 6 min at 110 C, 130 C, and 145 C'."
+      },
+      {
+        "claim": "Decarb around 240 F for 30 to 45 minutes, since THCA converts slowly below boiling",
+        "verdict": "ok",
+        "fix": "",
+        "source": "Wang 2016 (110 C, 230 F: about 30 min for extracts in a vacuum oven); the 240 F home-oven range is consistent with it."
+      },
+      {
+        "claim": "A water bath can't pass boiling, so the fat stays 'far below the heat that costs THC' (takeaway and body)",
+        "verdict": "overstated",
+        "fix": "Wang saw THC loss at 145 C (293 F) and CBN at 160-180 C, and notes THC oxidizes with oxygen and light; a 3-4 hour hold at 180-200 F was not tested, so some loss there is not ruled out. Now: 'well below the temperatures where lab tests saw THC losses'.",
+        "source": "Wang 2016: 'Maximum formation of THC was observed in ~5-10 min at 145 C followed by a significant loss at longer times'; 'formation of an oxidation product, CBN, was observed at 160 C and 180 C'."
+      },
+      {
+        "claim": "Hold the sealed jar at a bare simmer, 180 to 200 F, for 3 to 4 hours; vent once halfway; let it drip through cheesecloth",
+        "verdict": "ok",
+        "fix": "",
+        "source": "Method; a bare simmer sits below the boiling point."
+      },
+      {
+        "claim": "Total THC = THCA x 0.877 + THC; 20% THCA and 0.5% THC is about 18%",
+        "verdict": "ok",
+        "fix": "",
+        "source": "7 CFR 990.1 (eCFR versioner API, version as of 2026-10-01): 'Total THC = (0.877 x THCA) + THC'; arithmetic 0.877 x 20 + 0.5 = 18.04."
+      },
+      {
+        "claim": "The 0.877 covers the weight THCA loses as it becomes THC",
+        "verdict": "ok",
+        "fix": "",
+        "source": "7 CFR 990.1: 'a molecular mass conversion ratio that sums delta-9 THC and 87.7 percent of THC-acid'."
+      },
+      {
+        "claim": "Ceiling 3.5 g x 1,000 x 0.18 = 630 mg; 630 / 42 tsp = 15 mg; 630 / 48 tsp (a full cup) = about 13 mg",
+        "verdict": "ok",
+        "fix": "",
+        "source": "Arithmetic (1 cup = 48 tsp; 630/48 = 13.1)."
+      },
+      {
+        "claim": "Dosing note: 'real batches run lower' than the ceiling",
+        "verdict": "overstated",
+        "fix": "Now 'usually run lower': the ceiling is figured from a label THC% that Michigan rules let vary by 10%, so a batch can exceed it.",
+        "source": "facts/law-facts.json mi-labeling (R 420.504(1): actual values may vary by 10%)."
+      },
+      {
+        "claim": "Taste a quarter teaspoon or less the first time",
+        "verdict": "ok",
+        "fix": "",
+        "source": "CCMOH (Jan. 6, 2020): start with 2.5 mg of THC or less. A quarter teaspoon is 3.3-3.75 mg at the worksheet's ceiling; 'or less' and below-ceiling real batches keep it near that start."
+      },
+      {
+        "claim": "Give it 2 full hours (takeaway, body, dosing note)",
+        "verdict": "overstated",
+        "fix": "Now 'at least 2 hours' in all three places.",
+        "source": "CCMOH 2020: 'up to 2 hours to feel the effects ... up to 4 hours to feel the full effects'."
+      },
+      {
+        "claim": "Effects can stay with you for 4 to 12 hours",
+        "verdict": "ok",
+        "fix": "",
+        "source": "CCMOH 2020: 'The effects from edible cannabis last 4 to 12 hours'."
+      },
+      {
+        "claim": "CDC: homemade oils made with herbs belong in the fridge for no more than 4 days; UGA Extension suggests freezing instead",
+        "verdict": "ok",
+        "fix": "",
+        "source": "CDC Botulism Prevention (Feb. 26, 2026): 'Refrigerate homemade oils made with garlic or herbs. Throw the oils away after 4 days.' UGA C1334 (Dec. 17, 2024): 'Alternatively, you could freeze the oil'. Both opened 2026-10-24. The article says plainly that it extends the rule to butter."
+      },
+      {
+        "claim": "In Michigan you can share it with adults 21+ only as a gift, never in exchange for anything",
+        "verdict": "overstated",
+        "fix": "Added the other conditions: within the 2.5-ounce limit and without advertising it.",
+        "source": "facts/law-facts.json mi-au-gifting (MCL 333.27955(1)(d))."
+      },
+      {
+        "claim": "High Society: order flower ahead from your store's menu for in-store or curbside pickup",
+        "verdict": "ok",
+        "fix": "",
+        "source": "facts/hs-facts.json services.ordering, services.curbside, services.inStorePickup; flower is a published category; no product or stock is claimed."
+      },
+      {
+        "claim": "Unsalted butter works the same but leaves a watery layer; chill, lift the butter off, pour away the liquid",
+        "verdict": "ok",
+        "fix": "",
+        "source": "Culinary method (butter is roughly 80% fat; the rest is water and milk solids)."
+      },
+      {
+        "claim": "Canna-coconut oil: use coconut oil in place of the ghee; swap part of a recipe's butter to hit a dose",
+        "verdict": "ok",
+        "fix": "",
+        "source": "Method; cannabis-cookie-recipe shows the per-serving math."
+      },
+      {
+        "claim": "Sources resolve and support the text",
+        "verdict": "ok",
+        "fix": "",
+        "source": "Wang 2016, 7 CFR 990.1, PubChem, CDC, UGA C1334 and CCMOH all opened 2026-10-24 (eCFR via its API; the HTML page redirects bots). The MJI benchbook is the law-facts source for mi-au-gifting (verified there)."
+      }
+    ],
+    "factCheckNotes": "Fact-check 2026-10-24: 20 claims checked, 4 fixed (heat-loss overstatement, 'run lower', wait time, gifting conditions). The 13-15 mg per teaspoon example (39-45 mg per tablespoon) is the figure the cookie and coffee recipes now quote.",
+    "writerNotes": "Storage applies the CDC 4-day limit for homemade herb oils to infused ghee and butter (conservative; the CDC page names oils). This differs from /blog/canna-butter/, which suggests about two weeks in the fridge for quality. Freezer storage is given as portions without a duration (FSIS and foodsafety.gov block automated fetches). Dosing note and FAQ worded independently of /blog/canna-butter/ (an 8-word shingle check against all site articles was run)."
+  }
+}

@@ -1,0 +1,2 @@
+/* blocks/callout.css — the callout block (core). The callout itself is drawn in _md.css (Markdown callouts share it). */
+.callout--block { max-width: 60rem; padding: var(--s-3); }

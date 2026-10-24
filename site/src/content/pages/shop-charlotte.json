@@ -1,0 +1,122 @@
+{
+ "path": "/shop/charlotte/",
+ "template": "menu-placeholder",
+ "store": "charlotte",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/shop/charlotte/"
+ ],
+ "titleFull": "Shop Cannabis - Charlotte Dispensary Menu",
+ "metaDescription": "Discover High Society's online cannabis menu for the Charlotte weed dispensary. Order premium cannabis products for convenient pickup.",
+ "h1": "Charlotte Weed Dispensary Menu",
+ "crumb": "Charlotte",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Shop",
+   "path": "/shop/"
+  },
+  {
+   "name": "Charlotte"
+  }
+ ],
+ "hero": {
+  "eyebrow": "High Society Charlotte",
+  "lead": "Order ahead online, then pick up in store or at the curb.",
+  "status": {
+   "open": "Open - Closes at 9:00 PM",
+   "closed": "Closed - Opens at 9:00 AM"
+  },
+  "mapsUrl": "https://www.google.com/maps/dir//High+Society+Weed+Dispensary+Charlotte,+515+Lansing+St,+Charlotte,+MI+48813,+United+States/@42.5709276,-84.8251347,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8822af9a60df0827:0x47febccd2a3bd07d!2m2!1d-84.8251347!2d42.5709276!3e0"
+ },
+ "blocks": [
+  {
+   "type": "menu-placeholder",
+   "id": "menu",
+   "ground": "white",
+   "store": "charlotte",
+   "heading": "Menu",
+   "title": "Shop the Charlotte menu",
+   "md": "Browse today’s products, prices and deals, add them to your cart and choose a pickup time. Prefer to order by phone? Call the store and our team will help.",
+   "order": {
+    "text": "Order Now"
+   },
+   "call": {
+    "text": "Call"
+   }
+  },
+  {
+   "type": "link-grid",
+   "id": "categories",
+   "ground": "headlight",
+   "heading": "Shop by Category",
+   "groups": [
+    {
+     "title": "Charlotte menu",
+     "links": [
+      {
+       "text": "Concentrates",
+       "href": "/shop/charlotte/?dtche%5Bcategory%5D=concentrates"
+      },
+      {
+       "text": "Flower",
+       "href": "/shop/charlotte/?dtche%5Bcategory%5D=flower"
+      },
+      {
+       "text": "Pre-Rolls",
+       "href": "/shop/charlotte/?dtche%5Bcategory%5D=pre-rolls"
+      },
+      {
+       "text": "Vaporizers",
+       "href": "/shop/charlotte/?dtche%5Bcategory%5D=vaporizers"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "store-details",
+   "id": "store",
+   "ground": "white",
+   "heading": "Your Store",
+   "store": "charlotte",
+   "name": "High Society Charlotte",
+   "facts": [
+    "address",
+    "phone",
+    "email",
+    "hours"
+   ],
+   "email": "info@highsocietydispo.com",
+   "hoursText": "9:00 AM - 9:00 PM Daily",
+   "mapsUrl": "https://www.google.com/maps/dir//High+Society+Weed+Dispensary+Charlotte,+515+Lansing+St,+Charlotte,+MI+48813,+United+States/@42.5709276,-84.8251347,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8822af9a60df0827:0x47febccd2a3bd07d!2m2!1d-84.8251347!2d42.5709276!3e0",
+   "ctas": [
+    {
+     "text": "View Location",
+     "href": "location"
+    },
+    {
+     "text": "Get Directions",
+     "href": "maps",
+     "style": "ghost"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen-other.mjs",
+  "newCopy": [
+   "hero eyebrow and lead",
+   "the menu notice (title, text, button labels)",
+   "category band heading and group title"
+  ],
+  "notes": [
+   "category links use High Society's own form /shop/<store>/?dtche[category]=<category> (its v1 store pages); the CMS category pages (/charlotte/<category>/) are not part of this build",
+   "no category menus are published for this store: the four categories its store page links"
+  ]
+ }
+}

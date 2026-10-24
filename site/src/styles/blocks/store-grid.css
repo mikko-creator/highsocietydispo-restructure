@@ -1,0 +1,29 @@
+/* blocks/store-grid.css — the stores as v2's location cards (stores lane; the home's Locations section language): ink
+   panels (#0B0C0C) with a hairline that turns red on hover, the store's race-day scene on top (zooming a little on
+   hover, its crop focus v2's own: --fx), the name in Changa One, v2's red labels over the facts, the red "Order Now".
+   4 cards a row from 1280px, 3 from 1024px, 2 from 640px, 1 on phones. Also the "nearby" block's compact cards. */
+.sg { display: grid; grid-template-columns: repeat(var(--sg-cols, 1), minmax(0, 1fr)); gap: var(--gap); }
+@media (min-width: 640px) { .sg { --sg-cols: 2; } }
+@media (min-width: 1024px) { .sg { --sg-cols: 3; } }
+@media (min-width: 1280px) { .sg--many { --sg-cols: 4; } }
+.sg__item { display: flex; min-width: 0; }
+.sg__card { display: flex; flex-direction: column; width: 100%; }
+.sg__media { aspect-ratio: 16 / 10; }
+.sg__media img { object-position: var(--fx, 50%) 50%; transition: transform .6s var(--ease); }
+.sg__card:hover .sg__media img, .sg__card:focus-within .sg__media img { transform: scale(1.04); }
+@media (prefers-reduced-motion: reduce) { .sg__card:hover .sg__media img, .sg__card:focus-within .sg__media img { transform: none; } }
+.sg__body { flex: 1 1 auto; display: flex; flex-direction: column; gap: var(--s-2); padding: var(--s-3); min-width: 0; }
+.sg__name { font: 900 clamp(1.5rem, 1.1rem + 1vw, 2rem)/1 var(--font-display); text-transform: uppercase; letter-spacing: -.005em; color: var(--card-fg, var(--fg)); }
+.sg__name a { transition: color var(--dur) var(--ease); }
+.sg__card:hover .sg__name a { color: var(--em); }
+.sg__facts { display: grid; gap: 12px; font-size: .9375rem; line-height: 1.45; color: var(--fg-2); }
+.sg__fact dt { font: 700 .75rem/1.2 var(--font-head); letter-spacing: .12em; text-transform: uppercase; color: var(--em); }
+.sg__fact dd { margin-top: 2px; }
+.sg__tel { display: inline-flex; align-items: center; min-height: var(--tap); margin-block: -10px; color: var(--fg); font-weight: 600; }
+.sg__tel:hover { color: var(--em); }
+.sg__ctas { margin-top: auto; padding-top: var(--s-1); display: flex; flex-wrap: wrap; gap: var(--s-1); }
+.sg__ctas .btn { flex: 1 1 auto; }
+/* nearby: smaller photos, the same panel */
+.sg--nearby .sg__media { aspect-ratio: 2 / 1; }
+.sg--nearby .sg__name { font-size: clamp(1.3rem, 1rem + .8vw, 1.6rem); }
+@media (min-width: 1280px) { .sg--nearby { --sg-cols: 4; } }

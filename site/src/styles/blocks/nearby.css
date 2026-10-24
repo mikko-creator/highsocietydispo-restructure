@@ -1,0 +1,3 @@
+/* blocks/nearby.css — the other stores (stores lane): the store-grid's compact cards (blocks/store-grid.css, .sg--nearby);
+   nothing of its own beyond keeping the band's lead quiet. */
+.block--nearby .block__lead { color: var(--fg-2); }

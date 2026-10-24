@@ -1,0 +1,73 @@
+/* templates/guide.css — the long Resources guides (pages lane): the medical card guide, the patient guide and the
+   state law pages. The shell's ink hero with the "last reviewed" line, then one white reading column (~46rem) beside a
+   sticky "on this page" list from 1024px; phones get the same list folded (details) above the text. Blocks drop their
+   full-bleed band padding inside the column; a call to action becomes a rounded red card with v2's checkered top.
+   Also here, shared with the hub and FAQ templates: the sources list (.srcs) and the same-page link list (.jumpnav). */
+.page-hero--guide .page-hero__inner { padding-bottom: calc(var(--checker-h) + clamp(36px, 5vw, 64px)); }
+.guide__reviewed { display: inline-flex; flex-wrap: wrap; align-items: center; gap: .5em; margin-top: var(--s-1); font: 600 .78rem/1.2 var(--font-head); letter-spacing: .1em; text-transform: uppercase; color: var(--fg-2); }
+.guide__reviewed span::after { content: ""; display: inline-block; width: 6px; height: 6px; margin-left: .5em; border-radius: 50%; background: var(--em); vertical-align: middle; }
+.guide__reviewed time { color: var(--fg); }
+
+.guide { background: var(--bg); color: var(--fg); }
+.guide__grid { max-width: calc(var(--container) + var(--pad-l) + var(--pad-r)); margin-inline: auto; padding: clamp(32px, 5vw, 72px) var(--pad-r) clamp(48px, 7vw, 96px) var(--pad-l); display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s-5); }
+@media (min-width: 1024px) {
+  .guide__grid { grid-template-columns: minmax(13rem, 16rem) minmax(0, 48rem); justify-content: center; gap: clamp(40px, 5vw, 88px); }
+}
+.guide__aside { display: none; }
+@media (min-width: 1024px) {
+  .guide__aside { display: block; }
+  .guide__tocm { display: none; }
+}
+.guide__main { display: flex; flex-direction: column; gap: clamp(40px, 5vw, 64px); min-width: 0; }
+
+/* blocks inside the column: no band of their own (a call to action keeps its red or ink ground: its type is white) */
+.guide__main > .block:not(.block--cta) { background: transparent; }
+.guide__main > .block > .block__inner { max-width: none; margin: 0; padding: 0; gap: var(--s-3); }
+.guide__main .block__head { max-width: none; }
+.guide__main .md { max-width: none; }
+.guide__main .faq { max-width: none; }
+.guide__main .callout--block { max-width: none; }
+.guide__main .md h3 { margin-top: 1.6em; }
+/* a call to action: a red card in the column */
+.guide__main > .block--cta { border-radius: var(--radius-lg); overflow: hidden; }
+.guide__main > .block--cta > .block__inner.cta { padding: calc(var(--checker-h) + clamp(28px, 4vw, 40px)) clamp(20px, 4vw, 40px) clamp(28px, 4vw, 40px); }
+.guide__main .cta__title { font-size: clamp(1.9rem, 1rem + 2.2vw, 2.8rem); }
+/* steps read as one column in the reading width */
+.guide__main .steps { grid-template-columns: minmax(0, 1fr); gap: var(--s-3); }
+@media (min-width: 640px) { .guide__main .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* the summary box */
+.keyfacts { padding: var(--s-3); background: var(--headlight); border-left: 4px solid var(--red); border-radius: var(--radius-lg); }
+.keyfacts__title { margin-bottom: var(--s-2); font: 700 .78rem/1.2 var(--font-display); letter-spacing: .2em; text-transform: uppercase; color: var(--em); scroll-margin-top: calc(var(--bar-h) + var(--s-3)); }
+.keyfacts .blist { max-width: none; }
+.keyfacts .blist__text p { margin: 0; }
+
+/* the same-page list: the sticky one beside the column, and the folded one on phones */
+.jumpnav__label { padding-bottom: .8rem; border-bottom: 1px solid var(--line); font: 700 .78rem/1.2 var(--font-display); letter-spacing: .2em; text-transform: uppercase; color: var(--em); }
+.jumpnav__list { list-style: decimal; padding-left: 1.6em; counter-reset: none; }
+.jumpnav__list li::marker { color: var(--em); font: 400 .8125rem var(--font-display); }
+.jumpnav__list a { display: flex; align-items: center; min-height: var(--tap); padding: 4px 0; font: 600 .9375rem/1.3 var(--font-head); color: var(--fg); text-decoration: underline 1px transparent; text-underline-offset: .25em; transition: color var(--dur) var(--ease), text-decoration-color var(--dur) var(--ease); }
+.jumpnav__list a:hover, .jumpnav__list a:focus-visible { color: var(--em); text-decoration-color: var(--red); }
+.guide__toc { position: sticky; top: calc(var(--bar-h) + var(--s-3)); max-height: calc(100svh - var(--bar-h) - var(--s-6)); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; }
+.guide__tocm { border: 1px solid var(--line); border-left: 4px solid var(--red); border-radius: var(--radius-lg); background: var(--headlight); }
+.guide__tocm-sum { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: var(--s-2); min-height: 52px; padding: 0 var(--s-2); cursor: pointer; font: 700 .78rem/1.2 var(--font-display); letter-spacing: .2em; text-transform: uppercase; color: var(--em); }
+.guide__tocm-sum::-webkit-details-marker { display: none; }
+.guide__tocm-sum .icon { transition: transform var(--dur) var(--ease); }
+.guide__tocm[open] .guide__tocm-sum .icon { transform: rotate(180deg); }
+.guide__tocm .jumpnav__list { padding: 0 var(--s-2) var(--s-2) calc(var(--s-2) + 1.4em); }
+
+/* the sources (guide, hub, FAQ) */
+.srcs { display: flex; flex-direction: column; gap: var(--s-2); }
+.srcs__title { font: 900 var(--fs-headline)/1.02 var(--font-display); text-transform: uppercase; letter-spacing: -.005em; color: var(--fg); scroll-margin-top: calc(var(--bar-h) + var(--s-3)); }
+.srcs__title::before { content: ""; display: block; width: 48px; height: 4px; margin-bottom: var(--s-2); border-radius: 2px; background: var(--red); }
+.srcs__note { color: var(--fg-2); }
+.srcs__list { list-style: decimal; padding-left: 1.6em; color: var(--fg-2); font-size: .9375rem; line-height: 1.5; }
+.srcs__list li + li { margin-top: .55em; }
+.srcs__list li::marker { color: var(--em); font-family: var(--font-display); }
+.srcs__list cite { font-style: normal; }
+.srcs__list a { padding-block: 12px; color: var(--fg); font-weight: 600; text-decoration: underline 1px; text-decoration-color: var(--red); text-underline-offset: .2em; overflow-wrap: anywhere; }
+.srcs__list a:hover { color: var(--em); }
+.block--sources .srcs { max-width: 60rem; }
+
+/* the closing note */
+.guide__note { margin-top: calc(var(--s-2) * -1); }

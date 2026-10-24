@@ -1,0 +1,151 @@
+{
+ "path": "/cannabis-laws-by-state/michigan/",
+ "template": "guide",
+ "provenance": "new",
+ "sourceRefs": [
+  "structure map newPageBriefs /cannabis-laws-by-state/michigan/",
+  "facts/law-facts.json (claims listed in review.claims)",
+  "facts/hs-facts.json services.adultUse, services.medical, services.idRules, services.travelWithCannabis, services.ordering, company.storeCount"
+ ],
+ "title": "Michigan Marijuana Laws: Is Weed Legal in MI?",
+ "crumb": "Michigan",
+ "metaDescription": "Is weed legal in Michigan? Yes, for adults 21+. Possession and purchase limits, where you can use cannabis, driving rules and taxes, as of October 2026.",
+ "h1": "Michigan Marijuana Laws: What Adults and Patients Should Know",
+ "hero": {
+  "eyebrow": "Cannabis Laws by State",
+  "lead": "Yes: adults 21 and older can legally buy, possess and use cannabis in Michigan, and registered patients have their own program. Here are the limits, the places where use is not allowed and the rules for driving and travel, as of October 2026."
+ },
+ "reviewed": { "label": "Last reviewed", "date": "2026-10-24", "text": "October 2026" },
+ "tocLabel": "On this page",
+ "summary": {
+  "heading": "Michigan at a glance",
+  "items": [
+   "**Age:** 21 and older for adult use; registered medical patients can be 18 or older.",
+   "**Carry:** up to 2.5 ounces, with no more than 15 grams of it as concentrate.",
+   "**At home:** up to 10 ounces plus what your own plants produce; anything over 2.5 ounces locked up.",
+   "**Grow:** up to 12 plants per residence, out of public view and behind a lock.",
+   "**Buy:** a store may sell up to 2.5 ounces per transaction, 15 grams of it as concentrate.",
+   "**Use:** not in public, not in a vehicle on the road, and never across a state line."
+  ]
+ },
+ "blocks": [
+  {
+   "type": "prose",
+   "heading": "How Michigan got here",
+   "md": "Michigan legalized cannabis in two steps, both by a vote of the people. The Michigan Medical Marihuana Act of 2008 created the medical program and its patient registry. Ten years later, the Michigan Regulation and Taxation of Marihuana Act made cannabis legal under state law for adults 21 and older, starting December 6, 2018.\n\nBoth programs are overseen by the Cannabis Regulatory Agency (CRA), part of the Department of Licensing and Regulatory Affairs. The CRA licenses adult-use and medical businesses, runs the patient registry and regulates hemp processing. You will see the older spelling “marihuana” in Michigan’s statutes and official documents."
+  },
+  {
+   "type": "prose",
+   "heading": "Buying cannabis: age, ID and limits",
+   "md": "Adult-use stores sell only to adults 21 and older. Before every sale, the store must check a valid driver’s license or other government-issued photo ID showing that you are 21 or older. Registered medical patients buy from licensed provisioning centers by showing their registry card and a photo ID.\n\nA licensed adult-use store may sell you no more than 2.5 ounces in a single transaction, and no more than 15 grams of that as concentrate. It may also sell up to 3 immature plants per transaction. Registered patients may buy up to 2.5 ounces a day and 10 ounces a month, tracked in the state’s monitoring system.\n\nEach Michigan city, village or township decides whether to allow cannabis businesses at all, so licensed stores exist only where local government permits them. Buy from a licensed store: in Michigan, cannabis over 0.3% THC (counting THCA) is marijuana that only licensed businesses may sell."
+  },
+  {
+   "type": "prose",
+   "heading": "Possession and home grow",
+   "md": "Adults 21 and older may possess, carry and transport up to 2.5 ounces of cannabis, with no more than 15 grams of it as concentrate.\n\nAt home, the limit is 10 ounces plus whatever your own plants produce. Anything over 2.5 ounces at home must be stored in a container or area with locks or other security devices.\n\nAdults may grow up to 12 plants for personal use. The cap is per residence, not per person: no more than 12 plants on the premises at once, out of public view and in an enclosed area with a lock.\n\nYou may also give up to 2.5 ounces, no more than 15 grams of it as concentrate, to another adult 21 or older, as long as nothing is received in return and the gift is not advertised or promoted to the public.\n\nGoing over the limits is mostly a civil fine for modest amounts: up to $500 for a first violation when you hold no more than twice the limit, rising to a misdemeanor on a third violation or when you hold more than twice the limit."
+  },
+  {
+   "type": "prose",
+   "heading": "Where you can and cannot use cannabis",
+   "md": "Michigan law does not allow using cannabis in a public place, and property owners may ban smoking or use on their property, hotels included. The exception is an area a city or township has authorized for consumption, closed to anyone under 21. A business that lets people consume on site and charges for entry, sells goods or services during consumption or requires membership needs its own state license and local approval.\n\nCannabis and accessories are not allowed on the grounds of any preschool or K-12 school, on a school bus or on the grounds of a correctional facility.\n\nIf you rent, your landlord may ban or limit cannabis on the property, but a lease may not forbid a tenant from lawfully possessing cannabis and consuming it by means other than smoking.\n\nThe practical answer: enjoy cannabis at home, or on private property where the owner allows it."
+  },
+  {
+   "type": "prose",
+   "heading": "Driving and carrying cannabis in a vehicle",
+   "md": "No one may use cannabis while driving or in control of a motor vehicle, motorboat, snowmobile, off-road vehicle or aircraft, and smoking is not allowed in a vehicle’s passenger area on a public road.\n\nMichigan has no numeric THC limit like the 0.08 alcohol limit. It bans driving while under the influence, and a separate zero-tolerance law bars driving with any amount of a Schedule 1 drug in your body, a list that includes marijuana. Registered medical patients are judged on whether they were actually under the influence. For adults 21 and older who are not patients, the Michigan Judicial Institute says it is unclear how the courts will apply these rules. A first offense under the zero-tolerance law is a misdemeanor that can bring up to 93 days in jail, a fine of $100 to $500, six points and a 180-day license suspension.\n\nWhen you carry cannabis in a vehicle, the cautious practice is to keep it sealed and out of reach, such as in the trunk. An older Michigan law requires usable marijuana in a vehicle to travel in a case in the trunk, and it is not clear whether that law still applies to adult-use drivers.\n\nSince 2025, the smell of cannabis alone is no longer enough for Michigan police to search a vehicle, though it can be one factor among others.\n\nThe simplest rule of all: if you have used cannabis, do not drive."
+  },
+  {
+   "type": "prose",
+   "heading": "Leaving Michigan: state lines, airports and federal land",
+   "md": "Cannabis purchases are legal in Michigan, but transporting cannabis across state lines is prohibited under federal law. That holds even between two states where cannabis is legal: Michigan’s law does not protect it, and as of October 2026 federal law still lists adult-use marijuana in Schedule I. Possessing a controlled substance without federal authorization is a federal crime.\n\nMichigan’s neighbors add their own rules. Indiana and Wisconsin make possession a crime, Ohio now allows only cannabis bought from its own licensed dispensaries or legally home-grown, and Illinois’ own guidance says cannabis should not cross state lines. Our [Indiana](/cannabis-laws-by-state/indiana/) and [Illinois](/cannabis-laws-by-state/illinois/) guides have the details.\n\n**Federal land.** Michigan’s law does not protect anyone on federal land, such as Sleeping Bear Dunes or a national forest. Federal law applies there, so leave cannabis at home.\n\n**Airports.** TSA officers do not search for drugs, but anything illegal they find is referred to law enforcement, and adult-use marijuana remains illegal under federal law. Do not plan on flying with cannabis."
+  },
+  {
+   "type": "prose",
+   "heading": "Taxes on cannabis purchases",
+   "md": "Adult-use purchases carry a 10% excise tax plus Michigan’s 6% sales tax, and the sales tax is figured on the price including the excise tax. On a $100 adult-use purchase, that is $10 of excise tax and $6.60 of sales tax.\n\nMedical sales to registered patients, including visiting patients with a valid card from another state, skip the 10% excise tax; only the 6% sales tax applies.\n\nSince January 1, 2026, Michigan also levies a 24% wholesale tax on adult-use cannabis. The tax is owed by the grower, processor or other business that makes the first sale to a retailer, which may pass the cost on to the store. The money goes to the state’s neighborhood road fund. Industry lawsuits challenging the tax were still in the courts in 2026."
+  },
+  {
+   "type": "prose",
+   "heading": "Products, potency and testing",
+   "md": "Every cannabis product sold in Michigan must be sealed and labeled. The label lists the THC and CBD content, the lab that tested it and the test date, the state’s universal THC symbol and the required warnings, among them a warning that driving while under the influence is against the law, and the number for Poison Control.\n\nEdibles come in opaque, child-resistant packaging. They may not be shaped like people, animals or fruit, and the packaging may not use the word “candy”. Adult-use edibles are capped at 10 mg of THC per dose and 200 mg per package; medical edibles may hold up to 50 mg per dose. Cannabis beverages are capped at 10 mg per dose and 100 mg per container.\n\nMichigan counts THCA as THC: cannabis over 0.3% THC, THCA included, is marijuana that only licensed businesses may sell. Delta-8 THC counts as marijuana too, and since October 11, 2021 only CRA-licensed businesses may sell it. Our guide to [reading a cannabis label](/blog/how-to-read-a-cannabis-label/) shows where each detail sits on the package."
+  },
+  {
+   "type": "prose",
+   "heading": "Work, rentals, family and local rules",
+   "md": "- **Work.** Employers do not have to allow cannabis at work. They may enforce drug policies, discipline workers or refuse to hire someone over a policy violation, and a medical card does not change that for private employers.\n- **Rentals.** Landlords may ban or limit cannabis on their property, though a lease may not forbid lawful possession and use by means other than smoking.\n- **Family.** A parent may not be denied custody or parenting time for legal cannabis use unless it creates an unreasonable danger to the child that can be clearly shown.\n- **Probation.** Since a 2026 Michigan Supreme Court ruling, courts may not ban legal adult-use cannabis as a probation condition just because it is illegal under federal law.\n- **Local rules.** Each city, village or township may ban cannabis businesses or limit how many it allows, but it may not restrict transporting cannabis through the community.\n- **Under 21.** For a person under 21, holding up to 2.5 ounces is a civil infraction, with a fine of up to $100 for a first violation.\n\nQuestions about clearing an old cannabis record? See our article on [Michigan marijuana expungement](/blog/michigan-marijuana-expungement/)."
+  },
+  {
+   "type": "cta",
+   "heading": "Shopping at High Society",
+   "md": "All eight High Society stores are in Michigan. Bring a valid government-issued ID or passport: adult-use shopping is for 21 and older, and our store pages welcome medical patients 18 and older with a valid card. Order online ahead of time for in-store or curbside pickup. 21+ only. Please consume responsibly.",
+   "ctas": [
+    { "text": "Find a store", "href": "/dispensary-locations/" },
+    { "text": "Order Now", "href": "{{location_shop_url}}", "style": "ghost" }
+   ]
+  },
+  {
+   "type": "faq",
+   "heading": "Michigan cannabis questions",
+   "items": [
+    { "q": "Is weed legal in Michigan?", "a": "Yes. Adults 21 and older may legally buy, possess and use cannabis in Michigan, and registered medical patients 18 and older have their own program." },
+    { "q": "How much cannabis can I buy at once in Michigan?", "a": "A licensed adult-use store may sell up to 2.5 ounces in a single transaction, with no more than 15 grams of it as concentrate. Registered patients may buy up to 2.5 ounces a day and 10 ounces a month." },
+    { "q": "Can you smoke weed in public in Michigan?", "a": "No. Using cannabis in a public place is not allowed, and property owners may ban it on their property. Enjoy it at home or on private property where the owner allows it." },
+    { "q": "Can I take cannabis from Michigan to another state?", "a": "No. Transporting cannabis across state lines is prohibited under federal law, even into a state where cannabis is legal." },
+    { "q": "Can I buy cannabis in Michigan with an out-of-state ID?", "a": "Yes, if you are 21 or older. Michigan stores check a valid driver’s license or government-issued photo ID, and our New Buffalo pages note that, in most cases, valid government IDs from other states are accepted. Bring your ID to confirm." },
+    { "q": "Is there a legal THC limit for driving in Michigan?", "a": "There is no number like the 0.08 alcohol limit. Michigan bans driving under the influence, and a zero-tolerance law bars driving with any amount of a Schedule 1 drug, which includes marijuana. If you have used cannabis, do not drive." },
+    { "q": "How many plants can I grow in Michigan?", "a": "Up to 12 plants per residence for personal use, out of public view and in an enclosed area with a lock." },
+    { "q": "What taxes apply to cannabis in Michigan?", "a": "Adult-use purchases carry a 10% excise tax plus the 6% sales tax. Medical sales to registered patients pay only the 6% sales tax." }
+   ]
+  }
+ ],
+ "sources": [
+  { "label": "Michigan Regulation and Taxation of Marihuana Act, Initiated Law 1 of 2018 (MCL 333.27951 et seq.)", "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-Initiated-Law-1-of-2018" },
+  { "label": "Michigan Judicial Institute: Controlled Substances Benchbook, sec. 8.14, Scope of the MRTMA", "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm" },
+  { "label": "Michigan Judicial Institute: Controlled Substances Benchbook, sec. 8.15, Penalties for Violation of the MRTMA", "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Penalties_for_Violation_of_the_MRTMA.htm" },
+  { "label": "Michigan Judicial Institute: Controlled Substances Benchbook, sec. 8.17, Other Sections of the MRTMA", "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Sections_of_the_MRTMA.htm" },
+  { "label": "Michigan Judicial Institute: Controlled Substances Benchbook, sec. 8.7, Other Issues Under the MMMA", "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Issues_Arising_Under_the_MMMA.htm" },
+  { "label": "Michigan Judicial Institute: Traffic Benchbook, sec. 9.11, Operating with Certain Controlled Substances in the Body", "url": "https://www.courts.michigan.gov/4a816c/siteassets/publications/benchbooks/tbb/tbbresponsivehtml5.zip/TBB/Ch_9_Section_625_Offenses/Operating_with_the_Presence_of_Certain_Controlled_Substances_in_BodySection_625(8)-u116c.htm" },
+  { "label": "Michigan Judicial Institute: Controlled Substances Benchbook, sec. 8.18, Operating a Motor Vehicle", "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Operating_a_Motor_Vehicle.htm" },
+  { "label": "MCL 750.474, transportation of usable marihuana (unofficial copy)", "url": "https://syfert.com/michigan/sections/750.474.html" },
+  { "label": "CRA: Marihuana Rules, R 420.1 to R 420.1004 (PDF)", "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf" },
+  { "label": "CRA: Consumer Connection", "url": "https://www.michigan.gov/cra/resources/consumer-connection" },
+  { "label": "CRA: MMMP Patients & Caregivers", "url": "https://www.michigan.gov/cra/sections/mmp" },
+  { "label": "CRA Advisory Bulletin: Designated Consumption Establishments (PDF)", "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/advisory-bulletin/706181---Marihuana-Licenses---Designated-Consumption-Establishment.pdf" },
+  { "label": "CRA Technical Bulletin: Maximum THC Concentrations for Marijuana-Infused Products (April 24, 2025)", "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/5Technical/Marihuana-Infused-Products-and-Edible-Marihuana-Product---Maximum-THC-limits-revised-42425.pdf" },
+  { "label": "CRA: Answers to Recent Questions Regarding THCA (March 29, 2024)", "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/2MMFL-Advisory/CRA-Answers-Recent-Questions-Regarding-THCA.pdf" },
+  { "label": "CRA: Delta-8 Information", "url": "https://www.michigan.gov/cra/resources/consumer-connection/delta-8-information" },
+  { "label": "CRA: Updated Universal Symbol", "url": "https://www.michigan.gov/cra/laws-rules-other/updated-universal-symbol" },
+  { "label": "Michigan Department of Treasury: Revenue Administrative Bulletin 2023-25", "url": "https://www.michigan.gov/taxes/rep-legal/rab/2023-revenue-administrative-bulletins/revenue-administrative-bulletin-2023-25" },
+  { "label": "Michigan Department of Treasury: Wholesale Marijuana Tax", "url": "https://www.michigan.gov/taxes/business-taxes/wholesale-marijuana-tax" },
+  { "label": "Michigan Department of Treasury: Revenue Administrative Bulletin 2026-3, Wholesale Marihuana Tax", "url": "https://www.michigan.gov/taxes/rep-legal/rab/2026-revenue-administrative-bulletins/revenue-administrative-bulletin-2026-3" },
+  { "label": "Federal Register: final rule rescheduling FDA-approved and state-licensed medical marijuana (April 28, 2026)", "url": "https://www.federalregister.gov/documents/2026/04/28/2026-08176/schedules-of-controlled-substances-rescheduling-of-food-and-drug-administration-approved-products" },
+  { "label": "21 U.S.C. 844, penalties for simple possession", "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title21/html/USCODE-2024-title21-chap13-subchapI-partD-sec844.htm" },
+  { "label": "National Park Service: Sleeping Bear Dunes National Lakeshore, Laws & Policies", "url": "https://www.nps.gov/slbe/learn/management/lawsandpolicies.htm" },
+  { "label": "WDIV ClickOnDetroit: Reminder: Marijuana remains illegal in Michigan's National Forests (April 18, 2019; quotes the Huron-Manistee National Forests)", "url": "https://www.clickondetroit.com/news/2019/04/18/reminder-marijuana-remains-illegal-in-michigans-national-forests/" },
+  { "label": "TSA: What Can I Bring? Medical Marijuana", "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana" },
+  { "label": "Indiana Code 2026, Title 35", "url": "https://iga.in.gov/ic/2026/Title_35.html" },
+  { "label": "Illinois Cannabis: FAQs", "url": "https://cannabis.illinois.gov/about/faqs.html" },
+  { "label": "Ohio Division of Cannabis Control: Intoxicating Hemp Ban Now in Effect (March 24, 2026)", "url": "https://com.ohio.gov/about-us/media-center/news/intoxicating-hemp-ban-in-effect" },
+  { "label": "Ohio Legislative Service Commission: final analysis of S.B. 56", "url": "https://www.legislature.ohio.gov/download?key=27450" },
+  { "label": "Wis. Stat. 961.41(3g)(e)", "url": "https://docs.legis.wisconsin.gov/statutes/statutes/961/IV/41/3g/e" }
+ ],
+ "note": "This guide is general information about Michigan law as of October 2026, not legal advice. Laws and court rulings change; check the official sources above before you rely on a detail.",
+ "review": {
+  "claims": [
+   "summary: mi-au-age, mi-med-ages, mi-au-possession, mi-au-home-storage, mi-au-home-grow, mi-au-purchase-limit, mi-au-public-use, mi-au-vehicles-use, us-interstate",
+   "history: mi-med-program (2008, voters), mi-au-age (Initiated Law 1 of 2018, effective Dec. 6, 2018), mi-cra",
+   "buying: mi-au-purchase-limit (incl. R 420.505(1)(c) ID check), mi-med-purchase, mi-au-municipal, mi-hemp-thca",
+   "possession: mi-au-possession, mi-au-home-storage, mi-au-home-grow, mi-au-gifting, mi-au-penalties",
+   "where: mi-au-public-use (+ municipal consumption-area exception), mi-au-landlords (hotels per details), mi-au-lounges, mi-au-schools",
+   "driving: mi-au-vehicles-use, mi-au-impaired-driving (zero tolerance, Koon, MJI 'unclear', first-offense penalties of MCL 257.625(8)), mi-au-vehicle-transport (medium: trunk as cautious practice, not stated as settled law), mi-au-odor",
+   "leaving: hs-facts services.travelWithCannabis (verbatim first clause), us-interstate, us-scheduling, in-status/in-bring-in, wi-status/wi-bring-in (medium), oh-out-of-state (medium), il-bring-in, mi-au-federal-land (medium), us-flying (medium; never says flying is allowed)",
+   "taxes: mi-tax-retail (Treasury example), mi-tax-medical (visiting patients), mi-tax-wholesale (not a receipt line: claim notes), mi-tax-wholesale-litigation (medium: no outcome stated)",
+   "products: mi-labeling, mi-edibles, mi-thc-limits (beverages 10 mg / 100 mg for both), mi-hemp-thca, mi-hemp-delta8",
+   "other: mi-au-employers, mi-med-employment, mi-au-landlords, mi-au-custody, mi-au-probation, mi-au-municipal (no transport restriction), mi-au-under21-penalties",
+   "High Society: company.storeCount (8 stores), services.idRules ('valid government-issued ID or passport'), services.adultUse, services.medical, services.ordering/curbside; compliance.responsibleUseLines ('21+ only. Please consume responsibly.'); out-of-state IDs: services.idRules (New Buffalo service-area hub wording)"
+  ],
+  "gaps": "Expungement: no claim in facts/law-facts.json, so the page states no expungement law; it points to the planned article /blog/michigan-marijuana-expungement/ (planned.json), which carries its own sources. The municipal opt-out count is not stated (claim note).",
+  "title": "Structure map title 'Is Weed Legal in Michigan? Michigan Marijuana Laws' + suffix = 65 characters; shortened to 60 with both key phrases kept.",
+  "factcheck": "Independent fact-check 2026-10-24 (docs/PAGES-FACTCHECK.md): wholesale-tax sentence now says what RAB 2026-3 and Treasury state (owed by the wholesaler, may be passed through to the store, neighborhood road fund) instead of the unsourced 'not a separate line on your receipt'; added sources for the patient registry (CRA MMMP), the Ohio out-of-state rule (LSC final analysis of S.B. 56; the hemp-ban release alone did not state it) and national forests (Huron-Manistee statement via WDIV)."
+ }
+}

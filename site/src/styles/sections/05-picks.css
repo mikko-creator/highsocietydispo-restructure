@@ -1,0 +1,189 @@
+/* 05-picks — the reskin's Staff Picks band (its sheet lines 450-460, 657, 665-667, 814-815: "Staff Picks: a white
+   band, the brands as the card's hairline tiles"): white ground, the numbered head, white tiles with the 1px ink
+   hairline (rgba(3,4,4,.14)), each logo inside the reskin's 16:10 box padded 12% 14%. On hover the tile lifts 4px
+   with the soft shadow (the kit's .card--lift) and nothing else moves; under reduced motion it does not lift.
+   One screen: the gate allows little empty air at a section's top and bottom, so the tiles grow until the air under
+   the group is --pk-air (the formula adds back what the floating ORDER NOW / CONTACT US pair's padding takes).
+   Desktop (from 1180px): four in a row would have to grow near square or portrait to fill the screen, so the reskin's
+   tile shape wins (RESKIN-STYLE decision 2): the head takes the left of the column and the four tiles sit as a 2x2 at
+   the reskin's 16:10 on the right (taller only where a tall screen needs it, never past square).
+   Tablets and phones: the head over a 2x2 (brief). The title stacks STAFF / PICKS on desktop and phones (the same
+   words, width: min-content). */
+.picks {
+  --pk-gap: var(--s-2);
+  --pk-lead: var(--s-3);                    /* head to tiles */
+  --pk-air: 84px;                           /* the gate allows 96px below 1180px */
+  --pk-lines: 2;                            /* title lines */
+  /* one tile's width, from the column (container, less the side padding) */
+  --pk-cw: min(var(--container), 100vw - var(--pad-l) - var(--pad-r));
+  --pk-tw: calc((var(--pk-cw) - var(--pk-gap)) / 2);
+  /* the head: the race box (26px) + the kit's 8px + the title's lines */
+  --pk-head: calc(34px + var(--pk-lines) * var(--lh-display) * var(--fs-h2));
+  /* the grid's height: what fills the screen to the air limit, between a flat floor (2.4:1) and a cap (1:1.5) */
+  --pk-fill: calc(var(--slide-h) - 2 * var(--pk-air) + var(--pad-b) - var(--pad-t) - var(--pk-head) - var(--pk-lead));
+  --pk-min: calc(2 * var(--pk-tw) / 2.4 + var(--pk-gap));
+  --pk-max: calc(2 * var(--pk-tw) * 1.5 + var(--pk-gap));
+}
+.picks .slide__inner { justify-content: center; gap: var(--pk-lead); }
+.picks .title { width: min-content; }
+.picks__body { flex: 0 1 auto; min-height: 0; height: clamp(var(--pk-min), var(--pk-fill), var(--pk-max)); }
+.picks__grid { height: 100%; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: var(--pk-gap); }
+.picks__item { min-width: 0; min-height: 0; display: flex; }
+
+/* the tile: the kit's card on white (square, the ink hairline; .card--lift gives the reskin's hover: up 4px and the
+   soft shadow). A size container, so the logo box follows the tile's own shape. */
+.pick { flex: 1 1 auto; min-width: 0; min-height: 0; display: grid; place-items: center; background: var(--white); container-type: size; overflow: hidden; }
+/* the logo: the reskin's box inside the largest 16:10 tile that fits this one (min(100cqw, 160cqh) wide): 72% of its
+   width (14% each side) by 38.5% (its inner height, 12% each side of 62.5%). So the wordmarks and the square marks keep
+   the reskin's balance in a flat tablet tile as in a tall phone tile. */
+.pick__logo { --pk-v: min(100cqw, 160cqh); width: auto; height: auto; max-width: calc(.72 * var(--pk-v)); max-height: calc(.385 * var(--pk-v)); object-fit: contain; }
+
+/* tablets (768-1179px): the 2x2 grid of wide tiles under the head, the title on one line (stacked, it would flatten
+   the tiles) */
+@media (min-width: 768px) {
+  .picks { --pk-gap: var(--s-3); }
+}
+@media (min-width: 768px) and (max-width: 1179.98px) {
+  .picks { --pk-lines: 1; }
+  .picks .title { width: auto; }
+}
+/* desktop: the head in the left 28% of the column, the 2x2 on the right with the reskin's 48px between them. The
+   tiles keep 16:10 (the floor) and grow taller only to keep the air under the group within --pk-air (the gate allows
+   150px here), never past square, and never past the content box. */
+@media (min-width: 1180px) {
+  .picks {
+    --pk-air: 140px;
+    --pk-lead: var(--s-5);
+    --pk-hw: calc(var(--pk-cw) * .28);
+    --pk-tw: calc((var(--pk-cw) - var(--pk-hw) - var(--pk-lead) - var(--pk-gap)) / 2);
+    --pk-fill: calc(var(--slide-h) - 2 * var(--pk-air) + var(--pad-b) - var(--pad-t));
+    --pk-min: calc(2 * var(--pk-tw) / 1.6 + var(--pk-gap));
+    --pk-max: calc(2 * var(--pk-tw) + var(--pk-gap));
+    --pk-box: calc(var(--slide-h) - var(--pad-t) - var(--pad-b));
+  }
+  .picks .slide__inner { display: grid; grid-template-columns: var(--pk-hw) minmax(0, 1fr); align-content: center; align-items: start; column-gap: var(--pk-lead); }
+  .picks__body { height: min(var(--pk-box), clamp(var(--pk-min), var(--pk-fill), var(--pk-max))); }
+}
+/* the reskin holds the tiles still under reduced motion (its sheet line 657); the kit's light-ground lift is (0,3,0) */
+@media (prefers-reduced-motion: reduce) {
+  .picks .pick.card--lift:hover, .picks .pick.card--lift:focus-within { transform: none; }
+}
+
+/* ---------------------------------------------------------------- layout D: the red title panel (owner, 2026-10-22)
+   The head becomes a brand-red rounded panel (#BF3226, the tokens' --radius-lg): the race number in white at its top,
+   STAFF PICKS in white Changa One 900 at its foot (white on the red 5.68:1), a faint white trophy mark bleeding off its
+   corner as the panel's only texture (decoration, clear of the type).
+   Desktop and landscape tablets: one grid row, the panel on the left (26% of the column) and the 2x2 of white hairline
+   logo tiles on the right, both cells stretched to the same row, so the panel's top and bottom ARE the grid's top and
+   bottom. From 1180px the row is as short as the empty-band limit allows (about 142px of air under it, the gate's
+   limit is 150), between 2:1 tiles and 6:5; under 1180px it grows from the reskin's 16:10 toward square (the 96px limit
+   leaves no height to give back there). The group is centred in the content box.
+   The owner's "sleeker" pass (2026-10-22, "this section takes too much space, can we reduce the size, adjust the
+   elements, just enough to make it look sleeker"; variant G of three in the lab, picked by an independent judge): the
+   group 613 -> 545px tall at 1440x900, the panel 30% -> 26%, the title scaled to the panel, flatter tiles with the
+   logos larger inside them; the page's 24px gaps kept (one rhythm with DEALS and Craftmanship).
+   Phones and portrait tablets: the panel as a short red band (number over a one-line title) over the 2x2, the band and
+   the grid sharing their left and right edges, the group centred.
+   The owner chose it over RESKIN-STYLE's "no red panels behind things" (this panel is the title's own ground). Built
+   from the owner's pick in the lab (labs/picks-src/D.css); these rules come after the layout above and replace it. */
+/* the panel, everywhere */
+#picks .slide__head {
+  --em: var(--white); --fg: var(--white);
+  position: relative; isolation: isolate; overflow: hidden;
+  background: var(--red); border-radius: var(--radius-lg);
+  padding: var(--d-pad, 20px);
+  container-type: inline-size;
+}
+#picks .slide__head::after {
+  content: ""; position: absolute; z-index: -1; pointer-events: none;
+  width: var(--d-mark, 60%); aspect-ratio: 1; right: var(--d-mark-x, -14%); top: var(--d-mark-y, -12%);
+  background: var(--mark-white) center / contain no-repeat; opacity: .09;
+}
+/* the white trophy mark beside the number */
+#picks .secnum::after { background-image: var(--mark-white); }
+#picks .title { color: var(--white); }
+
+/* ---------------------------------------------------------------- desktop and landscape tablets */
+@media (min-width: 1024px), (min-width: 768px) and (orientation: landscape) {
+  #picks {
+    --d-g: var(--gap);
+    --d-pad: clamp(18px, 2vw, 28px);
+    --d-cw: min(var(--container), 100vw - var(--pad-l) - var(--pad-r));
+    --d-tw: calc((var(--d-cw) * .74 - 2 * var(--d-g)) / 2);  /* one tile: the 74% beside the 26% panel */
+    --d-hb: calc(var(--slide-h) - var(--pad-t) - var(--pad-b));
+    --d-h16: calc(2 * var(--d-tw) / 1.6 + var(--d-g));      /* the reskin's 16:10 tiles */
+    --d-hsq: calc(2 * var(--d-tw) / 1.2 + var(--d-g));      /* the tallest the tiles go (6:5) */
+    --d-h: min(var(--d-hb), clamp(var(--d-h16), var(--d-hb) - 64px, var(--d-hsq)));
+    /* the watermark (owner, 2026-10-22: "increase size of logo here"): 120% of the panel's width, but never more than
+       66% of its height (so it fills the red above the title and stays clear of it on short screens), bleeding off the
+       top-right corner by a share of its own size (it was 78% / 45%) */
+    --d-mark: min(var(--d-cw) * .26 * 1.2, var(--d-h) * .66);
+    --d-mark-x: calc(var(--d-mark) * -.24); --d-mark-y: calc(var(--d-mark) * -.16);
+  }
+  #picks .slide__inner {
+    display: grid; grid-template-columns: 26% minmax(0, 1fr); grid-template-rows: var(--d-h);
+    align-content: center; align-items: stretch; column-gap: var(--d-g); row-gap: 0;
+  }
+  #picks .slide__head { grid-area: 1 / 1; min-height: 0; display: flex; align-items: stretch; }
+  #picks .head__copy { flex: 1 1 auto; justify-content: space-between; }
+  /* STAFF fills about 82% of the panel's inner width, never past a sixth of the group's height */
+  #picks .title { width: min-content; font-size: min(calc(100cqi / 3.05), 5.2rem, calc(var(--d-h) * .16)); }
+  #picks .picks__body { grid-area: 1 / 2; height: auto; min-height: 0; flex: none; }
+  #picks .picks__grid { height: 100%; gap: var(--d-g); }
+  /* the logo box follows the tile itself: 70% of its width and of its height (never past 46% of its width), so the
+     wordmarks keep their side air and the square and portrait marks grow into the flatter tile */
+  #picks .pick__logo { max-width: 70cqw; max-height: min(70cqh, 46cqw); }
+}
+/* from 1180px: the row fills the screen to about 142px of air under the group (the content box is centred, so the air
+   above is that less the difference between the bottom and top padding), between 2:1 tiles (the floor) and 6:5 */
+@media (min-width: 1180px) {
+  #picks {
+    --d-air: 142px;
+    --d-fill: calc(var(--slide-h) - var(--pad-t) + var(--pad-b) - 2 * var(--d-air));
+    --d-h2: calc(var(--d-tw) + var(--d-g));                  /* 2:1 tiles */
+    --d-h: min(var(--d-hb), clamp(var(--d-h2), var(--d-fill), var(--d-hsq)));
+  }
+}
+/* under 1180px wide the empty-air limit is 96px (with the 76px bottom padding, 20px to spare under the group): the row
+   may reach square tiles and leaves at most 40px of the content box free */
+@media (min-width: 1024px) and (max-width: 1179.98px), (min-width: 768px) and (max-width: 1179.98px) and (orientation: landscape) {
+  #picks {
+    --d-hsq: calc(2 * var(--d-tw) + var(--d-g));
+    --d-h: min(var(--d-hb), clamp(var(--d-h16), var(--d-hb) - 40px, var(--d-hsq)));
+  }
+}
+
+/* ---------------------------------------------------------------- phones and portrait tablets */
+@media (max-width: 767.98px), (max-width: 1023.98px) and (orientation: portrait) {
+  #picks {
+    --d-pad: clamp(18px, 4.6vw, 32px);
+    --d-tw: calc((100vw - var(--pad-l) - var(--pad-r) - var(--gap)) / 2);
+    /* centred on the band's right edge, beside the title (the owner's 2026-10-22 enlargement is the desktop panel's: the
+       band is ~120px tall on phones and the mark already shows near its full height; tried at 46%, more of it was only
+       cut away, a handle and half a cup) */
+    --d-mark: 34%; --d-mark-x: -11%; --d-mark-y: calc(50% - 17cqi);
+  }
+  #picks .slide__inner { display: flex; flex-direction: column; justify-content: center; gap: var(--gap); }
+  #picks .slide__head { flex: none; }
+  #picks .head__copy { gap: clamp(14px, 3vw, 24px); }
+  #picks .title { width: auto; white-space: nowrap; font-size: min(calc(100cqi / 6.6), 4.6rem, 7.4svh); }
+  /* the tiles: 1.3 times as tall as wide (tall phones keep under 96px of air above and below), shrinking first when
+     the screen is short */
+  #picks .picks__body { flex: 0 1 auto; min-height: 0; height: calc(2 * var(--d-tw) * 1.3 + var(--gap)); }
+  #picks .picks__grid { height: 100%; }
+  /* the tiles are taller than wide here: the logo box takes 80% of the tile's width (10% air each side, so the wordmarks
+     keep their side air) and up to 62% of it in height (it was 46%: the "sleeker" pass), so the square and portrait
+     marks fill more of their tall tiles */
+  #picks .pick__logo { max-width: 80cqw; max-height: min(62cqw, 60cqh); }
+}
+
+/* ---------------------------------------------------------------- the tile's hover (owner, 2026-10-22: "a red stroke to
+   wrap around the tile when hovered")
+   On hover (and on keyboard focus, as the kit's .card--lift does) a 2px brand-red stroke wraps the whole tile: its own
+   1px hairline turns red and an inset 1px ring doubles it inside, so the stroke follows the rounded corners and nothing
+   in the tile moves; the kit's lift and soft shadow stay. The red on white is 5.68:1. The kit's transition already
+   eases the border and the shadow. */
+#picks .pick.card--lift:hover, #picks .pick.card--lift:focus-within {
+  border-color: var(--red);
+  box-shadow: inset 0 0 0 var(--hairline) var(--red), 0 18px 36px -22px var(--k-50);
+}

@@ -1,0 +1,3323 @@
+{
+ "asOf": "2026-10",
+ "refuterPass": {
+  "date": "2026-10-24",
+  "checkedBy": "refuter",
+  "claimsBefore": 73,
+  "claimsAfter": 72,
+  "verdicts": {
+   "confirmed": 70,
+   "wrong": 0,
+   "outdated": 2,
+   "unsupported": 1
+  },
+  "changed": [
+   "mi-au-age",
+   "mi-au-vehicle-transport",
+   "mi-au-federal-land",
+   "mi-au-impaired-driving",
+   "mi-au-penalties",
+   "mi-tax-retail",
+   "mi-tax-wholesale-litigation",
+   "mi-med-program",
+   "mi-med-apply",
+   "mi-med-physician",
+   "mi-med-validity",
+   "mi-med-caregiver",
+   "mi-med-caregiver-cap",
+   "mi-med-arrest-protection",
+   "us-scheduling",
+   "us-rescheduling-broader",
+   "us-interstate",
+   "il-visitor-limits",
+   "il-dui",
+   "oh-out-of-state",
+   "oh-limits",
+   "wi-status",
+   "wi-penalties",
+   "wi-bring-in"
+  ],
+  "removed": [
+   {
+    "id": "oh-penalties",
+    "claim": "The penalty for possessing out-of-state or over-limit marijuana in Ohio after SB 56 could not be confirmed from a primary source.",
+    "verdict": "unsupported",
+    "reason": "The claim states only that a penalty could not be confirmed. Its one source (the LSC analysis, via search extraction) gives no penalty, and the refuter pass found none either: a 2026 Ohio law-firm page says over-limit possession can be charged as wrongful possession of a controlled substance but gives no offense level, and no source states a penalty for out-of-state product. Removed from the claims; the gap is listed under What could not be confirmed.",
+    "evidence": [
+     {
+      "quote": "If you go over those limits, you can be charged with wrongful possession of a controlled substance.",
+      "url": "https://tyacklaw.com/senate-bill-56-changes-to-ohios-recreational-marijuana-laws/"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  ]
+ },
+ "claims": [
+  {
+   "id": "mi-au-age",
+   "jurisdiction": "MI",
+   "topic": "adult-use/age",
+   "claim": "In Michigan, adults 21 and older may legally buy, possess and use marijuana; the 2018 voter law does not cover anyone under 21.",
+   "details": "Michigan Regulation and Taxation of Marihuana Act (MRTMA), Initiated Law 1 of 2018, effective Dec. 6, 2018 (MCL 333.27951 et seq.). Purpose: legal under state and local law for adults 21+ (MCL 333.27952). The act does not authorize anyone under 21 to possess, consume, buy, grow, process, transport or sell marijuana (MCL 333.27954(1)(c)), nor transfers to anyone under 21 (MCL 333.27954(1)(b)).",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.14: Scope of the MRTMA (quotes MCL 333.27952, 27954, 27955, 27956, 27960)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Revenue Administrative Bulletin 2023-25: Taxation of Adult-Use (Recreational) Marihuana (approved Dec. 19, 2023)",
+     "url": "https://www.michigan.gov/taxes/rep-legal/rab/2023-revenue-administrative-bulletins/revenue-administrative-bulletin-2023-25",
+     "publisher": "Michigan Department of Treasury",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Statute text read as quoted verbatim in the Michigan Judicial Institute benchbook; legislature.mi.gov refused connections from this network on 2026-10-24. Canonical link for the site: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-Initiated-Law-1-of-2018",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "is to make marihuana legal under state and local law for adults 21 years of age or older",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     },
+     {
+      "quote": "any person under the age of 21 to possess, consume, purchase or otherwise obtain",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     },
+     {
+      "quote": "The MRTMA became effective on December 6, 2018",
+      "url": "https://www.michigan.gov/taxes/rep-legal/rab/2023-revenue-administrative-bulletins/revenue-administrative-bulletin-2023-25"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "Added evidence source(s): Revenue Administrative Bulletin 2023-25: Taxation of Adult-Use (Recreational) Marihuana (approved Dec. 19, 2023)."
+   }
+  },
+  {
+   "id": "mi-au-possession",
+   "jurisdiction": "MI",
+   "topic": "adult-use/possession",
+   "claim": "Adults 21+ may carry up to 2.5 ounces of marijuana, of which no more than 15 grams may be concentrate.",
+   "details": "MCL 333.27955(1)(a): possessing, using, purchasing, transporting or processing 2.5 ounces or less, with not more than 15 grams in the form of concentrate.",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.14: Scope of the MRTMA (quotes MCL 333.27952, 27954, 27955, 27956, 27960)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Statute text read as quoted verbatim in the Michigan Judicial Institute benchbook; legislature.mi.gov refused connections from this network on 2026-10-24. Canonical link for the site: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-Initiated-Law-1-of-2018",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "possessing, using or consuming, internally possessing, purchasing, transporting, or processing 2.5 ounces or less",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     },
+     {
+      "quote": "not more than 15 grams of marihuana may be in the form of marihuana concentrate",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-au-home-storage",
+   "jurisdiction": "MI",
+   "topic": "adult-use/possession-at-home",
+   "claim": "At home, an adult may keep up to 10 ounces plus whatever their own plants produce, but anything over 2.5 ounces must be locked up.",
+   "details": "MCL 333.27955(1)(b): within the residence, possess, store and process up to 10 ounces and any marijuana produced by plants cultivated on the premises. MCL 333.27954(1)(i): more than 2.5 ounces in a residence must be stored in a container or area with locks or other functioning security devices.",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.14: Scope of the MRTMA (quotes MCL 333.27952, 27954, 27955, 27956, 27960)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Statute text read as quoted verbatim in the Michigan Judicial Institute benchbook; legislature.mi.gov refused connections from this network on 2026-10-24. Canonical link for the site: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-Initiated-Law-1-of-2018",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "within the person's residence, possessing, storing, and processing not more than 10 ounces of marihuana",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     },
+     {
+      "quote": "and any marihuana produced by marihuana plants cultivated on the premises",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     },
+     {
+      "quote": "unless the excess marihuana is stored in a container or area equipped with locks or other functioning security devices",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-au-home-grow",
+   "jurisdiction": "MI",
+   "topic": "adult-use/home-grow",
+   "claim": "An adult may grow up to 12 plants for personal use at home, with no more than 12 plants on the premises at once, kept out of public view and behind a lock.",
+   "details": "MCL 333.27955(1)(b): cultivate not more than 12 plants for personal use, provided no more than 12 plants are possessed, cultivated or processed on the premises at once (a per-residence cap, not per person). MCL 333.27954(1)(f): plants may not be visible from a public place without binoculars, aircraft or other optical aids, and must be in an enclosed area with locks or other security devices.",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.14: Scope of the MRTMA (quotes MCL 333.27952, 27954, 27955, 27956, 27960)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Statute text read as quoted verbatim in the Michigan Judicial Institute benchbook; legislature.mi.gov refused connections from this network on 2026-10-24. Canonical link for the site: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-Initiated-Law-1-of-2018",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "cultivating not more than 12 marihuana plants for personal use",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     },
+     {
+      "quote": "provided that no more than 12 marihuana plants are possessed, cultivated, or processed on the premises at once",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     },
+     {
+      "quote": "cultivating marihuana plants if the plants are visible from a public place without the use of binoculars",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-au-home-extraction",
+   "jurisdiction": "MI",
+   "topic": "adult-use/home-extraction",
+   "claim": "Michigan's adult-use law does not authorize separating plant resin with butane or any other substance whose flash point is below 100°F in a public place, a motor vehicle or within the curtilage of a home; high-proof drinking alcohol (ethanol, flash point 55°F) is such a substance.",
+   "details": "MCL 333.27954(1)(d): the MRTMA does not authorize 'separation of plant resin by butane extraction or another method that utilizes a substance with a flashpoint below 100 degrees Fahrenheit in any public place, motor vehicle, or within the curtilage of any residential structure'. Ethanol's flash point is 55°F (13°C, closed cup; PubChem CID 702), so an alcohol tincture made at home falls under the same wording.",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.14: Scope of the MRTMA (quotes MCL 333.27952, 27954, 27955, 27956, 27960)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "PubChem: Ethanol (CID 702), Flash Point",
+     "url": "https://pubchem.ncbi.nlm.nih.gov/compound/702#section=Flash-Point",
+     "publisher": "National Library of Medicine (NIH)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Statute text read as quoted verbatim in the Michigan Judicial Institute benchbook (retrieved 2026-10-24). Whether a home alcohol tincture is 'separation of plant resin' has not been tested in any case found here, so the site's safe message is: make no alcohol or solvent extracts at home, buy tinctures from a licensed store. Added 2026-10-24 by the orchestrator after the batch 17, 19 and 20 fact-checkers reported the gap.",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "separation of plant resin by butane extraction or another method that utilizes a substance with a flashpoint below 100 degrees Fahrenheit in any public place, motor vehicle, or within the curtilage of any residential structure",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     },
+     {
+      "quote": "55 °F (13 °C) (closed cup)",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/702#section=Flash-Point"
+     }
+    ],
+    "checkedBy": "orchestrator",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-au-gifting",
+   "jurisdiction": "MI",
+   "topic": "adult-use/gifting",
+   "claim": "Adults may give away up to 2.5 ounces (no more than 15 grams of it concentrate) to another adult 21+, as long as nothing is received in return and the gift is not advertised or promoted to the public.",
+   "details": "MCL 333.27955(1)(d). Adults may also assist another adult 21+ with any authorized act (MCL 333.27955(1)(c)).",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.14: Scope of the MRTMA (quotes MCL 333.27952, 27954, 27955, 27956, 27960)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Statute text read as quoted verbatim in the Michigan Judicial Institute benchbook; legislature.mi.gov refused connections from this network on 2026-10-24. Canonical link for the site: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-Initiated-Law-1-of-2018",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "giving away or otherwise transferring without remuneration up to 2.5 ounces of marihuana",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     },
+     {
+      "quote": "as long as the transfer is not advertised or promoted to the public.",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-au-accessories",
+   "jurisdiction": "MI",
+   "topic": "adult-use/accessories",
+   "claim": "Adults 21+ may buy, own and use marijuana accessories, and businesses may sell accessories to adults 21+.",
+   "details": "MCL 333.27955(2).",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.14: Scope of the MRTMA (quotes MCL 333.27952, 27954, 27955, 27956, 27960)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Statute text read as quoted verbatim in the Michigan Judicial Institute benchbook; legislature.mi.gov refused connections from this network on 2026-10-24. Canonical link for the site: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-Initiated-Law-1-of-2018",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "the distribution or sale of marihuana accessories to a person 21 years of age or older is authorized",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     },
+     {
+      "quote": "the use, manufacture, possession, and purchase of marihuana accessories by a person 21 years of age or older",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-au-purchase-limit",
+   "jurisdiction": "MI",
+   "topic": "adult-use/purchase-limits",
+   "claim": "A licensed adult-use store may sell no more than 2.5 ounces in a single transaction (no more than 15 grams as concentrate) and no more than 3 immature plants per transaction.",
+   "details": "Mich Admin Code R 420.506(3) and (4). Before any sale the store must check a valid driver's license or government-issued photo ID showing the buyer is 21+ (R 420.505(1)(c)).",
+   "sources": [
+    {
+     "title": "Marihuana Rules, R 420.1 to R 420.1004 (PDF compilation; latest rule history Eff. Mar. 7, 2022, editorial corrections 2023)",
+     "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Rule compilation posted by the CRA; the purchasing-limit rule's history line reads Eff. Mar. 7, 2022.",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "is prohibited from making a sale or transferring marihuana to an adult 21 years of age or older in a single transaction that exceeds 2.5 ounces",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf"
+     },
+     {
+      "quote": "A marihuana sales location may sell no more than 3 immature plants to a marihuana customer per transaction.",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf"
+     },
+     {
+      "quote": "bears a photographic image and proof that the individual is 21 years of age or older, under the MRTMA",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "note": "The rules PDF on the CRA site was re-saved on Mar. 18, 2026 (HTTP Last-Modified), but every rule history line still ends at 2022 MR 5, Eff. Mar. 7, 2022; no newer rule set was found."
+   }
+  },
+  {
+   "id": "mi-au-public-use",
+   "jurisdiction": "MI",
+   "topic": "adult-use/where-to-consume",
+   "claim": "Using marijuana in a public place is not allowed in Michigan, and property owners may ban smoking or use on their property.",
+   "details": "MCL 333.27954(1)(e): the act does not authorize consuming marijuana in a public place or smoking where prohibited by the person who owns, occupies or manages the property. Exception: an area designated for consumption in a municipality that has authorized consumption in designated areas not accessible to persons under 21 (see also MCL 333.27956(2)(c), which lets municipalities authorize consumption areas and limited special events).",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.14: Scope of the MRTMA (quotes MCL 333.27952, 27954, 27955, 27956, 27960)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Statute text read as quoted verbatim in the Michigan Judicial Institute benchbook; legislature.mi.gov refused connections from this network on 2026-10-24. Canonical link for the site: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-Initiated-Law-1-of-2018",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "consuming marihuana in a public place or smoking marihuana where prohibited by the person who owns",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     },
+     {
+      "quote": "an area designated for consumption within a municipality that has authorized consumption",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-au-lounges",
+   "jurisdiction": "MI",
+   "topic": "adult-use/consumption-lounges",
+   "claim": "A business that lets people consume marijuana on site and charges entry, sells goods or services during consumption, or requires membership needs a state Designated Consumption Establishment (or Temporary Marijuana Event) license, and the local government must have authorized on-site consumption.",
+   "details": "CRA bulletin: a person who allows consumption at a nonresidential location and charges entry, sells goods or services during consumption, or requires membership must hold a Designated Consumption Establishment or Temporary Marijuana Event license (prequalification plus license application). Municipal authorization: MCL 333.27956(2)(c).",
+   "sources": [
+    {
+     "title": "Advisory Bulletin: Designated Consumption Establishments",
+     "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/advisory-bulletin/706181---Marihuana-Licenses---Designated-Consumption-Establishment.pdf",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.14: Scope of the MRTMA (quotes MCL 333.27952, 27954, 27955, 27956, 27960)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "The bulletin's header reads 'March 7, 2020, Supersedes October 27, 2020' as printed.",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "shall acquire a Designated Consumption Establishment or Temporary Marijuana Event license",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/advisory-bulletin/706181---Marihuana-Licenses---Designated-Consumption-Establishment.pdf"
+     },
+     {
+      "quote": "A person must apply for and be granted prequalification status to be eligible for a Designated Consumption Establishment license.",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/advisory-bulletin/706181---Marihuana-Licenses---Designated-Consumption-Establishment.pdf"
+     },
+     {
+      "quote": "authorize the sale of marihuana for consumption in designated areas",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-au-vehicles-use",
+   "jurisdiction": "MI",
+   "topic": "adult-use/vehicles",
+   "claim": "No one may use marijuana while driving or in control of a motor vehicle, motorboat, snowmobile, off-road vehicle or aircraft, and smoking is not allowed in a vehicle's passenger area on a public road.",
+   "details": "MCL 333.27954(1)(g). MCL 333.27954(1)(a): the act also does not authorize operating or being in physical control of any of those vehicles while under the influence.",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.14: Scope of the MRTMA (quotes MCL 333.27952, 27954, 27955, 27956, 27960)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Statute text read as quoted verbatim in the Michigan Judicial Institute benchbook; legislature.mi.gov refused connections from this network on 2026-10-24. Canonical link for the site: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-Initiated-Law-1-of-2018",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "consuming marihuana while operating, navigating, or being in physical control of any motor vehicle, aircraft, snowmobile, off-road recreational vehicle, or motorboat",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     },
+     {
+      "quote": "or smoking marihuana within the passenger area of a vehicle upon a public way",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-au-vehicle-transport",
+   "jurisdiction": "MI",
+   "topic": "adult-use/transport",
+   "claim": "Adults 21+ may transport up to 2.5 ounces in Michigan, but not use it on the road; keeping it sealed and out of reach is the cautious practice.",
+   "details": "Transport is an authorized act under MCL 333.27955(1)(a). An older statute, MCL 750.474 (added by 2012 PA 460), requires usable marijuana in a vehicle to be enclosed in a case carried in the trunk (or, with no trunk, in a case not readily accessible from the interior); a violation is a misdemeanor punishable by up to 93 days and/or a $500 fine. It defines the covered product by reference to the medical act's definition of usable marihuana (MCL 333.26423). The Court of Appeals held it cannot be applied to a compliant registered medical patient (People v Latz, 318 Mich App 380 (2016)).",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.14: Scope of the MRTMA (quotes MCL 333.27952, 27954, 27955, 27956, 27960)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.7: Other Issues Arising Under the MMMA (employment, MCL 750.474, driving, public place, odor searches)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Issues_Arising_Under_the_MMMA.htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MCL 750.474, Transportation or possession of usable marihuana (History: Add. 2012, Act 460) [unofficial mirror; legislature.mi.gov refused connections from this network]",
+     "url": "https://syfert.com/michigan/sections/750.474.html",
+     "publisher": "Syfert Law (unofficial mirror of the Michigan Compiled Laws)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "Whether MCL 750.474 can still be enforced against adult-use (non-patient) drivers was NOT confirmed: MRTMA says inconsistent laws do not apply to permitted conduct (MCL 333.27954(5)), but I found no ruling on 750.474 and adult-use. Writers: present the trunk/sealed advice as a safe practice, not as a settled legal requirement.",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "possessing, using or consuming, internally possessing, purchasing, transporting, or processing 2.5 ounces or less",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     },
+     {
+      "quote": "Enclosed in a case that is carried in the trunk of the vehicle.",
+      "url": "https://syfert.com/michigan/sections/750.474.html"
+     },
+     {
+      "quote": "guilty of a misdemeanor punishable by imprisonment for not more than 93 days or a fine of not more than $500.00, or both",
+      "url": "https://syfert.com/michigan/sections/750.474.html"
+     },
+     {
+      "quote": "the person properly using medical marijuana is immune from punishment.",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Issues_Arising_Under_the_MMMA.htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "Added the text of MCL 750.474 (read on an unofficial mirror) and its penalty to the details; the 2016 Latz holding still covers registered patients only."
+   }
+  },
+  {
+   "id": "mi-au-schools",
+   "jurisdiction": "MI",
+   "topic": "adult-use/where-forbidden",
+   "claim": "Marijuana and accessories are not allowed on the grounds of any public or private preschool through 12th-grade school, on a school bus, or on the grounds of a correctional facility.",
+   "details": "MCL 333.27954(1)(h).",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.14: Scope of the MRTMA (quotes MCL 333.27952, 27954, 27955, 27956, 27960)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Statute text read as quoted verbatim in the Michigan Judicial Institute benchbook; legislature.mi.gov refused connections from this network on 2026-10-24. Canonical link for the site: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-Initiated-Law-1-of-2018",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "on the grounds of a public or private school where children attend classes in preschool programs, kindergarten programs, or grades 1 through 12",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     },
+     {
+      "quote": "in a school bus, or on the grounds of any correctional facility",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-au-federal-land",
+   "jurisdiction": "MI",
+   "topic": "adult-use/federal-land",
+   "claim": "Michigan's law does not protect anyone on federal land such as Sleeping Bear Dunes or a national forest; federal law, under which adult-use marijuana is still a Schedule I drug, applies there.",
+   "details": "MRTMA states it does not purport to supersede applicable federal law except as allowed by federal law (MCL 333.27967, summarized in the benchbook). Adult-use marijuana remains Schedule I (see us-scheduling) and simple possession of a controlled substance is a federal crime (21 U.S.C. 844(a)). National park units are under NPS regulations (36 CFR 2.35 restricts possession of controlled substances). The Huron-Manistee National Forests said in 2019 that the MRTMA does not supersede federal regulations and that possession and use of marijuana on federal land are punishable offenses; NPS park pages (for example Crater Lake) state that possession of any amount is prohibited even with a state medical card.",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.17: Other Sections of the MRTMA (MCL 333.27957, 27963, 27967)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Sections_of_the_MRTMA.htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Final rule: Rescheduling of FDA-Approved Products Containing Marijuana From Schedule I to Schedule III (91 FR 22714, Apr. 28, 2026, effective Apr. 28, 2026)",
+     "url": "https://www.federalregister.gov/documents/2026/04/28/2026-08176/schedules-of-controlled-substances-rescheduling-of-food-and-drug-administration-approved-products",
+     "publisher": "U.S. Department of Justice / Drug Enforcement Administration (Federal Register)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "21 U.S.C. 844, Penalties for simple possession (U.S. Code, 2024 edition)",
+     "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title21/html/USCODE-2024-title21-chap13-subchapI-partD-sec844.htm",
+     "publisher": "U.S. Government Publishing Office (govinfo)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "36 CFR 2.35, Alcoholic beverages and controlled substances (National Park Service regulations; read on LII mirror)",
+     "url": "https://www.law.cornell.edu/cfr/text/36/2.35",
+     "publisher": "Legal Information Institute, Cornell Law School (mirror of the CFR)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Sleeping Bear Dunes National Lakeshore: Laws & Policies",
+     "url": "https://www.nps.gov/slbe/learn/management/lawsandpolicies.htm",
+     "publisher": "National Park Service",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Reminder: marijuana remains illegal in Michigan's national forests (Apr. 18, 2019; quotes a Huron-Manistee National Forests release)",
+     "url": "https://clickondetroit.com/news/reminder-marijuana-remains-illegal-in-michigans-national-forests",
+     "publisher": "WDIV ClickOnDetroit",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Crater Lake National Park: Laws & Policies (NPS statement on marijuana in a park unit; an example of NPS practice, not a Michigan page)",
+     "url": "https://www.nps.gov/crla/learn/management/lawsandpolicies.htm",
+     "publisher": "National Park Service",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "36 CFR 2.35(b)(2) as rendered on LII includes an exception for substances 'otherwise allowed by Federal or State law'; no NPS statement on how that wording applies to state-legal cannabis was found, and the Sleeping Bear Dunes laws page does not mention cannabis. The Forest Service position is from a 2019 news report quoting a forest release (fs.usda.gov returned 403). The safe, sourced message is: federal law applies on federal land; do not bring cannabis.",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "the act does not purport to supersede any applicable federal law except as allowed by federal law.",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Sections_of_the_MRTMA.htm"
+     },
+     {
+      "quote": "It shall be unlawful for any person knowingly or intentionally to possess a controlled substance",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title21/html/USCODE-2024-title21-chap13-subchapI-partD-sec844.htm"
+     },
+     {
+      "quote": "The possession, use, sale, and cultivation of marijuana on federal land are punishable offenses.",
+      "url": "https://clickondetroit.com/news/reminder-marijuana-remains-illegal-in-michigans-national-forests"
+     },
+     {
+      "quote": "otherwise allowed by Federal or State law.",
+      "url": "https://www.law.cornell.edu/cfr/text/36/2.35"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "Added a 2019 Huron-Manistee National Forests statement (via a news report) and an NPS park page as evidence of how federal land managers apply federal law; the 36 CFR 2.35(b)(2) wording caveat stays, so confidence stays medium."
+   }
+  },
+  {
+   "id": "mi-au-impaired-driving",
+   "jurisdiction": "MI",
+   "topic": "adult-use/impaired-driving",
+   "claim": "Michigan has no numeric THC limit like the 0.08 alcohol limit; instead it bans driving while under the influence, and a separate zero-tolerance law bars driving with any amount of a Schedule 1 drug, a list that includes marijuana.",
+   "details": "MCL 257.625(8) (zero tolerance for any amount of a Schedule 1 substance; marihuana is listed in MCL 333.7212(1)(c)). First offense: misdemeanor, up to 93 days, $100 to $500 fine and/or up to 360 hours of community service; six points; mandatory 180-day license suspension (restricted license possible after 30 days). Registered medical patients: the MMMA overrides the zero-tolerance rule, so a patient with THC in their system is liable only if actually under the influence (People v Koon, 494 Mich 1 (2013)). Under 21: the MRTMA does not shield drivers under 21 from MCL 257.625(8) (People v Perry, 338 Mich App 363 (2021)). Adults 21+ who are not patients: the Traffic Benchbook says it is unclear whether violations of the MRTMA's limited conduct will be pursued under the Vehicle Code, and equally unclear whether the Koon holding will be extended to the MRTMA.",
+   "sources": [
+    {
+     "title": "Traffic Benchbook, sec. 9.11: Operating with the Presence of Certain Controlled Substances in Body (MCL 257.625(8))",
+     "url": "https://www.courts.michigan.gov/4a816c/siteassets/publications/benchbooks/tbb/tbbresponsivehtml5.zip/TBB/Ch_9_Section_625_Offenses/Operating_with_the_Presence_of_Certain_Controlled_Substances_in_BodySection_625(8)-u116c.htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.18: Operating a Motor Vehicle (People v Perry)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Operating_a_Motor_Vehicle.htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.7: Other Issues Arising Under the MMMA (employment, MCL 750.474, driving, public place, odor searches)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Issues_Arising_Under_the_MMMA.htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "The 'unsettled for adults 21+' point is the Michigan Judicial Institute's own statement, not my inference. Michigan State Police roadside oral-fluid testing (a pilot under MCL 257.625r) exists, but its current status after the 2021 Phase II report was not confirmed, so it is not stated as a claim.",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "within [Michigan] if the person has in his or her body any amount of a controlled substance listed in schedule 1",
+      "url": "https://www.courts.michigan.gov/4a816c/siteassets/publications/benchbooks/tbb/tbbresponsivehtml5.zip/TBB/Ch_9_Section_625_Offenses/Operating_with_the_Presence_of_Certain_Controlled_Substances_in_BodySection_625(8)-u116c.htm"
+     },
+     {
+      "quote": "Imprisonment for not more than 93 days",
+      "url": "https://www.courts.michigan.gov/4a816c/siteassets/publications/benchbooks/tbb/tbbresponsivehtml5.zip/TBB/Ch_9_Section_625_Offenses/Operating_with_the_Presence_of_Certain_Controlled_Substances_in_BodySection_625(8)-u116c.htm"
+     },
+     {
+      "quote": "It is unclear if violations of the limited conduct set forth in the MRTMA will be pursued under the MVC.",
+      "url": "https://www.courts.michigan.gov/4a816c/siteassets/publications/benchbooks/tbb/tbbresponsivehtml5.zip/TBB/Ch_9_Section_625_Offenses/Operating_with_the_Presence_of_Certain_Controlled_Substances_in_BodySection_625(8)-u116c.htm"
+     },
+     {
+      "quote": "the MRTMA did not remove all criminal penalties for persons under the age of 21 who operate a motor vehicle",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Operating_a_Motor_Vehicle.htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "Reworded the adult-use sentence to match the benchbook (its doubt concerns MRTMA limited-conduct violations generally)."
+   }
+  },
+  {
+   "id": "mi-au-odor",
+   "jurisdiction": "MI",
+   "topic": "adult-use/police-searches",
+   "claim": "Since 2025, the smell of marijuana alone is no longer enough for Michigan police to search a vehicle; it can only be one factor among others.",
+   "details": "People v Armstrong (Mich 2025), overruling People v Kazmierczak, 461 Mich 411 (2000), as summarized in the benchbook.",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.7: Other Issues Arising Under the MMMA (employment, MCL 750.474, driving, public place, odor searches)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Issues_Arising_Under_the_MMMA.htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "the smell of marijuana, standing alone, no longer constitutes probable cause sufficient to support a search for contraband.",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Issues_Arising_Under_the_MMMA.htm"
+     },
+     {
+      "quote": "the smell of marijuana is one factor that may play a role in the probable-cause determination.",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Issues_Arising_Under_the_MMMA.htm"
+     },
+     {
+      "quote": "Because the officers in this case lacked probable cause, the automobile exception to the warrant requirement did not apply.",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Issues_Arising_Under_the_MMMA.htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-au-penalties",
+   "jurisdiction": "MI",
+   "topic": "adult-use/penalties",
+   "claim": "Going over Michigan's adult limits is mostly a civil fine, not a crime, for modest amounts: up to $500 for a first violation when holding no more than double the limit, rising to a misdemeanor on a third violation or when holding more than double.",
+   "details": "MCL 333.27965(2): up to twice the allowed amount: 1st violation civil infraction up to $500 plus forfeiture; 2nd up to $1,000; 3rd or later misdemeanor up to $2,000. MCL 333.27965(4): more than twice the allowed amount is a misdemeanor without jail unless habitual, willful and commercial, or violent. MCL 333.27965(1): conduct within the limits but not authorized (other than driving, school or prison grounds and similar listed conduct) is a civil infraction up to $100 plus forfeiture. Felony prosecution under the Public Health Code remains possible: the Court of Appeals held the MRTMA does not bar prosecution under MCL 333.7401(2)(d)(ii) for possession with intent to deliver 5 to 45 kg (People v Soto, No. 370138, Oct. 7, 2024, published); the Supreme Court denied leave on July 11, 2025, with one justice dissenting and noting a possible split with another published Court of Appeals opinion.",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.15: Penalties for Violation of the MRTMA (quotes MCL 333.27965)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Penalties_for_Violation_of_the_MRTMA.htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.14: Scope of the MRTMA (quotes MCL 333.27952, 27954, 27955, 27956, 27960)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "People v Soto, Court of Appeals No. 370138, opinion of Oct. 7, 2024 (for publication)",
+     "url": "https://courts.michigan.gov/siteassets/case-documents/uploads/OPINIONS/FINAL/COA/20241007_C370138_23_370138.opn.pdf",
+     "publisher": "Michigan Court of Appeals",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "People v Soto, Supreme Court No. 167834, order of July 11, 2025 (leave to appeal denied)",
+     "url": "https://www.courts.michigan.gov/49feda/siteassets/case-documents/uploads/sct/public/orders/167834_29_01.pdf",
+     "publisher": "Michigan Supreme Court",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Statute text read as quoted verbatim in the Michigan Judicial Institute benchbook; legislature.mi.gov refused connections from this network on 2026-10-24. Canonical link for the site: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-Initiated-Law-1-of-2018",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "for a first violation, is responsible for a civil infraction and may be punished by a fine of not more than $500",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Penalties_for_Violation_of_the_MRTMA.htm"
+     },
+     {
+      "quote": "for a third or subsequent violation, is guilty of a misdemeanor and may be punished by a fine of not more than $2,000",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Penalties_for_Violation_of_the_MRTMA.htm"
+     },
+     {
+      "quote": "but shall not be subject to imprisonment unless the violation was habitual, willful, and for a commercial purpose",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Penalties_for_Violation_of_the_MRTMA.htm"
+     },
+     {
+      "quote": "We conclude that the MRTMA does not prevent a person accused of possession with intent to deliver between 5 and 45 kilograms of marijuana from being prosecuted under MCL 333.7401(2)(d)(ii).",
+      "url": "https://courts.michigan.gov/siteassets/case-documents/uploads/OPINIONS/FINAL/COA/20241007_C370138_23_370138.opn.pdf"
+     },
+     {
+      "quote": "it is DENIED, because we are not persuaded that the question presented should be reviewed by this Court.",
+      "url": "https://www.courts.michigan.gov/49feda/siteassets/case-documents/uploads/sct/public/orders/167834_29_01.pdf"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "Completed the Soto citation (Court of Appeals opinion and the Supreme Court leave denial); the benchbook page cites Soto without the holding, so the court documents were added."
+   }
+  },
+  {
+   "id": "mi-au-under21-penalties",
+   "jurisdiction": "MI",
+   "topic": "adult-use/under-21",
+   "claim": "For a person under 21, holding up to 2.5 ounces is a civil infraction: a first violation brings a fine of up to $100 (for those under 18, a fine or community service plus 4 hours of drug education or counseling).",
+   "details": "MCL 333.27965(3): 1st violation: under 18, fine up to $100 or community service, forfeiture and 4 hours of drug education or counseling; 18 to 20, fine up to $100 and forfeiture. 2nd violation: up to $500 (under 18 also 8 hours of education). These limits do not apply to driving-related conduct (People v Perry).",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.15: Penalties for Violation of the MRTMA (quotes MCL 333.27965)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Penalties_for_Violation_of_the_MRTMA.htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.18: Operating a Motor Vehicle (People v Perry)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Operating_a_Motor_Vehicle.htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Statute text read as quoted verbatim in the Michigan Judicial Institute benchbook; legislature.mi.gov refused connections from this network on 2026-10-24. Canonical link for the site: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-Initiated-Law-1-of-2018",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "if the person is less than 18 years of age, by a fine of not more than $100 or community service,",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Penalties_for_Violation_of_the_MRTMA.htm"
+     },
+     {
+      "quote": "forfeiture of the marihuana, and completion of 4 hours of drug education or counseling; or",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Penalties_for_Violation_of_the_MRTMA.htm"
+     },
+     {
+      "quote": "if the person is at least 18 years of age, by a fine of not more than $100 and forfeiture of the marihuana.",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Penalties_for_Violation_of_the_MRTMA.htm"
+     },
+     {
+      "quote": "the MRTMA did not remove all criminal penalties for persons under the age of 21 who operate a motor vehicle",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Operating_a_Motor_Vehicle.htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-au-employers",
+   "jurisdiction": "MI",
+   "topic": "adult-use/employment",
+   "claim": "Michigan employers do not have to allow marijuana at work and may still enforce drug policies, discipline workers, or refuse to hire someone over a policy violation.",
+   "details": "MCL 333.27954(3).",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.14: Scope of the MRTMA (quotes MCL 333.27952, 27954, 27955, 27956, 27960)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Statute text read as quoted verbatim in the Michigan Judicial Institute benchbook; legislature.mi.gov refused connections from this network on 2026-10-24. Canonical link for the site: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-Initiated-Law-1-of-2018",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "does not require an employer to permit or accommodate conduct otherwise allowed",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     },
+     {
+      "quote": "does not prevent an employer from refusing to hire, discharging, disciplining, or otherwise taking an adverse employment action",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-au-landlords",
+   "jurisdiction": "MI",
+   "topic": "adult-use/rentals",
+   "claim": "Landlords and property owners may ban or limit marijuana on their property, but a lease may not forbid a tenant from lawfully possessing and consuming marijuana by means other than smoking.",
+   "details": "MCL 333.27954(4). This also covers other private property owners and managers (for example hotels), who may prohibit consumption on their premises.",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.14: Scope of the MRTMA (quotes MCL 333.27952, 27954, 27955, 27956, 27960)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Statute text read as quoted verbatim in the Michigan Judicial Institute benchbook; legislature.mi.gov refused connections from this network on 2026-10-24. Canonical link for the site: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-Initiated-Law-1-of-2018",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "allows a person to prohibit or otherwise regulate the consumption, cultivation, distribution",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     },
+     {
+      "quote": "a lease agreement may not prohibit a tenant from lawfully possessing and consuming marihuana by means other than smoking.",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-au-custody",
+   "jurisdiction": "MI",
+   "topic": "adult-use/family",
+   "claim": "A parent may not be denied custody or parenting time for legal marijuana use unless it creates an unreasonable danger to the child that can be clearly shown.",
+   "details": "MCL 333.27955(3); In re Ott, 344 Mich App 723 (2022).",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.14: Scope of the MRTMA (quotes MCL 333.27952, 27954, 27955, 27956, 27960)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Statute text read as quoted verbatim in the Michigan Judicial Institute benchbook; legislature.mi.gov refused connections from this network on 2026-10-24. Canonical link for the site: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-Initiated-Law-1-of-2018",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "A person shall not be denied custody of or visitation with a minor for conduct that is permitted by this act",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     },
+     {
+      "quote": "unless the person's behavior is such that it creates an unreasonable danger to the minor",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     },
+     {
+      "quote": "that can be clearly articulated and substantiated",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-au-probation",
+   "jurisdiction": "MI",
+   "topic": "adult-use/probation",
+   "claim": "Since a 2026 Michigan Supreme Court ruling, courts may not ban legal adult-use marijuana as a probation condition just because it is illegal under federal law.",
+   "details": "People v Hess (Mich 2026), reversing the Court of Appeals (2024).",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.14: Scope of the MRTMA (quotes MCL 333.27952, 27954, 27955, 27956, 27960)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "trial courts may not prohibit MRTMA-compliant marijuana use as a probation condition",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     },
+     {
+      "quote": "solely because such use violates federal law",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "note": "The benchbook cites People v Hess as ___ Mich ___ (2026), reversing the Court of Appeals (2024); the reporter citation was still blank."
+   }
+  },
+  {
+   "id": "mi-au-municipal",
+   "jurisdiction": "MI",
+   "topic": "adult-use/local-opt-out",
+   "claim": "Each Michigan city, village or township may ban marijuana businesses entirely or limit how many it allows, so stores exist only where local government permits them.",
+   "details": "MCL 333.27956(1). Municipalities may also restrict signs, regulate time, place and manner of operation, authorize consumption areas or special events, and require a local license with an annual fee of up to $5,000 (MCL 333.27956(2)-(4)). They may not restrict transporting marijuana through the municipality (MCL 333.27956(5)).",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.14: Scope of the MRTMA (quotes MCL 333.27952, 27954, 27955, 27956, 27960)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "The number or list of municipalities that have opted out was NOT confirmed; do not state a count.",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "a municipality may completely prohibit or limit the number of marihuana establishments within its boundaries.",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     },
+     {
+      "quote": "A municipality may not adopt an ordinance that restricts the transportation of marihuana through the municipality",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "note": "The $5,000 annual local fee is the benchbook's own summary of MCL 333.27956(4), not a verbatim quote."
+   }
+  },
+  {
+   "id": "mi-cra",
+   "jurisdiction": "MI",
+   "topic": "regulator",
+   "claim": "Michigan's Cannabis Regulatory Agency (CRA), part of the Department of Licensing and Regulatory Affairs, licenses and regulates adult-use and medical marijuana businesses, runs the medical marijuana patient registry, and regulates hemp processing.",
+   "details": "Created as the Marijuana Regulatory Agency (Executive Order 2019-7 / Executive Reorganization Order 2019-2, MCL 333.27001) and renamed the Cannabis Regulatory Agency by Executive Reorganization Order 2022-1, signed Feb. 11, 2022, which also moved hemp processing regulation to the CRA. Hemp growers register with the Michigan Department of Agriculture and Rural Development.",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.14: Scope of the MRTMA (quotes MCL 333.27952, 27954, 27955, 27956, 27960)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Consumer Connection",
+     "url": "https://www.michigan.gov/cra/resources/consumer-connection",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MMMP Patients & Caregivers",
+     "url": "https://www.michigan.gov/cra/sections/mmp",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Hemp Processing",
+     "url": "https://www.michigan.gov/cra/sections/hemp-processing",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "created the Marijuana Regulatory Agency (MRA) as a Type I agency within LARA",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm"
+     },
+     {
+      "quote": "On February 11, 2022, Governor Whitmer signed Executive Reorganization Order 2022-1, assigning the regulation of processing, distributing, and selling hemp to the Cannabis Regulatory Agency (CRA).",
+      "url": "https://www.michigan.gov/cra/sections/hemp-processing"
+     },
+     {
+      "quote": "The Cannabis Regulatory Agency (CRA) regulates the state's adult-use marijuana establishments and licensees",
+      "url": "https://www.michigan.gov/cra/resources/consumer-connection"
+     },
+     {
+      "quote": "The Michigan Medical Marijuana Program (MMMP) is a state registry program within the Cannabis Regulatory Agency.",
+      "url": "https://www.michigan.gov/cra/sections/mmp"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-labeling",
+   "jurisdiction": "MI",
+   "topic": "packaging-labeling",
+   "claim": "Every marijuana product sold in Michigan must be sealed and labeled with its THC and CBD content, the testing lab, the state's universal THC symbol and required warnings, including that driving under the influence is illegal and the Poison Control number.",
+   "details": "R 420.504(1): name and license number of the producer (and packager), package tag, harvest date and strain if applicable, net weight, THC and CBD concentration with a statement that actual values may vary by 10%, activation time, testing lab and test date, the universal symbol, and warnings: 'It is illegal to drive a motor vehicle while under the influence of marihuana.', 'National Poison Control Center 1-800-222-1222', a 21+ or registered-patients-only statement with 'Keep out of reach of children', and a boxed pregnancy and breastfeeding warning. R 420.504(4): stores must offer every customer a pamphlet with the Poison Control hotline and at least two statements on risks of adolescent use.",
+   "sources": [
+    {
+     "title": "Marihuana Rules, R 420.1 to R 420.1004 (PDF compilation; latest rule history Eff. Mar. 7, 2022, editorial corrections 2023)",
+     "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Updated Universal Symbol",
+     "url": "https://www.michigan.gov/cra/laws-rules-other/updated-universal-symbol",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Rule history: Eff. Mar. 7, 2022 (editorial correction published 2023).",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "the container, bag, or product holding the marihuana product must be sealed and labeled with all of the following information",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf"
+     },
+     {
+      "quote": "\"It is illegal to drive a motor vehicle while under the influence of marihuana.\"",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf"
+     },
+     {
+      "quote": "\"National Poison Control Center 1-800-222-1222.\"",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf"
+     },
+     {
+      "quote": "The universal symbol must be affixed to plants, plant containers, bags or products holding marijuana product",
+      "url": "https://www.michigan.gov/cra/laws-rules-other/updated-universal-symbol"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-edibles",
+   "jurisdiction": "MI",
+   "topic": "packaging-labeling/edibles",
+   "claim": "Michigan edibles must come in opaque, child-resistant packaging, may not be shaped like people, animals or fruit, and may not use the word 'candy'.",
+   "details": "R 420.403(9): no shapes, labels, cartoons, toys or packaging that appeal to minors; no packaging easily confused with commercial food; the word candy or candies is prohibited on packaging or labeling; no human, animal or fruit shapes (geometric shapes and fruit flavors are allowed). R 420.403(10): opaque, child-resistant packages meeting 16 CFR 1700.15, resealable if more than one serving.",
+   "sources": [
+    {
+     "title": "Marihuana Rules, R 420.1 to R 420.1004 (PDF compilation; latest rule history Eff. Mar. 7, 2022, editorial corrections 2023)",
+     "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "The use of the word candy or candies on the packaging or labeling is prohibited.",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf"
+     },
+     {
+      "quote": "Produce edible marihuana products in the distinct shape of a human, animal, or fruit",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf"
+     },
+     {
+      "quote": "An edible marihuana product must be in opaque, child-resistant packages or containers that meet the effectiveness specifications outlined in 16 CFR 1700.15.",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-thc-limits",
+   "jurisdiction": "MI",
+   "topic": "potency-limits",
+   "claim": "Adult-use edibles in Michigan are capped at 10 mg THC per dose and 200 mg per package; medical edibles may contain up to 50 mg per dose and 200 mg per package.",
+   "details": "CRA technical bulletin of April 24, 2025 (THC = delta-8 plus delta-9): Infused edibles: medical 50 mg/dose, 200 mg/container; adult-use 10 mg/dose, 200 mg/container. Capsules, tinctures and oil drops: medical 100 mg/dose, 2,000 mg/container; adult-use 10 mg/dose, 200 mg/container. Products not taken orally (suppositories, transdermal patches): 100 mg/dose and 2,000 mg/container for both. Beverages: 10 mg/dose and 100 mg per container for both (multi-packs are not limited to the single-container total). Delta-8 may not exceed 10% of a product. Stores may not sell infused products more than 10% above the published maximums (R 420.404).",
+   "sources": [
+    {
+     "title": "Technical Bulletin: Maximum THC Concentrations for Marijuana-Infused Products (April 24, 2025; supersedes April 13, 2022)",
+     "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/5Technical/Marihuana-Infused-Products-and-Edible-Marihuana-Product---Maximum-THC-limits-revised-42425.pdf",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Marihuana Rules, R 420.1 to R 420.1004 (PDF compilation; latest rule history Eff. Mar. 7, 2022, editorial corrections 2023)",
+     "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "An older CRA bulletin (Apr. 13, 2022) used a 100 mg adult-use edible container limit in its example; the April 24, 2025 bulletin superseded it with 200 mg.",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "The total maximum THC concentration for an adult-use marijuana-gummy container is 200 mg THC.",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/5Technical/Marihuana-Infused-Products-and-Edible-Marihuana-Product---Maximum-THC-limits-revised-42425.pdf"
+     },
+     {
+      "quote": "The total delta-8 THC concentration in marijuana-infused products may not exceed 10%",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/5Technical/Marihuana-Infused-Products-and-Edible-Marihuana-Product---Maximum-THC-limits-revised-42425.pdf"
+     },
+     {
+      "quote": "Infused edibles (gummies, baked goods, drink enhancers, syrup): Medical 50 mg per dose, 200 mg per container; Adult-Use 10 mg per dose, 200 mg per container [table image in the bulletin, transcribed]",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/5Technical/Marihuana-Infused-Products-and-Edible-Marihuana-Product---Maximum-THC-limits-revised-42425.pdf"
+     },
+     {
+      "quote": "shall not sell or transfer marihuana-infused products that exceed the maximum THC concentrations established by the agency by more than 10%",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "note": "The bulletin's table is an image; it was viewed and transcribed. The PDF was re-saved on Apr. 15, 2026 but is still dated April 24, 2025 (supersedes April 13, 2022); all figures in the details match the table."
+   }
+  },
+  {
+   "id": "mi-advertising",
+   "jurisdiction": "MI",
+   "topic": "advertising-rules",
+   "claim": "Michigan marijuana marketing may not make health claims, may not be false or misleading, and adult-use products must be advertised only for adults 21+ and not to anyone younger.",
+   "details": "R 420.507: no deceptive, false or misleading statements; no claims related to health or health benefits unless an FDA-qualified health claim applies; ads only where reliable evidence shows no more than 30% of the audience is expected to be under the relevant age; adult-use products marketed as 'marihuana' for use only by individuals 21+; no marketing or sponsorships targeting under-21s; medical products marketed only for registered patients and caregivers and never to minors 17 or younger. Ads must carry the R 420.504(1)(j) warnings.",
+   "sources": [
+    {
+     "title": "Marihuana Rules, R 420.1 to R 420.1004 (PDF compilation; latest rule history Eff. Mar. 7, 2022, editorial corrections 2023)",
+     "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Useful for the site's copy gate (no cure or health-benefit claims, 21+ only).",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "must not contain any claim related to health or health benefits",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf"
+     },
+     {
+      "quote": "no more than 30% of the audience or readership",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf"
+     },
+     {
+      "quote": "must be marketed or advertised as \"marihuana\" for use only by individuals 21 years of age or older.",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf"
+     },
+     {
+      "quote": "must not be marketed or advertised to individuals under 21 years of age.",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-tax-retail",
+   "jurisdiction": "MI",
+   "topic": "taxes/adult-use",
+   "claim": "Adult-use marijuana purchases in Michigan carry a 10% excise tax plus the 6% sales tax, and the sales tax is figured on the price including the excise tax.",
+   "details": "MCL 333.27963 imposes the 10% excise on the sales price of adult-use marijuana; the 6% sales tax also applies. Treasury example: a $100 sale owes $10 excise, and sales tax is 6% of $110, or $6.60.",
+   "sources": [
+    {
+     "title": "Revenue Administrative Bulletin 2023-25: Taxation of Adult-Use (Recreational) Marihuana (approved Dec. 19, 2023)",
+     "url": "https://www.michigan.gov/taxes/rep-legal/rab/2023-revenue-administrative-bulletins/revenue-administrative-bulletin-2023-25",
+     "publisher": "Michigan Department of Treasury",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "About the Marijuana Retailers Excise (MRE) Tax",
+     "url": "https://www.michigan.gov/taxes/business-taxes/mret/about",
+     "publisher": "Michigan Department of Treasury",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Taxpayer notice: Wholesale Tax on Adult-Use Marihuana (Nov. 25, 2025)",
+     "url": "https://www.michigan.gov/treasury/reference/taxpayer-notices/2025/11/25/wholesale-tax-on-adult-use-marihuana",
+     "publisher": "Michigan Department of Treasury",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "imposes an excise tax of 10% on retail Marijuana sales in addition to a 6% sales tax.",
+      "url": "https://www.michigan.gov/taxes/business-taxes/mret/about"
+     },
+     {
+      "quote": "The amount of sales tax due is 6 percent of $110, or $6.60.",
+      "url": "https://www.michigan.gov/taxes/rep-legal/rab/2023-revenue-administrative-bulletins/revenue-administrative-bulletin-2023-25"
+     },
+     {
+      "quote": "including the current 10 percent excise tax on retail sales of adult-use marihuana imposed pursuant to MRTMA, as well as Michigan's existing 6 percent sales tax",
+      "url": "https://www.michigan.gov/treasury/reference/taxpayer-notices/2025/11/25/wholesale-tax-on-adult-use-marihuana"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "Added evidence source(s): Taxpayer notice: Wholesale Tax on Adult-Use Marihuana (Nov. 25, 2025)."
+   }
+  },
+  {
+   "id": "mi-tax-medical",
+   "jurisdiction": "MI",
+   "topic": "taxes/medical",
+   "claim": "Medical marijuana sold to registered patients is not subject to the 10% excise tax; only the 6% sales tax applies.",
+   "details": "RAB 2023-25: sales of medical marihuana to registered qualifying patients are not subject to the 10% excise; 'registered qualifying patient' includes visiting qualifying patients under MCL 333.27102. CRA tax overview (Aug. 2025): medical sales are only subject to the 6% sales tax. The former 3% tax on provisioning centers was repealed by operation of law on March 6, 2019.",
+   "sources": [
+    {
+     "title": "Revenue Administrative Bulletin 2023-25: Taxation of Adult-Use (Recreational) Marihuana (approved Dec. 19, 2023)",
+     "url": "https://www.michigan.gov/taxes/rep-legal/rab/2023-revenue-administrative-bulletins/revenue-administrative-bulletin-2023-25",
+     "publisher": "Michigan Department of Treasury",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Overview: Cannabis Taxation in Michigan (slide deck, August 2025)",
+     "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/other/Slide-Deck---Overview-Cannabis-Taxation-in-Michigan---CRA---August-2025.pdf",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "sales of medical marihuana to registered qualifying patients are not subject to the 10 percent excise tax on adult-use marihuana",
+      "url": "https://www.michigan.gov/taxes/rep-legal/rab/2023-revenue-administrative-bulletins/revenue-administrative-bulletin-2023-25"
+     },
+     {
+      "quote": "medical marihuana sales are only subject to 6% sales tax",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/other/Slide-Deck---Overview-Cannabis-Taxation-in-Michigan---CRA---August-2025.pdf"
+     },
+     {
+      "quote": "was repealed as of March 6, 2019, 90 days following the effective date of the MRTMA",
+      "url": "https://www.michigan.gov/taxes/rep-legal/rab/2023-revenue-administrative-bulletins/revenue-administrative-bulletin-2023-25"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-tax-wholesale",
+   "jurisdiction": "MI",
+   "topic": "taxes/wholesale",
+   "claim": "Since January 1, 2026, Michigan also levies a 24% wholesale tax on adult-use marijuana, paid by the grower, processor or other business that makes the first sale to a retailer, with the money going to road repair.",
+   "details": "Comprehensive Road Funding Tax Act, Public Act 23 of 2025, signed Oct. 7, 2025, effective Jan. 1, 2026. Applies to the first sale or transfer of adult-use marijuana to a retail licensee, to seed-to-sale retailers when product is packaged for retail, and to transfers from provisioning centers to adult-use inventory. Levied on top of the 10% excise and 6% sales tax; revenue goes to the neighborhood road fund. Wholesalers may pass the cost to retailers. 2026 is a transition year with quarterly good-faith payments due April 20, July 20 and Oct. 20, 2026.",
+   "sources": [
+    {
+     "title": "Wholesale Marijuana Tax",
+     "url": "https://www.michigan.gov/taxes/business-taxes/wholesale-marijuana-tax",
+     "publisher": "Michigan Department of Treasury",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Taxpayer notice: Wholesale Tax on Adult-Use Marihuana (Nov. 25, 2025)",
+     "url": "https://www.michigan.gov/treasury/reference/taxpayer-notices/2025/11/25/wholesale-tax-on-adult-use-marihuana",
+     "publisher": "Michigan Department of Treasury",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Michigan Treasury Releases Guidance on New 24% Wholesale Marijuana Tax (Mar. 17, 2026)",
+     "url": "https://www.michigan.gov/treasury/news/2026/03/17/michigan-treasury-releases-guidance",
+     "publisher": "Michigan Department of Treasury",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Revenue Administrative Bulletin 2026-3: Wholesale Marihuana Tax (approved Mar. 17, 2026; updated Mar. 24, 2026)",
+     "url": "https://www.michigan.gov/taxes/rep-legal/rab/2026-revenue-administrative-bulletins/revenue-administrative-bulletin-2026-3",
+     "publisher": "Michigan Department of Treasury",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Advisory Bulletin: Wholesale Marijuana Tax and Metrc Reporting Clarification (January 14, 2026)",
+     "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/3Adult-Use-Rec/Advisory-Bulletin---Wholesale-Marijuana-Tax-and-Metrc-Reporting-Clarification.pdf",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "It is a tax on the wholesaler, not a separate line on a shopper's receipt; the size of any shelf-price effect is not stated by Treasury.",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "The new 24% Wholesale Marijuana Tax takes effect on January 1, 2026.",
+      "url": "https://www.michigan.gov/taxes/business-taxes/wholesale-marijuana-tax"
+     },
+     {
+      "quote": "deposited into the neighborhood road fund for infrastructure improvements",
+      "url": "https://www.michigan.gov/taxes/business-taxes/wholesale-marijuana-tax"
+     },
+     {
+      "quote": "On October 7, 2025, the Comprehensive Road Funding Tax Act (\"CRFTA\") was signed into law",
+      "url": "https://www.michigan.gov/treasury/reference/taxpayer-notices/2025/11/25/wholesale-tax-on-adult-use-marihuana"
+     },
+     {
+      "quote": "Public Act 23 of 2025 imposes a tax on the wholesale price of the sale or other transfer of marijuana",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/3Adult-Use-Rec/Advisory-Bulletin---Wholesale-Marijuana-Tax-and-Metrc-Reporting-Clarification.pdf"
+     },
+     {
+      "quote": "Payments for 2026 will be due April 20, July 20 and October 20.",
+      "url": "https://www.michigan.gov/treasury/news/2026/03/17/michigan-treasury-releases-guidance"
+     },
+     {
+      "quote": "Approved: March 17, 2026",
+      "url": "https://www.michigan.gov/taxes/rep-legal/rab/2026-revenue-administrative-bulletins/revenue-administrative-bulletin-2026-3"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-tax-wholesale-litigation",
+   "jurisdiction": "MI",
+   "topic": "taxes/wholesale-litigation",
+   "claim": "Industry lawsuits challenging the 24% wholesale tax were still in the courts in 2026; the tax took effect after the Court of Claims refused to block it, and a final outcome could not be confirmed as of October 2026.",
+   "details": "Court of Claims (Judge Sima G. Patel), Dec. 8, 2025: denied preliminary injunctions; rejected the argument that the MRTMA is the only way to tax marijuana and that a three-fourths supermajority was required; left open fact questions about whether the tax contravenes the purposes of the voter initiative and set the case toward trial. Jan. 14, 2026: the Court of Appeals denied the industry's request for immediate review (news report). Apr. 22, 2026: the Michigan Supreme Court ordered the Court of Appeals to expedite its consideration of the case (as quoted by the industry association on Apr. 24, 2026). A second industry suit against Treasury was filed in late March 2026, and the first case was reported to be heading to trial in September 2026.",
+   "sources": [
+    {
+     "title": "Holistic Research Group v Dept of Treasury; Michigan Cannabis Industry Ass'n v State of Michigan, Court of Claims Nos. 25-000159-MT and 25-000160-MM, opinion and order of Dec. 8, 2025",
+     "url": "https://www.courts.michigan.gov/4a59e2/siteassets/case-documents/uploads/coc/2025/25-000159-mt/2025-12-08-25-000159-mt-31-order-20251208-ord-and-opin.pdf",
+     "publisher": "Michigan Court of Claims",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Michigan Supreme Court orders review of 24% cannabis tax (Apr. 24, 2026; quotes the order of Apr. 22, 2026) [industry association]",
+     "url": "https://micia.org/2026/04/24/michigan-supreme-court-orders-review-of-24-cannabis-tax/",
+     "publisher": "Michigan Cannabis Industry Association",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Appeals court denies bypass request in case over new 24% marijuana tax (Jan. 14, 2026)",
+     "url": "https://www.michiganpublic.org/criminal-justice-legal-system/2026-01-14/appeals-court-denies-bypass-request-in-case-over-new-24-marijuana-tax",
+     "publisher": "Michigan Public",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Court of Appeals rules 24% marijuana wholesale tax can remain in place (Dec. 9, 2025; despite the headline, the article reports the Court of Claims opinion of Dec. 8, 2025) [read in a browser]",
+     "url": "https://www.wzzm13.com/article/news/local/court-of-appeals-rules-24-marijuana-wholesale-tax-remain-in-place/69-52c60ab3-28f5-433b-aafc-fd869d91a957",
+     "publisher": "WZZM 13",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Michigan marijuana industry files another lawsuit to stop 24% wholesale tax (Mar. 31, 2026)",
+     "url": "https://wwmt.com/news/state/michigan-marijuana-industry-lawsuit-stop-wholesale-tax-legal-court-pot-weed-economy-business-wwmt",
+     "publisher": "WWMT",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "No ruling after April 22, 2026 was found (searched through Oct. 23, 2026, US time). The WZZM headline that mentions the Court of Appeals (Dec. 9, 2025) actually reports the Court of Claims ruling. Do not state an outcome.",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "the Court DENIES plaintiffs' motions for preliminary injunction in 25-159 and 25-160.",
+      "url": "https://www.courts.michigan.gov/4a59e2/siteassets/case-documents/uploads/coc/2025/25-000159-mt/2025-12-08-25-000159-mt-31-order-20251208-ord-and-opin.pdf"
+     },
+     {
+      "quote": "there remain questions of fact regarding whether the 24% wholesale excise tax contravenes the purposes of the MRTMA voter initiative.",
+      "url": "https://www.courts.michigan.gov/4a59e2/siteassets/case-documents/uploads/coc/2025/25-000159-mt/2025-12-08-25-000159-mt-31-order-20251208-ord-and-opin.pdf"
+     },
+     {
+      "quote": "The application for leave to appeal is DENIED for failure to persuade the Court of the need for immediate appellate review.",
+      "url": "https://www.michiganpublic.org/criminal-justice-legal-system/2026-01-14/appeals-court-denies-bypass-request-in-case-over-new-24-marijuana-tax"
+     },
+     {
+      "quote": "The court of Appeals shall expedite its consideration of this case",
+      "url": "https://micia.org/2026/04/24/michigan-supreme-court-orders-review-of-24-cannabis-tax/"
+     },
+     {
+      "quote": "following a Michigan Court of Claims opinion issued Monday",
+      "url": "https://www.wzzm13.com/article/news/local/court-of-appeals-rules-24-marijuana-wholesale-tax-remain-in-place/69-52c60ab3-28f5-433b-aafc-fd869d91a957"
+     },
+     {
+      "quote": "is heading to trial in September",
+      "url": "https://wwmt.com/news/state/michigan-marijuana-industry-lawsuit-stop-wholesale-tax-legal-court-pot-weed-economy-business-wwmt"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "Corrected the Supreme Court order date to April 22, 2026 (the industry article is dated April 24); resolved the old WZZM note (that headline reports the Dec. 8, 2025 Court of Claims ruling); added the Jan. 14, 2026 Court of Appeals bypass denial and the reported September trial; confidence low to medium.",
+    "confidenceBefore": "low"
+   }
+  },
+  {
+   "id": "mi-med-program",
+   "jurisdiction": "MI",
+   "topic": "medical/program",
+   "claim": "Michigan's medical marijuana card program (MMMP), created by voters in 2008, is run by the Cannabis Regulatory Agency.",
+   "details": "Michigan Medical Marihuana Act, Initiated Law 1 of 2008 (MCL 333.26421 et seq.), approved Nov. 4, 2008.",
+   "sources": [
+    {
+     "title": "MMMP Patients & Caregivers",
+     "url": "https://www.michigan.gov/cra/sections/mmp",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Consumer Connection",
+     "url": "https://www.michigan.gov/cra/resources/consumer-connection",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MMMP FAQ: Should I go to a third-party business to get/renew my registry identification card? Can my application and physician certification serve as a temporary registration card?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/im-a-current-prospective-medical-marijuana-patient--should-i-go-to-a-third-party-business-to-get-re",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "The program administers the Michigan Medical Marihuana Act as approved by Michigan voters (2008).",
+      "url": "https://www.michigan.gov/cra/sections/mmp"
+     },
+     {
+      "quote": "as approved by Michigan voters on November 4, 2008",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/im-a-current-prospective-medical-marijuana-patient--should-i-go-to-a-third-party-business-to-get-re"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "Added evidence source(s): MMMP FAQ: Should I go to a third-party business to get/renew my registry identification card? Can my application and physician certification serve as a temporary registration card?."
+   }
+  },
+  {
+   "id": "mi-med-conditions",
+   "jurisdiction": "MI",
+   "topic": "medical/qualifying-conditions",
+   "claim": "Qualifying conditions for a Michigan medical card include cancer, glaucoma, HIV/AIDS, hepatitis C, ALS, Crohn's disease, Alzheimer's agitation, nail patella, PTSD, OCD, arthritis, rheumatoid arthritis, spinal cord injury, colitis, inflammatory bowel disease, ulcerative colitis, Parkinson's disease, Tourette's, autism, chronic pain and cerebral palsy.",
+   "details": "Also any chronic or debilitating disease or medical condition, or its treatment, that produces cachexia or wasting syndrome, severe and chronic pain, severe nausea, seizures (including epilepsy), or severe and persistent muscle spasms (including multiple sclerosis). List exactly as published by the CRA (it writes 'Tourette's Disease').",
+   "sources": [
+    {
+     "title": "MMMP FAQ: What medical conditions are eligible?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/what-medical-conditions-are-eligible",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "Agitation of Alzheimer",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/what-medical-conditions-are-eligible"
+     },
+     {
+      "quote": "Tourette",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/what-medical-conditions-are-eligible"
+     },
+     {
+      "quote": "Cerebral Palsy",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/what-medical-conditions-are-eligible"
+     },
+     {
+      "quote": "Seizures (Including but not limited to those characteristic of epilepsy)",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/what-medical-conditions-are-eligible"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "note": "The FAQ lists HIV Positive and AIDS as separate entries; every condition in the claim appears in the list."
+   }
+  },
+  {
+   "id": "mi-med-apply",
+   "jurisdiction": "MI",
+   "topic": "medical/how-to-apply",
+   "claim": "Patients without a caregiver can apply or renew online through the CRA's portal; anyone designating a caregiver uses the paper application packet. The fee is $40.",
+   "details": "Online: patient without a caregiver (or removing the caregiver at renewal) with a secure online account (Accela Citizen Access portal); pay by credit card or electronic check. Paper: complete Application Packet with physician certification, proof of Michigan residency (Michigan driver license, state ID, or voter registration plus proof of identity) and a $40 check or money order to 'State of Michigan- MMMP'. No separate fee for a caregiver (CRA FAQ). The packet warns that white-out or changes on the application or physician form lead to denial, and the CRA asks applicants to send one complete application only.",
+   "sources": [
+    {
+     "title": "MMMP Patients & Caregivers",
+     "url": "https://www.michigan.gov/cra/sections/mmp",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MMMP FAQ: How do I register as a patient (over age 18)?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/how-do-i-register-as-a-patient-over-age-18-with-the-michigan-medical-marijuana-program-mmmp",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MMMP FAQ: How much is the application fee?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/how-much-is-the-application-fee",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MMMP FAQ: Do I have to be a resident of Michigan to obtain a patient registry identification card?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/do-i-have-to-be-a-resident-of-the-state-of-michigan-to-obtain-a-patient-registry-identification-car",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MMMP Application/Renewal Packet (PDF)",
+     "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/mmmp-application/MMMP_Application_Pkt.pdf",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MMMP FAQ: Is there a separate fee for the caregiver?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/is-there-a-separate-fee-for-the-caregiver",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "Be a patient without a caregiver (or remove caregiver upon renewing)",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/how-do-i-register-as-a-patient-over-age-18-with-the-michigan-medical-marijuana-program-mmmp"
+     },
+     {
+      "quote": "If you are a patient with a caregiver or choose to designate one, you must submit a paper application.",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/how-do-i-register-as-a-patient-over-age-18-with-the-michigan-medical-marijuana-program-mmmp"
+     },
+     {
+      "quote": "If you submit your application online, you can pay with credit card or electronic check.",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/how-much-is-the-application-fee"
+     },
+     {
+      "quote": "No. The Application Fee is $40, with or without a designated caregiver.",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/is-there-a-separate-fee-for-the-caregiver"
+     },
+     {
+      "quote": "Any use of white-out or changes to the application form or physician certification form will result in the denial of your application.",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/mmmp-application/MMMP_Application_Pkt.pdf"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "Replaced the unsourced line 'Incomplete packets are denied' with the packet's own denial warning; added the CRA FAQ that confirms there is no separate caregiver fee."
+   }
+  },
+  {
+   "id": "mi-med-physician",
+   "jurisdiction": "MI",
+   "topic": "medical/physician-certification",
+   "claim": "A Michigan-licensed MD or DO (or Expedited Medical Compact physician) must certify the patient; the CRA's application instructions call for a medical evaluation by an active Michigan physician within the last six months.",
+   "details": "CRA: any MD, DO, or Expedited Medical Compact physician licensed by Michigan may sign the certification. FAQ wording for online applicants: a medical evaluation from an active Michigan physician within the last six months (the third-party-business FAQ says 'in-person medical evaluation'). Physicians are protected only when certifying in a bona fide physician-patient relationship after a full assessment of the medical history (MCL 333.26424(g)). A certifying physician may notify the program in writing that a patient no longer has the condition (MCL 333.26426(f), R 333.119); the MMMP then tells the patient within 20 business days that the card is no longer valid.",
+   "sources": [
+    {
+     "title": "MMMP FAQ: Who can certify a patient's medical use of marijuana?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/physicians-questions/who-can-certify-a-patients-medical-use-of-marijuana",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MMMP FAQ: How do I register as a patient (over age 18)?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/how-do-i-register-as-a-patient-over-age-18-with-the-michigan-medical-marijuana-program-mmmp",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MMMP FAQ: Can my application and physician certification serve as a temporary registration card?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/can-my-application-and-physician-certification-serve-as-a-temporary-registration-card",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.3: Immunity Under sec. 4 of the MMMA (quotes MCL 333.26424)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Immunity_Under__4-rua.htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MMMP FAQ: Should I go to a third-party business to get/renew my registry identification card? Can my application and physician certification serve as a temporary registration card?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/im-a-current-prospective-medical-marijuana-patient--should-i-go-to-a-third-party-business-to-get-re",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MMMP FAQ: Can I rescind a physician certification that I already completed for a patient?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/physicians-questions/can-i-rescind-a-physician-certification-that-i-already-completed-for-a-patient",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "Any Medical Doctor (MD), Doctor of Osteopathic Medicine and Surgery (DO), or Expedited Medical Compact (EMC) who is licensed by the State of Michigan",
+      "url": "https://www.michigan.gov/cra/faq/program-list/physicians-questions/who-can-certify-a-patients-medical-use-of-marijuana"
+     },
+     {
+      "quote": "Have a medical evaluation from an active Michigan physician within the last six months",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/how-do-i-register-as-a-patient-over-age-18-with-the-michigan-medical-marijuana-program-mmmp"
+     },
+     {
+      "quote": "Have an in-person medical evaluation from an active Michigan physician before your application is approved",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/im-a-current-prospective-medical-marijuana-patient--should-i-go-to-a-third-party-business-to-get-re"
+     },
+     {
+      "quote": "a certifying physician may notify the MMMP in writing if a patient has ceased to suffer from a debilitating medical condition.",
+      "url": "https://www.michigan.gov/cra/faq/program-list/physicians-questions/can-i-rescind-a-physician-certification-that-i-already-completed-for-a-patient"
+     },
+     {
+      "quote": "solely for providing written certifications, in the course of a bona fide physician-patient relationship",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Immunity_Under__4-rua.htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "Sourced the 'in-person' wording (third-party-business FAQ) and the physician-notice rule (MCL 333.26426(f), R 333.119), which had no cited page before."
+   }
+  },
+  {
+   "id": "mi-med-timing",
+   "jurisdiction": "MI",
+   "topic": "medical/processing-time",
+   "claim": "The state must approve or deny an application within 15 business days and mail the card or denial within 5 more business days, so up to 20 business days plus mail time.",
+   "details": "MCL 333.26426(c),(e); R 333.113(4). CRA suggests allowing 7 to 10 business days for mail and calling 517-284-8599 if nothing arrives after 5 weeks. Online applicants may receive a temporary registry card by email.",
+   "sources": [
+    {
+     "title": "MMMP FAQ: How long does it take to receive a registry identification card?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/how-long-does-it-take-to-receive-a-registry-identification-card",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MMMP FAQ: Can my application and physician certification serve as a temporary registration card?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/can-my-application-and-physician-certification-serve-as-a-temporary-registration-card",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "approve or deny an application within 15 business days of the date the application is received by the MMMP.",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/how-long-does-it-take-to-receive-a-registry-identification-card"
+     },
+     {
+      "quote": "the MMMP has up to 20 business days from the date an application is received to issue a registry identification card or denial letter.",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/how-long-does-it-take-to-receive-a-registry-identification-card"
+     },
+     {
+      "quote": "temporary registry card email (online applicants only)",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/can-my-application-and-physician-certification-serve-as-a-temporary-registration-card"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-med-validity",
+   "jurisdiction": "MI",
+   "topic": "medical/card-validity",
+   "claim": "A Michigan patient card is valid for two years, and renewal can be submitted starting 90 days before it expires.",
+   "details": "Caregiver cards expire on the same date as the patient's card. Renewal uses the same application and the $40 fee.",
+   "sources": [
+    {
+     "title": "MMMP FAQ: When does a patient registry identification card expire?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/when-does-a-patient-registry-identification-card-expire",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MMMP FAQ: When do I renew my registry identification card?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/renewal-questions/when-do-i-renew-my-registry-identification-card",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MMMP FAQ: When will my caregiver registry identification card expire?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/caregiver-questions/when-will-my-caregiver-registry-identification-card-expire",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MMMP Application/Renewal Packet (PDF)",
+     "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/mmmp-application/MMMP_Application_Pkt.pdf",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "A patient registry identification card is valid for two years.",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/when-does-a-patient-registry-identification-card-expire"
+     },
+     {
+      "quote": "You may submit a renewal application beginning 90 days before the expiration date on your patient registry identification card.",
+      "url": "https://www.michigan.gov/cra/faq/program-list/renewal-questions/when-do-i-renew-my-registry-identification-card"
+     },
+     {
+      "quote": "Your caregiver registry identification card will expire on the same day as your patient",
+      "url": "https://www.michigan.gov/cra/faq/program-list/caregiver-questions/when-will-my-caregiver-registry-identification-card-expire"
+     },
+     {
+      "quote": "$40 Fee Required",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/mmmp-application/MMMP_Application_Pkt.pdf"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "Added evidence source(s): MMMP Application/Renewal Packet (PDF)."
+   }
+  },
+  {
+   "id": "mi-med-ages",
+   "jurisdiction": "MI",
+   "topic": "medical/age",
+   "claim": "Adults 18 and older can register as patients on their own; a minor under 18 needs two physician certifications and a parent or legal guardian who serves as the minor's caregiver.",
+   "details": "Minor packet: two certifications from two different physicians, a Declaration of Person Responsible, proof of parentage or guardianship, and proof of the parent's or guardian's Michigan residency; the parent or guardian must be 21 or older. MCL 333.26426(b) requires the parent or guardian of a minor patient to act as caregiver.",
+   "sources": [
+    {
+     "title": "MMMP FAQ: How do I register a minor (under the age of 18)?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/how-do-i-register-a-minor-under-the-age-of-18-with-the-michigan-medical-marijuana-program-mmmp",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MMMP FAQ: Do I have to designate a primary caregiver?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/do-i-have-to-designate-a-primary-caregiver",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MMMP Minor Application/Renewal Packet (PDF)",
+     "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/mmmp-application/mmmp-applicationMMP_MINOR_Application_Pkt.pdf",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "If you are 18 years of age or older, you are not required to designate a caregiver.",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/do-i-have-to-designate-a-primary-caregiver"
+     },
+     {
+      "quote": "Two (2) complete Physician Certification Forms signed by two (2) different physicians",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/how-do-i-register-a-minor-under-the-age-of-18-with-the-michigan-medical-marijuana-program-mmmp"
+     },
+     {
+      "quote": "A Parent or Legal Guardian, 21 years of age or older must serve as the designated caregiver.",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/mmmp-application/mmmp-applicationMMP_MINOR_Application_Pkt.pdf"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-med-residency",
+   "jurisdiction": "MI",
+   "topic": "medical/residency",
+   "claim": "Only Michigan residents can get a Michigan medical card.",
+   "details": "MCL 333.26426(a)(6); People v Jones, 301 Mich App 566 (2013).",
+   "sources": [
+    {
+     "title": "MMMP FAQ: Do I have to be a resident of Michigan to obtain a patient registry identification card?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/do-i-have-to-be-a-resident-of-the-state-of-michigan-to-obtain-a-patient-registry-identification-car",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.3: Immunity Under sec. 4 of the MMMA (quotes MCL 333.26424)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Immunity_Under__4-rua.htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "Yes. MCL 333.26426(a)(6) requires that you submit a copy of one of the following as proof of Michigan residency",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/do-i-have-to-be-a-resident-of-the-state-of-michigan-to-obtain-a-patient-registry-identification-car"
+     },
+     {
+      "quote": "Michigan residency is a prerequisite to the issuance and valid possession of a registry identification card.",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Immunity_Under__4-rua.htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-med-caregiver",
+   "jurisdiction": "MI",
+   "topic": "medical/caregivers",
+   "claim": "A caregiver must be at least 21, consent to a criminal background check and have no disqualifying convictions, and receives a separate caregiver card for each patient served.",
+   "details": "Statutory definition (MCL 333.26423): at least 21, not convicted of a felony within the past 10 years, and never convicted of a felony involving illegal drugs or an assaultive crime. A caregiver may possess 2.5 ounces of usable marijuana (and equivalents) for each connected patient, and 12 plants in an enclosed, locked facility for each patient who has allowed the caregiver to cultivate (MCL 333.26424(b)).",
+   "sources": [
+    {
+     "title": "MMMP Application/Renewal Packet (PDF)",
+     "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/mmmp-application/MMMP_Application_Pkt.pdf",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MMMP FAQ: How do I become a caregiver?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/caregiver-questions/how-do-i-become-a-caregiver",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.3: Immunity Under sec. 4 of the MMMA (quotes MCL 333.26424)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Immunity_Under__4-rua.htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MMMP FAQ: Will I receive a caregiver registry identification card for each qualifying patient that designates me as his or her caregiver?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/caregiver-questions/will-i-receive-a-caregiver-registry-identification-card-for-each-qualifying-patient-that-designates",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MCL 333.26423, MMMA definitions (History through Am. 2021, Act 62, Eff. Oct. 11, 2021) [unofficial mirror; legislature.mi.gov refused connections from this network]",
+     "url": "https://syfert.com/michigan/sections/333.26423.html",
+     "publisher": "Syfert Law (unofficial mirror of the Michigan Compiled Laws)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "21+, background check, no disqualifying convictions and one caregiver card per patient are stated on CRA pages. The specific felony bars in the details come from the statute as reproduced on an unofficial mirror (legislature.mi.gov refused connections from this network). Canonical link: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-333-26423",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "am at least 21 years old, have no convictions that disqualify me from serving as primary caregiver",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/mmmp-application/MMMP_Application_Pkt.pdf"
+     },
+     {
+      "quote": "to perform a criminal background check",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/mmmp-application/MMMP_Application_Pkt.pdf"
+     },
+     {
+      "quote": "you will receive a separate caregiver registry identification card for each patient.",
+      "url": "https://www.michigan.gov/cra/faq/program-list/caregiver-questions/will-i-receive-a-caregiver-registry-identification-card-for-each-qualifying-patient-that-designates"
+     },
+     {
+      "quote": "has not been convicted of any felony within the past 10 years and has never been convicted of a felony involving illegal drugs or a felony that is an assaultive crime",
+      "url": "https://syfert.com/michigan/sections/333.26423.html"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "The claim sentence is now fully supported by CRA pages (packet attestation plus the separate-card FAQ), so confidence medium to high; the statutory felony bars are now read on an unofficial mirror instead of a search extraction.",
+    "confidenceBefore": "medium"
+   }
+  },
+  {
+   "id": "mi-med-caregiver-cap",
+   "jurisdiction": "MI",
+   "topic": "medical/caregivers",
+   "claim": "A Michigan caregiver may assist no more than 5 registered patients, and each patient may have only one caregiver.",
+   "details": "MCL 333.26426(d): the agency issues a caregiver card to the caregiver named in an approved patient application, but each qualifying patient can have not more than 1 primary caregiver, and a primary caregiver may assist not more than 5 qualifying patients. Section history on the mirror: last amended by 2020 PA 400 (Imd. Eff. Jan. 4, 2021).",
+   "sources": [
+    {
+     "title": "MMMP FAQ: How do I become a caregiver?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/caregiver-questions/how-do-i-become-a-caregiver",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MCL 333.26426, MMMA sec. 6 (History through Am. 2020, Act 400, Imd. Eff. Jan. 4, 2021) [unofficial mirror; legislature.mi.gov refused connections from this network]",
+     "url": "https://syfert.com/michigan/sections/333.26426.html",
+     "publisher": "Syfert Law (unofficial mirror of the Michigan Compiled Laws)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MCL 333.26426 (Legislature PDF) [legislature.mi.gov hosts refused connections from this network; text seen via search extraction only]",
+     "url": "https://hercules-milenia.legislature.mi.gov/documents/mcl/pdf/mcl-333-26426-amended.pdf",
+     "publisher": "Michigan Legislature",
+     "retrieved": "2026-10-24 (search-engine extraction only; page not opened)"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "Statute text read on an unofficial mirror (Syfert Law) and matched by a search-engine extraction of the Legislature's PDF; legislature.mi.gov refused connections from this network. The CRA FAQ points to the statute but does not state the number. Canonical link: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-333-26426",
+   "verification": {
+    "verdict": "outdated",
+    "evidence": [
+     {
+      "quote": "each qualifying patient can have not more than 1 primary caregiver, and a primary caregiver may assist not more than 5 qualifying patients with their medical use of marihuana.",
+      "url": "https://syfert.com/michigan/sections/333.26426.html"
+     },
+     {
+      "quote": "a primary caregiver may assist not more than 5 qualifying patients",
+      "url": "https://hercules-milenia.legislature.mi.gov/documents/mcl/pdf/mcl-333-26426-amended.pdf"
+     },
+     {
+      "quote": "You must meet the requirements in the statutory definition of",
+      "url": "https://www.michigan.gov/cra/faq/program-list/caregiver-questions/how-do-i-become-a-caregiver"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "The research gap is closed: the claim now states the cap (5 patients per caregiver, 1 caregiver per patient) from MCL 333.26426(d); confidence low to medium (statute read on an unofficial mirror and in a search extraction of the Legislature's PDF; no CRA page states the number).",
+    "confidenceBefore": "low"
+   }
+  },
+  {
+   "id": "mi-med-possession",
+   "jurisdiction": "MI",
+   "topic": "medical/possession",
+   "claim": "A registered patient may possess up to 2.5 ounces of usable marijuana (counting infused products by a set equivalency) and, if no caregiver grows for them, up to 12 plants kept in an enclosed, locked facility.",
+   "details": "MCL 333.26424(a). Equivalency (MCL 333.26424(c)): 1 ounce of usable marijuana equals 16 ounces of solid infused product, 7 grams of gaseous infused product, or 36 fluid ounces of liquid infused product.",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.3: Immunity Under sec. 4 of the MMMA (quotes MCL 333.26424)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Immunity_Under__4-rua.htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Statute text read as quoted verbatim in the Michigan Judicial Institute benchbook; legislature.mi.gov refused connections from this network on 2026-10-24. Canonical link for the site: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-Initiated-Law-1-of-2018",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "that does not exceed a combined total of 2.5 ounces of usable marihuana and usable marihuana equivalents,",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Immunity_Under__4-rua.htm"
+     },
+     {
+      "quote": "12 marihuana plants kept in an enclosed, locked facility.",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Immunity_Under__4-rua.htm"
+     },
+     {
+      "quote": "(1) 16 ounces of marihuana-infused product if in a solid form.",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Immunity_Under__4-rua.htm"
+     },
+     {
+      "quote": "(3) 36 fluid ounces of marihuana-infused product if in a liquid form.",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Immunity_Under__4-rua.htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-med-purchase",
+   "jurisdiction": "MI",
+   "topic": "medical/purchase-limits",
+   "claim": "Registered patients buy from licensed provisioning centers by showing their registry card and photo ID, up to 2.5 ounces a day and 10 ounces a month.",
+   "details": "R 420.506(1)-(2): 2.5 ounces of marijuana or equivalent per day per patient (caregivers: per connected patient), and 10 ounces per month per patient, checked in the statewide monitoring system. CRA FAQ: patients must present a valid registry card and a valid driver license or government photo ID. Adult-use stores, by contrast, sell only to adults 21+ (R 420.505(1)(c)).",
+   "sources": [
+    {
+     "title": "Marihuana Rules, R 420.1 to R 420.1004 (PDF compilation; latest rule history Eff. Mar. 7, 2022, editorial corrections 2023)",
+     "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MMMP FAQ: How can I acquire medical marijuana from a licensed provisioning center?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/how-can-i-acquire-medical-marijuana-or-medical-marijuana-infused-products",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "exceed 2.5 ounces of marihuana or marihuana equivalent per day",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf"
+     },
+     {
+      "quote": "the monthly purchasing limit of 10 ounces of marihuana product per month to a qualifying patient",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf"
+     },
+     {
+      "quote": "Patients must present a valid registry card and a valid driver license, or government-issued identification card with photo, at the time of purchase.",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/how-can-i-acquire-medical-marijuana-or-medical-marijuana-infused-products"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-med-arrest-protection",
+   "jurisdiction": "MI",
+   "topic": "medical/protections",
+   "claim": "To be protected from arrest, a patient or caregiver must show police a valid registry card plus photo ID; an application or physician form is not a temporary card.",
+   "details": "CRA guidance under the MMMA; a card counts only if reasonably accessible at the location (People v Nicholson, 297 Mich App 191 (2012)).",
+   "sources": [
+    {
+     "title": "MMMP FAQ: Can my application and physician certification serve as a temporary registration card?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/can-my-application-and-physician-certification-serve-as-a-temporary-registration-card",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.3: Immunity Under sec. 4 of the MMMA (quotes MCL 333.26424)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Immunity_Under__4-rua.htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "MMMP FAQ: Should I go to a third-party business to get/renew my registry identification card? Can my application and physician certification serve as a temporary registration card?",
+     "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/im-a-current-prospective-medical-marijuana-patient--should-i-go-to-a-third-party-business-to-get-re",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "a patient or caregiver must present their valid registry identification card and a valid driver license",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/can-my-application-and-physician-certification-serve-as-a-temporary-registration-card"
+     },
+     {
+      "quote": "Third-party business operations which tell patients that their application and physician certification serve as a temporary registration card are putting the patients at risk of possible arrest.",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/im-a-current-prospective-medical-marijuana-patient--should-i-go-to-a-third-party-business-to-get-re"
+     },
+     {
+      "quote": "someone 'possesses' a registry identification card only when the registry identification card is reasonably accessible",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Immunity_Under__4-rua.htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "Added the third-party-business FAQ, which states the application-is-not-a-card point directly."
+   }
+  },
+  {
+   "id": "mi-med-visiting",
+   "jurisdiction": "MI",
+   "topic": "medical/reciprocity",
+   "claim": "Michigan honors out-of-state medical cards: a visiting patient with a valid, unexpired card from another state plus photo ID may buy at a licensed medical provisioning center.",
+   "details": "MCL 333.26424(k): another state's registry card has the same force and effect as a Michigan card. R 420.505(3) and CRA bulletin (Apr. 13, 2022): the store must verify the valid unexpired card (or equivalent) and photo ID, and apply the R 420.506 purchase limits. Visiting patients' purchases count as medical sales for tax purposes (no 10% excise).",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.3: Immunity Under sec. 4 of the MMMA (quotes MCL 333.26424)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Immunity_Under__4-rua.htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Marihuana Rules, R 420.1 to R 420.1004 (PDF compilation; latest rule history Eff. Mar. 7, 2022, editorial corrections 2023)",
+     "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Advisory Bulletin: Visiting Qualifying Patients, Out of State Reciprocity (April 13, 2022)",
+     "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/2MMFL-Advisory/Marihuana-Sale-or-Transfer---Visiting-Qualifying-Patients-Out-of-State.pdf",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Revenue Administrative Bulletin 2023-25: Taxation of Adult-Use (Recreational) Marihuana (approved Dec. 19, 2023)",
+     "url": "https://www.michigan.gov/taxes/rep-legal/rab/2023-revenue-administrative-bulletins/revenue-administrative-bulletin-2023-25",
+     "publisher": "Michigan Department of Treasury",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "This applies to stores holding a medical provisioning center license. Whether a given High Society store holds one must come from High Society facts, not from this file.",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "shall have the same force and effect as a registry identification card",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Immunity_Under__4-rua.htm"
+     },
+     {
+      "quote": "The visiting qualifying patient has a valid unexpired medical marihuana registry card, or its equivalent issued in another state",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf"
+     },
+     {
+      "quote": "A provisioning center licensed under the MMFLA shall verify all of the following prior to selling or transferring a marihuana product to a visiting qualifying patient",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf"
+     },
+     {
+      "quote": "or a visiting qualifying patient as that term is defined in section 3 of the Michigan medical marihuana act",
+      "url": "https://www.michigan.gov/taxes/rep-legal/rab/2023-revenue-administrative-bulletins/revenue-administrative-bulletin-2023-25"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-med-public",
+   "jurisdiction": "MI",
+   "topic": "medical/where-to-consume",
+   "claim": "The medical law does not allow smoking marijuana in any public place, and the Court of Appeals has held that a car parked in a lot open to the public counts.",
+   "details": "MCL 333.26427(b)(3)(B); People v Carlton, 313 Mich App 339 (2015).",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.7: Other Issues Arising Under the MMMA (employment, MCL 750.474, driving, public place, odor searches)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Issues_Arising_Under_the_MMMA.htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "in any public place",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Issues_Arising_Under_the_MMMA.htm"
+     },
+     {
+      "quote": "apply to a person who smokes marijuana in his or her own car while that car is parked in the parking lot",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Issues_Arising_Under_the_MMMA.htm"
+     },
+     {
+      "quote": "the relevant inquiry is whether the place at issue is generally open to use by the public",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Issues_Arising_Under_the_MMMA.htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-med-employment",
+   "jurisdiction": "MI",
+   "topic": "medical/employment",
+   "claim": "A Michigan medical card does not stop a private employer from disciplining or firing an employee for marijuana use, though a court has held such patients cannot be denied unemployment benefits for a failed test.",
+   "details": "Casias v Wal-Mart Stores, 695 F3d 428 (CA 6, 2012); Braska v Challenge Mfg Co, 307 Mich App 340 (2014); Eplee v Lansing, 327 Mich App 635 (2019) (rescinded job offer not a penalty under the MMMA).",
+   "sources": [
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.7: Other Issues Arising Under the MMMA (employment, MCL 750.474, driving, public place, odor searches)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Issues_Arising_Under_the_MMMA.htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "the ability of a private employer to discipline an employee for drug use",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Issues_Arising_Under_the_MMMA.htm"
+     },
+     {
+      "quote": "the denial of [unemployment] benefits constitute[s] an improper penalty for the medical use of marijuana under the MMMA",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Issues_Arising_Under_the_MMMA.htm"
+     },
+     {
+      "quote": "held absolutely no right or property interest",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Issues_Arising_Under_the_MMMA.htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "mi-hemp-thca",
+   "jurisdiction": "MI",
+   "topic": "hemp/definition",
+   "claim": "Under Michigan law, cannabis with more than 0.3% THC, counting THCA, is marijuana that only licensed marijuana businesses may sell; at 0.3% or less it is industrial hemp.",
+   "details": "MRTMA definitions (MCL 333.27953(aa) includes THCA in THC; (h) marijuana over 0.3%; (f) industrial hemp at or under 0.3%). Processing or selling industrial hemp requires a CRA industrial hemp processor-handler license; growers register with MDARD.",
+   "sources": [
+    {
+     "title": "CRA Answers Recent Questions Regarding THCA (March 29, 2024)",
+     "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/2MMFL-Advisory/CRA-Answers-Recent-Questions-Regarding-THCA.pdf",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Hemp Processing",
+     "url": "https://www.michigan.gov/cra/sections/hemp-processing",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "Accordingly, cannabis in any form with a concentration of THC (including THCA) greater than 0.3% is, by definition, marijuana.",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/2MMFL-Advisory/CRA-Answers-Recent-Questions-Regarding-THCA.pdf"
+     },
+     {
+      "quote": "requires an industrial hemp processor-handler license issued by the CRA.",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/2MMFL-Advisory/CRA-Answers-Recent-Questions-Regarding-THCA.pdf"
+     },
+     {
+      "quote": "visit MDARD's website for the grower registration application",
+      "url": "https://www.michigan.gov/cra/sections/hemp-processing"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "note": "The bulletin has no printed date; the March 29, 2024 date in the source title matches the PDF creation date (the file was re-saved May 27, 2026)."
+   }
+  },
+  {
+   "id": "mi-hemp-delta8",
+   "jurisdiction": "MI",
+   "topic": "hemp/delta-8",
+   "claim": "Michigan treats delta-8 THC as marijuana: since October 11, 2021 only CRA-licensed marijuana businesses may sell it, and licensed products may contain no more than 10% delta-8.",
+   "details": "2021 legislation amended the MRTMA, the MMFLA and other statutes to include delta-8 THC in the definition of marijuana. CRA: illegal for businesses to sell delta-8 without proper licensing effective Oct. 11, 2021; delta-8 testing required for all marijuana products.",
+   "sources": [
+    {
+     "title": "Delta-8 Information",
+     "url": "https://www.michigan.gov/cra/resources/consumer-connection/delta-8-information",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Technical Bulletin: Required Testing and Action Limits for Marijuana Products Containing Delta-8 THC (April 13, 2022; supersedes Oct. 11, 2021)",
+     "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/5Technical/Delta-8_-_Technical_Bulletin_20211011_737852_7.pdf",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Technical Bulletin: Maximum THC Concentrations for Marijuana-Infused Products (April 24, 2025; supersedes April 13, 2022)",
+     "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/5Technical/Marihuana-Infused-Products-and-Edible-Marihuana-Product---Maximum-THC-limits-revised-42425.pdf",
+     "publisher": "Michigan Cannabis Regulatory Agency (LARA)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "The public act number of the 2021 legislation was not confirmed; do not cite one.",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "Effective October 11, 2021, it is illegal for businesses to sell delta-8 without proper licensing from the MRA.",
+      "url": "https://www.michigan.gov/cra/resources/consumer-connection/delta-8-information"
+     },
+     {
+      "quote": "The concentration of Delta-8 cannot exceed 10% within any concentrate product.",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/5Technical/Delta-8_-_Technical_Bulletin_20211011_737852_7.pdf"
+     },
+     {
+      "quote": "The total delta-8 THC concentration in marijuana-infused products may not exceed 10%",
+      "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/5Technical/Marihuana-Infused-Products-and-Edible-Marihuana-Product---Maximum-THC-limits-revised-42425.pdf"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "us-hemp-redefinition",
+   "jurisdiction": "US",
+   "topic": "hemp/federal-redefinition",
+   "claim": "Congress has narrowed the federal definition of hemp so that most intoxicating hemp-THC products stop qualifying as legal hemp; the change was set for November 12, 2026 and mostly pushed to December 11, 2026.",
+   "details": "P.L. 119-37, Div. B, sec. 781 (approved Nov. 12, 2025), effective 365 days after enactment: hemp limited to 0.3% total THC including THCA; excludes products with cannabinoids not naturally produced by the plant or synthesized outside it; excludes final products with more than 0.4 mg total THC (plus THC-like cannabinoids) per container. P.L. 119-103 (H.R. 6500, approved Sept. 2, 2026), sec. 2019: until Dec. 11, 2026 the new definition applies only to products containing cannabinoids not capable of being naturally produced by the plant; the full definition applies from Dec. 11, 2026.",
+   "sources": [
+    {
+     "title": "Public Law 119-37, Div. B, sec. 781 (approved Nov. 12, 2025): redefinition of hemp, 7 U.S.C. 1639o",
+     "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ37/html/PLAW-119publ37.htm",
+     "publisher": "U.S. Government Publishing Office (govinfo)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Public Law 119-103 (H.R. 6500, approved Sept. 2, 2026), Div. B, sec. 2019: Section 781 Extension",
+     "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ103/html/PLAW-119publ103.htm",
+     "publisher": "U.S. Government Publishing Office (govinfo)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Status as of 2026-10-24: no later public law (through P.L. 119-124, Oct. 15, 2026) mentions 7 U.S.C. 1639o. P.L. 119-103 is a stopgap that itself runs to Dec. 11, 2026, so further changes are possible; secondary sources report bills to delay or replace the ban, none enacted as of this research.",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "Effective 365 days after the enactment of this Act",
+      "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ37/html/PLAW-119publ37.htm"
+     },
+     {
+      "quote": "greater than 0.4 milligrams combined total per container",
+      "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ37/html/PLAW-119publ37.htm"
+     },
+     {
+      "quote": "Until December 11, 2026, the amendments made by section 781 of division B of Public Law 119-37",
+      "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ103/html/PLAW-119publ103.htm"
+     },
+     {
+      "quote": "shall only apply with respect to products described in paragraphs (1)(C)(ii)(I)",
+      "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ103/html/PLAW-119publ103.htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "note": "P.L. 119-37 is dated Nov. 12, 2025; P.L. 119-103 (H.R. 6500) was approved Sept. 2, 2026. Paragraphs (1)(C)(ii)(I) and (1)(C)(iv)(I) are the products with cannabinoids not capable of being naturally produced by the plant. An Oct. 2026 news search found no later enacted change."
+   }
+  },
+  {
+   "id": "us-hemp-dea-rule-no-effect",
+   "jurisdiction": "US",
+   "topic": "hemp/scheduling",
+   "claim": "The April 2026 federal rescheduling rule does not change the status of hemp, and synthetic THC stays in Schedule I.",
+   "details": "Final rule text: the rule 'does not affect the status of hemp' and synthetic THC remains in schedule I.",
+   "sources": [
+    {
+     "title": "Final rule: Rescheduling of FDA-Approved Products Containing Marijuana From Schedule I to Schedule III (91 FR 22714, Apr. 28, 2026, effective Apr. 28, 2026)",
+     "url": "https://www.federalregister.gov/documents/2026/04/28/2026-08176/schedules-of-controlled-substances-rescheduling-of-food-and-drug-administration-approved-products",
+     "publisher": "U.S. Department of Justice / Drug Enforcement Administration (Federal Register)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "This final rule also does not affect the status of hemp",
+      "url": "https://www.federalregister.gov/documents/2026/04/28/2026-08176/schedules-of-controlled-substances-rescheduling-of-food-and-drug-administration-approved-products"
+     },
+     {
+      "quote": "Therefore, synthetic THC remains in schedule I.",
+      "url": "https://www.federalregister.gov/documents/2026/04/28/2026-08176/schedules-of-controlled-substances-rescheduling-of-food-and-drug-administration-approved-products"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "us-scheduling",
+   "jurisdiction": "US",
+   "topic": "federal/scheduling",
+   "claim": "As of October 2026, only FDA-approved marijuana drugs and marijuana covered by a state medical marijuana license are in federal Schedule III; all other marijuana, including adult-use, is still Schedule I.",
+   "details": "Final rule effective April 28, 2026 (91 FR 22714, AG Order No. 6754-2026): places FDA-approved products containing marijuana and marijuana subject to a state medical marijuana license in schedule III; any other form of marijuana remains schedule I. Medical licensees must register with DEA through an expedited process (early applicants may keep operating during review); registrations do not authorize non-medical use.",
+   "sources": [
+    {
+     "title": "Final rule: Rescheduling of FDA-Approved Products Containing Marijuana From Schedule I to Schedule III (91 FR 22714, Apr. 28, 2026, effective Apr. 28, 2026)",
+     "url": "https://www.federalregister.gov/documents/2026/04/28/2026-08176/schedules-of-controlled-substances-rescheduling-of-food-and-drug-administration-approved-products",
+     "publisher": "U.S. Department of Justice / Drug Enforcement Administration (Federal Register)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Federal Register API: DEA documents matching 'marijuana', Apr. 1 to Oct. 19, 2026 (30 results; no rescheduling document after Apr. 28, 2026)",
+     "url": "https://www.federalregister.gov/api/v1/documents.json?conditions[term]=marijuana&conditions[agencies][]=drug-enforcement-administration&conditions[publication_date][gte]=2026-04-01&order=newest&per_page=40",
+     "publisher": "Office of the Federal Register",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "marijuana in any form covered by a state medical marijuana license, be placed in schedule III of the CSA.",
+      "url": "https://www.federalregister.gov/documents/2026/04/28/2026-08176/schedules-of-controlled-substances-rescheduling-of-food-and-drug-administration-approved-products"
+     },
+     {
+      "quote": "remains a schedule I controlled substance",
+      "url": "https://www.federalregister.gov/documents/2026/04/28/2026-08176/schedules-of-controlled-substances-rescheduling-of-food-and-drug-administration-approved-products"
+     },
+     {
+      "quote": "early applicants may lawfully operate under their state-issued licenses during the pendency of review.",
+      "url": "https://www.federalregister.gov/documents/2026/04/28/2026-08176/schedules-of-controlled-substances-rescheduling-of-food-and-drug-administration-approved-products"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "Reworded 'marijuana sold under a state medical marijuana license' to 'covered by', the rule's own term."
+   }
+  },
+  {
+   "id": "us-rescheduling-broader",
+   "jurisdiction": "US",
+   "topic": "federal/scheduling",
+   "claim": "A broader proposal to move all marijuana to Schedule III went to a DEA hearing held from June 29 to July 15, 2026; as of late October 2026 the judge's recommended decision was still pending and no final rule had been published.",
+   "details": "DEA withdrew the 2024 hearing notice and noticed a new hearing on the May 21, 2024 proposed rule (both Apr. 28, 2026). The Chief ALJ heard 11 days of testimony from June 29 through July 15, 2026; post-hearing briefs followed. On about Oct. 22, 2026 the judge declined to reopen the hearing, admitted a GAO report and allowed extra briefs (due Oct. 29, replies Nov. 5), with the matter stayed until briefing closes. After the recommended decision, parties may file exceptions and the DEA Administrator makes the final determination. A Federal Register search of DEA marijuana documents from Apr. 1 to Oct. 19, 2026 shows no final rule on broader rescheduling.",
+   "sources": [
+    {
+     "title": "Notice of hearing: Rescheduling of Marijuana (FR Doc. 2026-08177, Apr. 28, 2026; hearing to begin June 29, 2026)",
+     "url": "https://www.federalregister.gov/documents/2026/04/28/2026-08177/schedules-of-controlled-substances-rescheduling-of-marijuana",
+     "publisher": "Drug Enforcement Administration (Federal Register)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Rescheduling of Marijuana; Withdrawal of the 2024 hearing notice (FR Doc. 2026-08178, Apr. 28, 2026)",
+     "url": "https://www.federalregister.gov/documents/2026/04/28/2026-08178/schedules-of-controlled-substances-rescheduling-of-marijuana-withdrawal",
+     "publisher": "Drug Enforcement Administration (Federal Register)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "High Time for a Change? Post-DEA Hearing, Broader Marijuana Rescheduling Questions Remain (Sept. 24, 2026)",
+     "url": "https://www.morganlewis.com/pubs/2026/09/high-time-for-a-change-post-dea-hearing-broader-marijuana-rescheduling-questions-remain",
+     "publisher": "Morgan Lewis (law firm)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "DEA judge overseeing marijuana rescheduling permits parties to file additional briefs, denies request to reopen hearing (Oct. 22, 2026) [advocacy group]",
+     "url": "https://norml.org/news/2026/10/22/dea-judge-overseeing-marijuana-rescheduling-permits-parties-to-file-additional-briefs-denies-request-to-reopen-hearing",
+     "publisher": "NORML",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Federal Register API: DEA documents matching 'marijuana', Apr. 1 to Oct. 19, 2026 (30 results; no rescheduling document after Apr. 28, 2026)",
+     "url": "https://www.federalregister.gov/api/v1/documents.json?conditions[term]=marijuana&conditions[agencies][]=drug-enforcement-administration&conditions[publication_date][gte]=2026-04-01&order=newest&per_page=40",
+     "publisher": "Office of the Federal Register",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "Hearing dates and the October order come from a law-firm alert and an advocacy-group report (not the DEA docket, which was not opened). 'No final rule' is confirmed in the Federal Register through Oct. 19, 2026.",
+   "verification": {
+    "verdict": "outdated",
+    "evidence": [
+     {
+      "quote": "From June 29 through July 15, DEA Chief Administrative Law Judge (ALJ) Derek C. Julius heard 11 days of testimony",
+      "url": "https://www.morganlewis.com/pubs/2026/09/high-time-for-a-change-post-dea-hearing-broader-marijuana-rescheduling-questions-remain"
+     },
+     {
+      "quote": "The next major event will be Chief ALJ Julius's recommended decision.",
+      "url": "https://www.morganlewis.com/pubs/2026/09/high-time-for-a-change-post-dea-hearing-broader-marijuana-rescheduling-questions-remain"
+     },
+     {
+      "quote": "This matter remains STAYED until the time for briefing is closed.",
+      "url": "https://norml.org/news/2026/10/22/dea-judge-overseeing-marijuana-rescheduling-permits-parties-to-file-additional-briefs-denies-request-to-reopen-hearing"
+     },
+     {
+      "quote": "Notice of hearing on proposed rulemaking.",
+      "url": "https://www.federalregister.gov/documents/2026/04/28/2026-08177/schedules-of-controlled-substances-rescheduling-of-marijuana"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "The hearing has happened: the claim now says it ran June 29 to July 15, 2026 and that the judge's recommended decision was still pending (proceeding stayed for extra briefing, due Oct. 29 with replies Nov. 5) as of Oct. 22, 2026; the Federal Register shows no final rule through Oct. 19, 2026."
+   }
+  },
+  {
+   "id": "us-medical-patients-caution",
+   "jurisdiction": "US",
+   "topic": "federal/patients",
+   "claim": "The April 2026 rule is aimed at licensed medical businesses and does not say that patients may carry medical marijuana across state lines or onto federal property, so those questions remain unresolved.",
+   "details": "The rule's operative changes concern scheduling, DEA registration of state medical licensees, and dispensing to individuals authorized by state law, subject to the state license's limits.",
+   "sources": [
+    {
+     "title": "Final rule: Rescheduling of FDA-Approved Products Containing Marijuana From Schedule I to Schedule III (91 FR 22714, Apr. 28, 2026, effective Apr. 28, 2026)",
+     "url": "https://www.federalregister.gov/documents/2026/04/28/2026-08176/schedules-of-controlled-substances-rescheduling-of-food-and-drug-administration-approved-products",
+     "publisher": "U.S. Department of Justice / Drug Enforcement Administration (Federal Register)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "This is a reading of what the rule says and does not say; no agency guidance on patient travel was found.",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "to individuals authorized by state law to possess marijuana",
+      "url": "https://www.federalregister.gov/documents/2026/04/28/2026-08176/schedules-of-controlled-substances-rescheduling-of-food-and-drug-administration-approved-products"
+     },
+     {
+      "quote": "Registrations under this subpart do not authorize",
+      "url": "https://www.federalregister.gov/documents/2026/04/28/2026-08176/schedules-of-controlled-substances-rescheduling-of-food-and-drug-administration-approved-products"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "note": "A targeted read of the rule text found no mention of interstate transport or interstate commerce."
+   }
+  },
+  {
+   "id": "us-flying",
+   "jurisdiction": "US",
+   "topic": "federal/flying",
+   "claim": "TSA officers do not search for drugs, but anything illegal they find is referred to law enforcement, and adult-use marijuana remains illegal under federal law.",
+   "details": "TSA's 'Medical Marijuana' item page (updated April 27, 2026) lists carry-on and checked bags as 'Yes (Special Instructions)', the instruction being that screening focuses on security and illegal substances found are referred to a law enforcement officer; the final decision rests with the TSA officer. Adult-use marijuana is Schedule I (see us-scheduling).",
+   "sources": [
+    {
+     "title": "What Can I Bring? Medical Marijuana (last updated April 27, 2026)",
+     "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana",
+     "publisher": "Transportation Security Administration",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Final rule: Rescheduling of FDA-Approved Products Containing Marijuana From Schedule I to Schedule III (91 FR 22714, Apr. 28, 2026, effective Apr. 28, 2026)",
+     "url": "https://www.federalregister.gov/documents/2026/04/28/2026-08176/schedules-of-controlled-substances-rescheduling-of-food-and-drug-administration-approved-products",
+     "publisher": "U.S. Department of Justice / Drug Enforcement Administration (Federal Register)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "TSA's page wording changed in 2026 and no longer states that marijuana is illegal under federal law; what 'Special Instructions' means for state-registered patients is not explained. Writers must not say flying with cannabis is allowed. Destination-state and airline rules also apply.",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "TSA security officers do not search for illegal drugs",
+      "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana"
+     },
+     {
+      "quote": "TSA will refer the matter to a law enforcement officer.",
+      "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana"
+     },
+     {
+      "quote": "The final decision rests with the TSA officer on whether an item is allowed through the checkpoint.",
+      "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana"
+     },
+     {
+      "quote": "Last Updated on April 27, 2026",
+      "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "us-interstate",
+   "jurisdiction": "US",
+   "topic": "federal/crossing-state-lines",
+   "claim": "Taking cannabis across a state line is not protected by Michigan law and remains illegal under federal law, even between two states where it is legal.",
+   "details": "Adult-use marijuana is Schedule I; possessing a controlled substance without a valid prescription or other federal authorization is a federal crime (21 U.S.C. 844(a): first offense up to 1 year and a minimum $1,000 fine). Neighbor-state rules: see il-, oh-, in-, wi- claims.",
+   "sources": [
+    {
+     "title": "Final rule: Rescheduling of FDA-Approved Products Containing Marijuana From Schedule I to Schedule III (91 FR 22714, Apr. 28, 2026, effective Apr. 28, 2026)",
+     "url": "https://www.federalregister.gov/documents/2026/04/28/2026-08176/schedules-of-controlled-substances-rescheduling-of-food-and-drug-administration-approved-products",
+     "publisher": "U.S. Department of Justice / Drug Enforcement Administration (Federal Register)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "21 U.S.C. 844, Penalties for simple possession (U.S. Code, 2024 edition)",
+     "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title21/html/USCODE-2024-title21-chap13-subchapI-partD-sec844.htm",
+     "publisher": "U.S. Government Publishing Office (govinfo)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Illinois Cannabis: FAQs",
+     "url": "https://cannabis.illinois.gov/about/faqs.html",
+     "publisher": "State of Illinois, Cannabis Regulation Oversight Office",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Controlled Substances Benchbook, sec. 8.17: Other Sections of the MRTMA (MCL 333.27957, 27963, 27967)",
+     "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Sections_of_the_MRTMA.htm",
+     "publisher": "Michigan Judicial Institute (Michigan Supreme Court)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "It shall be unlawful for any person knowingly or intentionally to possess a controlled substance",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title21/html/USCODE-2024-title21-chap13-subchapI-partD-sec844.htm"
+     },
+     {
+      "quote": "shall be fined a minimum of $1,000",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title21/html/USCODE-2024-title21-chap13-subchapI-partD-sec844.htm"
+     },
+     {
+      "quote": "the act does not purport to supersede any applicable federal law except as allowed by federal law.",
+      "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Sections_of_the_MRTMA.htm"
+     },
+     {
+      "quote": "should not be transported across state lines.",
+      "url": "https://cannabis.illinois.gov/about/faqs.html"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "Added the benchbook page on MCL 333.27967 to support 'not protected by Michigan law'."
+   }
+  },
+  {
+   "id": "il-status",
+   "jurisdiction": "IL",
+   "topic": "neighbor/status",
+   "claim": "Illinois allows adults 21 and older to buy and possess cannabis and runs a separate medical cannabis program for Illinois residents.",
+   "details": "Adult use under the Cannabis Regulation and Tax Act (410 ILCS 705). Medical registry cards are issued by the Illinois Department of Public Health to Illinois residents meeting program requirements.",
+   "sources": [
+    {
+     "title": "Illinois Cannabis: FAQs",
+     "url": "https://cannabis.illinois.gov/about/faqs.html",
+     "publisher": "State of Illinois, Cannabis Regulation Oversight Office",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Medical Cannabis Patient Program",
+     "url": "https://dph.illinois.gov/topics-services/prevention-wellness/medical-cannabis.html",
+     "publisher": "Illinois Department of Public Health",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "Adults 21 years of age or older may buy cannabis.",
+      "url": "https://cannabis.illinois.gov/about/faqs.html"
+     },
+     {
+      "quote": "to Illinois residents meeting program requirements",
+      "url": "https://dph.illinois.gov/topics-services/prevention-wellness/medical-cannabis.html"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "il-visitor-limits",
+   "jurisdiction": "IL",
+   "topic": "neighbor/visitor-limits",
+   "claim": "Visitors 21+ in Illinois may possess up to 30 grams of cannabis flower, 500 mg of THC in infused products and 5 grams of concentrate; Illinois residents may have twice that.",
+   "details": "Official FAQ: residents 60 g flower, 1,000 mg THC infused, 10 g concentrate; non-residents 30 g, 500 mg, 5 g; totals are cumulative across categories. The IDFPR fact sheet says Public Act 104-0463 (SB 3222), signed June 12, 2026, doubled the limits effective immediately (for example flower from 30 g to 60 g for residents and from 15 g to 30 g for non-residents).",
+   "sources": [
+    {
+     "title": "Illinois Cannabis: FAQs",
+     "url": "https://cannabis.illinois.gov/about/faqs.html",
+     "publisher": "State of Illinois, Cannabis Regulation Oversight Office",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Illinois Governor Approves Raising Marijuana Possession Limit (June 18, 2026) [advocacy group]",
+     "url": "https://norml.org/news/2026/06/18/illinois-governor-signs-law-raising-adult-use-marijuana-possession-limits-expanding-expungement-opportunities-and-restricting-sales-of-hemp-derived-products/",
+     "publisher": "NORML",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "SB 3222 (Public Act 104-0463) fact sheet: signed June 12, 2026; possession-limit changes effective immediately",
+     "url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/cannabis/sb-3222-fact-sheet.pdf",
+     "publisher": "Illinois Department of Financial and Professional Regulation",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "The same official FAQ page still has an older gifting answer that quotes the previous 30 g / 500 mg / 5 g resident limits; the possession answer and the IDFPR fact sheet carry the new figures.",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "Non-residents over the age of 21 may legally possess:",
+      "url": "https://cannabis.illinois.gov/about/faqs.html"
+     },
+     {
+      "quote": "30 grams of cannabis flower (approximately 1 ounce of cannabis flower);",
+      "url": "https://cannabis.illinois.gov/about/faqs.html"
+     },
+     {
+      "quote": "On June 12, 2026, Governor Pritzker signed Public Act 104-0463 (SB 3222)",
+      "url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/cannabis/sb-3222-fact-sheet.pdf"
+     },
+     {
+      "quote": "Effective Immediately (June 12, 2026)",
+      "url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/cannabis/sb-3222-fact-sheet.pdf"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "Replaced the search-only statute and secondary sources with the state's own SB 3222 fact sheet (Public Act 104-0463, signed and effective June 12, 2026); confidence medium to high.",
+    "confidenceBefore": "medium"
+   }
+  },
+  {
+   "id": "il-vehicle",
+   "jurisdiction": "IL",
+   "topic": "neighbor/vehicles",
+   "claim": "In Illinois, cannabis in a moving vehicle must be in a sealed, odor-proof, child-resistant container in its original packaging; any other container is a Class A misdemeanor, and no use is allowed in a vehicle.",
+   "details": "Official FAQ, citing the Cannabis Regulation and Tax Act and the Illinois Vehicle Code.",
+   "sources": [
+    {
+     "title": "Illinois Cannabis: FAQs",
+     "url": "https://cannabis.illinois.gov/about/faqs.html",
+     "publisher": "State of Illinois, Cannabis Regulation Oversight Office",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "odor-proof, child-resistant container that is in its original packaging.",
+      "url": "https://cannabis.illinois.gov/about/faqs.html"
+     },
+     {
+      "quote": "It is a Class A misdemeanor to transport cannabis in any other type of container.",
+      "url": "https://cannabis.illinois.gov/about/faqs.html"
+     },
+     {
+      "quote": "Cannabis cannot be used in a motor vehicle",
+      "url": "https://cannabis.illinois.gov/about/faqs.html"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "il-dui",
+   "jurisdiction": "IL",
+   "topic": "neighbor/impaired-driving",
+   "claim": "Unlike Michigan, Illinois has a numeric THC driving limit: 5 nanograms per milliliter of whole blood, or 10 in another bodily substance, within 2 hours of driving.",
+   "details": "Official FAQ. The FAQ omits the unit; the statute (625 ILCS 5/11-501.2(a)(6), seen via search extraction) states it as per milliliter.",
+   "sources": [
+    {
+     "title": "Illinois Cannabis: FAQs",
+     "url": "https://cannabis.illinois.gov/about/faqs.html",
+     "publisher": "State of Illinois, Cannabis Regulation Oversight Office",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "625 ILCS 5/11-501.2 (definition of THC concentration) [ilga.gov refused connections from this network; text seen via search extraction only]",
+     "url": "https://www.ilga.gov/legislation/ilcs/documents/062500050K11-501.2.htm",
+     "publisher": "Illinois General Assembly",
+     "retrieved": "2026-10-24 (search-engine extraction only; page not opened)"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "Illinois prohibits driving where THC levels of 5 nanograms in whole blood or 10 nanograms in other bodily substance",
+      "url": "https://cannabis.illinois.gov/about/faqs.html"
+     },
+     {
+      "quote": "are present within 2 hours of driving or in control of a vehicle.",
+      "url": "https://cannabis.illinois.gov/about/faqs.html"
+     },
+     {
+      "quote": "5 nanograms or more of delta-9-tetrahydrocannabinol per milliliter of whole blood",
+      "url": "https://www.ilga.gov/legislation/ilcs/documents/062500050K11-501.2.htm"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "Added the statute (search extraction) as the source of the 'per milliliter' unit, which the FAQ omits."
+   }
+  },
+  {
+   "id": "il-home-grow",
+   "jurisdiction": "IL",
+   "topic": "neighbor/home-grow",
+   "claim": "Only registered medical patients may grow cannabis at home in Illinois, up to 5 plants.",
+   "details": "Official FAQ.",
+   "sources": [
+    {
+     "title": "Illinois Cannabis: FAQs",
+     "url": "https://cannabis.illinois.gov/about/faqs.html",
+     "publisher": "State of Illinois, Cannabis Regulation Oversight Office",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "Only Registered Qualifying Medical Cannabis Patients may grow up to 5 cannabis plants at home.",
+      "url": "https://cannabis.illinois.gov/about/faqs.html"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "il-bring-in",
+   "jurisdiction": "IL",
+   "topic": "neighbor/bringing-michigan-cannabis",
+   "claim": "Illinois' own guidance says only that cannabis should not be transported across state lines; separately, federal law makes possessing it a federal offense (21 U.S.C. 844; see us-interstate), so carrying Michigan purchases into Illinois is not a legal plan.",
+   "details": "Official FAQ: cannabis cannot be used in a motor vehicle and should not be transported across state lines; possession is also prohibited on any federal property in Illinois.",
+   "sources": [
+    {
+     "title": "Illinois Cannabis: FAQs",
+     "url": "https://cannabis.illinois.gov/about/faqs.html",
+     "publisher": "State of Illinois, Cannabis Regulation Oversight Office",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "21 U.S.C. 844, Penalties for simple possession (U.S. Code, 2024 edition)",
+     "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title21/html/USCODE-2024-title21-chap13-subchapI-partD-sec844.htm",
+     "publisher": "U.S. Government Publishing Office (govinfo)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "Whether Illinois state law penalizes possessing a within-limit amount that was bought in Michigan was NOT confirmed (ilga.gov unreachable). Do not state an Illinois penalty for it. Claim text reworded 2026-10-24 (orchestrator): the earlier wording read as if Illinois' FAQ itself called crossing a federal offense; the FAQ says only that cannabis 'should not be transported across state lines' (batch 17 fact-check).",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "should not be transported across state lines.",
+      "url": "https://cannabis.illinois.gov/about/faqs.html"
+     },
+     {
+      "quote": "Cannabis is not permitted on federal property, including federal parks and buildings.",
+      "url": "https://cannabis.illinois.gov/about/faqs.html"
+     },
+     {
+      "quote": "Gifting to someone leaving the state may result in that person violating federal and, potentially, other state laws.",
+      "url": "https://cannabis.illinois.gov/about/faqs.html"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "oh-status",
+   "jurisdiction": "OH",
+   "topic": "neighbor/status",
+   "claim": "Ohio has had medical marijuana dispensaries since January 2019, and voters legalized adult use for people 21+ in 2023, with adult sales starting in August 2024.",
+   "details": "Ohio Department of Commerce.",
+   "sources": [
+    {
+     "title": "Alcohol and Cannabis Regulation and Responsible Consumption",
+     "url": "https://com.ohio.gov/education-and-training/alcohol-and-cannabis-regulation-and-responsible-consumption/alcohol-and-cannabis-regulation-and-responsible-consumption",
+     "publisher": "Ohio Department of Commerce",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "Medical marijuana has been available in Ohio dispensaries since January 2019.",
+      "url": "https://com.ohio.gov/education-and-training/alcohol-and-cannabis-regulation-and-responsible-consumption/alcohol-and-cannabis-regulation-and-responsible-consumption"
+     },
+     {
+      "quote": "In 2023, a majority of Ohio voters approved a ballot measure to legalize the possession and use of cannabis by individuals 21 and older",
+      "url": "https://com.ohio.gov/education-and-training/alcohol-and-cannabis-regulation-and-responsible-consumption/alcohol-and-cannabis-regulation-and-responsible-consumption"
+     },
+     {
+      "quote": "Non-medical cannabis sales began in August 2024.",
+      "url": "https://com.ohio.gov/education-and-training/alcohol-and-cannabis-regulation-and-responsible-consumption/alcohol-and-cannabis-regulation-and-responsible-consumption"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "oh-sb56",
+   "jurisdiction": "OH",
+   "topic": "neighbor/2026-law-change",
+   "claim": "Ohio's Senate Bill 56 took effect on March 20, 2026, banning intoxicating hemp products outside licensed dispensaries; anything with more than 0.4 mg total THC per container is treated as marijuana.",
+   "details": "Ohio Division of Cannabis Control news release dated March 24, 2026 says SB 56 took effect 'last Friday' (March 20, 2026). All dispensary products must be grown, processed and tested in DCC-approved facilities and meet child-resistant packaging rules.",
+   "sources": [
+    {
+     "title": "Intoxicating Hemp Ban Now In Effect: What SB56 Means for Products Sold in Ohio's Licensed Cannabis Dispensaries (Mar. 24, 2026)",
+     "url": "https://com.ohio.gov/about-us/media-center/news/intoxicating-hemp-ban-in-effect",
+     "publisher": "Ohio Department of Commerce, Division of Cannabis Control",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "Senate Bill 56 officially took effect last Friday in Ohio",
+      "url": "https://com.ohio.gov/about-us/media-center/news/intoxicating-hemp-ban-in-effect"
+     },
+     {
+      "quote": "any product containing more than 0.4mg of total THC per container is considered marijuana",
+      "url": "https://com.ohio.gov/about-us/media-center/news/intoxicating-hemp-ban-in-effect"
+     },
+     {
+      "quote": "must be grown, processed, and tested within facilities approved by the Division of Cannabis Control.",
+      "url": "https://com.ohio.gov/about-us/media-center/news/intoxicating-hemp-ban-in-effect"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "note": "The release is dated March 24, 2026 (a Tuesday), so 'last Friday' is March 20, 2026."
+   }
+  },
+  {
+   "id": "oh-out-of-state",
+   "jurisdiction": "OH",
+   "topic": "neighbor/bringing-michigan-cannabis",
+   "claim": "Since SB 56, Ohio only allows possession of marijuana bought from an Ohio-licensed dispensary or legally home-grown, so Michigan-bought cannabis cannot be legally possessed in Ohio.",
+   "details": "Ohio Legislative Service Commission final analysis of S.B. 56: the act removes the former allowance for out-of-state product; possession is limited to 'adult-use marijuana' and 'homegrown marijuana'.",
+   "sources": [
+    {
+     "title": "Ohio Legislative Service Commission final analysis of S.B. 56 (Apr. 2, 2026) [legislature.ohio.gov refused connections from this network; content seen via search extraction only]",
+     "url": "https://www.legislature.ohio.gov/download?key=27450",
+     "publisher": "Ohio Legislative Service Commission",
+     "retrieved": "2026-10-24 (search-engine extraction only; page not opened)"
+    },
+    {
+     "title": "Intoxicating Hemp Ban Now In Effect: What SB56 Means for Products Sold in Ohio's Licensed Cannabis Dispensaries (Mar. 24, 2026)",
+     "url": "https://com.ohio.gov/about-us/media-center/news/intoxicating-hemp-ban-in-effect",
+     "publisher": "Ohio Department of Commerce, Division of Cannabis Control",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Senate Bill 56: changes to Ohio's recreational marijuana laws (May 7, 2026)",
+     "url": "https://tyacklaw.com/senate-bill-56-changes-to-ohios-recreational-marijuana-laws/",
+     "publisher": "Tyack Law (Ohio law firm)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "LSC content seen via search extraction (legislature.ohio.gov and ohiosenate.gov refused or timed out from this network); corroborated by an Ohio law-firm page (May 2026). Penalty level for this offense NOT confirmed.",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "Prohibits possession or use of marijuana that is not acquired from a licensed Ohio dispensary or cultivated at the adult-use consumer's primary residence",
+      "url": "https://www.legislature.ohio.gov/download?key=27450"
+     },
+     {
+      "quote": "It is now explicitly illegal to possess marijuana acquired outside of Ohio",
+      "url": "https://tyacklaw.com/senate-bill-56-changes-to-ohios-recreational-marijuana-laws/"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "Re-saw the LSC final-analysis wording (search extraction) and added a 2026 Ohio law-firm page; the penalty level is still not sourced."
+   }
+  },
+  {
+   "id": "oh-limits",
+   "jurisdiction": "OH",
+   "topic": "neighbor/possession-limits",
+   "claim": "Ohio's adult possession limits remain 2.5 ounces of plant material and 15 grams of extract.",
+   "details": "LSC analysis: prior limits of 2.5 ounces (70.87 g) of non-extract marijuana and 15 g of extract carry over under SB 56. An Ohio law firm (May 2026) gives the same limits and reports home grow at up to 6 plants per adult and 12 per household (secondary source only).",
+   "sources": [
+    {
+     "title": "Ohio Legislative Service Commission final analysis of S.B. 56 (Apr. 2, 2026) [legislature.ohio.gov refused connections from this network; content seen via search extraction only]",
+     "url": "https://www.legislature.ohio.gov/download?key=27450",
+     "publisher": "Ohio Legislative Service Commission",
+     "retrieved": "2026-10-24 (search-engine extraction only; page not opened)"
+    },
+    {
+     "title": "Senate Bill 56: changes to Ohio's recreational marijuana laws (May 7, 2026)",
+     "url": "https://tyacklaw.com/senate-bill-56-changes-to-ohios-recreational-marijuana-laws/",
+     "publisher": "Tyack Law (Ohio law firm)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "The LSC limits text was seen via search extraction by the first researcher and was not re-seen in the refuter pass (legislature.ohio.gov unreachable); the 2026 law-firm page matches it. Home-grow counts are secondary-source only.",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "Adults 21-years and older can possess up to 2.5 ounces of plant material and up to 15 grams of extract.",
+      "url": "https://tyacklaw.com/senate-bill-56-changes-to-ohios-recreational-marijuana-laws/"
+     },
+     {
+      "quote": "Adults may possess up to 6 marijuana plants, with no more than 12 plants being grown per household.",
+      "url": "https://tyacklaw.com/senate-bill-56-changes-to-ohios-recreational-marijuana-laws/"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "Added a May 2026 Ohio law-firm page; the LSC limits wording was not re-seen in this pass, so confidence stays medium; home-grow counts added to the details as secondary-source information only."
+   }
+  },
+  {
+   "id": "in-status",
+   "jurisdiction": "IN",
+   "topic": "neighbor/status",
+   "claim": "Indiana has no legal adult-use or medical marijuana; possessing any amount is a crime, and 2026 bills to change that did not become law.",
+   "details": "IC 35-48-4-11 in the 2026 edition of the Indiana Code (published after the 2026 session) is unchanged from 2025.",
+   "sources": [
+    {
+     "title": "Indiana Code 2026, Title 35 (IC 35-48-4-11, 35-48-4-12, 35-50-3-2, 35-50-3-3)",
+     "url": "https://iga.in.gov/ic/2026/Title_35.html",
+     "publisher": "Indiana General Assembly",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "commits possession of marijuana, hash oil, hashish, or salvia, a Class B misdemeanor",
+      "url": "https://iga.in.gov/ic/2026/Title_35.html"
+     },
+     {
+      "quote": "P.L.153-2018, SEC.26",
+      "url": "https://iga.in.gov/ic/2026/Title_35.html"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "note": "The 2026 edition includes 2026 session laws elsewhere in Title 35 (for example P.L.132-2026), while IC 35-48-4-11 was last amended in 2018."
+   }
+  },
+  {
+   "id": "in-penalties",
+   "jurisdiction": "IN",
+   "topic": "neighbor/penalties",
+   "claim": "In Indiana, possessing marijuana is a Class B misdemeanor (up to 180 days in jail and a $1,000 fine); a prior drug conviction makes it a Class A misdemeanor (up to 1 year and $5,000), and a prior conviction plus 30 grams or more makes it a Level 6 felony.",
+   "details": "IC 35-48-4-11(a)-(c): Class A also applies if marijuana is packaged to look like low-THC hemp extract and the person knew or should have known; Level 6 felony also at 5 g or more of hash oil, hashish or salvia with a prior drug conviction. IC 35-50-3-2 and 35-50-3-3 set the misdemeanor ranges. IC 35-48-4-12 allows a one-time conditional discharge for a first misdemeanor possession offense.",
+   "sources": [
+    {
+     "title": "Indiana Code 2026, Title 35 (IC 35-48-4-11, 35-48-4-12, 35-50-3-2, 35-50-3-3)",
+     "url": "https://iga.in.gov/ic/2026/Title_35.html",
+     "publisher": "Indiana General Assembly",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "is a Level 6 felony if: (1) the person has a prior conviction for a drug offense; and (2) the person possesses: (A) at least thirty (30) grams of marijuana",
+      "url": "https://iga.in.gov/ic/2026/Title_35.html"
+     },
+     {
+      "quote": "imprisoned for a fixed term of not more than one hundred eighty (180) days; in addition, he may be fined not more than one thousand dollars ($1,000)",
+      "url": "https://iga.in.gov/ic/2026/Title_35.html"
+     },
+     {
+      "quote": "imprisoned for a fixed term of not more than one (1) year; in addition, he may be fined not more than five thousand dollars ($5,000)",
+      "url": "https://iga.in.gov/ic/2026/Title_35.html"
+     },
+     {
+      "quote": "There may be only one (1) dismissal under this section with respect to a person.",
+      "url": "https://iga.in.gov/ic/2026/Title_35.html"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "in-bring-in",
+   "jurisdiction": "IN",
+   "topic": "neighbor/bringing-michigan-cannabis",
+   "claim": "Bringing Michigan-bought cannabis into Indiana is illegal under Indiana law, regardless of where it was bought.",
+   "details": "IC 35-48-4-11 criminalizes possession of any amount with no exception for out-of-state purchases.",
+   "sources": [
+    {
+     "title": "Indiana Code 2026, Title 35 (IC 35-48-4-11, 35-48-4-12, 35-50-3-2, 35-50-3-3)",
+     "url": "https://iga.in.gov/ic/2026/Title_35.html",
+     "publisher": "Indiana General Assembly",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "21 U.S.C. 844, Penalties for simple possession (U.S. Code, 2024 edition)",
+     "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title21/html/USCODE-2024-title21-chap13-subchapI-partD-sec844.htm",
+     "publisher": "U.S. Government Publishing Office (govinfo)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "high",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "knowingly or intentionally possesses (pure or adulterated) marijuana, hash oil, hashish, or salvia",
+      "url": "https://iga.in.gov/ic/2026/Title_35.html"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24"
+   }
+  },
+  {
+   "id": "wi-status",
+   "jurisdiction": "WI",
+   "topic": "neighbor/status",
+   "claim": "Wisconsin has not legalized adult-use or medical marijuana; possessing THC is a crime under state law.",
+   "details": "Wis. Stat. 961.41(3g)(e). Secondary sources report that 2025-2026 medical and adult-use bills did not pass.",
+   "sources": [
+    {
+     "title": "Wis. Stat. 961.41(3g)(e) [docs.legis.wisconsin.gov refused connections from this network; text seen via search extraction only]",
+     "url": "https://docs.legis.wisconsin.gov/statutes/statutes/961/IV/41/3g/e",
+     "publisher": "Wisconsin Legislature",
+     "retrieved": "2026-10-24 (search-engine extraction only; page not opened)"
+    },
+    {
+     "title": "Is marijuana legal in Wisconsin now? Understanding Wisconsin marijuana laws in 2026 (May 31, 2026)",
+     "url": "https://www.wicriminaldefense.com/blog/2026/may/is-marijuana-legal-in-wisconsin-now-understanding-wisconsin-marijuana-laws-in-2026/",
+     "publisher": "Wisconsin criminal defense law firm (wicriminaldefense.com)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Wisconsin marijuana laws and criminal charges (2026 update)",
+     "url": "https://racinelaw.com/legal-services/marijuana-laws-charges-attorney/",
+     "publisher": "Racine criminal defense law firm (racinelaw.com)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "Statute text seen via search extraction only (docs.legis.wisconsin.gov unreachable from this network). Local ordinances in some cities reduce local penalties but do not change state law (secondary sources only; not stated as a claim).",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "Recreational marijuana is illegal in Wisconsin.",
+      "url": "https://www.wicriminaldefense.com/blog/2026/may/is-marijuana-legal-in-wisconsin-now-understanding-wisconsin-marijuana-laws-in-2026/"
+     },
+     {
+      "quote": "Wisconsin does not have a broad medical marijuana program.",
+      "url": "https://www.wicriminaldefense.com/blog/2026/may/is-marijuana-legal-in-wisconsin-now-understanding-wisconsin-marijuana-laws-in-2026/"
+     },
+     {
+      "quote": "No, recreational marijuana is still illegal in Wisconsin in 2026.",
+      "url": "https://racinelaw.com/legal-services/marijuana-laws-charges-attorney/"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "Added two 2026 Wisconsin law-firm pages; the statute is still seen only via search extraction, so confidence stays medium."
+   }
+  },
+  {
+   "id": "wi-penalties",
+   "jurisdiction": "WI",
+   "topic": "neighbor/penalties",
+   "claim": "In Wisconsin, a first THC possession conviction can bring a fine of up to $1,000 and up to 6 months in jail; a second or later offense is a felony.",
+   "details": "Wis. Stat. 961.41(3g)(e): first conviction, fine up to $1,000 and/or imprisonment up to 6 months; 2nd or subsequent offense is a Class I felony. A prior drug conviction in any state or under federal law counts as a prior offense.",
+   "sources": [
+    {
+     "title": "Wis. Stat. 961.41(3g)(e) [docs.legis.wisconsin.gov refused connections from this network; text seen via search extraction only]",
+     "url": "https://docs.legis.wisconsin.gov/statutes/statutes/961/IV/41/3g/e",
+     "publisher": "Wisconsin Legislature",
+     "retrieved": "2026-10-24 (search-engine extraction only; page not opened)"
+    },
+    {
+     "title": "Wisconsin marijuana laws and criminal charges (2026 update)",
+     "url": "https://racinelaw.com/legal-services/marijuana-laws-charges-attorney/",
+     "publisher": "Racine criminal defense law firm (racinelaw.com)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Is marijuana legal in Wisconsin now? Understanding Wisconsin marijuana laws in 2026 (May 31, 2026)",
+     "url": "https://www.wicriminaldefense.com/blog/2026/may/is-marijuana-legal-in-wisconsin-now-understanding-wisconsin-marijuana-laws-in-2026/",
+     "publisher": "Wisconsin criminal defense law firm (wicriminaldefense.com)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "Seen via search extraction only.",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "may be fined not more than $1,000 or imprisoned for not more than 6 months or both upon a first conviction.",
+      "url": "https://racinelaw.com/legal-services/marijuana-laws-charges-attorney/"
+     },
+     {
+      "quote": "is guilty of a Class I felony for a 2nd or subsequent offense.",
+      "url": "https://racinelaw.com/legal-services/marijuana-laws-charges-attorney/"
+     },
+     {
+      "quote": "carrying up to six months in jail and a fine of up to $1,000",
+      "url": "https://www.wicriminaldefense.com/blog/2026/may/is-marijuana-legal-in-wisconsin-now-understanding-wisconsin-marijuana-laws-in-2026/"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "Added two 2026 Wisconsin law-firm pages that quote the statute; confidence stays medium."
+   }
+  },
+  {
+   "id": "wi-bring-in",
+   "jurisdiction": "WI",
+   "topic": "neighbor/bringing-michigan-cannabis",
+   "claim": "Bringing Michigan-bought cannabis into Wisconsin is illegal under Wisconsin law.",
+   "details": "Possession of THC is criminalized without an exception for out-of-state purchases.",
+   "sources": [
+    {
+     "title": "Wis. Stat. 961.41(3g)(e) [docs.legis.wisconsin.gov refused connections from this network; text seen via search extraction only]",
+     "url": "https://docs.legis.wisconsin.gov/statutes/statutes/961/IV/41/3g/e",
+     "publisher": "Wisconsin Legislature",
+     "retrieved": "2026-10-24 (search-engine extraction only; page not opened)"
+    },
+    {
+     "title": "21 U.S.C. 844, Penalties for simple possession (U.S. Code, 2024 edition)",
+     "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title21/html/USCODE-2024-title21-chap13-subchapI-partD-sec844.htm",
+     "publisher": "U.S. Government Publishing Office (govinfo)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Is marijuana legal in Wisconsin now? Understanding Wisconsin marijuana laws in 2026 (May 31, 2026)",
+     "url": "https://www.wicriminaldefense.com/blog/2026/may/is-marijuana-legal-in-wisconsin-now-understanding-wisconsin-marijuana-laws-in-2026/",
+     "publisher": "Wisconsin criminal defense law firm (wicriminaldefense.com)",
+     "retrieved": "2026-10-24"
+    },
+    {
+     "title": "Wisconsin marijuana laws and criminal charges (2026 update)",
+     "url": "https://racinelaw.com/legal-services/marijuana-laws-charges-attorney/",
+     "publisher": "Racine criminal defense law firm (racinelaw.com)",
+     "retrieved": "2026-10-24"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "",
+   "verification": {
+    "verdict": "confirmed",
+    "evidence": [
+     {
+      "quote": "Bringing marijuana into Wisconsin from a legal state is still illegal here.",
+      "url": "https://www.wicriminaldefense.com/blog/2026/may/is-marijuana-legal-in-wisconsin-now-understanding-wisconsin-marijuana-laws-in-2026/"
+     },
+     {
+      "quote": "buying it legally in Illinois or Michigan does not make it legal once you drive home.",
+      "url": "https://racinelaw.com/legal-services/marijuana-laws-charges-attorney/"
+     }
+    ],
+    "checkedBy": "refuter",
+    "checkedOn": "2026-10-24",
+    "change": "Added two 2026 Wisconsin law-firm pages; confidence stays medium."
+   }
+  }
+ ],
+ "orchestratorEdits": [
+  {
+   "date": "2026-10-24",
+   "added": [
+    "mi-au-home-extraction"
+   ],
+   "reworded": [
+    "il-bring-in"
+   ],
+   "why": "gaps and a wording problem reported by the article fact-checkers (workflow wf_e39fd40e-0dd)"
+  }
+ ]
+}

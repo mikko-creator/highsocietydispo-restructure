@@ -1,0 +1,6 @@
+/* blocks/_stores.css — what the stores lane's blocks share (src/blocks/_stores.mjs): the small red icon plate (v2's
+   plates: the red ground, white glyph, the control radius) and the button row. Ground-aware: theme names only. */
+.splate { flex: none; width: 36px; height: 36px; display: inline-grid; place-items: center; border-radius: var(--radius); background: var(--red); color: var(--white); }
+.theme-red .splate { background: var(--white); color: var(--red); }
+.sbtns { display: flex; flex-wrap: wrap; gap: var(--s-1) var(--s-2); }
+@media (max-width: 479.98px) { .sbtns .btn { flex: 1 1 auto; } }

@@ -1,0 +1,484 @@
+{
+ "path": "/dispensary-locations/lenox/",
+ "template": "location",
+ "store": "lenox",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/dispensary-locations/lenox/",
+  "v2:join",
+  "v2:reviews",
+  "v2:app"
+ ],
+ "titleFull": "High Society Weed Dispensary Lenox",
+ "metaDescription": "Experience High Society's Lenox dispensary, offering premium cannabis products and exceptional dispensary service to the community.",
+ "h1": "Weed Dispensary In Lenox, MI",
+ "crumb": "Lenox",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Locations",
+   "path": "/dispensary-locations/"
+  },
+  {
+   "name": "Lenox"
+  }
+ ],
+ "geo": {
+  "lat": 42.7476086,
+  "lng": -82.7750037
+ },
+ "storeSameAs": [
+  "https://www.facebook.com/profile.php?id=61555455257465",
+  "https://www.instagram.com/highsocietylenox/"
+ ],
+ "hero": {
+  "eyebrow": "High Society Lenox · Recreational 21+",
+  "image": "assets/pit-stop/img/scene-lenox.jpg",
+  "imageAlt": "",
+  "lead": "Shop Cannabis Products",
+  "ctas": [
+   {
+    "text": "Order Now",
+    "href": "/shop/lenox/"
+   },
+   {
+    "text": "Get Direction",
+    "href": "https://www.google.com/maps/dir//High+Society+Cannabis+Lenox,+60695+Gratiot+Ave,+Lenox,+MI+48048,+United+States/@42.7476086,-82.7750037,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x88251bd453a85303:0xa1a84b62c1211d46!2m2!1d-82.7750037!2d42.7476086!3e0",
+    "style": "ghost"
+   }
+  ],
+  "status": {
+   "open": "Open - Closes at 9:00 PM",
+   "closed": "Closed - Opens at 9:00 AM"
+  },
+  "mapsUrl": "https://www.google.com/maps/dir//High+Society+Cannabis+Lenox,+60695+Gratiot+Ave,+Lenox,+MI+48048,+United+States/@42.7476086,-82.7750037,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x88251bd453a85303:0xa1a84b62c1211d46!2m2!1d-82.7750037!2d42.7476086!3e0"
+ },
+ "visiting": {
+  "before": "amenities",
+  "heading": "High Society Cannabis Lenox",
+  "lead": "Whether you call Lenox, MI, home or are just visiting, this vibrant city offers a range of unique experiences and attractions. Dive into its rich cultural heritage or take a relaxing walk through the charming downtown area. Lenox truly has something for everyone. Here are some must-see attractions to check out:",
+  "label": "FOLLOW THESE DIRECTIONS FROM",
+  "tabs": [
+   {
+    "label": "Golden Hawk Public Golf Course & Banquets",
+    "title": "Directions From Golden Hawk Public Golf Course & Banquets",
+    "md": "We are located only 9 minutes from [Golden Hawk Public Golf Course & Banquets](https://www.google.com/maps/place/Golden+Hawk+Public+Golf+Course+%26+Banquets/@42.7501769,-82.8065465,13z/data=!4m14!1m7!3m6!1s0x88251bd453a85303:0xa1a84b62c1211d46!2sHigh+Society+Cannabis+Lennox!8m2!3d42.7476086!4d-82.7750037!16s%2Fg%2F11p5cjrbpb!3m5!1s0x882510f613b9d671:0xc0662a748cd93a37!8m2!3d42.749073!4d-82.7090835!16s%2Fg%2F1tcz8yp3?hl=en&entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D).\n\n1. Head west toward Meisner Ln\n2. Turn right toward Meisner Ln\n3. Turn left toward Meisner Ln\n4. Turn right onto Meisner Ln\n5. Turn left onto Meisner Rd\n6. Continue straight onto 28 Mile Rd\n7. Turn left onto M-19 S\n\nOur cannabis dispensary will be on the right"
+   },
+   {
+    "label": "Oak Ridge Golf Course",
+    "title": "Directions From Oak Ridge Golf Course",
+    "md": "We are located only 8 minutes from the infamous [Oak Ridge Golf Course](https://www.google.com/maps/place/Oak+Ridge+Golf+Course/@42.7338039,-82.7550449,14z/am=t/data=!4m23!1m16!4m15!1m6!1m2!1s0x882510f613b9d671:0xc0662a748cd93a37!2sGolden+Hawk+Public+Golf+Course+%26+Banquets,+9861+Meisner+Rd,+Casco,+MI+48064,+United+States!2m2!1d-82.7090835!2d42.749073!1m6!1m2!1s0x88251bd453a85303:0xa1a84b62c1211d46!2sHigh+Society+Cannabis+Lennox,+Gratiot+Avenue,+Lenox,+MI,+USA!2m2!1d-82.7750037!2d42.7476086!3e0!3m5!1s0x88251a2466e48d01:0x917b58f8969ce49!8m2!3d42.7230567!4d-82.7571105!16s%2Fg%2F1tgcshzw?hl=en&entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D) .\n\n1. Head east\n2. Slight left toward 26 Mile Rd\n3. Turn right onto 26 Mile Rd\n4. Turn right onto Main St/New Haven Rd\n5. Turn right onto M-19 N/Gratiot Ave\n\nOur cannabis dispensary will be on the left"
+   },
+   {
+    "label": "Brandenburg Park",
+    "title": "Directions From Brandenburg Park",
+    "md": "We are located only 14 minutes from [Brandenburg Park](https://www.google.com/maps/place/Brandenburg+Park/@42.7034868,-82.8166506,13z/am=t/data=!4m23!1m16!4m15!1m6!1m2!1s0x88251a2466e48d01:0x917b58f8969ce49!2sOak+Ridge+Golf+Course,+35035+26+Mile+Rd,+New+Haven,+MI+48048,+United+States!2m2!1d-82.7571105!2d42.7230567!1m6!1m2!1s0x88251bd453a85303:0xa1a84b62c1211d46!2sHigh+Society+Cannabis+Lennox,+Gratiot+Avenue,+Lenox,+MI,+USA!2m2!1d-82.7750037!2d42.7476086!3e0!3m5!1s0x8825184f7d172a7d:0xd891ed551fd0b551!8m2!3d42.6669672!4d-82.7586042!16s%2Fg%2F11cms8vbfv?hl=en&entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D) .\n\n1. Head southwest\n2. Turn right\n3. Slight right toward Jefferson Ave\n4. Take Baker Rd to M-19 N/Gratiot Ave in Lenox Township\n5. Turn right onto Jefferson Ave\n6. Turn left onto Altman Rd\n7. Turn left onto M-29 S\n8. Turn right onto Baker Rd\n9. Turn left onto Washington St\n10. Continue onto M-19 N/New Haven Rd\n11. Turn right onto M-19 N/Gratiot Ave\n\nOur dispensary will be on the left"
+   },
+   {
+    "label": "The Wetzel State Recreation Area",
+    "title": "Directions From the Wetzel State Recreation Area",
+    "md": "We are located only 8 minutes from the Wetzel State Recreation Area.\n\n1. Head east toward Werderman Rd\n2. Turn left onto Werderman Rd\n3. Turn right onto New Haven Rd\n4. Continue onto Main St\n5. Turn left onto Clark St\n6. Turn left onto M-19 N/Gratiot Ave\n\nOur marijuana dispensary will be on the left"
+   }
+  ]
+ },
+ "blocks": [
+  {
+   "type": "cta",
+   "id": "rewards-teaser",
+   "ground": "red",
+   "heading": "Join The Society",
+   "md": "Sign up to get early access to strain drops, special pricing, birthday rewards and more",
+   "ctas": [
+    {
+     "text": "Join the Society Today",
+     "href": "/club-member-program/"
+    }
+   ]
+  },
+  {
+   "type": "store-details",
+   "id": "store-details",
+   "ground": "white",
+   "heading": "Store Info",
+   "store": "lenox",
+   "name": "High Society Lenox",
+   "facts": [
+    "hours",
+    "address",
+    "email",
+    "phone"
+   ],
+   "hoursText": "Open Daily: 9:00 AM - 9:00 PM",
+   "addressText": "60695 Gratiot Ave, Lenox, MI 48048, United States",
+   "email": "info@highsocietydispo.com",
+   "mapsUrl": "https://www.google.com/maps/dir//High+Society+Cannabis+Lenox,+60695+Gratiot+Ave,+Lenox,+MI+48048,+United+States/@42.7476086,-82.7750037,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x88251bd453a85303:0xa1a84b62c1211d46!2m2!1d-82.7750037!2d42.7476086!3e0",
+   "ctas": [
+    {
+     "text": "View Menu",
+     "href": "shop"
+    },
+    {
+     "text": "Get Direction",
+     "href": "maps",
+     "style": "ghost"
+    }
+   ],
+   "social": [
+    {
+     "network": "facebook",
+     "href": "https://www.facebook.com/profile.php?id=61555455257465",
+     "label": "High Society Lenox on Facebook"
+    },
+    {
+     "network": "instagram",
+     "href": "https://www.instagram.com/highsocietylenox/",
+     "label": "High Society Lenox on Instagram"
+    }
+   ],
+   "about": {
+    "heading": "The Best Weed Dispensary In Lenox, Michigan",
+    "md": "High Society Cannabis in Lenox stands out as a leading cannabis retailer, focused on delivering outstanding customer service and offering a diverse selection of premium cannabis products. Their collection features renowned brands like 710 Labs, Bloom, Camino, and Drip, celebrated for their quality and potency. This commitment to quality has solidified High Society Cannabis as a top choice for premium cannabis products in Lenox.",
+    "linksLabel": "More about High Society Lenox",
+    "links": [
+     {
+      "text": "Deals",
+      "href": "/deals/"
+     },
+     {
+      "text": "Loyalty",
+      "href": "/loyalty/"
+     },
+     {
+      "text": "FAQs",
+      "href": "#faq"
+     },
+     {
+      "text": "Medical Card Guide",
+      "href": "/getting-a-medical-card/"
+     }
+    ]
+   }
+  },
+  {
+   "type": "amenities",
+   "id": "amenities",
+   "ground": "white",
+   "heading": "Store Amenities",
+   "groups": [
+    {
+     "title": "We Offer",
+     "items": [
+      {
+       "icon": "pin",
+       "label": "Curbside Pickup"
+      },
+      {
+       "icon": "bag",
+       "label": "In-Store Pickup"
+      },
+      {
+       "icon": "cart",
+       "label": "In-Store Shopping"
+      }
+     ]
+    },
+    {
+     "title": "Pay With",
+     "items": [
+      {
+       "icon": "tag",
+       "label": "Cash"
+      },
+      {
+       "icon": "check",
+       "label": "Debit Card"
+      },
+      {
+       "icon": "home",
+       "label": "ATM in-store"
+      }
+     ]
+    },
+    {
+     "title": "Before You Go",
+     "items": [
+      {
+       "icon": "user",
+       "label": "Valid government-issued ID or passport, 21+"
+      },
+      {
+       "icon": "cart",
+       "label": "Order online for pickup; curbside customers get a text when the order is ready"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "id": "first-visit",
+   "ground": "headlight",
+   "heading": "First-Time Customer Guide",
+   "items": [
+    {
+     "title": "Who Can Shop",
+     "md": "Individuals 21 years or older can shop recreationally at our dispensary."
+    },
+    {
+     "title": "Check In",
+     "md": "Present a government-issued ID or passport upon arrival and check in with our security and front desk team."
+    },
+    {
+     "title": "Stay in the Loop",
+     "md": "Stay updated on special deals and discounts by providing your phone number and email address."
+    },
+    {
+     "title": "Meet Your Budtender",
+     "md": "A budtender will call you from the waiting area when it’s your turn. They’ll assist with product selection and address any questions, whether you’re a first-time visitor or a returning customer."
+    },
+    {
+     "title": "Choose Your Items",
+     "md": "After finalizing your choices, the budtender will notify our order preparation team. Payments are accepted via cash, credit, or debit cards."
+    },
+    {
+     "title": "Complete Your Purchase",
+     "md": "When your order is ready, a staff member will call your name, process the payment, and review the items with you to ensure everything is correct before completing the purchase."
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "id": "order-pickup",
+   "ground": "white",
+   "heading": "How to Place an Order for Dispensary Pick-Up",
+   "items": [
+    {
+     "title": "Browse the Menu",
+     "md": "Explore our [Lenox dispensary menu](/shop/lenox/) online or reach out to us at [(586) 430-1347](tel:+15864301347) for any assistance."
+    },
+    {
+     "title": "Build Your Order",
+     "md": "Select your desired products, set quantities, add them to your cart, and choose a convenient pick-up time."
+    },
+    {
+     "title": "Check Out",
+     "md": "Finalize your order by entering your details. New visitors will need to provide a valid ID for verification, while returning customers can log in for a quicker checkout."
+    },
+    {
+     "title": "Curbside Pickup",
+     "md": "Prefer curbside pickup? Let us know, and we’ll send a text when your order is ready for collection."
+    },
+    {
+     "title": "Enjoy Responsibly",
+     "md": "Use our cannabis products responsibly. We're here to provide a smooth and hassle-free shopping experience!"
+    }
+   ]
+  },
+  {
+   "type": "deals",
+   "id": "deals",
+   "source": "site",
+   "ground": "headlight",
+   "heading": "Deals",
+   "lead": "Deals vary by store and change often. The menu shows today's deals at High Society Lenox.",
+   "more": {
+    "text": "See all deals",
+    "href": "/deals/"
+   }
+  },
+  {
+   "type": "cards",
+   "id": "categories",
+   "ground": "white",
+   "columns": 4,
+   "heading": "Shop Cannabis Products",
+   "items": [
+    {
+     "title": "Flower",
+     "icon": "leaf",
+     "href": "/shop/lenox/?dtche%5Bcategory%5D=flower",
+     "md": "Each cannabis strain is carefully curated to your needs, whether you're seeking relaxation, creativity, or a balanced high."
+    },
+    {
+     "title": "Pre-Rolls",
+     "icon": "spark",
+     "href": "/shop/lenox/?dtche%5Bcategory%5D=pre-rolls"
+    },
+    {
+     "title": "Concentrates",
+     "icon": "drop",
+     "href": "/shop/lenox/?dtche%5Bcategory%5D=concentrates",
+     "md": "From shatter to wax, our concentrates are ideal for experienced users looking for a powerful and fast-acting option."
+    },
+    {
+     "title": "Vaporizers",
+     "icon": "wave",
+     "href": "/shop/lenox/?dtche%5Bcategory%5D=vaporizers"
+    }
+   ]
+  },
+  {
+   "type": "reviews",
+   "id": "reviews",
+   "source": "home",
+   "heading": "What Our Customers Say About Us",
+   "lead": "Google reviews from High Society customers across our Michigan stores."
+  },
+  {
+   "type": "faq",
+   "id": "faq",
+   "ground": "white",
+   "heading": "Frequently Asked Questions",
+   "lead": "More questions? Visit our [FAQ page](/faq/).",
+   "items": [
+    {
+     "q": "What do I need to shop at High Society Cannabis Lenox?",
+     "a": "To purchase from our dispensary, you must present a valid government-issued ID confirming you are 21 or older. Individuals 18 and older with a medical marijuana card are also eligible to shop."
+    },
+    {
+     "q": "How can I address a defective product?",
+     "a": "If you encounter any issues with a product's quality or functionality, please contact us at [(586) 430-1347](tel:+15864301347) or visit the store where you made the purchase. Our team will be happy to assist."
+    },
+    {
+     "q": "What forms of payment are accepted?",
+     "a": "Our dispensaries accept cash and debit payments, with an ATM accessible in-store. Some locations may offer additional payment options, so feel free to check ahead."
+    },
+    {
+     "q": "Is it legal to transport cannabis?",
+     "a": "Cannabis purchases are legal in Michigan, but federal law prohibits transporting cannabis across state lines. Please refrain from taking cannabis products out of the state."
+    },
+    {
+     "q": "What types of products does the dispensary offer?",
+     "a": "We provide a wide range of high-quality cannabis products, including flower, pre-rolls, concentrates, vape pens, edibles, and more. Explore our menu or contact us for specific inquiries."
+    },
+    {
+     "q": "Does High Society provide benefits for loyal customers?",
+     "a": "Yes, we do! High Society offers a loyalty program called The Society, allowing you to earn points on purchases and redeem them for discounts or special deals. Ask a staff member to get started."
+    }
+   ]
+  },
+  {
+   "type": "amenities",
+   "id": "service-area",
+   "ground": "headlight",
+   "heading": "Locations Where Our Dispensary Provides Service",
+   "groups": [
+    {
+     "title": "Towns",
+     "items": [
+      {
+       "icon": "pin",
+       "label": "Lenox"
+      },
+      {
+       "icon": "pin",
+       "label": "Richmond"
+      },
+      {
+       "icon": "pin",
+       "label": "New Haven"
+      },
+      {
+       "icon": "pin",
+       "label": "New Baltimore"
+      }
+     ]
+    },
+    {
+     "title": "ZIP Codes We Serve",
+     "items": [
+      {
+       "icon": "target",
+       "label": "48048"
+      },
+      {
+       "icon": "target",
+       "label": "48047"
+      },
+      {
+       "icon": "target",
+       "label": "48062"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "id": "resources",
+   "ground": "white",
+   "heading": "Other Resources",
+   "style": "dot",
+   "items": [
+    "Stay updated on the most recent [marijuana regulations and news](https://www.lenoxtwp.org/252/Medical-Marihuana-Information) in Lenox, MI.",
+    "Keep track of important [cannabis updates and developments](https://www.michigan.gov/cra/laws-rules-other) across Michigan.",
+    "Read our guide to [Michigan marijuana laws](/cannabis-laws-by-state/michigan/)."
+   ]
+  },
+  {
+   "type": "nearby",
+   "id": "nearby",
+   "store": "lenox",
+   "order": [
+    "birch-run",
+    "saline",
+    "east-lansing",
+    "charlotte",
+    "mount-pleasant",
+    "big-rapids",
+    "new-buffalo"
+   ],
+   "heading": "Other High Society Locations",
+   "lead": "Our other Michigan stores, nearest first.",
+   "view": {
+    "text": "View Location"
+   }
+  },
+  {
+   "type": "split",
+   "id": "app",
+   "ground": "charcoal",
+   "heading": "Download the High Society App",
+   "md": "Experience convenience at your fingertips with the High Society App. Easily browse our full cannabis menu, stay updated on the latest deals, and place your orders with just a few taps. Whether you're at home or on the go, managing your cannabis experience has never been easier.",
+   "image": "derived:app-phone-mockup",
+   "imageAlt": "",
+   "ctas": [
+    {
+     "text": "Download Now",
+     "href": "https://apps.apple.com/us/app/high-society-cannabis/id6503314334"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen.mjs",
+  "fixes": [
+   "h1 casing normalised (High Society's words kept): \"Weed Dispensary In Lenox, Mi\" -> \"Weed Dispensary In Lenox, MI\"",
+   "pickup line: East Lansing's number corrected to Lenox's (docs/hs-source-defects.json)"
+  ],
+  "newCopy": [
+   "tab title \"Directions From Golden Hawk Public Golf Course & Banquets\" (v1 prints this panel without its own heading)",
+   "tab title \"Directions From Oak Ridge Golf Course\" (v1 prints this panel without its own heading)",
+   "tab title \"Directions From Brandenburg Park\" (v1 prints this panel without its own heading)",
+   "tab title \"Directions From The Wetzel State Recreation Area\" (v1 prints this panel without its own heading)",
+   "resources: \"Read our guide to Michigan marijuana laws.\" (link to the planned law guide)",
+   "hero eyebrow (store name + \"Recreational 21+\")",
+   "store-details \"more\" link labels (Deals, Loyalty, FAQs, Medical Card Guide)",
+   "amenities heading \"Store Amenities\" and group \"Before You Go\" (its two lines condense High Society's ID and ordering steps)",
+   "step titles (the step texts are High Society's)",
+   "deals heading and lead",
+   "reviews lead",
+   "FAQ lead",
+   "service-area group titles",
+   "nearby heading and lead"
+  ],
+  "keptForClient": [
+   "first-time guide payment line (\"cash, credit, or debit\") vs the FAQ (cash and debit): OPEN-DECISIONS 4",
+   "medical patients 18+ in the FAQ (OPEN-DECISIONS 5)"
+  ]
+ }
+}

@@ -1,0 +1,141 @@
+{
+ "path": "/shop/new-buffalo/",
+ "template": "menu-placeholder",
+ "store": "new-buffalo",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/shop/new-buffalo/"
+ ],
+ "titleFull": "Shop Cannabis - New Buffalo Dispensary Menu",
+ "metaDescription": "Explore High Society's online cannabis menu for the New Buffalo weed dispensary. Order premium cannabis products for convenient pickup.",
+ "h1": "New Buffalo Weed Dispensary Menu",
+ "crumb": "New Buffalo",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Shop",
+   "path": "/shop/"
+  },
+  {
+   "name": "New Buffalo"
+  }
+ ],
+ "hero": {
+  "eyebrow": "High Society New Buffalo",
+  "lead": "Order ahead online, then pick up in store or at the curb.",
+  "status": {
+   "open": "Open - Closes at 9:00 PM",
+   "closed": "Closed - Opens at 9:00 AM"
+  },
+  "mapsUrl": "https://maps.app.goo.gl/6pHu75S8THarhZJB6"
+ },
+ "blocks": [
+  {
+   "type": "menu-placeholder",
+   "id": "menu",
+   "ground": "white",
+   "store": "new-buffalo",
+   "heading": "Menu",
+   "title": "Shop the New Buffalo menu",
+   "md": "Browse today’s products, prices and deals, add them to your cart and choose a pickup time. Prefer to order by phone? Call the store and our team will help.",
+   "order": {
+    "text": "Order Now"
+   },
+   "call": {
+    "text": "Call"
+   }
+  },
+  {
+   "type": "link-grid",
+   "id": "categories",
+   "ground": "headlight",
+   "heading": "Shop by Category",
+   "groups": [
+    {
+     "title": "New Buffalo menu",
+     "links": [
+      {
+       "text": "Accessories",
+       "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=accessories"
+      },
+      {
+       "text": "Apparel",
+       "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=apparel"
+      },
+      {
+       "text": "Concentrates",
+       "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=concentrates"
+      },
+      {
+       "text": "Edibles",
+       "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=edibles"
+      },
+      {
+       "text": "Flower",
+       "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=flower"
+      },
+      {
+       "text": "Pre-Rolls",
+       "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=pre-rolls"
+      },
+      {
+       "text": "Tinctures",
+       "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=tinctures"
+      },
+      {
+       "text": "Topicals",
+       "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=topicals"
+      },
+      {
+       "text": "Vaporizers",
+       "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=vaporizers"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "store-details",
+   "id": "store",
+   "ground": "white",
+   "heading": "Your Store",
+   "store": "new-buffalo",
+   "name": "High Society New Buffalo",
+   "facts": [
+    "address",
+    "phone",
+    "email",
+    "hours"
+   ],
+   "email": "info@highsocietydispo.com",
+   "hoursText": "9:00 AM - 9:00 PM Daily",
+   "mapsUrl": "https://maps.app.goo.gl/6pHu75S8THarhZJB6",
+   "ctas": [
+    {
+     "text": "View Location",
+     "href": "location"
+    },
+    {
+     "text": "Get Directions",
+     "href": "maps",
+     "style": "ghost"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen-other.mjs",
+  "newCopy": [
+   "hero eyebrow and lead",
+   "the menu notice (title, text, button labels)",
+   "category band heading and group title"
+  ],
+  "notes": [
+   "category links use High Society's own form /shop/<store>/?dtche[category]=<category> (its v1 store pages); the CMS category pages (/new-buffalo/<category>/) are not part of this build"
+  ]
+ }
+}

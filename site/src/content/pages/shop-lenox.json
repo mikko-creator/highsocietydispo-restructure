@@ -1,0 +1,137 @@
+{
+ "path": "/shop/lenox/",
+ "template": "menu-placeholder",
+ "store": "lenox",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/shop/lenox/"
+ ],
+ "titleFull": "Shop Cannabis - Lenox Dispensary Menu",
+ "metaDescription": "Browse High Society's online cannabis menu for the Lenox weed dispensary. Order premium cannabis products for convenient pickup.",
+ "h1": "Lenox Weed Dispensary Menu",
+ "crumb": "Lenox",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Shop",
+   "path": "/shop/"
+  },
+  {
+   "name": "Lenox"
+  }
+ ],
+ "hero": {
+  "eyebrow": "High Society Lenox",
+  "lead": "Order ahead online, then pick up in store or at the curb.",
+  "status": {
+   "open": "Open - Closes at 9:00 PM",
+   "closed": "Closed - Opens at 9:00 AM"
+  },
+  "mapsUrl": "https://www.google.com/maps/dir//High+Society+Cannabis+Lenox,+60695+Gratiot+Ave,+Lenox,+MI+48048,+United+States/@42.7476086,-82.7750037,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x88251bd453a85303:0xa1a84b62c1211d46!2m2!1d-82.7750037!2d42.7476086!3e0"
+ },
+ "blocks": [
+  {
+   "type": "menu-placeholder",
+   "id": "menu",
+   "ground": "white",
+   "store": "lenox",
+   "heading": "Menu",
+   "title": "Shop the Lenox menu",
+   "md": "Browse today’s products, prices and deals, add them to your cart and choose a pickup time. Prefer to order by phone? Call the store and our team will help.",
+   "order": {
+    "text": "Order Now"
+   },
+   "call": {
+    "text": "Call"
+   }
+  },
+  {
+   "type": "link-grid",
+   "id": "categories",
+   "ground": "headlight",
+   "heading": "Shop by Category",
+   "groups": [
+    {
+     "title": "Lenox menu",
+     "links": [
+      {
+       "text": "Accessories",
+       "href": "/shop/lenox/?dtche%5Bcategory%5D=accessories"
+      },
+      {
+       "text": "Apparel",
+       "href": "/shop/lenox/?dtche%5Bcategory%5D=apparel"
+      },
+      {
+       "text": "Concentrates",
+       "href": "/shop/lenox/?dtche%5Bcategory%5D=concentrates"
+      },
+      {
+       "text": "Edibles",
+       "href": "/shop/lenox/?dtche%5Bcategory%5D=edibles"
+      },
+      {
+       "text": "Flower",
+       "href": "/shop/lenox/?dtche%5Bcategory%5D=flower"
+      },
+      {
+       "text": "Pre-Rolls",
+       "href": "/shop/lenox/?dtche%5Bcategory%5D=pre-rolls"
+      },
+      {
+       "text": "Topicals",
+       "href": "/shop/lenox/?dtche%5Bcategory%5D=topicals"
+      },
+      {
+       "text": "Vaporizers",
+       "href": "/shop/lenox/?dtche%5Bcategory%5D=vaporizers"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "store-details",
+   "id": "store",
+   "ground": "white",
+   "heading": "Your Store",
+   "store": "lenox",
+   "name": "High Society Lenox",
+   "facts": [
+    "address",
+    "phone",
+    "email",
+    "hours"
+   ],
+   "email": "info@highsocietydispo.com",
+   "hoursText": "9:00 AM - 9:00 PM Daily",
+   "mapsUrl": "https://www.google.com/maps/dir//High+Society+Cannabis+Lenox,+60695+Gratiot+Ave,+Lenox,+MI+48048,+United+States/@42.7476086,-82.7750037,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x88251bd453a85303:0xa1a84b62c1211d46!2m2!1d-82.7750037!2d42.7476086!3e0",
+   "ctas": [
+    {
+     "text": "View Location",
+     "href": "location"
+    },
+    {
+     "text": "Get Directions",
+     "href": "maps",
+     "style": "ghost"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen-other.mjs",
+  "newCopy": [
+   "hero eyebrow and lead",
+   "the menu notice (title, text, button labels)",
+   "category band heading and group title"
+  ],
+  "notes": [
+   "category links use High Society's own form /shop/<store>/?dtche[category]=<category> (its v1 store pages); the CMS category pages (/lenox/<category>/) are not part of this build"
+  ]
+ }
+}

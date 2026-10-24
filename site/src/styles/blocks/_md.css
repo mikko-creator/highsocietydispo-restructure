@@ -1,0 +1,46 @@
+/* blocks/_md.css — reading type for everything md.mjs writes (.md: prose blocks, card text, FAQ answers, article
+   bodies). Work Sans at the body size and v2's line height, a ~70ch measure, Changa headings, red trophy bullets,
+   red-numbered lists, the callouts and the scrollable tables. Ground-aware: theme names only. */
+.md { color: var(--fg-2); font-size: var(--fs-body); line-height: var(--lh-text); max-width: 70ch; overflow-wrap: break-word; }
+.md > * + * { margin-top: 1em; }
+.md > :first-child { margin-top: 0; }
+.md h2 { margin-top: 1.9em; font: 800 clamp(1.4rem, 1rem + 1.3vw, 1.9rem)/1.12 var(--font-head); letter-spacing: -.005em; color: var(--fg); scroll-margin-top: calc(var(--bar-h) + var(--s-3)); }
+.md h3 { margin-top: 1.5em; font: 700 clamp(1.15rem, 1rem + .5vw, 1.35rem)/1.2 var(--font-head); color: var(--fg); scroll-margin-top: calc(var(--bar-h) + var(--s-3)); }
+.md h2 + *, .md h3 + * { margin-top: .55em; }
+.md strong { color: var(--fg); font-weight: 700; }
+.md a { color: var(--em); font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+.md a:hover { text-decoration-thickness: 2px; }
+.theme-red .md a, .theme-black .md a, .theme-charcoal .md a { color: var(--fg); }
+.md ul > li { position: relative; padding-left: 1.7em; }
+.md ul > li::before { content: ""; position: absolute; left: 0; top: .4em; width: .95em; height: .95em; background: var(--mark-red) center / contain no-repeat; }
+.theme-red .md ul > li::before { background-image: var(--mark-white); }
+.md ol { list-style: decimal; padding-left: 1.6em; }
+.md ol > li { padding-left: .2em; }
+.md ol > li::marker { color: var(--em); font-family: var(--font-display); }
+.md li + li { margin-top: .45em; }
+.md blockquote { padding: .2em 0 .2em 1.1em; border-left: 4px solid var(--red); font: 500 1.08em/1.5 var(--font-head); color: var(--fg); }
+.md blockquote p + p { margin-top: .6em; }
+
+/* callouts ("> **Note:** ..." in Markdown, and the callout block) */
+.callout { display: flex; gap: var(--s-2); padding: var(--s-2) var(--s-3); border: 1px solid var(--line); border-left: 4px solid var(--red); border-radius: var(--radius-lg); background: var(--card); color: var(--fg-2); }
+.callout p + p { margin-top: .5em; }
+.callout strong { color: var(--fg); }
+.callout--warn { border-left-color: var(--clay); }
+.callout--legal { border-left-color: var(--fg); }
+.callout__icon { flex: none; width: 40px; height: 40px; display: grid; place-items: center; border-radius: var(--radius); background: var(--red); color: var(--white); }
+.callout--warn .callout__icon { background: var(--clay); color: var(--black); }
+.callout--legal .callout__icon { background: var(--fg); color: var(--bg); }
+.callout__body { min-width: 0; display: flex; flex-direction: column; gap: var(--s-1); }
+.callout__title { font: 800 1.05rem/1.25 var(--font-head); color: var(--fg); }
+
+/* tables: a focusable scroll region (md.mjs writes role, tabindex and a label), so a wide table never widens the page */
+.md-table { max-width: 100%; overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--card); scrollbar-width: thin; }
+.md-table table { width: 100%; border-collapse: collapse; font-size: .9375rem; line-height: 1.45; }
+.md-table caption { caption-side: top; padding: 12px 16px; text-align: left; font: 700 .8125rem/1.3 var(--font-head); letter-spacing: .08em; text-transform: uppercase; color: var(--fg-2); }
+.md-table th { padding: 12px 16px; text-align: left; vertical-align: bottom; background: var(--fg); color: var(--bg); font: 700 .8125rem/1.25 var(--font-head); letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+.md-table td { padding: 12px 16px; vertical-align: top; border-top: 1px solid var(--line); color: var(--fg-2); }
+/* a row head (<th scope="row">, e.g. the rewards tier table) reads as the row's bold first cell, not a column head */
+.md-table th[scope="row"] { vertical-align: top; border-top: 1px solid var(--line); background: none; color: var(--fg); font: 600 .9375rem/1.45 var(--font-body); letter-spacing: 0; text-transform: none; white-space: normal; }
+.md-table .t-right { text-align: right; }
+.md-table .t-center { text-align: center; }
+.md-table:focus-visible { outline-offset: 2px; }

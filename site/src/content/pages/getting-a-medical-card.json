@@ -1,0 +1,152 @@
+{
+ "path": "/getting-a-medical-card/",
+ "template": "guide",
+ "provenance": "new",
+ "sourceRefs": [
+  "structure map newPageBriefs /getting-a-medical-card/",
+  "facts/law-facts.json (claims listed in review.claims)",
+  "facts/hs-facts.json services.medical, services.adultUse, services.idRules"
+ ],
+ "brief": { "riskLevel": "medical" },
+ "title": "Michigan Medical Marijuana Card: How to Apply",
+ "crumb": "Getting a Medical Card",
+ "metaDescription": "How to get a Michigan medical marijuana card: who qualifies, the physician certification, the $40 application, renewal, caregivers and visiting patients.",
+ "h1": "How to Get a Michigan Medical Marijuana Card",
+ "hero": {
+  "eyebrow": "Medical Card Guide",
+  "lead": "Michigan’s medical marijuana program is open to state residents with a qualifying condition and a physician’s certification. Here is how the card works, what it costs and how to apply, as of October 2026."
+ },
+ "reviewed": { "label": "Last reviewed", "date": "2026-10-24", "text": "October 2026" },
+ "tocLabel": "On this page",
+ "summary": {
+  "heading": "The short version",
+  "items": [
+   "Only **Michigan residents** can get a Michigan card, and adults 18 and older can register on their own.",
+   "A physician licensed in Michigan must certify a **qualifying condition** from the state’s list.",
+   "The application fee is **$40**. Patients without a caregiver can apply online; anyone naming a caregiver uses the paper packet.",
+   "The state has up to **20 business days** to decide and mail your card, plus mail time.",
+   "A card is valid for **two years**, and you can renew starting 90 days before it expires."
+  ]
+ },
+ "blocks": [
+  {
+   "type": "prose",
+   "heading": "Who can get a medical card in Michigan",
+   "md": "Michigan voters created the medical marijuana program in 2008, ten years before adult use. Today the state’s Cannabis Regulatory Agency (CRA) runs the patient registry and licenses the businesses that sell to patients.\n\nTo register, you need three things: Michigan residency, a qualifying condition and a certification from a Michigan physician. Adults 18 and older can apply on their own. Patients under 18 can register too, with extra steps and a parent or guardian who serves as their caregiver.\n\n### Why some adults register even though adult use is legal\n\nAdult-use cannabis in Michigan is for people 21 and older. A registry card changes a few things under state law:\n\n- **Access before 21.** Registered patients, including those who are 18 to 20, buy from licensed medical provisioning centers. Adult-use stores sell only to adults 21 and older.\n- **Lower tax.** Medical sales to registered patients skip Michigan’s 10% excise tax; only the 6% sales tax applies. Adult-use purchases carry both.\n- **Different limits.** A patient may buy up to 2.5 ounces a day and 10 ounces a month. Medical edibles may hold up to 50 mg of THC per dose, against 10 mg for adult-use edibles.\n- **Home grow.** A patient with no caregiver growing for them may keep up to 12 plants in an enclosed, locked facility.\n- **Protection.** A valid registry card shown with a photo ID is what protects a patient or caregiver from arrest under the medical law.\n\nA card does not allow smoking cannabis in a public place, and it does not stop a private employer from disciplining or firing an employee for marijuana use."
+  },
+  {
+   "type": "prose",
+   "heading": "Qualifying conditions",
+   "md": "The CRA lists these qualifying conditions, grouped here for easier reading:\n\n- Cancer, glaucoma, HIV/AIDS, hepatitis C and ALS\n- Crohn’s disease, colitis, inflammatory bowel disease and ulcerative colitis\n- Alzheimer’s agitation, Parkinson’s disease, Tourette’s Disease and autism\n- Nail patella, PTSD and OCD\n- Arthritis, rheumatoid arthritis, spinal cord injury, chronic pain and cerebral palsy\n\nA chronic or debilitating disease or medical condition also qualifies when it, or its treatment, produces cachexia or wasting syndrome, severe and chronic pain, severe nausea, seizures (including epilepsy) or severe and persistent muscle spasms (including multiple sclerosis).\n\nWhether your situation fits is a question for your physician. The current list is on the [CRA’s qualifying conditions page](https://www.michigan.gov/cra/faq/program-list/applicant-questions/what-medical-conditions-are-eligible)."
+  },
+  {
+   "type": "prose",
+   "heading": "Getting a physician certification",
+   "md": "Your certification must come from a physician licensed in Michigan: an MD, a DO or a physician licensed through the Expedited Medical Compact. The CRA’s application instructions call for a medical evaluation by an active Michigan physician within the last six months.\n\nThe law protects physicians who certify within a bona fide physician-patient relationship, after a full assessment of the patient’s medical history. Expect a real medical evaluation, not a form you complete on your own.\n\nIf a certifying physician later tells the program in writing that a patient no longer has the condition, the program lets the patient know that the card is no longer valid."
+  },
+  {
+   "type": "steps",
+   "heading": "How to apply, step by step",
+   "items": [
+    { "title": "Check that you qualify", "md": "You need Michigan residency and a qualifying condition. Proof of residency can be a Michigan driver’s license, a state ID, or a voter registration card plus proof of identity." },
+    { "title": "Get your certification", "md": "Book an evaluation with a Michigan-licensed physician, who completes the physician certification form." },
+    { "title": "Choose online or paper", "md": "No caregiver? Apply through the CRA’s online portal and pay by credit card or electronic check. Naming a caregiver? Use the paper application packet." },
+    { "title": "Pay the $40 fee", "md": "Online, you pay as you apply. By mail, send a $40 check or money order made out to “State of Michigan- MMMP”. There is no separate fee for a caregiver." },
+    { "title": "Send one complete application", "md": "The packet warns that white-out or changes on the application or the physician form lead to a denial, and the CRA asks for one complete application only." },
+    { "title": "Watch for your card", "md": "The state has 15 business days to approve or deny and 5 more to mail the card or the denial. Online applicants may receive a temporary card by email. If nothing arrives after five weeks, the CRA asks you to call 517-284-8599." }
+   ]
+  },
+  {
+   "type": "prose",
+   "heading": "Renewing your card",
+   "md": "A Michigan patient card is valid for two years. You can submit a renewal starting 90 days before it expires, with the same application and the same $40 fee. A caregiver’s card expires on the same date as the patient’s.\n\nAn application or a physician form does not count as a temporary card, so renew early enough that your card never lapses. Our article on [renewing a Michigan medical card](/blog/renew-medical-marijuana-card-michigan/) walks through it."
+  },
+  {
+   "type": "prose",
+   "heading": "Caregivers and patients under 18",
+   "md": "A registered caregiver assists a patient with the medical use of cannabis. To serve as one, a person must be at least 21, consent to a criminal background check and have no disqualifying convictions. Each patient may have only one caregiver, a caregiver may assist no more than five patients, and the caregiver receives a separate card for each patient.\n\nFor a patient under 18, the application needs certifications from two different physicians, and a parent or legal guardian who is 21 or older must serve as the minor’s caregiver. The minor packet also asks for a Declaration of Person Responsible, proof of parentage or guardianship, and proof of the parent’s or guardian’s Michigan residency."
+  },
+  {
+   "type": "prose",
+   "heading": "Visiting patients and cards from other states",
+   "md": "Michigan honors medical cards from other states. A visiting patient with a valid, unexpired card from their home state and a photo ID may buy at a licensed medical provisioning center, within Michigan’s medical purchase limits, and those purchases are taxed as medical sales.\n\nOnly Michigan residents can get a Michigan card. And no card is a permit to travel: the federal rule of April 2026 is aimed at licensed medical businesses and does not say that patients may carry medical marijuana across state lines. Michigan’s law does not protect cannabis taken out of the state either."
+  },
+  {
+   "type": "callout",
+   "tone": "info",
+   "heading": "Using your card at High Society",
+   "md": "Our store pages welcome medical patients 18 and older with a valid medical marijuana card. Bring your registry card and a valid photo ID to every visit: Michigan stores check both before a medical sale. Medical sales run through licensed provisioning centers, so call your store before your first medical visit to confirm what it offers patients. [Find your store](/dispensary-locations/)."
+  },
+  {
+   "type": "prose",
+   "heading": "Indiana and Illinois residents",
+   "md": "Many of our New Buffalo visitors drive in from Indiana and Illinois. Residents of either state cannot get a Michigan card, since the program is for Michigan residents only.\n\n- **Indiana** has no legal medical or adult-use marijuana as of October 2026, so there is no Indiana card to bring. Adults 21 and older can shop Michigan’s adult-use stores with a valid ID. Read our [Indiana guide](/cannabis-laws-by-state/indiana/).\n- **Illinois** runs its own medical program for Illinois residents, and Michigan honors valid out-of-state cards at licensed medical provisioning centers. Read our [Illinois guide](/cannabis-laws-by-state/illinois/).\n\nWhatever card you carry, cannabis bought in Michigan stays in Michigan."
+  },
+  {
+   "type": "faq",
+   "heading": "Medical card questions",
+   "items": [
+    { "q": "How much does a Michigan medical card cost?", "a": "The state application fee is $40, and a renewal costs the same. There is no separate fee for a caregiver." },
+    { "q": "How long does it take to get a card?", "a": "Up to 20 business days plus mail time. The state has 15 business days to decide and 5 more to mail the card or a denial." },
+    { "q": "Can I use my application as a temporary card?", "a": "No. An application or a physician form is not a temporary card. Online applicants may receive a temporary card from the state by email." },
+    { "q": "Can I get a Michigan card if I live in another state?", "a": "No. Only Michigan residents can get a Michigan card. Michigan does honor valid, unexpired cards from other states at licensed medical provisioning centers." },
+    { "q": "How often do I renew?", "a": "Every two years. You can submit your renewal starting 90 days before your card expires." },
+    { "q": "Can I smoke in public with a medical card?", "a": "No. The medical law does not allow smoking marijuana in any public place, and the Court of Appeals has held that a car parked in a lot open to the public counts." },
+    { "q": "Does a card protect my job?", "a": "No. A Michigan card does not stop a private employer from disciplining or firing an employee for marijuana use, though a court has held that such patients cannot be denied unemployment benefits for a failed test." }
+   ]
+  }
+ ],
+ "sources": [
+  { "label": "Michigan Cannabis Regulatory Agency: MMMP Patients & Caregivers", "url": "https://www.michigan.gov/cra/sections/mmp" },
+  { "label": "CRA MMMP FAQ: What medical conditions are eligible?", "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/what-medical-conditions-are-eligible" },
+  { "label": "CRA MMMP FAQ: How do I register as a patient (over age 18)?", "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/how-do-i-register-as-a-patient-over-age-18-with-the-michigan-medical-marijuana-program-mmmp" },
+  { "label": "CRA MMMP FAQ: How much is the application fee?", "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/how-much-is-the-application-fee" },
+  { "label": "CRA MMMP FAQ: Is there a separate fee for the caregiver?", "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/is-there-a-separate-fee-for-the-caregiver" },
+  { "label": "CRA MMMP FAQ: Do I have to be a resident of Michigan?", "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/do-i-have-to-be-a-resident-of-the-state-of-michigan-to-obtain-a-patient-registry-identification-car" },
+  { "label": "CRA MMMP FAQ: Who can certify a patient’s medical use of marijuana?", "url": "https://www.michigan.gov/cra/faq/program-list/physicians-questions/who-can-certify-a-patients-medical-use-of-marijuana" },
+  { "label": "CRA MMMP FAQ: Can I rescind a physician certification?", "url": "https://www.michigan.gov/cra/faq/program-list/physicians-questions/can-i-rescind-a-physician-certification-that-i-already-completed-for-a-patient" },
+  { "label": "CRA MMMP FAQ: How long does it take to receive a registry card?", "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/how-long-does-it-take-to-receive-a-registry-identification-card" },
+  { "label": "CRA MMMP FAQ: Can my application serve as a temporary registration card?", "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/can-my-application-and-physician-certification-serve-as-a-temporary-registration-card" },
+  { "label": "CRA MMMP FAQ: Should I go to a third-party business? Can my application serve as a temporary card?", "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/im-a-current-prospective-medical-marijuana-patient--should-i-go-to-a-third-party-business-to-get-re" },
+  { "label": "CRA MMMP FAQ: When does a patient registry card expire?", "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/when-does-a-patient-registry-identification-card-expire" },
+  { "label": "CRA MMMP FAQ: When do I renew my registry card?", "url": "https://www.michigan.gov/cra/faq/program-list/renewal-questions/when-do-i-renew-my-registry-identification-card" },
+  { "label": "CRA MMMP FAQ: How do I register a minor?", "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/how-do-i-register-a-minor-under-the-age-of-18-with-the-michigan-medical-marijuana-program-mmmp" },
+  { "label": "CRA MMMP FAQ: How do I become a caregiver?", "url": "https://www.michigan.gov/cra/faq/program-list/caregiver-questions/how-do-i-become-a-caregiver" },
+  { "label": "Michigan Legislature: MCL 333.26426, Michigan Medical Marihuana Act sec. 6 (caregiver limits)", "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-333-26426" },
+  { "label": "CRA: MMMP Application/Renewal Packet (PDF)", "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/mmmp-application/MMMP_Application_Pkt.pdf" },
+  { "label": "CRA: MMMP Minor Application/Renewal Packet (PDF)", "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/mmmp-application/mmmp-applicationMMP_MINOR_Application_Pkt.pdf" },
+  { "label": "CRA MMMP FAQ: How can I acquire medical marijuana from a provisioning center?", "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/how-can-i-acquire-medical-marijuana-or-medical-marijuana-infused-products" },
+  { "label": "CRA: Marihuana Rules, R 420.1 to R 420.1004 (PDF)", "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf" },
+  { "label": "CRA Advisory Bulletin: Visiting Qualifying Patients, Out of State Reciprocity (April 13, 2022)", "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/2MMFL-Advisory/Marihuana-Sale-or-Transfer---Visiting-Qualifying-Patients-Out-of-State.pdf" },
+  { "label": "CRA Technical Bulletin: Maximum THC Concentrations for Marijuana-Infused Products (April 24, 2025)", "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/5Technical/Marihuana-Infused-Products-and-Edible-Marihuana-Product---Maximum-THC-limits-revised-42425.pdf" },
+  { "label": "Michigan Department of Treasury: Revenue Administrative Bulletin 2023-25", "url": "https://www.michigan.gov/taxes/rep-legal/rab/2023-revenue-administrative-bulletins/revenue-administrative-bulletin-2023-25" },
+  { "label": "Michigan Judicial Institute: Controlled Substances Benchbook, sec. 8.3, Immunity Under the MMMA", "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Immunity_Under__4-rua.htm" },
+  { "label": "Michigan Judicial Institute: Controlled Substances Benchbook, sec. 8.7, Other Issues Under the MMMA", "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Issues_Arising_Under_the_MMMA.htm" },
+  { "label": "Michigan Judicial Institute: Controlled Substances Benchbook, sec. 8.14, Scope of the MRTMA", "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm" },
+  { "label": "Federal Register: final rule rescheduling FDA-approved and state-licensed medical marijuana (April 28, 2026)", "url": "https://www.federalregister.gov/documents/2026/04/28/2026-08176/schedules-of-controlled-substances-rescheduling-of-food-and-drug-administration-approved-products" },
+  { "label": "Illinois Department of Public Health: Medical Cannabis Patient Program", "url": "https://dph.illinois.gov/topics-services/prevention-wellness/medical-cannabis.html" },
+  { "label": "Indiana Code 2026, Title 35", "url": "https://iga.in.gov/ic/2026/Title_35.html" }
+ ],
+ "note": "This page is general information about Michigan law as of October 2026, not legal or medical advice. Rules change, and the CRA’s pages are the final word on the program. Questions about your health belong with your physician.",
+ "review": {
+  "claims": [
+   "program 2008, CRA runs registry and licenses: mi-med-program, mi-cra; adult use 2018: mi-au-age",
+   "residency, condition, physician: mi-med-residency, mi-med-conditions, mi-med-physician; 18+ on their own, minors with two certifications and a parent/guardian caregiver 21+: mi-med-ages",
+   "access before 21: mi-med-ages + mi-med-purchase (patients buy from licensed provisioning centers; adult-use stores sell only to 21+, R 420.505(1)(c))",
+   "tax: mi-tax-medical, mi-tax-retail; limits: mi-med-purchase; edible potency: mi-thc-limits; home grow: mi-med-possession; arrest protection: mi-med-arrest-protection",
+   "public use: mi-med-public; employment: mi-med-employment",
+   "qualifying conditions list (CRA wording 'Tourette's Disease', grouped differently from the CRA's order): mi-med-conditions",
+   "physician types, six-month evaluation, bona fide relationship, rescission: mi-med-physician",
+   "residency proof, online/paper, $40, payee, no caregiver fee, white-out warning, one application: mi-med-apply",
+   "15 + 5 business days, temporary card by email, 517-284-8599 after five weeks: mi-med-timing",
+   "two years, 90 days, caregiver same expiry, same fee: mi-med-validity; application is not a temporary card: mi-med-arrest-protection",
+   "caregiver 21+, background check, one card per patient: mi-med-caregiver; 1 caregiver per patient, 5 patients max (medium, stated as written): mi-med-caregiver-cap",
+   "visiting patients, limits, medical tax: mi-med-visiting; federal rule does not cover carrying across state lines (medium): us-medical-patients-caution; interstate illegal: us-interstate",
+   "Indiana: in-status; Illinois: il-status",
+   "High Society: hs-facts services.medical ('Medical patients 18+ with a valid medical card are also welcome.'); per-store medical licensing is OQ-medical-license, so the copy asks readers to call their store (docs/OPEN-DECISIONS.md item 5)"
+  ],
+  "gaps": "Replacing a lost card: no claim in facts/law-facts.json, so the brief's 'replacing a lost card' is not covered (the renewal and missing-card answers are). High Society publishes no help with applications and no certifying-provider list (structure map: omit), so the page names none.",
+  "health": "No health claims: the conditions are the law's list; no shop or deals link anywhere on the page (the store link goes to /dispensary-locations/). brief.riskLevel medical hides the floating ORDER NOW pair (core: data-risk on body).",
+  "factcheck": "Independent fact-check 2026-10-24 (docs/PAGES-FACTCHECK.md): public-use sentence narrowed to smoking (MCL 333.26427(b)(3)(B), mi-med-public); patient interstate-travel sentence no longer says 'remains illegal under federal law' (us-medical-patients-caution is medium: unresolved); added the CRA third-party-business FAQ (application is not a temporary card) and MCL 333.26426 (caregiver limits) to sources."
+ }
+}

@@ -1,0 +1,144 @@
+{
+ "path": "/dispensary-guides/",
+ "template": "hub",
+ "provenance": "new",
+ "sourceRefs": [
+  "structure map newPageBriefs /dispensary-guides/",
+  "site.json stores (the store guides band: decision D-nap)",
+  "facts/hs-facts.json services (idRules, adultUse, medical, payment, atm, ordering, curbside, inStorePickup), rewards.faq, F-nb; the New Buffalo service-area hub labels",
+  "facts/law-facts.json mi-au-age, mi-au-purchase-limit"
+ ],
+ "title": "Michigan Dispensary Guides for All 8 Stores",
+ "crumb": "Dispensary Guides",
+ "metaDescription": "Plan a visit to any of High Society's 8 Michigan dispensaries: hours, directions, what to bring, ordering ahead for pickup and each store's own FAQ.",
+ "h1": "Your Guide to Every High Society Dispensary",
+ "hero": {
+  "eyebrow": "Resources",
+  "lead": "Each of our eight Michigan stores has its own visitor guide: hours, directions, what to bring, how pickup works and that store’s FAQ. Pick your store below, or read the basics that hold at every location first.",
+  "image": "assets/pit-stop/img/scene-birch-run.jpg",
+  "imageAlt": "",
+  "ctas": [
+   { "text": "Select a Location", "href": "#dispenzaLocationPopup-open", "locator": true }
+  ]
+ },
+ "blocks": [
+  {
+   "type": "cards",
+   "variant": "store-guides",
+   "heading": "Pick your store",
+   "lead": "Every store is open Monday - Sunday, 9:00 AM - 9:00 PM. Open a store’s guide for directions, its pickup steps and its FAQ.",
+   "linkText": "Store guide",
+   "shopText": "Order ahead",
+   "sections": [
+    { "text": "First visit", "hash": "first-visit" },
+    { "text": "Pickup steps", "hash": "order-pickup" },
+    { "text": "FAQ", "hash": "faq" }
+   ],
+   "items": []
+  },
+  {
+   "type": "cards",
+   "heading": "What every store has in common",
+   "lead": "A few things hold at all eight locations, so a first visit anywhere goes smoothly.",
+   "columns": 4,
+   "items": [
+    {
+     "title": "Bring your ID",
+     "icon": "user",
+     "md": "Adult-use shopping is for 21 and older: bring a valid government-issued ID or passport and check in at the front desk. Registered medical patients bring their card too. 21+ only. Please consume responsibly."
+    },
+    {
+     "title": "Paying",
+     "icon": "tag",
+     "md": "Cash works at every store, and each store page lists an ATM in-store. Other payment options vary by store, so call ahead for details."
+    },
+    {
+     "title": "Order ahead",
+     "icon": "bag",
+     "md": "Shop in store, or order online and choose a pickup time for in-store or curbside pickup. Curbside customers get a text when the order is ready."
+    },
+    {
+     "title": "Join The Society",
+     "icon": "star",
+     "md": "Our loyalty program is free. Members earn points on qualifying purchases and redeem them in store or online. [See how it works](/loyalty/)."
+    }
+   ]
+  },
+  {
+   "type": "link-grid",
+   "heading": "Coming from Indiana, Chicago or Harbor Country?",
+   "lead": "Our New Buffalo store sits on US-12, minutes from I-94 Exit 1 and just over the Indiana line. These pages cover routes, parking and quick-stop tips. Whichever way you come, cannabis bought in Michigan stays in Michigan.",
+   "groups": [
+    {
+     "title": "New Buffalo area guides",
+     "links": [
+      { "text": "All New Buffalo service areas", "href": "/dispensary-locations/new-buffalo/service-areas/" },
+      { "text": "Michiana, IN / Long Beach, IN", "href": "/dispensary-locations/new-buffalo/service-areas/michiana-long-beach-in/" },
+      { "text": "I-94 Exit / US-12 (New Buffalo travel corridor)", "href": "/dispensary-locations/new-buffalo/service-areas/i-94-exit-new-buffalo/" },
+      { "text": "Union Pier, MI / Lakeside, MI / Three Oaks, MI", "href": "/dispensary-locations/new-buffalo/service-areas/union-pier-lakeside-three-oaks-mi/" }
+     ]
+    },
+    {
+     "title": "Law guides for visitors",
+     "links": [
+      { "text": "Indiana marijuana laws", "href": "/cannabis-laws-by-state/indiana/" },
+      { "text": "Illinois marijuana laws", "href": "/cannabis-laws-by-state/illinois/" },
+      { "text": "Michigan marijuana laws", "href": "/cannabis-laws-by-state/michigan/" }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "cards",
+   "heading": "Worth reading before a first visit",
+   "columns": 4,
+   "items": [
+    {
+     "title": "Getting a Medical Card",
+     "icon": "check",
+     "md": "Who qualifies for a Michigan card, how to apply and what changes once you are registered.",
+     "href": "/getting-a-medical-card/"
+    },
+    {
+     "title": "Michigan Marijuana Laws",
+     "icon": "pin",
+     "md": "How much you can buy and carry, where you can use cannabis and the rules for driving.",
+     "href": "/cannabis-laws-by-state/michigan/"
+    },
+    {
+     "title": "Patient Guide",
+     "icon": "leaf",
+     "md": "THC, CBD, terpenes and each product type explained, from flower to tinctures.",
+     "href": "/patient-guide/"
+    },
+    {
+     "title": "FAQ",
+     "icon": "spark",
+     "md": "Quick answers on ID, payment, pickup and The Society.",
+     "href": "/faq/"
+    }
+   ]
+  }
+ ],
+ "sources": [
+  { "label": "Michigan Judicial Institute: Controlled Substances Benchbook, sec. 8.14, Scope of the MRTMA", "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm" },
+  { "label": "Michigan Judicial Institute: Controlled Substances Benchbook, sec. 8.17, Other Sections of the MRTMA", "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Other_Sections_of_the_MRTMA.htm" },
+  { "label": "21 U.S.C. 844, penalties for simple possession", "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title21/html/USCODE-2024-title21-chap13-subchapI-partD-sec844.htm" }
+ ],
+ "sourcesNote": "Sources for the age and state-line lines above, as of October 2026.",
+ "review": {
+  "sources": "Added 2026-10-24 by the pages verifier (docs/VERIFY-PAGES.md): the page states two law points, 21+ for adult use (law-facts mi-au-age: benchbook sec. 8.14) and 'cannabis bought in Michigan stays in Michigan' (us-interstate: benchbook sec. 8.17, 21 U.S.C. 844), so it lists their sources as the law hub and the FAQ do; the URLs are the ones those pages already cite.",
+  "claims": [
+   "8 stores, hours Monday - Sunday 9:00 AM - 9:00 PM: site.json stores (F-stores, F-hours)",
+   "store guides contain hours, directions from landmarks, pickup steps and a FAQ: the store pages (stores lane) keep High Society's own sections",
+   "ID: hs-facts services.idRules ('Bring a valid government-issued ID or passport and check in with our security and front desk upon arrival.'), services.adultUse; law mi-au-age, mi-au-purchase-limit; 'Registered medical patients bring their card too' follows mi-med-purchase without promising medical sales per store (docs/OPEN-DECISIONS.md item 5); '21+ only. Please consume responsibly.' is High Society's own line",
+   "payment: docs/OPEN-DECISIONS.md item 4 rebuild default (new pages say only that cash works and options vary by store); 'ATM in-store' as each store page lists it (services.atm note)",
+   "pickup: services.ordering, services.curbside, services.inStorePickup",
+   "The Society: rewards.faq (free; points on qualifying purchases; redeem in-store or online)",
+   "New Buffalo: F-nb; area page labels are High Society's own (service-area hub); state line: services.travelWithCannabis"
+  ],
+  "yourStore": "The structure map's 'your-store' card (the store picked in the chooser; none chosen: hidden) needs the chosen store, which only the CMS knows when it serves the page ({{location_shop_url}}); the static build has no chosen store, so the section is omitted as the map's 'none chosen' case. The hero's 'Select a Location' (High Society's own label) opens the store chooser instead.",
+  "deepLinks": "The map asks the store cards to link #first-visit, #order-pickup and #faq on each store page. The stores lane has given every store page those three ids, so each card now links them ('sections': First visit, Pickup steps, FAQ, new UI labels; the hero lead's 'pickup steps' and 'FAQ' wording), besides the store page itself and its menu (pages verifier, 2026-10-24, docs/VERIFY-PAGES.md).",
+  "title": "Core's stub title was 66 characters; now 58 with the primary phrase first."
+ }
+}

@@ -1,0 +1,86 @@
+/* theme.css — layout tokens (the brief's edge spacing, the chrome every section fits under) and the ground themes.
+   Brand values are not retyped here: they point at tokens.css. */
+:root {
+  /* EDGE SPACING (brief, strict). Phones: 20px sides, clamp(24px, 5vh, 40px) top and bottom, plus the safe areas.
+     From 768px: clamp(24px, 5vw, 96px) sides, clamp(32px, 7vh, 88px) top and bottom. */
+  --pad-x: 20px;
+  --pad-y: clamp(24px, 5vh, 40px);
+  --pad-l: max(var(--pad-x), env(safe-area-inset-left, 0px));
+  --pad-r: max(var(--pad-x), env(safe-area-inset-right, 0px));
+  --pad-t: var(--pad-y);
+  --pad-b: var(--pad-y);
+  /* gaps inside a section are always smaller than the padding around it */
+  --gap: var(--s-2);
+  --gap-sm: var(--s-1);
+  --gap-lg: var(--s-3);
+  --tap: 44px;
+
+  /* CHROME: the sticky header (and the phone's bottom action bar) count against every section.
+     Phones and tablets: a 64px bar with the round trophy mark; from 1180px: the 84px bar that holds the horizontal
+     lockup at its 190px web minimum with its clear space (2 strokes = 6% of its width) above and below. */
+  --bar-h: 64px;
+  --dock-h: calc(64px + env(safe-area-inset-bottom, 0px));   /* the phone's ORDER NOW / CONTACT US bar */
+  --fab-h: 44px;                                             /* the desktop floating pair */
+  --fab-clear: 0px;                                          /* what the floating pair covers at the bottom (from 768px) */
+  --chrome-h: calc(var(--bar-h) + var(--dock-h));            /* not --chrome: that is the brand colour (tokens.css) */
+  --slide-h: calc(100svh - var(--chrome-h));
+  --slide-h-fallback: calc(100vh - var(--chrome-h));
+  --logo-w: 190px;
+}
+@media (min-width: 768px) {
+  :root {
+    --pad-x: clamp(24px, 5vw, 96px);
+    --pad-y: clamp(32px, 7vh, 88px);
+    /* the floating ORDER NOW / CONTACT US pair sits 16px from the bottom: content keeps 16px above it */
+    --pad-b: max(var(--pad-y), calc(var(--fab-h) + var(--s-2) * 2));
+    --gap: var(--s-3);
+    --gap-sm: var(--s-2);
+    --gap-lg: var(--s-4);
+    --dock-h: 0px;
+    --fab-clear: calc(var(--fab-h) + var(--s-2));
+  }
+}
+@media (min-width: 1180px) {
+  :root { --bar-h: 84px; }
+}
+
+/* ------------------------------------------------------------------ grounds
+   The brief's rhythm: red (hero), then dark (black / charcoal) and light (white / headlight / cream) in turn.
+   Every component reads these names, so one kit works on every ground. Contrast of each pair is the brand card's
+   measured value or computed from the hex values (WCAG 2.x). */
+.theme-red {
+  --bg: var(--red); --fg: var(--white); --fg-2: var(--white); --muted: var(--white);
+  --line: var(--w-24); --line-2: var(--w-40); --card: var(--dark-red); --card-fg: var(--white);
+  --em: var(--white);                     /* text on red is always white (5.68:1) */
+  --btn: var(--black); --on-btn: var(--white); --btn-hover: var(--charcoal); --btn-line: var(--black);
+  --ghost: var(--white); --ghost-line: var(--white); --ghost-hover-bg: var(--white); --ghost-hover-fg: var(--red);
+  --tag: var(--white); --on-tag: var(--red);
+  --focus: var(--white);
+  color-scheme: dark;
+}
+.theme-black, .theme-charcoal {
+  --bg: var(--black); --fg: var(--white); --fg-2: var(--chrome); --muted: var(--chrome);
+  --line: var(--w-14); --line-2: var(--w-24); --card: var(--charcoal); --card-fg: var(--white);
+  --em: var(--neon);                      /* small red words on dark grounds: Neon Red (5.8:1 on black, 5.0:1 on charcoal) */
+  --btn: var(--red); --on-btn: var(--white); --btn-hover: var(--white); --on-btn-hover: var(--black); --btn-line: var(--red);
+  --ghost: var(--white); --ghost-line: var(--w-55); --ghost-hover-bg: var(--white); --ghost-hover-fg: var(--black);
+  --tag: var(--red); --on-tag: var(--white);
+  --card-hover-line: var(--red);          /* the reskin's dark panels: the hairline turns red on hover */
+  --focus: var(--white);
+  color-scheme: dark;
+}
+.theme-black { --card: var(--ink-card); --fg-2: var(--ink-soft); }
+.theme-charcoal { --bg: var(--charcoal); --card: var(--black); }
+.theme-white, .theme-headlight, .theme-cream {
+  --bg: var(--white); --fg: var(--black); --fg-2: var(--black-800); --muted: var(--black-700);
+  --line: var(--k-14); --line-2: var(--k-24); --card: var(--white); --card-fg: var(--black);
+  --em: var(--red);                       /* red words on light grounds: 5.68:1 on white, 5.2:1 on headlight, 5.0:1 on cream */
+  --btn: var(--red); --on-btn: var(--white); --btn-hover: var(--black); --on-btn-hover: var(--white); --btn-line: var(--red);
+  --ghost: var(--black); --ghost-line: var(--k-24); --ghost-hover-bg: var(--black); --ghost-hover-fg: var(--white);
+  --tag: var(--red); --on-tag: var(--white);
+  --card-hover-line: var(--k-24);
+  --focus: var(--red);
+  color-scheme: light;
+}
+.theme-headlight { --bg: var(--headlight); }
+.theme-cream { --bg: var(--headlight); }   /* the reskin's "cream" band is Headlight #F3F4F6 */

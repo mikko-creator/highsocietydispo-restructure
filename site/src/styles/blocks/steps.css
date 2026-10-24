@@ -1,0 +1,9 @@
+/* blocks/steps.css — numbered steps (core) in v2's race-number box (the .secnum box: Changa One in a red outline). */
+.steps { counter-reset: step; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: var(--gap-lg); }
+.steps__item { counter-increment: step; display: flex; flex-direction: column; gap: var(--s-1); padding-top: var(--s-2); border-top: 2px solid var(--line-2); min-width: 0; }
+.steps__item::before { content: counter(step, decimal-leading-zero); align-self: flex-start; display: inline-grid; place-items: center; min-width: 40px; height: 30px; padding: 0 8px; border: 1.5px solid var(--em); border-radius: var(--radius-tag); font: 400 .9375rem/1 var(--font-display); letter-spacing: .06em; color: var(--em); }
+.steps__title { font: 800 var(--fs-h3)/1.15 var(--font-head); text-transform: uppercase; color: var(--fg); }
+.steps__text { color: var(--fg-2); }
+.steps--compact { grid-template-columns: minmax(0, 1fr); gap: var(--s-2); }
+.steps--compact .steps__item { flex-direction: row; align-items: flex-start; gap: var(--s-2); border-top-width: 1px; }
+.steps--compact .steps__item::before { flex: none; }

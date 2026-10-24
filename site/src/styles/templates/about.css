@@ -1,0 +1,18 @@
+/* templates/about.css — /about/ (pages lane). The shell's photo hero, the core split bands for Our Story and Mission
+   and Vision, then the values band in the v2 home's dark language: the ink ground, the trophy mark huge and faint, each
+   value under a race-number plate (v2's .secnum box: Changa One in a red outline, the red trophy after it), its name in
+   the display face, a red rule under the plate row. Theme names only. */
+.block--values { position: relative; overflow: clip; }
+.values__mark { position: absolute; right: -8%; top: -20%; height: 140%; aspect-ratio: 1; background: var(--mark-white) center / contain no-repeat; opacity: .04; pointer-events: none; }
+.values { position: relative; display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s-5) var(--s-4); counter-reset: none; }
+@media (min-width: 900px) { .values { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.values__item { display: flex; flex-direction: column; gap: var(--s-2); padding-top: var(--s-3); border-top: 2px solid var(--line-2); min-width: 0; }
+.values__num { display: inline-flex; align-items: center; gap: 10px; align-self: flex-start; }
+.values__num::after { content: ""; flex: none; width: 22px; height: 22px; background: var(--mark-red) center / contain no-repeat; }
+.values__plate { display: inline-grid; place-items: center; min-width: 34px; height: 26px; padding: 0 6px; border: 1.5px solid var(--em); border-radius: var(--radius-tag); font: 400 .8125rem/1 var(--font-display); letter-spacing: .06em; color: var(--em); }
+.values__title { font: 900 clamp(1.9rem, 1rem + 2.4vw, 3rem)/var(--lh-display) var(--font-display); text-transform: uppercase; letter-spacing: -.005em; color: var(--fg); overflow-wrap: anywhere; }
+.values__text { color: var(--fg-2); max-width: 46ch; }
+.block--values .block__ctas { position: relative; }
+
+/* the two split bands: the store scenes keep v2's crop focus (signs whole) */
+.page--about .split__media img { object-position: 60% 50%; }

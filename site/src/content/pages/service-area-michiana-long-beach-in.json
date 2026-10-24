@@ -1,0 +1,296 @@
+{
+ "path": "/dispensary-locations/new-buffalo/service-areas/michiana-long-beach-in/",
+ "template": "service-area",
+ "store": "new-buffalo",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/dispensary-locations/new-buffalo/service-areas/michiana-long-beach-in/"
+ ],
+ "title": "Dispensary Near Michiana & Long Beach, IN",
+ "metaDescription": "From Michiana or Long Beach, IN? Our New Buffalo dispensary is nearby. Directions, FAQs, fast in-store shopping. 21+ only.",
+ "h1": "Cannabis Near Michiana & Long Beach, IN (Just Over the State Line on US-12)",
+ "crumb": "Michiana & Long Beach, IN",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Locations",
+   "path": "/dispensary-locations/"
+  },
+  {
+   "name": "New Buffalo",
+   "path": "/dispensary-locations/new-buffalo/"
+  },
+  {
+   "name": "Areas We Serve",
+   "path": "/dispensary-locations/new-buffalo/service-areas/"
+  },
+  {
+   "name": "Michiana & Long Beach, IN"
+  }
+ ],
+ "hero": {
+  "eyebrow": "High Society New Buffalo",
+  "image": "assets/pit-stop/img/scene-new-buffalo.jpg",
+  "imageAlt": "",
+  "lead": "Quick drive into New Buffalo with easy access off US-12, ideal for Lake Michigan weekends and Michigan day trips.",
+  "ctas": [
+   {
+    "text": "ORDER NOW",
+    "href": "/shop/new-buffalo/"
+   },
+   {
+    "text": "Get Directions",
+    "href": "https://maps.app.goo.gl/8oANXpmVzFSHBqru8",
+    "style": "ghost"
+   }
+  ],
+  "status": {
+   "open": "Open - Closes at 9:00 PM",
+   "closed": "Closed - Opens at 9:00 AM"
+  },
+  "mapsUrl": "https://maps.app.goo.gl/8oANXpmVzFSHBqru8"
+ },
+ "blocks": [
+  {
+   "type": "media",
+   "id": "photos",
+   "ground": "white",
+   "label": "Photos",
+   "images": [
+    {
+     "image": "assets/in-pages/Michiana_gallery_1.webp",
+     "alt": "High Society Cannabis storefront on the corner of its parking lot"
+    },
+    {
+     "image": "assets/in-pages/Michiana_gallery_2.webp",
+     "alt": "The High Society Cannabis sign over the store entrance, accessible parking in front"
+    },
+    {
+     "image": "assets/in-pages/Michiana_gallery_3.webp",
+     "alt": "The High Society sales floor, with checkered trim above the product shelves"
+    }
+   ]
+  },
+  {
+   "type": "store-details",
+   "id": "glance",
+   "ground": "white",
+   "heading": "At A Glance",
+   "store": "new-buffalo",
+   "name": "High Society Weed Dispensary",
+   "facts": [
+    "address",
+    "phone",
+    "hours",
+    {
+     "icon": "pin",
+     "text": "Parking: On-site lot (easy in/out)"
+    }
+   ],
+   "addressText": "19189 US-12, New Buffalo, MI 49117",
+   "phoneLabel": "Phone:",
+   "hoursText": "Mon - Sun: 9:00 AM - 9:00 PM",
+   "mapsUrl": "https://maps.app.goo.gl/8oANXpmVzFSHBqru8",
+   "ctas": [
+    {
+     "text": "Get Directions",
+     "href": "maps"
+    },
+    {
+     "text": "ORDER NOW",
+     "href": "shop",
+     "style": "ghost"
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "id": "directions",
+   "ground": "headlight",
+   "heading": "Directions & Parking",
+   "items": [
+    {
+     "title": "Getting Here from Michiana, IN (via US-12 E → New Buffalo)",
+     "md": "1. Head east on US-12 toward New Buffalo / Michigan.\n2. Cross the state line and stay on US-12 through the New Buffalo commercial corridor.\n3. Continue to 19189 US-12, New Buffalo, MI 49117 (High Society is right on US-12).\n\n[Get Directions](https://maps.app.goo.gl/8oANXpmVzFSHBqru8)"
+    },
+    {
+     "title": "Getting Here from Long Beach, IN (via US-12 E / Dunes Hwy → New Buffalo)",
+     "md": "1. Take US-12 (Dunes Hwy) east toward Michigan City, then continue toward New Buffalo / Michigan.\n2. After crossing into Michigan, remain on US-12 to 19189 US-12, New Buffalo, MI 49117.\n\n[Get Directions](https://maps.app.goo.gl/8oANXpmVzFSHBqru8)"
+    },
+    {
+     "title": "Parking",
+     "md": "**Parking Notes:** On-site parking makes this a simple stop-and-go. Peak summer Fridays/Saturdays can get busier on US-12, so arriving earlier in the day is usually fastest."
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "id": "fast",
+   "ground": "white",
+   "heading": "Fast Pickup, Friendly Team",
+   "md": "Walk in, get checked in, and head to the counter. Most visits take under 10 minutes. Our team can point you to popular categories and answer questions. We accept cash and debit; ATMs are available on site. The store and parking are accessible."
+  },
+  {
+   "type": "cards",
+   "id": "buy",
+   "ground": "black",
+   "columns": 5,
+   "heading": "What People Buy Here",
+   "items": [
+    {
+     "title": "Flower",
+     "md": "Everyday value to top-shelf",
+     "icon": "leaf",
+     "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=flower"
+    },
+    {
+     "title": "Pre-rolls",
+     "md": "Singles & multipacks for quick stops",
+     "icon": "spark",
+     "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=pre-rolls"
+    },
+    {
+     "title": "Vapes",
+     "md": "Compact options for travel days",
+     "icon": "wave",
+     "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=vaporizers"
+    },
+    {
+     "title": "Edibles",
+     "md": "Gummies, chocolates, and more",
+     "icon": "stars",
+     "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=edibles"
+    },
+    {
+     "title": "Gear",
+     "md": "Papers, lighters, grinders",
+     "icon": "bag",
+     "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=accessories"
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "id": "trip",
+   "ground": "headlight",
+   "heading": "For Indiana Lake Trips",
+   "style": "check",
+   "items": [
+    "A “just over the border” stop when you’re headed toward New Buffalo / Harbor Country",
+    "Easy to pair with beach days and weekend rentals",
+    "Fast pickup-friendly: order ahead, grab, and get back on the road"
+   ]
+  },
+  {
+   "type": "callout",
+   "id": "law",
+   "ground": "headlight",
+   "tone": "legal",
+   "heading": "Crossing state lines",
+   "md": "Heading home? Enjoy responsibly in Michigan and don’t travel across state lines with cannabis. Read our [Indiana law guide](/cannabis-laws-by-state/indiana/) before you go."
+  },
+  {
+   "type": "reviews",
+   "id": "reviews",
+   "heading": "Reviews",
+   "lead": "What customers say about High Society New Buffalo.",
+   "items": [
+    {
+     "text": "Very cool establishment with friendly and helpful budtenders, and a super cute receptionist that always greets me with a smile! Great deals too! Definitely worth stopping.",
+     "author": "CJ 718"
+    },
+    {
+     "text": "Very welcoming staff, and all around vibe of the place, the layout of the store is very nice and spacious, and an amazing display all around. Very clean aswell! Mae was amazing, very polite and patient! helped me find what I was looking for aswell as being informative! 10/10 atmosphere, experience, and customer service! Will defiantly be coming back!!! Thank you!",
+     "author": "Kyle Mayer"
+    },
+    {
+     "text": "Amazing products. Great staff. Will stop by again.",
+     "author": "Heather Benedict"
+    },
+    {
+     "text": "My first time going there was today. I must say I was impressed. Super nice receptionist. Great prices. Awesome deals.",
+     "author": "Shea Lowe"
+    },
+    {
+     "text": "Great prices and selection. Bud tender was knowledgeable and super friendly. Definitely coming back.",
+     "author": "Stacey"
+    }
+   ]
+  },
+  {
+   "type": "faq",
+   "id": "faq",
+   "ground": "white",
+   "heading": "FAQ",
+   "items": [
+    {
+     "q": "Do you have parking?",
+     "a": "Yes — on-site lot for easy in/out."
+    },
+    {
+     "q": "What ID do I need?",
+     "a": "Valid government-issued photo ID; 21+ only."
+    },
+    {
+     "q": "Do you take cards?",
+     "a": "Debit is commonly accepted at dispensaries; confirm at checkout or call ahead."
+    },
+    {
+     "q": "How long does pickup take?",
+     "a": "If you order ahead, most visits are quick — plan ~10 minutes"
+    },
+    {
+     "q": "Holiday hours?",
+     "a": "We post updates on this page and on our Google listing (you can call to be sure)."
+    }
+   ]
+  },
+  {
+   "type": "store-details",
+   "id": "store",
+   "ground": "headlight",
+   "store": "new-buffalo",
+   "name": "High Society Cannabis - New Buffalo",
+   "facts": [
+    "address",
+    "hours",
+    "phone"
+   ],
+   "addressText": "19189 US-12, New Buffalo, MI 49117",
+   "hoursText": "Mon - Sun: 9:00 AM - 9:00 PM",
+   "mapsUrl": "https://maps.app.goo.gl/kq382F61vzmYFNYU9",
+   "ctas": [
+    {
+     "text": "Get Directions",
+     "href": "maps"
+    },
+    {
+     "text": "View Location",
+     "href": "location",
+     "style": "ghost"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen-other.mjs",
+  "fixes": [
+   "h1 joined from its two v1 lines",
+   "the second identical At A Glance card and the repeated tiles are declared duplicates (rendered once)",
+   "empty CMS slots not rendered",
+   "h1: the missing closing parenthesis added (structure map)",
+   "title: v1's \" | 21+\" tail dropped so the title with the suffix fits 60"
+  ],
+  "newCopy": [
+   "hero eyebrow",
+   "the step title \"Parking\" (the parking notes are High Society's)",
+   "reviews lead",
+   "law pointer callout",
+   "the gallery photos' alt text (v1's alts were the file names; each describes only what the photo shows)"
+  ]
+ }
+}

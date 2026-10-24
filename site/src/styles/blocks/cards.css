@@ -1,0 +1,21 @@
+/* blocks/cards.css — the cards block (core): v2's card kit (.card, .card--lift, .media, .cover-link) in a grid of
+   2 / 3 / 4 columns (5: compact icon tiles), fewer as the screen narrows; the title in Changa 800, the red arrow of a
+   linked card, the icon in a red plate. */
+.cards { display: grid; grid-template-columns: repeat(var(--cards-cols, 3), minmax(0, 1fr)); gap: var(--gap); }
+.cards--2 { --cards-cols: 2; }
+.cards--3 { --cards-cols: 3; }
+.cards--4 { --cards-cols: 4; }
+.cards--5 { --cards-cols: 5; }
+@media (max-width: 1023.98px) { .cards--3, .cards--4 { --cards-cols: 2; } .cards--5 { --cards-cols: 3; } }
+@media (max-width: 639.98px) { .cards--2, .cards--3, .cards--4 { --cards-cols: 1; } .cards--5 { --cards-cols: 2; } }
+.cards__item { display: flex; min-width: 0; }
+.cards__card { display: flex; flex-direction: column; width: 100%; }
+.cards__media { aspect-ratio: 16 / 10; }
+.cards__body { position: relative; flex: 1 1 auto; display: flex; flex-direction: column; align-items: flex-start; gap: var(--s-1); padding: var(--s-3); min-width: 0; }
+.cards__title { font: 800 var(--fs-h3)/1.1 var(--font-head); text-transform: uppercase; color: var(--card-fg, var(--fg)); overflow-wrap: anywhere; }
+.cards__text { color: var(--fg-2); }
+.cards__icon { width: 52px; height: 52px; display: grid; place-items: center; border-radius: var(--radius); background: var(--red); color: var(--white); }
+.cards__go { margin-top: auto; align-self: flex-end; color: var(--em); transition: transform var(--dur) var(--ease); }
+.card--lift:hover .cards__go { transform: translateX(4px); }
+.cards--5 .cards__body { padding: var(--s-3) var(--s-2); gap: var(--s-2); }
+.cards--5 .cards__title { font-size: clamp(1rem, .9rem + .5vw, 1.25rem); }

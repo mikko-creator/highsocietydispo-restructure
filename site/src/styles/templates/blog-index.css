@@ -1,0 +1,61 @@
+/* templates/blog-index.css — the blog home and the category pages (the editorial lane; src/templates/blog-index.mjs).
+   The hero is the shell's ink band with a cover at its right on wide screens (the category's ground and pattern, the
+   article count on the race plate); the featured card sits on white; the category chips (with counts, the current
+   one red) open the listing band on headlight, then the grid and the pager; the blog home's own blocks close. */
+
+/* ------------------------------------------------------------------ the hero */
+.blog-hero .page-hero__inner.blog-hero__inner { display: grid; grid-template-columns: minmax(0, 1fr); align-items: end; gap: var(--s-4); }
+.blog-hero__copy { display: flex; flex-direction: column; align-items: flex-start; gap: var(--s-2); min-width: 0; }
+.blog-hero__title { max-width: 16ch; }
+.blog-hero__lead { max-width: 62ch; }
+.blog-hero__lead a { color: var(--fg); font-weight: 700; text-decoration: underline; text-decoration-color: var(--red); text-decoration-thickness: 2px; text-underline-offset: .22em; }
+.blog-hero__lead a:hover { color: var(--em); }
+.blog-hero__panel { display: none; }
+@media (min-width: 1024px) {
+  .blog-hero .page-hero__inner.blog-hero__inner { grid-template-columns: minmax(0, 1fr) clamp(220px, 22vw, 300px); column-gap: clamp(40px, 5vw, 88px); }
+  .blog-hero__panel { display: block; }
+  .blog-hero__panel .cover { aspect-ratio: 4 / 5; }
+}
+
+/* ------------------------------------------------------------------ the category chips */
+.catchips { min-width: 0; }
+.catchips__list { position: relative; display: flex; flex-wrap: wrap; gap: 6px; }   /* positioned: the hidden count words stay inside the row that scrolls */
+.catchips__list > li { display: flex; }
+.catchip { position: relative; display: inline-flex; align-items: center; gap: 8px; min-height: var(--tap); padding: 0 4px 0 12px; border: 1.5px solid var(--line-2); border-radius: 999px; background: var(--white); color: var(--black); font: 700 .72rem/1 var(--font-head); letter-spacing: .05em; text-transform: uppercase; white-space: nowrap; transition: border-color var(--dur) var(--ease), background-color var(--dur) var(--ease), color var(--dur) var(--ease); }
+.catchip--empty { padding-right: 12px; }
+.catchip__n { min-width: 26px; height: 26px; display: inline-grid; place-items: center; padding: 0 8px; border-radius: 999px; background: var(--headlight); color: var(--black); font: 400 .8125rem/1 var(--font-display); letter-spacing: .04em; font-variant-numeric: tabular-nums; }
+.catchip:hover { border-color: var(--black); }
+.catchip[aria-current="page"] { background: var(--red); border-color: var(--red); color: var(--white); }
+.catchip[aria-current="page"] .catchip__n { background: var(--white); color: var(--red); }
+/* phones: one row that swipes (bleeds to the screen's edges; room above and below for the focus ring) */
+@media (max-width: 767.98px) {
+  .catchips { margin-inline: calc(var(--pad-l) * -1) calc(var(--pad-r) * -1); }
+  .catchips__list { flex-wrap: nowrap; overflow-x: auto; padding: 6px var(--pad-r) 8px var(--pad-l); scroll-padding-inline: var(--pad-l) var(--pad-r); scrollbar-width: none; -webkit-mask-image: linear-gradient(90deg, var(--black) calc(100% - 28px), transparent); mask-image: linear-gradient(90deg, var(--black) calc(100% - 28px), transparent); }
+  .catchips__list::-webkit-scrollbar { display: none; }
+  /* a chip with keyboard focus is never under the fade (pages/blog-index.js scrolls it into view) */
+  .catchips__list:has(.catchip:focus-visible) { -webkit-mask-image: none; mask-image: none; }
+  .catchips__list > li { flex: none; }
+  .catchips__list > li:last-child { padding-right: 16px; }
+}
+
+/* ------------------------------------------------------------------ the listing band */
+.posts-band--grid .block__inner { gap: var(--s-4); }
+.posts-band--grid .block__head { margin-top: var(--s-1); }
+
+/* ------------------------------------------------------------------ the pager */
+.pager { margin-top: var(--s-1); }
+.pager__list { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; }
+.pager__item { display: flex; }
+.pager__n { min-width: var(--tap); height: var(--tap); display: inline-grid; place-items: center; padding: 0 10px; border: 1.5px solid var(--line-2); border-radius: var(--radius); background: var(--white); color: var(--black); font: 400 1rem/1 var(--font-display); font-variant-numeric: tabular-nums; transition: border-color var(--dur) var(--ease); }
+a.pager__n:hover { border-color: var(--black); }
+.pager__n[aria-current="page"] { background: var(--black); border-color: var(--black); color: var(--white); }
+.pager__gap { min-width: 20px; text-align: center; color: var(--muted); font: 400 1rem/1 var(--font-display); }
+@media (min-width: 640px) { .pager__gap--narrow { display: none; } }
+.pager__step { display: inline-flex; align-items: center; gap: 8px; min-height: var(--tap); padding: 0 16px; border: 1.5px solid var(--line-2); border-radius: var(--radius); background: var(--white); color: var(--black); font: 700 var(--fs-btn)/1 var(--font-display); letter-spacing: var(--ls-btn); text-transform: uppercase; transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease), border-color var(--dur) var(--ease); }
+.pager__step:hover { background: var(--black); border-color: var(--black); color: var(--white); }
+@media (max-width: 639.98px) {
+  .pager__list { gap: 6px; }
+  .pager__item--wide, .pager__gap--wide { display: none; }
+  .pager__step { width: var(--tap); padding: 0; justify-content: center; }
+  .pager__step span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}

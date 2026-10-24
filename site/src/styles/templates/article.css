@@ -1,0 +1,150 @@
+/* templates/article.css — one article (the editorial lane; src/templates/article.mjs).
+   The hero: the shell's ink band, the copy at the left and the typographic cover at the right on wide screens (below
+   the byline on phones). The reading area: white; a contents column that stays in view on wide screens (a folding box
+   on phones), the reading column at about 68 characters: v2's type (Changa heads, Work Sans text), race-numbered
+   section heads like v2's, the trophy bullets, the black-headed tables, quotes and callouts; key takeaways on a pit board
+   (an ink panel with the checkered strip), the recipe card, the FAQ (v2's accordion), the sources, the 21+ note.
+   Colours: theme names and tokens only. */
+
+/* ------------------------------------------------------------------ the hero */
+.article__hero .page-hero__inner.article__heroin { display: grid; grid-template-columns: minmax(0, 1fr); align-items: end; gap: var(--s-3); }
+.article__lede { display: flex; flex-direction: column; align-items: flex-start; gap: var(--s-2); min-width: 0; }
+.article__title { font-size: clamp(2rem, 1rem + 3vw, 3.7rem); max-width: 22ch; }
+.article__kicker { display: flex; flex-wrap: wrap; align-items: center; gap: 0 var(--s-3); margin-bottom: calc(var(--s-1) * -1); }
+.article__chip { display: inline-flex; align-items: center; min-height: var(--tap); }
+.article__chip .tag { transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease); }
+.article__chip:hover .tag { background: var(--white); color: var(--red); }
+.article__jump { display: inline-flex; align-items: center; gap: 6px; min-height: var(--tap); font: 700 .8125rem/1 var(--font-head); letter-spacing: .1em; text-transform: uppercase; color: var(--fg); text-decoration: underline 2px var(--red); text-underline-offset: .4em; }
+.article__jump:hover { color: var(--em); }
+.article__dek { font: 500 var(--fs-subhead)/1.45 var(--font-head); color: var(--fg-2); max-width: 62ch; }
+.article__byline { display: flex; flex-wrap: wrap; align-items: center; row-gap: 6px; font: 600 .78rem/1.3 var(--font-head); letter-spacing: .08em; text-transform: uppercase; color: var(--fg-2); }
+.article__byline span { display: inline-flex; align-items: center; gap: 8px; }
+.article__facts > span + span::before, .article__by + .article__facts::before { content: ""; flex: none; width: 5px; height: 5px; margin: 0 .9em 0 .8em; border-radius: 50%; background: var(--em); }
+/* phones: the byline on one line, the date and read time on the next (no separator left dangling at a line start) */
+@media (max-width: 639.98px) {
+  .article__byline { flex-direction: column; align-items: flex-start; }
+  .article__by + .article__facts::before { display: none; }
+  .article__hero .crumbs__item:last-child { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+.article__avatar { flex: none; width: 22px; height: 22px; background: var(--mark-red) center / contain no-repeat; }
+.article__read .icon { color: var(--em); }
+/* the last crumb is the title again: one line, cut with an ellipsis (the BreadcrumbList keeps it whole) */
+.article__hero .crumbs__item:last-child { min-width: 0; max-width: 100%; }
+.article__hero .crumbs__item:last-child > span { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: min(40ch, 78vw); }
+.article__cover .cover { aspect-ratio: 16 / 7; }
+@media (min-width: 1024px) {
+  .article__hero .page-hero__inner.article__heroin { grid-template-columns: minmax(0, 1fr) clamp(240px, 24vw, 340px); column-gap: clamp(40px, 5vw, 88px); }
+  .article__cover .cover { aspect-ratio: 4 / 5; }
+}
+
+/* ------------------------------------------------------------------ the reading area */
+.article__wrap { background: var(--bg); color: var(--fg); }
+.article__layout { max-width: calc(var(--container) + var(--pad-l) + var(--pad-r)); margin-inline: auto; padding: clamp(28px, 4vw, 56px) var(--pad-r) clamp(56px, 7vw, 104px) var(--pad-l); display: flex; flex-direction: column; gap: var(--s-4); }
+.article__main { display: flex; flex-direction: column; gap: clamp(40px, 5vw, 56px); width: 100%; max-width: 46rem; margin-inline: auto; min-width: 0; }
+.article__toc { width: 100%; max-width: 46rem; margin-inline: auto; }
+@media (min-width: 1100px) {
+  .article__layout { display: grid; grid-template-columns: 15.5rem minmax(0, 46rem); justify-content: center; column-gap: clamp(48px, 5vw, 96px); align-items: start; }
+  .article__layout--notoc { grid-template-columns: minmax(0, 46rem); }
+  .article__main { margin: 0; }
+  /* the column scrolls (overflow clips both ways): 8px of padding, taken back by the margin, keeps a focused link's
+     ring (3px at offset 3px, the links start 2px left of the list) inside it */
+  .article__toc { position: sticky; top: calc(var(--bar-h) + var(--s-3)); max-height: calc(100svh - var(--bar-h) - var(--s-5)); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; width: auto; margin: -8px -8px 0; padding: 8px 8px var(--s-2); }
+}
+
+/* ------------------------------------------------------------------ the contents */
+.toc__box { border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--headlight); }
+.toc__sum { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 52px; padding: 0 14px 0 20px; cursor: pointer; border-radius: var(--radius-lg); }
+.toc__sum::-webkit-details-marker { display: none; }
+.toc__title { font: 700 .78rem/1.2 var(--font-display); letter-spacing: .2em; text-transform: uppercase; color: var(--em); }
+.toc__icon { display: grid; place-items: center; width: 32px; height: 32px; color: var(--fg); transition: transform var(--dur) var(--ease); }
+.toc__box[open] .toc__icon { transform: rotate(180deg); }
+.toc__list { counter-reset: toc; padding: 0 10px 12px; }
+.toc__item { counter-increment: toc; }
+.toc__link { display: flex; align-items: baseline; gap: 12px; min-height: var(--tap); padding: 11px 10px; border-radius: var(--radius); font: 600 .9375rem/1.35 var(--font-head); color: var(--fg); transition: color var(--dur) var(--ease), background-color var(--dur) var(--ease); }
+.toc__link::before { content: counter(toc, decimal-leading-zero); flex: none; min-width: 1.7em; font: 400 .8125rem/1 var(--font-display); letter-spacing: .04em; color: var(--em); }
+.toc__item--extra { counter-increment: none; }
+.toc__item--extra .toc__link::before { content: ""; align-self: center; min-width: 0; width: 12px; height: 2px; margin-right: calc(1.7em - 12px); background: var(--red); }
+.toc__link:hover { color: var(--em); }
+.toc__link[aria-current="true"] { color: var(--em); }
+.toc__progress { display: none; }
+@media (min-width: 1100px) {
+  .toc__box { border: 0; background: none; }
+  .toc__sum { min-height: 0; padding: 0 0 12px; cursor: default; }
+  .toc__icon { display: none; }
+  .toc__list { padding: 0; border-left: 2px solid var(--line); }
+  .toc__link { min-height: 0; padding: 9px 8px 9px 14px; margin-left: -2px; border-left: 2px solid transparent; border-radius: 0; font-size: .875rem; }
+  .toc__link[aria-current="true"] { border-left-color: var(--red); color: var(--fg); background: linear-gradient(90deg, var(--headlight), transparent); }
+  .toc__progress { display: block; height: 3px; margin-top: var(--s-3); border-radius: 2px; background: var(--line); overflow: hidden; }
+  .toc__bar { display: block; height: 100%; background: var(--red); transform-origin: 0 50%; transform: scaleX(var(--read, 0)); }
+}
+
+/* ------------------------------------------------------------------ key takeaways: a pit board */
+.article__takeaways { position: relative; isolation: isolate; overflow: hidden; padding: calc(12px + var(--s-3)) clamp(20px, 3vw, 36px) clamp(24px, 3vw, 36px); border-radius: var(--radius-lg); background: var(--bg); color: var(--fg); }
+.article__takeaways::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 12px; background: var(--checker) repeat-x left center / auto 100%; }
+.article__takeaways::after { content: ""; position: absolute; z-index: -1; right: -60px; bottom: -70px; width: 260px; aspect-ratio: 1; background: var(--mark-white) center / contain no-repeat; opacity: .07; }
+.article__boxtitle { margin-bottom: var(--s-2); font: 700 .78rem/1.2 var(--font-display); letter-spacing: .2em; text-transform: uppercase; color: var(--em); }
+.takeaways { display: grid; gap: 14px; }
+.takeaways > li { display: flex; align-items: flex-start; gap: 12px; }
+.takeaways__icon { flex: none; margin-top: .2em; color: var(--em); }
+.takeaways__text { font: 500 clamp(1rem, .96rem + .2vw, 1.0625rem)/1.55 var(--font-body); color: var(--fg); }
+.takeaways__text strong { font-weight: 700; }
+
+/* ------------------------------------------------------------------ the body: reading type */
+.article__body { counter-reset: ah2; max-width: 68ch; font-size: clamp(1.0625rem, 1rem + .2vw, 1.1875rem); line-height: 1.72; color: var(--fg-2); }
+.article__body > * + * { margin-top: 1.15em; }
+.article__body > p:first-child { font-size: 1.12em; line-height: 1.62; color: var(--fg); }
+.article__body h2 { counter-increment: ah2; margin-top: 2.3em; font: 800 clamp(1.55rem, 1.1rem + 1.3vw, 2.15rem)/1.12 var(--font-head); letter-spacing: -.005em; color: var(--fg); text-wrap: balance; scroll-margin-top: calc(var(--bar-h) + var(--s-3)); }
+.article__body h2::before { content: counter(ah2, decimal-leading-zero); display: flex; align-items: center; justify-content: center; width: fit-content; min-width: 38px; height: 28px; margin-bottom: 14px; padding: 0 6px; border: 1.5px solid var(--em); border-radius: var(--radius-tag); font: 400 .875rem/1 var(--font-display); letter-spacing: .06em; color: var(--em); }
+.article__body h3 { margin-top: 1.8em; font: 700 clamp(1.2rem, 1.05rem + .5vw, 1.4rem)/1.25 var(--font-head); color: var(--fg); scroll-margin-top: calc(var(--bar-h) + var(--s-3)); }
+.article__body h2 + *, .article__body h3 + * { margin-top: .6em; }
+.article__body li + li { margin-top: .5em; }
+.article__body ul > li::before { top: .42em; }
+.article__body .md-table { margin-block: 1.6em; width: 100%; }
+.article__body .md-table table { font-size: .9375rem; }
+.article__body .md-table th { white-space: normal; min-width: 7em; }
+.article__body .md-table tbody tr:nth-child(even) td { background: var(--headlight); }
+.article__body blockquote { margin-block: 1.6em; padding: .3em 0 .3em 1.2em; border-left: 4px solid var(--red); font: 600 1.16em/1.5 var(--font-head); color: var(--fg); }
+.article__body .callout { display: block; margin-block: 1.6em; padding: 18px 22px; border: 0; border-left: 4px solid var(--red); border-radius: var(--radius); background: var(--headlight); color: var(--fg-2); }
+.article__body .callout--warn { border-left-color: var(--clay); }
+.article__body .callout--legal { border-left-color: var(--black); }
+.article__body .callout p + p { margin-top: .6em; }
+
+/* ------------------------------------------------------------------ the recipe card */
+.recipe { overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--white); scroll-margin-top: calc(var(--bar-h) + var(--s-3)); }
+.recipe__head { position: relative; isolation: isolate; overflow: hidden; display: flex; flex-direction: column; gap: var(--s-2); padding: calc(12px + var(--s-3)) clamp(20px, 3vw, 36px) var(--s-3); background: var(--bg); color: var(--fg); }
+.recipe__head::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 12px; background: var(--checker) repeat-x left center / auto 100%; }
+.recipe__head::after { content: ""; position: absolute; z-index: -1; right: -40px; bottom: -60px; width: 200px; aspect-ratio: 1; background: var(--mark-white) center / contain no-repeat; opacity: .08; }
+.recipe__title { font: 900 clamp(1.8rem, 1.2rem + 1.8vw, 2.6rem)/1 var(--font-display); text-transform: uppercase; letter-spacing: -.005em; color: var(--fg); }
+.recipe__facts { display: flex; flex-wrap: wrap; gap: 12px 36px; }
+.recipe__fact dt { display: flex; align-items: center; gap: 6px; font: 700 .72rem/1.2 var(--font-head); letter-spacing: .14em; text-transform: uppercase; color: var(--em); }
+.recipe__fact dd { margin-top: 4px; font: 400 1.15rem/1.2 var(--font-display); color: var(--fg); }
+.recipe__body { display: grid; gap: var(--s-4); padding: clamp(20px, 3vw, 36px); }
+.recipe__sub { margin-bottom: 10px; font: 800 1.1rem/1.2 var(--font-head); letter-spacing: .04em; text-transform: uppercase; color: var(--fg); }
+.recipe__ing > li { position: relative; padding: 10px 0 10px 32px; border-bottom: 1px solid var(--line); color: var(--fg-2); line-height: 1.5; }
+.recipe__ing > li::before { content: ""; position: absolute; left: 0; top: 13px; width: 16px; height: 16px; border: 2px solid var(--red); border-radius: 4px; }
+.recipe__steps { counter-reset: rs; display: grid; gap: 18px; }
+.recipe__steps > li { counter-increment: rs; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 14px; align-items: start; }
+.recipe__steps > li::before { content: counter(rs, decimal-leading-zero); display: grid; place-items: center; height: 32px; border: 1.5px solid var(--red); border-radius: var(--radius-tag); font: 400 .9375rem/1 var(--font-display); letter-spacing: .04em; color: var(--red); }
+.recipe__steps .md { max-width: none; }
+.recipe__note { margin-top: 0; }
+@media (max-width: 639.98px) { .recipe__note { padding: 14px 16px; gap: 12px; } .recipe__note .callout__icon { width: 34px; height: 34px; } }
+
+/* ------------------------------------------------------------------ FAQ, sources, the 21+ note */
+.article__sectitle { margin-bottom: var(--s-3); font: 800 clamp(1.5rem, 1.1rem + 1.2vw, 2.05rem)/1.12 var(--font-head); letter-spacing: -.005em; color: var(--fg); }
+.article__sectitle--sm { margin-bottom: var(--s-2); font: 700 .78rem/1.2 var(--font-display); letter-spacing: .2em; text-transform: uppercase; color: var(--em); }
+.article__faq { scroll-margin-top: calc(var(--bar-h) + var(--s-3)); }
+.article__faq .faq { max-width: none; }
+/* core's faq.css clips each item (overflow: hidden, for its rounded corners), which also cuts away the focus ring of the
+   question inside it: the item draws the ring instead, round like the card */
+.article__faq .faq__item:has(> .faq__q:focus-visible) { outline: 3px solid var(--focus); outline-offset: 3px; }
+.sources { list-style: decimal; padding-left: 1.6em; border-top: 1px solid var(--line); }
+.sources__item { padding-left: .3em; border-bottom: 1px solid var(--line); }
+.sources__item::marker { color: var(--em); font: 400 .875rem var(--font-display); }
+.sources__item > cite { display: block; padding-block: 12px; }
+.sources__link { display: flex; flex-direction: column; justify-content: center; gap: 4px; min-height: var(--tap); padding-block: 12px; color: var(--fg); }
+.sources__label { font: normal 600 .9375rem/1.45 var(--font-head); color: var(--fg); text-decoration: underline 1px var(--line-2); text-underline-offset: .22em; overflow-wrap: anywhere; transition: color var(--dur) var(--ease), text-decoration-color var(--dur) var(--ease); }
+.sources__link:hover .sources__label { color: var(--em); text-decoration-color: var(--red); }
+.sources__host { display: inline-flex; align-items: center; gap: 4px; font: 600 .72rem/1.2 var(--font-head); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.article__note { display: flex; align-items: center; gap: var(--s-2); padding: var(--s-3); border-radius: var(--radius-lg); background: var(--headlight); color: var(--fg-2); }
+.article__badge { flex: none; display: grid; place-items: center; width: 56px; height: 56px; border: 5px solid var(--red); border-radius: 50%; background: var(--white); color: var(--black); font: 400 1rem/1 var(--font-display); letter-spacing: .02em; }
+.article__note .md { font-size: .9375rem; line-height: 1.6; max-width: none; }

@@ -1,0 +1,1129 @@
+{
+ "$comment": "Global site data (contract §1). Stores and deals are read from home.json (the home's own words); where home.json disagrees with itself the locations card wins and the conflict is listed in \"conflicts\". \"ia\" is PROVISIONAL pure data (header, phone menu, category bar, footer): the structure map may replace it wholesale. Links are site paths; {{location_shop_url}} is the CMS token the store chooser answers.",
+ "origin": "https://highsocietydispo.com",
+ "brand": {
+  "name": "High Society",
+  "system": "Pit Stop by High Society",
+  "lang": "en",
+  "themeColor": "#BF3226",
+  "titleSuffix": " | High Society",
+  "logo": {
+   "src": "assets/pit-stop/logo/b-horizontal-web-keyline.svg",
+   "alt": "High Society Brand Logo"
+  },
+  "logoFile": "assets/b-mark-badge-keyline.svg",
+  "icon": "assets/b-mark-badge-keyline.svg",
+  "ogImage": "https://highsocietydispo.com/sites/sg_highsocietydispo_com/uploads/2024/11/High_Society_Logo.webp",
+  "ogImageFile": "assets/hero-pit-wall-1600.webp"
+ },
+ "stores": [
+  {
+   "slug": "big-rapids",
+   "name": "Big Rapids",
+   "nameLines": [
+    "Big",
+    "Rapids"
+   ],
+   "address": {
+    "street": "804 Clark St",
+    "locality": "Big Rapids",
+    "region": "MI",
+    "postalCode": "49307",
+    "lines": [
+     "804 Clark St",
+     "Big Rapids, MI 49307"
+    ]
+   },
+   "phone": {
+    "text": "(231) 598-9302",
+    "href": "tel:(231) 598-9302"
+   },
+   "hours": {
+    "days": "Monday - Sunday",
+    "text": "9:00 AM - 9:00 PM",
+    "opens": "09:00",
+    "closes": "21:00"
+   },
+   "image": {
+    "src": "assets/pit-stop/img/scene-big-rapids.jpg",
+    "alt": ""
+   },
+   "locationPath": "/dispensary-locations/big-rapids/",
+   "shopPath": "/shop/big-rapids/",
+   "setLocation": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=9",
+   "locatorId": 9,
+   "labels": {
+    "address": "Address:",
+    "phone": "Telephone:",
+    "order": "Order Now"
+   }
+  },
+  {
+   "slug": "birch-run",
+   "name": "Birch Run",
+   "nameLines": [
+    "Birch",
+    "Run"
+   ],
+   "address": {
+    "street": "9242 Tiffany Blvd",
+    "locality": "Birch Run",
+    "region": "MI",
+    "postalCode": "48415",
+    "lines": [
+     "9242 Tiffany Blvd",
+     "Birch Run, MI 48415"
+    ]
+   },
+   "phone": {
+    "text": "(989) 244-3001",
+    "href": "tel:(989) 244-3001"
+   },
+   "hours": {
+    "days": "Monday - Sunday",
+    "text": "9:00 AM - 9:00 PM",
+    "opens": "09:00",
+    "closes": "21:00"
+   },
+   "image": {
+    "src": "assets/pit-stop/img/scene-birch-run.jpg",
+    "alt": ""
+   },
+   "locationPath": "/dispensary-locations/birch-run/",
+   "shopPath": "/shop/birch-run/",
+   "setLocation": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=7",
+   "locatorId": 7,
+   "labels": {
+    "address": "Address:",
+    "phone": "Telephone:",
+    "order": "Order Now"
+   }
+  },
+  {
+   "slug": "charlotte",
+   "name": "Charlotte",
+   "nameLines": [
+    "Charlotte"
+   ],
+   "address": {
+    "street": "515 Lansing St",
+    "locality": "Charlotte",
+    "region": "MI",
+    "postalCode": "48813",
+    "lines": [
+     "515 Lansing St",
+     "Charlotte, MI 48813"
+    ]
+   },
+   "phone": {
+    "text": "(517) 786-3002",
+    "href": "tel:(517) 786-3002"
+   },
+   "hours": {
+    "days": "Monday - Sunday",
+    "text": "9:00 AM - 9:00 PM",
+    "opens": "09:00",
+    "closes": "21:00"
+   },
+   "image": {
+    "src": "assets/pit-stop/img/scene-charlotte.jpg",
+    "alt": ""
+   },
+   "locationPath": "/dispensary-locations/charlotte/",
+   "shopPath": "/shop/charlotte/",
+   "setLocation": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=1",
+   "locatorId": 1,
+   "labels": {
+    "address": "Address:",
+    "phone": "Telephone:",
+    "order": "Order Now"
+   }
+  },
+  {
+   "slug": "east-lansing",
+   "name": "East Lansing",
+   "nameLines": [
+    "East",
+    "Lansing"
+   ],
+   "address": {
+    "street": "2040 Merritt Rd",
+    "locality": "East Lansing",
+    "region": "MI",
+    "postalCode": "48823",
+    "lines": [
+     "2040 Merritt Rd",
+     "East Lansing, MI 48823"
+    ]
+   },
+   "phone": {
+    "text": "(517) 708-8043",
+    "href": "tel:(517) 708-8043"
+   },
+   "hours": {
+    "days": "Monday - Sunday",
+    "text": "9:00 AM - 9:00 PM",
+    "opens": "09:00",
+    "closes": "21:00"
+   },
+   "image": {
+    "src": "assets/pit-stop/img/scene-east-lansing.jpg",
+    "alt": ""
+   },
+   "locationPath": "/dispensary-locations/east-lansing/",
+   "shopPath": "/shop/east-lansing/",
+   "setLocation": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=4",
+   "locatorId": 4,
+   "labels": {
+    "address": "Address:",
+    "phone": "Telephone:",
+    "order": "Order Now"
+   }
+  },
+  {
+   "slug": "lenox",
+   "name": "Lenox",
+   "nameLines": [
+    "Lenox"
+   ],
+   "address": {
+    "street": "60695 Gratiot Ave",
+    "locality": "Lenox",
+    "region": "MI",
+    "postalCode": "48048",
+    "lines": [
+     "60695 Gratiot Ave",
+     "Lenox, MI 48048"
+    ]
+   },
+   "phone": {
+    "text": "(586) 430-1347",
+    "href": "tel:(586) 430-1347"
+   },
+   "hours": {
+    "days": "Monday - Sunday",
+    "text": "9:00 AM - 9:00 PM",
+    "opens": "09:00",
+    "closes": "21:00"
+   },
+   "image": {
+    "src": "assets/pit-stop/img/scene-lenox.jpg",
+    "alt": ""
+   },
+   "locationPath": "/dispensary-locations/lenox/",
+   "shopPath": "/shop/lenox/",
+   "setLocation": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=5",
+   "locatorId": 5,
+   "labels": {
+    "address": "Address:",
+    "phone": "Telephone:",
+    "order": "Order Now"
+   }
+  },
+  {
+   "slug": "mount-pleasant",
+   "name": "Mount Pleasant",
+   "nameLines": [
+    "Mount",
+    "Pleasant"
+   ],
+   "address": {
+    "street": "317 N Mission St",
+    "locality": "Mt Pleasant",
+    "region": "MI",
+    "postalCode": "48858",
+    "lines": [
+     "317 N Mission St",
+     "Mt Pleasant, MI 48858"
+    ]
+   },
+   "phone": {
+    "text": "(989) 317-0290",
+    "href": "tel:(989) 317-0290"
+   },
+   "hours": {
+    "days": "Monday - Sunday",
+    "text": "9:00 AM - 9:00 PM",
+    "opens": "09:00",
+    "closes": "21:00"
+   },
+   "image": {
+    "src": "assets/pit-stop/img/scene-mount-pleasant.jpg",
+    "alt": ""
+   },
+   "locationPath": "/dispensary-locations/mount-pleasant/",
+   "shopPath": "/shop/mount-pleasant/",
+   "setLocation": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=2",
+   "locatorId": 2,
+   "labels": {
+    "address": "Address:",
+    "phone": "Telephone:",
+    "order": "Order Now"
+   }
+  },
+  {
+   "slug": "new-buffalo",
+   "name": "New Buffalo",
+   "nameLines": [
+    "New",
+    "Buffalo"
+   ],
+   "address": {
+    "street": "19189 US-12",
+    "locality": "New Buffalo",
+    "region": "MI",
+    "postalCode": "49117",
+    "lines": [
+     "19189 US-12",
+     "New Buffalo, MI 49117"
+    ]
+   },
+   "phone": {
+    "text": "(269) 231-5213",
+    "href": "tel:(269) 231-5213"
+   },
+   "hours": {
+    "days": "Monday - Sunday",
+    "text": "9:00 AM - 9:00 PM",
+    "opens": "09:00",
+    "closes": "21:00"
+   },
+   "image": {
+    "src": "assets/pit-stop/img/scene-new-buffalo.jpg",
+    "alt": ""
+   },
+   "locationPath": "/dispensary-locations/new-buffalo/",
+   "shopPath": "/shop/new-buffalo/",
+   "setLocation": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=10",
+   "locatorId": 10,
+   "labels": {
+    "address": "Address:",
+    "phone": "Telephone:",
+    "order": "Order Now"
+   }
+  },
+  {
+   "slug": "saline",
+   "name": "Saline",
+   "nameLines": [
+    "Saline"
+   ],
+   "address": {
+    "street": "465 E Michigan Ave",
+    "locality": "Saline",
+    "region": "MI",
+    "postalCode": "48176",
+    "lines": [
+     "465 E Michigan Ave",
+     "Saline, MI 48176"
+    ]
+   },
+   "phone": {
+    "text": "(734) 470-6023",
+    "href": "tel:(734) 470-6023"
+   },
+   "hours": {
+    "days": "Monday - Sunday",
+    "text": "9:00 AM - 9:00 PM",
+    "opens": "09:00",
+    "closes": "21:00"
+   },
+   "image": {
+    "src": "assets/pit-stop/img/scene-saline.jpg",
+    "alt": ""
+   },
+   "locationPath": "/dispensary-locations/saline/",
+   "shopPath": "/shop/saline/",
+   "setLocation": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=3",
+   "locatorId": 3,
+   "labels": {
+    "address": "Address:",
+    "phone": "Telephone:",
+    "order": "Order Now"
+   }
+  }
+ ],
+ "conflicts": [
+  {
+   "store": "charlotte",
+   "field": "address.street",
+   "used": "515 Lansing St",
+   "usedFrom": "decision D-nap (docs/structure-map.json decisions; docs/OPEN-DECISIONS.md section 1): the store's own page and the store chooser",
+   "other": "515 Lansing Rd",
+   "otherFrom": "home.json locations card (and the v1 home and locations-hub cards)",
+   "evidence": "v1 /dispensary-locations/charlotte/ states \"515 Lansing St, Charlotte, MI 48813, United States\" and its directions say \"Turn right onto Lansing St\": the card's \"Rd\" looks like a typo. Confirm with the client.",
+   "decision": "D-nap: the card value is treated as a typo and corrected everywhere, the v2 home card included; the client confirms before launch"
+  },
+  {
+   "store": "charlotte",
+   "field": "address.line2",
+   "used": "Charlotte, MI 48813",
+   "usedFrom": "home.json locations card (the rule: the card wins)",
+   "other": "Charlotte, MI 48813-1100",
+   "otherFrom": "home.json locator (store chooser)",
+   "evidence": "v1 /dispensary-locations/charlotte/ states \"515 Lansing St, Charlotte, MI 48813, United States\" and its directions say \"Turn right onto Lansing St\": the card's \"Rd\" looks like a typo. Confirm with the client."
+  },
+  {
+   "store": "east-lansing",
+   "field": "address.street",
+   "used": "2040 Merritt Rd",
+   "usedFrom": "home.json locations card (the rule: the card wins)",
+   "other": "2040 Merritt Road",
+   "otherFrom": "home.json locator (store chooser)",
+   "evidence": "Same address, different form (Rd / Road). No action needed."
+  },
+  {
+   "store": "lenox",
+   "field": "address.street",
+   "used": "60695 Gratiot Ave",
+   "usedFrom": "home.json locations card (the rule: the card wins)",
+   "other": "60695 Gratiot Avenue",
+   "otherFrom": "home.json locator (store chooser)",
+   "evidence": "Same address, different form (Ave / Avenue). No action needed. (The city is decided by D-nap: Lenox.)"
+  },
+  {
+   "store": "lenox",
+   "field": "address.line2",
+   "used": "Lenox, MI 48048",
+   "usedFrom": "decision D-nap (docs/structure-map.json decisions; docs/OPEN-DECISIONS.md section 1): the store's own page and the store chooser",
+   "other": "New Haven, MI 48048",
+   "otherFrom": "home.json locations card (and the v1 home and locations-hub cards)",
+   "evidence": "v1 /dispensary-locations/lenox/ states \"60695 Gratiot Ave, Lenox, MI 48048, United States\" (the card says New Haven; 48048 is the New Haven / Lenox Township ZIP). Confirm which city the client wants published.",
+   "decision": "D-nap: the card value is treated as a typo and corrected everywhere, the v2 home card included; the client confirms before launch"
+  },
+  {
+   "store": "mount-pleasant",
+   "field": "address.street",
+   "used": "317 N Mission St",
+   "usedFrom": "home.json locations card (the rule: the card wins)",
+   "other": "317 North Mission Street",
+   "otherFrom": "home.json locator (store chooser)",
+   "evidence": "Same address, different form (N / North, St / Street, Mt / Mount). No action needed."
+  },
+  {
+   "store": "mount-pleasant",
+   "field": "address.line2",
+   "used": "Mt Pleasant, MI 48858",
+   "usedFrom": "home.json locations card (the rule: the card wins)",
+   "other": "Mount Pleasant, MI 48858",
+   "otherFrom": "home.json locator (store chooser)",
+   "evidence": "Same address, different form (N / North, St / Street, Mt / Mount). No action needed."
+  },
+  {
+   "store": "new-buffalo",
+   "field": "phone",
+   "used": "(269) 231-5213",
+   "usedFrom": "decision D-nap (docs/structure-map.json decisions; docs/OPEN-DECISIONS.md section 1): the store's own page and the store chooser",
+   "other": "(269) 231-5123",
+   "otherFrom": "home.json locations card (and the v1 home and locations-hub cards)",
+   "evidence": "The store's OWN v1 page /dispensary-locations/new-buffalo/ and all four v1 service-area pages state (269) 231-5213; only the home and the locations-hub cards state (269) 231-5123. The card value is used because the rule says so, but it is probably a transposition: CONFIRM WITH THE CLIENT BEFORE PUBLISHING (a wrong phone number misdirects customers).",
+   "decision": "D-nap: the card value is treated as a typo and corrected everywhere, the v2 home card included; the client confirms before launch"
+  },
+  {
+   "store": "new-buffalo",
+   "field": "locator.view",
+   "used": "(none)",
+   "usedFrom": "home.json locator",
+   "other": "dispensary-locations/new-buffalo/index.html",
+   "otherFrom": "every other store's chooser entry has a VIEW LOCATION link",
+   "evidence": "The store chooser lists no VIEW LOCATION link for New Buffalo (v2 kept it so). The stores lane may add it."
+  }
+ ],
+ "deals": {
+  "title": "DEALS",
+  "cards": [
+   {
+    "href": "{{location_shop_url}}",
+    "aria": "Visit slider item BUY A POD",
+    "img": {
+     "src": "assets/in-pages/Clip_path_group.webp",
+     "alt": "710Labs Brand Logo"
+    },
+    "heading": "BUY A POD",
+    "free": "Free",
+    "caption": [
+     {
+      "text": "GET A",
+      "em": false
+     },
+     {
+      "text": "FREE",
+      "em": true
+     },
+     {
+      "text": "Battery",
+      "em": false
+     }
+    ]
+   },
+   {
+    "href": "#",
+    "aria": "Visit slider item B2G1",
+    "img": {
+     "src": "assets/in-pages/Clip_path_group__1_.webp",
+     "alt": "M.I.JANE Brand Logo"
+    },
+    "heading": "B2G1",
+    "free": "Free",
+    "brand": "M.I. JANE",
+    "weight": "3.5G"
+   }
+  ],
+  "banners": [
+   {
+    "href": "{{location_shop_url}}",
+    "aria": "View image item",
+    "img": {
+     "src": "assets/in-pages/hot_deals.webp",
+     "alt": "weed flower deals"
+    },
+    "mobile": {
+     "href": "{{location_shop_url}}",
+     "aria": "View image information 1",
+     "img": {
+      "src": "assets/in-pages/mobile_hot_deals.webp",
+      "alt": "deals on weed flower"
+     }
+    }
+   },
+   {
+    "href": "{{location_shop_url}}",
+    "aria": "View image item",
+    "img": {
+     "src": "assets/in-pages/hot_deals___2.webp",
+     "alt": "Cannabis Buds $5 per ounce with $100 Purchase"
+    },
+    "mobile": {
+     "href": "{{location_shop_url}}",
+     "aria": "View image information 2",
+     "img": {
+      "src": "assets/in-pages/hot_deals___mobile2.webp",
+      "alt": "Cannabis Buds $5 per ounce with $100 Purchase"
+     }
+    }
+   }
+  ]
+ },
+ "pending": {
+  "$comment": "Site paths linked before their page exists and NOT in planned.json (tools/make-planned.mjs lists every planned page and article). Each entry names the lane that delivers it. The build allows them; the strict link check fails on them.",
+  "paths": []
+ },
+ "ui": {
+  "prev": "Prev",
+  "next": "Next",
+  "close": "Close",
+  "menu": "Menu",
+  "readMore": "Read more",
+  "readLess": "Read less",
+  "goTo": "Go to",
+  "carouselLocations": "Locations",
+  "carouselDeals": "DEALS",
+  "carouselReviews": "What Our Customers Say About Us",
+  "toggleLocations": "Show locations",
+  "pauseMotion": "Pause motion",
+  "skip": "Skip to main content",
+  "mainNav": "Main",
+  "categoriesNav": "Shop by category",
+  "pickUpAt": "Pick up at",
+  "searchLabel": "Search the site",
+  "searchPlaceholder": "Search High Society",
+  "searchSubmit": "Search",
+  "breadcrumb": "Breadcrumb",
+  "home": "Home",
+  "showGroup": "Show",
+  "tableLabel": "Scrollable table",
+  "byline": "By the High Society team",
+  "minRead": "min read",
+  "published": "Published",
+  "toc": "In this article",
+  "keyTakeaways": "Key takeaways",
+  "faq": "Frequently asked questions",
+  "sources": "Sources",
+  "related": "Related articles",
+  "readArticle": "Read article",
+  "allArticles": "All articles",
+  "categories": "Categories",
+  "page": "Page",
+  "pagination": "Pages",
+  "newer": "Newer",
+  "older": "Older",
+  "noArticles": "New articles for this topic are on the way. Browse all articles in the meantime.",
+  "searchResults": "Results",
+  "searchNone": "No pages match your search. Try a shorter word, or browse the site map.",
+  "searchCount": "pages match",
+  "searchNeedsJs": "Search runs in your browser. Browse the site map to find any page.",
+  "siteMapLink": "Site map",
+  "hoursLabel": "Hours",
+  "directions": "Directions",
+  "call": "Call",
+  "recipe": "Recipe",
+  "recipeYield": "Makes",
+  "prepTime": "Prep time",
+  "cookTime": "Cook time",
+  "ingredients": "Ingredients",
+  "steps": "Steps",
+  "dosingNote": "Dosing note",
+  "featured": "Featured",
+  "moreArticles": "More articles",
+  "inCategory": "Articles in",
+  "jumpToRecipe": "Jump to the recipe",
+  "ageBadge": "21+",
+  "articleOne": "article",
+  "articleMany": "articles"
+ },
+ "blog": {
+  "$comment": "\"Society Pages\" is a WORKING NAME for the blog (flagged for the client in docs/CORE-NOTES.md).",
+  "name": "Society Pages",
+  "path": "/blog/",
+  "perPage": 12,
+  "categories": [
+   {
+    "slug": "cannabis-101",
+    "name": "Cannabis 101",
+    "title": "Cannabis 101: Guides for New and Curious Consumers",
+    "metaDescription": "Plain-language cannabis basics from High Society: strains, product types, dosing, common terms and how to shop a Michigan dispensary with confidence.",
+    "lead": "The basics, explained plainly: what the words on the menu mean, how product types differ and how to start low and go slow."
+   },
+   {
+    "slug": "health-and-lifestyle",
+    "name": "Health & Lifestyle",
+    "title": "Cannabis Health & Lifestyle Articles",
+    "metaDescription": "How adults fit cannabis into everyday life: sleep, stress, fitness, wellness routines and responsible use, from the High Society team in Michigan.",
+    "lead": "Cannabis and everyday life: routines, rest, activity and using responsibly as an adult."
+   },
+   {
+    "slug": "popular",
+    "name": "Most Popular",
+    "title": "Most Popular Cannabis Articles",
+    "metaDescription": "The Society Pages articles readers return to most, from strain basics to dosing questions, collected in one place by High Society in Michigan.",
+    "lead": "The articles our readers come back to most."
+   },
+   {
+    "slug": "news-and-culture",
+    "name": "News & Culture",
+    "title": "Cannabis News & Culture",
+    "metaDescription": "Cannabis culture, history, holidays and Michigan industry news, written for curious adults by the team at High Society dispensaries.",
+    "lead": "Culture, history, holidays and the Michigan cannabis scene."
+   },
+   {
+    "slug": "recipes",
+    "name": "Recipes",
+    "title": "Cannabis Recipes: Infused Food and Drinks",
+    "metaDescription": "Infused recipes for adults 21+: butters, oils, baked goods and drinks, with dosing notes to help you cook with cannabis responsibly at home.",
+    "lead": "Infused butters, oils, bakes and drinks, each with a dosing note."
+   },
+   {
+    "slug": "resources",
+    "name": "Resources",
+    "title": "Cannabis Resources and Guides",
+    "metaDescription": "Reference guides from High Society: Michigan cannabis laws, medical cards, product types, storage and safety, all explained in plain language.",
+    "lead": "Reference guides on laws, medical cards, storage and safety."
+   },
+   {
+    "slug": "shopping-and-reviews",
+    "name": "Shopping & Reviews",
+    "title": "Cannabis Shopping Guides & Reviews",
+    "metaDescription": "How to choose flower, vapes, edibles and concentrates, compare products and get the most out of every visit to a High Society dispensary.",
+    "lead": "How to choose, compare and shop with confidence."
+   }
+  ],
+  "responsibleUse": "For adults 21 and older. Keep cannabis away from children and pets, and never drive after consuming. Michigan law does not allow cannabis use in public places.",
+  "cta": {
+   "heading": "Shop at High Society",
+   "md": "Order online for convenient pickup, or find the store nearest you.",
+   "ctas": [
+    {
+     "text": "Order Now",
+     "href": "{{location_shop_url}}"
+    },
+    {
+     "text": "Find a store",
+     "href": "/dispensary-locations/",
+     "style": "ghost"
+    }
+   ]
+  }
+ },
+ "ia": {
+  "promo": {
+   "text": "Order online, pick up in store.",
+   "link": {
+    "text": "Browse current deals",
+    "href": "/deals/"
+   }
+  },
+  "storeBar": {
+   "label": "Pick up at",
+   "trigger": {
+    "text": "Select a Location",
+    "href": "#dispenzaLocationPopup-open"
+   }
+  },
+  "search": {
+   "action": "/search/",
+   "name": "q"
+  },
+  "nav": [
+   {
+    "id": "menu",
+    "text": "Menu",
+    "href": "{{location_shop_url}}"
+   },
+   {
+    "id": "explore",
+    "text": "Explore",
+    "mega": [
+     {
+      "title": "Shop by category",
+      "links": [
+       {
+        "text": "Flower",
+        "href": "{{location_shop_url}}",
+        "category": "flower"
+       },
+       {
+        "text": "Pre-Rolls",
+        "href": "{{location_shop_url}}",
+        "category": "pre-rolls"
+       },
+       {
+        "text": "Vaporizers",
+        "href": "{{location_shop_url}}",
+        "category": "vaporizers"
+       },
+       {
+        "text": "Concentrates",
+        "href": "{{location_shop_url}}",
+        "category": "concentrate"
+       },
+       {
+        "text": "Edibles",
+        "href": "{{location_shop_url}}",
+        "category": "edibles"
+       },
+       {
+        "text": "Tinctures",
+        "href": "{{location_shop_url}}",
+        "category": "tinctures"
+       },
+       {
+        "text": "Topicals",
+        "href": "{{location_shop_url}}",
+        "category": "topicals"
+       },
+       {
+        "text": "Accessories",
+        "href": "{{location_shop_url}}",
+        "category": "accessory"
+       },
+       {
+        "text": "Apparel",
+        "href": "{{location_shop_url}}",
+        "category": "apparel"
+       }
+      ]
+     },
+     {
+      "title": "Staff Picks",
+      "links": [
+       {
+        "text": "MI Jane",
+        "href": "{{location_shop_url}}?dtche[path]=products&dtche[search]=mi+jane"
+       },
+       {
+        "text": "Doozy",
+        "href": "{{location_shop_url}}?dtche[path]=products&dtche[search]=doozy"
+       },
+       {
+        "text": "Rooted",
+        "href": "{{location_shop_url}}?dtche[path]=products&dtche[search]=rooted"
+       },
+       {
+        "text": "Glostix",
+        "href": "{{location_shop_url}}?dtche[path]=products&dtche[search]=glostix"
+       }
+      ]
+     },
+     {
+      "title": "Find your vibe",
+      "links": [
+       {
+        "text": "Sleep",
+        "icon": "moon",
+        "href": "/blog/cannabis-products-for-sleep/"
+       },
+       {
+        "text": "Focus",
+        "icon": "target",
+        "href": "/blog/best-cannabis-strains-for-focus/"
+       },
+       {
+        "text": "Energy",
+        "icon": "bolt",
+        "href": "/blog/energizing-cannabis-strains/"
+       },
+       {
+        "text": "Creativity",
+        "icon": "brush",
+        "href": "/blog/cannabis-strains-for-creativity-productivity/"
+       },
+       {
+        "text": "Unwinding",
+        "icon": "wave",
+        "href": "/blog/strains-to-help-you-unwind-after-work/"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "loyalty",
+    "text": "Loyalty",
+    "href": "/loyalty/"
+   },
+   {
+    "id": "deals",
+    "text": "Deals",
+    "href": "/deals/"
+   },
+   {
+    "id": "resources",
+    "text": "Resources",
+    "mega": [
+     {
+      "title": "Learn",
+      "links": [
+       {
+        "text": "Dispensary Guides",
+        "href": "/dispensary-guides/"
+       },
+       {
+        "text": "Getting a Medical Card",
+        "href": "/getting-a-medical-card/"
+       },
+       {
+        "text": "State Laws",
+        "href": "/cannabis-laws-by-state/"
+       },
+       {
+        "text": "Patient Guide",
+        "href": "/patient-guide/"
+       },
+       {
+        "text": "FAQ",
+        "href": "/faq/"
+       }
+      ]
+     },
+     {
+      "title": "Society Pages",
+      "links": [
+       {
+        "text": "All articles",
+        "href": "/blog/"
+       },
+       {
+        "text": "Cannabis 101",
+        "href": "/blog/cannabis-101/"
+       },
+       {
+        "text": "Health & Lifestyle",
+        "href": "/blog/health-and-lifestyle/"
+       },
+       {
+        "text": "Most Popular",
+        "href": "/blog/popular/"
+       },
+       {
+        "text": "News & Culture",
+        "href": "/blog/news-and-culture/"
+       },
+       {
+        "text": "Recipes",
+        "href": "/blog/recipes/"
+       },
+       {
+        "text": "Resources",
+        "href": "/blog/resources/"
+       },
+       {
+        "text": "Shopping & Reviews",
+        "href": "/blog/shopping-and-reviews/"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "locations",
+    "text": "Locations",
+    "href": "/dispensary-locations/",
+    "mega": [
+     {
+      "title": "Our stores",
+      "links": [
+       {
+        "text": "Big Rapids",
+        "href": "/dispensary-locations/big-rapids/"
+       },
+       {
+        "text": "Birch Run",
+        "href": "/dispensary-locations/birch-run/"
+       },
+       {
+        "text": "Charlotte",
+        "href": "/dispensary-locations/charlotte/"
+       },
+       {
+        "text": "East Lansing",
+        "href": "/dispensary-locations/east-lansing/"
+       },
+       {
+        "text": "Lenox",
+        "href": "/dispensary-locations/lenox/"
+       },
+       {
+        "text": "Mount Pleasant",
+        "href": "/dispensary-locations/mount-pleasant/"
+       },
+       {
+        "text": "New Buffalo",
+        "href": "/dispensary-locations/new-buffalo/"
+       },
+       {
+        "text": "Saline",
+        "href": "/dispensary-locations/saline/"
+       }
+      ]
+     },
+     {
+      "title": "Find a store",
+      "links": [
+       {
+        "text": "All Locations",
+        "href": "/dispensary-locations/"
+       },
+       {
+        "text": "New Buffalo service areas",
+        "href": "/dispensary-locations/new-buffalo/service-areas/"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "join": {
+   "text": "Join The Society",
+   "href": "/club-member-program/"
+  },
+  "phoneExtra": [
+   {
+    "text": "About Us",
+    "href": "/about/"
+   },
+   {
+    "text": "Contact Us",
+    "href": "/contact/"
+   }
+  ],
+  "categoryBar": {
+   "deals": {
+    "text": "Deals",
+    "href": "/deals/"
+   },
+   "items": [
+    {
+     "text": "Flower",
+     "slug": "flower",
+     "href": "{{location_shop_url}}"
+    },
+    {
+     "text": "Pre-Rolls",
+     "slug": "pre-rolls",
+     "href": "{{location_shop_url}}"
+    },
+    {
+     "text": "Vaporizers",
+     "slug": "vaporizers",
+     "href": "{{location_shop_url}}"
+    },
+    {
+     "text": "Concentrates",
+     "slug": "concentrate",
+     "href": "{{location_shop_url}}"
+    },
+    {
+     "text": "Edibles",
+     "slug": "edibles",
+     "href": "{{location_shop_url}}"
+    },
+    {
+     "text": "Tinctures",
+     "slug": "tinctures",
+     "href": "{{location_shop_url}}"
+    },
+    {
+     "text": "Topicals",
+     "slug": "topicals",
+     "href": "{{location_shop_url}}"
+    },
+    {
+     "text": "Accessories",
+     "slug": "accessory",
+     "href": "{{location_shop_url}}"
+    },
+    {
+     "text": "Apparel",
+     "slug": "apparel",
+     "href": "{{location_shop_url}}"
+    }
+   ]
+  },
+  "footer": {
+   "groups": [
+    {
+     "id": "resources",
+     "title": "Resources",
+     "links": [
+      {
+       "text": "Dispensary Guides",
+       "href": "/dispensary-guides/"
+      },
+      {
+       "text": "Getting a Medical Card",
+       "href": "/getting-a-medical-card/"
+      },
+      {
+       "text": "State Laws",
+       "href": "/cannabis-laws-by-state/"
+      },
+      {
+       "text": "Patient Guide",
+       "href": "/patient-guide/"
+      },
+      {
+       "text": "FAQ",
+       "href": "/faq/"
+      },
+      {
+       "text": "Society Pages",
+       "href": "/blog/"
+      }
+     ]
+    },
+    {
+     "id": "company",
+     "title": "Company",
+     "links": [
+      {
+       "text": "About Us",
+       "href": "/about/"
+      },
+      {
+       "text": "Contact Us",
+       "href": "/contact/"
+      },
+      {
+       "text": "Careers",
+       "href": "/careers/"
+      },
+      {
+       "text": "Site Map",
+       "href": "/site-map/"
+      }
+     ]
+    }
+   ],
+   "locationsExtra": [
+    {
+     "text": "All Locations",
+     "href": "/dispensary-locations/"
+    }
+   ],
+   "legalLinks": {
+    "Privacy Statement": "/privacy-policy/",
+    "Terms of Service": "/terms-and-conditions/"
+   },
+   "quick": {
+    "$comment": "Quick Links' links (the title stays v2's). v2's About Us, Contact Us and Careers live in the Company group, so no link repeats in the footer (CORE-VERIFY L6).",
+    "links": [
+     {
+      "text": "Home",
+      "href": "/"
+     },
+     {
+      "text": "Menu",
+      "href": "{{location_shop_url}}"
+     },
+     {
+      "text": "Deals",
+      "href": "/deals/"
+     },
+     {
+      "text": "Loyalty",
+      "href": "/loyalty/"
+     },
+     {
+      "text": "Join The Society",
+      "href": "/club-member-program/"
+     }
+    ]
+   }
+  },
+  "sitemap": {
+   "$comment": "The /site-map/ groups: a page joins the first group with one of its exact \"paths\" or a matching path prefix. Pages no group claims are listed under \"other\" (the build warns).",
+   "groups": [
+    {
+     "title": "Shop",
+     "prefixes": [
+      "/deals/",
+      "/loyalty/",
+      "/club-member-program/",
+      "/shop/"
+     ]
+    },
+    {
+     "title": "Locations",
+     "prefixes": [
+      "/dispensary-locations/"
+     ]
+    },
+    {
+     "title": "Resources",
+     "prefixes": [
+      "/dispensary-guides/",
+      "/getting-a-medical-card/",
+      "/cannabis-laws-by-state/",
+      "/patient-guide/",
+      "/faq/"
+     ]
+    },
+    {
+     "title": "Society Pages",
+     "prefixes": [
+      "/blog/"
+     ]
+    },
+    {
+     "title": "Company",
+     "paths": [
+      "/",
+      "/about/",
+      "/contact/",
+      "/careers/",
+      "/site-map/",
+      "/search/"
+     ]
+    },
+    {
+     "title": "Legal",
+     "prefixes": [
+      "/privacy-policy/",
+      "/terms-and-conditions/"
+     ]
+    }
+   ],
+   "other": "More pages"
+  }
+ }
+}

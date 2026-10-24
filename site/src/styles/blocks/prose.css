@@ -1,0 +1,2 @@
+/* blocks/prose.css — the prose block (core): Markdown in the reading measure (the type itself is _md.css). */
+.block--prose .md { max-width: 70ch; }

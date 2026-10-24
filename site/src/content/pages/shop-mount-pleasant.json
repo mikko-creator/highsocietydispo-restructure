@@ -1,0 +1,137 @@
+{
+ "path": "/shop/mount-pleasant/",
+ "template": "menu-placeholder",
+ "store": "mount-pleasant",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/shop/mount-pleasant/"
+ ],
+ "titleFull": "Shop Cannabis - Mount Pleasant Dispensary Menu",
+ "metaDescription": "Discover High Society's online cannabis selection for the Mount Pleasant weed dispensary. Order premium cannabis products for easy pickup.",
+ "h1": "Mount Pleasant Weed Dispensary Menu",
+ "crumb": "Mount Pleasant",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Shop",
+   "path": "/shop/"
+  },
+  {
+   "name": "Mount Pleasant"
+  }
+ ],
+ "hero": {
+  "eyebrow": "High Society Mount Pleasant",
+  "lead": "Order ahead online, then pick up in store or at the curb.",
+  "status": {
+   "open": "Open - Closes at 9:00 PM",
+   "closed": "Closed - Opens at 9:00 AM"
+  },
+  "mapsUrl": "https://www.google.com/maps/dir//High+Society+Cannabis+Mount+Pleasant,+317+N+Mission+St,+Mt+Pleasant,+MI+48858,+United+States/@43.6068712,-84.7680349,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x88221daf36637127:0x64f3f21212621ced!2m2!1d-84.7680349!2d43.6068712!3e0"
+ },
+ "blocks": [
+  {
+   "type": "menu-placeholder",
+   "id": "menu",
+   "ground": "white",
+   "store": "mount-pleasant",
+   "heading": "Menu",
+   "title": "Shop the Mount Pleasant menu",
+   "md": "Browse today’s products, prices and deals, add them to your cart and choose a pickup time. Prefer to order by phone? Call the store and our team will help.",
+   "order": {
+    "text": "Order Now"
+   },
+   "call": {
+    "text": "Call"
+   }
+  },
+  {
+   "type": "link-grid",
+   "id": "categories",
+   "ground": "headlight",
+   "heading": "Shop by Category",
+   "groups": [
+    {
+     "title": "Mount Pleasant menu",
+     "links": [
+      {
+       "text": "Accessories",
+       "href": "/shop/mount-pleasant/?dtche%5Bcategory%5D=accessories"
+      },
+      {
+       "text": "Apparel",
+       "href": "/shop/mount-pleasant/?dtche%5Bcategory%5D=apparel"
+      },
+      {
+       "text": "Concentrates",
+       "href": "/shop/mount-pleasant/?dtche%5Bcategory%5D=concentrates"
+      },
+      {
+       "text": "Edibles",
+       "href": "/shop/mount-pleasant/?dtche%5Bcategory%5D=edibles"
+      },
+      {
+       "text": "Flower",
+       "href": "/shop/mount-pleasant/?dtche%5Bcategory%5D=flower"
+      },
+      {
+       "text": "Pre-Rolls",
+       "href": "/shop/mount-pleasant/?dtche%5Bcategory%5D=pre-rolls"
+      },
+      {
+       "text": "Topicals",
+       "href": "/shop/mount-pleasant/?dtche%5Bcategory%5D=topicals"
+      },
+      {
+       "text": "Vaporizers",
+       "href": "/shop/mount-pleasant/?dtche%5Bcategory%5D=vaporizers"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "store-details",
+   "id": "store",
+   "ground": "white",
+   "heading": "Your Store",
+   "store": "mount-pleasant",
+   "name": "High Society Mount Pleasant",
+   "facts": [
+    "address",
+    "phone",
+    "email",
+    "hours"
+   ],
+   "email": "info@highsocietydispo.com",
+   "hoursText": "9:00 AM - 9:00 PM Daily",
+   "mapsUrl": "https://www.google.com/maps/dir//High+Society+Cannabis+Mount+Pleasant,+317+N+Mission+St,+Mt+Pleasant,+MI+48858,+United+States/@43.6068712,-84.7680349,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x88221daf36637127:0x64f3f21212621ced!2m2!1d-84.7680349!2d43.6068712!3e0",
+   "ctas": [
+    {
+     "text": "View Location",
+     "href": "location"
+    },
+    {
+     "text": "Get Directions",
+     "href": "maps",
+     "style": "ghost"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen-other.mjs",
+  "newCopy": [
+   "hero eyebrow and lead",
+   "the menu notice (title, text, button labels)",
+   "category band heading and group title"
+  ],
+  "notes": [
+   "category links use High Society's own form /shop/<store>/?dtche[category]=<category> (its v1 store pages); the CMS category pages (/mount-pleasant/<category>/) are not part of this build"
+  ]
+ }
+}

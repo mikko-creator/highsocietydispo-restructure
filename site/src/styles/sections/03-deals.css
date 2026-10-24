@@ -1,0 +1,210 @@
+/* 03-deals — the reskin's DEALS band (its stylesheet, lines 780-786, the rules that render: line 784 overrides the
+   earlier "half off the band" rule at 434 and the phone rule at 669): the cream ground (Headlight), the giant title
+   (clamp(2.6rem, 1rem + 5vw, 6.4rem), capped by the screen height so the band fits one screen) and a checkered strip
+   along its foot. The reskin's trophy roundel (its line 784 drew it whole, red, in the band) is the section's
+   background instead (owner, 2026-10-22): large, tilted -8deg, a fading black silhouette peeking in from the right,
+   behind the cards, so the deals keep the eye.
+   The section head is the band: the cream from the section's top to the cards, the title in it (phones and portrait
+   tablets); on desktop and landscape tablets the owner's layout E, a bento grid with the title in its own tile (below).
+   The deals are the reskin's hairline cards (white on cream, square, 1px rgba(3,4,4,.14); a lift and a soft shadow on
+   hover): the offers with their logo plate across the top, the flower banners as black cards hugging their art. Type
+   inside a card scales with the card's own width (cqi) and the screen's height (svh). */
+.deals {
+  --deals-checker: var(--checker-h);                 /* the tokens' section divider */
+  --deals-title: clamp(2.6rem, min(1rem + 5vw, 10svh), 6.4rem);
+  /* the most cream the band may keep above the race number: it starts within 82px of the section's top below 1180px
+     wide, 136px from 1180px (the empty-band limits are 96 / 150px) */
+  --deals-air: max(0px, 82px - var(--pad-t));
+}
+@media (min-width: 1180px) { .deals { --deals-air: max(0px, 136px - var(--pad-t)); } }
+
+/* ---------------------------------------------------------------- the band: title, checkered foot
+   The head is a column: the title block sits centred in the band (section top to cards top) — the spacer above it
+   takes half the free space, at most --deals-air; the spacer below starts at (pad-t - gap) so the centre is the band's,
+   not the head box's. */
+.deals .deals__head { flex-direction: column; flex-wrap: nowrap; align-items: flex-start; justify-content: flex-start; gap: 0; }
+.deals__head::before { content: ""; flex: 1 1 0; max-height: var(--deals-air); }
+.deals__head::after { content: ""; flex: 1 1 max(0px, var(--pad-t) - var(--gap)); }
+.deals__head .head__copy { flex: none; }
+
+/* ---------------------------------------------------------------- the roundel, in the background
+   the reskin's trophy mark as a silhouette: its own outline (the trophy cut out of the disc) masks a black that fades
+   from 13% at its top right to nothing, so it reads as texture on the cream and never as a second subject. Tilted -8deg,
+   about two thirds of it on screen, peeking in from the right; the section clips the rest. Phones: behind the title
+   band; from 768px: centred in the section's height and nearly as tall */
+.deals__bg { overflow: clip; }
+.deals__roundel {
+  --rdb: min(92vw, 46svh);
+  position: absolute; right: 0; top: calc(var(--pad-t) + var(--deals-title) * .5); width: var(--rdb); aspect-ratio: 1;
+  translate: 34% -50%; rotate: -8deg;
+  background: linear-gradient(200deg, color-mix(in srgb, var(--black) 13%, transparent) 8%, color-mix(in srgb, var(--black) 6%, transparent) 46%, transparent 86%);
+  -webkit-mask: var(--mark-red) center / contain no-repeat; mask: var(--mark-red) center / contain no-repeat;
+}
+@media (min-width: 768px) {
+  .deals__roundel { width: auto; height: min(92%, 58vw); top: 50%; translate: 36% -50%; }
+}
+.deals .deals__title { font-size: var(--deals-title); }
+.deals__checker { position: absolute; left: 0; right: 0; bottom: 0; z-index: 3; height: var(--deals-checker); }
+
+/* ---------------------------------------------------------------- the cards */
+.deals__carousel { flex: 1 1 0; }
+.deals__item { display: flex; min-width: 0; container-type: inline-size; }
+.deals__card { flex: 1 1 auto; min-width: 0; min-height: 0; display: flex; flex-direction: column; }
+
+/* the offers. The 710Labs card is one big link: its cover-link's ::after fills the CARD (the nearest positioned box is
+   the .card), above the plate and the label, so the logo plate opens the shop too. */
+.deals__offer {
+  --deals-pad: clamp(16px, 7cqi, 28px);
+  --deals-word: clamp(2rem, min(15cqi, 6.6svh), 4rem);
+  --deals-cap: clamp(.9375rem, min(5.4cqi, 2.5svh), 1.25rem);
+  --deals-stack: clamp(8px, 3cqi, 12px);
+}
+/* the brand logo on a plate of its own colour, across the card's top: the flexible part of the card, with a floor */
+.deals__plate { position: relative; flex: 1 1 0; min-height: clamp(96px, 20svh - 24px, 240px); overflow: hidden; }
+/* the 710Labs art is a black square with its own margin round the logo: shown at no more than its own pixels; the
+   art's pure #000 blends "lighten" into the plate's brand black, so art and plate read as one panel */
+.deals__plate--black { background: var(--black); }
+.deals__plate--black .deals__logo { max-width: 100%; max-height: 100%; mix-blend-mode: lighten; }
+/* the M.I.JANE lettering on white, padded as the reskin pads its logo tiles (12% 14%: line 456), a hairline seam
+   under it */
+.deals__plate--white { background: var(--white); box-shadow: inset 0 -1px 0 var(--line); }
+.deals__plate--white .deals__logo { max-width: 72%; max-height: 76%; }
+.deals__logo { position: absolute; inset: 0; margin: auto; width: auto; height: auto; object-fit: contain; transition: transform 400ms var(--ease); }
+.deals__offer.card--lift:hover .deals__logo { transform: scale(1.04); }
+/* "Free": the reskin's label in a card (its line 422 and the store panels' labels: Changa One 700, .2em tracking, red;
+   neon on ink), no fill, in the plate's corner, 12px in */
+.deals__free { position: absolute; z-index: 1; top: 12px; left: 12px; font: 700 .74rem/1 var(--font-display); letter-spacing: .2em; text-transform: uppercase; color: var(--em); white-space: nowrap; }
+.deals__plate--black .deals__free { color: var(--neon); }
+/* the offer: a short red rule, the offer word huge in Changa One ink, the rest in Changa (two lines on both cards, so
+   the two plates keep one height) */
+.deals__body { flex: none; display: flex; flex-direction: column; align-items: flex-start; gap: var(--deals-stack); padding: var(--deals-pad); }
+.deals__body::before { content: ""; flex: none; width: 2rem; height: 3px; background: var(--red); }
+.deals__word { font: 900 var(--deals-word)/var(--lh-display) var(--font-display); letter-spacing: -.005em; text-transform: uppercase; color: var(--fg); text-wrap: balance; }
+.deals__word .cover-link { color: inherit; }
+.deals__meta { min-height: 2.5em; font: 700 var(--deals-cap)/1.25 var(--font-head); letter-spacing: .04em; text-transform: uppercase; color: var(--fg-2); }
+/* the reskin's emphasis on "FREE": brand red on white (5.7:1) */
+.deals__meta em { font-style: normal; color: var(--em); }
+.deals__brand, .deals__weight { line-height: inherit; }
+.deals__weight { font-family: var(--font-display); font-weight: 400; letter-spacing: .06em; }
+
+/* the flower deals: black cards, the colour of their own artwork; each card is its banner's link. Phones and portrait
+   tablets: the stage is a size container, and the banner box (its panel's shape, set per file in the markup) is as
+   wide as the stage allows without growing taller than it: always whole, at the largest size that fits. */
+.deals__flower { --card: var(--black); --line: var(--black); padding: clamp(12px, 4cqi, 20px); }
+.deals__stage { flex: 1 1 0; min-height: 0; min-width: 0; container-type: size; display: grid; place-items: center; }
+/* the banners' own black panels are pure #000: the box blends "lighten" with the card so they merge with the brand
+   black (their rounded corners vanish into the square card) */
+.deals__banner { position: relative; display: block; width: min(100cqw, 100cqh * var(--deals-arn-m)); aspect-ratio: var(--deals-ar-m); overflow: hidden; mix-blend-mode: lighten; }
+.deals__art { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: var(--deals-pos-m); transition: transform 400ms var(--ease); }
+.deals__flower:hover .deals__art { transform: scale(1.03); }
+
+/* ---------------------------------------------------------------- phones: a 1-up swipe row of the four deals
+   the next card peeks 20px into the right padding; cards keep still on hover (the row clips a lift); the checkered
+   strip sits under the content's own bottom padding */
+@media (max-width: 767.98px) {
+  .deals .slide__inner { padding-bottom: calc(var(--pad-b) + var(--deals-checker)); }
+  .deals .deals__track > .deals__item { flex: 0 0 calc(100% - var(--gap)); }
+  .deals .card--lift:hover, .deals .card--lift:focus-within { transform: none; box-shadow: none; }
+}
+/* short phones: the offer's air steps down a little so the logo plate keeps a readable size */
+@media (max-width: 767.98px) and (max-height: 700px) {
+  .deals__offer { --deals-pad: 16px; --deals-stack: 8px; }
+}
+
+/* ---------------------------------------------------------------- from 768px: a still grid
+   the row never scrolls (the carousel's controls stay away): four columns, the two offers a column each, the two
+   banners stacked across the last two */
+@media (min-width: 768px) {
+  .deals .deals__viewport { overflow: visible; }
+  .deals .deals__track { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: var(--gap); }
+  .deals__item--offer { grid-row: 1 / -1; }
+  .deals__item--flower { grid-column: 3 / -1; }
+  .deals__item--upper { grid-row: 1; }
+  .deals__item--lower { grid-row: 2; }
+}
+/* desktop and landscape tablets (the same condition as the <picture>'s source, 03-deals.mjs WIDE): the card row takes
+   the height of what it holds — each banner card hugs its whole wide art, the offers stretch to the two banner rows —
+   and the band above it takes the rest of the screen. The banner cards' top and bottom padding steps down on short
+   screens (it is black on the art's own black, so it reads as the same panel) to give the band the height. */
+@media (min-width: 1024px), (min-width: 768px) and (orientation: landscape) {
+  .deals .deals__head { flex: 1 1 auto; min-height: auto; }
+  .deals .slide__body, .deals .deals__carousel, .deals .deals__viewport { flex: 0 0 auto; }
+  .deals .deals__track { grid-template-rows: auto auto; height: auto; }
+  .deals__flower { padding: clamp(8px, 2.6svh - 6px, 20px) clamp(12px, 4cqi, 20px); }
+  .deals__stage { flex: none; container-type: normal; display: block; }
+  .deals__banner { width: 100%; aspect-ratio: var(--deals-ar-d); }
+  .deals__art { object-position: var(--deals-pos-d); }
+}
+/* portrait tablets: a 2x2 grid, the offers over the two banners (their portrait phone art), the rows sharing the
+   height under the band */
+@media (min-width: 768px) and (max-width: 1023.98px) and (orientation: portrait) {
+  .deals .deals__track { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .deals__item--offer { grid-row: 1; }
+  .deals__item--flower { grid-column: auto; grid-row: 2; }
+  .deals__plate { min-height: clamp(96px, 12svh, 160px); }
+}
+
+/* ---------------------------------------------------------------- layout E: the bento (owner, 2026-10-22)
+   Desktop and landscape tablets (the <picture>'s WIDE condition): one asymmetric grid of four columns (two narrow, two
+   wide) and two rows holds the whole section, centred in the content box both ways:
+     row 1: the title tile (race number over DEALS)  | the $10 OZ banner across the other three columns (the biggest)
+     row 2: the 710Labs offer | the M.I.JANE offer   | the $5 OZ banner across the two wide columns
+   The title tile sits in the same grid as the cards (the body, carousel, viewport and track are subgrids), so every
+   edge lines up. On short screens the grid narrows (it never grows taller than the content box) and stays centred.
+   Built from the owner's pick in the lab (labs/deals-src/E.css); these rules come after the band layout above and
+   replace it at these widths. Phones and portrait tablets keep their layouts. */
+@media (min-width: 1024px), (min-width: 768px) and (orientation: landscape) {
+  .deals {
+    --bx-g: var(--gap);
+    --bx-h: calc(var(--slide-h) - var(--pad-t) - var(--pad-b));
+    --bx-w: min(100%, calc((var(--bx-h) - 150px) / .35 + 3 * var(--bx-g)));
+    --bx-u: calc((var(--bx-w) - 3 * var(--bx-g)) / 100);
+    --bx-pad: clamp(16px, 1.6vw, 24px);
+  }
+  .deals .slide__inner {
+    display: grid; gap: var(--bx-g);
+    grid-template-columns: calc(var(--bx-u) * 21) calc(var(--bx-u) * 21) calc(var(--bx-u) * 29) calc(var(--bx-u) * 29);
+    grid-template-rows: auto auto;
+    align-content: center; justify-content: center;
+  }
+  .deals .slide__body, .deals .deals__carousel, .deals .deals__viewport, .deals .deals__track {
+    grid-column: 1 / -1; grid-row: 1 / -1; display: grid; grid-template-columns: subgrid; grid-template-rows: subgrid;
+    gap: var(--bx-g); height: auto; min-height: 0; flex: none;
+  }
+  .deals .deals__ui { display: none; }
+
+  /* the title tile: a hairline cell on the cream, the race number at its top, DEALS sized to the tile's width at its foot */
+  .deals .deals__head {
+    grid-area: 1 / 1; flex: none; min-height: 0; display: flex; flex-direction: column; align-items: stretch;
+    padding: var(--bx-pad); border-radius: var(--radius-lg); box-shadow: inset 0 0 0 1px var(--line);
+    container-type: inline-size;
+    /* above the cards' subgrids, whose (empty) boxes span the whole grid, so the title is the one under a pointer */
+    position: relative; z-index: 1;
+  }
+  .deals .deals__head::before, .deals .deals__head::after { content: none; }
+  .deals .deals__head .head__copy { flex: 1 1 auto; justify-content: space-between; }
+  .deals .deals__title { font-size: min(calc(100cqi / 2.9), 6.4rem); }
+
+  /* the cells */
+  .deals .deals__track > .deals__item:nth-child(1) { grid-area: 2 / 1 / 3 / 2; }
+  .deals .deals__track > .deals__item:nth-child(2) { grid-area: 2 / 2 / 3 / 3; }
+  .deals .deals__track > .deals__item--upper { grid-area: 1 / 2 / 2 / 5; }
+  .deals .deals__track > .deals__item--lower { grid-area: 2 / 3 / 3 / 5; }
+
+  /* the banners: black tiles, the whole wide art centred in each */
+  .deals .deals__flower { justify-content: center; padding: clamp(12px, 2.4cqi, 28px); }
+  /* the offers: the logo plate takes half the tile's width in height (it grows with the row) */
+  .deals .deals__plate { flex: 1 1 auto; min-height: 50cqi; }
+}
+/* under 1180px wide the bento is held by the width and would leave more than 96px of cream above and below it: its two
+   rows share the content box's height instead (the banners' art stays whole and centred in its black tile) */
+@media (min-width: 1024px) and (max-width: 1179.98px), (min-width: 768px) and (max-width: 1179.98px) and (orientation: landscape) {
+  .deals .slide__inner { grid-template-rows: minmax(0, 1fr) minmax(0, 1fr); align-content: stretch; }
+}
+
+/* ---------------------------------------------------------------- motion: the roundel turns in once, softly */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-on .deals:not(.is-seen) .deals__roundel { opacity: 0; }
+  .reveal-on .deals.is-seen .deals__roundel { animation: deals-roll 900ms var(--ease) 80ms backwards; }
+  @keyframes deals-roll { from { opacity: 0; rotate: -20deg; } }
+}

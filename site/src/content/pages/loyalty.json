@@ -1,0 +1,281 @@
+{
+ "path": "/loyalty/",
+ "template": "rewards",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/loyalty/",
+  "hs:/loyalty/ assets/in-pages/Price_Table.webp",
+  "v2:join",
+  "v2:app"
+ ],
+ "title": "Join The Society: Rewards, Tiers & Login",
+ "metaDescription": "Join The Society, High Society's free loyalty program: earn points on every purchase, climb the Member to Diamond tiers and redeem rewards in store or online.",
+ "h1": "Join The Loyalty Program",
+ "crumb": "Loyalty",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Loyalty"
+  }
+ ],
+ "hero": {
+  "eyebrow": "The Society",
+  "lead": "Unlock exclusive rewards and special perks with our loyalty program! Every purchase brings you closer to exciting benefits, including members-only discounts, early access to new products, and personalized offers tailored just for you. Sign up today and start earning points with every purchase.",
+  "ctas": [
+   {
+    "text": "Join The Society",
+    "href": "/club-member-program/"
+   },
+   {
+    "text": "See the Tiers",
+    "href": "#blk-loyalty-tier-and-perks",
+    "style": "ghost"
+   }
+  ]
+ },
+ "form": {
+  "before": "app",
+  "heading": "Login To High Society's Loyalty Program",
+  "lead": "Get access to special online-only sales, promotions, and specials!",
+  "slotId": "ix2cd",
+  "ctas": [
+   {
+    "text": "Join The Society",
+    "href": "/club-member-program/",
+    "style": "ghost"
+   }
+  ]
+ },
+ "faq": {
+  "before": "app",
+  "heading": "Frequently Asked Questions",
+  "items": [
+   {
+    "q": "What is the High Society Loyalty Program?",
+    "a": "Our loyalty program is designed to reward you for every purchase. As a member, you earn points with each transaction, unlocking access to exclusive discounts, special offers, and early access to new products."
+   },
+   {
+    "q": "How do I join the loyalty program?",
+    "a": "Joining is simple! Sign up in-store or online and start earning points immediately with your purchases."
+   },
+   {
+    "q": "What are the benefits of joining the program?",
+    "a": "Members enjoy perks like:",
+    "list": [
+     "Exclusive discounts",
+     "Personalized offers",
+     "Early access to new and limited-edition products"
+    ]
+   },
+   {
+    "q": "How do I earn points?",
+    "a": "Points are automatically added to your account with every qualifying purchase. The more you shop, the more you earn!"
+   },
+   {
+    "q": "How can I redeem my points?",
+    "a": "Redeem your points for discounts or rewards during checkout, either in-store or online. Our team will help you apply your rewards to your purchase."
+   },
+   {
+    "q": "Does it cost anything to join?",
+    "a": "No, joining the loyalty program is completely free!"
+   },
+   {
+    "q": "Can I track my points?",
+    "a": "Yes, you can track your points through your account in-store, online, or on the High Society App."
+   },
+   {
+    "q": "Are there any restrictions on earning or redeeming points?",
+    "a": "Points may not apply to certain promotions or products. Visit our website or ask our team for full details."
+   },
+   {
+    "q": "How do I stay updated on loyalty program perks?",
+    "a": "Members receive updates on new rewards, exclusive offers, and more through email or the High Society App."
+   }
+  ]
+ },
+ "blocks": [
+  {
+   "type": "cards",
+   "id": "benefits",
+   "ground": "headlight",
+   "columns": 4,
+   "heading": "Member Perks",
+   "lead": "Sign up to get early access to strain drops, special pricing, birthday rewards and more.",
+   "items": [
+    {
+     "title": "Exclusive discounts",
+     "icon": "tag"
+    },
+    {
+     "title": "Personalized offers",
+     "icon": "user"
+    },
+    {
+     "title": "Early access to new and limited-edition products",
+     "icon": "spark"
+    },
+    {
+     "title": "Birthday rewards",
+     "icon": "heart"
+    }
+   ]
+  },
+  {
+   "type": "rewards",
+   "id": "tiers",
+   "ground": "white",
+   "heading": "Loyalty Tier and Perks",
+   "caption": "High Society Cannabis Loyalty Tiers",
+   "image": {
+    "src": "assets/in-pages/Price_Table.webp",
+    "alt": "High Society Cannabis Loyalty Tiers"
+   },
+   "perksLabel": "Perks",
+   "tiers": [
+    "Member",
+    "Silver",
+    "Gold",
+    "Diamond"
+   ],
+   "yes": "Included",
+   "no": "Not included",
+   "rows": [
+    {
+     "label": "$ Spent Per Year",
+     "values": [
+      "FREE",
+      "$1,000",
+      "$2,500",
+      "$5,000"
+     ]
+    },
+    {
+     "label": "Points Earned Per $100 Spent",
+     "values": [
+      "500 Points: $5 off",
+      "500 Points: $6.25 off",
+      "500 Points: $7.50 off",
+      "500 Points: $10 off"
+     ]
+    },
+    {
+     "label": "Bonus Opportunities (happy point hours, new product highlights, random lottery, holidays)",
+     "includes": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "label": "Redeem Points for products or dollars off",
+     "includes": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "label": "Points never expire",
+     "includes": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "label": "Automatically be entered in raffles, random lottery, penny products, merch, & more",
+     "includes": [
+      false,
+      false,
+      true,
+      true
+     ]
+    },
+    {
+     "label": "First pick to Exclusive drops of new products & merch",
+     "includes": [
+      false,
+      false,
+      false,
+      true
+     ]
+    },
+    {
+     "label": "Special Holiday Gift",
+     "includes": [
+      false,
+      false,
+      false,
+      true
+     ]
+    }
+   ],
+   "ctas": [
+    {
+     "text": "Join The Society",
+     "href": "/club-member-program/"
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "id": "how",
+   "ground": "headlight",
+   "heading": "How It Works",
+   "items": [
+    {
+     "title": "Join",
+     "md": "Joining is simple! Sign up in-store or online and start earning points immediately with your purchases."
+    },
+    {
+     "title": "Earn",
+     "md": "Points are automatically added to your account with every qualifying purchase. The more you shop, the more you earn!"
+    },
+    {
+     "title": "Redeem",
+     "md": "Redeem your points for discounts or rewards during checkout, either in-store or online. Our team will help you apply your rewards to your purchase."
+    }
+   ]
+  },
+  {
+   "type": "split",
+   "id": "app",
+   "ground": "charcoal",
+   "heading": "Download the High Society App",
+   "md": "Experience convenience at your fingertips with the High Society App. Easily browse our full cannabis menu, stay updated on the latest deals, and place your orders with just a few taps. Whether you're at home or on the go, managing your cannabis experience has never been easier.",
+   "image": "derived:app-phone-mockup",
+   "imageAlt": "",
+   "ctas": [
+    {
+     "text": "Download Now",
+     "href": "https://apps.apple.com/us/app/high-society-cannabis/id6503314334"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen-other.mjs",
+  "fixes": [
+   "title: the structure map's \"Join The Society Loyalty Program: Rewards, Tiers & Login\" is 70 chars with the suffix; shortened to fit 60",
+   "the perks answer (\"like:Exclusive discountsPersonalized offers…\", a CMS list that lost its markup) is shown as a list; its words keep their order and spacing",
+   "tier table: \"preoduct\" in the tier art -> \"product\""
+  ],
+  "newCopy": [
+   "hero eyebrow and buttons",
+   "perks band heading; the perk \"Birthday rewards\" is from the v2 join line",
+   "step titles Join / Earn / Redeem (texts are High Society's FAQ answers)",
+   "tier table cell words Included / Not included"
+  ],
+  "notCarried": [],
+  "keptForClient": [
+   "raffles, random lottery and penny products in the tiers (OPEN-DECISIONS 7: Michigan rules on giveaways to check)"
+  ]
+ }
+}

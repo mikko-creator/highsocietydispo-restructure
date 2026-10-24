@@ -1,0 +1,23 @@
+/* blocks/_block.css — the band every block draws (core; src/blocks/_kit.mjs section()): the ground (theme-*), the
+   content box (v2's container and edge padding), the head (the reskin's short red rule over a Changa One title, the
+   lead in Changa), the action row. On the home a block is a v2 section instead (.slide--natural + .secnum + .title). */
+.block { position: relative; background: var(--bg); color: var(--fg); }
+.block__inner { position: relative; max-width: calc(var(--container) + var(--pad-l) + var(--pad-r)); margin-inline: auto; padding: clamp(48px, 7vw, 88px) var(--pad-r) clamp(48px, 7vw, 88px) var(--pad-l); display: flex; flex-direction: column; gap: var(--gap-lg); min-width: 0; }
+/* two bands on the same ground read as one: the second sheds its top padding */
+.block.theme-white + .block.theme-white > .block__inner, .block.theme-headlight + .block.theme-headlight > .block__inner { padding-top: 0; }
+.block__head { display: flex; flex-direction: column; gap: var(--s-2); max-width: 62rem; min-width: 0; }
+.block__title { font: 900 var(--fs-headline)/1.02 var(--font-display); text-transform: uppercase; letter-spacing: -.005em; color: var(--fg); text-wrap: balance; overflow-wrap: anywhere; }
+.block__title::before { content: ""; display: block; width: 48px; height: 4px; margin-bottom: var(--s-2); border-radius: 2px; background: var(--red); }
+.theme-red .block__title::before { background: var(--white); }
+.block__lead { font: 500 var(--fs-subhead)/1.45 var(--font-head); color: var(--fg-2); max-width: 60ch; }
+/* a text link inside a lead or a list item (neither is .md) gets the body-copy link style of blocks/_md.css */
+:where(.block__lead, .blist__text) a:not(.btn) { color: var(--em); font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+:where(.block__lead, .blist__text) a:not(.btn):hover { text-decoration-thickness: 2px; }
+:where(.theme-red, .theme-black, .theme-charcoal) :where(.block__lead, .blist__text) a:not(.btn) { color: var(--fg); }
+.block__ctas { display: flex; flex-wrap: wrap; gap: var(--s-1) var(--s-2); }
+.block__checker { position: absolute; left: 0; right: 0; top: 0; }
+
+/* the home's additions: v2 sections (the race number and v2's display title carry the head) */
+.slide.block .block__title::before { display: none; }
+.slide.block > .block__inner { padding-block: var(--pad-t) var(--pad-b); }
+.slide.block .block__head { flex-direction: row; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; max-width: none; }

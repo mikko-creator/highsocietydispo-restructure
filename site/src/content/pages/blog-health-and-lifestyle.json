@@ -1,0 +1,19 @@
+{
+ "path": "/blog/health-and-lifestyle/",
+ "template": "blog-index",
+ "provenance": "new",
+ "title": "Cannabis Health and Lifestyle Articles",
+ "crumb": "Health & Lifestyle",
+ "metaDescription": "How adults fit cannabis into everyday life, from hobbies and the outdoors to work and parenting, with research summarized carefully and every source cited.",
+ "h1": "Health & Lifestyle",
+ "hero": {
+  "lead": "How does cannabis fit into an adult's everyday life? Health & Lifestyle looks at hobbies, work, the outdoors, the seasons and parenting, including safe storage at home. When an article touches on research, we summarize what the studies found, cite our sources and say where the evidence is limited. Nothing here is medical advice: for questions about your health or your medications, talk with your doctor."
+ },
+ "sourceRefs": [
+  "structure-map:/blog/health-and-lifestyle/",
+  "structure-map:newPageBriefs blog-category-intros"
+ ],
+ "review": {
+  "notes": "Title and h1 from the structure map; intro and description are new copy (brief blog-category-intros: 50-100 words). Category from site.json blog.categories (the build pairs this page with its slug by path). No health claims (R 420.507); the word \"wellness\" is avoided (docs/VOICE.md never-uses list) although the map lists \"cannabis and wellness routines\" as a secondary keyword."
+ }
+}

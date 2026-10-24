@@ -1,0 +1,58 @@
+{
+ "path": "/shop/",
+ "template": "menu-placeholder",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/shop/"
+ ],
+ "titleFull": "Shop Cannabis Online With High Society: Best Weed Near You",
+ "metaDescription": "Browse and shop High Society's extensive selection of premium cannabis products online. Convenient pickup available at our Michigan dispensary locations.",
+ "h1": "Shop",
+ "crumb": "Shop",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Shop"
+  }
+ ],
+ "hero": {
+  "eyebrow": "High Society Menus",
+  "lead": "Choose your store to open its menu, then order ahead for pickup in store or at the curb.",
+  "ctas": [
+   {
+    "text": "Select a Location",
+    "href": "#dispenzaLocationPopup-open",
+    "locator": true
+   }
+  ]
+ },
+ "blocks": [
+  {
+   "type": "store-grid",
+   "id": "stores",
+   "ground": "black",
+   "heading": "Choose Your Store",
+   "stores": "all",
+   "to": "shop",
+   "primary": {
+    "text": "Shop Now",
+    "to": "shop"
+   },
+   "secondary": {
+    "text": "View Location",
+    "to": "location"
+   }
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen-other.mjs",
+  "newCopy": [
+   "hero eyebrow and lead (brief shop-chooser)",
+   "grid heading"
+  ]
+ }
+}

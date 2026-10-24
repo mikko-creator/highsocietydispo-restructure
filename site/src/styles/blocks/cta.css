@@ -1,0 +1,5 @@
+/* blocks/cta.css — the call-to-action band (core): the red (or ink) ground, v2's checkered strip on its top edge, the
+   title in v2's display face, the line, the buttons. */
+.block--cta .block__inner.cta { padding-top: calc(var(--checker-h) + clamp(40px, 6vw, 72px)); align-items: flex-start; gap: var(--s-3); }
+.cta__title { font: 900 clamp(2.2rem, 1rem + 3.4vw, 4.2rem)/var(--lh-display) var(--font-display); text-transform: uppercase; letter-spacing: -.005em; color: var(--fg); max-width: 18ch; text-wrap: balance; overflow-wrap: anywhere; }
+.cta__text { color: var(--fg-2); font: 500 var(--fs-subhead)/1.45 var(--font-head); max-width: 52ch; }

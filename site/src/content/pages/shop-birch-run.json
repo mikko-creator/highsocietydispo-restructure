@@ -1,0 +1,141 @@
+{
+ "path": "/shop/birch-run/",
+ "template": "menu-placeholder",
+ "store": "birch-run",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/shop/birch-run/"
+ ],
+ "titleFull": "Shop Cannabis - Birch Run Dispensary Menu",
+ "metaDescription": "Browse High Society's online cannabis selection for the Birch Run weed dispensary. Order premium cannabis products for easy pickup.",
+ "h1": "Birch Run Weed Dispensary Menu",
+ "crumb": "Birch Run",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Shop",
+   "path": "/shop/"
+  },
+  {
+   "name": "Birch Run"
+  }
+ ],
+ "hero": {
+  "eyebrow": "High Society Birch Run",
+  "lead": "Order ahead online, then pick up in store or at the curb.",
+  "status": {
+   "open": "Open - Closes at 9:00 PM",
+   "closed": "Closed - Opens at 9:00 AM"
+  },
+  "mapsUrl": "https://www.google.com/maps/dir//High+Society+Weed+Dispensary+Outlet+Birch+Run,+9242+Tiffany+Blvd,+Birch+Run,+MI+48415,+United+States/@43.24688,-83.770348,15z/data=!4m17!1m7!3m6!1s0x88239381e51e6645:0x3468d316becd0646!2sHigh+Society+Weed+Dispensary+Outlet+Birch+Run!8m2!3d43.24688!4d-83.770348!16s%2Fg%2F11vcs80w86!4m8!1m0!1m5!1m1!1s0x88239381e51e6645:0x3468d316becd0646!2m2!1d-83.770348!2d43.24688!3e0"
+ },
+ "blocks": [
+  {
+   "type": "menu-placeholder",
+   "id": "menu",
+   "ground": "white",
+   "store": "birch-run",
+   "heading": "Menu",
+   "title": "Shop the Birch Run menu",
+   "md": "Browse today’s products, prices and deals, add them to your cart and choose a pickup time. Prefer to order by phone? Call the store and our team will help.",
+   "order": {
+    "text": "Order Now"
+   },
+   "call": {
+    "text": "Call"
+   }
+  },
+  {
+   "type": "link-grid",
+   "id": "categories",
+   "ground": "headlight",
+   "heading": "Shop by Category",
+   "groups": [
+    {
+     "title": "Birch Run menu",
+     "links": [
+      {
+       "text": "Accessories",
+       "href": "/shop/birch-run/?dtche%5Bcategory%5D=accessories"
+      },
+      {
+       "text": "Apparel",
+       "href": "/shop/birch-run/?dtche%5Bcategory%5D=apparel"
+      },
+      {
+       "text": "Concentrates",
+       "href": "/shop/birch-run/?dtche%5Bcategory%5D=concentrates"
+      },
+      {
+       "text": "Edibles",
+       "href": "/shop/birch-run/?dtche%5Bcategory%5D=edibles"
+      },
+      {
+       "text": "Flower",
+       "href": "/shop/birch-run/?dtche%5Bcategory%5D=flower"
+      },
+      {
+       "text": "Pre-Rolls",
+       "href": "/shop/birch-run/?dtche%5Bcategory%5D=pre-rolls"
+      },
+      {
+       "text": "Tinctures",
+       "href": "/shop/birch-run/?dtche%5Bcategory%5D=tinctures"
+      },
+      {
+       "text": "Topicals",
+       "href": "/shop/birch-run/?dtche%5Bcategory%5D=topicals"
+      },
+      {
+       "text": "Vaporizers",
+       "href": "/shop/birch-run/?dtche%5Bcategory%5D=vaporizers"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "store-details",
+   "id": "store",
+   "ground": "white",
+   "heading": "Your Store",
+   "store": "birch-run",
+   "name": "High Society Birch Run",
+   "facts": [
+    "address",
+    "phone",
+    "email",
+    "hours"
+   ],
+   "email": "info@highsocietydispo.com",
+   "hoursText": "9:00 AM - 9:00 PM Daily",
+   "mapsUrl": "https://www.google.com/maps/dir//High+Society+Weed+Dispensary+Outlet+Birch+Run,+9242+Tiffany+Blvd,+Birch+Run,+MI+48415,+United+States/@43.24688,-83.770348,15z/data=!4m17!1m7!3m6!1s0x88239381e51e6645:0x3468d316becd0646!2sHigh+Society+Weed+Dispensary+Outlet+Birch+Run!8m2!3d43.24688!4d-83.770348!16s%2Fg%2F11vcs80w86!4m8!1m0!1m5!1m1!1s0x88239381e51e6645:0x3468d316becd0646!2m2!1d-83.770348!2d43.24688!3e0",
+   "ctas": [
+    {
+     "text": "View Location",
+     "href": "location"
+    },
+    {
+     "text": "Get Directions",
+     "href": "maps",
+     "style": "ghost"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen-other.mjs",
+  "newCopy": [
+   "hero eyebrow and lead",
+   "the menu notice (title, text, button labels)",
+   "category band heading and group title"
+  ],
+  "notes": [
+   "category links use High Society's own form /shop/<store>/?dtche[category]=<category> (its v1 store pages); the CMS category pages (/birch-run/<category>/) are not part of this build"
+  ]
+ }
+}

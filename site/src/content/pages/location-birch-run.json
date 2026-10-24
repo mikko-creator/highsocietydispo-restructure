@@ -1,0 +1,473 @@
+{
+ "path": "/dispensary-locations/birch-run/",
+ "template": "location",
+ "store": "birch-run",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/dispensary-locations/birch-run/",
+  "v2:join",
+  "v2:reviews",
+  "v2:app"
+ ],
+ "titleFull": "High Society Weed Dispensary Outlet Birch Run",
+ "metaDescription": "Explore High Society's Birch Run location for premium cannabis products and outstanding customer service. Your trusted dispensary in Michigan.",
+ "h1": "Weed Dispensary In Birch Run, MI",
+ "crumb": "Birch Run",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Locations",
+   "path": "/dispensary-locations/"
+  },
+  {
+   "name": "Birch Run"
+  }
+ ],
+ "geo": {
+  "lat": 43.24688,
+  "lng": -83.770348
+ },
+ "storeSameAs": [
+  "https://www.facebook.com/profile.php?id=100095538314342",
+  "https://www.instagram.com/highsociety_birchrun/"
+ ],
+ "hero": {
+  "eyebrow": "High Society Birch Run · Recreational 21+",
+  "image": "assets/pit-stop/img/scene-birch-run.jpg",
+  "imageAlt": "",
+  "lead": "Shop Cannabis Products",
+  "ctas": [
+   {
+    "text": "Order Now",
+    "href": "/shop/birch-run/"
+   },
+   {
+    "text": "Get Direction",
+    "href": "https://www.google.com/maps/dir//High+Society+Weed+Dispensary+Outlet+Birch+Run,+9242+Tiffany+Blvd,+Birch+Run,+MI+48415,+United+States/@43.24688,-83.770348,15z/data=!4m17!1m7!3m6!1s0x88239381e51e6645:0x3468d316becd0646!2sHigh+Society+Weed+Dispensary+Outlet+Birch+Run!8m2!3d43.24688!4d-83.770348!16s%2Fg%2F11vcs80w86!4m8!1m0!1m5!1m1!1s0x88239381e51e6645:0x3468d316becd0646!2m2!1d-83.770348!2d43.24688!3e0",
+    "style": "ghost"
+   }
+  ],
+  "status": {
+   "open": "Open - Closes at 9:00 PM",
+   "closed": "Closed - Opens at 9:00 AM"
+  },
+  "mapsUrl": "https://www.google.com/maps/dir//High+Society+Weed+Dispensary+Outlet+Birch+Run,+9242+Tiffany+Blvd,+Birch+Run,+MI+48415,+United+States/@43.24688,-83.770348,15z/data=!4m17!1m7!3m6!1s0x88239381e51e6645:0x3468d316becd0646!2sHigh+Society+Weed+Dispensary+Outlet+Birch+Run!8m2!3d43.24688!4d-83.770348!16s%2Fg%2F11vcs80w86!4m8!1m0!1m5!1m1!1s0x88239381e51e6645:0x3468d316becd0646!2m2!1d-83.770348!2d43.24688!3e0"
+ },
+ "visiting": {
+  "before": "amenities",
+  "heading": "High Society Weed Dispensary Outlet Birch Run",
+  "lead": "Whether you’re a local in [Birch Run, MI](https://www.birch-run.com/), or simply visiting, this vibrant city offers a range of unique experiences and attractions. Discover its rich cultural heritage or take a relaxing walk through the charming downtown. Birch Run truly has something for everyone. Here are some must-visit attractions:",
+  "label": "FOLLOW THESE DIRECTIONS FROM",
+  "tabs": [
+   {
+    "label": "Wilderness Trails Zoo",
+    "title": "Directions From Wilderness Trails Zoo",
+    "md": "We are located only 5 minutes from [Wilderness Trails Zoo](https://www.google.com/maps/place/Wilderness+Trails+Zoo/@43.247005,-83.7660994,15z/data=!4m15!1m8!3m7!1s0x88239381e51e6645:0x3468d316becd0646!2sHigh+Society+Weed+Dispensary+Outlet+Birch+Run!8m2!3d43.24688!4d-83.770348!10e1!16s%2Fg%2F11vcs80w86!3m5!1s0x88238dc74ea35e3f:0xb71882a6332883cf!8m2!3d43.252923!4d-83.734543!16s%2Fg%2F1tgdtrs7?hl=en&entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D).\n\n1. Head west\n2. Turn left toward M-83 S\n3. Turn left onto M-83 S\n4. Turn right onto M-54 N/M-83 S\n5. Turn left onto Dixie Hwy\n6. Turn right onto Tiffany Blvd\n\nOur cannabis dispensary will be on the right"
+   },
+   {
+    "label": "Emagine Birch Run",
+    "title": "Directions From Emagine Birch Run",
+    "md": "We are located only 2 minutes from the infamous [Emagine Birch Run](https://www.google.com/maps/place/Emagine+Birch+Run/@43.2496366,-83.7627452,15z/data=!4m30!1m23!4m22!1m6!1m2!1s0x88239381e51e6645:0x3468d316becd0646!2sHigh+Society+Weed+Dispensary+Outlet+Birch+Run,+Tiffany+Boulevard,+Birch+Run,+MI,+USA!2m2!1d-83.770348!2d43.24688!1m6!1m2!1s0x88239205933399d5:0xc24752008138dc58!2sEmagine+Birch+Run,+12280+Dixie+Hwy,+Birch+Run,+MI+48415,+United+States!2m2!1d-83.7697469!2d43.2459512!1m6!1m2!1s0x88238dc74ea35e3f:0xb71882a6332883cf!2sWilderness+Trails+Zoo,+11721+Gera+Rd,+Birch+Run,+MI+48415,+United+States!2m2!1d-83.734543!2d43.252923!3e0!3m5!1s0x88239205933399d5:0xc24752008138dc58!8m2!3d43.2459526!4d-83.7700064!16s%2Fg%2F1tdmqp1z?hl=en&entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D).\n\n1. Head north\n2. Turn right\n3. Turn left onto Dixie Hwy\n4. Turn left onto Tiffany Blvd\n\nOur cannabis dispensary will be on the left"
+   },
+   {
+    "label": "Country Inn & Suites by Radisson, Birch Run-Frankenmuth, MI",
+    "title": "Directions From Country Inn & Suites by Radisson, Birch Run-Frankenmuth, MI",
+    "md": "We are located only 4 minutes from [Country Inn & Suites by Radisson, Birch Run-Frankenmuth, MI](https://www.google.com/maps/place/Country+Inn+%26+Suites+by+Radisson,+Birch+Run-Frankenmuth,+MI/@43.2484284,-83.8020828,15z/am=t/data=!4m26!1m16!4m15!1m6!1m2!1s0x88239205933399d5:0xc24752008138dc58!2sEmagine+Birch+Run,+12280+Dixie+Hwy,+Birch+Run,+MI+48415,+United+States!2m2!1d-83.7697469!2d43.2459512!1m6!1m2!1s0x88239381e51e6645:0x3468d316becd0646!2sHigh+Society+Weed+Dispensary+Outlet+Birch+Run,+Tiffany+Boulevard,+Birch+Run,+MI,+USA!2m2!1d-83.770348!2d43.24688!3e0!3m8!1s0x88239217ef38a383:0x4143cf874ee682b6!5m2!4m1!1i2!8m2!3d43.2484284!4d-83.7830284!16s%2Fg%2F1tdcbf54?hl=en&entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D).\n\n1. Head north toward N Beyer Rd\n2. Turn right toward N Beyer Rd\n3. Turn left onto N Beyer Rd\n4. Use the 2nd from the right lane to turn right onto Main St\n5. Continue onto M-54 S/M-83 N/Birch Run Rd\n6. Turn right onto Dixie Hwy\n7. Turn right onto Tiffany Blvd\n\nOur dispensary will be on the left"
+   },
+   {
+    "label": "The Round Em Up Ranch Wedding Barn Venue",
+    "title": "Directions From the Round Em Up Ranch Wedding Barn Venue",
+    "md": "We are located only 6 minutes from the Round Em Up Ranch Wedding Barn Venue.\n\n1. Head south toward M-54 N\n2. Turn right onto M-54 N\n3. Turn left at the 1st cross street onto W Willard Rd\n4. Turn right at the 1st cross street onto Dixie Hwy\n5. Turn left onto Tiffany Blvd\n\nOur marijuana dispensary will be on the left"
+   }
+  ]
+ },
+ "blocks": [
+  {
+   "type": "cta",
+   "id": "rewards-teaser",
+   "ground": "red",
+   "heading": "Join The Society",
+   "md": "Sign up to get early access to strain drops, special pricing, birthday rewards and more",
+   "ctas": [
+    {
+     "text": "Join the Society Today",
+     "href": "/club-member-program/"
+    }
+   ]
+  },
+  {
+   "type": "store-details",
+   "id": "store-details",
+   "ground": "white",
+   "heading": "Store Info",
+   "store": "birch-run",
+   "name": "High Society Birch Run",
+   "facts": [
+    "hours",
+    "address",
+    "email",
+    "phone"
+   ],
+   "hoursText": "Open Daily: 9:00 AM - 9:00 PM",
+   "addressText": "9242 Tiffany Blvd, Birch Run, MI 48415, United States",
+   "email": "info@highsocietydispo.com",
+   "mapsUrl": "https://www.google.com/maps/dir//High+Society+Weed+Dispensary+Outlet+Birch+Run,+9242+Tiffany+Blvd,+Birch+Run,+MI+48415,+United+States/@43.24688,-83.770348,15z/data=!4m17!1m7!3m6!1s0x88239381e51e6645:0x3468d316becd0646!2sHigh+Society+Weed+Dispensary+Outlet+Birch+Run!8m2!3d43.24688!4d-83.770348!16s%2Fg%2F11vcs80w86!4m8!1m0!1m5!1m1!1s0x88239381e51e6645:0x3468d316becd0646!2m2!1d-83.770348!2d43.24688!3e0",
+   "ctas": [
+    {
+     "text": "View Menu",
+     "href": "shop"
+    },
+    {
+     "text": "Get Direction",
+     "href": "maps",
+     "style": "ghost"
+    }
+   ],
+   "social": [
+    {
+     "network": "facebook",
+     "href": "https://www.facebook.com/profile.php?id=100095538314342",
+     "label": "High Society Birch Run on Facebook"
+    },
+    {
+     "network": "instagram",
+     "href": "https://www.instagram.com/highsociety_birchrun/",
+     "label": "High Society Birch Run on Instagram"
+    }
+   ],
+   "about": {
+    "heading": "The Best Weed Dispensary In Birch Run, Michigan",
+    "md": "High Society Cannabis in Birch Run stands out as a leading cannabis retailer, celebrated for outstanding customer service and a diverse range of premium cannabis products. Their collection features top brands like 1906, Breeze, Cali-Blaze, and Jeeter, renowned for their quality and potency. This commitment to excellence has established High Society Cannabis as a go-to destination for high-quality cannabis in Birch Run.",
+    "linksLabel": "More about High Society Birch Run",
+    "links": [
+     {
+      "text": "Deals",
+      "href": "/deals/"
+     },
+     {
+      "text": "Loyalty",
+      "href": "/loyalty/"
+     },
+     {
+      "text": "FAQs",
+      "href": "#faq"
+     },
+     {
+      "text": "Medical Card Guide",
+      "href": "/getting-a-medical-card/"
+     }
+    ]
+   }
+  },
+  {
+   "type": "amenities",
+   "id": "amenities",
+   "ground": "white",
+   "heading": "Store Amenities",
+   "groups": [
+    {
+     "title": "We Offer",
+     "items": [
+      {
+       "icon": "cart",
+       "label": "In-Store Shopping"
+      },
+      {
+       "icon": "bag",
+       "label": "In-Store Pickup"
+      },
+      {
+       "icon": "pin",
+       "label": "Curbside Pickup"
+      }
+     ]
+    },
+    {
+     "title": "Pay With",
+     "items": [
+      {
+       "icon": "tag",
+       "label": "Cash"
+      },
+      {
+       "icon": "check",
+       "label": "Debit Card"
+      },
+      {
+       "icon": "home",
+       "label": "ATM in-store"
+      }
+     ]
+    },
+    {
+     "title": "Before You Go",
+     "items": [
+      {
+       "icon": "user",
+       "label": "Valid government-issued ID or passport, 21+"
+      },
+      {
+       "icon": "cart",
+       "label": "Order online for pickup; curbside customers get a text when the order is ready"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "id": "first-visit",
+   "ground": "headlight",
+   "heading": "First-Time Customer Guide",
+   "items": [
+    {
+     "title": "Who Can Shop",
+     "md": "Individuals 21 years or older can shop recreationally at our cannabis shop."
+    },
+    {
+     "title": "Check In",
+     "md": "Present a valid government-issued ID or passport upon arrival and check in with the security and front desk staff."
+    },
+    {
+     "title": "Meet Your Budtender",
+     "md": "When it’s your turn, a budtender will call you from the waiting area. They’ll help you choose products and answer any questions, whether you’re a first-time visitor or a returning customer."
+    },
+    {
+     "title": "Choose Your Items",
+     "md": "After making your selections, the budtender will notify the order preparation team. Payments are accepted via cash, credit, or debit cards."
+    },
+    {
+     "title": "Complete Your Purchase",
+     "md": "Once your order is prepared, a staff member will call your name, process the payment, and confirm the order details before completing your purchase."
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "id": "order-pickup",
+   "ground": "white",
+   "heading": "How to Place an Order for Dispensary Pick-Up",
+   "items": [
+    {
+     "title": "Browse the Menu",
+     "md": "Explore our [Birch Run dispensary menu](/shop/birch-run/) online or reach out to us at [(989) 244-3001](tel:+19892443001) for assistance."
+    },
+    {
+     "title": "Build Your Order",
+     "md": "Select your desired products, set the quantities, add them to your cart, and pick a convenient time for pickup."
+    },
+    {
+     "title": "Check Out",
+     "md": "Finalize your order by entering your details. New visitors must present a valid ID for verification, while returning customers can log in for a quicker checkout."
+    },
+    {
+     "title": "Curbside Pickup",
+     "md": "Prefer curbside pickup? Let us know, and we’ll send you a text when your order is ready for collection."
+    },
+    {
+     "title": "Enjoy Responsibly",
+     "md": "Use cannabis responsibly. We’re dedicated to providing you with a smooth and hassle-free shopping experience!"
+    }
+   ]
+  },
+  {
+   "type": "deals",
+   "id": "deals",
+   "source": "site",
+   "ground": "headlight",
+   "heading": "Deals",
+   "lead": "Deals vary by store and change often. The menu shows today's deals at High Society Birch Run.",
+   "more": {
+    "text": "See all deals",
+    "href": "/deals/"
+   }
+  },
+  {
+   "type": "cards",
+   "id": "categories",
+   "ground": "white",
+   "columns": 4,
+   "heading": "Shop Cannabis Products",
+   "items": [
+    {
+     "title": "Flower",
+     "icon": "leaf",
+     "href": "/shop/birch-run/?dtche%5Bcategory%5D=flower",
+     "md": "Each cannabis strain is carefully curated to your needs, whether you're seeking relaxation, creativity, or a balanced high."
+    },
+    {
+     "title": "Pre-Rolls",
+     "icon": "spark",
+     "href": "/shop/birch-run/?dtche%5Bcategory%5D=pre-rolls"
+    },
+    {
+     "title": "Concentrates",
+     "icon": "drop",
+     "href": "/shop/birch-run/?dtche%5Bcategory%5D=concentrates",
+     "md": "From shatter to wax, our concentrates are ideal for experienced users looking for a powerful and fast-acting option."
+    },
+    {
+     "title": "Vaporizers",
+     "icon": "wave",
+     "href": "/shop/birch-run/?dtche%5Bcategory%5D=vaporizers"
+    }
+   ],
+   "lead": "Featured Cannabis Categories"
+  },
+  {
+   "type": "reviews",
+   "id": "reviews",
+   "source": "home",
+   "heading": "What Our Customers Say About Us",
+   "lead": "Google reviews from High Society customers across our Michigan stores."
+  },
+  {
+   "type": "faq",
+   "id": "faq",
+   "ground": "white",
+   "heading": "Frequently Asked Questions",
+   "lead": "More questions? Visit our [FAQ page](/faq/).",
+   "items": [
+    {
+     "q": "What do I need to shop at High Society Weed Dispensary Outlet Birch Run?",
+     "a": "To shop at our dispensary, you must present a valid government-issued ID verifying you are 21 or older. Individuals aged 18 and up with a valid medical marijuana card are also eligible to make purchases."
+    },
+    {
+     "q": "How can I address a defective product?",
+     "a": "If you encounter an issue with the quality or functionality of a product, please contact us at [(989) 244-3001](tel:+19892443001) or visit the store where you made the purchase. Our team is ready to assist."
+    },
+    {
+     "q": "What are the payment methods at High Society?",
+     "a": "Customers can pay with cash or debit cards. Each dispensary is equipped with an ATM for added convenience. Please check with your local store for specific payment methods."
+    },
+    {
+     "q": "Is it legal to transport cannabis?",
+     "a": "Cannabis purchases are permitted in Michigan, but transporting cannabis across state lines is illegal under federal law. Please refrain from taking cannabis products out of the state."
+    },
+    {
+     "q": "What types of products does the dispensary carry?",
+     "a": "Our dispensary offers a wide range of high-quality cannabis products, including flower, pre-rolls, concentrates, vape pens, edibles, and more. Browse our menu or contact us with any specific inquiries."
+    },
+    {
+     "q": "Do you offer a customer rewards program?",
+     "a": "Yes, we value our customers and offer The Society loyalty program. Earn points on every purchase and redeem them for special discounts or offers—ask our team for details."
+    }
+   ]
+  },
+  {
+   "type": "amenities",
+   "id": "service-area",
+   "ground": "headlight",
+   "heading": "Locations Where Our Dispensary Provides Service",
+   "groups": [
+    {
+     "title": "Towns",
+     "items": [
+      {
+       "icon": "pin",
+       "label": "Birch Run"
+      },
+      {
+       "icon": "pin",
+       "label": "Clio"
+      },
+      {
+       "icon": "pin",
+       "label": "Bridgeport"
+      }
+     ]
+    },
+    {
+     "title": "ZIP Codes We Serve",
+     "items": [
+      {
+       "icon": "target",
+       "label": "48415"
+      },
+      {
+       "icon": "target",
+       "label": "48722"
+      },
+      {
+       "icon": "target",
+       "label": "48420"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "id": "resources",
+   "ground": "white",
+   "heading": "Other Resources",
+   "style": "dot",
+   "items": [
+    "Keep up with the latest [marijuana regulations and updates](https://www.birchruntwp.com/general-ordinances) in Birch Run, MI.",
+    "Stay updated on important [cannabis news and developments](https://www.michigan.gov/cra/laws-rules-other) across Michigan.",
+    "Read our guide to [Michigan marijuana laws](/cannabis-laws-by-state/michigan/)."
+   ]
+  },
+  {
+   "type": "nearby",
+   "id": "nearby",
+   "store": "birch-run",
+   "order": [
+    "east-lansing",
+    "mount-pleasant",
+    "lenox",
+    "charlotte",
+    "saline",
+    "big-rapids",
+    "new-buffalo"
+   ],
+   "heading": "Other High Society Locations",
+   "lead": "Our other Michigan stores, nearest first.",
+   "view": {
+    "text": "View Location"
+   }
+  },
+  {
+   "type": "split",
+   "id": "app",
+   "ground": "charcoal",
+   "heading": "Download the High Society App",
+   "md": "Experience convenience at your fingertips with the High Society App. Easily browse our full cannabis menu, stay updated on the latest deals, and place your orders with just a few taps. Whether you're at home or on the go, managing your cannabis experience has never been easier.",
+   "image": "derived:app-phone-mockup",
+   "imageAlt": "",
+   "ctas": [
+    {
+     "text": "Download Now",
+     "href": "https://apps.apple.com/us/app/high-society-cannabis/id6503314334"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen.mjs",
+  "fixes": [
+   "h1 casing normalised (High Society's words kept): \"Weed Dispensary In Birch Run, MI\" -> \"Weed Dispensary In Birch Run, MI\""
+  ],
+  "newCopy": [
+   "tab title \"Directions From Wilderness Trails Zoo\" (v1 prints this panel without its own heading)",
+   "resources: \"Read our guide to Michigan marijuana laws.\" (link to the planned law guide)",
+   "hero eyebrow (store name + \"Recreational 21+\")",
+   "store-details \"more\" link labels (Deals, Loyalty, FAQs, Medical Card Guide)",
+   "amenities heading \"Store Amenities\" and group \"Before You Go\" (its two lines condense High Society's ID and ordering steps)",
+   "step titles (the step texts are High Society's)",
+   "deals heading and lead",
+   "reviews lead",
+   "FAQ lead",
+   "service-area group titles",
+   "nearby heading and lead"
+  ],
+  "keptForClient": [
+   "first-time guide payment line (\"cash, credit, or debit\") vs the FAQ (cash and debit): OPEN-DECISIONS 4",
+   "medical patients 18+ in the FAQ (OPEN-DECISIONS 5)"
+  ]
+ }
+}

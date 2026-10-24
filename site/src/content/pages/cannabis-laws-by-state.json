@@ -1,0 +1,119 @@
+{
+ "path": "/cannabis-laws-by-state/",
+ "template": "hub",
+ "provenance": "new",
+ "sourceRefs": [
+  "structure map newPageBriefs /cannabis-laws-by-state/",
+  "facts/law-facts.json (claims listed in review.claims)",
+  "facts/hs-facts.json services.travelWithCannabis, F-nb"
+ ],
+ "title": "Cannabis Laws by State: Michigan & Neighbors",
+ "crumb": "Cannabis Laws",
+ "metaDescription": "Cannabis laws by state for Michigan visitors and shoppers: where weed is legal near Michigan, our Michigan, Indiana and Illinois guides and the state-line rule.",
+ "h1": "Marijuana Laws in Michigan and Nearby States",
+ "hero": {
+  "eyebrow": "Resources",
+  "lead": "Every state writes its own cannabis law, and the rules change at each border. Start with Michigan, where all eight High Society stores are, then see how Indiana and Illinois compare for the visitors who drive in from there. Status as of October 2026."
+ },
+ "blocks": [
+  {
+   "type": "cards",
+   "heading": "State law guides",
+   "lead": "Three plain-language guides, each with its limits, its driving rules and its sources.",
+   "columns": 3,
+   "items": [
+    {
+     "title": "Michigan",
+     "tag": "Legal for 21+",
+     "md": "Legal for adults 21 and older since 2018, with a medical program since 2008. Limits, where you can use cannabis, driving and taxes.",
+     "href": "/cannabis-laws-by-state/michigan/"
+    },
+    {
+     "title": "Indiana",
+     "tag": "Not legal",
+     "md": "No legal adult-use or medical marijuana as of October 2026; possessing any amount is a crime. What Hoosiers visiting Michigan should know.",
+     "href": "/cannabis-laws-by-state/indiana/"
+    },
+    {
+     "title": "Illinois",
+     "tag": "Legal for 21+",
+     "md": "Adults 21 and older may buy and possess cannabis; the medical program is for Illinois residents. Visitor limits and the I-94 trip.",
+     "href": "/cannabis-laws-by-state/illinois/"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "heading": "Why the rules stop at the state line",
+   "md": "Cannabis is legal in Michigan because Michigan’s voters made it legal under state law: medical use in 2008 and adult use, for people 21 and older, in 2018. That law covers what happens in Michigan. Federal law is a separate layer, and as of October 2026 it still lists adult-use marijuana in Schedule I.\n\nThat is why High Society’s answer to travel questions never changes: cannabis purchases are legal in Michigan, but transporting cannabis across state lines is prohibited under federal law. It holds even between two states where cannabis is legal, because Michigan’s law does not protect cannabis once it leaves Michigan.\n\nOur New Buffalo store sits just over the Indiana line on US-12, minutes from I-94, so many of its guests drive in from Indiana and Illinois. Their home states treat cannabis very differently, as the table below shows."
+  },
+  {
+   "type": "callout",
+   "tone": "legal",
+   "heading": "Cannabis bought in Michigan stays in Michigan",
+   "md": "Transporting cannabis across a state line remains illegal under federal law, even into a state where cannabis is legal. Indiana and Wisconsin also make possession a crime under their own laws, and since March 2026 Ohio allows only marijuana bought from an Ohio-licensed dispensary or legally home-grown. Enjoy responsibly in Michigan—don’t travel across state lines with cannabis."
+  },
+  {
+   "type": "table",
+   "heading": "Where cannabis is legal around Michigan",
+   "caption": "Status as of October 2026",
+   "columns": ["State", "Adult use (21+)", "Medical", "Cannabis bought in Michigan"],
+   "rows": [
+    ["**Michigan**", "Legal since 2018", "Legal since 2008, with a state registry card", "Legal within Michigan’s limits, in Michigan"],
+    ["**Indiana**", "Not legal", "Not legal", "Illegal to bring in under Indiana law"],
+    ["**Illinois**", "Legal", "For Illinois residents", "Should not cross the state line; a federal offense"],
+    ["**Ohio**", "Legalized in 2023, sales since August 2024", "Dispensaries since January 2019", "Not legal to possess in Ohio since March 2026"],
+    ["**Wisconsin**", "Not legal", "Not legal", "Illegal to bring in under Wisconsin law"]
+   ]
+  },
+  {
+   "type": "cards",
+   "heading": "More guides before you visit",
+   "columns": 3,
+   "items": [
+    {
+     "title": "Getting a Medical Card",
+     "icon": "check",
+     "md": "Who qualifies in Michigan, the physician certification, the $40 application and renewals.",
+     "href": "/getting-a-medical-card/"
+    },
+    {
+     "title": "Patient Guide",
+     "icon": "leaf",
+     "md": "THC, CBD, terpenes and every product type, in plain language.",
+     "href": "/patient-guide/"
+    },
+    {
+     "title": "FAQ",
+     "icon": "spark",
+     "md": "ID, payment, ordering for pickup and The Society, answered quickly.",
+     "href": "/faq/"
+    }
+   ]
+  }
+ ],
+ "sources": [
+  { "label": "Michigan Judicial Institute: Controlled Substances Benchbook, sec. 8.14, Scope of the MRTMA", "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm" },
+  { "label": "Michigan Cannabis Regulatory Agency: MMMP Patients & Caregivers", "url": "https://www.michigan.gov/cra/sections/mmp" },
+  { "label": "Federal Register: final rule rescheduling FDA-approved and state-licensed medical marijuana (April 28, 2026)", "url": "https://www.federalregister.gov/documents/2026/04/28/2026-08176/schedules-of-controlled-substances-rescheduling-of-food-and-drug-administration-approved-products" },
+  { "label": "21 U.S.C. 844, penalties for simple possession", "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title21/html/USCODE-2024-title21-chap13-subchapI-partD-sec844.htm" },
+  { "label": "Indiana Code 2026, Title 35", "url": "https://iga.in.gov/ic/2026/Title_35.html" },
+  { "label": "Illinois Cannabis: FAQs", "url": "https://cannabis.illinois.gov/about/faqs.html" },
+  { "label": "Illinois Department of Public Health: Medical Cannabis Patient Program", "url": "https://dph.illinois.gov/topics-services/prevention-wellness/medical-cannabis.html" },
+  { "label": "Ohio Department of Commerce: Alcohol and Cannabis Regulation and Responsible Consumption", "url": "https://com.ohio.gov/education-and-training/alcohol-and-cannabis-regulation-and-responsible-consumption/alcohol-and-cannabis-regulation-and-responsible-consumption" },
+  { "label": "Ohio Division of Cannabis Control: Intoxicating Hemp Ban Now in Effect (March 24, 2026)", "url": "https://com.ohio.gov/about-us/media-center/news/intoxicating-hemp-ban-in-effect" },
+  { "label": "Ohio Legislative Service Commission: final analysis of S.B. 56", "url": "https://www.legislature.ohio.gov/download?key=27450" },
+  { "label": "Wis. Stat. 961.41(3g)(e)", "url": "https://docs.legis.wisconsin.gov/statutes/statutes/961/IV/41/3g/e" }
+ ],
+ "sourcesNote": "Status as of October 2026. Laws change; check these official sources before you travel. This page is general information, not legal advice.",
+ "review": {
+  "claims": [
+   "Michigan 2008 / 2018 / 21+: mi-med-program, mi-au-age; Schedule I: us-scheduling; state line: hs-facts services.travelWithCannabis (verbatim) + us-interstate",
+   "Indiana: in-status, in-bring-in; Illinois: il-status, il-bring-in; Ohio: oh-status, oh-sb56 (in effect March 20, 2026), oh-out-of-state (medium, wording kept close); Wisconsin: wi-status, wi-bring-in (medium)",
+   "New Buffalo: F-nb (just over the Indiana line on US-12, minutes from I-94)",
+   "The Union Pier page's reminder is High Society's own line"
+  ],
+  "table": "Orientation only: only Michigan, Indiana and Illinois get guides (structure map D3). Ohio and Wisconsin rows state only what their claims say; no Ohio penalty is stated (removed claim oh-penalties).",
+  "title": "Structure map title + suffix = 73 characters; shortened to 60 with the primary phrase 'cannabis laws by state' first."
+ }
+}

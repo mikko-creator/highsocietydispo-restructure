@@ -1,0 +1,19 @@
+{
+ "path": "/blog/shopping-and-reviews/",
+ "template": "blog-index",
+ "provenance": "new",
+ "title": "Cannabis Shopping Guides and Product Picks",
+ "crumb": "Shopping & Reviews",
+ "metaDescription": "A cannabis buying guide for Michigan shoppers: compare flower, vapes, edibles and concentrates, read a menu, shop on a budget and know what to ask.",
+ "h1": "Shopping & Reviews",
+ "hero": {
+  "lead": "Shopping smart starts before you reach the counter. Shopping & Reviews is our cannabis buying guide: how to compare flower, vapes, edibles and concentrates, how to read a menu, how to shop on a budget and what to ask your budtender. You'll also find seasonal picks and product round-ups. Prices and selection vary by store, so check the menu for today's options."
+ },
+ "sourceRefs": [
+  "structure-map:/blog/shopping-and-reviews/",
+  "structure-map:newPageBriefs blog-category-intros"
+ ],
+ "review": {
+  "notes": "Title and h1 from the structure map; intro and description are new copy (brief blog-category-intros: 50-100 words). Category from site.json blog.categories (the build pairs this page with its slug by path). The map keywords \"best strains for sleep\" and \"best vape strains\" are not used in the intro (no health claims, no superlatives as facts: docs/VOICE.md rule 5)."
+ }
+}

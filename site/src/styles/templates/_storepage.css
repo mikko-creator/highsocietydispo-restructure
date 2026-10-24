@@ -1,0 +1,79 @@
+/* templates/_storepage.css — the stores lane's template parts (src/templates/_storepage.mjs): the store hero's extras
+   (the open-now line, the address / phone / hours row, a note), the directions tabs, the area route cards, the CMS
+   form band, the loyalty FAQ's list answers, and the app band on the lane's pages. Theme names only. */
+
+/* ------------------------------------------------------------------ the store hero (core's band + these lines) */
+.shero__status { display: inline-flex; align-items: center; gap: 10px; min-height: 32px; padding: 0 14px; border-radius: 999px; background: var(--w-10); border: 1px solid var(--w-24); font: 700 .875rem/1 var(--font-head); letter-spacing: .06em; text-transform: uppercase; color: var(--fg); }
+.shero__status::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--chrome); }
+.shero__status[data-state="open"]::before { background: var(--neon); box-shadow: 0 0 0 4px color-mix(in srgb, var(--neon) 28%, transparent); }
+.shero__facts { display: flex; flex-wrap: wrap; gap: 4px var(--s-3); font: 500 1rem/1.3 var(--font-head); color: var(--fg-2); }
+.shero__facts li { display: inline-flex; align-items: center; gap: 8px; min-height: var(--tap); min-width: 0; }
+.shero__facts .icon { flex: none; color: var(--neon); }
+.shero__facts a { color: var(--fg); text-decoration: underline 1px var(--w-40); text-underline-offset: .25em; overflow-wrap: anywhere; }
+.shero__facts a:hover { text-decoration-color: var(--red); }
+.shero__note { font: 600 .875rem/1.4 var(--font-head); letter-spacing: .04em; color: var(--fg-2); }
+.page-hero--store .page-hero__lead, .page-hero--area .page-hero__lead { font-weight: 600; }
+.page-hero--store .page-hero__lead p { font: 700 .9rem/1.2 var(--font-head); letter-spacing: var(--ls-eyebrow); text-transform: uppercase; color: var(--fg); }
+.page-hero--area .page-hero__lead p + p { margin-top: .35em; }
+
+/* ------------------------------------------------------------------ directions from landmarks (tabs) */
+.vtabs { display: flex; flex-direction: column; gap: var(--s-3); min-width: 0; }
+.vtabs__label { font: 700 .78rem/1.2 var(--font-display); letter-spacing: .2em; text-transform: uppercase; color: var(--em); }
+.vtabs__list { display: none; }
+.js .vtabs__list { display: flex; flex-wrap: wrap; gap: var(--s-1); }
+.vtabs__tab { display: inline-flex; align-items: center; gap: 8px; min-height: var(--tap); padding: 8px 16px; border: 1.5px solid var(--line-2); border-radius: var(--radius); background: var(--card); color: var(--fg); font: 700 .9375rem/1.2 var(--font-head); text-align: left; cursor: pointer; transition: background-color var(--dur) var(--ease), border-color var(--dur) var(--ease), color var(--dur) var(--ease); }
+.vtabs__tab .icon { flex: none; color: var(--em); }
+.vtabs__tab:hover { border-color: var(--red); }
+.vtabs__tab[aria-selected="true"] { background: var(--red); border-color: var(--red); color: var(--white); }
+.vtabs__tab[aria-selected="true"] .icon { color: var(--white); }
+.vtabs__panel { display: flex; flex-direction: column; gap: var(--s-2); padding: clamp(20px, 3vw, 36px); background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-lg); min-width: 0; }
+.vtabs__panel[hidden] { display: none; }
+.vtabs__title { font: 800 var(--fs-h3)/1.15 var(--font-head); text-transform: uppercase; color: var(--fg); }
+.vtabs__body ol { columns: 2 18rem; column-gap: var(--s-5); }
+.vtabs__body ol > li { break-inside: avoid; }
+.vtabs__body > p:last-child { font-weight: 700; color: var(--fg); }
+
+/* ------------------------------------------------------------------ area route cards */
+.routes__label { font: 700 .78rem/1.2 var(--font-display); letter-spacing: .2em; text-transform: uppercase; color: var(--em); }
+.routes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); gap: var(--gap); }
+.routes__item { display: flex; min-width: 0; }
+.routes__card { display: flex; flex-direction: column; gap: var(--s-2); width: 100%; padding: var(--s-3); }
+.routes__card::before { content: ""; position: absolute; inset: 0 0 auto; height: 3px; background: var(--red); }
+.routes__mark { width: 44px; height: 44px; display: grid; place-items: center; border-radius: var(--radius); background: var(--red); color: var(--white); }
+.routes__title { font: 800 var(--fs-h3)/1.15 var(--font-head); text-transform: uppercase; color: var(--fg); overflow-wrap: anywhere; }
+.routes__ctas { margin-top: auto; }
+.routes__ctas .btn { flex: 1 1 auto; }
+.routes__more { margin-top: calc(var(--s-1) * -1); }
+
+/* ------------------------------------------------------------------ the CMS form band (login / sign up) */
+.sform { align-items: flex-start; }
+.sform__slot { width: 100%; }
+
+/* ------------------------------------------------------------------ the loyalty FAQ's list answer */
+.faqlist { display: block; margin-top: .5em; }
+.faqlist__item { position: relative; display: block; padding-left: 1.7em; }
+.faqlist__item + .faqlist__item { margin-top: .45em; }
+.faqlist__item::before { content: ""; position: absolute; left: 0; top: .4em; width: .95em; height: .95em; background: var(--mark-red) center / contain no-repeat; }
+
+/* ------------------------------------------------------------------ the lane's pages */
+/* the app band: v2's phone mockup shown whole on the carbon ground (the split block crops photos; this is a cut-out) */
+.spage .block--split.theme-charcoal { background: var(--charcoal); }
+.spage .block--split .split__media { background: transparent; }
+.spage .block--split .split__media img { object-fit: contain; object-position: 50% 50%; }
+/* links inside core's list items and band leads (they are not .md): the reading kit's link look */
+.spage .blist__text a, .spage .block__lead a { color: var(--em); font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+.spage .blist__text a:hover, .spage .block__lead a:hover { text-decoration-thickness: 2px; }
+.spage .theme-black .block__lead a, .spage .theme-charcoal .block__lead a, .spage .theme-red .block__lead a { color: var(--fg); }
+/* the area pages' "what to expect" steps already say "Step 1 —": no second number */
+.spage--service-area-hub .block--steps .steps__item::before { display: none; }
+/* the anchors the pages link to (#blk-..., and the store pages' #first-visit, #order-pickup, #faq bands) land under the
+   sticky bar */
+.spage [id^="blk-"] { scroll-margin-top: calc(var(--bar-h) + var(--s-3)); }
+.spage .block { scroll-margin-top: calc(var(--bar-h) + var(--s-2)); }
+/* a focused FAQ question (<summary>) stays clear of the sticky bar and the dock, as base.css keeps links and buttons
+   (base.css's rule names a, button and [tabindex] only: request in docs/requests/stores.md) */
+.spage summary { scroll-margin-top: calc(var(--bar-h) + var(--s-2)); scroll-margin-bottom: calc(var(--dock-h) + var(--fab-clear) + var(--s-2)); }
+/* a focused FAQ question's ring: blocks/faq.css gives the item overflow: hidden (its rounded corners), which cuts off the
+   question's own outline entirely, so the item draws the ring while its question has keyboard focus (request in
+   docs/requests/stores.md; the article template does the same) */
+.spage .faq__item:has(> .faq__q:focus-visible) { outline: 3px solid var(--focus); outline-offset: 3px; }

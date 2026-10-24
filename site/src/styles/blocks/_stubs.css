@@ -1,0 +1,16 @@
+/* blocks/_stubs.css — the plain look of the STUB blocks the stores and editorial lanes own (src/blocks/_stubs.mjs).
+   Deliberately simple: cards on the ground, facts as a definition list. The owning lane replaces it with its design. */
+.stub { display: grid; gap: var(--gap); min-width: 0; }
+.stub--store-grid, .stub--deals, .stub--reviews { grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr)); }
+.stub--nearby, .stub--amenities { grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 1fr)); gap: var(--s-1) var(--gap); }
+.stub--nearby a { display: inline-flex; align-items: center; min-height: var(--tap); font: 600 1rem/1.2 var(--font-head); color: var(--fg); text-decoration: underline; text-underline-offset: .2em; }
+.stub-card { display: flex; flex-direction: column; gap: var(--s-1); padding: var(--s-3); background: var(--card); color: var(--card-fg, var(--fg)); border: 1px solid var(--line); border-radius: var(--radius-lg); min-width: 0; }
+.stub-card__title { font: 800 var(--fs-h3)/1.1 var(--font-head); text-transform: uppercase; }
+.stub-card__title a { display: inline-flex; align-items: center; min-height: var(--tap); }
+.stub-card__title a:hover { color: var(--em); }
+.stub-card img { width: 100%; height: auto; border-radius: var(--radius); }
+.stub-facts { display: grid; gap: var(--s-1); font-size: .9375rem; color: var(--fg-2); }
+.stub-facts dt { font: 700 .75rem/1.2 var(--font-head); letter-spacing: .12em; text-transform: uppercase; color: var(--em); }
+.stub-facts a { display: inline-flex; align-items: center; min-height: var(--tap); color: var(--fg); font-weight: 600; }
+.stub--store-details { max-width: 40rem; }
+.stub--menu { max-width: 60rem; display: flex; flex-direction: column; gap: var(--s-2); }

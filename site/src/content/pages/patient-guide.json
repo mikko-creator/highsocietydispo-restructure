@@ -1,0 +1,196 @@
+{
+ "path": "/patient-guide/",
+ "template": "guide",
+ "provenance": "new",
+ "sourceRefs": [
+  "structure map newPageBriefs /patient-guide/",
+  "facts/law-facts.json (Michigan rules: claims listed in review.claims)",
+  "facts/hs-facts.json services.productCategories, services.categoryBlurbs, services.staffRoles",
+  "research sources: the ones the fact-checked articles in src/content/blog already verified (review.claims), listed on the page"
+ ],
+ "brief": { "riskLevel": "medical" },
+ "title": "Cannabis Patient Guide: THC, CBD and Products",
+ "crumb": "Patient Guide",
+ "metaDescription": "A plain-language cannabis guide for new consumers and patients: THC vs CBD, terpenes, and how flower, vapes, edibles, tinctures and topicals work, with sources.",
+ "h1": "The High Society Guide to Cannabis Products",
+ "hero": {
+  "eyebrow": "Patient Guide",
+  "lead": "New to cannabis, or a registered patient comparing options? This guide explains THC, CBD and terpenes, how each product type is used and what to look for on the label. It reports what research and Michigan law say; it is not medical advice. For step-by-step use of each format, read [How to Use Medical Cannabis Products, Format by Format](/blog/patient-guide/)."
+ },
+ "reviewed": { "label": "Last reviewed", "date": "2026-10-24", "text": "October 2026" },
+ "tocLabel": "On this page",
+ "summary": {
+  "heading": "The short version",
+  "items": [
+   "**THC** is the compound behind the high; **CBD** is not intoxicating the way THC is.",
+   "**Terpenes** shape aroma and flavor; research on whether they change effects is still early.",
+   "**Inhaled** cannabis is felt within minutes; an **edible** may need up to 2 hours before you notice it and up to 4 hours to peak.",
+   "Every licensed Michigan product shows its **THC and CBD content** and its testing lab on the label.",
+   "Start with a small amount, give it time, keep products away from kids and pets, and never drive high."
+  ]
+ },
+ "blocks": [
+  {
+   "type": "prose",
+   "heading": "THC: the compound behind the high",
+   "md": "Cannabis contains more than 100 cannabinoids, compounds made in the resin glands on the plant’s flowers. THC (delta-9-tetrahydrocannabinol) is the best known, and it is what makes cannabis intoxicating: it can temporarily change mood, thoughts and perceptions.\n\n### How THC works in the body\n\nYour body has its own endocannabinoid system: cannabinoid receptors, the endocannabinoids your body makes, such as anandamide and 2-AG, and the enzymes that build and break them down. THC works mainly through CB1, the receptor type most common in the central nervous system and above all in the brain, while CB2 receptors are found mostly on immune cells.\n\n### Delta-9, THCA and the number on the label\n\nIn raw flower, most of the THC is still in its acid form, THCA, which can make up as much as 90% of the plant’s total THC. THCA is not psychoactive in people. Heat from smoking, vaping or baking turns it into THC, which is why flower labels give a total THC figure: labs calculate it as the THC plus the THCA multiplied by 0.877. Michigan counts THCA as THC when it decides what is marijuana, and it regulates delta-8 THC as marijuana too. Delta-8 may make up no more than 10% of a concentrate or vape, or 10% of the THC an infused product may hold. Our article on [THC and THCA](/blog/thc-vs-thca/) explains the math.\n\n### Why the same product can feel different\n\nTHC affects people differently, and the same person can react differently from one time to the next. Health Canada lists factors such as sex, age and health conditions. Strength and amount matter too: anxiety, fear or panic are more likely after a large amount, with a strong product, or with little experience.\n\n### Starting low and pacing yourself\n\nPublic health guidance for new consumers is consistent: start with a small amount of a lower-strength product and give it time. Canada’s chief medical officers of health suggest beginning with a puff or two of something at 10% THC or lower, or a first edible of 2.5 mg of THC or less. Inhaled cannabis can take up to 30 minutes to reach its full effect, and edibles up to 4 hours, so wait before taking more. Our [THC dosage guide](/blog/thc-dosage-guide/) goes further.\n\n### Options for little or no high\n\nIf you want little or no intoxication, some people choose CBD-dominant products, since CBD is not intoxicating the way THC is, or simply smaller servings of THC. The label lists both numbers."
+  },
+  {
+   "type": "prose",
+   "heading": "CBD: what it is and how it differs",
+   "md": "CBD (cannabidiol) is the other cannabinoid most people know. It is not intoxicating the way THC is, so by itself it will not make you high. It is not free of effects, though: CBD can cause drowsiness, decreased appetite, vomiting and diarrhea, and it acts on liver enzymes that process many common medications. If you take any medication, ask your doctor or pharmacist before you try CBD.\n\n### Full-spectrum, broad-spectrum and isolate\n\nCBD products often carry one of three terms:\n\n- **Full-spectrum:** made with the plant’s other cannabinoids and terpenes, which can include some THC.\n- **Broad-spectrum:** the plant’s other compounds, with the THC taken out.\n- **Isolate:** CBD on its own.\n\nThe terms describe how a product was made; the THC and CBD figures on the label tell you what is in it.\n\n### Why licensed CBD comes with state testing\n\nTests of CBD products have turned up some whose CBD content did not match the label, and some sold as CBD that contained THC. Products sold in licensed Michigan stores are lab tested, and each label states the THC and CBD figures, the testing lab and the test date. Our guide to [cannabinoids](/blog/what-are-cannabinoids/) puts THC, CBD and the lesser-known compounds side by side."
+  },
+  {
+   "type": "list",
+   "heading": "What every Michigan label shows",
+   "lead": "Every cannabis product sold in Michigan is sealed and labeled. Whatever the product type, the label is where to start.",
+   "style": "check",
+   "items": [
+    "The producer’s name and license number (and the packager’s), plus the package tag.",
+    "The harvest date and the strain, where they apply, and the net weight.",
+    "The THC and CBD concentration, with a statement that actual values may vary by 10%.",
+    "The activation time.",
+    "The lab that tested it and the test date.",
+    "The state’s universal THC symbol.",
+    "Warnings: that it is illegal to drive a motor vehicle while under the influence, the National Poison Control Center number (1-800-222-1222), a 21+ or registered-patients-only statement with “Keep out of reach of children”, and a boxed pregnancy and breastfeeding warning.",
+    "Stores must also offer every customer a pamphlet with the Poison Control hotline and at least two statements on the risks of use by young people."
+   ]
+  },
+  {
+   "type": "prose",
+   "heading": "Terpenes: aroma, flavor and what the research says",
+   "md": "Terpenes are the aromatic compounds behind the smell and taste of cannabis. They are made in the same resin glands as the cannabinoids, more than 200 have been reported in the plant, and many of them also give familiar foods and plants their scent.\n\n### Common terpenes and their aromas\n\n- **Myrcene:** earthy; also found in hops.\n- **Limonene:** citrus, as in lemon peel.\n- **Beta-caryophyllene:** peppery.\n- **Linalool:** floral, like lavender.\n- **Pinene:** fresh pine.\n\nIn a study that analyzed close to 90,000 flower samples across six states, myrcene, beta-caryophyllene and limonene showed up at the highest levels on average. The same study found that indica, sativa and hybrid labels do not reliably tell you a product’s chemistry.\n\n### What research does and does not show\n\nYou will hear that certain terpenes relax or energize. The evidence is early. In lab tests, six common terpenes did not act on the CB1 or CB2 receptors or change how THC acted there. Small human studies point in different directions. In one study, 12 adults who vaporized the highest limonene dose tested along with THC rated themselves less anxious than with THC alone. In another study of 19 adults, inhaled alpha-pinene did not lessen THC’s effect on memory. Read a terpene list for its aroma and flavor notes, not as a promise of an effect.\n\nMichigan’s label rules require THC and CBD content but not terpenes, so terpene details are extra information when a brand lists them. Terpenes also fade as cannabis dries and sits in storage, one more reason to store it well. Our article on [cannabis terpenes](/blog/what-are-cannabis-terpenes/) covers each one."
+  },
+  {
+   "type": "prose",
+   "heading": "Flower",
+   "md": "Flower means the dried and cured buds of the plant, the most traditional way to buy cannabis. You will find it as whole buds, as smaller pieces and pre-ground. Many people grind it just before use, since whole buds keep their resin glands intact and store better.\n\nPeople smoke flower in a joint or a pipe, use a water pipe, or heat it in a dry-herb vaporizer, which is designed to warm the plant without burning it. You will feel inhaled cannabis within seconds to minutes. Smoking any product, including cannabis, can damage the lungs and the cardiovascular system.\n\n### What the label tells you\n\nA Michigan flower label gives the THC and CBD figures, plus a statement that the true values may differ by up to 10%; the strain and harvest date where they apply; the net weight; and the testing lab with the test date. Our [flower guide](/blog/cannabis-flower-101/) and our guide to [reading a cannabis label](/blog/how-to-read-a-cannabis-label/) explain each line.\n\nYour store’s [menu](/shop/) shows the flower it carries today."
+  },
+  {
+   "type": "prose",
+   "heading": "Pre-rolls",
+   "md": "A pre-roll is flower that comes already rolled and ready to light, so there is no grinding or rolling to do. Pre-rolls are sold as singles and in multipacks, in a range of sizes.\n\nInfused pre-rolls are a different product. The flower is paired with concentrate or coated in kief, so they can be much stronger than a plain pre-roll. A study of Ontario’s legal market found infused pre-rolls labeled at up to 66% THC. Check the THC figure on the label before you light one, and pace yourself.\n\nYour store’s [menu](/shop/) lists its pre-rolls."
+  },
+  {
+   "type": "prose",
+   "heading": "Vaporizers",
+   "md": "A vape pen is an electronic device with a power source, usually a battery, and a heating element that warms cannabis oil or flower into vapor without burning it.\n\n### Cartridges, disposables and dab pens\n\n- **Cartridges** hold oil such as distillate, live resin or rosin and screw onto a battery. Most use the common 510 thread, so carts and batteries usually fit together across brands.\n- **Disposables** are all-in-one: battery and oil in a single device, used until it runs dry.\n- **Dab pens** are loaded with solid concentrate instead of a prefilled cart.\n\nA cart is sold by the weight of the oil inside, commonly 0.5 or 1 gram, and the label prints it as net weight. Trust that figure, not the fill line you see through the glass.\n\nYour store’s [menu](/shop/) lists its carts, disposables and batteries.\n\n### Using and caring for a vape\n\nTake one short draw and wait. Inhaled cannabis is felt within minutes, but it can take up to 30 minutes to reach its full effect. Lab tests have found more harmful byproducts at higher heat settings, so a lower setting is the gentler choice. Keep carts away from heat and direct sun, and keep the threaded connection clean so the cart sits firmly on the battery.\n\n### Vaping safely\n\nIn 2019 and 2020, a national outbreak of lung injuries was strongly linked to vitamin E acetate, an additive in some THC vapes. THC vaping products, particularly from informal sources, were linked to most cases. The CDC and FDA advised people not to use THC vaping products, particularly from informal sources, and not to add anything to a vape. The long-term effects of inhaling cannabis vapor are still being studied. If you vape and have trouble breathing or chest pain, stop and contact a health care provider. If you do vape, buy carts only from a licensed store, where the label names the testing lab."
+  },
+  {
+   "type": "prose",
+   "heading": "Concentrates",
+   "md": "A concentrate pulls the cannabinoids and terpenes out of the plant into a product far stronger than flower. Lab analyses have found averages of roughly 60 to 70% THC, and some packages list more than 90%.\n\n### Types you will see\n\n- **Solvent-made:** shatter, wax, crumble, budder, badder, sauce, diamonds and live resin. Licensed processors extract them with solvents such as butane, propane, ethanol or carbon dioxide, and the solvent is purged out.\n- **Solventless:** kief (resin glands sifted through fine screens), hash (glands knocked loose with ice water) and rosin (pressed out with heat).\n\nMost of the names describe texture, from glassy shatter to soft budder.\n\nYour store’s [menu](/shop/) lists its concentrates.\n\n### Devices\n\nConcentrates are vaporized in a dab rig or a dab pen, or added to flower. Dabbing delivers a large dose of THC rapidly, so concentrates suit experienced consumers. If you try one, start with the smallest portion you can and wait for the full effect before having more. Keep concentrates in their original child-resistant package, away from children and pets.\n\nMichigan counts concentrate on its own: adults may carry no more than 15 grams of it within the 2.5-ounce limit."
+  },
+  {
+   "type": "prose",
+   "heading": "Edibles",
+   "md": "Edibles are foods and drinks made with cannabis: gummies, chocolates, baked goods and beverages. They work more slowly than smoking or vaping, because swallowed cannabis has to pass through the digestive system before it takes effect.\n\n### Onset and duration\n\nYou may not notice an edible for half an hour to 2 hours, its full effect can take up to 4 hours to arrive, and the effects may stay with you for as long as 12 hours. If the first serving seems to do nothing, wait before taking more.\n\n### Serving sizes on the label\n\nMichigan limits adult-use edibles to 10 mg of THC a serving and 200 mg a package; medical edibles may hold up to 50 mg a serving. Drinks are capped at 10 mg a serving and 100 mg a container, so one container may hold several servings. Canada’s chief medical officers of health suggest keeping a first edible to 2.5 mg of THC or less.\n\n### Why indica and sativa matter less here\n\nWith an edible, the THC per serving is the number to read. Indica and sativa labels do not reliably describe a product’s chemistry, so let the label’s THC and CBD figures guide you. In Michigan, edibles come in opaque, child-resistant packaging: keep them in it, away from children and pets.\n\nYour store’s [menu](/shop/) lists its edibles."
+  },
+  {
+   "type": "prose",
+   "heading": "Tinctures",
+   "md": "A tincture is a liquid cannabis extract sold in a bottle with a dropper. There are two ways to take one:\n\n- **Under the tongue:** hold the drops in your mouth briefly, then swallow. Some may be absorbed in the mouth, though research on this is limited, and whatever is not absorbed is swallowed.\n- **Swallowed, or mixed into food or a drink:** it then works like an edible, starting in 30 to 90 minutes, peaking after 2 to 3 hours and lasting about 4 to 12 hours, depending on the amount.\n\nCheck the THC and CBD figures on the label, and use the marks on the dropper to measure each serving. For adult use, Michigan allows up to 10 mg of THC a serving and 200 mg a bottle; medical tinctures may hold up to 100 mg a serving. Tinctures appear on some of our store menus, and selection varies. Our [tincture guide](/blog/cannabis-tincture-guide/) has more."
+  },
+  {
+   "type": "prose",
+   "heading": "Topicals",
+   "md": "Topicals are lotions, balms and similar products made with cannabis and applied to the skin. People use them on a specific area, the way they would any balm, and they have their own category on our store menus.\n\nTransdermal patches work differently: they are built to move cannabinoids through the skin and into the bloodstream, so treat a patch’s label the way you would an edible’s. Michigan caps patches at 100 mg of THC per dose."
+  },
+  {
+   "type": "prose",
+   "heading": "RSO and capsules",
+   "md": "We include these two for general education.\n\n**RSO (Rick Simpson Oil)** is named after Rick Simpson, the medical cannabis activist who first made it. It is a highly potent extract with much more THC than CBD oil, and some RSO may contain more than 90% THC, so it is easy to take too much. Swallowed, it works like an edible, with a slow start. You may hear big claims made about RSO; strong human evidence for them is lacking. Talk with your doctor before using it.\n\n**Capsules** pack a set amount of cannabis oil into a pill you swallow. They behave like an edible: half an hour to 2 hours before you notice them, and up to 4 hours to their full effect. Adult-use capsules top out at 10 mg of THC each in Michigan; medical capsules may hold up to 100 mg."
+  },
+  {
+   "type": "prose",
+   "heading": "Smoking and vaping gear",
+   "md": "Accessories have their own category on our store menus. The basics:\n\n- **Rolling papers** for joints, in different sizes.\n- **Pipes:** small hand pipes for a bowl of flower.\n- **Water pipes,** which pass the smoke through water before you inhale.\n- **Grinders,** which break flower into even pieces. Grind just before use: intact buds store better than ground flower.\n- **Lighters** and other everyday gear.\n\nUnder Michigan law, adults 21 and older may buy, own and use cannabis accessories. Our [guide to cannabis accessories](/blog/guide-to-cannabis-accessories/) and [how to pack a bowl](/blog/how-to-pack-a-bowl/) cover the details."
+  },
+  {
+   "type": "prose",
+   "heading": "Your first visit to a High Society store",
+   "md": "Recreational shopping is available to individuals 21 years or older. Bring a valid government-issued ID or passport and check in with our security and front desk upon arrival.\n\nWhen it's your turn, a budtender will call you from the waiting area. They’re available to assist with product selection and answer any questions, whether you're new or familiar with our offerings. After you choose your items, the budtender will alert our order preparation team. Once your order is ready, a staff member will call your name, process your payment, and review the order to confirm accuracy before completing the transaction.\n\nOur team is happy to guide first-time visitors and help you find products that match your preferences and comfort level. Questions about a health condition or a medication belong with your clinician. [Find your store](/dispensary-locations/)."
+  },
+  {
+   "type": "callout",
+   "tone": "warn",
+   "heading": "Safe use and storage",
+   "md": "Keep cannabis in its original child-resistant package, locked away and out of reach of children and pets; edibles can look like ordinary food. Reported edible exposures in children under six rose from 207 in 2017 to 3,054 in 2021. If a child eats cannabis, call Poison Control at 1-800-222-1222, the number printed on Michigan packages; for a pet, call your veterinarian. In an emergency, call 911.\n\nMixing alcohol with cannabis is likely to impair you more than either one would alone. If you are pregnant or breastfeeding, the FDA strongly advises against cannabis in any form. And never drive after using cannabis: Michigan law forbids driving while under its influence.\n\nLight, heat and air speed the breakdown of THC, so store products somewhere cool and dark in a closed container. At home, Michigan requires anything over 2.5 ounces to be kept behind a lock. Our [storage guide](/blog/how-to-store-marijuana/) has the details."
+  },
+  {
+   "type": "list",
+   "heading": "Michigan quick rules",
+   "style": "check",
+   "items": [
+    "Adult-use stores sell to adults 21 and older with a valid ID; registered patients buy at licensed provisioning centers, showing a registry card plus photo ID.",
+    "Adults may carry up to 2.5 ounces; concentrate counts too, up to 15 grams of that total.",
+    "No use in public places, and none while driving or in a vehicle on a public road.",
+    "Cannabis bought in Michigan stays in Michigan: crossing a state line with it is illegal under federal law.",
+    "[Read Michigan’s rules in full](/cannabis-laws-by-state/michigan/)."
+   ]
+  }
+ ],
+ "sources": [
+  { "label": "National Institute on Drug Abuse: Cannabis (Marijuana)", "url": "https://nida.nih.gov/research-topics/cannabis-marijuana" },
+  { "label": "CDC: Cannabis frequently asked questions", "url": "https://www.cdc.gov/cannabis/faq/index.html" },
+  { "label": "Health Canada: What you need to know if you choose to consume cannabis", "url": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/resources/what-you-need-to-know-if-you-choose-to-consume-cannabis.html" },
+  { "label": "Council of Chief Medical Officers of Health (Canada): statement on cannabis extracts, edibles and topicals (2020)", "url": "https://www.canada.ca/en/public-health/news/2020/01/council-of-chief-medical-officers-of-health-ccmoh-statement-on-cannabis-extracts-edibles-and-topical-products.html" },
+  { "label": "Russo, Taming THC: potential cannabis synergy and phytocannabinoid-terpenoid entourage effects, British Journal of Pharmacology (2011)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3165946/" },
+  { "label": "Lu and Mackie, An Introduction to the Endogenous Cannabinoid System, Biological Psychiatry (2016)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4789136/" },
+  { "label": "Zou and Kumar (2018), cannabinoid receptors and the endocannabinoid system, International Journal of Molecular Sciences", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5877694/" },
+  { "label": "Moreno-Sanz (2016), critical review of THCA, Cannabis and Cannabinoid Research", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5549534/" },
+  { "label": "University of Georgia Extension: hemp chemistry and lab results (Circular 1209)", "url": "https://fieldreport.caes.uga.edu/publications/C1209/" },
+  { "label": "Brown and Winterstein, Potential Adverse Drug Events and Drug-Drug Interactions with Medical and Consumer Cannabidiol (CBD) Use, Journal of Clinical Medicine (2019)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6678684/" },
+  { "label": "Smith et al., The phytochemical diversity of commercial Cannabis in the United States, PLOS ONE (2022)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9119530/" },
+  { "label": "Santiago et al. (2019), common terpenoids and THC at CB1 and CB2 receptors, Cannabis and Cannabinoid Research", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6757242/" },
+  { "label": "Spindle et al., Vaporized D-limonene selectively mitigates the acute anxiogenic effects of THC, Drug and Alcohol Dependence (2024)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11031290/" },
+  { "label": "Alpha-pinene and THC in healthy adults (2025), Medical Cannabis and Cannabinoids", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12306963/" },
+  { "label": "Lanz et al. (2016), laboratory testing of cannabis vaporizers, PLoS One", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4718604/" },
+  { "label": "Munger, Anreise and Strongin (2025), cannabis concentrate vaping chemistry, Frontiers in Toxicology", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12183170/" },
+  { "label": "CDC: 2019-2020 outbreak of lung injury linked to vaping products (archived page)", "url": "https://archive.cdc.gov/www_cdc_gov/tobacco/basic_information/e-cigarettes/severe-lung-disease.html" },
+  { "label": "American Thoracic Society: EVALI (vaping-associated lung injury), patient information", "url": "https://site.thoracic.org/patient-resources/evali-vape-lung" },
+  { "label": "Sagar et al. (2018), national survey of dab use in the U.S., Drug and Alcohol Dependence", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9036911/" },
+  { "label": "Noël, Dookie and Scharf (2026), new cannabis products in Ontario's legal market, including labeled THC ranges, Substance Abuse Treatment, Prevention, and Policy", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13422286/" },
+  { "label": "Bridgeman and Abazia, Medicinal Cannabis: History, Pharmacology, and Implications for the Acute Care Setting, P&T (2017)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5312634/" },
+  { "label": "Medical News Today: Rick Simpson oil (medically reviewed)", "url": "https://www.medicalnewstoday.com/articles/325612" },
+  { "label": "National Cancer Institute: Cannabis and Cannabinoids (PDQ), patient version", "url": "https://www.cancer.gov/about-cancer/treatment/cam/patient/cannabis-pdq" },
+  { "label": "U.S. Food and Drug Administration: What You Should Know About Using Cannabis, Including CBD, When Pregnant or Breastfeeding", "url": "https://www.fda.gov/consumers/consumer-updates/what-you-should-know-about-using-cannabis-including-cbd-when-pregnant-or-breastfeeding" },
+  { "label": "Tweet et al., Pediatric Edible Cannabis Exposures and Acute Toxicity: 2017-2021, Pediatrics (2023)", "url": "https://pubmed.ncbi.nlm.nih.gov/36594224/" },
+  { "label": "Fairbairn, Liebmann and Rowan, The stability of cannabis and its preparations on storage, Journal of Pharmacy and Pharmacology (1976)", "url": "https://pubmed.ncbi.nlm.nih.gov/6643/" },
+  { "label": "Zamengo et al., The role of time and storage conditions on the composition of hashish and marijuana samples: a four-year study, Forensic Science International (2019)", "url": "https://pubmed.ncbi.nlm.nih.gov/30901710/" },
+  { "label": "Illinois Cannabis Regulation Oversight Office: FAQs (safe storage, children and pets)", "url": "https://cannabis.illinois.gov/about/faqs.html" },
+  { "label": "CRA: Marihuana Rules, R 420.1 to R 420.1004 (PDF)", "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf" },
+  { "label": "CRA Technical Bulletin: Maximum THC Concentrations for Marijuana-Infused Products (April 24, 2025)", "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/5Technical/Marihuana-Infused-Products-and-Edible-Marihuana-Product---Maximum-THC-limits-revised-42425.pdf" },
+  { "label": "CRA Technical Bulletin: Required Testing and Action Limits for Marijuana Products Containing Delta-8 THC (April 13, 2022)", "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/5Technical/Delta-8_-_Technical_Bulletin_20211011_737852_7.pdf" },
+  { "label": "CRA: Answers to Recent Questions Regarding THCA (March 29, 2024)", "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/bulletin/2MMFL-Advisory/CRA-Answers-Recent-Questions-Regarding-THCA.pdf" },
+  { "label": "Michigan Judicial Institute: Controlled Substances Benchbook, sec. 8.14, Scope of the MRTMA", "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm" }
+ ],
+ "note": "This guide is general information, not medical advice. Cannabis affects people differently. If you have a health condition, take medication, or are pregnant or breastfeeding, talk with a clinician before using cannabis. Our budtenders can explain products, but they are not medical professionals. Adults 21+, or 18+ with a medical marijuana card.",
+ "review": {
+  "claims": [
+   "THC: >100 cannabinoids made in glandular trichomes (Russo 2011); intoxicating, alters mood, thoughts, perceptions (NIDA); ECS parts, anandamide, 2-AG, THC at CB1 (Lu and Mackie); CB1 mostly CNS, CB2 immune (Zou and Kumar)",
+   "THCA up to 90% of total THC, not psychoactive in humans, converts with smoking/vaping/baking (Moreno-Sanz 2016); total THC = THC + THCA x 0.877 (UGA C1209); Michigan THCA and delta-8: law mi-hemp-thca, mi-hemp-delta8",
+   "variation: Health Canada factors (sex, age, health conditions) and 'differ from one time to the next'; anxiety more likely with large amounts, strong products, little experience (NIDA)",
+   "pacing: CCMOH (one or two puffs of 10% THC or less; first edible no more than 2.5 mg); inhaled up to 30 minutes, edibles up to 4 hours (Health Canada); 'some people' choose CBD-dominant products (softened per the patient-guide article's fact check)",
+   "CBD: not intoxicating like THC, side effects, mislabeled products, some with THC (NIDA); liver-enzyme interactions with common medications (Brown and Winterstein 2019); Michigan labels: law mi-labeling",
+   "terpenes: aroma, >200 reported, trichomes, foods and fragrances, fade with drying and storage (Russo 2011); aromas (Russo, per the patient-guide article claim); 89,923 samples, six states, top three, indica/sativa labels unreliable (Smith 2022); no CB1/CB2 action (Santiago 2019); limonene n=20 (Spindle 2024); alpha-pinene n=19 (2025 study); terpenes not required on labels (mi-labeling item list)",
+   "flower: grind before use, aroma loss (Fairbairn 1976); vaporizers heat without burning (Lanz 2016); inhaled felt in seconds to minutes (Health Canada); smoking damages lungs and cardiovascular system (CDC); label items (mi-labeling)",
+   "pre-rolls: singles and multipacks (High Society's New Buffalo pages); infused up to 66% THC labeled (Noel 2026)",
+   "vapes: electronic device, power source usually a battery (vaping article fix); carts with distillate, live resin, rosin; dab pens (vaping article claim); 510 'usually fit' (hedged per fact check); sold by weight, net weight on label (mi-labeling; the 'air gap' claim was unsupported and is not made); more harmful byproducts at higher settings (Munger 2025); EVALI, vitamin E acetate, informal sources, CDC advice, long-term effects under study, chest pain or breathing trouble: stop and seek care (CDC archive)",
+   "concentrates: 60-70% average, >90% on some packages (Sagar 2018); textures (Noel 2026); solvents and purging, licensed processors (concentrates article claims); solventless methods (concentrates article claim); dabbing delivers large THC quickly (NIDA); smallest portion (concentrates fix); 15 g (mi-au-possession)",
+   "edibles: onset 30 min-2 h, full effect up to 4 h, up to 12 h (Health Canada); caps (mi-thc-limits); 2.5 mg first edible (CCMOH); indica/sativa labels (Smith 2022); packaging (mi-edibles); away from children and pets (CCMOH)",
+   "tinctures: sublingual research limited, rest swallowed (tincture article fix); swallowed 30-90 min, peak 2-3 h, 4-12 h (Bridgeman and Abazia 2017); caps (mi-thc-limits); 'some of our store menus' (hs-facts services.productCategories: Birch Run and New Buffalo menus)",
+   "topicals: transdermal patches into the bloodstream, 100 mg per dose (mi-thc-limits); topicals and accessories are High Society menu categories (hs-facts)",
+   "RSO: named for the activist who created it, high in THC, swallowed or under the tongue, edible-like (Medical News Today; CCMOH); strong human evidence lacking (NCI PDQ); capsules like edibles (Health Canada)",
+   "gear: High Society's 'Papers, lighters, grinders' (New Buffalo pages); accessories legal 21+ (mi-au-accessories)",
+   "safety: package and kids/pets, food look-alike (CCMOH); pediatric exposures 207 -> 3,054 (Tweet 2023); Poison Control number on packages (mi-labeling); pets: Poison Control or vet, 911 (CDC, per dosage article fix); alcohol greater impairment (CDC); pregnancy (FDA); driving (mi-au-impaired-driving, mi-labeling warning); light/heat/air (Zamengo 2019, Fairbairn 1976); 2.5 oz locked (mi-au-home-storage)",
+   "quick rules: mi-au-age, mi-med-purchase, mi-au-possession, mi-au-public-use, mi-au-vehicles-use, us-interstate",
+   "label checklist: mi-labeling details (R 420.504(1) items and warnings; R 420.504(4) pamphlet); delta-8 at most 10%: mi-hemp-delta8, mi-thc-limits",
+   "first visit: High Society's own First-Time Customer Guide (hs:/dispensary-locations/big-rapids/ lines 181-186), verbatim except the payment sentence, which is left out because store pages conflict on credit (docs/OPEN-DECISIONS.md item 4); 'Our team is happy to guide first-time visitors ...' (New Buffalo service-area hub FAQ)"
+  ],
+  "unsourced": "Plain definitions without a cited source (descriptive, no health or law content): flower as dried, cured bud; whole/small/pre-ground forms; full-spectrum, broad-spectrum and isolate; disposables; dab rig; cart care (heat and sun, clean threads); topicals as skin products used on an area; water pipes and grinders. Flag for the next fact-check pass.",
+  "compliance": "No product is said to help a condition. Shop links (/shop/) sit only in their own one-line paragraphs in the product-description parts of the product sections, never in a paragraph with a health statement and never under a safety sub-heading (2026-10-24, pages verifier: the carts line moved from the end of 'Vaping safely', right after the lung-injury paragraph, to the end of 'Cartridges, disposables and dab pens'; the concentrates line, which trailed the 15-gram sentence after the dabbing-dose caution, now ends 'Types you will see'; words unchanged; docs/VERIFY-PAGES.md); the THC, CBD, terpene and safety sections link articles only. brief.riskLevel medical hides the floating ORDER NOW pair. High Society is never said to sell RSO or capsules.",
+  "duplicate": "src/content/blog/patient-guide.json (editorial) covers a close topic ('How Patients Use Each Cannabis Product'); the structure map asked the brief writers to point that post here instead. Wording on this page is independent of that article; listed in docs/requests/pages.md for the editorial lane.",
+  "factcheck": "Independent fact-check 2026-10-24 (docs/PAGES-FACTCHECK.md): delta-8 cap restated per the CRA bulletins (10% of a concentrate or vape; 10% of the THC an infused product may hold), not '10% of any licensed product'; limonene study: the significant drop in anxious ratings was in the 12 adults given the highest dose (Spindle 2024), not all 20; grinding: Fairbairn 1976 is about intact glands protecting cannabinoids, not aroma; vaporizer 'designed to' (Lanz 2016 saw combustion in one device); infused pre-rolls: Ontario study, 'can be' stronger; EVALI: CDC/FDA advised against THC vaping products generally, particularly informal ones, and the symptom advice now cites the American Thoracic Society; RSO: only what Medical News Today states (named for the activist, much more THC than CBD oil, may exceed 90%), unsourced 'whole plant', 'more than other extracts' and 'usually swallowed or held under the tongue' removed; pets: call a veterinarian (Illinois official FAQ), not Poison Control."
+ }
+}

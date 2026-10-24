@@ -1,0 +1,81 @@
+{
+ "path": "/careers/",
+ "template": "careers",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/careers/ (crawl/hs/v1-pages.json mainLines 1-44; the form markup from v1-source/careers/index.html: CMS form 4 'Employment form')",
+  "site.json stores (the Preferred Location options)"
+ ],
+ "titleFull": "Careers | Apply for a Job at High Society Dispo",
+ "metaDescription": "Apply for a position at High Society Dispo. Complete our online employment application and join our growing team today.",
+ "h1": "Careers at High Society",
+ "crumb": "Careers",
+ "hero": {
+  "lead": "Join the High Society Team",
+  "image": "assets/pit-stop/img/hero-pit-wall.jpg",
+  "imageAlt": ""
+ },
+ "application": {
+  "heading": "Employment Application",
+  "md": "Join the team at High Society. We are seeking professional, reliable individuals who are passionate about premium cannabis, curated guest experiences, and providing expert-level hospitality. If you’re dedicated to elevating the industry standard, we want to meet you."
+ },
+ "form": {
+  "id": "employment-form",
+  "cmsFormId": "4",
+  "cmsFormName": "Employment form",
+  "action": "https://highsocietydispo.com/do_actions/do_form_submit",
+  "method": "post",
+  "enctype": "multipart/form-data",
+  "groups": [
+   {
+    "legend": "Personal Information",
+    "fields": [
+     { "name": "first_name", "label": "First Name", "type": "text", "placeholder": "First name (Required)", "required": true, "autocomplete": "given-name", "half": true },
+     { "name": "last_name", "label": "Last Name", "type": "text", "placeholder": "Last name (Required)", "required": true, "autocomplete": "family-name", "half": true },
+     { "name": "email", "label": "Email Address", "type": "email", "placeholder": "Email Address (Required)", "required": true, "autocomplete": "email", "half": true },
+     { "name": "phone", "label": "Phone Number", "type": "tel", "placeholder": "US +1 (555) 000-0000", "autocomplete": "tel", "half": true }
+    ]
+   },
+   {
+    "legend": "Address",
+    "fields": [
+     { "name": "address_line_1", "label": "Street Address", "hideLabel": true, "type": "text", "placeholder": "Street Address (Required)", "required": true, "autocomplete": "address-line1" },
+     { "name": "address_line_2", "label": "Street Address Line 2", "hideLabel": true, "type": "text", "placeholder": "Street Address Line 2", "autocomplete": "address-line2" },
+     { "name": "city", "label": "City", "hideLabel": true, "type": "text", "placeholder": "City (Required)", "required": true, "autocomplete": "address-level2" },
+     { "name": "state", "label": "State", "hideLabel": true, "type": "text", "placeholder": "State (Required)", "required": true, "autocomplete": "address-level1", "half": true },
+     { "name": "zip", "label": "Zip Code", "hideLabel": true, "type": "text", "placeholder": "Zip Code (Required)", "required": true, "autocomplete": "postal-code", "half": true }
+    ]
+   },
+   {
+    "fields": [
+     { "name": "availability", "label": "Availability", "type": "date", "half": true },
+     { "name": "start_date", "label": "Desired Start Date", "type": "date", "half": true },
+     { "name": "employment_type", "label": "Employment Type", "type": "select", "options": ["Full-time", "Part-time"], "value": "Full-time" },
+     { "name": "resume", "label": "Upload Resume", "type": "file", "accept": ".pdf,.doc,.docx", "required": true, "help": "Browse and chose the files you want to upload from your computer" }
+    ]
+   },
+   {
+    "legend": "Previous Work Experience",
+    "fields": [
+     { "name": "exp_start", "label": "Start Date", "type": "date", "half": true },
+     { "name": "exp_end", "label": "End Date", "type": "date", "half": true },
+     { "name": "company_name", "label": "Name of Company", "type": "text", "placeholder": "Company Name", "autocomplete": "organization" }
+    ]
+   },
+   {
+    "fields": [
+     { "name": "role", "label": "Role", "type": "select", "options": ["Budtender", "Receptionist", "Inventory Specialist"], "value": "Inventory Specialist", "half": true },
+     { "name": "location", "label": "Preferred Location", "type": "select", "options": "stores", "value": "New Buffalo", "half": true }
+    ]
+   }
+  ],
+  "submit": "Submit Application"
+ },
+ "blocks": [],
+ "review": {
+  "provenance": "Every visible line of v1 /careers/ <main>: Careers at / High Society (the h1, joined: structure map), Join the High Society Team (the hero line), Employment Application + the four-line invitation (joined into one paragraph, words unchanged), Personal Information, every field label and placeholder, Employment Type (Full-time, Part-time; v1's default Full-time), Upload Resume + its line, Previous Work Experience (Start Date, End Date, Name of Company), Role (Budtender, Receptionist, Inventory Specialist; v1's default Inventory Specialist), Preferred Location (the 8 stores from site.json; v1's default New Buffalo), Submit Application. v1 lines 0 and 4 'Please add a content...' are empty CMS slots (structure map note): not rendered. The '?' after the select values (v1 lines 19, 30, 35) is a broken arrow-icon glyph, not a word: the native selects draw their own arrow.",
+  "typo": "High Society's resume line says 'Browse and chose the files ...' (choose). Kept verbatim (High Society's own words; not a declared defect in docs/hs-source-defects.json); listed in docs/requests/pages.md for the client.",
+  "form": "v1's custom dropdowns (spans + hidden inputs employment_type, role, location) are native <select>s with the same names and values; the address inputs keep v1's names and placeholders and get labels read by screen readers (their placeholder words). Posts where v1 posts (https://highsocietydispo.com/do_actions/do_form_submit, form_id 4). NOT VERIFIED that the CMS accepts a post from a page it did not serve (no _nonce); not tested on purpose (a test application would reach High Society). Listed in docs/requests/pages.md.",
+  "image": "hero-pit-wall (v2's race-day photo) as the hero, decorative."
+ }
+}

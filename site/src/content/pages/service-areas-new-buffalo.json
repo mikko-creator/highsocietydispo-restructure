@@ -1,0 +1,263 @@
+{
+ "path": "/dispensary-locations/new-buffalo/service-areas/",
+ "template": "service-area-hub",
+ "store": "new-buffalo",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/dispensary-locations/new-buffalo/service-areas/"
+ ],
+ "title": "Areas We Serve: New Buffalo Dispensary Nearby",
+ "metaDescription": "Find the closest option to our New Buffalo dispensary. Service areas, directions, FAQs, and quick links for visitors. 21+ only.",
+ "h1": "Areas We Serve: Shop Our New Buffalo Dispensary Nearby",
+ "crumb": "Areas We Serve",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Locations",
+   "path": "/dispensary-locations/"
+  },
+  {
+   "name": "New Buffalo",
+   "path": "/dispensary-locations/new-buffalo/"
+  },
+  {
+   "name": "Areas We Serve"
+  }
+ ],
+ "hero": {
+  "eyebrow": "High Society New Buffalo",
+  "image": "assets/pit-stop/img/scene-new-buffalo.jpg",
+  "imageAlt": "",
+  "lead": "Whether you're staying nearby, coming from the surrounding area, or traveling the local corridor, this page helps you find the fastest route to our New Buffalo dispensary and the right page for your area.\n\n• Choose your area for directions + FAQs\n\n• Designed for \"near me\" shoppers who want a quick visit\n\n• Links to the most relevant local page (so you don't waste time)",
+  "ctas": [
+   {
+    "text": "Get Directions to New Buffalo",
+    "href": "https://maps.app.goo.gl/WZxXYVRsWEvhs7Vk6"
+   },
+   {
+    "text": "VIEW TODAY'S MENU",
+    "href": "/shop/new-buffalo/",
+    "style": "ghost"
+   }
+  ],
+  "note": "Valid government ID required. 21+ only. Selection varies—check today's availability.",
+  "status": {
+   "open": "Open - Closes at 9:00 PM",
+   "closed": "Closed - Opens at 9:00 AM"
+  },
+  "mapsUrl": "https://maps.app.goo.gl/WZxXYVRsWEvhs7Vk6"
+ },
+ "routes": {
+  "before": "expect",
+  "heading": "Choose your area (quick links)",
+  "lead": "Pick the page that matches where you are staying or traveling from.",
+  "mapsUrl": "https://maps.app.goo.gl/WZxXYVRsWEvhs7Vk6",
+  "items": [
+   {
+    "title": "Michiana, IN / Long Beach, IN",
+    "links": [
+     {
+      "text": "VIEW ROUTE DETAILS",
+      "href": "/dispensary-locations/new-buffalo/service-areas/michiana-long-beach-in/"
+     },
+     {
+      "text": "GET DIRECTIONS",
+      "href": "maps",
+      "style": "ghost"
+     },
+     {
+      "text": "CALL STORE",
+      "href": "tel",
+      "style": "ghost"
+     }
+    ]
+   },
+   {
+    "title": "I-94 Exit / US-12 (New Buffalo travel corridor)",
+    "links": [
+     {
+      "text": "VIEW ROUTE DETAILS",
+      "href": "/dispensary-locations/new-buffalo/service-areas/i-94-exit-new-buffalo/"
+     },
+     {
+      "text": "GET DIRECTIONS",
+      "href": "maps",
+      "style": "ghost"
+     },
+     {
+      "text": "CALL STORE",
+      "href": "tel",
+      "style": "ghost"
+     }
+    ]
+   },
+   {
+    "title": "Union Pier, MI / Lakeside, MI / Three Oaks, MI",
+    "links": [
+     {
+      "text": "VIEW ROUTE DETAILS",
+      "href": "/dispensary-locations/new-buffalo/service-areas/union-pier-lakeside-three-oaks-mi/"
+     },
+     {
+      "text": "GET DIRECTIONS",
+      "href": "maps",
+      "style": "ghost"
+     },
+     {
+      "text": "CALL STORE",
+      "href": "tel",
+      "style": "ghost"
+     }
+    ]
+   }
+  ]
+ },
+ "blocks": [
+  {
+   "type": "steps",
+   "id": "expect",
+   "ground": "white",
+   "heading": "What to expect when you arrive",
+   "items": [
+    {
+     "title": "Step 1 — Check-in",
+     "md": "- Bring a valid ID (21+)\n- Quick entry process"
+    },
+    {
+     "title": "Step 2 — Shop by category",
+     "md": "- Pick your category (flower / edibles / vapes / pre-rolls / concentrates)\n- Ask staff for a fast recommendation if you’re unsure"
+    },
+    {
+     "title": "Step 3 — Checkout",
+     "md": "- Efficient checkout and easy exit\n- Tell us if you’re in a rush—we’ll keep it moving."
+    }
+   ]
+  },
+  {
+   "type": "faq",
+   "id": "faq",
+   "ground": "headlight",
+   "heading": "FAQs",
+   "items": [
+    {
+     "q": "How do I know which page to use?",
+     "a": "Choose the page that matches your starting area (Harbor Country, Indiana visitor, or I-94/US-12 travel route) for the fastest, most relevant directions and FAQs."
+    },
+    {
+     "q": "Do I need an ID?",
+     "a": "Yes. A valid government-issued ID is required. 21+ only."
+    },
+    {
+     "q": "Do you accept out-of-state IDs?",
+     "a": "In most cases, valid government IDs from other states are accepted—bring your ID to confirm eligibility."
+    },
+    {
+     "q": "Can I view the menu before I arrive?",
+     "a": "Yes. You can view our full menu online before your visit to browse products, pricing, and availability."
+    },
+    {
+     "q": "Do you have parking?",
+     "a": "Yes, convenient on-site parking is available for customers."
+    },
+    {
+     "q": "What are your busiest times?",
+     "a": "Weekends and late afternoons are typically the busiest. Visiting earlier in the day often means shorter wait times."
+    },
+    {
+     "q": "Can staff help first-time visitors choose?",
+     "a": "Absolutely. Our team is happy to guide first-time visitors and help you find products that match your preferences and comfort level."
+    },
+    {
+     "q": "What’s the quickest way to shop if I’m traveling?",
+     "a": "Bring ID, choose a category + budget, and tell staff you want a quick trip—we’ll help you move fast."
+    }
+   ]
+  },
+  {
+   "type": "store-details",
+   "id": "store",
+   "ground": "white",
+   "heading": "Visit our New Buffalo dispensary (store details)",
+   "store": "new-buffalo",
+   "name": "High Society Weed Dispensary New Buffalo",
+   "facts": [
+    "address",
+    "phone",
+    "hours"
+   ],
+   "addressLabel": "Address:",
+   "addressText": "19189 US 12 New Buffalo, MI 49117",
+   "phoneLabel": "Phone:",
+   "hoursLabel": "Hours:",
+   "hoursText": "9:00 AM – 9:00 PM Daily",
+   "mapsUrl": "https://maps.app.goo.gl/zvRAuX6LGdpUvpp58",
+   "ctas": [
+    {
+     "text": "GET DIRECTIONS",
+     "href": "maps"
+    },
+    {
+     "text": "VIEW TODAY'S MENU",
+     "href": "shop",
+     "style": "ghost"
+    }
+   ],
+   "note": "21+ only. Please consume responsibly."
+  },
+  {
+   "type": "reviews",
+   "id": "reviews",
+   "heading": "Reviews",
+   "lead": "What customers say about High Society New Buffalo.",
+   "items": [
+    {
+     "text": "Very cool establishment with friendly and helpful budtenders, and a super cute receptionist that always greets me with a smile! Great deals too! Definitely worth stopping.",
+     "author": "CJ 718"
+    },
+    {
+     "text": "Very welcoming staff, and all around vibe of the place, the layout of the store is very nice and spacious, and an amazing display all around. Very clean aswell! Mae was amazing, very polite and patient! helped me find what I was looking for aswell as being informative! 10/10 atmosphere, experience, and customer service! Will defiantly be coming back!!! Thank you!",
+     "author": "Kyle Mayer"
+    },
+    {
+     "text": "Amazing products. Great staff. Will stop by again.",
+     "author": "Heather Benedict"
+    },
+    {
+     "text": "My first time going there was today. I must say I was impressed. Super nice receptionist. Great prices. Awesome deals.",
+     "author": "Shea Lowe"
+    },
+    {
+     "text": "Great prices and selection. Bud tender was knowledgeable and super friendly. Definitely coming back.",
+     "author": "Stacey"
+    }
+   ]
+  },
+  {
+   "type": "callout",
+   "id": "law",
+   "tone": "legal",
+   "heading": "Crossing state lines",
+   "md": "Heading home? Enjoy responsibly in Michigan and don’t travel across state lines with cannabis. Read our [Indiana](/cannabis-laws-by-state/indiana/) and [Illinois](/cannabis-laws-by-state/illinois/) law guides before you go."
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen-other.mjs",
+  "fixes": [
+   "h1 joins \"Areas We Serve\" + \"Shop Our New Buffalo / Dispensary Nearby\" (structure map)",
+   "the stray quote after \"Three Oaks, MI\" dropped (structure map); the parity gate cannot see the fix (docs/requests/stores.md)",
+   "\"License: 0123456789\" placeholder not carried (declared)",
+   "empty CMS slots (\"Please add a content...\") not rendered",
+   "route cards each once (v1 prints each title twice)",
+   "title: \" | \" -> \": \" so the title with the suffix fits 60"
+  ],
+  "newCopy": [
+   "hero eyebrow",
+   "reviews lead",
+   "law pointer callout (brief service-area-law-pointer; High Society's own reminder \"don’t travel across state lines with cannabis\")"
+  ]
+ }
+}

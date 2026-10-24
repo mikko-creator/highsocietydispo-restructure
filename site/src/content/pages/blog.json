@@ -1,0 +1,68 @@
+{
+ "path": "/blog/",
+ "template": "blog-index",
+ "provenance": "new",
+ "title": "Cannabis Blog: Guides, Strains, Recipes, News",
+ "crumb": "Blog",
+ "metaDescription": "The High Society cannabis blog: plain-language guides to strains and products, infused recipes, Michigan cannabis news and shopping tips for adults 21+.",
+ "h1": "The High Society Blog",
+ "hero": {
+  "lead": "Welcome to the High Society cannabis blog. Our cannabis guides explain the basics in plain language, walk you through the products on the menu and share infused recipes, Michigan cannabis news and smart shopping tips. Everything here is written for adults 21 and older in Michigan. New to cannabis? Start with our [patient guide](/patient-guide/), then browse the articles by topic below."
+ },
+ "blocks": [
+  {
+   "type": "cards",
+   "heading": "Essential guides",
+   "columns": 4,
+   "items": [
+    {
+     "title": "Patient guide",
+     "icon": "leaf",
+     "md": "THC, CBD, terpenes and each product format, explained for newer consumers and patients.",
+     "href": "/patient-guide/"
+    },
+    {
+     "title": "Getting a medical card",
+     "icon": "user",
+     "md": "Who qualifies for a Michigan medical marijuana card and how to apply, step by step.",
+     "href": "/getting-a-medical-card/"
+    },
+    {
+     "title": "Michigan cannabis laws",
+     "icon": "check",
+     "md": "The rules for buying, carrying and using cannabis in Michigan, in plain language.",
+     "href": "/cannabis-laws-by-state/michigan/"
+    },
+    {
+     "title": "Dispensary guides",
+     "icon": "pin",
+     "md": "What to expect at each of our eight Michigan stores before you visit.",
+     "href": "/dispensary-guides/"
+    }
+   ]
+  }
+ ],
+ "ctaMedical": {
+  "$comment": "The closing call to action of every article whose brief riskLevel is medical: education only, never a shop or deal link (Michigan R 420.507, facts/law-facts.json mi-advertising). The article template refuses a shop, deal or CMS-token link here.",
+  "heading": "Michigan's medical card, explained",
+  "md": "Michigan's medical marijuana program has its own card and its own rules for patients and caregivers. Our guides explain how to apply and walk through the main product types. For questions about your health, talk with your doctor.",
+  "ctas": [
+   {
+    "text": "Getting a medical card",
+    "href": "/getting-a-medical-card/"
+   },
+   {
+    "text": "Read the patient guide",
+    "href": "/patient-guide/",
+    "style": "ghost"
+   }
+  ]
+ },
+ "sourceRefs": [
+  "structure-map:/blog/",
+  "structure-map:newPageBriefs /blog/"
+ ],
+ "review": {
+  "notes": "Title, h1 and sections from the structure map (/blog/): its title \"Cannabis Blog: Guides, Strains, Recipes and News\" is 63 characters with the suffix, so \"and\" became a comma (60). The h1 is the map's; the eyebrow is site.json blog.name (\"Society Pages\", a working name flagged for the client), so a rename reaches it. The intro, the four card lines, the labels and the education CTA are new copy (brief /blog/: 60-120 words; adults 21+; newcomers start with the patient guide). \"Eight Michigan stores\": site.json stores (8)."
+ }
+}

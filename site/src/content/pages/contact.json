@@ -1,0 +1,78 @@
+{
+ "path": "/contact/",
+ "template": "contact",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/contact/ (crawl/hs/v1-pages.json mainLines 0-9; the form markup from v1-source/contact/index.html: CMS form 2 'Contact Us')",
+  "hs:/contact/ meta description (the hero line)",
+  "hs:/dispensary-locations/*/ Store Info (info@highsocietydispo.com)",
+  "site.json stores (the store cards and the shared hours: decision D-nap)"
+ ],
+ "titleFull": "Contact High Society: Connect with Michigan's Leading Dispensary",
+ "metaDescription": "Have questions or need assistance? Contact High Society for information on our cannabis products, dispensary locations, or any inquiries. We're here to help!",
+ "h1": "Contact Us",
+ "crumb": "Contact Us",
+ "hero": {
+  "lead": "Have questions or need assistance? Contact High Society for information on our cannabis products, dispensary locations, or any inquiries. We're here to help!"
+ },
+ "form": {
+  "id": "contact-form",
+  "cmsFormId": "2",
+  "cmsFormName": "Contact Us",
+  "action": "https://highsocietydispo.com/do_actions/do_form_submit",
+  "method": "post",
+  "enctype": "multipart/form-data",
+  "groups": [
+   {
+    "fields": [
+     { "name": "name", "label": "Name:", "type": "text", "placeholder": "Enter your full name...", "required": true, "autocomplete": "name", "half": true },
+     { "name": "email", "label": "Email Address:", "type": "email", "placeholder": "Enter your email address...", "required": true, "autocomplete": "email", "half": true },
+     { "name": "message", "label": "Message:", "type": "textarea", "placeholder": "Type your message..." }
+    ]
+   }
+  ],
+  "submit": "SUBMIT"
+ },
+ "aside": {
+  "label": "Email and hours",
+  "items": [
+   { "label": "Email", "md": "[info@highsocietydispo.com](mailto:info@highsocietydispo.com)" },
+   { "label": "Hours", "auto": "hours" }
+  ]
+ },
+ "blocks": [
+  {
+   "type": "store-grid",
+   "heading": "Call or visit your store",
+   "stores": "all",
+   "ground": "black",
+   "to": "location",
+   "secondary": { "text": "View Location", "to": "location" }
+  },
+  {
+   "type": "cta",
+   "heading": "Questions before you visit?",
+   "md": "Our FAQ covers ID, payment, ordering for pickup and The Society.",
+   "ctas": [
+    { "text": "Read the FAQ", "href": "/faq/" }
+   ]
+  },
+  {
+   "type": "split",
+   "variant": "app",
+   "title": ["Download the", "High Society App"],
+   "md": "Experience convenience at your fingertips with the High Society App. Easily browse our full cannabis menu, stay updated on the latest deals, and place your orders with just a few taps. Whether you're at home or on the go, managing your cannabis experience has never been easier.",
+   "image": "derived:app-phone-mockup",
+   "imageAlt": "",
+   "ctas": [
+    { "text": "Download Now", "href": "https://apps.apple.com/us/app/high-society-cannabis/id6503314334" }
+   ]
+  }
+ ],
+ "review": {
+  "provenance": "Every visible line of v1 /contact/ <main>: Contact Us (the h1), Name: / Email Address: / Message: / SUBMIT (the form, with v1's placeholders, field names and CMS form id 2), Download the / High Society App + its paragraph + Download Now (App Store link). v1 line 38 'Please add a content...' is an empty CMS slot, not copy (structure map note): not rendered.",
+  "new": "The hero line is High Society's own meta description. New words: 'Email' and 'Hours' (labels), the store band heading 'Call or visit your store' (structure map: one-line heading), the FAQ band ('Questions before you visit?', its line and 'Read the FAQ'). 'View Location' is High Society's own store-chooser label.",
+  "form": "Posts where v1's form posts (data-clone-original-action of the capture: https://highsocietydispo.com/do_actions/do_form_submit, form_id 2), as the structure map says. NOT VERIFIED: whether the CMS endpoint accepts a post from a page it did not serve (v1 also sent a per-session _nonce, which a static page cannot carry). Not tested on purpose: a test post would reach High Society's live inbox. Listed in docs/requests/pages.md for the operator.",
+  "title": "titleFull is High Society's own title, 64 characters (structure map titleMode full): kept verbatim, under the 65 cap."
+ }
+}

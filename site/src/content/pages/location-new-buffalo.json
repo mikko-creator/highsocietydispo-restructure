@@ -1,0 +1,532 @@
+{
+ "path": "/dispensary-locations/new-buffalo/",
+ "template": "location",
+ "store": "new-buffalo",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/dispensary-locations/new-buffalo/",
+  "v2:join",
+  "hs:/dispensary-locations/new-buffalo/service-areas/",
+  "v2:app"
+ ],
+ "titleFull": "High Society Weed Dispensary New Buffalo",
+ "metaDescription": "High Society Cannabis in New Buffalo stands out as a top-tier dispensary offering an elevated shopping experience for both locals and visitors.",
+ "h1": "Weed Dispensary in New Buffalo",
+ "crumb": "New Buffalo",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Locations",
+   "path": "/dispensary-locations/"
+  },
+  {
+   "name": "New Buffalo"
+  }
+ ],
+ "storeSameAs": [],
+ "hero": {
+  "eyebrow": "High Society New Buffalo · Recreational 21+",
+  "image": "assets/pit-stop/img/scene-new-buffalo.jpg",
+  "imageAlt": "",
+  "lead": "Shop Cannabis Products",
+  "ctas": [
+   {
+    "text": "order now",
+    "href": "/shop/new-buffalo/"
+   },
+   {
+    "text": "Get Directions",
+    "href": "https://maps.app.goo.gl/6pHu75S8THarhZJB6",
+    "style": "ghost"
+   }
+  ],
+  "status": {
+   "open": "Open - Closes at 9:00 PM",
+   "closed": "Closed - Opens at 9:00 AM"
+  },
+  "mapsUrl": "https://maps.app.goo.gl/6pHu75S8THarhZJB6"
+ },
+ "routes": {
+  "before": "amenities",
+  "heading": "How To Spot The High Society Dispensary In New Buffalo",
+  "lead": "Whether you’re a resident of New Buffalo, MI, or just visiting, this charming lakeside town offers a unique mix of beachside relaxation, boutique shopping, and Midwestern hospitality. Stroll through the scenic downtown, enjoy the marina views, or unwind on the shores of Lake Michigan. New Buffalo has something for everyone. Here are some top attractions to discover:",
+  "label": "FOLLOW THESE DIRECTIONS FROM",
+  "mapsUrl": "https://maps.app.goo.gl/WZxXYVRsWEvhs7Vk6",
+  "items": [
+   {
+    "title": "Michiana, IN / Long Beach, IN",
+    "links": [
+     {
+      "text": "VIEW ROUTE DETAILS",
+      "href": "/dispensary-locations/new-buffalo/service-areas/michiana-long-beach-in/"
+     },
+     {
+      "text": "GET DIRECTIONS",
+      "href": "maps",
+      "style": "ghost"
+     },
+     {
+      "text": "CALL STORE",
+      "href": "tel",
+      "style": "ghost"
+     }
+    ]
+   },
+   {
+    "title": "I-94 Exit / US-12 (New Buffalo travel corridor)",
+    "links": [
+     {
+      "text": "VIEW ROUTE DETAILS",
+      "href": "/dispensary-locations/new-buffalo/service-areas/i-94-exit-new-buffalo/"
+     },
+     {
+      "text": "GET DIRECTIONS",
+      "href": "maps",
+      "style": "ghost"
+     },
+     {
+      "text": "CALL STORE",
+      "href": "tel",
+      "style": "ghost"
+     }
+    ]
+   },
+   {
+    "title": "Union Pier, MI / Lakeside, MI / Three Oaks, MI",
+    "links": [
+     {
+      "text": "VIEW ROUTE DETAILS",
+      "href": "/dispensary-locations/new-buffalo/service-areas/union-pier-lakeside-three-oaks-mi/"
+     },
+     {
+      "text": "GET DIRECTIONS",
+      "href": "maps",
+      "style": "ghost"
+     },
+     {
+      "text": "CALL STORE",
+      "href": "tel",
+      "style": "ghost"
+     }
+    ]
+   }
+  ],
+  "more": {
+   "text": "View All Service Areas",
+   "href": "/dispensary-locations/new-buffalo/service-areas/"
+  }
+ },
+ "blocks": [
+  {
+   "type": "cta",
+   "id": "rewards-teaser",
+   "ground": "red",
+   "heading": "Join The Society",
+   "md": "Sign up to get early access to strain drops, special pricing, birthday rewards and more",
+   "ctas": [
+    {
+     "text": "Join the Society Today",
+     "href": "/club-member-program/"
+    }
+   ]
+  },
+  {
+   "type": "store-details",
+   "id": "store-details",
+   "ground": "white",
+   "heading": "Store Info",
+   "store": "new-buffalo",
+   "name": "High Society New Buffalo",
+   "facts": [
+    "hours",
+    "address",
+    "email",
+    "phone"
+   ],
+   "hoursText": "Open Daily: 9:00 AM - 9:00 PM",
+   "email": "info@highsocietydispo.com",
+   "mapsUrl": "https://maps.app.goo.gl/6pHu75S8THarhZJB6",
+   "ctas": [
+    {
+     "text": "View Menu",
+     "href": "shop"
+    },
+    {
+     "text": "Get Direction",
+     "href": "maps",
+     "style": "ghost"
+    }
+   ],
+   "about": {
+    "heading": "The Best Weed Dispensary in New Buffalo, Michigan",
+    "md": "High Society Cannabis in New Buffalo stands out as a top-tier dispensary offering an elevated shopping experience for both locals and visitors. Known for its knowledgeable staff and welcoming atmosphere, this location carries a curated selection of premium cannabis products from respected brands like 710 Labs, Bloom, Camino, and Drip. Whether you're searching for potent concentrates, flavorful edibles, or high-quality flower, High Society delivers consistent excellence—earning its place as a trusted name in New Buffalo’s cannabis scene.",
+    "linksLabel": "More about High Society New Buffalo",
+    "links": [
+     {
+      "text": "Deals",
+      "href": "/deals/"
+     },
+     {
+      "text": "Loyalty",
+      "href": "/loyalty/"
+     },
+     {
+      "text": "FAQs",
+      "href": "#faq"
+     },
+     {
+      "text": "Medical Card Guide",
+      "href": "/getting-a-medical-card/"
+     }
+    ]
+   }
+  },
+  {
+   "type": "amenities",
+   "id": "amenities",
+   "ground": "white",
+   "heading": "Store Amenities",
+   "groups": [
+    {
+     "title": "We Offer",
+     "items": [
+      {
+       "icon": "pin",
+       "label": "Curbside Pickup"
+      },
+      {
+       "icon": "bag",
+       "label": "In-Store Pickup"
+      },
+      {
+       "icon": "cart",
+       "label": "In-Store Shopping"
+      }
+     ]
+    },
+    {
+     "title": "Pay With",
+     "items": [
+      {
+       "icon": "tag",
+       "label": "Cash"
+      },
+      {
+       "icon": "home",
+       "label": "ATM in-store"
+      }
+     ]
+    },
+    {
+     "title": "Before You Go",
+     "items": [
+      {
+       "icon": "user",
+       "label": "Valid government-issued ID or passport, 21+"
+      },
+      {
+       "icon": "cart",
+       "label": "Order online for pickup; curbside customers get a text when the order is ready"
+      },
+      {
+       "icon": "pin",
+       "label": "Free on-site parking"
+      },
+      {
+       "icon": "check",
+       "label": "The store and parking are accessible"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "id": "first-visit",
+   "ground": "headlight",
+   "heading": "First-Time Customer Guide",
+   "lead": "Whether you're new to cannabis or just new to High Society Cannabis in New Buffalo, we make your first visit easy and welcoming.",
+   "items": [
+    {
+     "title": "Check In",
+     "md": "Recreational customers must be 21 or older, while medical patients 18+ with a valid medical card are also welcome. When you arrive, have your government-issued ID or passport ready and check in with our friendly security and front desk staff."
+    },
+    {
+     "title": "Stay in the Loop",
+     "md": "You’ll be asked to provide your phone number and email so you can stay in the loop about exclusive promotions and special offers."
+    },
+    {
+     "title": "Meet Your Budtender",
+     "md": "When it's your turn, a knowledgeable budtender will invite you in from the waiting area to help you browse products, answer your questions, and guide you through the shopping process—whether you're a first-timer or a regular."
+    },
+    {
+     "title": "Choose Your Items",
+     "md": "Once you've made your selection, the budtender will pass your order to our preparation team. We accept payments via cash, credit, or debit."
+    },
+    {
+     "title": "Complete Your Purchase",
+     "md": "When your order is ready, a staff member will call your name, process your payment, and confirm all details to ensure accuracy before completing the sale."
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "id": "order-pickup",
+   "ground": "white",
+   "heading": "How to Place an Order for Dispensary Pick-Up",
+   "items": [
+    {
+     "title": "Browse the Menu",
+     "md": "Start by browsing our [online menu](/shop/new-buffalo/) or give us a call at [(269) 231-5213](tel:+12692315213) if you need help choosing the right products."
+    },
+    {
+     "title": "Build Your Order",
+     "md": "Once you've found your favorites, select the quantity, add items to your cart, and choose a pick-up time that works for you."
+    },
+    {
+     "title": "Check Out",
+     "md": "To complete your order, enter your details at checkout. First-time customers will need to show a valid government-issued ID when picking up, while returning customers can log in for a quicker experience."
+    },
+    {
+     "title": "Curbside Pickup",
+     "md": "Prefer curbside pickup? Just let us know during checkout—we’ll send you a text when your order is ready for easy and discreet collection."
+    },
+    {
+     "title": "Enjoy Responsibly",
+     "md": "Enjoy responsibly—we’re here to make your cannabis shopping experience smooth, safe, and stress-free!"
+    }
+   ]
+  },
+  {
+   "type": "deals",
+   "id": "deals",
+   "source": "site",
+   "ground": "headlight",
+   "heading": "Deals",
+   "lead": "Deals vary by store and change often. The menu shows today's deals at High Society New Buffalo.",
+   "more": {
+    "text": "See all deals",
+    "href": "/deals/"
+   }
+  },
+  {
+   "type": "cards",
+   "id": "categories",
+   "ground": "white",
+   "columns": 4,
+   "heading": "Shop Cannabis Products",
+   "items": [
+    {
+     "title": "Flower",
+     "icon": "leaf",
+     "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=flower",
+     "md": "Each cannabis strain is carefully curated to your needs, whether you're seeking relaxation, creativity, or a balanced high."
+    },
+    {
+     "title": "Pre-Rolls",
+     "icon": "spark",
+     "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=pre-rolls"
+    },
+    {
+     "title": "Concentrates",
+     "icon": "drop",
+     "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=concentrates",
+     "md": "From shatter to wax, our concentrates are ideal for experienced users looking for a powerful and fast-acting option."
+    },
+    {
+     "title": "Vaporizers",
+     "icon": "wave",
+     "href": "/shop/new-buffalo/?dtche%5Bcategory%5D=vaporizers"
+    }
+   ]
+  },
+  {
+   "type": "reviews",
+   "id": "reviews",
+   "heading": "Reviews",
+   "lead": "What customers say about High Society New Buffalo.",
+   "items": [
+    {
+     "text": "Very cool establishment with friendly and helpful budtenders, and a super cute receptionist that always greets me with a smile! Great deals too! Definitely worth stopping.",
+     "author": "CJ 718"
+    },
+    {
+     "text": "Very welcoming staff, and all around vibe of the place, the layout of the store is very nice and spacious, and an amazing display all around. Very clean aswell! Mae was amazing, very polite and patient! helped me find what I was looking for aswell as being informative! 10/10 atmosphere, experience, and customer service! Will defiantly be coming back!!! Thank you!",
+     "author": "Kyle Mayer"
+    },
+    {
+     "text": "Amazing products. Great staff. Will stop by again.",
+     "author": "Heather Benedict"
+    },
+    {
+     "text": "My first time going there was today. I must say I was impressed. Super nice receptionist. Great prices. Awesome deals.",
+     "author": "Shea Lowe"
+    },
+    {
+     "text": "Great prices and selection. Bud tender was knowledgeable and super friendly. Definitely coming back.",
+     "author": "Stacey"
+    }
+   ]
+  },
+  {
+   "type": "faq",
+   "id": "faq",
+   "ground": "white",
+   "heading": "Frequently Asked Questions",
+   "lead": "More questions? Visit our [FAQ page](/faq/).",
+   "items": [
+    {
+     "q": "What are the requirements to shop at High Society Cannabis New Buffalo?",
+     "a": "To shop at our dispensary, you must present a valid government-issued ID confirming you are 21 or older. Medical patients 18+ with a valid medical card are also welcome."
+    },
+    {
+     "q": "What should I do if I receive a defective product?",
+     "a": "If you experience issues with a product's quality or functionality, please call us at [(269) 231-5213](tel:+12692315213) or visit the store where you made the purchase. Our team is happy to help."
+    },
+    {
+     "q": "What payment methods do you accept at your dispensary?",
+     "a": "High Society accepts cash and debit cards. Many locations also feature an in-store ATM for your convenience. Some stores may offer additional payment options—call ahead for details."
+    },
+    {
+     "q": "Is it legal to transport cannabis?",
+     "a": "Cannabis purchases are legal in Michigan, but transporting cannabis across state lines is prohibited under federal law. Avoid taking cannabis products out of the state."
+    },
+    {
+     "q": "What products are available at the dispensary?",
+     "a": "We offer a wide range of high-quality products, including flower, pre-rolls, concentrates, vape pens, edibles, and more. Check out our menu or contact us with specific inquiries."
+    },
+    {
+     "q": "Do you have a loyalty program for customers?",
+     "a": "Absolutely! Join The Society, our loyalty program, to start earning points on your purchases. Points can be redeemed for exclusive discounts and offers. Speak to our staff for more information."
+    }
+   ]
+  },
+  {
+   "type": "amenities",
+   "id": "service-area",
+   "ground": "headlight",
+   "heading": "Locations Where Our Dispensary Provides Service",
+   "groups": [
+    {
+     "title": "Towns",
+     "items": [
+      {
+       "icon": "pin",
+       "label": "New Buffalo"
+      },
+      {
+       "icon": "pin",
+       "label": "Michigan City"
+      },
+      {
+       "icon": "pin",
+       "label": "St. Joseph"
+      },
+      {
+       "icon": "pin",
+       "label": "Springfield"
+      }
+     ]
+    },
+    {
+     "title": "ZIP Codes We Serve",
+     "items": [
+      {
+       "icon": "target",
+       "label": "49117"
+      },
+      {
+       "icon": "target",
+       "label": "49085"
+      },
+      {
+       "icon": "target",
+       "label": "49084"
+      },
+      {
+       "icon": "target",
+       "label": "49111"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "id": "resources",
+   "ground": "white",
+   "heading": "Other Resources",
+   "style": "dot",
+   "items": [
+    "Stay informed about the latest marijuana regulations and news in New Buffalo, MI.",
+    "Keep up with [key cannabis updates and developments](https://www.michigan.gov/cra/laws-rules-other) throughout Michigan.",
+    "Read our guide to [Michigan marijuana laws](/cannabis-laws-by-state/michigan/)."
+   ]
+  },
+  {
+   "type": "nearby",
+   "id": "nearby",
+   "store": "new-buffalo",
+   "order": [
+    "big-rapids",
+    "birch-run",
+    "charlotte",
+    "east-lansing",
+    "lenox",
+    "mount-pleasant",
+    "saline"
+   ],
+   "heading": "Other High Society Locations",
+   "lead": "Our other Michigan stores.",
+   "view": {
+    "text": "View Location"
+   }
+  },
+  {
+   "type": "split",
+   "id": "app",
+   "ground": "charcoal",
+   "heading": "Download the High Society App",
+   "md": "Experience convenience at your fingertips with the High Society App. Easily browse our full cannabis menu, stay updated on the latest deals, and place your orders with just a few taps. Whether you're at home or on the go, managing your cannabis experience has never been easier.",
+   "image": "derived:app-phone-mockup",
+   "imageAlt": "",
+   "ctas": [
+    {
+     "text": "Download Now",
+     "href": "https://apps.apple.com/us/app/high-society-cannabis/id6503314334"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen.mjs",
+  "fixes": [
+   "h1 casing normalised (High Society's words kept): \"Weed Dispensary in NEW BUFFALO\" -> \"Weed Dispensary in New Buffalo\"",
+   "FAQ re-matched by topic; defective-product question from High Society's Charlotte/Saline pages; on-site question dropped (declared)",
+   "phones corrected per docs/hs-source-defects.json",
+   "about heading \"in new Buffalo\" -> \"in New Buffalo\"",
+   "title shortened from v1's 71-char \"Best Cannabis Store Near You | High Society Weed Dispensary New Buffalo\" (core verify L7) to its second half, the store-title pattern of High Society's other store pages (40 chars)"
+  ],
+  "newCopy": [
+   "link on \"key cannabis updates and developments\" -> the Michigan CRA (the link High Society gives the same line on Charlotte's page; v1 New Buffalo links nothing)",
+   "resources: \"Read our guide to Michigan marijuana laws.\" (link to the planned law guide)",
+   "hero eyebrow (store name + \"Recreational 21+\")",
+   "store-details \"more\" link labels (Deals, Loyalty, FAQs, Medical Card Guide)",
+   "amenities heading \"Store Amenities\" and group \"Before You Go\" (its two lines condense High Society's ID and ordering steps)",
+   "step titles (the step texts are High Society's)",
+   "deals heading and lead",
+   "reviews lead",
+   "FAQ lead",
+   "service-area group titles",
+   "nearby heading and lead"
+  ],
+  "keptForClient": [
+   "first-time guide payment line (\"cash, credit, or debit\") vs the FAQ (cash and debit): OPEN-DECISIONS 4",
+   "medical patients 18+ in the FAQ (OPEN-DECISIONS 5)"
+  ]
+ }
+}

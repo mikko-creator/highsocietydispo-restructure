@@ -1,0 +1,27 @@
+{
+ "path": "/404.html",
+ "template": "404",
+ "provenance": "new",
+ "title": "Page Not Found",
+ "metaDescription": "This page is not on highsocietydispo.com. Find a High Society store, browse current deals or search the site.",
+ "h1": "Page not found",
+ "hero": {
+  "eyebrow": "404",
+  "lead": "The page you were looking for has moved or no longer exists.",
+  "ctas": [
+   {
+    "text": "Home",
+    "href": "/"
+   },
+   {
+    "text": "Find a store",
+    "href": "/dispensary-locations/"
+   },
+   {
+    "text": "Deals",
+    "href": "/deals/",
+    "style": "ghost"
+   }
+  ]
+ }
+}

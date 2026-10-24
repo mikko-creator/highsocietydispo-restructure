@@ -1,0 +1,12 @@
+/* blocks/menu-placeholder.css — where the store's live menu loads on highsocietydispo.com (stores lane): v2's ink panel
+   with the trophy mark large at its side, the notice in Changa, the red "Order Now" and the call button. */
+.menuph { position: relative; display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s-4); align-items: center; padding: clamp(28px, 4vw, 56px); background: var(--bg); color: var(--fg); border-radius: var(--radius-lg); overflow: hidden; }
+.menuph__mark { display: none; }
+@media (min-width: 768px) {
+  .menuph { grid-template-columns: minmax(0, 1fr) minmax(0, 2.2fr); }
+  .menuph__mark { display: block; aspect-ratio: 1; width: 100%; max-width: 240px; justify-self: center; background: var(--mark-red) center / contain no-repeat; }
+}
+.menuph__copy { display: flex; flex-direction: column; align-items: flex-start; gap: var(--s-2); min-width: 0; }
+.menuph__title { font: 900 clamp(1.7rem, 1rem + 2vw, 2.6rem)/1 var(--font-display); text-transform: uppercase; color: var(--fg); overflow-wrap: anywhere; }
+.menuph .md { color: var(--fg-2); }
+.menuph__slot { grid-column: 1 / -1; }

@@ -1,0 +1,8 @@
+/* templates/careers.css — /careers/ (pages lane). The shell's photo hero with High Society's line under the h1, then
+   the Employment Application band: its head (the red-ruled title and the invitation) beside the application card on
+   wide screens, stacked on phones and tablets. The fields themselves use the form kit in contact.css. */
+.page-hero--careers .page-hero__lead { font: 800 clamp(1.15rem, 1rem + .8vw, 1.6rem)/1.2 var(--font-head); text-transform: uppercase; letter-spacing: .02em; color: var(--fg); }
+.apply { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--gap-lg); align-items: start; }
+@media (min-width: 1100px) { .apply { grid-template-columns: minmax(0, .8fr) minmax(0, 1.4fr); gap: var(--s-6); } }
+.apply__intro { max-width: 46ch; }
+.apply__form { padding: clamp(20px, 3vw, 40px); border-top: 4px solid var(--red); }

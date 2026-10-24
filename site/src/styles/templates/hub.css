@@ -1,0 +1,22 @@
+/* templates/hub.css — the Resources hubs (pages lane): the store-guides cards (each store's race-day scene, its name,
+   address and hours, the "store guide" arrow line and the order-ahead link) and the hubs' tables and sources bands. The
+   cards reuse the core cards grid (cards.css: 4 across from 1024px, 2 on tablets, 1 on phones). */
+.sguide .cards__media { aspect-ratio: 16 / 10; }
+.sguide .cards__media img { object-position: 70% 50%; }
+.sguide__addr { font: 500 .9375rem/1.45 var(--font-body); color: var(--fg-2); }
+.sguide__hours { display: flex; flex-wrap: wrap; gap: 0 .4em; font: 600 .8125rem/1.4 var(--font-head); letter-spacing: .04em; text-transform: uppercase; color: var(--fg); }
+.sguide__links { margin-top: auto; padding-top: var(--s-1); width: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s-1) var(--s-2); }
+.sguide__go { display: inline-flex; align-items: center; gap: 6px; font: 700 .8125rem/1 var(--font-head); letter-spacing: var(--ls-btn); text-transform: uppercase; color: var(--em); }
+.sguide__go .icon { transition: transform var(--dur) var(--ease); }
+.card--lift:hover .sguide__go .icon { transform: translateX(3px); }
+.sguide__shop { display: inline-flex; align-items: center; min-height: var(--tap); padding: 0 2px; font: 700 .8125rem/1 var(--font-head); letter-spacing: var(--ls-btn); text-transform: uppercase; color: var(--fg); text-decoration: underline 1.5px; text-decoration-color: var(--red); text-underline-offset: .35em; }
+.sguide__shop:hover { color: var(--em); }
+/* the store page's own sections (first visit, pickup steps, FAQ): a hairline, then small underlined links, 44px rows */
+.sguide__jumps { display: flex; flex-wrap: wrap; gap: 0 var(--s-2); width: 100%; margin-top: 2px; padding-top: 2px; border-top: 1px solid var(--line); }
+.sguide__jump { display: inline-flex; align-items: center; min-height: var(--tap); font: 600 .875rem/1.2 var(--font-head); color: var(--fg-2); text-decoration: underline 1px; text-decoration-color: var(--line-2); text-underline-offset: .3em; transition: color var(--dur) var(--ease), text-decoration-color var(--dur) var(--ease); }
+.sguide__jump:hover { color: var(--em); text-decoration-color: var(--red); }
+
+/* tables in a hub read at full band width; the first column carries the state */
+.page--hub .block--table .md-table { max-width: none; }
+.page--hub .block--table td:first-child { white-space: nowrap; color: var(--fg); }
+.page--hub .cards__tag { align-self: flex-start; }

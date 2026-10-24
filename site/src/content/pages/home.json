@@ -1,0 +1,57 @@
+{
+ "path": "/",
+ "template": "home",
+ "provenance": "v2",
+ "$comment": "The home renders v2 sections 01-08 from home.json (title, description and H1 come from there); these blocks are the additions after them.",
+ "blocks": [
+  {
+   "type": "cards",
+   "heading": "Find your vibe",
+   "columns": 5,
+   "ground": "charcoal",
+   "items": [
+    {
+     "title": "Sleep",
+     "icon": "moon",
+     "href": "/blog/cannabis-products-for-sleep/"
+    },
+    {
+     "title": "Focus",
+     "icon": "target",
+     "href": "/blog/best-cannabis-strains-for-focus/"
+    },
+    {
+     "title": "Energy",
+     "icon": "bolt",
+     "href": "/blog/energizing-cannabis-strains/"
+    },
+    {
+     "title": "Creativity",
+     "icon": "brush",
+     "href": "/blog/cannabis-strains-for-creativity-productivity/"
+    },
+    {
+     "title": "Unwinding",
+     "icon": "wave",
+     "href": "/blog/strains-to-help-you-unwind-after-work/"
+    }
+   ]
+  },
+  {
+   "type": "article-list",
+   "heading": "Latest from Society Pages",
+   "posts": {
+    "limit": 3,
+    "min": 3
+   },
+   "ground": "white",
+   "more": {
+    "text": "All articles",
+    "href": "/blog/"
+   }
+  }
+ ],
+ "review": {
+  "notes": "Find your vibe links go to planned articles (src/content/planned.json); Pain is left out on purpose (Michigan R 420.507: no health-benefit claims in marketing). The two headings are new copy."
+ }
+}

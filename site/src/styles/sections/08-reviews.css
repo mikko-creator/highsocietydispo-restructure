@@ -1,0 +1,250 @@
+/* 08-reviews — the reskin's reviews band (its sheet: "reviews: cream band, the card's white hairline cards with a red
+   rule"): the cream (Headlight #F3F4F6) ground, the numbered head left in the column with the giant title on one line
+   where it fits, the Google Rating badge bare on the cream and centred under the title, then the white cards: the 1px
+   ink hairline, a 3px red rule along the top, the name in Changa One drawn heavy (900) in ink, five red stars, the
+   quote in Work Sans ink-grey (#515353, 7.7:1 on white), a lift and a soft shadow on hover.
+   The carousel root is the section's grid: the head, the badge, the arrows + counter, the row of cards, the dots.
+   - from 768px: the title, then the badge (centred) with the arrows + counter at the row's right end, then the cards:
+     3 a page from 1024px, 2 below
+   - phones: the title, the badge centred, 1 card with the next card's 20px peek, then ONE thumb row: the dots on the
+     left (the position indicator; eight 44px dots need 352px, more than a phone row holds, so they are drawn and not
+     tapped: their buttons are hidden, only their bars show) and the 44px arrows + counter on the right (the
+     controls). Short phones lift the badge into the race-number row.
+   Card height is fixed (the row's height): the quote takes the flexible part; a long review fades at the foot and
+   "Read more" opens the rest inside the same card as the kit's scroll area. */
+.reviews {
+  /* the badge: the artwork's visible box (the 324x95 file carries transparent margins: 46px left, 24 right, 20 top,
+     16 bottom, so its art is 254x59). The box shows the art only, at the reskin's own size where the screen allows */
+  --rv-aw: clamp(190px, 62vw, 254px);
+  --rv-ah: calc(var(--rv-aw) * 59 / 254);
+  --rv-lift: 8px;       /* room above the cards for the hover lift (from 768px) */
+}
+
+/* ---------------------------------------------------------------- the grid (phones first) */
+.reviews__rail { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto auto minmax(0, 1fr) auto; grid-template-areas: "head head" "badge badge" "vp vp" "dots ui"; align-items: center; gap: 0 var(--s-2); }
+.reviews__head { grid-area: head; align-self: start; }
+.reviews__title { text-wrap: balance; }
+.reviews .reviews__viewport { grid-area: vp; align-self: stretch; }
+.reviews .reviews__ui { grid-area: ui; margin-top: var(--s-1); }
+.reviews__dots { grid-area: dots; margin-top: var(--s-1); }
+
+/* the badge: bare on the cream, the art's own box (the file's transparent margins cropped away) */
+.reviews__badge { grid-area: badge; justify-self: center; width: var(--rv-aw); height: var(--rv-ah); margin: clamp(12px, 2.2svh, 22px) 0; overflow: hidden; }
+/* the badge file is the art's own box (254x59: src/tools/build-google-badge.py), so it fills the badge's box exactly */
+.reviews__rating { display: block; width: var(--rv-aw); max-width: none; height: auto; margin: 0; object-fit: contain; }
+
+/* ---------------------------------------------------------------- the row */
+.reviews__item { display: flex; min-width: 0; width: calc(100% - var(--gap)); container-type: inline-size; }
+
+/* ---------------------------------------------------------------- the card */
+.reviews__card {
+  --rv-px: clamp(18px, 6.6cqi, 28px);
+  --rv-pt: clamp(18px, 3.4svh, 34px);
+  /* the name as the reskin sets it: 24px on desktop AND on a 390 phone (its ink 15px tall at both) */
+  --rv-name: clamp(1.125rem, min(7.2cqi, 2.8svh), 1.5rem);
+  /* the star's box (the star-solid path fills 2.6-21.4 of its 24px box): 21px at 1440, about 19.6px on a 390 phone */
+  --rv-star: clamp(19px, min(6cqi, 2.4svh), 21px);
+  --rv-q: clamp(.9375rem, min(4.8cqi, 2.15svh), 1.0625rem);
+  --rv-lh: 1.62;
+  --rv-foot: 46px;      /* the "Read more" row under the text: the kit's 44px button + its 2px margin */
+  flex: 1 1 auto; min-width: 0; min-height: 0;
+  display: flex; flex-direction: column;
+  padding: calc(3px + var(--rv-pt)) var(--rv-px) 4px;
+  background: var(--white);
+  /* the hairline sits over the cream, as the reskin's box-shadow line does (rgba(3,4,4,.14) on #F3F4F6 = about 209) */
+  background-clip: padding-box;
+}
+/* the reskin's 3px red rule along the top, over the hairline (decoration) */
+.reviews__card::before { content: ""; position: absolute; left: -1px; right: -1px; top: -1px; height: 3px; background: var(--red); pointer-events: none; }
+.reviews__name { flex: none; font: 900 var(--rv-name)/1.05 var(--font-display); letter-spacing: .02em; text-transform: uppercase; color: var(--card-fg); text-wrap: balance; }
+/* the reskin's tight row of stars, 9px under the name: 15px stars on an 18px pitch at 1440, 14px on 16.5px on a phone
+   (the boxes overlap by 15% of their width to close the path's own side margins) */
+.reviews__stars { flex: none; display: flex; margin-top: 1px; margin-left: -1px; color: var(--red); }
+.reviews__stars .icon { flex: none; width: var(--rv-star); height: var(--rv-star); }
+.reviews__stars .icon + .icon { margin-left: calc(var(--rv-star) * -.15); }
+
+/* the quote takes the card's flexible part; "Read more" sits at the foot */
+.reviews__more { position: relative; flex: 1 1 0; min-height: 0; gap: 0; margin-top: clamp(12px, 2svh, 22px); }
+.reviews__text { flex: 1 1 0; }
+.reviews__quote p { font: 400 var(--rv-q)/var(--rv-lh) var(--font-body); letter-spacing: .01em; color: var(--black-700); text-wrap: pretty; }
+.reviews .reviews__btn { flex: none; margin-top: calc(var(--rv-foot) - 44px); }
+
+/* OPENED: the text box is the kit's scroll area in the same card height. The section script slides the hidden lines
+   into view (the last line read stays at the top as context); the last line in view fades while more is below
+   (data-rv-more), and is whole once the end is reached */
+.reviews__more[data-collapsed="false"]:not([data-rv-more="false"]) .reviews__text { -webkit-mask-image: linear-gradient(180deg, #000 calc(100% - var(--rv-q) * var(--rv-lh)), rgba(0, 0, 0, .2)); mask-image: linear-gradient(180deg, #000 calc(100% - var(--rv-q) * var(--rv-lh)), rgba(0, 0, 0, .2)); }
+.reviews__more[data-collapsed="false"] .reviews__text { scrollbar-color: var(--k-24) transparent; }
+/* the quote's empty end: the script sizes it to the box's leftover part-line (--rv-end), so the scroll range ends on a
+   line boundary; one plain line without the script */
+.reviews__more[data-collapsed="false"] .reviews__quote { padding-bottom: var(--rv-end, calc(var(--rv-q) * var(--rv-lh))); }
+/* the scroll hint of an opened review (the script sets data-rv-scroll and the thumb's --rv-tt / --rv-th as it scrolls):
+   the reskin's progress line turned on its side, in the card's right padding beside the text, never over it: a 1px
+   hairline track (::before) and a 3px red thumb (::after) showing where the reader is and that more is above or below.
+   It replaces the native scrollbar there (decoration: no text, no pointer events) */
+.reviews__more::before, .reviews__more::after { content: ""; position: absolute; top: 0; pointer-events: none; opacity: 0; visibility: hidden; transition: opacity var(--dur) var(--ease), visibility 0s linear var(--dur); }
+.reviews__more::before { bottom: var(--rv-foot); right: calc(var(--rv-px) * -.5); width: 1px; background: var(--line); }
+.reviews__more::after { right: calc(var(--rv-px) * -.5 - 1px); width: 3px; height: var(--rv-th, 0px); transform: translateY(var(--rv-tt, 0px)); background: var(--red); }
+.reviews__more[data-collapsed="false"][data-rv-scroll="true"]::before, .reviews__more[data-collapsed="false"][data-rv-scroll="true"]::after { opacity: 1; visibility: visible; transition-delay: 0s; }
+.reviews__more[data-collapsed="false"][data-rv-scroll="true"] .reviews__text { scrollbar-width: none; }
+.reviews__more[data-collapsed="false"][data-rv-scroll="true"] .reviews__text::-webkit-scrollbar { width: 0; height: 0; }
+
+/* ---------------------------------------------------------------- phones */
+@media (max-width: 767.98px) {
+  /* the long title keeps to two lines on a phone: WHAT OUR CUSTOMERS / SAY ABOUT US */
+  .reviews { --fs-h2: clamp(1.875rem, 8.6vw, 2.25rem); }
+  .reviews__card { --rv-pt: clamp(18px, 2.8svh, 28px); }
+  .reviews .carousel__count { min-width: 2.6em; }
+  /* the dots: a position indicator beside the arrows (the arrows, the counter and the swipe page the row) */
+  .reviews .dots { justify-content: flex-start; }
+  .reviews .dots button { width: auto; height: 12px; padding: 0 3px; visibility: hidden; pointer-events: none; }
+  .reviews .dots button::before { visibility: visible; }
+  /* no lift on touch: the row clips at its top edge */
+  .reviews .card--lift:hover, .reviews .card--lift:focus-within { transform: none; box-shadow: none; }
+}
+/* short phones: the badge moves up into the race-number row (top right), so the card keeps its height */
+@media (max-width: 767.98px) and (max-height: 680px) {
+  /* a smaller badge (about 166px of art on a 360 phone) keeps clear air between it and the title's cap line */
+  .reviews { --fs-h2: clamp(1.75rem, 7.8vw, 2.125rem); --rv-aw: clamp(160px, 46vw, 184px); }
+  .reviews__rail { grid-template-rows: auto minmax(0, 1fr) auto; grid-template-areas: "head head" "vp vp" "dots ui"; }
+  .reviews__head { margin-bottom: 12px; }
+  .reviews__badge { grid-area: head; justify-self: end; align-self: start; margin: 0; }
+  /* the race-number row is as tall as the badge plus 6px of air under it (the number stays centred on the badge) */
+  .reviews .reviews__head .secnum { height: calc(var(--rv-ah) + 6px); padding-bottom: 6px; }
+  .reviews__card { --rv-pt: 16px; }
+  .reviews__more { margin-top: 10px; }
+}
+
+/* ---------------------------------------------------------------- tablets and desktop */
+@media (min-width: 768px) {
+  .reviews { --rv-aw: clamp(196px, 28svh, 254px); }
+  .reviews__rail { grid-template-rows: auto auto minmax(0, 1fr); grid-template-areas: "head head" "badge ui" "vp vp"; column-gap: var(--s-3); }
+  /* the badge centred in the column (spanning the arrows' cell), the arrows + counter at the row's right end */
+  .reviews__badge { grid-column: 1 / -1; grid-row: 2; margin: clamp(var(--s-3), 3.2svh, var(--s-4)) 0; }
+  .reviews .reviews__ui { grid-row: 2; grid-column: 2; margin-top: 0; z-index: 1; }
+  .reviews__dots { display: none; }
+  /* the hover lift and its soft shadow stay inside the row's clip: the viewport reaches past the column by that much
+     and pads it back (no snapping; the arrows still bring a card to the row's start edge) */
+  .reviews .reviews__viewport { padding: var(--rv-lift) 14px 24px; margin: calc(var(--rv-lift) * -1) -14px -24px; }
+  .reviews__item { width: calc((100% - var(--gap)) / 2); }
+}
+/* portrait tablets: tall 2-up cards, so the title (two lines), the name and the quote step up (a long review still
+   opens inside its card) */
+@media (min-width: 768px) and (max-width: 1023.98px) and (orientation: portrait) {
+  .reviews { --fs-h2: clamp(2.25rem, min(7.4vw, 5.6svh), 4.25rem); }
+  .reviews__card { --rv-name: clamp(1.25rem, 6.4cqi, 1.625rem); --rv-q: clamp(1rem, 5.3cqi, 1.1875rem); --rv-star: 21px; }
+}
+@media (min-width: 1024px) {
+  .reviews__item { width: calc((100% - 2 * var(--gap)) / 3); }
+}
+
+/* ---------------------------------------------------------------- layout E: the ink band (owner, 2026-10-22)
+   The reviews band turned dark: the ink ground, the reviews as the reskin's ink cards (a white hairline at 14%, the 3px
+   red top rule, a faint red glow under it), white names, soft-white quotes, red stars, the title in white, the Google
+   Rating badge on a small white rounded plate (its own white ground keeps its grey type's contrast). Desktop: the race
+   number and the title on one line at the left, the plate at the right; three cards; the arrows + counter centred under
+   them. Tablets: two cards; phones: one, the plate under the title (short phones: up in the race-number row).
+   Built from the owner's pick in the lab (labs/reviews-src/E.css); these rules come after the layout above and
+   replace it. */
+/* ---------------------------------------------------------------- the ground: the reskin's ink theme */
+#reviews {
+  --bg: var(--black); --fg: var(--white); --fg-2: var(--ink-soft); --muted: var(--chrome);
+  --line: var(--w-14); --line-2: var(--w-24); --card: var(--ink-card); --card-fg: var(--white);
+  --em: var(--neon);
+  --btn: var(--red); --on-btn: var(--white); --btn-hover: var(--white); --on-btn-hover: var(--black); --btn-line: var(--red);
+  --card-hover-line: var(--red); --focus: var(--white);
+  --pl-x: 16px; --pl-y: 11px;                          /* the plate's padding around the badge's art */
+  --rv-pw: calc(var(--rv-aw) + 2 * var(--pl-x));       /* the plate's width */
+  color-scheme: dark;
+}
+
+/* ---------------------------------------------------------------- the plate: the art's own box, centred in it */
+#reviews .reviews__badge {
+  display: grid; align-content: center;
+  width: var(--rv-pw); height: calc(var(--rv-ah) + 2 * var(--pl-y));
+  padding: var(--pl-y) var(--pl-x);
+  background: var(--white); border-radius: var(--radius-lg);
+}
+/* the badge file is the art's own box (254x59), centred in the plate */
+#reviews .reviews__rating { margin: 0; }
+
+/* ---------------------------------------------------------------- the cards */
+#reviews .reviews__card { background: linear-gradient(180deg, rgba(191, 50, 38, .10), rgba(191, 50, 38, 0) 40%), var(--ink-card); border-color: var(--w-14); }
+#reviews .reviews__quote p { color: var(--ink-soft); }
+#reviews .card--lift:hover, #reviews .card--lift:focus-within { transform: none; box-shadow: none; border-color: var(--red); }
+/* the hover (owner, 2026-10-22: "a hover on animation that increases the size of the card ever so slightly, and only
+   when hovered"): the card grows to 1.02 under a pointer that hovers, eased; never on touch, on keyboard focus (it
+   keeps the red hairline) or where motion is reduced */
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  #reviews .reviews__card { transition: transform 260ms var(--ease), border-color var(--dur) var(--ease); }
+  #reviews .card--lift.reviews__card:hover { transform: scale(1.02); }
+}
+#reviews .reviews__more[data-collapsed="false"] .reviews__text { scrollbar-color: var(--w-24) transparent; }
+#reviews .dots button::before { background: var(--w-40); }
+#reviews .dots button[aria-current="true"]::before { background: var(--red); }
+
+/* ---------------------------------------------------------------- phones: the plate under the title, on its edge */
+@media (max-width: 767.98px) {
+  #reviews { --rv-aw: clamp(180px, 56vw, 224px); }
+  #reviews .reviews__badge { justify-self: start; margin: clamp(14px, 2.4svh, 22px) 0 clamp(16px, 2.6svh, 24px); }
+}
+/* short phones: the plate moves up into the race-number row (top right), so the card keeps its height; the row is as
+   tall as the plate plus 6px of air under it (the number stays centred on the plate) */
+@media (max-width: 767.98px) and (max-height: 680px) {
+  #reviews { --rv-aw: clamp(160px, 46vw, 184px); --pl-x: 12px; --pl-y: 8px; }
+  #reviews .reviews__badge { justify-self: end; align-self: start; margin: 0; }
+  #reviews .reviews__head .secnum { height: calc(var(--rv-ah) + 2 * var(--pl-y) + 6px); }
+}
+
+/* ---------------------------------------------------------------- tablets and desktop: the arrows + counter centred
+   under the cards (the counter carries the position; no dots) */
+@media (min-width: 768px) {
+  #reviews .reviews__viewport { grid-area: vp; padding: 0; }
+  #reviews .reviews__dots { display: none; }
+  #reviews .reviews__ui { grid-area: ui; justify-self: center; justify-content: center; gap: var(--s-2); margin-top: clamp(14px, 2.4svh, 24px); }
+}
+/* portrait tablets: the title, the plate under it on its left edge, two tall cards */
+@media (min-width: 768px) and (max-width: 1023.98px) and (orientation: portrait) {
+  #reviews { --rv-aw: clamp(196px, 28vw, 232px); }
+  #reviews .reviews__rail { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto minmax(0, 1fr) auto; grid-template-areas: "head" "badge" "vp" "ui"; gap: 0; }
+  #reviews .reviews__badge { grid-area: badge; justify-self: start; margin: clamp(18px, 2.4svh, 28px) 0 clamp(22px, 3svh, 32px); }
+  #reviews .reviews__viewport { margin: 0; }
+  /* the tall 2-up cards take a larger quote (20px on a 768 tablet) */
+  #reviews .reviews__card { --rv-q: clamp(1rem, 6cqi, 1.25rem); }
+}
+/* landscape tablets and desktop: one head row, the title left and the plate right */
+@media (min-width: 768px) and (orientation: landscape), (min-width: 1024px) {
+  #reviews { --rv-aw: clamp(188px, min(16vw, 26svh), 232px); --pl-x: 20px; }
+  #reviews .reviews__rail {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    grid-template-areas: "head badge" "vp vp" "ui ui";
+    column-gap: var(--s-4); row-gap: 0;
+  }
+  #reviews .reviews__head { grid-area: head; align-self: end; }
+  /* the plate's foot on the title's ink foot (Changa One's caps end .1em above the line box) */
+  #reviews .reviews__badge { grid-area: badge; align-self: end; justify-self: end; margin: 0 0 calc(var(--fs-h2) * .1); }
+  #reviews .reviews__viewport { margin: clamp(22px, 3.8svh, 40px) 0 0; }
+}
+/* desktop: the title on ONE line beside the plate (as large as the row allows, never above its own size; the
+   title's ink is 16.14em wide, 16.4 keeps a margin); the plate from the race number's top to the title's ink foot
+   (the caps end .09em above the .94em line box) */
+@media (min-width: 1180px) {
+  #reviews .reviews__rail { container-type: inline-size; }
+  #reviews { --rv-tfs: min(var(--fs-h2), calc((100cqi - var(--s-4) - var(--rv-pw)) / 16.4)); }
+  #reviews .reviews__title { font-size: var(--rv-tfs); white-space: nowrap; }
+  #reviews .reviews__badge { align-self: start; margin: 0; height: calc(26px + var(--s-1) + var(--rv-tfs) * .85); }
+  /* the taller cards take a larger quote (20px at 1440x900) */
+  #reviews .reviews__card { --rv-q: clamp(.9375rem, min(4.9cqi, 2.25svh), 1.25rem); }
+}
+
+/* room for the hovered card's growth inside the scrolling row (a scroller clips both ways): 10px on every side, taken
+   back by negative margins, so nothing moves at rest; the scroll stops keep the cards on the content edge */
+@media (hover: hover) and (min-width: 768px) {
+  #reviews .reviews__viewport { padding: 10px; margin-left: -10px; margin-right: -10px; margin-bottom: -10px; scroll-padding-inline: 10px; }
+}
+@media (hover: hover) and (min-width: 768px) and (orientation: landscape), (hover: hover) and (min-width: 1024px) {
+  #reviews .reviews__viewport { margin-top: calc(clamp(22px, 3.8svh, 40px) - 10px); }
+}
+@media (hover: hover) and (min-width: 768px) and (max-width: 1023.98px) and (orientation: portrait) {
+  #reviews .reviews__viewport { margin-top: -10px; }
+}

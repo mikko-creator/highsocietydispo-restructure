@@ -1,0 +1,2 @@
+/* blocks/table.css — the table block (core). The table itself is drawn in _md.css (.md-table, shared with Markdown). */
+.block--table .md-table { max-width: 64rem; }

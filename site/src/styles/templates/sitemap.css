@@ -1,0 +1,7 @@
+/* templates/sitemap.css — /site-map/ (pages lane). The groups use the link-grid language (blocks/link-grid.css: red
+   labels on a hairline, 44px rows with the red trophy bullet). A long group (the Society Pages article index, rendered
+   after the short groups by src/templates/sitemap.mjs) spans the full width and its links flow in columns, so it reads
+   as an index instead of one narrow column many screens tall. Theme names only. */
+.sitemap__group--long { grid-column: 1 / -1; }
+.sitemap__group--long .linkgrid__links { column-width: 16rem; column-gap: var(--s-5); }
+.sitemap__group--long .linkgrid__links li { break-inside: avoid; }

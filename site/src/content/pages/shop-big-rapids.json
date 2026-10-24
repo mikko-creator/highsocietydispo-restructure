@@ -1,0 +1,137 @@
+{
+ "path": "/shop/big-rapids/",
+ "template": "menu-placeholder",
+ "store": "big-rapids",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/shop/big-rapids/"
+ ],
+ "titleFull": "Shop Cannabis - Big Rapids Dispensary Menu",
+ "metaDescription": "Explore High Society's online cannabis menu for the Big Rapids weed dispensary. Order premium cannabis products for convenient pickup.",
+ "h1": "Big Rapids Weed Dispensary Menu",
+ "crumb": "Big Rapids",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Shop",
+   "path": "/shop/"
+  },
+  {
+   "name": "Big Rapids"
+  }
+ ],
+ "hero": {
+  "eyebrow": "High Society Big Rapids",
+  "lead": "Order ahead online, then pick up in store or at the curb.",
+  "status": {
+   "open": "Open - Closes at 9:00 PM",
+   "closed": "Closed - Opens at 9:00 AM"
+  },
+  "mapsUrl": "https://www.google.com/maps/dir//High+Society+Cannabis+Big+Rapids,+804+Clark+St,+Big+Rapids,+MI+49307,+United+States/@43.6893368,-85.4854098,15z/data=!4m17!1m7!3m6!1s0x8818d3ebb7d05fc3:0xe98402137f8d575b!2sHigh+Society+Cannabis+Big+Rapids!8m2!3d43.6893368!4d-85.4854098!16s%2Fg%2F11rchgzns6!4m8!1m0!1m5!1m1!1s0x8818d3ebb7d05fc3:0xe98402137f8d575b!2m2!1d-85.4854098!2d43.6893368!3e0"
+ },
+ "blocks": [
+  {
+   "type": "menu-placeholder",
+   "id": "menu",
+   "ground": "white",
+   "store": "big-rapids",
+   "heading": "Menu",
+   "title": "Shop the Big Rapids menu",
+   "md": "Browse today’s products, prices and deals, add them to your cart and choose a pickup time. Prefer to order by phone? Call the store and our team will help.",
+   "order": {
+    "text": "Order Now"
+   },
+   "call": {
+    "text": "Call"
+   }
+  },
+  {
+   "type": "link-grid",
+   "id": "categories",
+   "ground": "headlight",
+   "heading": "Shop by Category",
+   "groups": [
+    {
+     "title": "Big Rapids menu",
+     "links": [
+      {
+       "text": "Accessories",
+       "href": "/shop/big-rapids/?dtche%5Bcategory%5D=accessories"
+      },
+      {
+       "text": "Apparel",
+       "href": "/shop/big-rapids/?dtche%5Bcategory%5D=apparel"
+      },
+      {
+       "text": "Concentrates",
+       "href": "/shop/big-rapids/?dtche%5Bcategory%5D=concentrates"
+      },
+      {
+       "text": "Edibles",
+       "href": "/shop/big-rapids/?dtche%5Bcategory%5D=edibles"
+      },
+      {
+       "text": "Flower",
+       "href": "/shop/big-rapids/?dtche%5Bcategory%5D=flower"
+      },
+      {
+       "text": "Pre-Rolls",
+       "href": "/shop/big-rapids/?dtche%5Bcategory%5D=pre-rolls"
+      },
+      {
+       "text": "Topicals",
+       "href": "/shop/big-rapids/?dtche%5Bcategory%5D=topicals"
+      },
+      {
+       "text": "Vaporizers",
+       "href": "/shop/big-rapids/?dtche%5Bcategory%5D=vaporizers"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "store-details",
+   "id": "store",
+   "ground": "white",
+   "heading": "Your Store",
+   "store": "big-rapids",
+   "name": "High Society Big Rapids",
+   "facts": [
+    "address",
+    "phone",
+    "email",
+    "hours"
+   ],
+   "email": "info@highsocietydispo.com",
+   "hoursText": "9:00 AM - 9:00 PM Daily",
+   "mapsUrl": "https://www.google.com/maps/dir//High+Society+Cannabis+Big+Rapids,+804+Clark+St,+Big+Rapids,+MI+49307,+United+States/@43.6893368,-85.4854098,15z/data=!4m17!1m7!3m6!1s0x8818d3ebb7d05fc3:0xe98402137f8d575b!2sHigh+Society+Cannabis+Big+Rapids!8m2!3d43.6893368!4d-85.4854098!16s%2Fg%2F11rchgzns6!4m8!1m0!1m5!1m1!1s0x8818d3ebb7d05fc3:0xe98402137f8d575b!2m2!1d-85.4854098!2d43.6893368!3e0",
+   "ctas": [
+    {
+     "text": "View Location",
+     "href": "location"
+    },
+    {
+     "text": "Get Directions",
+     "href": "maps",
+     "style": "ghost"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen-other.mjs",
+  "newCopy": [
+   "hero eyebrow and lead",
+   "the menu notice (title, text, button labels)",
+   "category band heading and group title"
+  ],
+  "notes": [
+   "category links use High Society's own form /shop/<store>/?dtche[category]=<category> (its v1 store pages); the CMS category pages (/big-rapids/<category>/) are not part of this build"
+  ]
+ }
+}

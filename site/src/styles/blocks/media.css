@@ -1,0 +1,8 @@
+/* blocks/media.css — one picture with its caption (core): rounded like v2's panels, the caption small and quiet. */
+.bmedia { display: flex; flex-direction: column; gap: var(--s-1); }
+.bmedia__frame { aspect-ratio: 16 / 9; border-radius: var(--radius-lg); }
+.bmedia__cap { font-size: var(--fs-small); color: var(--muted); }
+/* a row of pictures (images[]): each at its own proportions (a page's photos share one size), never cropped */
+.bmedia__grid { display: grid; gap: var(--s-2); grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); align-items: start; }
+.bmedia__frame--tile { aspect-ratio: auto; background: none; }
+.bmedia__frame--tile > img, .bmedia__frame--tile > picture > img { position: static; display: block; width: 100%; height: auto; }

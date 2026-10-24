@@ -1,0 +1,75 @@
+/* tokens.css — the Pit Stop by High Society brand values, from the brand card (sgencms.github.io/pit-stop-brand-card,
+   sections 04 Color, 05 Typography, 06 Textures). Change a value HERE, never at a call site.
+   Nothing else in the build may type a colour: every rule reads these names (or theme.css, which points at them). */
+:root {
+  /* --- colour: primary ------------------------------------------------------------ */
+  --red: #BF3226;              /* the ground of the wraps, billboards, the hero. Flat, never a gradient */
+  --black: #030404;            /* the checkered bands' dark squares, the lockup's panel */
+  --white: #FFFFFF;
+  /* --- colour: secondary and neutral ------------------------------------------------ */
+  --dark-red: #9E2221;         /* tone-on-tone shapes on red; the red buttons' hover (white on it 8.8:1) */
+  --cream: #F5F0E8;
+  --charcoal: #181818;
+  --headlight: #F3F4F6;        /* the second light ground: a cool white behind black type */
+  /* --- colour: concept accents, used sparingly ----------------------------------------- */
+  --neon: #FF3B30;             /* highlights and small red words on DARK grounds only (5.8:1 on black, 5.0:1 on charcoal) */
+  --oxblood: #5A0F14;
+  --night: #0B1226;
+  --chrome: #C8CCD2;           /* hairlines, dividers, quiet type on dark grounds (12.9:1 on black) */
+  --clay: #C4733F;             /* small labels and tags, with black type (5.7:1) */
+  /* --- the brand card's 10-step ramps (SGEN derived, section 04 Tints) -------------------------- */
+  --black-50: #F7F7F7; --black-100: #EBEBEB; --black-200: #D7D7D7; --black-300: #BDBEBE; --black-400: #A1A2A2;
+  --black-500: #858686; --black-600: #6B6C6C; --black-700: #515353; --black-800: #393B3B;
+  --red-100: #FAE6E2; --red-200: #F5CDC6; --red-700: #93241B; --red-800: #6B1811; --red-900: #450C07;
+  /* --- white and black at fixed opacities: hairlines, scrims, washes ------------------------- */
+  --w-6: rgba(255, 255, 255, .06); --w-10: rgba(255, 255, 255, .10); --w-14: rgba(255, 255, 255, .14);
+  --w-24: rgba(255, 255, 255, .24); --w-40: rgba(255, 255, 255, .40); --w-55: rgba(255, 255, 255, .55); --w-72: rgba(255, 255, 255, .72); --w-78: rgba(255, 255, 255, .78); --w-82: rgba(255, 255, 255, .82);
+  --ink-card: #0B0C0C;   /* the reskin's store panels and dark cards, a step off the ink ground */
+  --ink-soft: #D7D7D7;   /* the reskin's quiet values on ink (11.6:1 on #0B0C0C) */
+  --k-6: rgba(3, 4, 4, .06); --k-10: rgba(3, 4, 4, .10); --k-14: rgba(3, 4, 4, .14); --k-24: rgba(3, 4, 4, .24);
+  --k-50: rgba(3, 4, 4, .5); --k-72: rgba(3, 4, 4, .72); --k-88: rgba(3, 4, 4, .88);
+
+  /* --- type: the card's three open-license faces -------------------------------------------- */
+  --font-display: "Changa One", "Changa One Fallback", "Arial Black", Impact, sans-serif;     /* display, big headlines, prices, promo numbers */
+  --font-head: "Changa", "Changa Fallback", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;  /* headlines 800, subheads 700, eyebrows 600, taglines 300, buttons 700 */
+  --font-body: "Work Sans", "Work Sans Fallback", system-ui, -apple-system, "Segoe UI", Arial, sans-serif; /* paragraphs */
+  /* sizes scale with the viewport width AND height (each section has to fit one screen) */
+  --fs-display: clamp(2.5rem, min(1rem + 4.4vw, 9.2svh), 5.8rem); /* the H1: the reskin's clamp(2.4rem, 1rem + 4.4vw, 5.8rem), capped by the screen height */
+  --fs-h2: clamp(2.25rem, min(1rem + 3.9vw, 7.4svh), 5.6rem);   /* section titles: the reskin's clamp(2rem, 1rem + 3.9vw, 5.6rem), capped by the screen height */
+  --fs-headline: clamp(1.75rem, min(3.5vw, 5.4svh), 2.5rem);     /* brief: headline clamp(1.75rem, 3.5vw, 2.5rem), Changa 800 */
+  --fs-h3: clamp(1.125rem, min(1.7vw, 3svh), 1.5rem);           /* card titles: Changa 800 */
+  --fs-subhead: clamp(1rem, min(1.4vw, 2.4svh), 1.25rem);       /* Changa 700 */
+  --fs-body: clamp(.95rem, 1vw, 1.125rem);                      /* brief: body clamp(0.95rem, 1vw, 1.125rem), Work Sans 400 */
+  --fs-small: .875rem;
+  --fs-eyebrow: .8125rem;                                       /* Changa 600, tracking .25em */
+  --fs-btn: clamp(.8125rem, .76rem + .16vw, .92rem);             /* the reskin's buttons: Changa One drawn bold, tracking .12em */
+  --lh-display: .94; --lh-head: 1.05; --lh-text: 1.65;
+  --ls-eyebrow: .25em; --ls-tagline: .3em; --ls-btn: .12em; --ls-sub: .02em;
+
+  /* --- space: the 8px scale (brief: 8 / 16 / 24 / 32 / 48 / 64) ----------------------------------- */
+  --s-1: 8px; --s-2: 16px; --s-3: 24px; --s-4: 32px; --s-5: 48px; --s-6: 64px;
+  --container: 1280px;
+
+  /* --- shape: the brand card writes no corner rule (its own page: square buttons, 2px tags, a 22px card mock-up;
+     the brand's badges are described with rounded corners); the reskin drew everything square ------------------ */
+  /* corners (owner, 2026-10-22: "make all corners just a little bit rounder to make it look a bit modern"): controls,
+     then cards and panels, then small tags */
+  --radius: 6px;
+  --radius-lg: 12px;
+  --radius-tag: 4px;
+  --hairline: 1px;
+  --checker: url("../assets/checkered-band-76.png");     /* three rows of black and white squares (brand card 06) */
+  /* the section dividers (the hero's foot, DEALS' foot, the app's top): thicker by the owner's word (2026-10-22: "make
+     all dividers like this look thicker, EXCEPT for the one on footer"; they were 12px, 12-16px and 12-18px): 18px on
+     phones, 26px at 1440. The footer sets its own strip (09-footer.css), the menus, dialogs and the Craftmanship panel
+     their own small ones */
+  --checker-h: clamp(18px, 1.8vw, 26px);
+  --mark-red: url("../assets/mark-red.svg");
+  --mark-white: url("../assets/mark-white.svg");
+  --tex-carbon: url("../assets/carbon.svg");
+  --tex-diamond: url("../assets/diamond-plate.svg");
+
+  /* --- motion --------------------------------------------------------------------------------- */
+  --ease: cubic-bezier(.2, .7, .2, 1);
+  --dur: 200ms;
+}

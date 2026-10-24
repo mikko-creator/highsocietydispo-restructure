@@ -1,0 +1,14 @@
+/* blocks/amenities.css — what a store offers (stores lane): High Society's groups ("We Offer", "Pay With") side by side
+   from 768px, each a hairline panel with a red top rule (v2's review cards), every item on a red icon plate. */
+.amen { display: grid; grid-template-columns: repeat(var(--amen-cols, 1), minmax(0, 1fr)); gap: var(--gap); }
+@media (min-width: 768px) { .amen--2, .amen--many { --amen-cols: 2; } }
+@media (min-width: 1024px) { .amen--many { --amen-cols: 3; } }
+.amen__group { position: relative; display: flex; flex-direction: column; gap: var(--s-2); padding: var(--s-3); background: var(--card); color: var(--card-fg, var(--fg)); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; min-width: 0; }
+.amen__group::before { content: ""; position: absolute; inset: 0 0 auto; height: 3px; background: var(--red); }
+.amen__title { font: 800 var(--fs-h3)/1.1 var(--font-head); text-transform: uppercase; color: var(--fg); }
+.amen__list { display: grid; gap: 12px; }
+.amen__item { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.amen__text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.amen__label { font: 600 1.0625rem/1.3 var(--font-head); color: var(--fg); overflow-wrap: anywhere; }
+.amen__md { font-size: var(--fs-small); color: var(--fg-2); }
+.amen__note { font-size: var(--fs-small); }

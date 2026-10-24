@@ -1,0 +1,209 @@
+{
+ "path": "/dispensary-locations/",
+ "template": "locations-hub",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/dispensary-locations/",
+  "hs:/dispensary-locations/big-rapids/ (FAQ)",
+  "v2:deals",
+  "v2:app"
+ ],
+ "titleFull": "High Society Dispensary Locations: Find A Store Near You",
+ "metaDescription": "Locate your nearest High Society dispensary in Michigan. Serving Big Rapids, Birch Run, Charlotte, East Lansing, Lenox, Mount Pleasant, and Saline.",
+ "h1": "Best Weed Dispensary In Michigan",
+ "crumb": "Locations",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Locations"
+  }
+ ],
+ "hero": {
+  "eyebrow": "High Society Locations",
+  "image": "assets/pit-stop/img/hero-pit-wall.jpg",
+  "imageAlt": "",
+  "lead": "High Society has eight dispensaries across Michigan: Big Rapids, Birch Run, Charlotte, East Lansing, Lenox, Mount Pleasant, Saline and New Buffalo, on US-12 close to the Indiana border. Every store is open daily from 9 AM to 9 PM. Shop in store, or order online and pick up inside or at the curb. Choose your store below for its hours, directions, deals and menu.",
+  "ctas": [
+   {
+    "text": "Select a Location",
+    "href": "#dispenzaLocationPopup-open",
+    "locator": true
+   },
+   {
+    "text": "Order Now",
+    "href": "{{location_shop_url}}",
+    "style": "ghost"
+   }
+  ]
+ },
+ "blocks": [
+  {
+   "type": "store-grid",
+   "id": "stores",
+   "ground": "black",
+   "heading": "All Locations",
+   "stores": "all",
+   "to": "location",
+   "primary": {
+    "text": "Order Now",
+    "to": "shop"
+   },
+   "secondary": {
+    "text": "View Location",
+    "to": "location"
+   }
+  },
+  {
+   "type": "link-grid",
+   "id": "service-areas",
+   "ground": "white",
+   "heading": "New Buffalo Service Areas",
+   "lead": "Visiting New Buffalo from Indiana, Harbor Country or the I-94 corridor? These pages have directions and tips for each area.",
+   "groups": [
+    {
+     "title": "Areas We Serve",
+     "links": [
+      {
+       "text": "Areas We Serve: Shop Our New Buffalo Dispensary Nearby",
+       "href": "/dispensary-locations/new-buffalo/service-areas/"
+      },
+      {
+       "text": "Dispensary Near I-94 Exit 1 (New Buffalo)",
+       "href": "/dispensary-locations/new-buffalo/service-areas/i-94-exit-new-buffalo/"
+      },
+      {
+       "text": "Cannabis Near Michiana & Long Beach, IN",
+       "href": "/dispensary-locations/new-buffalo/service-areas/michiana-long-beach-in/"
+      },
+      {
+       "text": "Cannabis Near Union Pier, Lakeside & Three Oaks",
+       "href": "/dispensary-locations/new-buffalo/service-areas/union-pier-lakeside-three-oaks-mi/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "deals",
+   "id": "deals",
+   "source": "site",
+   "ground": "headlight",
+   "heading": "Deals",
+   "lead": "Deals vary by store and change often. Each store’s menu shows its deals of the day.",
+   "more": {
+    "text": "See all deals",
+    "href": "/deals/"
+   }
+  },
+  {
+   "type": "link-grid",
+   "id": "quick-links",
+   "ground": "white",
+   "heading": "Helpful Links",
+   "groups": [
+    {
+     "title": "Shop and Save",
+     "links": [
+      {
+       "text": "Order Now",
+       "href": "{{location_shop_url}}"
+      },
+      {
+       "text": "Join The Society",
+       "href": "/club-member-program/"
+      },
+      {
+       "text": "Deals",
+       "href": "/deals/"
+      }
+     ]
+    },
+    {
+     "title": "Know Before You Go",
+     "links": [
+      {
+       "text": "Medical Card Guide",
+       "href": "/getting-a-medical-card/"
+      },
+      {
+       "text": "Michigan Cannabis Laws",
+       "href": "/cannabis-laws-by-state/michigan/"
+      },
+      {
+       "text": "Dispensary Guides",
+       "href": "/dispensary-guides/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "faq",
+   "id": "faq",
+   "ground": "headlight",
+   "heading": "Michigan Dispensary FAQ",
+   "lead": "High Society’s answers from its store pages. More questions? Visit our [FAQ page](/faq/).",
+   "items": [
+    {
+     "q": "What are the requirements to purchase from High Society?",
+     "a": "To shop at our dispensary, you need a valid government-issued ID proving you are 21 years or older. Individuals 18 and older with a medical marijuana card can also make purchases."
+    },
+    {
+     "q": "How should I handle a defective product?",
+     "a": "If you experience issues with a product's quality or functionality, please call your store or visit the store where you made the purchase. Our team is happy to help."
+    },
+    {
+     "q": "What payment methods are supported at High Society dispensaries?",
+     "a": "High Society accepts cash and debit cards. Many locations also feature an in-store ATM for your convenience. Some stores may offer additional payment options—call ahead for details."
+    },
+    {
+     "q": "Is it legal to travel with cannabis?",
+     "a": "Cannabis purchases are legal in Michigan, but transporting cannabis across state lines is prohibited under federal law. Avoid taking cannabis products out of the state."
+    },
+    {
+     "q": "What types of cannabis products are available?",
+     "a": "We offer a wide range of high-quality products, including flower, pre-rolls, concentrates, vape pens, edibles, and more. Check out our menu or contact us with specific inquiries."
+    },
+    {
+     "q": "Are there any rewards programs for regular customers?",
+     "a": "Absolutely! Join The Society, our loyalty program, to start earning points on your purchases. Points can be redeemed for exclusive discounts and offers. Speak to our staff for more information."
+    }
+   ]
+  },
+  {
+   "type": "split",
+   "id": "app",
+   "ground": "charcoal",
+   "heading": "Download the High Society App",
+   "md": "Experience convenience at your fingertips with the High Society App. Easily browse our full cannabis menu, stay updated on the latest deals, and place your orders with just a few taps. Whether you're at home or on the go, managing your cannabis experience has never been easier.",
+   "image": "derived:app-phone-mockup",
+   "imageAlt": "",
+   "ctas": [
+    {
+     "text": "Download Now",
+     "href": "https://apps.apple.com/us/app/high-society-cannabis/id6503314334"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen-other.mjs",
+  "newCopy": [
+   "hero eyebrow and lead (brief locations-hub-intro: 8 towns, open daily 9-9, in-store / pickup / curbside; New Buffalo \"close to the Indiana border\" is High Society's own line on its Union Pier page)",
+   "service-area band heading and lead",
+   "quick-link group titles",
+   "FAQ heading and lead"
+  ],
+  "fixes": [
+   "the store cards come from site.json (D-nap: New Buffalo (269) 231-5213, Charlotte 515 Lansing St, Lenox); the second v1 card set (with \"comming soon\") is a declared duplicate",
+   "FAQ: Big Rapids' wording; \"from High Society Cannabis Big Rapids\" -> \"from High Society\"; the store phone -> \"call your store\" (structure map)"
+  ],
+  "keptForClient": [
+   "meta description lists 7 towns (no New Buffalo): High Society's words (OQ-copy-meta)"
+  ]
+ }
+}

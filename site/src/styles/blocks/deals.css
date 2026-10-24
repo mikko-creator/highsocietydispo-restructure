@@ -1,0 +1,28 @@
+/* blocks/deals.css — High Society's deals (stores lane) in v2's DEALS language: the Headlight ground with the trophy
+   roundel faint and tilted at the right edge, white hairline offer cards with the brand logo on its own plate and
+   "Free" as the small red label, the offer word in Changa One; the two flower banners as black cards showing their
+   art whole. Phones: one column; from 640px two; from 1024px the offers beside the wider banners. */
+.block--sdeals { overflow: clip; }
+.block--sdeals::after { content: ""; position: absolute; right: -9%; top: 50%; width: min(46vw, 640px); aspect-ratio: 1; translate: 0 -50%; rotate: -8deg; background: var(--black); -webkit-mask: var(--mark-white) center / contain no-repeat; mask: var(--mark-white) center / contain no-repeat; opacity: .05; pointer-events: none; }
+.sdeals { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--gap); }
+@media (min-width: 640px) { .sdeals { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 640px) and (max-width: 1023.98px) { .sdeal__item--banner { grid-column: 1 / -1; } }
+/* desktop: the bento of v2's DEALS: the two offers tall on the left, the two banners stacked on the right */
+@media (min-width: 1024px) { .sdeals { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 2fr); } .sdeal__item:not(.sdeal__item--banner) { grid-row: span 2; } .sdeal__item--banner { grid-column: 3; } }
+.sdeal__item { display: flex; min-width: 0; }
+.sdeal { display: flex; flex-direction: column; width: 100%; background: var(--white); color: var(--black); }
+.sdeal__plate { position: relative; display: grid; place-items: center; aspect-ratio: 16 / 9; padding: var(--s-3); }
+.sdeal__plate--black { background: var(--black); }
+.sdeal__plate--white { background: var(--white); border-bottom: 1px solid var(--k-14); }
+.sdeal__logo { width: auto; max-width: 70%; max-height: 100%; object-fit: contain; }
+.sdeal__free { position: absolute; top: 12px; right: 12px; min-height: 26px; display: inline-flex; align-items: center; padding: 0 10px; border-radius: var(--radius-tag); background: var(--red); color: var(--white); font: 700 .8125rem/1 var(--font-head); letter-spacing: .08em; text-transform: uppercase; }
+.sdeal__body { display: flex; flex-direction: column; gap: 6px; padding: var(--s-3); }
+.sdeal__body::before { content: ""; width: 40px; height: 4px; border-radius: 2px; background: var(--red); margin-bottom: 6px; }
+.sdeal__word { font: 900 clamp(1.7rem, 1.1rem + 1.6vw, 2.4rem)/1 var(--font-display); text-transform: uppercase; color: var(--black); }
+.sdeal__meta { font: 600 1.0625rem/1.3 var(--font-head); text-transform: uppercase; letter-spacing: .04em; color: var(--black-700); }
+.sdeal__meta em { font-style: normal; color: var(--red); }
+.sdeal--banner { background: var(--black); justify-content: center; }
+.sdeal--banner picture, .sdeal--banner > img { display: block; width: 100%; }
+.sdeal__art { display: block; width: 100%; height: auto; }
+.sdeals__note { position: relative; z-index: 1; font-size: var(--fs-small); }
+.block--sdeals .block__ctas { position: relative; z-index: 1; }

@@ -1,0 +1,9 @@
+/* blocks/list.css — the list block (core): check (a red check plate), dot (the red trophy) or number (race numbers). */
+.blist { display: grid; gap: var(--s-2); max-width: 70ch; counter-reset: bl; }
+.blist > li { display: flex; align-items: flex-start; gap: 12px; color: var(--fg-2); }
+.blist__icon { flex: none; color: var(--em); margin-top: .15em; }
+.blist__text { min-width: 0; }
+.blist--dot > li::before { content: ""; flex: none; width: 1em; height: 1em; margin-top: .3em; background: var(--mark-red) center / contain no-repeat; }
+.theme-red .blist--dot > li::before { background-image: var(--mark-white); }
+.blist--number > li { counter-increment: bl; }
+.blist--number > li::before { content: counter(bl, decimal-leading-zero); flex: none; display: inline-grid; place-items: center; min-width: 34px; height: 26px; padding: 0 6px; border: 1.5px solid var(--em); border-radius: var(--radius-tag); font: 400 .8125rem/1 var(--font-display); color: var(--em); }

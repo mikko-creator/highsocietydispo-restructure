@@ -1,0 +1,504 @@
+{
+ "path": "/dispensary-locations/east-lansing/",
+ "template": "location",
+ "store": "east-lansing",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/dispensary-locations/east-lansing/",
+  "v2:join",
+  "v2:reviews",
+  "v2:app"
+ ],
+ "titleFull": "High Society Cannabis East Lansing",
+ "metaDescription": "Visit High Society's East Lansing dispensary near Michigan State University for top-quality cannabis products and knowledgeable staff.",
+ "h1": "Weed Dispensary in East Lansing, MI",
+ "crumb": "East Lansing",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Locations",
+   "path": "/dispensary-locations/"
+  },
+  {
+   "name": "East Lansing"
+  }
+ ],
+ "geo": {
+  "lat": 42.749362,
+  "lng": -84.448151
+ },
+ "storeSameAs": [
+  "https://www.facebook.com/profile.php?id=61554188635254",
+  "https://www.instagram.com/highsocietyel/"
+ ],
+ "hero": {
+  "eyebrow": "High Society East Lansing · Recreational 21+",
+  "image": "assets/pit-stop/img/scene-east-lansing.jpg",
+  "imageAlt": "",
+  "lead": "Shop Cannabis Products",
+  "ctas": [
+   {
+    "text": "order now",
+    "href": "/shop/east-lansing/"
+   },
+   {
+    "text": "Get Direction",
+    "href": "https://www.google.com/maps/dir//High+Society+Cannabis+East+Lansing,+2040+Merritt+Rd,+East+Lansing,+MI+48823,+United+States/@42.749362,-84.448151,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8822e96897ec722d:0x8fe0676da4d4d199!2m2!1d-84.448151!2d42.749362!3e0",
+    "style": "ghost"
+   }
+  ],
+  "status": {
+   "open": "Open - Closes at 9:00 PM",
+   "closed": "Closed - Opens at 9:00 AM"
+  },
+  "mapsUrl": "https://www.google.com/maps/dir//High+Society+Cannabis+East+Lansing,+2040+Merritt+Rd,+East+Lansing,+MI+48823,+United+States/@42.749362,-84.448151,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8822e96897ec722d:0x8fe0676da4d4d199!2m2!1d-84.448151!2d42.749362!3e0"
+ },
+ "visiting": {
+  "before": "amenities",
+  "heading": "High Society Cannabis East Lansing",
+  "lead": "Whether you’re a resident of [East Lansing, MI](https://www.cityofeastlansing.com/), or visiting the area, our lively city offers a variety of unique experiences and attractions. Immerse yourself in its rich cultural scene or enjoy a leisurely stroll through the picturesque downtown. East Lansing has something for everyone. Here are some of the top attractions to explore:",
+  "label": "FOLLOW THESE DIRECTIONS FROM",
+  "tabs": [
+   {
+    "label": "Spartan Stadium",
+    "title": "Directions From Spartan Stadium",
+    "md": "We are located only 9 minutes from [Spartan Stadium](https://www.google.com/maps/place/Spartan+Stadium/@42.7481645,-84.4708103,14z/data=!3m1!5s0x8822c27edabbd2e7:0x7a83d9baa13df89e!4m15!1m8!3m7!1s0x8822e96897ec722d:0x8fe0676da4d4d199!2sHigh+Society+Cannabis+East+Lansing!8m2!3d42.749362!4d-84.448151!10e1!16s%2Fg%2F11s4s237w6!3m5!1s0x8822c27c04f0daa3:0x4f1e63290d889360!8m2!3d42.7281862!4d-84.4848762!16zL20vMDYydG5f?hl=en&entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D).\n\n1. Head west on Red Cedar Rd toward Chestnut Rd\n2. Turn right onto Chestnut Rd\n3. Turn right onto Beal St\n4. Turn right onto W Circle Dr\n5. Turn right onto Abbot Rd\n6. Turn right onto I-69BL/E Saginaw St\n7. Turn right onto Park Lake Rd\n8. Turn right\n\nOur cannabis dispensary will be on the left"
+   },
+   {
+    "label": "Breslin Center",
+    "title": "Directions From Breslin Center",
+    "md": "We are located only 10 minutes from the infamous [Breslin Center](https://www.google.com/maps/place/Breslin+Center/@42.7280923,-84.5113662,15z/am=t/data=!4m23!1m16!4m15!1m6!1m2!1s0x8822c27c04f0daa3:0x4f1e63290d889360!2sSpartan+Stadium,+325+W+Shaw+Ln,+East+Lansing,+MI+48824,+United+States!2m2!1d-84.4848762!2d42.7281862!1m6!1m2!1s0x8822e96897ec722d:0x8fe0676da4d4d199!2sHigh+Society+Cannabis+East+Lansing,+2040+Merritt+Rd,+East+Lansing,+MI+48823,+United+States!2m2!1d-84.448151!2d42.749362!3e0!3m5!1s0x8822c27714577ea5:0x3727488b666ed618!8m2!3d42.7280929!4d-84.4923127!16zL20vMDYyd2t0?hl=en&entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D).\n\n1. Head southwest toward Birch Rd\n2. Merge onto Birch Rd\n3. Turn right onto W Shaw Ln\n4. Turn right onto S Harrison Rd\n5. Turn right onto I-69BL/W Saginaw St\n6. Turn right onto Park Lake Rd\n7. Turn right\n\nOur cannabis dispensary will be on the left"
+   },
+   {
+    "label": "Eli and Edythe Broad Art Museum",
+    "title": "Directions From Eli and Edythe Broad Art Museum",
+    "md": "We are located only 7 minutes from [Eli and Edythe Broad Art Museum](https://www.google.com/maps/place/Eli+and+Edythe+Broad+Art+Museum/@42.7327519,-84.4957048,15z/am=t/data=!4m23!1m16!4m15!1m6!1m2!1s0x8822c27714577ea5:0x3727488b666ed618!2sBreslin+Center,+Breslin+Student+Events+Center,+534+Birch+Rd,+East+Lansing,+MI+48824,+United+States!2m2!1d-84.4923127!2d42.7280929!1m6!1m2!1s0x8822e96897ec722d:0x8fe0676da4d4d199!2sHigh+Society+Cannabis+East+Lansing,+2040+Merritt+Rd,+East+Lansing,+MI+48823,+United+States!2m2!1d-84.448151!2d42.749362!3e0!3m5!1s0x8822e82a4f7ed4dd:0x388e3637c9c2088e!8m2!3d42.7327525!4d-84.4766506!16s%2Fm%2F0crgy86?hl=en&entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D).\n\n1. Head east on E Circle Dr toward Farm Ln\n2. Turn left onto Farm Ln\n3. Continue on Collingwood Dr to Burcham Dr\n4. Turn right onto Burcham Dr\n5. Turn left onto Alton Rd\n6. Turn right\n\nOur dispensary will be on the left"
+   },
+   {
+    "label": "The Wharton Center for Performing Arts",
+    "title": "Directions From the Wharton Center for Performing Arts",
+    "md": "We are located only 8 minutes from the Wharton Center for Performing Arts.\n\n1. Head west on Wilson Rd toward Bogue St\n2. Make a U-turn at Bogue St\n3. Turn left onto Hagadorn Rd\n4. Use the right lane to turn right onto I-69BL/E Saginaw St\n5. Turn right onto Park Lake Rd\n6. Turn right\n\nOur marijuana dispensary will be on the left"
+   }
+  ]
+ },
+ "blocks": [
+  {
+   "type": "cta",
+   "id": "rewards-teaser",
+   "ground": "red",
+   "heading": "Join The Society",
+   "md": "Sign up to get early access to strain drops, special pricing, birthday rewards and more",
+   "ctas": [
+    {
+     "text": "Join the Society Today",
+     "href": "/club-member-program/"
+    }
+   ]
+  },
+  {
+   "type": "store-details",
+   "id": "store-details",
+   "ground": "white",
+   "heading": "Store Info",
+   "store": "east-lansing",
+   "name": "High Society East Lansing",
+   "facts": [
+    "hours",
+    "address",
+    "email",
+    "phone"
+   ],
+   "hoursText": "Open Daily: 9:00 AM - 9:00 PM",
+   "addressText": "2040 Merritt Rd, East Lansing, MI 48823, United States",
+   "email": "info@highsocietydispo.com",
+   "mapsUrl": "https://www.google.com/maps/dir//High+Society+Cannabis+East+Lansing,+2040+Merritt+Rd,+East+Lansing,+MI+48823,+United+States/@42.749362,-84.448151,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8822e96897ec722d:0x8fe0676da4d4d199!2m2!1d-84.448151!2d42.749362!3e0",
+   "ctas": [
+    {
+     "text": "View Menu",
+     "href": "shop"
+    },
+    {
+     "text": "Get Direction",
+     "href": "maps",
+     "style": "ghost"
+    }
+   ],
+   "social": [
+    {
+     "network": "facebook",
+     "href": "https://www.facebook.com/profile.php?id=61554188635254",
+     "label": "High Society East Lansing on Facebook"
+    },
+    {
+     "network": "instagram",
+     "href": "https://www.instagram.com/highsocietyel/",
+     "label": "High Society East Lansing on Instagram"
+    }
+   ],
+   "about": {
+    "heading": "The Best Weed Dispensary in East Lansing, Michigan",
+    "md": "High Society Cannabis in East Lansing is a leading fully integrated cannabis dispensary, dedicated to delivering outstanding customer service and offering a diverse selection of premium cannabis products. By managing every aspect of the cannabis journey—from cultivation to retail—High Society ensures consistent quality and excellence.\n\nOur cannabis collection features renowned brands like 710 Labs, Bloom, Camino, and Drip, celebrated for their exceptional quality and potency. This commitment to excellence has solidified High Society Cannabis as a top choice for the best weed in East Lansing.",
+    "linksLabel": "More about High Society East Lansing",
+    "links": [
+     {
+      "text": "Deals",
+      "href": "/deals/"
+     },
+     {
+      "text": "Loyalty",
+      "href": "/loyalty/"
+     },
+     {
+      "text": "FAQs",
+      "href": "#faq"
+     },
+     {
+      "text": "Medical Card Guide",
+      "href": "/getting-a-medical-card/"
+     }
+    ]
+   }
+  },
+  {
+   "type": "amenities",
+   "id": "amenities",
+   "ground": "white",
+   "heading": "Store Amenities",
+   "groups": [
+    {
+     "title": "We Offer",
+     "items": [
+      {
+       "icon": "pin",
+       "label": "Curbside Pickup"
+      },
+      {
+       "icon": "bag",
+       "label": "In-Store Pickup"
+      },
+      {
+       "icon": "cart",
+       "label": "In-Store Shopping"
+      }
+     ]
+    },
+    {
+     "title": "Pay With",
+     "items": [
+      {
+       "icon": "tag",
+       "label": "Cash"
+      },
+      {
+       "icon": "check",
+       "label": "Debit Card"
+      },
+      {
+       "icon": "home",
+       "label": "ATM in-store"
+      }
+     ]
+    },
+    {
+     "title": "Before You Go",
+     "items": [
+      {
+       "icon": "user",
+       "label": "Valid government-issued ID or passport, 21+"
+      },
+      {
+       "icon": "cart",
+       "label": "Order online for pickup; curbside customers get a text when the order is ready"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "id": "first-visit",
+   "ground": "headlight",
+   "heading": "First-Time Customer Guide",
+   "items": [
+    {
+     "title": "Who Can Shop",
+     "md": "Individuals 21 years or older can shop recreationally."
+    },
+    {
+     "title": "Check In",
+     "md": "Present a government-issued ID or passport upon arrival and check in with our security and front desk team."
+    },
+    {
+     "title": "Stay in the Loop",
+     "md": "Stay updated on special deals and discounts by providing your phone number and email address."
+    },
+    {
+     "title": "Meet Your Budtender",
+     "md": "A budtender will call you from the waiting area when it’s your turn. They’ll assist with product selection and address any questions, whether you’re a first-time visitor or a returning customer."
+    },
+    {
+     "title": "Choose Your Items",
+     "md": "After finalizing your choices, the budtender will notify our order preparation team. Payments are accepted via cash, credit, or debit cards."
+    },
+    {
+     "title": "Complete Your Purchase",
+     "md": "When your order is ready, a staff member will call your name, process the payment, and review the items with you to ensure everything is correct before completing the purchase."
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "id": "order-pickup",
+   "ground": "white",
+   "heading": "How to Place an Order for Dispensary Pick-Up",
+   "items": [
+    {
+     "title": "Browse the Menu",
+     "md": "Explore our [East Lansing dispensary menu](/shop/east-lansing/) online or reach out to us at [(517) 708-8043](tel:+15177088043) for any assistance."
+    },
+    {
+     "title": "Build Your Order",
+     "md": "Select your desired products, set quantities, add them to your cart, and choose a convenient pick-up time."
+    },
+    {
+     "title": "Check Out",
+     "md": "Finalize your order by entering your details. New visitors will need to provide a valid ID for verification, while returning customers can log in for a quicker checkout."
+    },
+    {
+     "title": "Curbside Pickup",
+     "md": "Prefer curbside pickup? Let us know, and we’ll send a text when your order is ready for collection."
+    },
+    {
+     "title": "Enjoy Responsibly",
+     "md": "Use our cannabis products responsibly. We're here to provide a smooth and hassle-free shopping experience!"
+    }
+   ]
+  },
+  {
+   "type": "deals",
+   "id": "deals",
+   "source": "site",
+   "ground": "headlight",
+   "heading": "Deals",
+   "lead": "Deals vary by store and change often. The menu shows today's deals at High Society East Lansing.",
+   "more": {
+    "text": "See all deals",
+    "href": "/deals/"
+   }
+  },
+  {
+   "type": "cards",
+   "id": "categories",
+   "ground": "white",
+   "columns": 4,
+   "heading": "Shop Cannabis Products",
+   "items": [
+    {
+     "title": "Flower",
+     "icon": "leaf",
+     "href": "/shop/east-lansing/?dtche%5Bcategory%5D=flower",
+     "md": "Each cannabis strain is carefully curated to your needs, whether you're seeking relaxation, creativity, or a balanced high."
+    },
+    {
+     "title": "Pre-Rolls",
+     "icon": "spark",
+     "href": "/shop/east-lansing/?dtche%5Bcategory%5D=pre-rolls"
+    },
+    {
+     "title": "Concentrates",
+     "icon": "drop",
+     "href": "/shop/east-lansing/?dtche%5Bcategory%5D=concentrates",
+     "md": "From shatter to wax, our concentrates are ideal for experienced users looking for a powerful and fast-acting option."
+    },
+    {
+     "title": "Vaporizers",
+     "icon": "wave",
+     "href": "/shop/east-lansing/?dtche%5Bcategory%5D=vaporizers"
+    }
+   ]
+  },
+  {
+   "type": "reviews",
+   "id": "reviews",
+   "source": "home",
+   "heading": "What Our Customers Say About Us",
+   "lead": "Google reviews from High Society customers across our Michigan stores."
+  },
+  {
+   "type": "faq",
+   "id": "faq",
+   "ground": "white",
+   "heading": "Frequently Asked Questions",
+   "lead": "More questions? Visit our [FAQ page](/faq/).",
+   "items": [
+    {
+     "q": "What do I need to shop at High Society Cannabis East Lansing?",
+     "a": "To make a purchase, you must present a valid government-issued ID verifying you are 21 or older. Individuals aged 18 and up with a medical marijuana card are also eligible to shop."
+    },
+    {
+     "q": "What should I do if I receive a defective product?",
+     "a": "If there’s an issue with the quality or functionality of a product, contact us at [(517) 708-8043](tel:+15177088043) or visit the store where the purchase was made. Our team is ready to assist."
+    },
+    {
+     "q": "Can I pay with a debit card or cash at High Society?",
+     "a": "Yes, both debit cards and cash are accepted. For added convenience, ATMs are available at all dispensary locations. Contact your nearest store to confirm available payment methods."
+    },
+    {
+     "q": "Is it legal to travel with cannabis?",
+     "a": "While cannabis purchases are legal in Michigan, federal law prohibits transporting cannabis across state lines. Please avoid taking cannabis products out of the state."
+    },
+    {
+     "q": "What products are available at the dispensary?",
+     "a": "Our selection includes a variety of premium cannabis products such as flower, pre-rolls, concentrates, vape pens, edibles, and more. Browse our menu or reach out with specific questions."
+    },
+    {
+     "q": "Can I earn rewards for shopping at High Society?",
+     "a": "Yes! By joining our loyalty program, The Society, you’ll earn points on every purchase. Redeem these points for discounts and special perks—ask about signing up during your next visit."
+    }
+   ]
+  },
+  {
+   "type": "amenities",
+   "id": "service-area",
+   "ground": "headlight",
+   "heading": "Locations Where Our Dispensary Provides Service",
+   "groups": [
+    {
+     "title": "Towns",
+     "items": [
+      {
+       "icon": "pin",
+       "label": "East Lansing"
+      },
+      {
+       "icon": "pin",
+       "label": "Okemos"
+      },
+      {
+       "icon": "pin",
+       "label": "Lansing"
+      },
+      {
+       "icon": "pin",
+       "label": "Haslett"
+      }
+     ]
+    },
+    {
+     "title": "ZIP Codes We Serve",
+     "items": [
+      {
+       "icon": "target",
+       "label": "48823"
+      },
+      {
+       "icon": "target",
+       "label": "48824"
+      },
+      {
+       "icon": "target",
+       "label": "48825"
+      },
+      {
+       "icon": "target",
+       "label": "48826"
+      },
+      {
+       "icon": "target",
+       "label": "48906"
+      },
+      {
+       "icon": "target",
+       "label": "48910"
+      },
+      {
+       "icon": "target",
+       "label": "48912"
+      },
+      {
+       "icon": "target",
+       "label": "48808"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "id": "resources",
+   "ground": "white",
+   "heading": "Other Resources",
+   "style": "dot",
+   "items": [
+    "Stay informed about the latest [marijuana regulations and updates](https://www.cityofeastlansing.com/1929/Medical-Recreational-Marihuana-Resources) in East Lansing, MI.",
+    "Keep current with key [cannabis news and developments](https://www.michigan.gov/cra/laws-rules-other) in Michigan.",
+    "Read our guide to [Michigan marijuana laws](/cannabis-laws-by-state/michigan/)."
+   ]
+  },
+  {
+   "type": "nearby",
+   "id": "nearby",
+   "store": "east-lansing",
+   "order": [
+    "charlotte",
+    "birch-run",
+    "saline",
+    "mount-pleasant",
+    "big-rapids",
+    "lenox",
+    "new-buffalo"
+   ],
+   "heading": "Other High Society Locations",
+   "lead": "Our other Michigan stores, nearest first.",
+   "view": {
+    "text": "View Location"
+   }
+  },
+  {
+   "type": "split",
+   "id": "app",
+   "ground": "charcoal",
+   "heading": "Download the High Society App",
+   "md": "Experience convenience at your fingertips with the High Society App. Easily browse our full cannabis menu, stay updated on the latest deals, and place your orders with just a few taps. Whether you're at home or on the go, managing your cannabis experience has never been easier.",
+   "image": "derived:app-phone-mockup",
+   "imageAlt": "",
+   "ctas": [
+    {
+     "text": "Download Now",
+     "href": "https://apps.apple.com/us/app/high-society-cannabis/id6503314334"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen.mjs",
+  "fixes": [
+   "h1 casing normalised (High Society's words kept): \"Weed Dispensary in East Lansing , MI\" -> \"Weed Dispensary in East Lansing, MI\""
+  ],
+  "newCopy": [
+   "tab title \"Directions From Spartan Stadium\" (v1 prints this panel without its own heading)",
+   "tab title \"Directions From Breslin Center\" (v1 prints this panel without its own heading)",
+   "tab title \"Directions From Eli and Edythe Broad Art Museum\" (v1 prints this panel without its own heading)",
+   "tab title \"Directions From The Wharton Center for Performing Arts\" (v1 prints this panel without its own heading)",
+   "resources: \"Read our guide to Michigan marijuana laws.\" (link to the planned law guide)",
+   "hero eyebrow (store name + \"Recreational 21+\")",
+   "store-details \"more\" link labels (Deals, Loyalty, FAQs, Medical Card Guide)",
+   "amenities heading \"Store Amenities\" and group \"Before You Go\" (its two lines condense High Society's ID and ordering steps)",
+   "step titles (the step texts are High Society's)",
+   "deals heading and lead",
+   "reviews lead",
+   "FAQ lead",
+   "service-area group titles",
+   "nearby heading and lead"
+  ],
+  "keptForClient": [
+   "first-time guide payment line (\"cash, credit, or debit\") vs the FAQ (cash and debit): OPEN-DECISIONS 4",
+   "\"vertically/fully integrated ... from cultivation to retail\" (OPEN-DECISIONS 6)",
+   "medical patients 18+ in the FAQ (OPEN-DECISIONS 5)"
+  ]
+ }
+}

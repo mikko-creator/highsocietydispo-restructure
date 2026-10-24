@@ -1,0 +1,24 @@
+/* templates/search.css — the search page and the 404's search (core): a big ground-aware field and the result list. */
+.search--page { display: flex; flex-direction: column; align-items: stretch; gap: var(--s-1); width: 100%; max-width: 46rem; }
+.search__label { font: 700 .78rem/1.2 var(--font-head); letter-spacing: .12em; text-transform: uppercase; color: var(--fg-2); }
+.search__row { display: flex; flex-wrap: wrap; gap: var(--s-1); }
+.search--page .search__input { flex: 1 1 16rem; min-height: 56px; padding: 0 18px; border: 2px solid var(--line-2); border-radius: var(--radius); background: var(--card); color: var(--fg); font-size: 1.0625rem; }
+.search--page .search__input::placeholder { color: var(--muted); opacity: 1; }
+/* chrome.css gives every .search__input "outline: none" (the header bar draws its own ring), which beats the global
+   :focus-visible rule; the page field restores the ring the way the bar and the phone menu do */
+.search--page .search__input:focus-visible { border-color: var(--focus); outline: 3px solid var(--focus); outline-offset: 2px; }
+.search--page .search__submit { min-height: 56px; }
+.search__status { min-height: 1.5em; font: 600 1rem/1.4 var(--font-head); color: var(--fg-2); }
+.search__results { display: grid; gap: var(--s-2); max-width: 52rem; }
+.search__results:empty { display: none; }
+.result { display: flex; flex-direction: column; gap: 6px; padding: var(--s-2) var(--s-3); background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-lg); position: relative; }
+.result:hover { border-color: var(--card-hover-line, var(--line-2)); }
+.result__kind { font: 700 .72rem/1.2 var(--font-head); letter-spacing: .14em; text-transform: uppercase; color: var(--em); }
+.result__title { font: 800 1.15rem/1.25 var(--font-head); color: var(--fg); }
+.result__title a::after { content: ""; position: absolute; inset: 0; }
+.result__title a:hover { color: var(--em); }
+.result__desc { font-size: .9375rem; line-height: 1.5; color: var(--fg-2); }
+.search__fallback { color: var(--fg-2); }
+.search__fallback a { color: var(--em); font-weight: 600; text-decoration: underline; text-underline-offset: .2em; }
+.js .search__fallback[data-ready] { display: none; }
+.page-hero .search--404 { margin-top: var(--s-3); }

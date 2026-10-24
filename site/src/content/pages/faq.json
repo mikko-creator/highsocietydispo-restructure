@@ -1,0 +1,135 @@
+{
+ "path": "/faq/",
+ "template": "faq",
+ "provenance": "new",
+ "sourceRefs": [
+  "hs:/about/ (founded, testing)",
+  "hs:/dispensary-locations/saline/ FAQ (requirements); hs:/dispensary-locations/big-rapids/ FAQ (products, travel); hs:/dispensary-locations/charlotte/ FAQ (defective products, adapted: see review)",
+  "hs:/dispensary-locations/new-buffalo/service-areas/i-94-exit-new-buffalo/ FAQ lines 110-111 (out-of-state ID)",
+  "hs:/dispensary-locations/new-buffalo/service-areas/ FAQ lines 78-79, 84-85 (menu online, first-time visitors)",
+  "hs:/dispensary-locations/big-rapids/ How to Place an Order lines 188-191 (pickup steps)",
+  "hs:/shop/ meta description (order ahead)",
+  "hs:/loyalty/ FAQ (three answers)",
+  "v2:home.json locations cards and site.json stores (hours)",
+  "facts/law-facts.json mi-au-public-use, mi-au-vehicles-use, us-interstate; Health Canada and CCMOH guidance for the timing answers"
+ ],
+ "title": "Michigan Dispensary FAQ: ID, Pickup and More",
+ "crumb": "FAQ",
+ "metaDescription": "Answers to common questions about shopping at High Society in Michigan: what ID to bring, out-of-state IDs, payment, ordering for pickup and The Society.",
+ "h1": "High Society FAQ",
+ "hero": {
+  "eyebrow": "Resources",
+  "lead": "Quick answers before your first visit or your next order: ID, payment, pickup, The Society and the basics of enjoying cannabis in Michigan."
+ },
+ "topicsLabel": "Jump to a topic",
+ "blocks": [
+  {
+   "type": "faq",
+   "heading": "About High Society",
+   "items": [
+    { "q": "Where are High Society’s stores?", "a": "We have eight stores across Michigan: Big Rapids, Birch Run, Charlotte, East Lansing, Lenox, Mount Pleasant, New Buffalo and Saline. [See every location](/dispensary-locations/)." },
+    { "q": "When did High Society start?", "a": "Founded in 2020, High Society was created by a group of people looking to bring a different perspective to the industry. [Read our story](/about/)." },
+    { "q": "How are your products tested?", "a": "We work with trusted vendors to procure products that have passed Michigan’s stringent testing standards. Every licensed product’s label names the lab that tested it." },
+    { "q": "What makes High Society different?", "a": "High Society stands out with its commitment to quality, customer service, and a wide selection of premium cannabis products. From expert budtenders to exclusive deals, we provide an elevated shopping experience tailored to your needs." }
+   ]
+  },
+  {
+   "type": "faq",
+   "heading": "Shopping and paying",
+   "items": [
+    { "q": "What do I need to shop at High Society?", "a": "To shop at our dispensary, you must present a valid government-issued ID confirming you are 21 or older. Individuals 18 and above with a valid medical marijuana card are also eligible to make purchases." },
+    { "q": "Can I use an out-of-state ID?", "a": "Yes—valid government-issued ID works (must be 21+)." },
+    { "q": "When are your stores open?", "a": "All eight stores are open Monday - Sunday, 9:00 AM - 9:00 PM. [Find your store’s phone number](/dispensary-locations/)." },
+    { "q": "What payment methods do you accept?", "a": "Cash works at every store, and each store page lists an ATM in-store. Other payment options vary by store, so call ahead for details." },
+    { "q": "What types of cannabis products are available?", "a": "We offer a wide range of high-quality products, including flower, pre-rolls, concentrates, vape pens, edibles, and more. Check out our [menu](/shop/) or [contact us](/contact/) with specific inquiries." },
+    { "q": "What happens on my first visit?", "a": "Bring a valid government-issued ID or passport and check in with our security and front desk upon arrival. When it's your turn, a budtender will call you from the waiting area. They’re available to assist with product selection and answer any questions, whether you're new or familiar with our offerings. Once your order is ready, a staff member will call your name, process your payment, and review the order to confirm accuracy before completing the transaction." },
+    { "q": "Can staff help first-time visitors choose?", "a": "Absolutely. Our team is happy to guide first-time visitors and help you find products that match your preferences and comfort level." },
+    { "q": "What’s the quickest way to shop if I’m traveling?", "a": "Bring ID, choose a category + budget, and tell staff you want a quick trip—we’ll help you move fast." },
+    { "q": "How do I hear about deals and offers?", "a": "Stay informed about discounts and special offers by sharing your phone number and email with us. Members receive updates on new rewards, exclusive offers, and more through email or the High Society App. [See current deals](/deals/)." },
+    { "q": "Do you have an app?", "a": "Yes. Experience convenience at your fingertips with the High Society App. Easily browse our full cannabis menu, stay updated on the latest deals, and place your orders with just a few taps. [Download it on the App Store](https://apps.apple.com/us/app/high-society-cannabis/id6503314334)." },
+    { "q": "What should I do if I receive a defective product?", "a": "If you experience an issue with a product’s quality or functionality, please contact the store where the purchase was made or visit it in person. Our team is ready to assist." }
+   ]
+  },
+  {
+   "type": "faq",
+   "heading": "Ordering for pickup",
+   "lead": "[Choose your store’s menu](/shop/) to start an order.",
+   "items": [
+    { "q": "Can I order ahead?", "a": "Yes. Browse and shop High Society’s extensive selection of premium cannabis products online. Convenient pickup available at our Michigan dispensary locations." },
+    { "q": "How does ordering for pickup work?", "a": "Browse your store’s menu online, then select your preferred products, choose the quantities, add them to your cart, and schedule a pick-up time that works for you. Complete your order by providing your personal details. First-time visitors will need to present a valid ID for verification, while returning customers can sign in for a faster checkout process." },
+    { "q": "Do you offer curbside pickup?", "a": "Yes. If curbside pickup is your preference, let us know, and we’ll notify you via text when your order is ready." },
+    { "q": "Which stores offer pickup?", "a": "All eight. Every store offers in-store shopping, in-store pickup and curbside pickup." },
+    { "q": "Can I view the menu before I arrive?", "a": "Yes. You can view our full menu online before your visit to browse products, pricing, and availability." }
+   ]
+  },
+  {
+   "type": "faq",
+   "heading": "The Society loyalty program",
+   "lead": "[See the full program](/loyalty/), from points to perks.",
+   "items": [
+    { "q": "What is the High Society Loyalty Program?", "a": "Our loyalty program is designed to reward you for every purchase. As a member, you earn points with each transaction, unlocking access to exclusive discounts, special offers, and early access to new products." },
+    { "q": "How do I join the loyalty program?", "a": "Joining is simple! Sign up in-store or online and start earning points immediately with your purchases." },
+    { "q": "Does it cost anything to join?", "a": "No, joining the loyalty program is completely free!" },
+    { "q": "What are the benefits of joining the program?", "a": "Members enjoy perks like:\n\n- Exclusive discounts\n- Personalized offers\n- Early access to new and limited-edition products" },
+    { "q": "How do I earn points?", "a": "Points are automatically added to your account with every qualifying purchase. The more you shop, the more you earn!" },
+    { "q": "How can I redeem my points?", "a": "Redeem your points for discounts or rewards during checkout, either in-store or online. Our team will help you apply your rewards to your purchase." },
+    { "q": "Can I track my points?", "a": "Yes, you can track your points through your account in-store, online, or on the High Society App." },
+    { "q": "Are there any restrictions on earning or redeeming points?", "a": "Points may not apply to certain promotions or products. Visit our website or ask our team for full details." },
+    { "q": "How do I stay updated on loyalty program perks?", "a": "Members receive updates on new rewards, exclusive offers, and more through email or the High Society App." }
+   ]
+  },
+  {
+   "type": "faq",
+   "heading": "Enjoying cannabis responsibly",
+   "items": [
+    { "q": "Any tips for a first-time cannabis experience?", "a": "Start low and go slow. Choose a small amount of a lower-THC product, give it time to take full effect before having more, and stay somewhere comfortable with no plans to drive. Inhaled cannabis can take up to 30 minutes to reach its full effect, and edibles up to 4 hours. Our [patient guide](/patient-guide/) explains each product type." },
+    { "q": "How long until an edible takes effect?", "a": "Expect to wait from half an hour to 2 hours before you notice an edible, and up to 4 hours for its full effect. The effects may stay with you for as long as 12 hours, so wait before taking more." },
+    { "q": "Where can I consume cannabis in Michigan?", "a": "On private property where the owner allows it. Michigan law does not allow using cannabis in a public place, property owners may ban it, and no one may use cannabis while driving or smoke it in a vehicle on a public road. [Michigan’s rules in full](/cannabis-laws-by-state/michigan/)." },
+    { "q": "Is it legal to travel with cannabis?", "a": "Cannabis purchases are legal in Michigan, but transporting cannabis across state lines is prohibited under federal law. Avoid taking cannabis products out of the state." }
+   ]
+  },
+  {
+   "type": "link-grid",
+   "heading": "Questions about one store?",
+   "lead": "Each store page has its own FAQ, directions and pickup steps.",
+   "groups": [
+    {
+     "title": "Our stores",
+     "links": [
+      { "text": "Big Rapids", "href": "/dispensary-locations/big-rapids/#faq" },
+      { "text": "Birch Run", "href": "/dispensary-locations/birch-run/#faq" },
+      { "text": "Charlotte", "href": "/dispensary-locations/charlotte/#faq" },
+      { "text": "East Lansing", "href": "/dispensary-locations/east-lansing/#faq" },
+      { "text": "Lenox", "href": "/dispensary-locations/lenox/#faq" },
+      { "text": "Mount Pleasant", "href": "/dispensary-locations/mount-pleasant/#faq" },
+      { "text": "New Buffalo", "href": "/dispensary-locations/new-buffalo/#faq" },
+      { "text": "Saline", "href": "/dispensary-locations/saline/#faq" }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "heading": "Still have a question?",
+   "md": "Our team is happy to help. Call your store, or send us a message.",
+   "ctas": [
+    { "text": "Contact Us", "href": "/contact/" }
+   ]
+  }
+ ],
+ "sources": [
+  { "label": "Health Canada: What you need to know if you choose to consume cannabis", "url": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/resources/what-you-need-to-know-if-you-choose-to-consume-cannabis.html" },
+  { "label": "Council of Chief Medical Officers of Health (Canada): statement on cannabis extracts, edibles and topicals (2020)", "url": "https://www.canada.ca/en/public-health/news/2020/01/council-of-chief-medical-officers-of-health-ccmoh-statement-on-cannabis-extracts-edibles-and-topical-products.html" },
+  { "label": "Michigan Judicial Institute: Controlled Substances Benchbook, sec. 8.14, Scope of the MRTMA", "url": "https://www.courts.michigan.gov/4a8168/siteassets/publications/benchbooks/csbb/csbbresponsivehtml5.zip/CSBB/Ch_8_Marijuana/Scope_of_Michigan_Regulation_and_Taxation_of_Marihuana_Act_(MRTMA).htm" },
+  { "label": "CRA: Marihuana Rules, R 420.1 to R 420.1004 (PDF)", "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/Marihuana-Rules---R-4201-to-R-4201004.pdf" },
+  { "label": "21 U.S.C. 844, penalties for simple possession", "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title21/html/USCODE-2024-title21-chap13-subchapI-partD-sec844.htm" }
+ ],
+ "sourcesNote": "Sources for the timing, law and travel answers above, as of October 2026.",
+ "review": {
+  "hsAnswers": "One High Society wording per question: requirements (Saline FAQ, verbatim), out-of-state ID (I-94 page FAQ, verbatim), products (Big Rapids FAQ, verbatim, with links on 'menu' and 'contact us'), first-time visitors and menu online (New Buffalo service-area hub, verbatim), curbside (Big Rapids pickup steps, verbatim after 'Yes.'), order ahead (/shop/ meta description, after 'Yes.'), founded (About page, verbatim), testing (About page, verbatim, plus one new sentence: 'Every licensed product's label names the lab that tested it.', law-facts mi-labeling, R 420.504(1); corrected 2026-10-24 by the pages verifier, docs/VERIFY-PAGES.md), travel (Big Rapids FAQ, verbatim), loyalty (nine /loyalty/ answers, verbatim; the benefits answer's run-together list is set as a list, words unchanged), 'What makes High Society different?' (v2 home craft text, first two sentences), pickup options (every store page's 'We Offer' list: Curbside Pickup, In-Store Pickup, In-Store Shopping; the answer's wording is new), first visit (Big Rapids First-Time Customer Guide, verbatim, without its payment sentence: store pages conflict on credit), quickest trip (New Buffalo service-area hub FAQ, verbatim), deals and offers (Big Rapids guide line + /loyalty/ updates answer, verbatim), app (v2 home app text, first two sentences, after 'Yes.').",
+  "adapted": "Defective products: Charlotte's answer with its store phone number replaced by 'the store where the purchase was made' (the general page cannot give one store's number). Pickup steps: Big Rapids' wording with 'our Big Rapids dispensary menu' made 'your store's menu' and the store phone dropped. Payment: docs/OPEN-DECISIONS.md item 4 rebuild default (cash; options vary by store), not a store FAQ wording, because store FAQs conflict on credit. Hours: site.json stores (all eight share Monday - Sunday, 9:00 AM - 9:00 PM).",
+  "new": "New answers only where the brief allows: first-time tips, edible timing (Health Canada: 30 minutes to 2 hours to feel, up to 4 hours for full effect, up to 12 hours; inhaled up to 30 minutes for full effect; CCMOH: start low and wait), where to consume (mi-au-public-use, mi-au-landlords, mi-au-vehicles-use). The 'Can I consume cannabis products on-site?' question is not asked or answered (brief mustNot). New lines: hero lead, the topic and band headings, the two leads, the store-pages lead, the closing band ('Our team is happy to help' is High Society's own phrase).",
+  "title": "Structure map title + suffix = 67 characters; now 59 with 'Michigan dispensary FAQ' first.",
+  "storeLinks": "The 'Our stores' links go to each store page's #faq section (structure map store-faqs: 'each store page #faq'); the stores lane gave the store pages stable #first-visit, #order-pickup and #faq ids, so the links were switched from the page top on 2026-10-24 (pages verifier)."
+ }
+}

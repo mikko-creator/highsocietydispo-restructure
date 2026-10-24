@@ -1,0 +1,474 @@
+{
+ "path": "/dispensary-locations/mount-pleasant/",
+ "template": "location",
+ "store": "mount-pleasant",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/dispensary-locations/mount-pleasant/",
+  "v2:join",
+  "v2:reviews",
+  "v2:app"
+ ],
+ "titleFull": "High Society Cannabis Mount Pleasant",
+ "metaDescription": "Visit High Society's Mount Pleasant weed dispensary for a curated selection of premium cannabis products and outstanding customer service.",
+ "h1": "Weed Dispensary in Mount Pleasant",
+ "crumb": "Mount Pleasant",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Locations",
+   "path": "/dispensary-locations/"
+  },
+  {
+   "name": "Mount Pleasant"
+  }
+ ],
+ "geo": {
+  "lat": 43.6068712,
+  "lng": -84.7680349
+ },
+ "storeSameAs": [
+  "https://www.instagram.com/highsociety_mountpleasant/"
+ ],
+ "hero": {
+  "eyebrow": "High Society Mount Pleasant · Recreational 21+",
+  "image": "assets/pit-stop/img/scene-mount-pleasant.jpg",
+  "imageAlt": "",
+  "lead": "Shop Cannabis Products",
+  "ctas": [
+   {
+    "text": "Order Now",
+    "href": "/shop/mount-pleasant/"
+   },
+   {
+    "text": "Get Direction",
+    "href": "https://www.google.com/maps/dir//High+Society+Cannabis+Mount+Pleasant,+317+N+Mission+St,+Mt+Pleasant,+MI+48858,+United+States/@43.6068712,-84.7680349,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x88221daf36637127:0x64f3f21212621ced!2m2!1d-84.7680349!2d43.6068712!3e0",
+    "style": "ghost"
+   }
+  ],
+  "status": {
+   "open": "Open - Closes at 9:00 PM",
+   "closed": "Closed - Opens at 9:00 AM"
+  },
+  "mapsUrl": "https://www.google.com/maps/dir//High+Society+Cannabis+Mount+Pleasant,+317+N+Mission+St,+Mt+Pleasant,+MI+48858,+United+States/@43.6068712,-84.7680349,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x88221daf36637127:0x64f3f21212621ced!2m2!1d-84.7680349!2d43.6068712!3e0"
+ },
+ "visiting": {
+  "before": "amenities",
+  "heading": "High Society Cannabis Mount Pleasant",
+  "lead": "Whether you’re a resident of [Mount Pleasant, MI](https://www.mt-pleasant.org/), or just passing through, this lively city offers a variety of unique experiences and attractions. Explore its rich cultural heritage or enjoy a leisurely stroll through the quaint downtown area. Mount Pleasant has something for everyone. Here are some top attractions to explore:",
+  "label": "FOLLOW THESE DIRECTIONS FROM",
+  "tabs": [
+   {
+    "label": "Celebration Cinema Mount Pleasant",
+    "title": "Directions From Celebration Cinema Mount Pleasant",
+    "md": "We are located only 5 minutes from [Celebration Cinema Mount Pleasant](https://www.google.com/maps/place/Celebration+Cinema+Mount+Pleasant/@43.6059,-84.7690327,15z/data=!4m14!1m7!3m6!1s0x88221daf36637127:0x64f3f21212621ced!2sHigh+Society+Weed+Dispensary+Mount+Pleasant!8m2!3d43.6068712!4d-84.7680349!16s%2Fg%2F11l681cy13!3m5!1s0x88221c94e8125de5:0x356d7f022dfce555!8m2!3d43.6139149!4d-84.7499104!16s%2Fg%2F1tflyhr8?hl=en&entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D).\n\n1. Head south toward M-20 W\n2. Turn right\n3. Turn left at the 1st cross street toward M-20 W\n4. Turn right onto M-20 W\n5. Continue straight onto E Pickard St\n6. Turn left onto N Russell St\n7. Turn right onto E Andre St\n8. Turn left at the 3rd cross street onto N Mission St/Old U.S. 27\n\nOur cannabis dispensary will be on the right"
+   },
+   {
+    "label": "Mt. Pleasant Discovery Museum",
+    "title": "Directions From Mt. Pleasant Discovery Museum",
+    "md": "We are located only 5 minutes from the infamous [Mt. Pleasant Discovery Museum](https://www.google.com/maps/place/Mt.+Pleasant+Discovery+Museum/@43.6033606,-84.7730005,14z/am=t/data=!4m27!1m20!4m19!1m6!1m2!1s0x88221c94e8125de5:0x356d7f022dfce555!2sCelebration+Cinema+Mount+Pleasant,+4935+E+Pickard+St,+Mt+Pleasant,+MI+48858,+United+States!2m2!1d-84.7499104!2d43.6139149!1m6!1m2!1s0x88221daf36637127:0x64f3f21212621ced!2sHigh+Society+Cannabis+Mount+Pleasant,+North+Mission+Street,+Mount+Pleasant,+MI,+USA!2m2!1d-84.7680349!2d43.6068712!3e0!6m3!1i0!2i3!3i0!3m5!1s0x88221c9c5e38bf3f:0x8cc90b977752a574!8m2!3d43.598022!4d-84.74558!16s%2Fg%2F1hm3ryzmf?hl=en&entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D).\n\n1. Head west toward E Remus Rd\n2. Turn right onto E Remus Rd\n3. Continue onto E High St\n4. Turn right onto S Mission St/Old U.S. 27\n5. Pass by KFC (on the left in 0.6 mi)\n\nOur cannabis dispensary will be on the left"
+   },
+   {
+    "label": "Soaring Eagle Waterpark and Hotel",
+    "title": "Directions From Soaring Eagle Waterpark and Hotel",
+    "md": "We are located only 5 minutes from [Soaring Eagle Waterpark and Hotel](https://www.google.com/maps/place/Soaring+Eagle+Waterpark+and+Hotel/@43.6005497,-84.7761986,14z/data=!4m31!1m21!4m20!1m11!1m2!1s0x88221c9c5e38bf3f:0x8cc90b977752a574!2sMt.+Pleasant+Discovery+Museum,+5093+E+Remus+Rd,+Mt+Pleasant,+MI+48858,+United+States!2m2!1d-84.7455807!2d43.5979915!3m4!1m2!1d-84.7605159!2d43.5849314!3s0x88221b5b2b32a3d9:0xcd0f449f85d5c055!1m6!1m2!1s0x88221daf36637127:0x64f3f21212621ced!2sHigh+Society+Cannabis+Mount+Pleasant,+North+Mission+Street,+Mount+Pleasant,+MI,+USA!2m2!1d-84.7680349!2d43.6068712!3e0!3m8!1s0x88221c8adb0e9c03:0x5cc5adb26502e28c!5m2!4m1!1i2!8m2!3d43.6126281!4d-84.7335413!16s%2Fg%2F11_v1783n?hl=en&entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D).\n\n1. Head west on M-20 W/E Pickard St\n2. Pass by Subway (on the left in 0.4 mi)\n3. Continue straight onto E Pickard St\n4. Turn left onto N Russell St\n5. Turn right onto E Andre St\n6. Turn left at the 3rd cross street onto N Mission St/Old U.S. 27\n\nOur dispensary will be on the right"
+   },
+   {
+    "label": "The PohlCat Golf Course",
+    "title": "Directions From the PohlCat Golf Course",
+    "md": "We are located only 8 minutes from the PohlCat Golf Course.\n\n1. Take E Airport Rd to S Isabella Rd in Union charter Township\n2. Follow S Isabella Rd and E Pickard St to N Russell St in Mount Pleasant\n3. Take E Andre St to N Mission St/Old U.S. 27\n4. Turn left at the 3rd cross street onto N Mission St/Old U.S. 27\n\nOur marijuana dispensary will be on the right"
+   }
+  ]
+ },
+ "blocks": [
+  {
+   "type": "cta",
+   "id": "rewards-teaser",
+   "ground": "red",
+   "heading": "Join The Society",
+   "md": "Sign up to get early access to strain drops, special pricing, birthday rewards and more",
+   "ctas": [
+    {
+     "text": "Join the Society Today",
+     "href": "/club-member-program/"
+    }
+   ]
+  },
+  {
+   "type": "store-details",
+   "id": "store-details",
+   "ground": "white",
+   "heading": "Store Info",
+   "store": "mount-pleasant",
+   "name": "High Society Mount Pleasant",
+   "facts": [
+    "hours",
+    "address",
+    "email",
+    "phone"
+   ],
+   "hoursText": "Open Daily: 9:00 AM - 9:00 PM",
+   "addressText": "317 N Mission St, Mt Pleasant, MI 48858, United States",
+   "email": "info@highsocietydispo.com",
+   "mapsUrl": "https://www.google.com/maps/dir//High+Society+Cannabis+Mount+Pleasant,+317+N+Mission+St,+Mt+Pleasant,+MI+48858,+United+States/@43.6068712,-84.7680349,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x88221daf36637127:0x64f3f21212621ced!2m2!1d-84.7680349!2d43.6068712!3e0",
+   "ctas": [
+    {
+     "text": "View Menu",
+     "href": "shop"
+    },
+    {
+     "text": "Get Direction",
+     "href": "maps",
+     "style": "ghost"
+    }
+   ],
+   "social": [
+    {
+     "network": "instagram",
+     "href": "https://www.instagram.com/highsociety_mountpleasant/",
+     "label": "High Society Mount Pleasant on Instagram"
+    }
+   ],
+   "about": {
+    "heading": "The Best Weed Dispensary In Mount Pleasant, Michigan",
+    "md": "High Society Cannabis in Mount Pleasant is a top-tier vertically integrated weed dispensary, renowned for its exceptional customer service and extensive selection of high-quality cannabis products. By controlling every step of the cannabis journey—from cultivation to retail—High Society ensures unparalleled quality and consistency.\n\nOur dispensary selection features popular brands such as 710 Labs, Breeze, Camino, and Crude Boys, celebrated for their superior craftsmanship and potency. This commitment to excellence has established High Society Cannabis as a preferred destination for the best weed in Mount Pleasant.",
+    "linksLabel": "More about High Society Mount Pleasant",
+    "links": [
+     {
+      "text": "Deals",
+      "href": "/deals/"
+     },
+     {
+      "text": "Loyalty",
+      "href": "/loyalty/"
+     },
+     {
+      "text": "FAQs",
+      "href": "#faq"
+     },
+     {
+      "text": "Medical Card Guide",
+      "href": "/getting-a-medical-card/"
+     }
+    ]
+   }
+  },
+  {
+   "type": "amenities",
+   "id": "amenities",
+   "ground": "white",
+   "heading": "Store Amenities",
+   "groups": [
+    {
+     "title": "We Offer",
+     "items": [
+      {
+       "icon": "pin",
+       "label": "Curbside Pickup"
+      },
+      {
+       "icon": "bag",
+       "label": "In-Store Pickup"
+      },
+      {
+       "icon": "cart",
+       "label": "In-Store Shopping"
+      }
+     ]
+    },
+    {
+     "title": "Pay With",
+     "items": [
+      {
+       "icon": "tag",
+       "label": "Cash"
+      },
+      {
+       "icon": "check",
+       "label": "Debit Card"
+      },
+      {
+       "icon": "home",
+       "label": "ATM in-store"
+      }
+     ]
+    },
+    {
+     "title": "Before You Go",
+     "items": [
+      {
+       "icon": "user",
+       "label": "Valid government-issued ID or passport, 21+"
+      },
+      {
+       "icon": "cart",
+       "label": "Order online for pickup; curbside customers get a text when the order is ready"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "id": "first-visit",
+   "ground": "headlight",
+   "heading": "First-Time Customer Guide",
+   "items": [
+    {
+     "title": "Who Can Shop",
+     "md": "Recreational shopping is available for individuals aged 21 or older."
+    },
+    {
+     "title": "Check In",
+     "md": "Upon arrival, present a government-issued ID or passport and check in with the security and front desk team."
+    },
+    {
+     "title": "Stay in the Loop",
+     "md": "Provide your phone number and email to stay informed about exclusive deals and discounts."
+    },
+    {
+     "title": "Meet Your Budtender",
+     "md": "A budtender will call you from the waiting area when it’s your turn. They will assist with selecting products and answering any questions, whether you’re new or a returning visitor."
+    },
+    {
+     "title": "Choose Your Items",
+     "md": "Once you’ve made your selections, the budtender will alert the order preparation team. Payments can be made with cash, credit, or debit cards."
+    },
+    {
+     "title": "Complete Your Purchase",
+     "md": "When your order is ready, a staff member will call your name, process the payment, and review your items to ensure accuracy before completing the transaction."
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "id": "order-pickup",
+   "ground": "white",
+   "heading": "How to Place an Order for Dispensary Pick-Up",
+   "items": [
+    {
+     "title": "Browse the Menu",
+     "md": "Browse our [Mount Pleasant dispensary menu](/shop/mount-pleasant/) online or contact us at [(989) 317-0290](tel:+19893170290) if you need assistance."
+    },
+    {
+     "title": "Build Your Order",
+     "md": "Choose your preferred products, set the quantities, add them to your cart, and select a convenient pick-up time."
+    },
+    {
+     "title": "Check Out",
+     "md": "Complete your order by providing your details. First-time visitors must present a valid ID for verification, while returning customers can log in for faster checkout."
+    },
+    {
+     "title": "Curbside Pickup",
+     "md": "Interested in curbside pickup? Let us know, and we’ll notify you via text when your order is ready for pickup."
+    },
+    {
+     "title": "Enjoy Responsibly",
+     "md": "Enjoy cannabis responsibly. We’re committed to ensuring a seamless and stress-free shopping experience!"
+    }
+   ]
+  },
+  {
+   "type": "deals",
+   "id": "deals",
+   "source": "site",
+   "ground": "headlight",
+   "heading": "Deals",
+   "lead": "Deals vary by store and change often. The menu shows today's deals at High Society Mount Pleasant.",
+   "more": {
+    "text": "See all deals",
+    "href": "/deals/"
+   }
+  },
+  {
+   "type": "cards",
+   "id": "categories",
+   "ground": "white",
+   "columns": 4,
+   "heading": "Shop Cannabis Products",
+   "items": [
+    {
+     "title": "Flower",
+     "icon": "leaf",
+     "href": "/shop/mount-pleasant/?dtche%5Bcategory%5D=flower",
+     "md": "Each cannabis strain is carefully curated to your needs, whether you're seeking relaxation, creativity, or a balanced high."
+    },
+    {
+     "title": "Pre-Rolls",
+     "icon": "spark",
+     "href": "/shop/mount-pleasant/?dtche%5Bcategory%5D=pre-rolls"
+    },
+    {
+     "title": "Concentrates",
+     "icon": "drop",
+     "href": "/shop/mount-pleasant/?dtche%5Bcategory%5D=concentrates",
+     "md": "From shatter to wax, our concentrates are ideal for experienced users looking for a powerful and fast-acting option."
+    },
+    {
+     "title": "Vaporizers",
+     "icon": "wave",
+     "href": "/shop/mount-pleasant/?dtche%5Bcategory%5D=vaporizers"
+    }
+   ]
+  },
+  {
+   "type": "reviews",
+   "id": "reviews",
+   "source": "home",
+   "heading": "What Our Customers Say About Us",
+   "lead": "Google reviews from High Society customers across our Michigan stores."
+  },
+  {
+   "type": "faq",
+   "id": "faq",
+   "ground": "white",
+   "heading": "Frequently Asked Questions",
+   "lead": "More questions? Visit our [FAQ page](/faq/).",
+   "items": [
+    {
+     "q": "What are the requirements to shop at High Society Cannabis Mount Pleasant?",
+     "a": "To make a purchase, you must present a valid government-issued ID confirming you are 21 or older. Individuals 18 and above with a valid medical marijuana card are also eligible to shop."
+    },
+    {
+     "q": "What should I do if I receive a defective product?",
+     "a": "If there’s an issue with a product’s quality or functionality, please contact us at [(989) 317-0290](tel:+19893170290) or visit the store where you purchased it. Our team is happy to help."
+    },
+    {
+     "q": "Do you accept credit cards or mobile payments?",
+     "a": "At High Society, we accept cash and debit payments. While credit cards are not accepted, an ATM is available for convenience. Some stores may support mobile payment options—confirm with your nearest dispensary location."
+    },
+    {
+     "q": "Is it legal to transport cannabis?",
+     "a": "While cannabis purchases are legal in Michigan, federal law prohibits transporting cannabis across state lines. Please avoid taking cannabis products out of the state."
+    },
+    {
+     "q": "What products are available at the dispensary?",
+     "a": "We offer a variety of premium cannabis products, including flower, pre-rolls, concentrates, vape pens, edibles, and more. Check out our menu or contact us with specific questions."
+    },
+    {
+     "q": "What rewards program does High Society offer?",
+     "a": "We offer The Society, a loyalty program designed to reward our customers. Earn points on purchases and redeem them for discounts and offers. Check with our staff to learn how to join."
+    }
+   ]
+  },
+  {
+   "type": "amenities",
+   "id": "service-area",
+   "ground": "headlight",
+   "heading": "Locations Where Our Dispensary Provides Service",
+   "groups": [
+    {
+     "title": "Towns",
+     "items": [
+      {
+       "icon": "pin",
+       "label": "Mount Pleasant"
+      },
+      {
+       "icon": "pin",
+       "label": "Shepherd"
+      },
+      {
+       "icon": "pin",
+       "label": "Rosebush"
+      }
+     ]
+    },
+    {
+     "title": "ZIP Codes We Serve",
+     "items": [
+      {
+       "icon": "target",
+       "label": "48858"
+      },
+      {
+       "icon": "target",
+       "label": "48883"
+      },
+      {
+       "icon": "target",
+       "label": "48878"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "id": "resources",
+   "ground": "white",
+   "heading": "Other Resources",
+   "style": "dot",
+   "items": [
+    "Stay informed about the latest [marijuana laws and updates](https://www.mt-pleasant.org/departments/planning_and_community_development/marihuana_facilities.php#:~:text=The%20City%20of%20Mt.,be%20licensed%20by%20the%20City.) in Mount Pleasant, MI.",
+    "Follow key [cannabis news and developments](https://www.michigan.gov/cra/laws-rules-other) throughout Michigan.",
+    "Read our guide to [Michigan marijuana laws](/cannabis-laws-by-state/michigan/)."
+   ]
+  },
+  {
+   "type": "nearby",
+   "id": "nearby",
+   "store": "mount-pleasant",
+   "order": [
+    "big-rapids",
+    "birch-run",
+    "east-lansing",
+    "charlotte",
+    "saline",
+    "lenox",
+    "new-buffalo"
+   ],
+   "heading": "Other High Society Locations",
+   "lead": "Our other Michigan stores, nearest first.",
+   "view": {
+    "text": "View Location"
+   }
+  },
+  {
+   "type": "split",
+   "id": "app",
+   "ground": "charcoal",
+   "heading": "Download the High Society App",
+   "md": "Experience convenience at your fingertips with the High Society App. Easily browse our full cannabis menu, stay updated on the latest deals, and place your orders with just a few taps. Whether you're at home or on the go, managing your cannabis experience has never been easier.",
+   "image": "derived:app-phone-mockup",
+   "imageAlt": "",
+   "ctas": [
+    {
+     "text": "Download Now",
+     "href": "https://apps.apple.com/us/app/high-society-cannabis/id6503314334"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen.mjs",
+  "fixes": [
+   "h1 casing normalised (High Society's words kept): \"Weed Dispensary in Mount Pleasant\" -> \"Weed Dispensary in Mount Pleasant\""
+  ],
+  "newCopy": [
+   "tab title \"Directions From Celebration Cinema Mount Pleasant\" (v1 prints this panel without its own heading)",
+   "tab title \"Directions From Mt. Pleasant Discovery Museum\" (v1 prints this panel without its own heading)",
+   "tab title \"Directions From Soaring Eagle Waterpark and Hotel\" (v1 prints this panel without its own heading)",
+   "tab title \"Directions From The PohlCat Golf Course\" (v1 prints this panel without its own heading)",
+   "resources: \"Read our guide to Michigan marijuana laws.\" (link to the planned law guide)",
+   "hero eyebrow (store name + \"Recreational 21+\")",
+   "store-details \"more\" link labels (Deals, Loyalty, FAQs, Medical Card Guide)",
+   "amenities heading \"Store Amenities\" and group \"Before You Go\" (its two lines condense High Society's ID and ordering steps)",
+   "step titles (the step texts are High Society's)",
+   "deals heading and lead",
+   "reviews lead",
+   "FAQ lead",
+   "service-area group titles",
+   "nearby heading and lead"
+  ],
+  "keptForClient": [
+   "first-time guide payment line (\"cash, credit, or debit\") vs the FAQ (cash and debit): OPEN-DECISIONS 4",
+   "\"vertically/fully integrated ... from cultivation to retail\" (OPEN-DECISIONS 6)",
+   "medical patients 18+ in the FAQ (OPEN-DECISIONS 5)"
+  ]
+ }
+}

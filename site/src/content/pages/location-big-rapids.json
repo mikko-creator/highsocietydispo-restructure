@@ -1,0 +1,476 @@
+{
+ "path": "/dispensary-locations/big-rapids/",
+ "template": "location",
+ "store": "big-rapids",
+ "provenance": "hs",
+ "sourceRefs": [
+  "hs:/dispensary-locations/big-rapids/",
+  "v2:join",
+  "v2:reviews",
+  "v2:app"
+ ],
+ "titleFull": "High Society Weed Dispensary Big Rapids",
+ "metaDescription": "Visit High Society's Big Rapids weed dispensary for a curated selection of premium cannabis products. Quality and exceptional service await you.",
+ "h1": "Weed Dispensary In Big Rapids, MI",
+ "crumb": "Big Rapids",
+ "breadcrumbs": [
+  {
+   "name": "Home",
+   "path": "/"
+  },
+  {
+   "name": "Locations",
+   "path": "/dispensary-locations/"
+  },
+  {
+   "name": "Big Rapids"
+  }
+ ],
+ "geo": {
+  "lat": 43.6893368,
+  "lng": -85.4854098
+ },
+ "storeSameAs": [
+  "https://www.facebook.com/profile.php?id=100091757653942",
+  "https://www.instagram.com/highsociety_bigrapids/"
+ ],
+ "hero": {
+  "eyebrow": "High Society Big Rapids · Recreational 21+",
+  "image": "assets/pit-stop/img/scene-big-rapids.jpg",
+  "imageAlt": "",
+  "lead": "Shop Cannabis Products",
+  "ctas": [
+   {
+    "text": "order now",
+    "href": "/shop/big-rapids/"
+   },
+   {
+    "text": "Get Direction",
+    "href": "https://www.google.com/maps/dir//High+Society+Cannabis+Big+Rapids,+804+Clark+St,+Big+Rapids,+MI+49307,+United+States/@43.6893368,-85.4854098,15z/data=!4m17!1m7!3m6!1s0x8818d3ebb7d05fc3:0xe98402137f8d575b!2sHigh+Society+Cannabis+Big+Rapids!8m2!3d43.6893368!4d-85.4854098!16s%2Fg%2F11rchgzns6!4m8!1m0!1m5!1m1!1s0x8818d3ebb7d05fc3:0xe98402137f8d575b!2m2!1d-85.4854098!2d43.6893368!3e0",
+    "style": "ghost"
+   }
+  ],
+  "status": {
+   "open": "Open - Closes at 9:00 PM",
+   "closed": "Closed - Opens at 9:00 AM"
+  },
+  "mapsUrl": "https://www.google.com/maps/dir//High+Society+Cannabis+Big+Rapids,+804+Clark+St,+Big+Rapids,+MI+49307,+United+States/@43.6893368,-85.4854098,15z/data=!4m17!1m7!3m6!1s0x8818d3ebb7d05fc3:0xe98402137f8d575b!2sHigh+Society+Cannabis+Big+Rapids!8m2!3d43.6893368!4d-85.4854098!16s%2Fg%2F11rchgzns6!4m8!1m0!1m5!1m1!1s0x8818d3ebb7d05fc3:0xe98402137f8d575b!2m2!1d-85.4854098!2d43.6893368!3e0"
+ },
+ "visiting": {
+  "before": "amenities",
+  "heading": "High Society Cannabis Big Rapids",
+  "lead": "If you’re a resident of [Big Rapids, MI](https://www.cityofbr.org/), or just passing through, our vibrant city presents a range of unique experiences and attractions to explore. Dive into the rich cultural offerings or take a relaxing walk through the charming downtown area. Big Rapids caters to all types of visitors. Here are some of the standout attractions nearby:",
+  "label": "FOLLOW THESE DIRECTIONS FROM",
+  "tabs": [
+   {
+    "label": "R.L. Ewigleben Sports Complex",
+    "title": "Directions From R.L. Ewigleben Sports Complex",
+    "md": "We are located only 3 minutes from [R.L. Ewigleben Sports Complex](https://www.google.com/maps/place/R.L.+Ewigleben+Sports+Complex/@43.6861715,-85.4843369,15z/data=!4m15!1m8!3m7!1s0x8818d3ebb7d05fc3:0xe98402137f8d575b!2sHigh+Society+Cannabis+Big+Rapids!8m2!3d43.6893368!4d-85.4854098!10e1!16s%2Fg%2F11rchgzns6!3m5!1s0x8818d3196dfbb55f:0x708d9995f2e303f4!8m2!3d43.6795703!4d-85.4852881!16zL20vMDlkY2pj?hl=en&entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D).\n\n1. Head southeast on Sports Dr toward Ice Arena Cir\n2. Turn left onto W Knollview Dr\n3. Turn left onto Northland Dr/S State St\n4. Turn left onto Perry Ave\n5. Turn right onto Clark St\n\nOur cannabis dispensary will be on the left"
+   },
+   {
+    "label": "Top Taggart Field",
+    "title": "Directions From Top Taggart Field",
+    "md": "We are located only 3 minutes from [Top Taggart Field](https://www.google.com/maps/place/Top+Taggart+Field/@43.6868302,-85.4851093,16z/am=t/data=!4m23!1m16!4m15!1m6!1m2!1s0x8818d3196dfbb55f:0x708d9995f2e303f4!2sR.L.+Ewigleben+Sports+Complex,+210+Sports+Dr,+Big+Rapids,+MI+49307,+United+States!2m2!1d-85.4852881!2d43.6795703!1m6!1m2!1s0x8818d3ebb7d05fc3:0xe98402137f8d575b!2sHigh+Society+Cannabis+Big+Rapids,+804+Clark+St,+Big+Rapids,+MI+49307,+United+States!2m2!1d-85.4854098!2d43.6893368!3e0!3m5!1s0x8818d3205fa8e96d:0xc9d7fb9e3a9d13b2!8m2!3d43.6848802!4d-85.480262!16s%2Fg%2F113dgxr3v?hl=en&entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D).\n\n1. Head north on Stadium Dr toward Campus Dr\n2. Turn left onto Campus Dr\n3. Turn right to stay on Campus Dr\n4. Turn left to stay on Campus Dr\n5. Continue onto Perry Ave\n6. Turn right onto Clark St\n\nOur cannabis dispensary will be on the left"
+   },
+   {
+    "label": "Big Rapids Roller Rink",
+    "title": "Directions From Big Rapids Roller Rink",
+    "md": "We are located only 5 minutes from [Big Rapids Roller Rink](https://www.google.com/maps/place/Big+Rapids+Roller+Rink/@43.6985196,-85.4861203,16z/am=t/data=!4m23!1m16!4m15!1m6!1m2!1s0x8818d3205fa8e96d:0xc9d7fb9e3a9d13b2!2sTop+Taggart+Field,+210+Sports+Dr,+Big+Rapids,+MI+49307,+United+States!2m2!1d-85.480262!2d43.6848802!1m6!1m2!1s0x8818d3ebb7d05fc3:0xe98402137f8d575b!2sHigh+Society+Cannabis+Big+Rapids,+804+Clark+St,+Big+Rapids,+MI+49307,+United+States!2m2!1d-85.4854098!2d43.6893368!3e0!3m5!1s0x8818d32b31c41209:0xb6e65fff0681e147!8m2!3d43.701984!4d-85.482203!16s%2Fg%2F1thd78xw?hl=en&entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D).\n\n1. Head south on N Michigan Ave toward Hemlock St\n2. Turn right onto Maple St\n3. Turn left onto Northland Dr/S State St\n4. Pass by Subway (on the left in 0.5 mi)\n5. Turn right onto Perry Ave\n6. Turn right onto Clark St\n\nOur dispensary will be on the left"
+   },
+   {
+    "label": "Roben-Hood Airport (KRQB)",
+    "title": "Directions From the Roben-Hood Airport (KRQB)",
+    "md": "We are located only 4 minutes from the [Roben-Hood Airport (KRQB)](https://www.google.com/maps/place/Roben-Hood+Airport+(KRQB)/@43.7016623,-85.5572158,13z/am=t/data=!4m23!1m16!4m15!1m6!1m2!1s0x8818d32b31c41209:0xb6e65fff0681e147!2sBig+Rapids+Roller+Rink,+325+N+Michigan+Ave,+Big+Rapids,+MI+49307,+United+States!2m2!1d-85.4821901!2d43.7020003!1m6!1m2!1s0x8818d3ebb7d05fc3:0xe98402137f8d575b!2sHigh+Society+Cannabis+Big+Rapids,+804+Clark+St,+Big+Rapids,+MI+49307,+United+States!2m2!1d-85.4854098!2d43.6893368!3e0!3m5!1s0x881f2c961f888939:0xb1f8eedba8dd378!8m2!3d43.7267494!4d-85.510231!16s%2Fg%2F11hcz1qn59?hl=en&entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D).\n\n1. Head northwest\n2. Turn right toward 18 Mile Rd\n3. Turn right onto 18 Mile Rd\n4. Turn right onto US-131 Business/Northland Dr\n5. Pass by Subway (on the left in 2.9 mi)\n6. Turn right onto Perry Ave\n7. Turn right onto Clark St\n\nOur marijuana dispensary will be on the left"
+   }
+  ]
+ },
+ "blocks": [
+  {
+   "type": "cta",
+   "id": "rewards-teaser",
+   "ground": "red",
+   "heading": "Join The Society",
+   "md": "Sign up to get early access to strain drops, special pricing, birthday rewards and more",
+   "ctas": [
+    {
+     "text": "Join the Society Today",
+     "href": "/club-member-program/"
+    }
+   ]
+  },
+  {
+   "type": "store-details",
+   "id": "store-details",
+   "ground": "white",
+   "heading": "Store Info",
+   "store": "big-rapids",
+   "name": "High Society Big Rapids",
+   "facts": [
+    "hours",
+    "address",
+    "email",
+    "phone"
+   ],
+   "hoursText": "Open Daily: 9:00 AM - 9:00 PM",
+   "addressText": "804 Clark St, Big Rapids, MI 49307, United States",
+   "email": "info@highsocietydispo.com",
+   "mapsUrl": "https://www.google.com/maps/dir//High+Society+Cannabis+Big+Rapids,+804+Clark+St,+Big+Rapids,+MI+49307,+United+States/@43.6893368,-85.4854098,15z/data=!4m17!1m7!3m6!1s0x8818d3ebb7d05fc3:0xe98402137f8d575b!2sHigh+Society+Cannabis+Big+Rapids!8m2!3d43.6893368!4d-85.4854098!16s%2Fg%2F11rchgzns6!4m8!1m0!1m5!1m1!1s0x8818d3ebb7d05fc3:0xe98402137f8d575b!2m2!1d-85.4854098!2d43.6893368!3e0",
+   "ctas": [
+    {
+     "text": "View Menu",
+     "href": "shop"
+    },
+    {
+     "text": "Get Direction",
+     "href": "maps",
+     "style": "ghost"
+    }
+   ],
+   "social": [
+    {
+     "network": "facebook",
+     "href": "https://www.facebook.com/profile.php?id=100091757653942",
+     "label": "High Society Big Rapids on Facebook"
+    },
+    {
+     "network": "instagram",
+     "href": "https://www.instagram.com/highsociety_bigrapids/",
+     "label": "High Society Big Rapids on Instagram"
+    }
+   ],
+   "about": {
+    "heading": "The Best Weed Dispensary in Big Rapids, Michigan",
+    "md": "High Society Cannabis in Big Rapids is a premier, vertically integrated cannabis dispensary, committed to providing exceptional customer service and offering a wide selection of premium cannabis products. Our inventory includes our in-house brands top-tier brands known for their potency and quality, such as STIIIZY, Element, Breeze, and Cali Blaze. This dedication to excellence has made High Society Cannabis a leading destination for high-end cannabis products in Big Rapids",
+    "linksLabel": "More about High Society Big Rapids",
+    "links": [
+     {
+      "text": "Deals",
+      "href": "/deals/"
+     },
+     {
+      "text": "Loyalty",
+      "href": "/loyalty/"
+     },
+     {
+      "text": "FAQs",
+      "href": "#faq"
+     },
+     {
+      "text": "Medical Card Guide",
+      "href": "/getting-a-medical-card/"
+     }
+    ]
+   }
+  },
+  {
+   "type": "amenities",
+   "id": "amenities",
+   "ground": "white",
+   "heading": "Store Amenities",
+   "groups": [
+    {
+     "title": "We Offer",
+     "items": [
+      {
+       "icon": "pin",
+       "label": "Curbside Pickup"
+      },
+      {
+       "icon": "bag",
+       "label": "In-Store Pickup"
+      },
+      {
+       "icon": "cart",
+       "label": "In-Store Shopping"
+      }
+     ]
+    },
+    {
+     "title": "Pay With",
+     "items": [
+      {
+       "icon": "tag",
+       "label": "Cash"
+      },
+      {
+       "icon": "check",
+       "label": "Debit Card"
+      },
+      {
+       "icon": "home",
+       "label": "ATM in-store"
+      }
+     ]
+    },
+    {
+     "title": "Before You Go",
+     "items": [
+      {
+       "icon": "user",
+       "label": "Valid government-issued ID or passport, 21+"
+      },
+      {
+       "icon": "cart",
+       "label": "Order online for pickup; curbside customers get a text when the order is ready"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "id": "first-visit",
+   "ground": "headlight",
+   "heading": "First-Time Customer Guide",
+   "items": [
+    {
+     "title": "Who Can Shop",
+     "md": "Recreational shopping is available to individuals 21 years or older."
+    },
+    {
+     "title": "Check In",
+     "md": "Bring a valid government-issued ID or passport and check in with our security and front desk upon arrival."
+    },
+    {
+     "title": "Stay in the Loop",
+     "md": "Stay informed about discounts and special offers by sharing your phone number and email with us."
+    },
+    {
+     "title": "Meet Your Budtender",
+     "md": "When it's your turn, a budtender will call you from the waiting area. They’re available to assist with product selection and answer any questions, whether you're new or familiar with our offerings."
+    },
+    {
+     "title": "Choose Your Items",
+     "md": "After you choose your items, the budtender will alert our order preparation team. Payments can be made using cash, credit, or debit cards."
+    },
+    {
+     "title": "Complete Your Purchase",
+     "md": "Once your order is ready, a staff member will call your name, process your payment, and review the order to confirm accuracy before completing the transaction."
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "id": "order-pickup",
+   "ground": "white",
+   "heading": "How to Place an Order for Dispensary Pick-Up",
+   "items": [
+    {
+     "title": "Browse the Menu",
+     "md": "Browse our [Big Rapids dispensary menu](/shop/big-rapids/) online or contact us at [(231) 598-9302](tel:+12315989302) for assistance."
+    },
+    {
+     "title": "Build Your Order",
+     "md": "Select your preferred products, choose the quantities, add them to your cart, and schedule a pick-up time that works for you."
+    },
+    {
+     "title": "Check Out",
+     "md": "Complete your order by providing your personal details. First-time visitors will need to present a valid ID for verification, while returning customers can sign in for a faster checkout process."
+    },
+    {
+     "title": "Curbside Pickup",
+     "md": "If curbside pickup is your preference, let us know, and we’ll notify you via text when your order is ready."
+    },
+    {
+     "title": "Enjoy Responsibly",
+     "md": "Enjoy our cannabis products responsibly. We're here to ensure a seamless shopping experience!"
+    }
+   ]
+  },
+  {
+   "type": "deals",
+   "id": "deals",
+   "source": "site",
+   "ground": "headlight",
+   "heading": "Deals",
+   "lead": "Deals vary by store and change often. The menu shows today's deals at High Society Big Rapids.",
+   "more": {
+    "text": "See all deals",
+    "href": "/deals/"
+   }
+  },
+  {
+   "type": "cards",
+   "id": "categories",
+   "ground": "white",
+   "columns": 4,
+   "heading": "Shop Cannabis Products",
+   "items": [
+    {
+     "title": "Flower",
+     "icon": "leaf",
+     "href": "/shop/big-rapids/?dtche%5Bcategory%5D=flower",
+     "md": "Each cannabis strain is carefully curated to your needs, whether you're seeking relaxation, creativity, or a balanced high."
+    },
+    {
+     "title": "Pre-Rolls",
+     "icon": "spark",
+     "href": "/shop/big-rapids/?dtche%5Bcategory%5D=pre-rolls"
+    },
+    {
+     "title": "Concentrates",
+     "icon": "drop",
+     "href": "/shop/big-rapids/?dtche%5Bcategory%5D=concentrates",
+     "md": "From shatter to wax, our concentrates are ideal for experienced users looking for a powerful and fast-acting option."
+    },
+    {
+     "title": "Vaporizers",
+     "icon": "wave",
+     "href": "/shop/big-rapids/?dtche%5Bcategory%5D=vaporizers"
+    }
+   ]
+  },
+  {
+   "type": "reviews",
+   "id": "reviews",
+   "source": "home",
+   "heading": "What Our Customers Say About Us",
+   "lead": "Google reviews from High Society customers across our Michigan stores."
+  },
+  {
+   "type": "faq",
+   "id": "faq",
+   "ground": "white",
+   "heading": "Frequently Asked Questions",
+   "lead": "More questions? Visit our [FAQ page](/faq/).",
+   "items": [
+    {
+     "q": "What are the requirements to purchase from High Society Cannabis Big Rapids?",
+     "a": "To shop at our dispensary, you need a valid government-issued ID proving you are 21 years or older. Individuals 18 and older with a medical marijuana card can also make purchases."
+    },
+    {
+     "q": "How should I handle a defective product?",
+     "a": "If you experience issues with a product's quality or functionality, please call us at [(231) 598-9302](tel:+12315989302) or visit the store where you made the purchase. Our team is happy to help."
+    },
+    {
+     "q": "What payment methods are supported at High Society dispensaries?",
+     "a": "High Society accepts cash and debit cards. Many locations also feature an in-store ATM for your convenience. Some stores may offer additional payment options—call ahead for details."
+    },
+    {
+     "q": "Is it legal to travel with cannabis?",
+     "a": "Cannabis purchases are legal in Michigan, but transporting cannabis across state lines is prohibited under federal law. Avoid taking cannabis products out of the state."
+    },
+    {
+     "q": "What types of cannabis products are available?",
+     "a": "We offer a wide range of high-quality products, including flower, pre-rolls, concentrates, vape pens, edibles, and more. Check out our menu or contact us with specific inquiries."
+    },
+    {
+     "q": "Are there any rewards programs for regular customers?",
+     "a": "Absolutely! Join The Society, our loyalty program, to start earning points on your purchases. Points can be redeemed for exclusive discounts and offers. Speak to our staff for more information."
+    }
+   ]
+  },
+  {
+   "type": "amenities",
+   "id": "service-area",
+   "ground": "headlight",
+   "heading": "Locations Where Our Dispensary Provides Service",
+   "groups": [
+    {
+     "title": "Towns",
+     "items": [
+      {
+       "icon": "pin",
+       "label": "Big Rapids"
+      },
+      {
+       "icon": "pin",
+       "label": "Rodney"
+      },
+      {
+       "icon": "pin",
+       "label": "Stanwood"
+      }
+     ]
+    },
+    {
+     "title": "ZIP Codes We Serve",
+     "items": [
+      {
+       "icon": "target",
+       "label": "49307"
+      },
+      {
+       "icon": "target",
+       "label": "49342"
+      },
+      {
+       "icon": "target",
+       "label": "49346"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "id": "resources",
+   "ground": "white",
+   "heading": "Other Resources",
+   "style": "dot",
+   "items": [
+    "Stay updated on the latest [regulations and information about marijuana use](https://www.cityofbr.org/department/community_development/marihuana_information/index.php) in Big Rapids, MI.",
+    "Get up-to-date with important [cannabis information](https://www.michigan.gov/cra/laws-rules-other) in Michigan.",
+    "Read our guide to [Michigan marijuana laws](/cannabis-laws-by-state/michigan/)."
+   ]
+  },
+  {
+   "type": "nearby",
+   "id": "nearby",
+   "store": "big-rapids",
+   "order": [
+    "mount-pleasant",
+    "east-lansing",
+    "charlotte",
+    "birch-run",
+    "saline",
+    "lenox",
+    "new-buffalo"
+   ],
+   "heading": "Other High Society Locations",
+   "lead": "Our other Michigan stores, nearest first.",
+   "view": {
+    "text": "View Location"
+   }
+  },
+  {
+   "type": "split",
+   "id": "app",
+   "ground": "charcoal",
+   "heading": "Download the High Society App",
+   "md": "Experience convenience at your fingertips with the High Society App. Easily browse our full cannabis menu, stay updated on the latest deals, and place your orders with just a few taps. Whether you're at home or on the go, managing your cannabis experience has never been easier.",
+   "image": "derived:app-phone-mockup",
+   "imageAlt": "",
+   "ctas": [
+    {
+     "text": "Download Now",
+     "href": "https://apps.apple.com/us/app/high-society-cannabis/id6503314334"
+    }
+   ]
+  }
+ ],
+ "review": {
+  "lane": "stores",
+  "generator": "tmp/stores-work/gen.mjs",
+  "fixes": [
+   "h1 casing normalised (High Society's words kept): \"Weed Dispensary In Big Rapdis, MI\" -> \"Weed Dispensary In Big Rapids, MI\""
+  ],
+  "newCopy": [
+   "resources: \"Read our guide to Michigan marijuana laws.\" (link to the planned law guide)",
+   "hero eyebrow (store name + \"Recreational 21+\")",
+   "store-details \"more\" link labels (Deals, Loyalty, FAQs, Medical Card Guide)",
+   "amenities heading \"Store Amenities\" and group \"Before You Go\" (its two lines condense High Society's ID and ordering steps)",
+   "step titles (the step texts are High Society's)",
+   "deals heading and lead",
+   "reviews lead",
+   "FAQ lead",
+   "service-area group titles",
+   "nearby heading and lead"
+  ],
+  "keptForClient": [
+   "first-time guide payment line (\"cash, credit, or debit\") vs the FAQ (cash and debit): OPEN-DECISIONS 4",
+   "\"vertically/fully integrated ... from cultivation to retail\" (OPEN-DECISIONS 6)",
+   "medical patients 18+ in the FAQ (OPEN-DECISIONS 5)"
+  ]
+ }
+}

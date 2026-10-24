@@ -1,0 +1,146 @@
+/* components.css — the shared kit every section builds from. Ground-aware: every rule reads the section's
+   --bg / --fg / --fg-2 / --line / --card / --em / --btn names (theme.css), so one markup works on every ground.
+   Buttons, tags, cards, media, carousel + dots + counter, read-more, internal scroll area, accordion. */
+
+/* ----------------------------------------------------------------- buttons
+   the reskin's square button: Changa One drawn bold, uppercase, tracking .12em; red with white type, turning white
+   (ink type) on dark grounds and ink on light ones when hovered. A ghost button for the second action. */
+.btn { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: .6em; min-height: 48px; padding: 0 1.5em; border: 2px solid transparent; border-radius: var(--radius); font: 700 var(--fs-btn)/1 var(--font-display); letter-spacing: var(--ls-btn); text-transform: uppercase; white-space: nowrap; cursor: pointer; transition: transform var(--dur) var(--ease), background-color var(--dur) var(--ease), color var(--dur) var(--ease), border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease); }
+.btn--primary { background: var(--btn); border-color: var(--btn-line); color: var(--on-btn); }
+.btn--primary:hover { background: var(--btn-hover); border-color: var(--btn-hover); color: var(--on-btn-hover, var(--on-btn)); transform: translateY(-2px); box-shadow: 0 10px 24px -12px var(--k-50); }
+.theme-red .btn--primary:hover { box-shadow: none; }   /* no shadow on the flat red ground (brand: the red stays flat) */
+.btn--ghost { background: transparent; border-color: var(--ghost-line); color: var(--ghost); }
+.btn--ghost:hover { background: var(--ghost-hover-bg); border-color: var(--ghost-hover-bg); color: var(--ghost-hover-fg); transform: translateY(-2px); }
+.btn--lg { min-height: clamp(48px, 6.4svh, 56px); padding-inline: 1.8em; }
+.btn--sm { min-height: 44px; padding-inline: 1.1em; font-size: .8125rem; }
+.btn--block { width: 100%; }
+.btn .icon { flex: none; }
+.btn:active { transform: translateY(0); }
+.textlink { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font: 700 var(--fs-btn)/1 var(--font-head); letter-spacing: var(--ls-btn); text-transform: uppercase; color: var(--fg); }
+.textlink .icon { color: var(--em); transition: transform var(--dur) var(--ease); }
+.textlink:hover .icon { transform: translateX(3px); }
+
+/* ------------------------------------------------------------------- tags */
+.tag { display: inline-flex; align-items: center; min-height: 26px; padding: 0 10px; border-radius: var(--radius-tag); background: var(--tag); color: var(--on-tag); font: 700 .8125rem/1 var(--font-head); letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+
+/* ------------------------------------------------------------------- cards
+   one card: square, a hairline, the ground's card colour; a subtle lift on hover (brief: "a subtle hover lift") */
+.card { position: relative; background: var(--card); color: var(--card-fg, var(--fg)); border: var(--hairline) solid var(--line); border-radius: var(--radius-lg); overflow: hidden; }
+.card--lift { transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease); }
+.card--lift:hover, .card--lift:focus-within { border-color: var(--card-hover-line, var(--line-2)); }
+/* light grounds lift the card a little with a soft shadow; on ink the hairline turns red (the reskin's panels) */
+:is(.theme-white, .theme-headlight, .theme-cream) .card--lift:hover, :is(.theme-white, .theme-headlight, .theme-cream) .card--lift:focus-within { transform: translateY(-4px); box-shadow: 0 18px 36px -22px var(--k-50); }
+@media (prefers-reduced-motion: reduce) { :is(.theme-white, .theme-headlight, .theme-cream) .card--lift:hover, :is(.theme-white, .theme-headlight, .theme-cream) .card--lift:focus-within { transform: none; } }
+.media { position: relative; overflow: hidden; background: var(--charcoal); }
+.media > img, .media > picture > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+/* the whole card is the hit area (::after); the link's own box keeps a 44px target */
+.cover-link::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+.cover-link { --cl-pad: max(11px, calc((44px - 1lh) / 2)); display: inline-block; min-width: 44px; min-height: 44px; padding-block: var(--cl-pad); margin-block: calc(var(--cl-pad) * -1); }
+/* anything inside a cover-linked card that is its own control sits above the cover */
+.card .btn, .card a:not(.cover-link), .card button { position: relative; z-index: 2; }
+
+/* ---------------------------------------------------------------- carousel
+   No scroll snapping anywhere (brief: NATURAL SCROLLING, "no scroll lock or snap"): a row swipes freely, the arrows
+   and the arrow keys page it card by card (site.js), the counter or the dots follow.
+   Desktop: the row stays inside the padded area. Phones: the row may run into the RIGHT padding only, so the next
+   card peeks in by up to 20px to signal the swipe (brief: "by 16–24px"). */
+.carousel { position: relative; display: flex; flex-direction: column; gap: var(--gap-sm); min-height: 0; min-width: 0; flex: 1 1 0; }
+.carousel__viewport { flex: 1 1 0; min-height: 0; overflow-x: auto; overflow-y: hidden; scrollbar-width: none; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; }
+.carousel__viewport::-webkit-scrollbar { display: none; }
+.carousel__track { height: 100%; display: flex; gap: var(--car-gap, var(--gap)); }
+.carousel__track > * { flex: none; min-height: 0; }
+@media (max-width: 767.98px) {
+  .carousel__viewport { margin-right: calc(var(--pad-r) * -1); padding-right: var(--pad-r); scroll-padding-right: var(--pad-r); }
+  .carousel__track::after { content: ""; flex: none; width: 1px; }
+}
+.carousel__ui { flex: none; display: flex; align-items: center; justify-content: flex-end; gap: var(--s-1); }
+.carousel__count { min-width: 3.4em; text-align: center; font: 400 .9375rem/1 var(--font-display); letter-spacing: .06em; color: var(--fg); font-variant-numeric: tabular-nums; }
+.carousel__btn { width: 44px; height: 44px; display: inline-grid; place-items: center; border: 1.5px solid var(--line-2); border-radius: var(--radius); background: transparent; color: var(--fg); transition: background-color var(--dur) var(--ease), border-color var(--dur) var(--ease), color var(--dur) var(--ease), opacity var(--dur) var(--ease); }
+.carousel__btn:hover:not([aria-disabled="true"]) { background: var(--btn); border-color: var(--btn); color: var(--on-btn); }
+.carousel__btn[aria-disabled="true"] { opacity: .35; cursor: default; }
+.carousel.is-static .carousel__ui { display: none; }
+/* dots: the reskin's square dots, the current one long and red */
+.dots { display: flex; align-items: center; justify-content: center; }
+.dots button { width: 28px; height: 44px; display: grid; place-items: center; }
+.dots button::before { content: ""; width: 10px; height: 4px; background: var(--line-2); transition: width var(--dur) var(--ease), background-color var(--dur) var(--ease); }
+.dots button[aria-current="true"]::before { width: 28px; background: var(--red); }   /* the reskin's progress dots */
+
+/* -------------------------------------------------------------- read more
+   a fixed card height; "Read more" opens the rest INSIDE the card (brief): the text area becomes a hinted scroll area
+   in the same box, so the card never grows and nothing is cut */
+.readmore { display: flex; flex-direction: column; gap: var(--s-1); min-height: 0; }
+.readmore__text { flex: 0 1 auto; min-height: 0; overflow: hidden; position: relative; }
+.readmore[data-collapsed="true"][data-long="true"] .readmore__text { -webkit-mask-image: linear-gradient(180deg, #000 calc(100% - 2.2em), transparent); mask-image: linear-gradient(180deg, #000 calc(100% - 2.2em), transparent); }
+.readmore[data-collapsed="false"] .readmore__text { overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; }
+.readmore__btn { align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; min-height: 44px; font: 700 .8125rem/1 var(--font-head); letter-spacing: var(--ls-btn); text-transform: uppercase; color: var(--em); }
+.readmore__btn .icon { transition: transform var(--dur) var(--ease); }
+.readmore[data-collapsed="false"] .readmore__btn .icon { transform: rotate(180deg); }
+.readmore[data-long="false"] .readmore__btn { visibility: hidden; }
+
+/* ------------------------------------------------- internal scroll (last resort) */
+.scrolly { position: relative; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: var(--line-2) transparent; min-height: 0; }
+.scrolly[data-overflow="true"] { -webkit-mask-image: linear-gradient(180deg, #000 calc(100% - 34px), rgba(0, 0, 0, .25)); mask-image: linear-gradient(180deg, #000 calc(100% - 34px), rgba(0, 0, 0, .25)); }
+.scrolly[data-overflow="true"][data-at-end="true"] { -webkit-mask-image: none; mask-image: none; }
+.scrollhint { display: none; align-items: center; justify-content: center; gap: 6px; min-height: 20px; font: 700 .75rem/1 var(--font-head); letter-spacing: .12em; text-transform: uppercase; color: var(--fg-2); }
+.scrollhint .icon { color: var(--em); }
+[data-overflow="true"] + .scrollhint { display: flex; }
+
+/* --------------------------------------------------------------- accordion */
+.acc { display: flex; flex-direction: column; gap: var(--s-1); min-height: 0; }
+.acc__item { background: var(--card); border: var(--hairline) solid var(--line); }
+.acc__q { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; padding: 6px 8px 6px var(--s-2); cursor: pointer; font: 800 var(--fs-h3)/1.05 var(--font-head); text-transform: uppercase; }
+.acc__q::-webkit-details-marker { display: none; }
+.acc__icon { flex: none; width: 32px; height: 32px; display: grid; place-items: center; color: var(--em); transition: transform var(--dur) var(--ease); }
+.acc__item[open] .acc__icon { transform: rotate(45deg); }
+.acc__a { padding: 0 var(--s-2) var(--s-2); }
+
+/* ----------------------------------------------------------------- tickers
+   the reskin's rolling store names (decoration, aria-hidden). The track holds the run twice and slides by half its
+   width, so the loop is seamless. The viewport is a horizontal scroller that takes no pointer: its content really does
+   run past the screen's edges (a marquee), the page never scrolls sideways. Still under reduced motion. */
+.ticker { overflow-x: auto; overflow-y: hidden; scrollbar-width: none; pointer-events: none; user-select: none; }
+.ticker::-webkit-scrollbar { display: none; }
+.ticker__track { display: flex; width: max-content; animation: ticker var(--ticker-dur, 60s) linear infinite; }
+.ticker__run { display: flex; align-items: center; flex: none; }
+.ticker__name { white-space: nowrap; text-transform: uppercase; }
+.ticker__mark { flex: none; background: var(--mark-white) center / contain no-repeat; }
+.ticker--rev .ticker__track { animation-direction: reverse; }
+@keyframes ticker { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .ticker__track { animation: none; } }
+/* the giant white names over a photo (the hero), with red trophy marks */
+.ticker--big .ticker__name { font: 900 clamp(52px, 8.6vw, 150px)/.9 var(--font-display); color: var(--white); padding: 0 .14em; letter-spacing: -.01em; }
+.ticker--big .ticker__mark { width: clamp(30px, 4.8vw, 84px); height: clamp(30px, 4.8vw, 84px); margin: 0 .12em; background-image: var(--mark-red); }
+.ticker--big { --ticker-dur: 70s; }
+/* the outline row rolling the other way */
+.ticker--outline .ticker__name { color: transparent; -webkit-text-stroke: 1.5px var(--w-55); }
+.ticker--outline .ticker__mark { opacity: .55; background-image: var(--mark-white); }
+.ticker--outline { --ticker-dur: 90s; }
+/* the footer's red band */
+.ticker--band { height: 3.4rem; display: flex; align-items: center; background: var(--red); --ticker-dur: 60s; }
+.ticker--band .ticker__name { font: 900 1rem/1 var(--font-display); letter-spacing: .14em; color: var(--white); padding: 0 1.4rem; }
+.ticker--band .ticker__mark { width: 1.3rem; height: 1.3rem; }
+/* the tickers' pause control (WCAG 2.2.2; owner, 2026-10-22: no pause/play button): an empty layer over one ticker
+   band (.motion-band, its band positioned) is the toggle. site.js makes it role="button", label "Pause motion",
+   aria-pressed saying whether motion is paused; it pauses every ticker on the page. Empty, so its name never conflicts
+   with the names the band rolls; it takes the pointer (the tickers do not); the focus ring is drawn inside it, since the
+   band runs edge to edge */
+html[data-motion="paused"] .ticker__track { animation-play-state: paused; }
+/* without scripts there is no control, so nothing rolls */
+.no-js .ticker__track { animation: none; }
+.motion-band { position: absolute; inset: 0; }
+.motion-band[role="button"] { pointer-events: auto; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.motion-band[role="button"]:focus-visible { outline-offset: -3px; }
+
+/* ------------------------------------------------------------- corners
+   a little rounder everywhere (owner, 2026-10-22): controls var(--radius), cards and panels var(--radius-lg); a
+   rounded box clips what it holds (photos, plates, the red top rules). Logos keep their own shapes; full-bleed bands
+   and the split-screen age gate run edge to edge and have no corners to round. */
+.iconbtn, .mmenu__toggle, .dialog__close, .skip { border-radius: var(--radius); }
+.store, .nav__sub, .craft__shot { border-radius: var(--radius-lg); overflow: hidden; }
+.dialog__panel { border-radius: var(--radius-lg); overflow: hidden; }
+.agegate .dialog__panel { border-radius: 0; }
+@media (max-width: 767.98px) { .dialog--sheet .dialog__panel { border-radius: var(--radius-lg) var(--radius-lg) 0 0; } }
+@media (min-width: 768px) and (orientation: landscape) { .craft__panel { border-radius: var(--radius-lg); overflow: hidden; } .craft__shot { border-radius: 0; } }
+.secnum::before { border-radius: var(--radius-tag); }
+.dots button::before { border-radius: 2px; }
+

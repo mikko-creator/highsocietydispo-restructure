@@ -1,0 +1,19 @@
+{
+ "path": "/blog/cannabis-101/",
+ "template": "blog-index",
+ "provenance": "new",
+ "title": "Cannabis 101: Beginner Guides to Weed",
+ "crumb": "Cannabis 101",
+ "metaDescription": "Cannabis 101 from High Society: beginner guides to THC and CBD, flower, vapes, edibles and concentrates, label basics and the start-low, go-slow rule.",
+ "h1": "Cannabis 101",
+ "hero": {
+  "lead": "New to cannabis, or coming back after a long break? Cannabis 101 covers the basics in plain language: what THC and CBD are, how flower, vapes, edibles and concentrates differ, how each one is used and how to read the figures on a product label. Trying a new product? Keep the first serving small and be patient. When you visit, our budtenders are happy to help you find a good fit."
+ },
+ "sourceRefs": [
+  "structure-map:/blog/cannabis-101/",
+  "structure-map:newPageBriefs blog-category-intros"
+ ],
+ "review": {
+  "notes": "Title and h1 from the structure map; intro and description are new copy (brief blog-category-intros: 50-100 words). Category from site.json blog.categories (the build pairs this page with its slug by path). The map title \"Cannabis 101: Beginner Guides to Weed and Products\" is 65 characters with the suffix; trimmed to 52."
+ }
+}

@@ -1,0 +1,1103 @@
+{
+ "meta": {
+  "lang": "en",
+  "title": "High Society Weed Dispensary: Best Cannabis Shops In Michigan",
+  "description": "Quality cannabis at High Society, Michigan's top dispensary with locations in Big Rapids, Birch Run, Charlotte, East Lansing, Lenox, Mount Pleasant, and Saline.",
+  "origin": "https://sgencms.github.io/client-highsocietydispo-reskin/",
+  "themeColor": "#BF3226",
+  "raw": "client-highsocietydispo-reskin-index.html.html",
+  "head": [
+   {
+    "attr": "property",
+    "key": "og:title",
+    "content": "High Society Weed Dispensary: Best Cannabis Shops In Michigan"
+   },
+   {
+    "attr": "property",
+    "key": "og:description",
+    "content": "Quality cannabis at High Society, Michigan's top dispensary with locations in Big Rapids, Birch Run, Charlotte, East Lansing, Lenox, Mount Pleasant, and Saline."
+   },
+   {
+    "attr": "property",
+    "key": "og:image",
+    "content": "https://highsocietydispo.com/sites/sg_highsocietydispo_com/uploads/2024/11/High_Society_Logo.webp"
+   },
+   {
+    "attr": "property",
+    "key": "og:image:secure_url",
+    "content": "https://highsocietydispo.com/sites/sg_highsocietydispo_com/uploads/2024/11/High_Society_Logo.webp"
+   },
+   {
+    "attr": "name",
+    "key": "robots",
+    "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+   },
+   {
+    "attr": "name",
+    "key": "google-site-verification",
+    "content": "bFimPnFtEipC1pWfBjzIbI-D7NdLsXEalIu5Jm_8aUc"
+   }
+  ],
+  "canonical": "https://highsocietydispo.com/",
+  "icon": "assets/pit-stop/logo/b-mark-badge-keyline.svg"
+ },
+ "skip": {
+  "text": "Skip to main content",
+  "href": "#main-inner"
+ },
+ "header": {
+  "logo": {
+   "href": "index.html",
+   "src": "assets/pit-stop/logo/b-horizontal-web-keyline.svg",
+   "alt": "High Society Brand Logo"
+  },
+  "selectA": {
+   "text": "Select a Location",
+   "href": "#dispenzaLocationPopup-open"
+  },
+  "nav": [
+   {
+    "text": "Menu",
+    "href": "{{location_shop_url}}"
+   },
+   {
+    "text": "Loyalty",
+    "href": "loyalty/index.html"
+   },
+   {
+    "text": "Locations",
+    "href": "dispensary-locations/index.html",
+    "sub": [
+     {
+      "text": "Big Rapids",
+      "href": "dispensary-locations/big-rapids/index.html"
+     },
+     {
+      "text": "Birch Run",
+      "href": "dispensary-locations/birch-run/index.html"
+     },
+     {
+      "text": "Charlotte",
+      "href": "dispensary-locations/charlotte/index.html"
+     },
+     {
+      "text": "East Lansing",
+      "href": "dispensary-locations/east-lansing/index.html"
+     },
+     {
+      "text": "Lenox",
+      "href": "dispensary-locations/lenox/index.html"
+     },
+     {
+      "text": "Mount Pleasant",
+      "href": "dispensary-locations/mount-pleasant/index.html"
+     },
+     {
+      "text": "New Buffalo",
+      "href": "dispensary-locations/new-buffalo/index.html"
+     },
+     {
+      "text": "Saline",
+      "href": "dispensary-locations/saline/index.html"
+     }
+    ]
+   },
+   {
+    "text": "Contact Us",
+    "href": "contact/index.html"
+   },
+   {
+    "text": "About Us",
+    "href": "about/index.html"
+   },
+   {
+    "text": "Deals",
+    "href": "#"
+   }
+  ],
+  "join": {
+   "text": "Join The Society",
+   "href": "club-member-program/index.html"
+  },
+  "selectShort": {
+   "text": "Select Location",
+   "href": "#dispenzaLocationPopup-open"
+  },
+  "burgerAria": "Open mobile navigation from the right",
+  "mobileNavAria": "Mobile navigation sidebar"
+ },
+ "hero": {
+  "title": "Your Trusted Source for Quality Cannabis in Michigan",
+  "banner": {
+   "src": "assets/in-pages/banner_logo.webp",
+   "alt": ""
+  },
+  "logo": {
+   "src": "assets/in-pages/Layer_13_copy.webp",
+   "alt": "High Society Weed Dispensary logo"
+  },
+  "order": {
+   "text": "Order Now",
+   "href": "{{location_shop_url}}",
+   "aria": "Order Now"
+  },
+  "cta": {
+   "text": "CALL TO ACTION",
+   "href": "#sgp_4",
+   "aria": "CALL TO ACTION"
+  }
+ },
+ "cmsSlots": [
+  {
+   "id": "ikjs2",
+   "cls": [
+    "dl-content"
+   ],
+   "placeholder": "Please add a content..."
+  },
+  {
+   "id": "is209",
+   "cls": [
+    "dl-content"
+   ],
+   "placeholder": "Please add a content..."
+  },
+  {
+   "id": "iryvf",
+   "cls": [
+    "dl-heading"
+   ],
+   "placeholder": ""
+  },
+  {
+   "id": "im4qg",
+   "cls": [
+    "dl-content"
+   ],
+   "placeholder": "Please add a content..."
+  },
+  {
+   "id": "iktdr",
+   "cls": [
+    "dl-content",
+    "sg-spacing-checkered"
+   ],
+   "placeholder": "Please add a content..."
+  },
+  {
+   "id": "itbrm",
+   "cls": [
+    "dl-content"
+   ],
+   "placeholder": "Please add a content..."
+  },
+  {
+   "id": "ihvb9",
+   "cls": [
+    "dl-content"
+   ],
+   "placeholder": "Please add a content..."
+  },
+  {
+   "id": "i4epo",
+   "cls": [
+    "dl-content"
+   ],
+   "placeholder": "Please add a content..."
+  },
+  {
+   "id": "iw9b2",
+   "cls": [
+    "dl-content",
+    "sg-spacing-checkered"
+   ],
+   "placeholder": "Please add a content..."
+  },
+  {
+   "id": "ieb8f",
+   "cls": [
+    "dl-heading"
+   ],
+   "placeholder": ""
+  },
+  {
+   "id": "i2vvf",
+   "cls": [
+    "dl-content",
+    "sg-spacing-checkered"
+   ],
+   "placeholder": "Please add a content..."
+  }
+ ],
+ "locations": {
+  "title": "Locations",
+  "cards": [
+   {
+    "name": [
+     "Birch",
+     "Run"
+    ],
+    "href": "dispensary-locations/birch-run/index.html",
+    "aria": "View item",
+    "img": {
+     "src": "assets/pit-stop/img/scene-birch-run.jpg",
+     "alt": ""
+    },
+    "addressLabel": "Address:",
+    "address": [
+     "9242 Tiffany Blvd",
+     "Birch Run, MI 48415"
+    ],
+    "phoneLabel": "Telephone:",
+    "phone": {
+     "text": "(989) 244-3001",
+     "href": "tel:(989) 244-3001"
+    },
+    "hoursLabel": "Monday - Sunday",
+    "hours": "9:00 AM - 9:00 PM",
+    "order": {
+     "text": "Order Now",
+     "href": "shop/birch-run/index.html",
+     "aria": "Visit cta Order Now"
+    }
+   },
+   {
+    "name": [
+     "East",
+     "Lansing"
+    ],
+    "href": "dispensary-locations/east-lansing/index.html",
+    "aria": "View item",
+    "img": {
+     "src": "assets/pit-stop/img/scene-east-lansing.jpg",
+     "alt": ""
+    },
+    "addressLabel": "Address:",
+    "address": [
+     "2040 Merritt Rd",
+     "East Lansing, MI 48823"
+    ],
+    "phoneLabel": "Telephone:",
+    "phone": {
+     "text": "(517) 708-8043",
+     "href": "tel:(517) 708-8043"
+    },
+    "hoursLabel": "Monday - Sunday",
+    "hours": "9:00 AM - 9:00 PM",
+    "order": {
+     "text": "Order Now",
+     "href": "shop/east-lansing/index.html",
+     "aria": "Visit cta Order Now"
+    }
+   },
+   {
+    "name": [
+     "Big",
+     "Rapids"
+    ],
+    "href": "dispensary-locations/big-rapids/index.html",
+    "aria": "View item",
+    "img": {
+     "src": "assets/pit-stop/img/scene-big-rapids.jpg",
+     "alt": ""
+    },
+    "addressLabel": "Address:",
+    "address": [
+     "804 Clark St",
+     "Big Rapids, MI 49307"
+    ],
+    "phoneLabel": "Telephone:",
+    "phone": {
+     "text": "(231) 598-9302",
+     "href": "tel:(231) 598-9302"
+    },
+    "hoursLabel": "Monday - Sunday",
+    "hours": "9:00 AM - 9:00 PM",
+    "order": {
+     "text": "Order Now",
+     "href": "shop/big-rapids/index.html",
+     "aria": "Visit cta Order Now"
+    }
+   },
+   {
+    "name": [
+     "Charlotte"
+    ],
+    "href": "dispensary-locations/charlotte/index.html",
+    "aria": "View item",
+    "img": {
+     "src": "assets/pit-stop/img/scene-charlotte.jpg",
+     "alt": ""
+    },
+    "addressLabel": "Address:",
+    "address": [
+     "515 Lansing St",
+     "Charlotte, MI 48813"
+    ],
+    "phoneLabel": "Telephone:",
+    "phone": {
+     "text": "(517) 786-3002",
+     "href": "tel:(517) 786-3002"
+    },
+    "hoursLabel": "Monday - Sunday",
+    "hours": "9:00 AM - 9:00 PM",
+    "order": {
+     "text": "Order Now",
+     "href": "shop/charlotte/index.html",
+     "aria": "Visit cta Order Now"
+    }
+   },
+   {
+    "name": [
+     "Lenox"
+    ],
+    "href": "dispensary-locations/lenox/index.html",
+    "aria": "View item",
+    "img": {
+     "src": "assets/pit-stop/img/scene-lenox.jpg",
+     "alt": ""
+    },
+    "addressLabel": "Address:",
+    "address": [
+     "60695 Gratiot Ave",
+     "Lenox, MI 48048"
+    ],
+    "phoneLabel": "Telephone:",
+    "phone": {
+     "text": "(586) 430-1347",
+     "href": "tel:(586) 430-1347"
+    },
+    "hoursLabel": "Monday - Sunday",
+    "hours": "9:00 AM - 9:00 PM",
+    "order": {
+     "text": "Order Now",
+     "href": "shop/lenox/index.html",
+     "aria": "Visit cta Order Now"
+    }
+   },
+   {
+    "name": [
+     "Mount",
+     "Pleasant"
+    ],
+    "href": "dispensary-locations/mount-pleasant/index.html",
+    "aria": "View item",
+    "img": {
+     "src": "assets/pit-stop/img/scene-mount-pleasant.jpg",
+     "alt": ""
+    },
+    "addressLabel": "Address:",
+    "address": [
+     "317 N Mission St",
+     "Mt Pleasant, MI 48858"
+    ],
+    "phoneLabel": "Telephone:",
+    "phone": {
+     "text": "(989) 317-0290",
+     "href": "tel:(989) 317-0290"
+    },
+    "hoursLabel": "Monday - Sunday",
+    "hours": "9:00 AM - 9:00 PM",
+    "order": {
+     "text": "Order Now",
+     "href": "shop/mount-pleasant/index.html",
+     "aria": "Visit cta Order Now"
+    }
+   },
+   {
+    "name": [
+     "Saline"
+    ],
+    "href": "dispensary-locations/saline/index.html",
+    "aria": "View item",
+    "img": {
+     "src": "assets/pit-stop/img/scene-saline.jpg",
+     "alt": ""
+    },
+    "addressLabel": "Address:",
+    "address": [
+     "465 E Michigan Ave",
+     "Saline, MI 48176"
+    ],
+    "phoneLabel": "Telephone:",
+    "phone": {
+     "text": "(734) 470-6023",
+     "href": "tel:(734) 470-6023"
+    },
+    "hoursLabel": "Monday - Sunday",
+    "hours": "9:00 AM - 9:00 PM",
+    "order": {
+     "text": "Order Now",
+     "href": "shop/saline/index.html",
+     "aria": "Visit cta Order Now"
+    }
+   },
+   {
+    "name": [
+     "New",
+     "Buffalo"
+    ],
+    "href": "dispensary-locations/new-buffalo/index.html",
+    "aria": "View item",
+    "img": {
+     "src": "assets/pit-stop/img/scene-new-buffalo.jpg",
+     "alt": ""
+    },
+    "addressLabel": "Address:",
+    "address": [
+     "19189 US-12",
+     "New Buffalo, MI 49117"
+    ],
+    "phoneLabel": "Telephone:",
+    "phone": {
+     "text": "(269) 231-5213",
+     "href": "tel:(269) 231-5213"
+    },
+    "hoursLabel": "Monday - Sunday",
+    "hours": "9:00 AM - 9:00 PM",
+    "order": {
+     "text": "Order Now",
+     "href": "shop/new-buffalo/index.html",
+     "aria": "Visit cta Order Now"
+    }
+   }
+  ]
+ },
+ "deals": {
+  "title": "DEALS",
+  "cards": [
+   {
+    "href": "{{location_shop_url}}",
+    "aria": "Visit slider item BUY A POD",
+    "img": {
+     "src": "assets/in-pages/Clip_path_group.webp",
+     "alt": "710Labs Brand Logo"
+    },
+    "heading": "BUY A POD",
+    "free": "Free",
+    "caption": [
+     {
+      "text": "GET A",
+      "em": false
+     },
+     {
+      "text": "FREE",
+      "em": true
+     },
+     {
+      "text": "Battery",
+      "em": false
+     }
+    ]
+   },
+   {
+    "href": "#",
+    "aria": "Visit slider item B2G1",
+    "img": {
+     "src": "assets/in-pages/Clip_path_group__1_.webp",
+     "alt": "M.I.JANE Brand Logo"
+    },
+    "heading": "B2G1",
+    "free": "Free",
+    "brand": "M.I. JANE",
+    "weight": "3.5G"
+   }
+  ],
+  "banners": [
+   {
+    "href": "{{location_shop_url}}",
+    "aria": "View image item",
+    "img": {
+     "src": "assets/in-pages/hot_deals.webp",
+     "alt": "weed flower deals"
+    },
+    "mobile": {
+     "href": "{{location_shop_url}}",
+     "aria": "View image information 1",
+     "img": {
+      "src": "assets/in-pages/mobile_hot_deals.webp",
+      "alt": "deals on weed flower"
+     }
+    }
+   },
+   {
+    "href": "{{location_shop_url}}",
+    "aria": "View image item",
+    "img": {
+     "src": "assets/in-pages/hot_deals___2.webp",
+     "alt": "Cannabis Buds $5 per ounce with $100 Purchase"
+    },
+    "mobile": {
+     "href": "{{location_shop_url}}",
+     "aria": "View image information 2",
+     "img": {
+      "src": "assets/in-pages/hot_deals___mobile2.webp",
+      "alt": "Cannabis Buds $5 per ounce with $100 Purchase"
+     }
+    }
+   }
+  ]
+ },
+ "join": {
+  "title": "Join The Society",
+  "text": "Sign up to get early early access to strain drops, special pricing, birthday rewards and more",
+  "cta": {
+   "text": "Join the Society Today",
+   "href": "",
+   "hiddenTwin": {
+    "text": "Join the Society Today",
+    "href": "#",
+    "aria": "Join the Society Today"
+   }
+  }
+ },
+ "picks": {
+  "title": "Staff Picks",
+  "items": [
+   {
+    "href": "{{location_shop_url}}?dtche[path]=products&dtche[search]=mi+jane",
+    "aria": "View image information 1",
+    "img": {
+     "src": "assets/in-pages/2024_06_10_HighSociety_RemakeMIJaneLogo_1.webp",
+     "alt": "MI Jane logo"
+    }
+   },
+   {
+    "href": "{{location_shop_url}}?dtche[path]=products&dtche[search]=doozy",
+    "aria": "View image information 2",
+    "img": {
+     "src": "assets/in-pages/Doozy_Color_1.webp",
+     "alt": "Doozy logo"
+    }
+   },
+   {
+    "href": "{{location_shop_url}}?dtche[path]=products&dtche[search]=rooted",
+    "aria": "View image information 3",
+    "img": {
+     "src": "assets/in-pages/Rooted_Logo_1.webp",
+     "alt": "Rooted logo"
+    }
+   },
+   {
+    "href": "{{location_shop_url}}?dtche[path]=products&dtche[search]=glostix",
+    "aria": "View image information 4",
+    "img": {
+     "src": "assets/in-pages/Glostix_Logo_1.webp",
+     "alt": "Glostix logo"
+    }
+   }
+  ]
+ },
+ "craft": {
+  "title": [
+   "Where Cannabis",
+   "Meets Craftmanship"
+  ],
+  "text": "High Society stands out with its commitment to quality, customer service, and a wide selection of premium cannabis products. From expert budtenders to exclusive deals, we provide an elevated shopping experience tailored to your needs. Visit us to discover why we’re Michigan’s trusted choice for cannabis.",
+  "logo": {
+   "src": "assets/in-pages/high_society_cannabis__1__2.webp",
+   "alt": "High Society Weed Dispensary logo"
+  },
+  "logoMobile": {
+   "src": "assets/in-pages/high_society_cannabis__1__2__1_.webp",
+   "alt": "High Society Weed Dispensary logo"
+  },
+  "about": {
+   "text": "learn more",
+   "href": "about/index.html",
+   "aria": "learn more"
+  },
+  "menu": {
+   "text": "learn more",
+   "href": "{{location_shop_url}}",
+   "aria": "learn more"
+  },
+  "photos": [
+   {
+    "src": "assets/in-pages/image_1__1_.webp",
+    "alt": ""
+   },
+   {
+    "src": "assets/in-pages/image_1__1_.webp",
+    "alt": ""
+   }
+  ]
+ },
+ "app": {
+  "title": [
+   "Download the",
+   "High Society App"
+  ],
+  "text": "Experience convenience at your fingertips with the High Society App. Easily browse our full cannabis menu, stay updated on the latest deals, and place your orders with just a few taps. Whether you're at home or on the go, managing your cannabis experience has never been easier.",
+  "cta": {
+   "text": "Download Now",
+   "href": "https://apps.apple.com/us/app/high-society-cannabis/id6503314334",
+   "aria": "Download Now"
+  },
+  "img": {
+   "src": "assets/in-pages/app_img.webp",
+   "alt": ""
+  },
+  "bg": "assets/pit-stop/pattern/carbon-panel.svg"
+ },
+ "reviews": {
+  "title": "What Our Customers Say About Us",
+  "titlePhone": "What Our Customers Says About Us",
+  "badge": {
+   "src": "assets/in-pages/img1.webp",
+   "alt": "Google Rating"
+  },
+  "items": [
+   {
+    "text": "This place is definitely one of the best here in town they have amazing deals a loyalty membership that actually rewards your loyalty and even the cheapest joint there will get you high enough for a while.",
+    "name": "Jacob Argue",
+    "stars": 5
+   },
+   {
+    "text": "Out of all the dispos in Big Rapids, High society is hands down the best! Very attentive and helpful staff. They also run some pretty killer deals you can’t find other places",
+    "name": "Autumn Mckernan",
+    "stars": 5
+   },
+   {
+    "text": "Krystal was amazing and super helpful. I will definitely be back, as she had awesome recommendations. Jess did, too. Plus, they were so kind and patient with me. It can be a little overwhelming, but you can bet you're in good hands here. They will ensure you have an awesome experience no matter what!",
+    "name": "Brittany",
+    "stars": 5
+   },
+   {
+    "text": "Fantastic store, can't say enough good things about them. All of the bud tenders are friendly, knowledgeable, and can provide first-hand knowledge about products. The store is clean and inviting. Plenty of parking places. Their merchandise is displayed and organized to make shopping easier. They also have great deals through the app, be sure to check it out before shopping. I highly recommend shopping here!",
+    "name": "Charlotte Minar",
+    "stars": 5
+   },
+   {
+    "text": "JP was the best budtender I've had yet at High Society! He was much more approachable and educated us more on what they offer! Highly recommend coming into see him first hand!",
+    "name": "Maggie P",
+    "stars": 5
+   },
+   {
+    "text": "Stopped in with was a first time customer greeted at the door by one of the friendliest greeters I’ve ever met. Small talk was absolutely amazing! Good atmosphere inside of the store. Manager was very welcoming. As was the sales staff.",
+    "name": "David Stillwagon",
+    "stars": 5
+   },
+   {
+    "text": "I had a phenomenal experience Going to high Society. Lydia was not only amazing but helped me and a friend find some awesome deals! Recommend anyone who is visiting Mount Pleasant to go to high Society!!!",
+    "name": "Dallas Fletcher",
+    "stars": 5
+   },
+   {
+    "text": "Great selection, and Lydia did awesome explaining all of the products anytime I asked. Will definitely revisit. Great place!",
+    "name": "Daniel Shook",
+    "stars": 5
+   }
+  ]
+ },
+ "footer": {
+  "logo": {
+   "href": "index.html",
+   "aria": "View image item",
+   "src": "assets/pit-stop/logo/b-horizontal-web-keyline.svg",
+   "alt": "High Society Brand Logo"
+  },
+  "quick": {
+   "title": "Quick Links",
+   "links": [
+    {
+     "text": "Home",
+     "href": "index.html",
+     "aria": "Home"
+    },
+    {
+     "text": "About Us",
+     "href": "about/index.html",
+     "aria": "About Us"
+    },
+    {
+     "text": "Contact Us",
+     "href": "contact/index.html",
+     "aria": "Contact Us"
+    },
+    {
+     "text": "Loyalty",
+     "href": "loyalty/index.html",
+     "aria": "Loyalty"
+    },
+    {
+     "text": "Menu",
+     "href": "{{location_shop_url}}",
+     "aria": "Menu"
+    },
+    {
+     "text": "Careers",
+     "href": "careers/index.html",
+     "aria": "Careers"
+    }
+   ]
+  },
+  "locations": {
+   "title": "Locations",
+   "links": [
+    {
+     "text": "Big Rapids",
+     "href": "dispensary-locations/big-rapids/index.html",
+     "aria": "Big Rapids"
+    },
+    {
+     "text": "Birch Run",
+     "href": "dispensary-locations/birch-run/index.html",
+     "aria": "Birch Run"
+    },
+    {
+     "text": "Charlotte",
+     "href": "dispensary-locations/charlotte/index.html",
+     "aria": "Charlotte"
+    },
+    {
+     "text": "East Lansing",
+     "href": "dispensary-locations/east-lansing/index.html",
+     "aria": "East Lansing"
+    },
+    {
+     "text": "Lenox",
+     "href": "dispensary-locations/lenox/index.html",
+     "aria": "Lenox"
+    },
+    {
+     "text": "Mount Pleasant",
+     "href": "dispensary-locations/mount-pleasant/index.html",
+     "aria": "Mount Pleasant"
+    },
+    {
+     "text": "New Buffalo",
+     "href": "dispensary-locations/new-buffalo/index.html",
+     "aria": "New Buffalo"
+    },
+    {
+     "text": "Saline",
+     "href": "dispensary-locations/saline/index.html",
+     "aria": "Saline"
+    }
+   ]
+  },
+  "store": {
+   "title": "Your Store",
+   "slot": "ieb8f"
+  },
+  "copyright": "© Copyright 2025 High Society. All Rights Reserved.",
+  "legal": "Privacy Statement | Terms of Service | EULA",
+  "company": "Press / Media | Investment Opportunities | Careers"
+ },
+ "sticky": [
+  {
+   "text": "ORDER NOW",
+   "href": "{{location_shop_url}}"
+  },
+  {
+   "text": "CONTACT US",
+   "href": "contact/index.html"
+  }
+ ],
+ "locator": {
+  "title": "Select Location",
+  "aria": "Select shop location",
+  "closeAria": "Close store location sidebar",
+  "closeHref": "#close",
+  "stores": [
+   {
+    "name": "Charlotte",
+    "href": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=1",
+    "address": [
+     "515 Lansing St",
+     "Charlotte, MI 48813-1100"
+    ],
+    "phone": {
+     "text": "(517) 786-3002",
+     "href": "tel:(517) 786-3002"
+    },
+    "select": {
+     "text": "SELECT LOCATION",
+     "href": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=1"
+    },
+    "shop": {
+     "text": "SHOP NOW",
+     "href": "shop/charlotte/index.html"
+    },
+    "view": {
+     "text": "VIEW LOCATION",
+     "href": "dispensary-locations/charlotte/index.html"
+    }
+   },
+   {
+    "name": "Mount Pleasant",
+    "href": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=2",
+    "address": [
+     "317 North Mission Street",
+     "Mount Pleasant, MI 48858"
+    ],
+    "phone": {
+     "text": "(989) 317-0290",
+     "href": "tel:(989) 317-0290"
+    },
+    "select": {
+     "text": "SELECT LOCATION",
+     "href": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=2"
+    },
+    "shop": {
+     "text": "SHOP NOW",
+     "href": "shop/mount-pleasant/index.html"
+    },
+    "view": {
+     "text": "VIEW LOCATION",
+     "href": "dispensary-locations/mount-pleasant/index.html"
+    }
+   },
+   {
+    "name": "Saline",
+    "href": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=3",
+    "address": [
+     "465 E Michigan Ave",
+     "Saline, MI 48176"
+    ],
+    "phone": {
+     "text": "(734) 470-6023",
+     "href": "tel:(734) 470-6023"
+    },
+    "select": {
+     "text": "SELECT LOCATION",
+     "href": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=3"
+    },
+    "shop": {
+     "text": "SHOP NOW",
+     "href": "shop/saline/index.html"
+    },
+    "view": {
+     "text": "VIEW LOCATION",
+     "href": "dispensary-locations/saline/index.html"
+    }
+   },
+   {
+    "name": "East Lansing",
+    "href": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=4",
+    "address": [
+     "2040 Merritt Road",
+     "East Lansing, MI 48823"
+    ],
+    "phone": {
+     "text": "(517) 708-8043",
+     "href": "tel:(517) 708-8043"
+    },
+    "select": {
+     "text": "SELECT LOCATION",
+     "href": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=4"
+    },
+    "shop": {
+     "text": "SHOP NOW",
+     "href": "shop/east-lansing/index.html"
+    },
+    "view": {
+     "text": "VIEW LOCATION",
+     "href": "dispensary-locations/east-lansing/index.html"
+    }
+   },
+   {
+    "name": "Lenox",
+    "href": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=5",
+    "address": [
+     "60695 Gratiot Avenue",
+     "Lenox, MI 48048"
+    ],
+    "phone": {
+     "text": "(586) 430-1347",
+     "href": "tel:(586) 430-1347"
+    },
+    "select": {
+     "text": "SELECT LOCATION",
+     "href": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=5"
+    },
+    "shop": {
+     "text": "SHOP NOW",
+     "href": "shop/lenox/index.html"
+    },
+    "view": {
+     "text": "VIEW LOCATION",
+     "href": "dispensary-locations/lenox/index.html"
+    }
+   },
+   {
+    "name": "Birch Run",
+    "href": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=7",
+    "address": [
+     "9242 Tiffany Blvd",
+     "Birch Run, MI 48415"
+    ],
+    "phone": {
+     "text": "(989) 244-3001",
+     "href": "tel:(989) 244-3001"
+    },
+    "select": {
+     "text": "SELECT LOCATION",
+     "href": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=7"
+    },
+    "shop": {
+     "text": "SHOP NOW",
+     "href": "shop/birch-run/index.html"
+    },
+    "view": {
+     "text": "VIEW LOCATION",
+     "href": "dispensary-locations/birch-run/index.html"
+    }
+   },
+   {
+    "name": "Big Rapids",
+    "href": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=9",
+    "address": [
+     "804 Clark St",
+     "Big Rapids, MI 49307"
+    ],
+    "phone": {
+     "text": "(231) 598-9302",
+     "href": "tel:(231) 598-9302"
+    },
+    "select": {
+     "text": "SELECT LOCATION",
+     "href": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=9"
+    },
+    "shop": {
+     "text": "SHOP NOW",
+     "href": "shop/big-rapids/index.html"
+    },
+    "view": {
+     "text": "VIEW LOCATION",
+     "href": "dispensary-locations/big-rapids/index.html"
+    }
+   },
+   {
+    "name": "New Buffalo",
+    "href": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=10",
+    "address": [
+     "19189 US-12",
+     "New Buffalo, MI 49117"
+    ],
+    "phone": {
+     "text": "(269) 231-5213",
+     "href": "tel:(269) 231-5213"
+    },
+    "select": {
+     "text": "SELECT LOCATION",
+     "href": "https://highsocietydispo.com/do_dispenzalocations/set_location?loc_id=10"
+    },
+    "shop": {
+     "text": "SHOP NOW",
+     "href": "shop/new-buffalo/index.html"
+    },
+    "view": {
+     "text": "VIEW LOCATION",
+     "href": "dispensary-locations/new-buffalo/index.html"
+    }
+   }
+  ]
+ },
+ "popups": [
+  {
+   "id": "sgp_1",
+   "aria": "Popup - My Popup",
+   "title": "My Popup",
+   "cls": []
+  },
+  {
+   "id": "sgp_2",
+   "aria": "Popup - Location Dropdown",
+   "title": null,
+   "cls": []
+  },
+  {
+   "id": "sgp_3",
+   "aria": "Popup - Age Gate Location Selector",
+   "title": null,
+   "cls": [
+    "location-selector-popup"
+   ]
+  },
+  {
+   "id": "sgp_4",
+   "aria": "Popup - Form Popup",
+   "title": null,
+   "cls": [
+    "p-0",
+    "bg-transparent"
+   ]
+  }
+ ],
+ "ageGate": {
+  "aria": "Age Verification Popup",
+  "logo": {
+   "href": "index.html",
+   "aria": "Site age verification logo of High Society",
+   "alt": "High Society Brand Logo"
+  },
+  "title": "ARE YOU 21 OR OLDER?",
+  "lines": [
+   "To continue, please confirm your age.",
+   "By clicking \"Yes,\" you confirm that you meet the age requirement."
+  ],
+  "yes": {
+   "text": "Yes, I’m 21 or older",
+   "href": "#yes"
+  },
+  "no": {
+   "text": "No, I’m under 21",
+   "href": "#no",
+   "redirect": "https://google.com"
+  }
+ },
+ "ui": {
+  "prev": "Prev",
+  "next": "Next",
+  "close": "Close",
+  "menu": "Menu",
+  "readMore": "Read more",
+  "readLess": "Read less",
+  "goTo": "Go to",
+  "carouselLocations": "Locations",
+  "carouselDeals": "DEALS",
+  "carouselReviews": "What Our Customers Say About Us",
+  "toggleLocations": "Show locations",
+  "pauseMotion": "Pause motion"
+ },
+ "declaredDuplicates": [
+  {
+   "where": "#imz4h slider (7 stores)",
+   "why": "every store shows the Big Rapids address \"804 clark st, big rapids / mi 49307, united states\" and phone; the brief: ONE set of 8 cards with the correct data"
+  },
+  {
+   "where": "#iiwmg slider (7 stores, d-none)",
+   "why": "hidden duplicate of the store set; alts: High Society in Birch Run, east lansing weed dispensary, big rapids weed store, High Society Charlotte, Lenox / Mount Pleasant / Saline Cannabis Weed Dispensary"
+  },
+  {
+   "where": "#i584w slider (7 stores)",
+   "why": "duplicate of the store set (no New Buffalo); alts \"<store> dispensary location\""
+  },
+  {
+   "where": "#iqq4g card set",
+   "why": "second copy of the #iabik card set, identical text"
+  },
+  {
+   "where": "#i9vl gallery",
+   "why": "second Staff Picks gallery: its links point at other brands (MI Jane logo -> glo-stix) and carry stray words in the hrefs"
+  },
+  {
+   "where": "#i00b heading",
+   "why": "phone-only copy of the reviews heading (\"Says\"); the brief names \"What Our Customers Say About Us\""
+  },
+  {
+   "where": "#igy6u button (d-none)",
+   "why": "hidden twin of \"Join the Society Today\" (href \"#\")"
+  },
+  {
+   "where": "#mobile-nav",
+   "why": "second copy of the nav for the phone sidebar; one nav serves both"
+  },
+  {
+   "where": "mobile brand logo",
+   "why": "the header carries the lockup three times (desktop, phone, sidebar)"
+  }
+ ]
+}
