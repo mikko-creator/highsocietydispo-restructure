@@ -97,14 +97,24 @@ add a content"), except the home hero's "CALL TO ACTION" button, which the v2 ho
 - **Words your voice guide avoids, kept on purpose:** the glossary defines "420" because the term is searched; the
   coffee recipe's title uses "Bulletproof" as the style name (a Bulletproof 360 trademark; no company or product is
   named in the text).
+- **Menu images (added 2026-10-24):** the photos in the Explore, Resources and Locations menus are AI-generated with
+  Higgsfield:
+  - a pit-garage counter of jars and vape carts;
+  - a bud under a magnifier;
+  - a storefront at dusk with a trophy-and-flags sign.
+
+  They show no real store, product or person, and no readable text. Higgsfield's help center says the account owns its
+  outputs and that its terms limit commercial use on no plan (Terms of Use §4.4, page checked 2026-10-24). The files
+  carry no watermark. Images made only by AI generally get no US copyright, so others could reuse them. Keep them, or
+  send photos of your own stores to use instead?
 - **Food safety in the recipes:** every homemade infused oil and butter is told "fridge for 4 days, or freeze", the
   CDC's limit for homemade oils made with herbs, applied to butter too. That is stricter than many cannabis sites.
 
 ## 4. Publishing the new pages (SEO)
 
-- **Serve the new pages through your CMS, or replace the shop links first.** About 40 links on every page (Menu,
-  Order Now, Shop Deals, the staff picks) point at `{{location_shop_url}}`, which your CMS fills with the chosen store's
-  menu when it serves a page.
+- **Serve the new pages through your CMS, or replace the shop links first.** About 42 links on every page (Menu,
+  Order Now, Shop Deals, the staff picks, the Explore menu's "Shop the menu" card) point at `{{location_shop_url}}`,
+  which your CMS fills with the chosen store's menu when it serves a page.
   - On the static preview these links open the store chooser instead (checked by clicking them at 390 and 1280
     pixels).
   - Served as plain files, they would send crawlers, and visitors without JavaScript, to a missing page. The preview

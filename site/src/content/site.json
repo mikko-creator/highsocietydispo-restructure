@@ -672,6 +672,14 @@
    {
     "id": "explore",
     "text": "Explore",
+    "feature": {
+     "image": "higgsfield/mega-explore.png",
+     "kicker": "Order ahead",
+     "link": {
+      "text": "Shop the menu",
+      "href": "{{location_shop_url}}"
+     }
+    },
     "mega": [
      {
       "title": "Shop by category",
@@ -728,19 +736,23 @@
       "links": [
        {
         "text": "MI Jane",
-        "href": "{{location_shop_url}}?dtche[path]=products&dtche[search]=mi+jane"
+        "href": "{{location_shop_url}}?dtche[path]=products&dtche[search]=mi+jane",
+        "logo": "assets/in-pages/2024_06_10_HighSociety_RemakeMIJaneLogo_1.webp"
        },
        {
         "text": "Doozy",
-        "href": "{{location_shop_url}}?dtche[path]=products&dtche[search]=doozy"
+        "href": "{{location_shop_url}}?dtche[path]=products&dtche[search]=doozy",
+        "logo": "assets/in-pages/Doozy_Color_1.webp"
        },
        {
         "text": "Rooted",
-        "href": "{{location_shop_url}}?dtche[path]=products&dtche[search]=rooted"
+        "href": "{{location_shop_url}}?dtche[path]=products&dtche[search]=rooted",
+        "logo": "assets/in-pages/Rooted_Logo_1.webp"
        },
        {
         "text": "Glostix",
-        "href": "{{location_shop_url}}?dtche[path]=products&dtche[search]=glostix"
+        "href": "{{location_shop_url}}?dtche[path]=products&dtche[search]=glostix",
+        "logo": "assets/in-pages/Glostix_Logo_1.webp"
        }
       ]
      },
@@ -789,29 +801,42 @@
    {
     "id": "resources",
     "text": "Resources",
+    "feature": {
+     "image": "higgsfield/mega-resources.png",
+     "kicker": "Society Pages",
+     "link": {
+      "text": "Read the latest articles",
+      "href": "/blog/"
+     }
+    },
     "mega": [
      {
       "title": "Learn",
       "links": [
        {
         "text": "Dispensary Guides",
-        "href": "/dispensary-guides/"
+        "href": "/dispensary-guides/",
+        "desc": "Hours, directions, what to bring"
        },
        {
         "text": "Getting a Medical Card",
-        "href": "/getting-a-medical-card/"
+        "href": "/getting-a-medical-card/",
+        "desc": "Who qualifies and how to apply"
        },
        {
         "text": "State Laws",
-        "href": "/cannabis-laws-by-state/"
+        "href": "/cannabis-laws-by-state/",
+        "desc": "Michigan, Indiana and Illinois"
        },
        {
         "text": "Patient Guide",
-        "href": "/patient-guide/"
+        "href": "/patient-guide/",
+        "desc": "THC, CBD and how products work"
        },
        {
         "text": "FAQ",
-        "href": "/faq/"
+        "href": "/faq/",
+        "desc": "ID, payment, pickup and loyalty"
        }
       ]
      },
@@ -858,6 +883,14 @@
     "id": "locations",
     "text": "Locations",
     "href": "/dispensary-locations/",
+    "feature": {
+     "image": "higgsfield/mega-locations.png",
+     "kicker": "8 Michigan stores",
+     "link": {
+      "text": "Find your store",
+      "href": "/dispensary-locations/"
+     }
+    },
     "mega": [
      {
       "title": "Our stores",
@@ -901,11 +934,13 @@
       "links": [
        {
         "text": "All Locations",
-        "href": "/dispensary-locations/"
+        "href": "/dispensary-locations/",
+        "desc": "Addresses, phones and hours"
        },
        {
         "text": "New Buffalo service areas",
-        "href": "/dispensary-locations/new-buffalo/service-areas/"
+        "href": "/dispensary-locations/new-buffalo/service-areas/",
+        "desc": "Union Pier, Michiana and I-94"
        }
       ]
      }

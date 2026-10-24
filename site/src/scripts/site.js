@@ -79,13 +79,17 @@
      opens it and moves into it, Escape closes it and returns focus to its button, focus leaving it closes it. A mouse
      opens it with hover intent (core, 2026-10-24): after the pointer rests 90ms, and closes it 200ms after the pointer
      leaves (a pointer that comes back in time keeps it open); v2's guard stays, so a click that lands just after a
-     hover-open does not shut it again. */
+     hover-open does not shut it again. A closed panel is display:none, so its lazy images (the feature card, the
+     logos) wait until it opens; the pointer or focus arriving asks for them, so they are usually in by then. */
   function initNav() {
     var items = $$('.nav__item--sub');
     var close = function (except) { items.forEach(function (it) { if (it !== except) { it.classList.remove('is-open'); var b = $('[aria-controls]', it); if (b) b.setAttribute('aria-expanded', 'false'); } }); };
     items.forEach(function (it) {
       var btn = $('button[aria-controls]', it); if (!btn) return;
-      var set = function (on) { it.classList.toggle('is-open', on); btn.setAttribute('aria-expanded', String(on)); };
+      var warm = function () { $$('img[loading="lazy"]', it).forEach(function (im) { im.loading = 'eager'; }); };
+      it.addEventListener('pointerenter', warm);
+      it.addEventListener('focusin', warm);
+      var set = function (on) { if (on) warm(); it.classList.toggle('is-open', on); btn.setAttribute('aria-expanded', String(on)); };
       var hoverOpen = 0, tIn = 0, tOut = 0;
       btn.addEventListener('click', function () {
         clearTimeout(tIn); clearTimeout(tOut);

@@ -21,13 +21,39 @@ export function renderChrome({ site, home: c, h }) {
   const navId = (text) => 'nav-link-' + h.slug(text);
 
   // ---- the mega panels (desktop) and their accordion twins (phone menu) ------------------------------------------
-  const megaGroup = (g, k) => `<div class="mega__group">
-            <p class="mega__title">${esc(g.title)}</p>
-            <ul class="mega__links${g.links.length > 6 ? ' mega__links--2' : ''}">${g.links.map((l) => `<li>${link(l, { 'data-shop-category': l.category || false })}</li>`).join('')}</ul>
+  // Revised 2026-10-24 (owner: bigger, easier to read, with brand imagery). A group's links draw one of four ways, by
+  // what their data carries: a logo (Staff Picks: the vendor's logo on a white tile, its name under it), an icon (Find
+  // your vibe), a desc (Learn, Find a store: a line under the name) or none of these (v2's red trophy bullet). A panel
+  // with a `feature` ends with its card: a Higgsfield image (the workspace's higgsfield/PROVENANCE.json; the phone menu
+  // gets its 16:9 band), a kicker and one link whose ::after covers the card. The images are lazy and a closed panel or
+  // group is display:none, so they load only when it opens (site.js asks for the desktop ones on hover or focus).
+  const kindOf = (g) => (g.links.some((l) => l.logo) ? 'logos' : g.links.some((l) => l.icon) ? 'icons' : g.links.some((l) => l.desc) ? 'desc' : 'links');
+  const groupLink = (l, kind, b) => {
+    const name = `<span class="${b}__name">${esc(l.text)}</span>`;
+    const inner = kind === 'logos' ? `<span class="${b}__tile">${h.img(l.logo, { alt: '', sizes: '160px' })}</span>${name}`
+      : kind === 'icons' ? `<span class="${b}__icon">${h.icon(l.icon, { size: 20 })}</span>${name}`
+      : kind === 'desc' ? `${name}<span class="${b}__desc">${esc(l.desc)}</span>`
+      : name;
+    return `<a${h.attrs({ href: h.href(l.href), 'data-shop-category': l.category || false })}>${inner}</a>`;
+  };
+  const feature = (f, b, sizes) => `<div class="${b}__feature">
+            ${h.img(b === 'mega' ? f.image : f.image + '#phone', { alt: '', sizes, cls: b + '__feature-img' })}
+            <p class="${b}__kicker">${esc(f.kicker)}</p>
+            <a class="${b}__feature-link" href="${esc(h.href(f.link.href))}">${esc(f.link.text)}${h.icon('arrow', { size: 20 })}</a>
           </div>`;
+  const megaGroup = (g) => {
+    const kind = kindOf(g);
+    return `<div class="mega__group mega__group--${kind}">
+              <p class="mega__title">${esc(g.title)}</p>
+              <ul class="mega__links mega__links--${kind}${kind === 'links' && g.links.length > 6 ? ' mega__links--2' : ''}">${g.links.map((l) => `<li>${groupLink(l, kind, 'mega')}</li>`).join('')}</ul>
+            </div>`;
+  };
   const mega = (n) => `<div class="mega mega--${esc(n.id)}" id="mega-${esc(n.id)}">
-          <div class="mega__inner mega__inner--${n.mega.length}">
-          ${n.mega.map(megaGroup).join('\n          ')}
+          <div class="mega__inner${n.feature ? ' mega__inner--feature' : ''}">
+            <div class="mega__groups">
+            ${n.mega.map(megaGroup).join('\n            ')}
+            </div>
+            ${n.feature ? feature(n.feature, 'mega', '(min-width: 1280px) 312px, 25vw') : ''}
           </div>
         </div>`;
   const chev = h.icon('chevron', { size: 16, cls: 'nav__chev' });
@@ -91,7 +117,7 @@ export function renderChrome({ site, home: c, h }) {
   // ---- phone + tablet menu: v2's overlay; every mega group an accordion; About Us and Contact Us below the groups ----
   const accItem = (n) => {
     const id = 'mmenu-sub-' + n.id;
-    const groups = `<div class="mmenu__sub mmenu__groups" id="${id}">${n.mega.map((g) => `<div class="mmenu__group"><p class="mmenu__gtitle">${esc(g.title)}</p><ul class="mmenu__glinks">${g.links.map((l) => `<li>${link(l, { 'data-shop-category': l.category || false })}</li>`).join('')}</ul></div>`).join('')}</div>`;
+    const groups = `<div class="mmenu__sub mmenu__groups" id="${id}">${n.mega.map((g) => { const kind = kindOf(g); return `<div class="mmenu__group mmenu__group--${kind}"><p class="mmenu__gtitle">${esc(g.title)}</p><ul class="mmenu__glinks mmenu__glinks--${kind}">${g.links.map((l) => `<li>${groupLink(l, kind, 'mmenu')}</li>`).join('')}</ul></div>`; }).join('')}${n.feature ? feature(n.feature, 'mmenu', '(min-width: 608px) 560px, calc(100vw - 40px)') : ''}</div>`;
     if (n.href) {
       return `<li class="mmenu__item"><div class="mmenu__row">${link(n, { class: 'mmenu__link' })}<button class="mmenu__toggle" type="button" aria-expanded="false" aria-controls="${id}" aria-label="${esc(n.id === 'locations' ? ui.toggleLocations : ui.showGroup + ' ' + n.text)}">${h.icon('chevron', { size: 20 })}</button></div>
         ${groups}</li>`;

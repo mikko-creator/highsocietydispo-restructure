@@ -1015,5 +1015,146 @@
    }
   ],
   "alpha": true
+ },
+ "higgsfield/mega-explore.png": {
+  "file": "higgsfield/mega-explore.png",
+  "width": 1536,
+  "height": 2048,
+  "variants": [
+   {
+    "w": 360,
+    "h": 480,
+    "file": "mega-explore-360.webp"
+   },
+   {
+    "w": 640,
+    "h": 853,
+    "file": "mega-explore-640.webp"
+   }
+  ],
+  "alpha": false
+ },
+ "higgsfield/mega-explore.png#phone": {
+  "file": "higgsfield/mega-explore.png",
+  "width": 1536,
+  "height": 864,
+  "variants": [
+   {
+    "w": 480,
+    "h": 270,
+    "file": "mega-explore-phone-480.webp"
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "mega-explore-phone-800.webp"
+   },
+   {
+    "w": 1120,
+    "h": 630,
+    "file": "mega-explore-phone-1120.webp"
+   }
+  ],
+  "alpha": false,
+  "crop": [
+   0,
+   568,
+   1536,
+   1432
+  ]
+ },
+ "higgsfield/mega-resources.png": {
+  "file": "higgsfield/mega-resources.png",
+  "width": 1536,
+  "height": 2048,
+  "variants": [
+   {
+    "w": 360,
+    "h": 480,
+    "file": "mega-resources-360.webp"
+   },
+   {
+    "w": 640,
+    "h": 853,
+    "file": "mega-resources-640.webp"
+   }
+  ],
+  "alpha": false
+ },
+ "higgsfield/mega-resources.png#phone": {
+  "file": "higgsfield/mega-resources.png",
+  "width": 1536,
+  "height": 864,
+  "variants": [
+   {
+    "w": 480,
+    "h": 270,
+    "file": "mega-resources-phone-480.webp"
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "mega-resources-phone-800.webp"
+   },
+   {
+    "w": 1120,
+    "h": 630,
+    "file": "mega-resources-phone-1120.webp"
+   }
+  ],
+  "alpha": false,
+  "crop": [
+   0,
+   468,
+   1536,
+   1332
+  ]
+ },
+ "higgsfield/mega-locations.png": {
+  "file": "higgsfield/mega-locations.png",
+  "width": 1536,
+  "height": 2048,
+  "variants": [
+   {
+    "w": 360,
+    "h": 480,
+    "file": "mega-locations-360.webp"
+   },
+   {
+    "w": 640,
+    "h": 853,
+    "file": "mega-locations-640.webp"
+   }
+  ],
+  "alpha": false
+ },
+ "higgsfield/mega-locations.png#phone": {
+  "file": "higgsfield/mega-locations.png",
+  "width": 1536,
+  "height": 864,
+  "variants": [
+   {
+    "w": 480,
+    "h": 270,
+    "file": "mega-locations-phone-480.webp"
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "mega-locations-phone-800.webp"
+   },
+   {
+    "w": 1120,
+    "h": 630,
+    "file": "mega-locations-phone-1120.webp"
+   }
+  ],
+  "alpha": false,
+  "crop": [
+   0,
+   508,
+   1536,
+   1372
+  ]
  }
 }

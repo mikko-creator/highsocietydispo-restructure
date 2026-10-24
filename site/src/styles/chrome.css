@@ -8,7 +8,8 @@
    - THE SWITCH TO THE MENU BUTTON (measured, qa/bar-ladder.mjs, real 15px scrollbar, widths 1024..1440 step 16): see
      the note above the @media (max-width: 1179.98px) rule below.
    - mega panels: v2's dropdown language (the ink panel, the checkered top edge, the red trophy bullets, Changa type),
-     centred under the bar, never wider than the bar's content box (so never wider than the viewport).
+     centred under the bar, never wider than the bar's content box (so never wider than the viewport); revised
+     2026-10-24 with bigger type, the vendors' logos, the vibe icons and a feature image per panel (section 2).
    Colours: theme and token names only. */
 
 :root {
@@ -66,25 +67,83 @@
 .nav__item--button .nav__link::after { right: calc(clamp(8px, .9vw, 14px) + 20px); }
 .nav__item--mega:hover > .nav__link, .nav__item--mega.is-open > .nav__link { color: var(--white); }
 
-.mega { position: absolute; top: 100%; left: 50%; z-index: 5; width: min(var(--mega-w, 880px), calc(100% - var(--pad-l) - var(--pad-r))); opacity: 0; visibility: hidden; transform: translate(-50%, -6px); transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease), visibility 0s linear var(--dur); }
+/* The panels, revised 2026-10-24 (owner: "too plain and boring, make it bigger so the texts are easier to read" and
+   brand imagery). One width for all three (up to 1200px, never wider than the bar's content box): the link groups on
+   the left, a feature card on the right (a Higgsfield image, a kicker, one link). Type: links 15px to 18px (19px from
+   1280px), group titles 11.8px to 14px, a 15px line under the Learn and Find-a-store links, rows 44px to 52px. A closed
+   panel is display:none (it still fades: display and visibility switch at the ends of the fade, and @starting-style
+   gives the fade-in its first frame), so its lazy images load only when it opens. */
+.mega { position: absolute; top: 100%; left: 50%; z-index: 5; width: min(1200px, calc(100% - var(--pad-l) - var(--pad-r))); display: none; opacity: 0; visibility: hidden; transform: translate(-50%, -8px); transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease), visibility 0s linear var(--dur), display var(--dur) allow-discrete; }
 /* the bridge between the item and the panel, so a pointer on its way down stays "inside" */
 .mega::before { content: ""; position: absolute; left: 0; right: 0; top: calc(-1 * (var(--bar-h) - var(--tap)) / 2 - 2px); height: calc((var(--bar-h) - var(--tap)) / 2 + 2px); }
-.nav__item.is-open > .mega { opacity: 1; visibility: visible; transform: translate(-50%, 0); transition-delay: 0s; }
-.mega--explore { --mega-w: 980px; }
-.mega--resources { --mega-w: 720px; }
-.mega--locations { --mega-w: 680px; }
-.mega__inner { display: grid; grid-template-columns: repeat(var(--mega-cols, 2), minmax(0, 1fr)); gap: var(--s-3) var(--s-4); padding: calc(8px + var(--s-3)) var(--s-4) var(--s-4); background: var(--black); color: var(--white); border: 1px solid var(--w-24); border-radius: var(--radius-lg); overflow: hidden; position: relative; box-shadow: 0 28px 56px -28px var(--k-88); }
-.mega__inner--3 { --mega-cols: 3; }
-/* v2's checkered top edge */
-.mega__inner::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 8px; background: var(--checker) repeat-x left center / auto 100%; }
+.nav__item.is-open > .mega { display: block; opacity: 1; visibility: visible; transform: translate(-50%, 0); transition-delay: 0s; }
+@starting-style { .nav__item.is-open > .mega { opacity: 0; transform: translate(-50%, -8px); } }
+/* taller than the window (a short laptop screen) the panel scrolls inside itself */
+.mega__inner { display: grid; grid-template-columns: minmax(0, 1fr); max-height: calc(100vh - var(--util-h) - var(--bar-h) - 16px); overflow: hidden auto; overscroll-behavior: contain; position: relative; background: var(--black); color: var(--white); border: 1px solid var(--w-24); border-radius: var(--radius-lg); box-shadow: 0 32px 64px -28px var(--k-88); }
+.mega__inner--feature { grid-template-columns: minmax(0, 1fr) clamp(200px, 26%, 312px); }
+/* v2's checkered top edge, over the card too */
+.mega__inner::before { content: ""; position: absolute; left: 0; right: 0; top: 0; z-index: 2; height: 10px; background: var(--checker) repeat-x left center / auto 100%; }
+.mega__groups { display: grid; grid-template-columns: var(--mega-cols); gap: var(--s-4) clamp(24px, 2.6vw, 44px); align-content: start; padding: calc(10px + clamp(24px, 2.4vw, 34px)) clamp(24px, 2.6vw, 40px) clamp(28px, 2.8vw, 40px); }
+/* the two-column lists take the width their longest names need (measured: "Concentrates" overflowed a proportional
+   column at 1024px, "Health & Lifestyle" wrapped at 1366px); the logo tiles, the store lines and Learn take what is left */
+.mega--explore { --mega-cols: max-content minmax(0, 1fr) max-content; }
+.mega--resources { --mega-cols: minmax(0, 1fr) max-content; }
+.mega--locations { --mega-cols: max-content minmax(0, 1fr); }
 .mega__group { min-width: 0; }
-.mega__title { padding-bottom: .75rem; border-bottom: 1px solid var(--w-14); font: 700 .74rem/1.2 var(--font-display); letter-spacing: .2em; text-transform: uppercase; color: var(--neon); }
-.mega__links { margin-top: .4rem; }
-.mega__links--2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--s-2); }
-.mega__links a { display: flex; align-items: center; gap: 10px; min-height: var(--tap); padding: 0 var(--s-1) 0 2px; border-bottom: 1px solid var(--w-10); font: 600 .9375rem/1.2 var(--font-head); letter-spacing: .02em; color: var(--white); transition: color var(--dur) var(--ease); }
-.mega__links a::before { content: ""; flex: none; width: 16px; height: 16px; background: var(--mark-red) center / contain no-repeat; }
+.mega__title { position: relative; padding-bottom: 12px; border-bottom: 1px solid var(--w-14); font: 700 .875rem/1.2 var(--font-display); letter-spacing: .16em; text-transform: uppercase; color: var(--neon); }
+/* a short red rule on the hairline, as under the site's section headings */
+.mega__title::after { content: ""; position: absolute; left: 0; bottom: -2px; width: 36px; height: 3px; background: var(--red); }
+.mega__links { margin-top: 6px; }
+.mega__links--2 { display: grid; grid-template-columns: repeat(2, max-content); column-gap: var(--s-3); }
+.mega__links a { display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 6px 4px 6px 2px; border-bottom: 1px solid var(--w-10); font: 600 1.125rem/1.2 var(--font-head); letter-spacing: .01em; color: var(--white); transition: color var(--dur) var(--ease); }
+.mega__links--links a::before, .mega__links--desc a::before { content: ""; flex: none; width: 18px; height: 18px; background: var(--mark-red) center / contain no-repeat; transition: transform var(--dur) var(--ease); }
 .mega__links a:hover, .mega__links a:focus-visible { color: var(--neon); }
-.no-js .nav__item--mega:hover > .mega, .no-js .nav__item--mega:focus-within > .mega { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+.mega__links a:hover::before { transform: rotate(-14deg) scale(1.12); }
+.mega__name { min-width: 0; }
+/* Learn, Find a store: the name, and a line under it */
+.mega__links--desc a { display: grid; grid-template-columns: 18px minmax(0, 1fr); gap: 0 12px; align-items: start; padding: 11px 4px 11px 2px; }
+.mega__links--desc a::before { grid-row: 1 / span 2; margin-top: 2px; }
+.mega__desc { grid-column: 2; margin-top: 4px; font: 400 .9375rem/1.4 var(--font-body); color: var(--ink-soft); transition: color var(--dur) var(--ease); }
+.mega__links--desc a:hover .mega__desc, .mega__links--desc a:focus-visible .mega__desc { color: var(--white); }
+/* Find your vibe: each link with its icon in a ring */
+.mega__links--icons a { gap: 14px; }
+.mega__icon { flex: none; width: 36px; height: 36px; display: grid; place-items: center; border: 1.5px solid var(--w-24); border-radius: 50%; color: var(--neon); transition: background-color var(--dur) var(--ease), border-color var(--dur) var(--ease), color var(--dur) var(--ease); }
+.mega__links--icons a:hover .mega__icon, .mega__links--icons a:focus-visible .mega__icon { background: var(--red); border-color: var(--red); color: var(--white); }
+/* Staff Picks: the vendors' logos on white tiles (as on the home page), the name under each */
+.mega__links--logos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 12px; margin-top: 18px; }
+.mega__links--logos a { flex-direction: column; align-items: stretch; gap: 8px; min-height: 0; padding: 0 0 2px; border: 0; font-size: 1rem; }
+.mega__tile { display: grid; place-items: center; height: 76px; padding: 10px 12px; background: var(--white); border-radius: var(--radius); transition: box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease); }
+.mega__tile img { width: auto; height: auto; max-width: 100%; max-height: 54px; object-fit: contain; }
+.mega__links--logos a:hover .mega__tile, .mega__links--logos a:focus-visible .mega__tile { box-shadow: inset 0 0 0 3px var(--red); transform: translateY(-2px); }
+/* the feature card: the image under a dark fade, the kicker and the link at its foot; the link's ::after covers the
+   card, so the whole card is the link's target (its name stays the link's own words) */
+.mega__feature { position: relative; isolation: isolate; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; gap: 12px; min-height: 100%; padding: 28px 24px 26px; overflow: hidden; background: var(--ink-card); }
+.mega__feature::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(3, 4, 4, 0) 34%, rgba(3, 4, 4, .62) 62%, rgba(3, 4, 4, .95) 100%); }
+.mega__feature-img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease); }
+.mega__feature:hover .mega__feature-img { transform: scale(1.05); }
+.mega__kicker { padding: 7px 10px 6px; background: var(--red); border-radius: var(--radius-tag); font: 700 .75rem/1 var(--font-head); letter-spacing: .14em; text-transform: uppercase; color: var(--white); }
+.mega__feature-link { display: flex; align-items: center; gap: 12px; font: 400 clamp(1.375rem, 1.9vw, 1.75rem)/1.05 var(--font-display); text-transform: uppercase; color: var(--white); }
+.mega__feature-link::after { content: ""; position: absolute; inset: 0; }
+.mega__feature-link .icon { flex: none; box-sizing: content-box; padding: 8px; border-radius: 50%; background: var(--red); transition: transform var(--dur) var(--ease); }
+.mega__feature:hover .mega__feature-link .icon, .mega__feature-link:focus-visible .icon { transform: translateX(4px); }
+/* keyboard focus rings the whole card; a browser without :has() keeps the link's own ring */
+@supports selector(:has(a)) {
+  .mega__feature-link:focus-visible { outline: none; }
+  .mega__feature:has(.mega__feature-link:focus-visible) { outline: 3px solid var(--focus); outline-offset: -3px; }
+}
+@media (min-width: 1280px) { .mega__links a { font-size: 1.1875rem; } .mega__links--logos a { font-size: 1.0625rem; } }
+/* 1024-1179px (the 64px bar): a narrower card and 17px links, so the three Explore groups fit beside the card */
+@media (max-width: 1179.98px) {
+  .mega__inner--feature { grid-template-columns: minmax(0, 1fr) clamp(180px, 22%, 240px); }
+  .mega__groups { column-gap: 20px; padding-inline: 22px; }
+  .mega__links a { font-size: 1.0625rem; }
+  .mega__links--2 { column-gap: var(--s-2); }
+  .mega__tile { padding: 8px; }
+  .mega__feature { padding: 24px 18px 22px; }
+  .mega__feature-link { font-size: 1.25rem; }
+}
+@media (prefers-reduced-motion: reduce) { .mega__feature-img, .mega__links a::before, .mega__tile { transition: none; } .mega__feature:hover .mega__feature-img { transform: none; } }
+.no-js .nav__item--mega:hover > .mega, .no-js .nav__item--mega:focus-within > .mega { display: block; opacity: 1; visibility: visible; transform: translate(-50%, 0); }
 
 /* ------------------------------------------------------------------ 3. the category bar (desktop) */
 .catbar { height: var(--cat-h); overflow: hidden; border-top: 1px solid var(--w-10); transition: height var(--dur) var(--ease), opacity var(--dur) var(--ease), visibility 0s; }
@@ -129,12 +188,35 @@
 .mmenu__chev { flex: none; width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid var(--w-24); border-radius: var(--radius); color: var(--neon); }
 .mmenu__chev .icon { transition: transform var(--dur) var(--ease); }
 .mmenu__acc[aria-expanded="true"] .mmenu__chev .icon { transform: rotate(180deg); }
-.mmenu__groups { grid-template-columns: minmax(0, 1fr); gap: var(--s-2); }
-.mmenu__gtitle { padding-bottom: 6px; border-bottom: 1px solid var(--w-14); font: 700 .7rem/1.2 var(--font-display); letter-spacing: .2em; text-transform: uppercase; color: var(--neon); }
+/* the groups inside an open accordion, revised with the desktop panels (2026-10-24): titles 11.2px to 13px, links 16px
+   to 18px on 48px rows, the same logos, icons and lines under links, and the group's feature card (the image's 16:9
+   band, at most 560px wide) after its links */
+.mmenu__groups { grid-template-columns: minmax(0, 1fr); gap: var(--s-3); padding-top: 6px; }
+.mmenu__gtitle { position: relative; padding-bottom: 8px; border-bottom: 1px solid var(--w-14); font: 700 .8125rem/1.2 var(--font-display); letter-spacing: .18em; text-transform: uppercase; color: var(--neon); }
+.mmenu__gtitle::after { content: ""; position: absolute; left: 0; bottom: -2px; width: 28px; height: 3px; background: var(--red); }
 .mmenu__glinks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 var(--s-2); }
-.mmenu__glinks a { display: flex; align-items: center; gap: 8px; min-height: 44px; font: 600 1rem/1.15 var(--font-head); color: var(--chrome); }
-.mmenu__glinks a::before { content: ""; flex: none; width: 14px; height: 14px; background: var(--mark-red) center / contain no-repeat; }
+.mmenu__glinks a { display: flex; align-items: center; gap: 10px; min-height: 48px; font: 600 1.125rem/1.2 var(--font-head); color: var(--chrome); }
+.mmenu__glinks a::before { content: ""; flex: none; width: 16px; height: 16px; background: var(--mark-red) center / contain no-repeat; }
 .mmenu__glinks a:hover { color: var(--white); }
+.mmenu__name { min-width: 0; }
+.mmenu__glinks--desc { grid-template-columns: minmax(0, 1fr); }
+.mmenu__glinks--desc a { display: grid; grid-template-columns: 16px minmax(0, 1fr); gap: 0 10px; align-items: start; padding: 10px 0; }
+.mmenu__glinks--desc a::before { grid-row: 1 / span 2; margin-top: 2px; }
+.mmenu__desc { grid-column: 2; margin-top: 3px; font: 400 .9375rem/1.4 var(--font-body); color: var(--ink-soft); }
+.mmenu__glinks--icons a::before, .mmenu__glinks--logos a::before { content: none; }
+.mmenu__icon { flex: none; width: 34px; height: 34px; display: grid; place-items: center; border: 1.5px solid var(--w-24); border-radius: 50%; color: var(--neon); }
+.mmenu__glinks--logos { gap: 12px; padding-top: 12px; }
+.mmenu__glinks--logos a { flex-direction: column; align-items: stretch; gap: 6px; min-height: 0; padding-bottom: 4px; font-size: 1rem; }
+.mmenu__tile { display: grid; place-items: center; height: 64px; padding: 8px 10px; background: var(--white); border-radius: var(--radius); }
+.mmenu__tile img { width: auto; height: auto; max-width: 100%; max-height: 46px; object-fit: contain; }
+.mmenu__feature { position: relative; isolation: isolate; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; gap: 8px; width: 100%; max-width: 560px; aspect-ratio: 16 / 9; padding: 16px 18px; overflow: hidden; border-radius: var(--radius-lg); background: var(--ink-card); }
+.mmenu__feature::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(3, 4, 4, 0) 22%, rgba(3, 4, 4, .6) 55%, rgba(3, 4, 4, .94) 100%); }
+.mmenu__feature-img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; }
+.mmenu__kicker { padding: 6px 9px 5px; background: var(--red); border-radius: var(--radius-tag); font: 700 .75rem/1 var(--font-head); letter-spacing: .14em; text-transform: uppercase; color: var(--white); }
+.mmenu__sub .mmenu__feature-link { gap: 10px; min-height: 44px; font: 400 1.375rem/1.05 var(--font-display); text-transform: uppercase; color: var(--white); }
+.mmenu__sub .mmenu__feature-link::before { content: none; }
+.mmenu__feature-link::after { content: ""; position: absolute; inset: 0; }
+.mmenu__feature-link .icon { flex: none; box-sizing: content-box; padding: 7px; border-radius: 50%; background: var(--red); }
 .search--menu { height: 52px; border: 1px solid var(--w-24); border-radius: var(--radius); background: var(--charcoal); }
 .search--menu:focus-within { border-color: var(--white); }
 .search--menu .search__input { flex: 1 1 auto; height: 100%; padding: 0 0 0 16px; font-size: 1rem; }
