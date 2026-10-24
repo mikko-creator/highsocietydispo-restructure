@@ -102,6 +102,14 @@ add a content"), except the home hero's "CALL TO ACTION" button, which the v2 ho
 
 ## 4. Publishing the new pages (SEO)
 
+- **Serve the new pages through your CMS, or replace the shop links first.** About 40 links on every page (Menu,
+  Order Now, Shop Deals, the staff picks) point at `{{location_shop_url}}`, which your CMS fills with the chosen store's
+  menu when it serves a page.
+  - On the static preview these links open the store chooser instead (checked by clicking them at 390 and 1280
+    pixels).
+  - Served as plain files, they would send crawlers, and visitors without JavaScript, to a missing page. The preview
+    has 1,835 such addresses, but its nofollow tag keeps crawlers off them.
+  - If the pages go live outside the CMS, point these links at /shop/.
 - **Stagger the articles.** About 280 new articles appearing on one day can look like scaled content to Google. Publish
   the location, guide and law pages first, then the articles in weekly waves (for example 20 to 30 a week), each
   dated the day it goes live.
