@@ -19,6 +19,11 @@ const pages = [];
   }
 })(FROM);
 const urlFor = (rel) => BASE + (rel === 'index.html' ? '' : rel.replace(/(^|\/)index\.html$/, '$1'));
+// a robots meta is good when its content names both noindex and nofollow: make-preview writes "noindex, nofollow,
+// noarchive, noimageindex", and an exact "noindex, nofollow" test (this file's until 2026-10-24) read every page as bad
+const robotsOk = (meta) => { const m = /\bcontent="([^"]*)"/i.exec(meta || ''); const t = m ? m[1].toLowerCase().split(/\s*,\s*/) : []; return t.includes('noindex') && t.includes('nofollow'); };
+// controls: the matcher must refuse an indexable page and a noindex-only one, and accept the preview's value
+if (robotsOk('<meta name="robots" content="index, follow">') || robotsOk('<meta name="robots" content="noindex">') || !robotsOk('<meta name="robots" content="noindex, nofollow, noarchive, noimageindex">')) { console.error('control: the robots matcher misjudged a planted meta'); process.exit(3); }
 const bad = [];
 let ok = 0, i = 0;
 async function worker() {
@@ -29,7 +34,7 @@ async function worker() {
     for (let t = 0; t < 4; t++) { r = await fetch(u); if (r.status !== 429) break; await sleep(2000 * (t + 1)); }
     const html = await r.text();
     const metas = html.match(/<meta\s+name="robots"[^>]*>/gi) || [];
-    const good = (r.status === 200 || rel === '404.html') && metas.length === 1 && /content="noindex, nofollow"/i.test(metas[0]);
+    const good = (r.status === 200 || rel === '404.html') && metas.length === 1 && robotsOk(metas[0]);
     if (good) ok++; else bad.push(`${r.status} ${u} robots=${JSON.stringify(metas)}`);
     await sleep(DELAY);
   }
@@ -47,7 +52,8 @@ const underPrefix = sheets.filter((h) => h.startsWith(prefix));
 let styled = false;
 for (const h of underPrefix) { const r = await fetch(new URL(h, BASE)); const t = r.ok ? await r.text() : ''; if (r.ok && t.length > 100) { styled = true; break; } }
 console.log('404 stylesheets', sheets.length, '| under prefix', underPrefix.length, underPrefix.slice(0, 2).join(' '));
-const missNoindex = /<meta\s+name="robots"\s+content="noindex, nofollow"/i.test(missHtml);
+const missMetas = missHtml.match(/<meta\s+name="robots"[^>]*>/gi) || [];
+const missNoindex = missMetas.length === 1 && robotsOk(missMetas[0]);
 console.log('pages checked', pages.length, '| served with exactly one noindex,nofollow robots meta:', ok, '| bad:', bad.length);
 for (const b of bad.slice(0, 10)) console.log('  BAD', b);
 console.log('missing nested path -> status', miss.status, '| styled 404 (a prefixed stylesheet that is served):', styled, '| noindex:', missNoindex);
