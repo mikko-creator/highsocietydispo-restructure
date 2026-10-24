@@ -1,0 +1,3 @@
+# Preview copy: every page carries noindex. Crawling stays allowed so crawlers can read it.
+User-agent: *
+Disallow:
